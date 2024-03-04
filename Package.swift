@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "BrivoFluidFramework",
-            targets: ["BrivoFluidFramework"]),
+            targets: ["BrivoFluidFramework","BrivoAccess","BrivoNetworkCore","BrivoBLE","BrivoCore","BrivoLocalAuthentication","BrivoOnAir"]),
     ],
     targets: [
         .binaryTarget(
