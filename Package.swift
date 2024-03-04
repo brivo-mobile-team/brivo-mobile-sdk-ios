@@ -13,7 +13,7 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "BrivoFluids",
+            name: "BrivoFluidFramework",
             url: "https://github.com/brivo-mobile-team/Test-Brivo-Framework/blob/main/BrivoFluid.xcframework.zip",
             checksum: "1ba7ea38735e19bcfbd38c2a416319f968b29e7e32bda2ef5e1f6c6df4a7d534"
         )
