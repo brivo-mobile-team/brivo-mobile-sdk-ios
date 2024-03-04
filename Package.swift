@@ -4,11 +4,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "BrivoFluidFramework",
+    name: "BrivoMobileSDK",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "BrivoFluidFramework",
+            name: "BrivoMobileSDK",
             targets: ["BrivoFluidFramework","BrivoAccess","BrivoNetworkCore","BrivoBLE","BrivoCore","BrivoLocalAuthentication","BrivoOnAir"]),
     ],
     targets: [
