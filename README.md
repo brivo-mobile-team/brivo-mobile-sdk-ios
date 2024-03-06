@@ -93,7 +93,7 @@ func retrieveSDKLocallyStoredPasses(onSuccess: RetrieveSDKLocallyStoredPassesOnS
 ```
 
 ### BrivoSDKOnair 
-redeem pass usage 
+This module is used to redeem pass usage 
 ```
 do {
     try BrivoSDKOnAir.instance().redeemPass(passId: "PASS_ID",
@@ -108,7 +108,7 @@ do {
 }
 ```
 ### BrivoSDKOnair 
-refresh pass usage 
+This module is used to refresh pass usage 
 ```
 do {
    try BrivoSDKOnAir.instance().refreshPass(brivoTokens: tokens, 
@@ -123,7 +123,7 @@ do {
 ```
 
 ### BrivoSDKOnair 
-retrieve locally stored passes usage
+This module is used to retrieve locally stored passes usage
 ```
 do {
     try BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses(onSuccess: { [weak self] (brivoOnAirPasses) in
@@ -175,7 +175,7 @@ func unlockAccessPoint(selectedAccessPoint: BrivoSelectedAccessPoint,
 ```
 
 ### BrivoSDKAccess 
-unlock access point usage with internal stored credentials
+This module is used to unlock access point usage with internal stored credentials
 ```
 do {
     try BrivoSDKAccess.instance().unlockAccessPoint(passId: "PASS_ID",
@@ -191,7 +191,7 @@ do {
 ```
 
 ### BrivoSDKAccess 
-unlock access point usage with external credentials 
+This module is used to unlock access point usage with external credentials 
 ```
 do {
     let selectedAccessPoint = BrivoSelectedAccessPoint(accessPointId: ...,
