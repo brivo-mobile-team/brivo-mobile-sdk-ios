@@ -207,3 +207,7 @@ do {
 
 #### BrivoBLE
 This module manages the connection between an access point and a panel through bluetooth.
+
+### Issues
+
+If you run into any bugs or issues go to [Issues](https://github.com/brivo-mobile-team/Brivo-Mobile-SDK/issues) and raise an issue.
