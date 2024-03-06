@@ -1,5 +1,5 @@
 # Brivo Mobile SDK
-===========================================
+
 A set of reusable libraries, services and components for Swift iOS apps.
 ### Installation
 ### Swift Package Manager (SPM)
