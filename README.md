@@ -4,7 +4,7 @@ A set of reusable libraries, services and components for Swift iOS apps.
 ### Installation
 ### Swift Package Manager (SPM)
 
-1. Add Brivo Mobile SDK as a dependency using Swift Package Manager.
+Add Brivo Mobile SDK as a dependency using Swift Package Manager.
 
    - In an app project or framework, in Xcode:
 
