@@ -44,14 +44,14 @@ For example one of the parameters is nil or empty string.
 
 ## Brivo Mobile SDK Modules
 
-#### BrivoCore
+### BrivoCore
 This module implements the Brivo SDK class that is accessible through 'instance' property. It has the following responsibilities:
 ```
 func getBrivoConfiguration() throws -> BrivoConfiguration
 var version: String
 ```
 
-#### BrivoOnAir
+### BrivoOnAir
 This module manages the connection between the application and the Brivo environment. It has the following responsibilities:
 ```
 /**
@@ -92,7 +92,8 @@ func retrieveSDKLocallyStoredPasses(onSuccess: RetrieveSDKLocallyStoredPassesOnS
                                     onFailure: OnFailureType?) throws
 ```
 
-#### BrivoSDKOnair redeem pass usage 
+### BrivoSDKOnair 
+redeem pass usage 
 ```
 do {
     try BrivoSDKOnAir.instance().redeemPass(passId: "PASS_ID",
@@ -106,7 +107,8 @@ do {
     //Handle BrivoSDK initialization exception
 }
 ```
-#### BrivoSDKOnair refresh pass usage 
+### BrivoSDKOnair 
+refresh pass usage 
 ```
 do {
    try BrivoSDKOnAir.instance().refreshPass(brivoTokens: tokens, 
@@ -120,7 +122,8 @@ do {
 }
 ```
 
-#### BrivoSDKOnair retrieve locally stored passes usage
+### BrivoSDKOnair 
+retrieve locally stored passes usage
 ```
 do {
     try BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses(onSuccess: { [weak self] (brivoOnAirPasses) in
@@ -133,7 +136,7 @@ do {
 }
 ```
 
-#### BrivoAccess
+### BrivoAccess
 This module provides a simplified interface of unlocking access points either Bluetooth type or Internet type. It has the following responsibilities:
 ```
 /**
@@ -171,7 +174,8 @@ func unlockAccessPoint(selectedAccessPoint: BrivoSelectedAccessPoint,
                        cancellationSignal: CancellationSignal?)
 ```
 
-#### BrivoSDKAccess unlock access point usage with internal stored credentials
+### BrivoSDKAccess 
+unlock access point usage with internal stored credentials
 ```
 do {
     try BrivoSDKAccess.instance().unlockAccessPoint(passId: "PASS_ID",
@@ -186,7 +190,8 @@ do {
 }
 ```
 
-#### BrivoSDKAccess unlock access point usage with external credentials 
+### BrivoSDKAccess 
+unlock access point usage with external credentials 
 ```
 do {
     let selectedAccessPoint = BrivoSelectedAccessPoint(accessPointId: ...,
@@ -208,7 +213,7 @@ do {
 }
 ```
 
-#### BrivoBLE
+### BrivoBLE
 This module manages the connection between an access point and a panel through bluetooth.
 
 ### Issues
