@@ -5,7 +5,7 @@
 
 A set of reusable libraries, services and components for Swift iOS apps.
 ### Installation
-### Swift Package Manager (SPM)
+#### Swift Package Manager (SPM) ❤️
 
 Add Brivo Mobile SDK as a dependency using Swift Package Manager.
 
@@ -14,30 +14,16 @@ Add Brivo Mobile SDK as a dependency using Swift Package Manager.
      - Select the menu: **File → Swift Packages → Add Package Dependency...**
      - Enter this URL: `https://github.com/brivo-mobile-team/Brivo-Mobile-SDK`
 
-## Usage
+### Usage
 Before using the Brivo Mobile SDK it is mandatory to configure (through instance) of BrivoSDK class with a BrivoConfiguration object
 The BrivoConfiguration object requires a set of parameters listed bellow:
-```
-/**
- * Configure the BrivoSDK parameter
- *
- * Parameters:
- * brivoConfiguration  Brivo client id
- *                     Brivo client secret
- *                     Brivo SDK local storage management enabled
- */
-```
-#### BrivoSDK configuration usage 
+
 ```swift
 do {
-    let brivoConfiguration = try BrivoConfiguration(
-        clientId: "CLIENT_ID",
-        clientSecret: "CLIENT_SECRET",
-        useSDKStorage: USE_SDK_STORAGE
-    )
-    BrivoSDK.instance.configure(
-        brivoConfiguration: brivoConfiguration
-    )
+    let brivoConfiguration = try BrivoConfiguration(clientId: "CLIENT_ID",
+                                                    clientSecret: "CLIENT_SECRET",
+                                                    useSDKStorage: USE_SDK_STORAGE)
+    BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
 } catch let error {
     //Handle BrivoSDK configuration exception
 }
@@ -50,14 +36,14 @@ For example one of the parameters is nil or empty string.
 
 ### BrivoCore
 This module implements the Brivo SDK class that is accessible through 'instance' property. It has the following responsibilities:
-```
+```swift
 func getBrivoConfiguration() throws -> BrivoConfiguration
 var version: String
 ```
 
 ### BrivoOnAir
 This module manages the connection between the application and the Brivo environment. It has the following responsibilities:
-```
+```swift
 /**
  * Redeeming a Brivo Onair Pass. Brivo Onair Pass gives you the access to a site and allows you to open access points.
  *
@@ -67,12 +53,10 @@ This module manages the connection between the application and the Brivo environ
  * onSuccess  Completion block that handles the success of operation
  * onFailure  Completion block that handles the failure of operation
  */
-func redeemPass(
-    passId: String,
-    passCode: String,
-    onSuccess: RedeemPassOnSuccessType?,
-    onFailure: OnFailureType?
-)
+func redeemPass(passId: String, 
+                passCode: String, 
+                onSuccess: RedeemPassOnSuccessType?, 
+                onFailure: OnFailureType?)
                                
 /**
  * Refreshing a Brivo Onair Pass.
@@ -83,11 +67,9 @@ func redeemPass(
  * onSuccess   Completion block that handles the success of operation
  * onFailure   Completion block that handles the failure of operation
  */
-func refreshPass(
-    brivoTokens: BrivoTokens,
-    onSuccess: RefreshPassOnSuccessType?,
-    onFailure: OnFailureType?
-)
+func refreshPass(brivoTokens: BrivoTokens,
+                 onSuccess: RefreshPassOnSuccessType?,
+                 onFailure: OnFailureType?)
 
 /**
  * Retrieving the BrivoSDK locally stored passes.
@@ -102,7 +84,7 @@ func retrieveSDKLocallyStoredPasses(onSuccess: RetrieveSDKLocallyStoredPassesOnS
 
 ### BrivoSDKOnair 
 This module is used to redeem pass usage 
-```
+```swift
 do {
     try BrivoSDKOnAir.instance().redeemPass(passId: "PASS_ID",
                                             passCode: "PASS_CODE",
@@ -117,7 +99,7 @@ do {
 ```
 ### BrivoSDKOnair 
 This module is used to refresh pass usage 
-```
+```swift
 do {
    try BrivoSDKOnAir.instance().refreshPass(brivoTokens: tokens, 
                                             onSuccess: {[weak self] (refreshedPass) in
@@ -132,7 +114,7 @@ do {
 
 ### BrivoSDKOnair 
 This module is used to retrieve locally stored passes usage
-```
+```swift
 do {
     try BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses(onSuccess: { [weak self] (brivoOnAirPasses) in
                                                                     //Manage retrieved passes
@@ -146,7 +128,7 @@ do {
 
 ### BrivoAccess
 This module provides a simplified interface of unlocking access points either Bluetooth type or Internet type. It has the following responsibilities:
-```
+```swift
 /**
  * Sends a request to BrivoSDK to unlock an access point.
  * This method is called when credentials and data are managed inside of BrivoSDK.
@@ -184,7 +166,7 @@ func unlockAccessPoint(selectedAccessPoint: BrivoSelectedAccessPoint,
 
 ### BrivoSDKAccess 
 This module is used to unlock access point usage with internal stored credentials
-```
+```swift
 do {
     try BrivoSDKAccess.instance().unlockAccessPoint(passId: "PASS_ID",
                                                     accessPointId: "ACCESS_POINT_ID",
@@ -200,7 +182,7 @@ do {
 
 ### BrivoSDKAccess 
 This module is used to unlock access point usage with external credentials 
-```
+```swift
 do {
     let selectedAccessPoint = BrivoSelectedAccessPoint(accessPointId: ...,
                                                        userId: ...,
@@ -224,5 +206,8 @@ do {
 ### BrivoBLE
 This module manages the connection between an access point and a panel through bluetooth.
 
-### Issues
+## Issues
 If you run into any bugs or issues, feel free to post an [Issues](https://github.com/brivo-mobile-team/Brivo-Mobile-SDK/issues) to discuss.
+
+
+Build with ❤️ at Brivo
