@@ -233,7 +233,7 @@ do {
 This module manages the connection between an access point and a panel through bluetooth.
 
 ## Issues
-If you run into any bugs or issues, feel free to post an [Issues](https://github.com/brivo-mobile-team/Brivo-Mobile-SDK/issues) to discuss.
+If you run into any bugs or issues, feel free to post an [Issues](https://github.com/brivo-mobile-team/Brivo-Mobile-SDK/issues) to discuss further.
 
 
 
