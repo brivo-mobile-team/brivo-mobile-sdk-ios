@@ -28,12 +28,16 @@ The BrivoConfiguration object requires a set of parameters listed bellow:
  */
 ```
 #### BrivoSDK configuration usage 
-```
+```swift
 do {
-    let brivoConfiguration = try BrivoConfiguration(clientId: "CLIENT_ID",
-                                                    clientSecret: "CLIENT_SECRET",
-                                                    useSDKStorage: USE_SDK_STORAGE)
-    BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
+    let brivoConfiguration = try BrivoConfiguration(
+        clientId: "CLIENT_ID",
+        clientSecret: "CLIENT_SECRET",
+        useSDKStorage: USE_SDK_STORAGE
+    )
+    BrivoSDK.instance.configure(
+        brivoConfiguration: brivoConfiguration
+    )
 } catch let error {
     //Handle BrivoSDK configuration exception
 }
@@ -63,10 +67,12 @@ This module manages the connection between the application and the Brivo environ
  * onSuccess  Completion block that handles the success of operation
  * onFailure  Completion block that handles the failure of operation
  */
-func redeemPass(passId: String, 
-                passCode: String, 
-                onSuccess: RedeemPassOnSuccessType?, 
-                onFailure: OnFailureType?)
+func redeemPass(
+    passId: String,
+    passCode: String,
+    onSuccess: RedeemPassOnSuccessType?,
+    onFailure: OnFailureType?
+)
                                
 /**
  * Refreshing a Brivo Onair Pass.
@@ -77,9 +83,11 @@ func redeemPass(passId: String,
  * onSuccess   Completion block that handles the success of operation
  * onFailure   Completion block that handles the failure of operation
  */
-func refreshPass(brivoTokens: BrivoTokens,
-                 onSuccess: RefreshPassOnSuccessType?,
-                 onFailure: OnFailureType?)
+func refreshPass(
+    brivoTokens: BrivoTokens,
+    onSuccess: RefreshPassOnSuccessType?,
+    onFailure: OnFailureType?
+)
 
 /**
  * Retrieving the BrivoSDK locally stored passes.
