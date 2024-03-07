@@ -12,7 +12,7 @@ Add Brivo Mobile SDK as a dependency using Swift Package Manager.
    - In an app project or framework, in Xcode:
 
      - Select the menu: **File → Swift Packages → Add Package Dependency...**
-     - Enter this URL: `https://github.com/brivo-mobile-team/Brivo-Mobile-SDK`
+     - Enter this URL: `https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios`
 
 ### Usage
 Before using the Brivo Mobile SDK it is mandatory to configure (through instance) of BrivoSDK class with a BrivoConfiguration object
