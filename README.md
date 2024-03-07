@@ -210,4 +210,8 @@ This module manages the connection between an access point and a panel through b
 If you run into any bugs or issues, feel free to post an [Issues](https://github.com/brivo-mobile-team/Brivo-Mobile-SDK/issues) to discuss.
 
 
-Build with ❤️ at [<img src="brivo.png" width="60"/>](brivo.png)
+
+
+<p align="center">
+Made with ❤️ at <img src="brivo.png" width="60"/>
+</p>
