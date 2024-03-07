@@ -1,7 +1,7 @@
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbrivo-mobile-team%2FBrivo-Mobile-SDK%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/brivo-mobile-team/Brivo-Mobile-SDK)
 [![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbrivo-mobile-team%2FBrivo-Mobile-SDK%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/brivo-mobile-team/Brivo-Mobile-SDK)
 
-# Brivo Mobile SDK iOS
+# [<img src="brivo_logo.png" width="25"/>](brivo_logo.png) Brivo Mobile SDK iOS
 
 A set of reusable libraries, services and components for Swift iOS apps.
 ### Installation
@@ -210,4 +210,4 @@ This module manages the connection between an access point and a panel through b
 If you run into any bugs or issues, feel free to post an [Issues](https://github.com/brivo-mobile-team/Brivo-Mobile-SDK/issues) to discuss.
 
 
-Build with ❤️ at Brivo
+Build with ❤️ at [<img src="brivo.png" width="60"/>](brivo.png)
