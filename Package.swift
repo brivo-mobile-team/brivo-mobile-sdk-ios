@@ -9,43 +9,43 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "BrivoMobileSDK",
-            targets: ["BrivoFluid","BrivoAccess","BrivoNetworkCore","BrivoBLE","BrivoCore","BrivoLocalAuthentication","BrivoOnAir"]),
+            targets: ["BrivoAccess","BrivoNetworkCore","BrivoBLE","BrivoCore","BrivoLocalAuthentication","BrivoOnAir"]),
     ],
     targets: [
-        .binaryTarget(
-            name: "BrivoFluid",
-            url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoFluid.xcframework.zip",
-            checksum: "1ba7ea38735e19bcfbd38c2a416319f968b29e7e32bda2ef5e1f6c6df4a7d534"
-        ),
+//        .binaryTarget(
+//            name: "BrivoFluid",
+//            url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoFluid.xcframework.zip",
+//            checksum: "1ba7ea38735e19bcfbd38c2a416319f968b29e7e32bda2ef5e1f6c6df4a7d534"
+//        ),
         .binaryTarget(
             name: "BrivoAccess",
             url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoAccess.xcframework.zip",
-            checksum: "54f1ac33e44ece03fdb6c03f5636efdc98a46e2f953589ead4270eb123fe189c"
+            checksum: "13db7c5be38317b7ebfcd6edaad5aef6904c0faaa785d5cdf94cdccb03024d37"
         ),
         .binaryTarget(
             name: "BrivoBLE",
             url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoBLE.xcframework.zip",
-            checksum: "ea34e34d8af5370631da23eb731e9490824acd8e463af979fe56e52134f68b94"
+            checksum: "fe3db2a2bf5bf829f1bdccb9eff98ccae003fbbdf66f332e821ef96e030efd4d"
         ),
         .binaryTarget(
             name: "BrivoCore",
             url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoCore.xcframework.zip",
-            checksum: "e3d7b9879cc1ec5e960c51a988f87fc46e7038cdd55e99a389a5f8586d3cf982"
+            checksum: "d5ca1010bffa38ff21703c979580c4269e411567d69f2a30ccd72657a588dc41"
         ),
         .binaryTarget(
             name: "BrivoLocalAuthentication",
             url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoLocalAuthentication.xcframework.zip",
-            checksum: "3e38b46657fbc7f00a4478c57612242ab6bd68cdd290c1aa56683a9eb5119036"
+            checksum: "65a05b897a3ad75c4c1941ad5e21a2d1cf925dca146e96f9c27f22ad4a2188a1"
         ),
         .binaryTarget(
             name: "BrivoOnAir",
             url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoOnAir.xcframework.zip",
-            checksum: "461f8563430787a7e9801a7be145b729249db250b3817178d9977e157c8e9c71"
+            checksum: "fc1caca45c11a7c266396307989aa1dc58934006e023eb31ced547f5bffb23f5"
         ),
         .binaryTarget(
             name: "BrivoNetworkCore",
             url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoNetworkCore.xcframework.zip",
-            checksum: "89df80180b846cfa598220a4e73f03d183c4333c10f5a16199305225e2b3177e"
+            checksum: "c86f5947b3b39ebef203440b78b1563a73e6a0a0ade37c25fdb90a92d06ef9e6"
         ),
     ]
 )
