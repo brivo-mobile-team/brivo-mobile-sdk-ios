@@ -9,6 +9,38 @@
           "location" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS",
           "name" : "Brivo-Moblie-SDK-iOS"
         },
+        "path" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS/.build/artifacts/brivo-moblie-sdk-ios/BrivoAccess/BrivoAccess.xcframework",
+        "source" : {
+          "checksum" : "741d9b437c1838061eb724b33af51e758d7ed000695a9362dfadd670dd0b72cd",
+          "type" : "remote",
+          "url" : "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoAccess.xcframework.zip"
+        },
+        "targetName" : "BrivoAccess"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "brivo-moblie-sdk-ios",
+          "kind" : "root",
+          "location" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS",
+          "name" : "Brivo-Moblie-SDK-iOS"
+        },
+        "path" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS/.build/artifacts/brivo-moblie-sdk-ios/BrivoCore/BrivoCore.xcframework",
+        "source" : {
+          "checksum" : "efcf6a688f39b55ae11983b2bd389d0dc1b8a7d7d3efd6c65d47d015087ba43c",
+          "type" : "remote",
+          "url" : "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoCore.xcframework.zip"
+        },
+        "targetName" : "BrivoCore"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "brivo-moblie-sdk-ios",
+          "kind" : "root",
+          "location" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS",
+          "name" : "Brivo-Moblie-SDK-iOS"
+        },
         "path" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS/.build/artifacts/brivo-moblie-sdk-ios/BrivoLocalAuthentication/BrivoLocalAuthentication.xcframework",
         "source" : {
           "checksum" : "7fd55c9502352e0efdd5787cfcb412e1237054bc4befeb1b30f131c3ee464c07",
@@ -16,6 +48,22 @@
           "url" : "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoLocalAuthentication.xcframework.zip"
         },
         "targetName" : "BrivoLocalAuthentication"
+      },
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "brivo-moblie-sdk-ios",
+          "kind" : "root",
+          "location" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS",
+          "name" : "Brivo-Moblie-SDK-iOS"
+        },
+        "path" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS/.build/artifacts/brivo-moblie-sdk-ios/BrivoBLE/BrivoBLE.xcframework",
+        "source" : {
+          "checksum" : "4589178b5ed0263733705df5530ae7b2412e2c1c70010b552959213fd743b107",
+          "type" : "remote",
+          "url" : "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoBLE.xcframework.zip"
+        },
+        "targetName" : "BrivoBLE"
       },
       {
         "kind" : "xcframework",
@@ -48,54 +96,6 @@
           "url" : "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoOnAir.xcframework.zip"
         },
         "targetName" : "BrivoOnAir"
-      },
-      {
-        "kind" : "xcframework",
-        "packageRef" : {
-          "identity" : "brivo-moblie-sdk-ios",
-          "kind" : "root",
-          "location" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS",
-          "name" : "Brivo-Moblie-SDK-iOS"
-        },
-        "path" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS/.build/artifacts/brivo-moblie-sdk-ios/BrivoBLE/BrivoBLE.xcframework",
-        "source" : {
-          "checksum" : "4589178b5ed0263733705df5530ae7b2412e2c1c70010b552959213fd743b107",
-          "type" : "remote",
-          "url" : "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoBLE.xcframework.zip"
-        },
-        "targetName" : "BrivoBLE"
-      },
-      {
-        "kind" : "xcframework",
-        "packageRef" : {
-          "identity" : "brivo-moblie-sdk-ios",
-          "kind" : "root",
-          "location" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS",
-          "name" : "Brivo-Moblie-SDK-iOS"
-        },
-        "path" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS/.build/artifacts/brivo-moblie-sdk-ios/BrivoAccess/BrivoAccess.xcframework",
-        "source" : {
-          "checksum" : "741d9b437c1838061eb724b33af51e758d7ed000695a9362dfadd670dd0b72cd",
-          "type" : "remote",
-          "url" : "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoAccess.xcframework.zip"
-        },
-        "targetName" : "BrivoAccess"
-      },
-      {
-        "kind" : "xcframework",
-        "packageRef" : {
-          "identity" : "brivo-moblie-sdk-ios",
-          "kind" : "root",
-          "location" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS",
-          "name" : "Brivo-Moblie-SDK-iOS"
-        },
-        "path" : "/Users/thomas.prezioso/Desktop/Brivo-Moblie-SDK-iOS/.build/artifacts/brivo-moblie-sdk-ios/BrivoCore/BrivoCore.xcframework",
-        "source" : {
-          "checksum" : "efcf6a688f39b55ae11983b2bd389d0dc1b8a7d7d3efd6c65d47d015087ba43c",
-          "type" : "remote",
-          "url" : "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoCore.xcframework.zip"
-        },
-        "targetName" : "BrivoCore"
       }
     ],
     "dependencies" : [
