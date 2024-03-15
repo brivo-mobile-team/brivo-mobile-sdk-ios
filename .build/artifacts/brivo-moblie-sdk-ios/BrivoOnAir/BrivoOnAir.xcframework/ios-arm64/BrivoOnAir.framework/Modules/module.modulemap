@@ -1,0 +1,11 @@
+framework module BrivoOnAir {
+  umbrella header "BrivoOnair.h"
+  export *
+
+  module * { export * }
+}
+
+module BrivoOnAir.Swift {
+  header "BrivoOnAir-Swift.h"
+  requires objc
+}

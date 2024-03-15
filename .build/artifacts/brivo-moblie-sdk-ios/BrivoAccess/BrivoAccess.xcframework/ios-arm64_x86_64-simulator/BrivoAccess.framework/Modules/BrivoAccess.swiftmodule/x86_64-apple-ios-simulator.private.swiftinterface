@@ -1,0 +1,70 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BrivoAccess
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import BrivoBLE
+import BrivoCore
+import BrivoLocalAuthentication
+import BrivoOnAir
+import CoreBluetooth.CBManager
+import CoreBluetooth
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class BrivoSDKAccessErrors : ObjectiveC.NSObject {
+  @objc public static let unknownError: BrivoCore.BrivoError
+  @objc public static let notInitializedError: BrivoCore.BrivoError
+  @objc public static let notConfiguredForLocalStorageError: BrivoCore.BrivoError
+  @objc public static let noPassesFoundInLocalStorageError: BrivoCore.BrivoError
+  @objc public static let accessPointNotFoundInLocalStorageError: BrivoCore.BrivoError
+  @objc public static let passNotFoundInLocalStorageError: BrivoCore.BrivoError
+  @objc public static let missingBLECredentialError: BrivoCore.BrivoError
+  @objc public static let accessPointInvalidDoorType: BrivoCore.BrivoError
+  @objc public static let missingNetworkConnectionError: BrivoCore.BrivoError
+  @objc public static let missingReaderUUIDError: BrivoCore.BrivoError
+  @objc public static func brivoErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoSDKAccess : ObjectiveC.NSObject, BrivoAccess.IBrivoSDKAccess {
+  @objc public static func instance() -> BrivoAccess.BrivoSDKAccess
+  @objc public var onBluetoothStateUpdated: ((CoreBluetooth.CBManagerState) -> Swift.Void)? {
+    @objc get
+    @objc set
+  }
+  @objc public func turnOnCentral()
+  @objc public func getBLEState() -> CoreBluetooth.CBManagerState
+  @objc public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber?
+  @objc public func removeCompletionFor(id: Foundation.NSNumber)
+  @objc public func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoAccess.OnResultType?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc public func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc public func lockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onFailure: BrivoAccess.OnFailureType?, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc public func unlockNearestBLEAccessPoint(passes: [BrivoOnAir.BrivoOnairPass], onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc public func unlockNearestBLEAccessPoint(pass: BrivoOnAir.BrivoOnairPass, siteId: Swift.Int, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc public func unlockNearestBLEAccessPoint(onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc public func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String, onSuccess: BrivoAccess.ControlLockUnlockOnSuccessType?, onFailure: BrivoAccess.OnFailureType?)
+  @objc public func provideExternalCredentialsResponseToOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String, onSuccess: BrivoAccess.ControlLockUnlockOnSuccessType?, onFailure: BrivoAccess.OnFailureType?)
+  @objc deinit
+}
+public typealias ControlLockUnlockOnSuccessType = (Swift.String?) -> Swift.Void
+public typealias OnUnlockAccessPointSuccessType = () -> Swift.Void
+public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
+public typealias OnResultType = (BrivoCore.BrivoResult) -> Swift.Void
+@objc public protocol IBrivoSDKAccess {
+  @objc static func instance() -> BrivoAccess.BrivoSDKAccess
+  @objc func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoAccess.OnResultType?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc func lockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onFailure: BrivoAccess.OnFailureType?, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc func unlockNearestBLEAccessPoint(passes: [BrivoOnAir.BrivoOnairPass], onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc func unlockNearestBLEAccessPoint(pass: BrivoOnAir.BrivoOnairPass, siteId: Swift.Int, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc func unlockNearestBLEAccessPoint(onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String, onSuccess: BrivoAccess.ControlLockUnlockOnSuccessType?, onFailure: BrivoAccess.OnFailureType?)
+  @objc func turnOnCentral()
+  @objc func getBLEState() -> CoreBluetooth.CBManagerState
+  @objc func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber?
+  @objc func removeCompletionFor(id: Foundation.NSNumber)
+}
