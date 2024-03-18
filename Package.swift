@@ -9,14 +9,23 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "BrivoMobileSDK",
-            targets: ["BrivoAccess","BrivoNetworkCore","BrivoBLE","BrivoCore","BrivoLocalAuthentication","BrivoOnAir"]),
+            targets: [
+                "BrivoFluid",
+                "BrivoAccess",
+                "BrivoNetworkCore",
+                "BrivoBLE",
+                "BrivoCore",
+                "BrivoLocalAuthentication",
+                "BrivoOnAir"
+            ]
+        ),
     ],
     targets: [
-//        .binaryTarget(
-//            name: "BrivoFluid",
-//            url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoFluid.xcframework.zip",
-//            checksum: "1ba7ea38735e19bcfbd38c2a416319f968b29e7e32bda2ef5e1f6c6df4a7d534"
-//        ),
+        .binaryTarget(
+            name: "BrivoFluid",
+            url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoFluid.xcframework.zip",
+            checksum: "b693fa0160da4763af39defd42002fc93c22ef461bc872be0f6f577a0a7dde61"
+        ),
         .binaryTarget(
             name: "BrivoAccess",
             url: "https://github.com/brivo-mobile-team/brivo-mobile-frameworks/raw/main/BrivoAccess.xcframework.zip",
