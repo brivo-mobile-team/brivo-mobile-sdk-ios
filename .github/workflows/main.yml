@@ -19,4 +19,4 @@ jobs:
       run: |
         ./scripts/updateChecksum.sh ${{ github.event.inputs.newVersion }}
     - name: Create Pull Request
-      uses: brivo-mobile-sdk-ios/create-pull-request@v3
+      uses: peter-evans/create-pull-request@v3
