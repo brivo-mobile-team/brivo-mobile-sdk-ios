@@ -1,0 +1,22 @@
+name: Manual workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      newVersion:
+        description: 'New Version'
+        default: '1.0.0'
+        required: true
+
+jobs:
+
+  updateBinaryTarget:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Update Package.swift
+      run: |
+        ./scripts/updateChecksum.sh ${{ github.event.inputs.newVersion }}
+    - name: Create Pull Request
+      uses: brivo-mobile-sdk-ios/create-pull-request@v3
