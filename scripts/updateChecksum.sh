@@ -16,16 +16,13 @@ fi
 # take version (e.g. 1.0.0) as argument
 NEW_VERSION=$1
 # download new zip file
-curl -L -O https://eidinger.info/PLCrashReporterXCFrameworks/$NEW_VERSION/CrashReporter.xcframework.zip --silent
-# calculate new checksum
-NEW_CHECKSUM=$(swift package compute-checksum CrashReporter.xcframework.zip)
-# print out new shasum for convenience reasons
-echo "New checksum is $NEW_CHECKSUM"
+rm -rf brivo-mobile-frameworks
+git clone git@github.com:brivo-mobile-team/brivo-mobile-frameworks.git
+cd brivo-mobile-frameworks
+for FILE in *;
+do unzip $FILE
+; done
+find . -name \*.zip -delete
+cd ..
 # replace version information in package manifest
 sed -E -i '' 's/let version = ".+"/let version = "'$NEW_VERSION\"/ Package.swift
-# replace checksum information in package manifest
-sed -E -i '' 's/checksum: ".+"/checksum: "'$NEW_CHECKSUM\"/ Package.swift
-# print out package manifes for convenience reasons
-cat Package.swift
-# delete downloaded zip file
-rm CrashReporter.xcframework.zip
