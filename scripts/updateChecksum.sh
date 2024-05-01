@@ -17,7 +17,7 @@ fi
 NEW_VERSION=$1
 # download new zip file
 rm -rf brivo-mobile-frameworks
-git clone git@github.com:brivo-mobile-team/brivo-mobile-frameworks.git
+git clone https://github.com/brivo-mobile-team/brivo-mobile-frameworks.git
 cd brivo-mobile-frameworks
 for FILE in *;
 do unzip $FILE
