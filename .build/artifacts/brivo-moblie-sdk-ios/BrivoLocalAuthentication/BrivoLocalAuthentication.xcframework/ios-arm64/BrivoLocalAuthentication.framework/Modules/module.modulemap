@@ -1,4 +1,0 @@
-framework module BrivoLocalAuthentication {
-  header "BrivoLocalAuthentication-Swift.h"
-  requires objc
-}

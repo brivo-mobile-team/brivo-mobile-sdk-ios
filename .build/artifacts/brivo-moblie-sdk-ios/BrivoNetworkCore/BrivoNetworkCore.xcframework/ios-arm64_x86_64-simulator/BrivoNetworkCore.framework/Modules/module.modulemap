@@ -1,4 +1,0 @@
-framework module BrivoNetworkCore {
-  header "BrivoNetworkCore-Swift.h"
-  requires objc
-}
