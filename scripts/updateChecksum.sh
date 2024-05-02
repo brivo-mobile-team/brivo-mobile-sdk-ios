@@ -16,15 +16,14 @@ fi
 # take version (e.g. 1.0.0) as argument
 NEW_VERSION=$1
 # download new zip file
-rm -rf brivo-mobile-frameworks
-git clone https://github.com/brivo-mobile-team/brivo-mobile-frameworks.git
+git clone git@github.com:brivo-mobile-team/brivo-mobile-frameworks.git
 cd brivo-mobile-frameworks
 for FILE in *;
 do
-z=unzip $FILE
-mv $z ../Sources/BrivoMobileSDK
+unzip -o $FILE -d ../Sources/BrivoMobileSDK
 done
 find . -name \*.zip -delete
 cd ..
+rm -rf brivo-mobile-frameworks
 # replace version information in package manifest
 sed -E -i '' 's/let version = ".+"/let version = "'$NEW_VERSION\"/ Package.swift

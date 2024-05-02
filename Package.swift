@@ -24,32 +24,32 @@ let package = Package(
 
             .binaryTarget(
                 name: "BrivoAccess",
-                path: "./brivo-mobile-frameworks/BrivoAccess.xcframework"
+                path: "./Sources/BrivoMobileSDK/BrivoAccess.xcframework"
             ),
 
             .binaryTarget(
                 name: "BrivoBLE",
-                path: "./brivo-mobile-frameworks/BrivoBLE.xcframework"
+                path: "./Sources/BrivoMobileSDK/BrivoBLE.xcframework"
             ),
 
             .binaryTarget(
                 name: "BrivoCore",
-                path: "./brivo-mobile-frameworks/BrivoCore.xcframework"
+                path: "./Sources/BrivoMobileSDK/BrivoCore.xcframework"
             ),
 
             .binaryTarget(
                 name: "BrivoLocalAuthentication",
-                path: "./brivo-mobile-frameworks/BrivoLocalAuthentication.xcframework"
+                path: "./Sources/BrivoMobileSDK/BrivoLocalAuthentication.xcframework"
             ),
 
             .binaryTarget(
                 name: "BrivoOnAir",
-                path: "./brivo-mobile-frameworks/BrivoOnAir.xcframework"
+                path: "./Sources/BrivoMobileSDK/BrivoOnAir.xcframework"
             ),
 
             .binaryTarget(
                 name: "BrivoNetworkCore",
-                path: "./brivo-mobile-frameworks/BrivoNetworkCore.xcframework"
+                path: "./Sources/BrivoMobileSDK/BrivoNetworkCore.xcframework"
             ),
 
     ]
