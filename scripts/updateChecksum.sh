@@ -20,7 +20,10 @@ rm -rf brivo-mobile-frameworks
 git clone https://github.com/brivo-mobile-team/brivo-mobile-frameworks.git
 cd brivo-mobile-frameworks
 for FILE in *;
-do unzip $FILE; done
+do
+z=unzip $FILE
+mv $z ../Sources/BrivoMobileSDK
+done
 find . -name \*.zip -delete
 cd ..
 # replace version information in package manifest

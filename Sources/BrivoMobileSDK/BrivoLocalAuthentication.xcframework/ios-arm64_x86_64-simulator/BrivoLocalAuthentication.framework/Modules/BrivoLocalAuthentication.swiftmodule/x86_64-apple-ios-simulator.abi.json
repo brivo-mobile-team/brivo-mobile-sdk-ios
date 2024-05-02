@@ -1,0 +1,1349 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoLocalAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
+        "declKind": "Import",
+        "moduleName": "BrivoLocalAuthentication"
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoLocalAuthentication"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrivoSDKLocalAuthentication",
+        "printedName": "BrivoSDKLocalAuthentication",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "instance",
+            "printedName": "instance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKLocalAuthentication",
+                "printedName": "BrivoLocalAuthentication.BrivoSDKLocalAuthentication",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication(cpy)instance",
+            "mangledName": "$s24BrivoLocalAuthentication0a8SDKLocalC0C8instanceACvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoSDKLocalAuthentication",
+                    "printedName": "BrivoLocalAuthentication.BrivoSDKLocalAuthentication",
+                    "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication(cm)instance",
+                "mangledName": "$s24BrivoLocalAuthentication0a8SDKLocalC0C8instanceACvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "canAuthenticate",
+            "printedName": "canAuthenticate(onSucces:onFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((BrivoCore.BrivoError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoCore.BrivoError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoError",
+                        "printedName": "BrivoCore.BrivoError",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication(im)canAuthenticateOnSucces:onFailure:",
+            "mangledName": "$s24BrivoLocalAuthentication0a8SDKLocalC0C15canAuthenticate8onSucces0G7FailureyyycSg_y0A4Core0A5ErrorCcSgtF",
+            "moduleName": "BrivoLocalAuthentication",
+            "objc_name": "canAuthenticateOnSucces:onFailure:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate(onSucces:onFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((BrivoCore.BrivoError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoCore.BrivoError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoError",
+                        "printedName": "BrivoCore.BrivoError",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication(im)authenticateOnSucces:onFailure:",
+            "mangledName": "$s24BrivoLocalAuthentication0a8SDKLocalC0C12authenticate8onSucces0F7FailureyyycSg_y0A4Core0A5ErrorCcSgtF",
+            "moduleName": "BrivoLocalAuthentication",
+            "objc_name": "authenticateOnSucces:onFailure:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancelAuthentication",
+            "printedName": "cancelAuthentication()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication(im)cancelAuthentication",
+            "mangledName": "$s24BrivoLocalAuthentication0a8SDKLocalC0C06cancelC0yyF",
+            "moduleName": "BrivoLocalAuthentication",
+            "objc_name": "cancelAuthentication",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKLocalAuthentication",
+                "printedName": "BrivoLocalAuthentication.BrivoSDKLocalAuthentication",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication(im)init",
+            "mangledName": "$s24BrivoLocalAuthentication0a8SDKLocalC0CACycfc",
+            "moduleName": "BrivoLocalAuthentication",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication",
+        "mangledName": "$s24BrivoLocalAuthentication0a8SDKLocalC0C",
+        "moduleName": "BrivoLocalAuthentication",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "IBrivoSDKLocalAuthentication",
+            "printedName": "IBrivoSDKLocalAuthentication",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(pl)IBrivoSDKLocalAuthentication",
+            "mangledName": "$s24BrivoLocalAuthentication014IBrivoSDKLocalC0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoLocalAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoLocalAuthentication"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrivoLocalAuthenticationErrors",
+        "printedName": "BrivoLocalAuthenticationErrors",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknownError",
+            "printedName": "unknownError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)unknownError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC12unknownError0A4Core0aF0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)unknownError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC12unknownError0A4Core0aF0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "localHardwareUnavailableError",
+            "printedName": "localHardwareUnavailableError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)localHardwareUnavailableError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC29localHardwareUnavailableError0A4Core0aH0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)localHardwareUnavailableError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC29localHardwareUnavailableError0A4Core0aH0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timeOutError",
+            "printedName": "timeOutError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)timeOutError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC12timeOutError0A4Core0aG0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)timeOutError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC12timeOutError0A4Core0aG0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "localHardwareNotPresentError",
+            "printedName": "localHardwareNotPresentError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)localHardwareNotPresentError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC28localHardwareNotPresentError0A4Core0aI0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)localHardwareNotPresentError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC28localHardwareNotPresentError0A4Core0aI0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notEnroledError",
+            "printedName": "notEnroledError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)notEnroledError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC15notEnroledError0A4Core0aG0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)notEnroledError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC15notEnroledError0A4Core0aG0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contextNotSetError",
+            "printedName": "contextNotSetError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)contextNotSetError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC18contextNotSetError0A4Core0aH0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)contextNotSetError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC18contextNotSetError0A4Core0aH0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applicationCanceledError",
+            "printedName": "applicationCanceledError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)applicationCanceledError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC24applicationCanceledError0A4Core0aG0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)applicationCanceledError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC24applicationCanceledError0A4Core0aG0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "notInteractiveError",
+            "printedName": "notInteractiveError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)notInteractiveError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC19notInteractiveError0A4Core0aG0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)notInteractiveError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC19notInteractiveError0A4Core0aG0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "biometryLockoutError",
+            "printedName": "biometryLockoutError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cpy)biometryLockoutError",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC20biometryLockoutError0A4Core0aG0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(cm)biometryLockoutError",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC20biometryLockoutError0A4Core0aG0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoLocalAuthenticationErrors",
+                "printedName": "BrivoLocalAuthentication.BrivoLocalAuthenticationErrors",
+                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors(im)init",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsCACycfc",
+            "moduleName": "BrivoLocalAuthentication",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoLocalAuthenticationErrors",
+        "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC",
+        "moduleName": "BrivoLocalAuthentication",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoLocalAuthentication",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoLocalAuthentication"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IBrivoSDKLocalAuthentication",
+        "printedName": "IBrivoSDKLocalAuthentication",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "cancelAuthentication",
+            "printedName": "cancelAuthentication()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(pl)IBrivoSDKLocalAuthentication(im)cancelAuthentication",
+            "mangledName": "$s24BrivoLocalAuthentication014IBrivoSDKLocalC0P06cancelC0yyF",
+            "moduleName": "BrivoLocalAuthentication",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoLocalAuthentication.IBrivoSDKLocalAuthentication>",
+            "sugared_genericSig": "<Self where Self : BrivoLocalAuthentication.IBrivoSDKLocalAuthentication>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "canAuthenticate",
+            "printedName": "canAuthenticate(onSucces:onFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((BrivoCore.BrivoError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoCore.BrivoError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoError",
+                        "printedName": "BrivoCore.BrivoError",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(pl)IBrivoSDKLocalAuthentication(im)canAuthenticateOnSucces:onFailure:",
+            "mangledName": "$s24BrivoLocalAuthentication014IBrivoSDKLocalC0P15canAuthenticate8onSucces0H7FailureyyycSg_y0A4Core0A5ErrorCcSgtF",
+            "moduleName": "BrivoLocalAuthentication",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoLocalAuthentication.IBrivoSDKLocalAuthentication>",
+            "sugared_genericSig": "<Self where Self : BrivoLocalAuthentication.IBrivoSDKLocalAuthentication>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "authenticate",
+            "printedName": "authenticate(onSucces:onFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((BrivoCore.BrivoError) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoCore.BrivoError) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoError",
+                        "printedName": "BrivoCore.BrivoError",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@BrivoLocalAuthentication@objc(pl)IBrivoSDKLocalAuthentication(im)authenticateOnSucces:onFailure:",
+            "mangledName": "$s24BrivoLocalAuthentication014IBrivoSDKLocalC0P12authenticate8onSucces0G7FailureyyycSg_y0A4Core0A5ErrorCcSgtF",
+            "moduleName": "BrivoLocalAuthentication",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoLocalAuthentication.IBrivoSDKLocalAuthentication>",
+            "sugared_genericSig": "<Self where Self : BrivoLocalAuthentication.IBrivoSDKLocalAuthentication>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@BrivoLocalAuthentication@objc(pl)IBrivoSDKLocalAuthentication",
+        "mangledName": "$s24BrivoLocalAuthentication014IBrivoSDKLocalC0P",
+        "moduleName": "BrivoLocalAuthentication",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 783,
+      "length": 14,
+      "value": "\"Use Passcode\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 808,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 1339,
+      "length": 14,
+      "value": "\"Use Passcode\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 1364,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1539,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 1603,
+      "length": 30,
+      "value": "\"To access Configuration Menu\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 1644,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1940,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 250,
+      "length": 27,
+      "value": "\"BrivoLocalAuthentication.BrivoSDKLocalAuthentication\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 315,
+      "length": 5,
+      "value": "-4000"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 340,
+      "length": 21,
+      "value": "\"Incorrect Passcode.\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 446,
+      "length": 5,
+      "value": "-4001"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 471,
+      "length": 47,
+      "value": "\"Hardware unavailable for local authentication\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 586,
+      "length": 5,
+      "value": "-4002"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 611,
+      "length": 33,
+      "value": "\"Local authentication timed out.\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 728,
+      "length": 5,
+      "value": "-4003"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 753,
+      "length": 49,
+      "value": "\"Hardware doesn't exist for local authentication\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 873,
+      "length": 5,
+      "value": "-4004"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 898,
+      "length": 126,
+      "value": "\"Biometric or passcode verification is required to unlock this door. Please enable one of these security options to continue.\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1098,
+      "length": 5,
+      "value": "-4005"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1123,
+      "length": 42,
+      "value": "\"Context not set for local authentication\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1245,
+      "length": 5,
+      "value": "-4006"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1270,
+      "length": 45,
+      "value": "\"Authentication was cancelled by application\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1390,
+      "length": 5,
+      "value": "-4007"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1415,
+      "length": 55,
+      "value": "\"Authentication failed because interaction is disabled\""
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1546,
+      "length": 5,
+      "value": "-4008"
+    },
+    {
+      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 1571,
+      "length": 101,
+      "value": "\"Biometry is now locked because of too many failed attempts. Passcode is required to unlock biometry\""
+    }
+  ]
+}
