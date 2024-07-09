@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "1.0.1"
+let version = "1.20.0"
 let package = Package(
     name: "BrivoMobileSDK",
     products: [
