@@ -53,7 +53,7 @@ The BrivoSDKConfiguration object requires a set of parameters listed bellow:
  * brivoConfiguration  Brivo client id
  *                     Brivo client secret
  *                     Brivo SDK local storage management enabled
- *                     Brivo API defaults to EU region
+ *                     Brivo API region
  */
 ```
 #### BrivoSDK configuration usage 
