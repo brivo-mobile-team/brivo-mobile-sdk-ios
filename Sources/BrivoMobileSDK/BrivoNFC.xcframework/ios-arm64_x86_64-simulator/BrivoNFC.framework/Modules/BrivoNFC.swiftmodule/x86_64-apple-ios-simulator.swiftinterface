@@ -1,0 +1,138 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoNFC
+import BrivoCore
+import BrivoNetworkCore
+import BrivoOnAir
+import DeveloperToolsSupport
+import Foundation
+import PassKit
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum BrivoNFCRegion {
+  case eu
+  case us
+  public static func == (a: BrivoNFC.BrivoNFCRegion, b: BrivoNFC.BrivoNFCRegion) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc public class BrivoSDKNFC : ObjectiveC.NSObject, BrivoNFC.IBrivoSDKNFC {
+  public init(configuration: BrivoNFC.BrivoNFCConfiguration? = nil, region: BrivoNFC.BrivoNFCRegion = .us)
+  public func configure(with configuration: BrivoNFC.BrivoNFCConfiguration)
+  public func addNFCCredentialToWallet(from parentViewController: UIKit.UIViewController, pass: BrivoOnAir.BrivoOnairPass, delegate: any BrivoNFC.AddToWalletActivityDelegate)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoNFC.NFCAddToWalletStatus, any Swift.Error>
+  #endif
+  public func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass, completionHandler: @escaping (Swift.Result<BrivoNFC.NFCAddToWalletStatus, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func prepareUnlink(with token: Swift.String, userAccounts: [Any]) async -> Swift.Result<BrivoNFC.NFCUnlinkStatus, any Swift.Error>
+  #endif
+  public func prepareUnlink(with token: Swift.String, userAccounts: [Any], completionHandler: @escaping (Swift.Result<BrivoNFC.NFCUnlinkStatus, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func prepareUnlink(with token: Swift.String, for pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoNFC.NFCUnlinkStatus, any Swift.Error>
+  #endif
+  public func prepareUnlink(with token: Swift.String, for pass: BrivoOnAir.BrivoOnairPass, completionHandler: @escaping (Swift.Result<BrivoNFC.NFCUnlinkStatus, any Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+extension BrivoNFC.BrivoSDKNFC : PassKit.PKAddSecureElementPassViewControllerDelegate {
+  @objc dynamic public func addSecureElementPassViewController(_ controller: PassKit.PKAddSecureElementPassViewController, didFinishAddingSecureElementPasses passes: [PassKit.PKSecureElementPass]?, error: (any Swift.Error)?)
+}
+public enum BrivoNFCError : Swift.Error {
+  case walletProvisioning(_: BrivoNFC.WalletConfigurationError)
+  case nfcCredentialStatus(_: Swift.String?)
+  case addToWallet(_: Swift.String?)
+  case unlink(_: Swift.String?)
+  public var statusCode: Swift.Int {
+    get
+  }
+  public var errorDescription: Swift.String {
+    get
+  }
+}
+public enum WalletConfigurationError : Swift.Error, Swift.Equatable {
+  public enum PKConfigurationError : Swift.Equatable {
+    case deviceNotReady
+    case deviceNotSupported
+    case invalidConfiguration
+    case osVersionNotSupported
+    case unavailableError
+    case userCanceled
+    case unknownError
+    public func hash(into hasher: inout Swift.Hasher)
+    public static func == (a: BrivoNFC.WalletConfigurationError.PKConfigurationError, b: BrivoNFC.WalletConfigurationError.PKConfigurationError) -> Swift.Bool
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  case noConfiguration(reason: Swift.String)
+  case canAddSecureElementPassFailed(reason: Swift.String)
+  case noMetadataError(reason: Swift.String)
+  case missingImageError(reason: Swift.String)
+  case preparePushProvisioningFailed(reason: Swift.String)
+  case castingError(reason: Swift.String)
+  case walletConfigurationFailed(error: BrivoNFC.WalletConfigurationError.PKConfigurationError)
+  public var name: Swift.String {
+    get
+  }
+  public var failureReason: Swift.String {
+    get
+  }
+  public static func == (a: BrivoNFC.WalletConfigurationError, b: BrivoNFC.WalletConfigurationError) -> Swift.Bool
+}
+public enum NFCAddToWalletStatus : Swift.Equatable {
+  case alreadyAddedToWallet
+  case notEligibleForAddingToWallet
+  case canBeAddedToWallet
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrivoNFC.NFCAddToWalletStatus, b: BrivoNFC.NFCAddToWalletStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol AddToWalletActivityDelegate : AnyObject {
+  func onError(error: BrivoNFC.BrivoNFCError)
+  func onSuccess(passes: [PassKit.PKSecureElementPass]?)
+}
+public protocol IBrivoSDKNFC {
+  func configure(with configuration: BrivoNFC.BrivoNFCConfiguration)
+  func prepareUnlink(with token: Swift.String, userAccounts: [Any], completionHandler: @escaping (Swift.Result<BrivoNFC.NFCUnlinkStatus, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  func prepareUnlink(with token: Swift.String, userAccounts: [Any]) async -> Swift.Result<BrivoNFC.NFCUnlinkStatus, any Swift.Error>
+  #endif
+  func prepareUnlink(with token: Swift.String, for pass: BrivoOnAir.BrivoOnairPass, completionHandler: @escaping (Swift.Result<BrivoNFC.NFCUnlinkStatus, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  func prepareUnlink(with token: Swift.String, for pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoNFC.NFCUnlinkStatus, any Swift.Error>
+  #endif
+  func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass, completionHandler: @escaping (Swift.Result<BrivoNFC.NFCAddToWalletStatus, any Swift.Error>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoNFC.NFCAddToWalletStatus, any Swift.Error>
+  #endif
+  func addNFCCredentialToWallet(from parentViewController: UIKit.UIViewController, pass: BrivoOnAir.BrivoOnairPass, delegate: any BrivoNFC.AddToWalletActivityDelegate)
+}
+public enum NFCUnlinkStatus : Swift.Equatable {
+  case successfullyUnlinked
+  case nothingToUnlink
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrivoNFC.NFCUnlinkStatus, b: BrivoNFC.NFCUnlinkStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class BrivoNFCConfiguration {
+  final public let bentoBaseURL: Swift.String
+  final public let walletCardImage: UIKit.UIImage?
+  final public let serverEnvironmentIdentifier: Swift.String
+  public init(bentoBaseURL: Swift.String, walletCardImage: UIKit.UIImage? = nil, serverEnvironmentIdentifier: Swift.String)
+  @objc deinit
+}
+extension BrivoNFC.BrivoNFCRegion : Swift.Equatable {}
+extension BrivoNFC.BrivoNFCRegion : Swift.Hashable {}
+extension BrivoNFC.WalletConfigurationError.PKConfigurationError : Swift.Hashable {}
+extension BrivoNFC.NFCAddToWalletStatus : Swift.Hashable {}
+extension BrivoNFC.NFCUnlinkStatus : Swift.Hashable {}

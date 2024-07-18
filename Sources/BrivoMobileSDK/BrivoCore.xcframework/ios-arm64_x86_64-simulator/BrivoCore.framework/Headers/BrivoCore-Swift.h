@@ -408,8 +408,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoSDK * _
 + (BrivoSDK * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
+/// Configure the Brivo SDK.
+/// \param brivoConfiguration Brivo configuration.
+///
 - (void)configureWithBrivoConfiguration:(BrivoSDKConfiguration * _Nonnull)brivoConfiguration;
+/// Returns the Brivo SDK configuration.
 - (BrivoSDKConfiguration * _Nullable)getBrivoConfigurationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+/// Returns the device ID.
+/// It also persists the device ID first time it is returned so that succesive calls get the same value.
 - (NSString * _Nonnull)getDeviceId SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -430,6 +436,31 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @protocol RefreshTokenDelegate;
 @class SessionRequestTimeout;
 
+/// Defines the configuration object needed by the BrivoSDK in order to function properly.
+/// \param clientId Brivo client id
+///
+/// \param clientSecret Brivo Client secret
+///
+/// \param useSDKStorage if the SDK should use internal stoage for the passes
+///
+/// \param useEURegion if the SDK should point to the eu version of the endpoint in the case apiUrl or authUrl are not provided
+///
+/// \param shouldPromptForContinuation if the SDK should promt for continuation
+///
+/// \param authUrl the Brivo authentication server base url
+///
+/// \param apiUrl the Brivo OnAir API base url
+///
+/// \param smartHomeUrl the Brivo Smart Home base url
+///
+/// \param smartHomeUrlV1 the Brivo Smart Home base url v1
+///
+/// \param smartHomeUrlV4 the Brivo Smart Home base url v4
+///
+/// \param refreshTokenDelegate a refresh token delegate that can handle token refresh in case on HTTP 401 unauthorised
+///
+/// \param sessionRequestTimeout the HTTP session request timeout
+///
 SWIFT_CLASS("_TtC9BrivoCore21BrivoSDKConfiguration")
 @interface BrivoSDKConfiguration : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull clientId;
@@ -914,8 +945,14 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoSDK * _
 + (BrivoSDK * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
 + (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
+/// Configure the Brivo SDK.
+/// \param brivoConfiguration Brivo configuration.
+///
 - (void)configureWithBrivoConfiguration:(BrivoSDKConfiguration * _Nonnull)brivoConfiguration;
+/// Returns the Brivo SDK configuration.
 - (BrivoSDKConfiguration * _Nullable)getBrivoConfigurationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+/// Returns the device ID.
+/// It also persists the device ID first time it is returned so that succesive calls get the same value.
 - (NSString * _Nonnull)getDeviceId SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -936,6 +973,31 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @protocol RefreshTokenDelegate;
 @class SessionRequestTimeout;
 
+/// Defines the configuration object needed by the BrivoSDK in order to function properly.
+/// \param clientId Brivo client id
+///
+/// \param clientSecret Brivo Client secret
+///
+/// \param useSDKStorage if the SDK should use internal stoage for the passes
+///
+/// \param useEURegion if the SDK should point to the eu version of the endpoint in the case apiUrl or authUrl are not provided
+///
+/// \param shouldPromptForContinuation if the SDK should promt for continuation
+///
+/// \param authUrl the Brivo authentication server base url
+///
+/// \param apiUrl the Brivo OnAir API base url
+///
+/// \param smartHomeUrl the Brivo Smart Home base url
+///
+/// \param smartHomeUrlV1 the Brivo Smart Home base url v1
+///
+/// \param smartHomeUrlV4 the Brivo Smart Home base url v4
+///
+/// \param refreshTokenDelegate a refresh token delegate that can handle token refresh in case on HTTP 401 unauthorised
+///
+/// \param sessionRequestTimeout the HTTP session request timeout
+///
 SWIFT_CLASS("_TtC9BrivoCore21BrivoSDKConfiguration")
 @interface BrivoSDKConfiguration : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull clientId;

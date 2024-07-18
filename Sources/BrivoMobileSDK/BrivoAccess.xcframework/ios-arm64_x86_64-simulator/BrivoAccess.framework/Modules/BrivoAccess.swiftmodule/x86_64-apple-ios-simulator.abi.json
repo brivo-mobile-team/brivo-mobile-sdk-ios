@@ -2543,6 +2543,7 @@
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2567,6 +2568,7 @@
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2592,6 +2594,7 @@
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2643,6 +2646,7 @@
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2673,6 +2677,7 @@
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
+              "RawDocComment",
               "ObjC"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2695,175 +2700,175 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 25,
       "value": "\"Missing pass credential\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 24,
       "value": "\"Missing bleCredentials\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 25,
       "value": "\"Missing pass credential\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 24,
       "value": "\"Missing bleCredentials\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 38,
       "value": "\"EE8732B3-2D52-409B-9084-70AD31F6C790\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 543,
       "length": 5,
       "value": "-1000"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 568,
       "length": 16,
       "value": "\"Unknown error.\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 659,
       "length": 5,
       "value": "-1001"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 684,
       "length": 42,
       "value": "\"BrivoSDK init failed. SDK not configured\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 815,
       "length": 5,
       "value": "-1002"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 840,
       "length": 41,
       "value": "\"SDK not configured to use local storage\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 969,
       "length": 5,
       "value": "-1003"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 994,
       "length": 38,
       "value": "\"There are no passes on local storage\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1126,
       "length": 5,
       "value": "-1004"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1151,
       "length": 40,
       "value": "\"Acess point not found in local storage\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1278,
       "length": 5,
       "value": "-1005"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1303,
       "length": 33,
       "value": "\"Pass not found in local storage\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1417,
       "length": 5,
       "value": "-1006"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1442,
       "length": 24,
       "value": "\"Missing ble credential\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1548,
       "length": 5,
       "value": "-1007"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1573,
       "length": 32,
       "value": "\"Access point invalid door type\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1690,
       "length": 5,
       "value": "-1008"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1715,
       "length": 29,
       "value": "\"Missing internet connection\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1822,
       "length": 5,
       "value": "-1009"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1847,
       "length": 21,

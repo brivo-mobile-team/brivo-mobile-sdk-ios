@@ -5044,6 +5044,98 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "relockDelay",
+            "printedName": "relockDelay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@BrivoOnAir@objc(cs)BrivoControlLockUnlockRequestBody(py)relockDelay",
+            "mangledName": "$s10BrivoOnAir0A28ControlLockUnlockRequestBodyC11relockDelaySivp",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoControlLockUnlockRequestBody(im)relockDelay",
+                "mangledName": "$s10BrivoOnAir0A28ControlLockUnlockRequestBodyC11relockDelaySivg",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoControlLockUnlockRequestBody(im)setRelockDelay:",
+                "mangledName": "$s10BrivoOnAir0A28ControlLockUnlockRequestBodyC11relockDelaySivs",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir0A28ControlLockUnlockRequestBodyC11relockDelaySivM",
+                "mangledName": "$s10BrivoOnAir0A28ControlLockUnlockRequestBodyC11relockDelaySivM",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "encode",
             "printedName": "encode()",
@@ -7258,6 +7350,68 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllegionSDKTokens",
+            "printedName": "getAllegionSDKTokens(accessToken:onSuccess:onFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoOnAir.AllegionSDKTokens) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AllegionSDKTokens",
+                    "printedName": "BrivoOnAir.AllegionSDKTokens",
+                    "usr": "s:10BrivoOnAir17AllegionSDKTokensV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.BrivoError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BrivoOnAir0a5SDKOnC0C20getAllegionSDKTokens11accessToken9onSuccess0J7FailureySS_yAA0fG0Vcy0A4Core0A5ErrorCctF",
+            "mangledName": "$s10BrivoOnAir0a5SDKOnC0C20getAllegionSDKTokens11accessToken9onSuccess0J7FailureySS_yAA0fG0Vcy0A4Core0A5ErrorCctF",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -7341,6 +7495,267 @@
         "moduleName": "BrivoOnAir",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoOnAir",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AllegionSDKTokens",
+        "printedName": "AllegionSDKTokens",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "idToken",
+            "printedName": "idToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10BrivoOnAir17AllegionSDKTokensV7idTokenSSvp",
+            "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV7idTokenSSvp",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir17AllegionSDKTokensV7idTokenSSvg",
+                "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV7idTokenSSvg",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir17AllegionSDKTokensV7idTokenSSvs",
+                "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV7idTokenSSvs",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir17AllegionSDKTokensV7idTokenSSvM",
+                "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV7idTokenSSvM",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessToken",
+            "printedName": "accessToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10BrivoOnAir17AllegionSDKTokensV11accessTokenSSvp",
+            "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV11accessTokenSSvp",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir17AllegionSDKTokensV11accessTokenSSvg",
+                "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV11accessTokenSSvg",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir17AllegionSDKTokensV11accessTokenSSvs",
+                "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV11accessTokenSSvs",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir17AllegionSDKTokensV11accessTokenSSvM",
+                "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV11accessTokenSSvM",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AllegionSDKTokens",
+                "printedName": "BrivoOnAir.AllegionSDKTokens",
+                "usr": "s:10BrivoOnAir17AllegionSDKTokensV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10BrivoOnAir17AllegionSDKTokensV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BrivoOnAir",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BrivoOnAir17AllegionSDKTokensV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BrivoOnAir",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10BrivoOnAir17AllegionSDKTokensV",
+        "mangledName": "$s10BrivoOnAir17AllegionSDKTokensV",
+        "moduleName": "BrivoOnAir",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -19211,6 +19626,9 @@
             "mangledName": "$s10BrivoOnAir011IBrivoSDKOnC0P05brivobC12HTTPSRequest0A11NetworkCore0aG0CSgvp",
             "moduleName": "BrivoOnAir",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -19289,6 +19707,9 @@
             "mangledName": "$s10BrivoOnAir011IBrivoSDKOnC0P20onRefreshTokenFailedy0A4Core0A5ErrorCSgcSgvp",
             "moduleName": "BrivoOnAir",
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -21050,6 +21471,72 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getAllegionSDKTokens",
+            "printedName": "getAllegionSDKTokens(accessToken:onSuccess:onFailure:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoOnAir.AllegionSDKTokens) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AllegionSDKTokens",
+                    "printedName": "BrivoOnAir.AllegionSDKTokens",
+                    "usr": "s:10BrivoOnAir17AllegionSDKTokensV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.BrivoError) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BrivoOnAir011IBrivoSDKOnC0P20getAllegionSDKTokens11accessToken9onSuccess0K7FailureySS_yAA0gH0Vcy0A4Core0A5ErrorCctF",
+            "mangledName": "$s10BrivoOnAir011IBrivoSDKOnC0P20getAllegionSDKTokens11accessToken9onSuccess0K7FailureySS_yAA0gH0Vcy0A4Core0A5ErrorCctF",
+            "moduleName": "BrivoOnAir",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoOnAir.IBrivoSDKOnAir>",
+            "sugared_genericSig": "<Self where Self : BrivoOnAir.IBrivoSDKOnAir>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -22001,546 +22488,539 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 321,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 321,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 541,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 579,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 541,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 579,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 828,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 877,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 828,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 877,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 2182,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 2221,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 2182,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 2221,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockConfigSaveResponse.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockConfigSaveResponse.swift",
       "kind": "StringLiteral",
       "offset": 189,
       "length": 34,
       "value": "\"BrivoOnAir.BrivoControlLockConfigSaveResponse\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockUnlockRequestBody.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockUnlockRequestBody.swift",
       "kind": "StringLiteral",
       "offset": 196,
       "length": 33,
       "value": "\"BrivoOnAir.BrivoControlLockUnlockRequestBody\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 523,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 560,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 599,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 6349,
+      "offset": 6376,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 6524,
+      "offset": 6551,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 6623,
+      "offset": 6650,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 7160,
+      "offset": 7187,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 7180,
+      "offset": 7207,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 7527,
+      "offset": 7554,
       "length": 22,
       "value": "\"name__eq:\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 7548,
+      "offset": 7575,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 7629,
+      "offset": 7656,
       "length": 25,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 7653,
+      "offset": 7680,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 8618,
+      "offset": 8672,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 8820,
+      "offset": 8874,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 8865,
+      "offset": 8919,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 9981,
+      "offset": 10035,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 12322,
+      "offset": 12403,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 12518,
+      "offset": 12599,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 12624,
+      "offset": 12705,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13084,
+      "offset": 13165,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13100,
+      "offset": 13181,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13555,
+      "offset": 13636,
       "length": 29,
       "value": "\"name__eq:\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13583,
+      "offset": 13664,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13664,
+      "offset": 13745,
       "length": 25,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13688,
+      "offset": 13769,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13906,
+      "offset": 14014,
       "length": 68,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13949,
+      "offset": 14057,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13959,
+      "offset": 14067,
       "length": 1,
       "value": "\"\/access-points\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 14700,
+      "offset": 14808,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 14904,
+      "offset": 15012,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 14949,
+      "offset": 15057,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 16129,
+      "offset": 16237,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
-      "kind": "StringLiteral",
-      "offset": 46625,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "BooleanLiteral",
       "offset": 949,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "IntegerLiteral",
       "offset": 1125,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "StringLiteral",
       "offset": 231,
       "length": 24,
       "value": "\"BrivoOnAir.BrivoSelectedAccessPoint\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "IntegerLiteral",
       "offset": 385,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "StringLiteral",
       "offset": 3621,
       "length": 25,
       "value": "\"BrivoOnAir.BrivoOnairPassCredentials\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 4231,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 8992,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 9433,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "StringLiteral",
       "offset": 8711,
       "length": 16,
       "value": "\"BrivoOnAir.BrivoAccessPoint\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockUnlockStatusRequestBody.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockUnlockStatusRequestBody.swift",
       "kind": "StringLiteral",
       "offset": 207,
       "length": 39,
       "value": "\"BrivoOnAir.BrivoControlLockUnlockStatusRequestBody\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 215,
       "length": 6,
       "value": "\"door\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 10,
       "value": "\"elevator\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 19,
       "value": "\"offline door lock\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 323,
       "length": 17,
       "value": "\"salto door lock\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 20,
       "value": "\"allegion door lock\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 22,
       "value": "\"assa abloy door lock\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 462,
       "length": 18,
       "value": "\"door keypad v1.0\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 215,
       "length": 6,
       "value": "\"door\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 10,
       "value": "\"elevator\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 19,
       "value": "\"offline door lock\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 323,
       "length": 17,
       "value": "\"salto door lock\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 370,
       "length": 20,
       "value": "\"allegion door lock\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 420,
       "length": 22,
       "value": "\"assa abloy door lock\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 462,
       "length": 18,
       "value": "\"door keypad v1.0\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 563,
       "length": 57,
       "value": "\"A Brivo Mobile Pass was not found for the current user.\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 691,
       "length": 17,
       "value": "\"deviceObjectIds\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 691,
       "length": 17,
       "value": "\"deviceObjectIds\""
     },
     {
-      "filePath": "\/Users\/thomas.prezioso\/Brivo\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnAirCredentials.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnAirCredentials.swift",
       "kind": "StringLiteral",
       "offset": 190,
       "length": 21,

@@ -118,6 +118,7 @@ public enum BrivoNetworkCoreEndPoint : Swift.String {
   case accesses
   case readerCommands
   case setLevel
+  case allegionTokens
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -139,6 +140,7 @@ public enum BSHThermostatModes : Swift.String {
 public struct BrivoOnAirHeaderFields {
   public func getDefaultAuthHeaderFields() -> [Swift.String : Swift.String]
   public static let defaultAPIHeaderFields: [Swift.String : Swift.String]
+  public static func defaultAPIAuthHeaderFields(accessToken: Swift.String? = nil) -> [Swift.String : Swift.String]
   public init(authValue: Swift.String)
 }
 public struct SmartHomeHeaderFields {

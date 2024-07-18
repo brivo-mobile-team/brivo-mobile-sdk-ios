@@ -81,5 +81,6 @@ public struct BrivoBLEErrors {
   public static let DATA_TRANSFER_CHRC_UUID: [Swift.String]
   public static let MAXIMUM_TRANSFER_UNIT: Swift.Int
   public static let SCANNING_TIME: Swift.Double
+  public static let ALLEGION_RELOCK_DELAY: Swift.Int
   @objc deinit
 }

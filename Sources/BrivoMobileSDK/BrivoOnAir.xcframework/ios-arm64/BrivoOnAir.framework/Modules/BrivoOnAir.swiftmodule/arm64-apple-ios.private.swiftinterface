@@ -90,6 +90,7 @@ public struct BrivoReaderCommand : Swift.Codable {
   @objc public var providerTypeId: Swift.String
   @objc public var deviceModelId: Swift.String
   @objc public var bleChallenge: Swift.String
+  @objc public var relockDelay: Swift.Int
   @objc public func encode() -> Foundation.Data?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
@@ -123,7 +124,14 @@ public struct BrivoReaderCommand : Swift.Codable {
   @objc public func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.CurrentAdministratorOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   public func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String], onSuccess: BrivoOnAir.OnGetReaderCommandCompletionType?, onFailure: BrivoOnAir.OnFailureType?)
   @objc public func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
+  public func getAllegionSDKTokens(accessToken: Swift.String, onSuccess: @escaping BrivoOnAir.OnGetAllegionSDKTokensSuccessType, onFailure: @escaping BrivoOnAir.OnFailureType)
   @objc deinit
+}
+public struct AllegionSDKTokens : Swift.Codable {
+  public var idToken: Swift.String
+  public var accessToken: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class BrivoOnAirAdministrator : ObjectiveC.NSObject, Swift.Codable {
   @objc public var id: Swift.Int
@@ -318,6 +326,7 @@ public typealias OnRefreshTokenFailureType = (BrivoCore.BrivoError?) -> Swift.Vo
 public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
 public typealias OnGetReaderCommandCompletionType = ([BrivoOnAir.BrivoReaderCommand]) -> Swift.Void
 public typealias OnSuccessType = () -> Swift.Void
+public typealias OnGetAllegionSDKTokensSuccessType = (BrivoOnAir.AllegionSDKTokens) -> Swift.Void
 public protocol IBrivoSDKOnAir {
   var brivoOnAirHTTPSRequest: BrivoNetworkCore.BrivoHTTPSRequest? { get }
   var onRefreshTokenFailed: BrivoOnAir.OnRefreshTokenFailureType? { get set }
@@ -338,6 +347,7 @@ public protocol IBrivoSDKOnAir {
   func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.CurrentAdministratorOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String], onSuccess: BrivoOnAir.OnGetReaderCommandCompletionType?, onFailure: BrivoOnAir.OnFailureType?)
   func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
+  func getAllegionSDKTokens(accessToken: Swift.String, onSuccess: @escaping BrivoOnAir.OnGetAllegionSDKTokensSuccessType, onFailure: @escaping BrivoOnAir.OnFailureType)
 }
 public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   case wavelynxDoor

@@ -412,10 +412,35 @@ SWIFT_PROTOCOL("_TtP11BrivoAccess15IBrivoSDKAccess_")
 /// \param cancellationSignal can be used to cancel the unlocking process
 ///
 - (void)unlockNearestBLEAccessPointOnResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
+/// Requests external credentials from On Air system.
+/// \param tokens the brivo tokens
+///
+/// \param accessPointId the id associated with the accesspoint
+///
+/// \param requestData the request data
+///
+/// \param onSuccess completion block that handles success
+///
+/// \param onFailure completion block that handles  failure
+///
 - (void)requestExternalCredentialsFromOnAirWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId requestData:(NSString * _Nonnull)requestData onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
+/// Turns on the BLE scanning.
 - (void)turnOnCentral;
+/// Returns the Bluetooth state..
+///
+/// returns:
+/// the BLE state
 - (CBManagerState)getBLEState SWIFT_WARN_UNUSED_RESULT;
+/// Notifies using a completion then the BLE state changes.
+/// \param completion the completion
+///
+///
+/// returns:
+/// the completion identifier
 - (NSNumber * _Nullable)onBleChangedWithCompletion:(void (^ _Nonnull)(CBManagerState))completion SWIFT_WARN_UNUSED_RESULT;
+/// Removes a completion handler ID from the completion notifications.
+/// \param id the completion hadler id
+///
 - (void)removeCompletionForId:(NSNumber * _Nonnull)id;
 @end
 
@@ -891,10 +916,35 @@ SWIFT_PROTOCOL("_TtP11BrivoAccess15IBrivoSDKAccess_")
 /// \param cancellationSignal can be used to cancel the unlocking process
 ///
 - (void)unlockNearestBLEAccessPointOnResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
+/// Requests external credentials from On Air system.
+/// \param tokens the brivo tokens
+///
+/// \param accessPointId the id associated with the accesspoint
+///
+/// \param requestData the request data
+///
+/// \param onSuccess completion block that handles success
+///
+/// \param onFailure completion block that handles  failure
+///
 - (void)requestExternalCredentialsFromOnAirWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId requestData:(NSString * _Nonnull)requestData onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
+/// Turns on the BLE scanning.
 - (void)turnOnCentral;
+/// Returns the Bluetooth state..
+///
+/// returns:
+/// the BLE state
 - (CBManagerState)getBLEState SWIFT_WARN_UNUSED_RESULT;
+/// Notifies using a completion then the BLE state changes.
+/// \param completion the completion
+///
+///
+/// returns:
+/// the completion identifier
 - (NSNumber * _Nullable)onBleChangedWithCompletion:(void (^ _Nonnull)(CBManagerState))completion SWIFT_WARN_UNUSED_RESULT;
+/// Removes a completion handler ID from the completion notifications.
+/// \param id the completion hadler id
+///
 - (void)removeCompletionForId:(NSNumber * _Nonnull)id;
 @end
 

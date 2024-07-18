@@ -326,8 +326,19 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError *
 
 SWIFT_PROTOCOL("_TtP24BrivoLocalAuthentication28IBrivoSDKLocalAuthentication_")
 @protocol IBrivoSDKLocalAuthentication
+/// Cancels an on going authentication process.
 - (void)cancelAuthentication;
+/// Checks if a local authentication can be performed.
+/// \param onSuccess completion block that handles success
+///
+/// \param onFailure completion block that handles failure
+///
 - (void)canAuthenticateOnSucces:(void (^ _Nullable)(void))onSucces onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
+/// Performs the local authentication on the device.
+/// \param onSuccess completion block that handles success
+///
+/// \param onFailure completion block that handles failure
+///
 - (void)authenticateOnSucces:(void (^ _Nullable)(void))onSucces onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
 @end
 

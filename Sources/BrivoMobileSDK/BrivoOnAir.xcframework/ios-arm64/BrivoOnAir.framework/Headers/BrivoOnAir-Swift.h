@@ -381,6 +381,7 @@ SWIFT_CLASS("_TtC10BrivoOnAir33BrivoControlLockUnlockRequestBody")
 @property (nonatomic, copy) NSString * _Nonnull providerTypeId;
 @property (nonatomic, copy) NSString * _Nonnull deviceModelId;
 @property (nonatomic, copy) NSString * _Nonnull bleChallenge;
+@property (nonatomic) NSInteger relockDelay;
 - (NSData * _Nullable)encode SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -462,12 +463,12 @@ SWIFT_CLASS("_TtC10BrivoOnAir14BrivoOnairPass")
 
 
 @interface BrivoOnairPass (SWIFT_EXTENSION(BrivoOnAir))
-@property (nonatomic, readonly, copy) NSString * _Nullable asJsonString;
+@property (nonatomic, readonly, copy) NSString * _Nullable passId;
 @end
 
 
 @interface BrivoOnairPass (SWIFT_EXTENSION(BrivoOnAir))
-@property (nonatomic, readonly, copy) NSString * _Nullable passId;
+@property (nonatomic, readonly, copy) NSString * _Nullable asJsonString;
 @end
 
 @class BrivoTokens;
@@ -508,7 +509,6 @@ SWIFT_CLASS("_TtC10BrivoOnAir13BrivoSDKOnAir")
 - (void)getCurrentAdministratorWithTokens:(BrivoTokens * _Nonnull)tokens onSuccess:(void (^ _Nullable)(BrivoOnAirAdministrator * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
 - (void)engageReaderCommandWithTokens:(BrivoTokens * _Nonnull)tokens readerId:(NSString * _Nonnull)readerId passId:(NSString * _Nonnull)passId option:(NSString * _Nonnull)option onSuccess:(void (^ _Nullable)(void))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
 @end
-
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir19BrivoSDKOnAirHelper")
