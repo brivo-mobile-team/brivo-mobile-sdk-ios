@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		PdOx8gfWb1xDfa5iSf+FTgcTvQY=
+		Oid3bLAC1tsGp9kiEjhqa4+JVxM=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AtYtl8UE7VAY462LVjJytZHBGe0=
+		WpDYBHlnQVPjfV1rJaUpfxAVd9w=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		PdOx8gfWb1xDfa5iSf+FTgcTvQY=
+		Oid3bLAC1tsGp9kiEjhqa4+JVxM=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		20GJUhE2h+Q3lFTsu2d4KI2SJhE=
+		epyqJRC7R0pZNTbgm9NfrxCgg/E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -70,7 +70,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ajZdi2JoW8zBst3PiG/aYzFB6oaeXAj3nW0ZEqJiU+0=
+			VmjRvbzrarhoh46qMIbBNYyaCCnOhClGfMExlsA9jl8=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -98,14 +98,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wpnCVzNpee+/FLHjB5I8O96RgKdDbnDb3z73s/vBvCE=
+			uapMsixrpz7yBDQNYX2dvSUlVFRN1rkEhJJL5y7iejM=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ajZdi2JoW8zBst3PiG/aYzFB6oaeXAj3nW0ZEqJiU+0=
+			VmjRvbzrarhoh46qMIbBNYyaCCnOhClGfMExlsA9jl8=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vcEOOGQj0Aidb5QTqqshK5n5TlDykE05NCAxVN8iHVg=
+			k6OfSvR6559iXJRMVyEksyBBieF+fJ59Y6dk40ku4U4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
