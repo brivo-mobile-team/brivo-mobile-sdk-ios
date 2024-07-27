@@ -37,7 +37,7 @@ struct BrivoPassesView: View {
                             }
                         } header: {
                             VStack(alignment: .leading) {
-                                Text("\(pass.accountName ?? "")")
+                                Text("\(pass.accountName ?? "")").accessibilityIdentifier(AccessibilityIds.accountNameTextView)
                                 Text("Account ID: \(pass.accountId)")
                                 Text("\(pass.firstName ?? "") \(pass.lastName ?? "")")
                                 Text("Pass ID: \(pass.passId ?? "")")
@@ -56,7 +56,7 @@ struct BrivoPassesView: View {
                     Button {
                         stateModel.isShowingAddSheet.toggle()
                     } label: {
-                        Image(systemName: "plus")
+                        Image(systemName: "plus").accessibilityIdentifier(AccessibilityIds.navigationPlusButton)
                     }
                 }
                 ToolbarItem(placement: .topBarLeading) {
@@ -76,10 +76,12 @@ struct BrivoPassesView: View {
                         TextField("Pass ID", text: $stateModel.passID, prompt: Text("Pass ID"))
                             .autocapitalization(.none)
                             .autocorrectionDisabled()
+                            .accessibilityIdentifier(AccessibilityIds.mobilePassEmailField)
 
                         TextField("Pass Code", text: $stateModel.passCode, prompt: Text("Pass Code"))
                             .autocapitalization(.none)
                             .autocorrectionDisabled()
+                            .accessibilityIdentifier(AccessibilityIds.mobilePassInviteCodeField)
                         Spacer()
                     }
                     .textFieldStyle(.roundedBorder)
@@ -89,6 +91,7 @@ struct BrivoPassesView: View {
                             stateModel.redeemPass()
                         } label: {
                             Text("Add Pass")
+                                .accessibilityIdentifier(AccessibilityIds.redeemInviteButton)
                         }
                     }
 
