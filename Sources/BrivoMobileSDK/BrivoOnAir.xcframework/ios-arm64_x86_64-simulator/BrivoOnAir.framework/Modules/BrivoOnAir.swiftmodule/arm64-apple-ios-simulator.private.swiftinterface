@@ -125,6 +125,7 @@ public struct BrivoReaderCommand : Swift.Codable {
   public func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String], onSuccess: BrivoOnAir.OnGetReaderCommandCompletionType?, onFailure: BrivoOnAir.OnFailureType?)
   @objc public func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   public func getAllegionSDKTokens(accessToken: Swift.String, onSuccess: @escaping BrivoOnAir.OnGetAllegionSDKTokensSuccessType, onFailure: @escaping BrivoOnAir.OnFailureType)
+  public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String, completionHandler: @escaping (Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>) -> Swift.Void)
   @objc deinit
 }
 public struct AllegionSDKTokens : Swift.Codable {
@@ -177,6 +178,13 @@ public struct AllegionSDKTokens : Swift.Codable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
+}
+public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
+  public var tempKey: Swift.String
+  public var authToken: Swift.String
+  public static func == (a: BrivoOnAir.BLESecurityConfigResponse, b: BrivoOnAir.BLESecurityConfigResponse) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_inheritsConvenienceInitializers @objc public class BrivoOnairPass : ObjectiveC.NSObject, Swift.Codable {
   @objc public var pass: Swift.String?
@@ -348,6 +356,7 @@ public protocol IBrivoSDKOnAir {
   func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String], onSuccess: BrivoOnAir.OnGetReaderCommandCompletionType?, onFailure: BrivoOnAir.OnFailureType?)
   func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   func getAllegionSDKTokens(accessToken: Swift.String, onSuccess: @escaping BrivoOnAir.OnGetAllegionSDKTokensSuccessType, onFailure: @escaping BrivoOnAir.OnFailureType)
+  func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String, completionHandler: @escaping (Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>) -> Swift.Void)
 }
 public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   case wavelynxDoor

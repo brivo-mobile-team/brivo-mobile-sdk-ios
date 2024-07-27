@@ -120,6 +120,15 @@ public enum BrivoNetworkCoreEndPoint : Swift.String {
   case readerCommands
   case setLevel
   case allegionTokens
+  case engageAppToken
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum BrivoNetworkCoreParams : Swift.String {
+  case duid
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -186,6 +195,9 @@ extension BrivoNetworkCore.BrivoOnAirHeaderField : Swift.RawRepresentable {}
 extension BrivoNetworkCore.BrivoNetworkCoreEndPoint : Swift.Equatable {}
 extension BrivoNetworkCore.BrivoNetworkCoreEndPoint : Swift.Hashable {}
 extension BrivoNetworkCore.BrivoNetworkCoreEndPoint : Swift.RawRepresentable {}
+extension BrivoNetworkCore.BrivoNetworkCoreParams : Swift.Equatable {}
+extension BrivoNetworkCore.BrivoNetworkCoreParams : Swift.Hashable {}
+extension BrivoNetworkCore.BrivoNetworkCoreParams : Swift.RawRepresentable {}
 extension BrivoNetworkCore.BSHThermostatModes : Swift.Equatable {}
 extension BrivoNetworkCore.BSHThermostatModes : Swift.Hashable {}
 extension BrivoNetworkCore.BSHThermostatModes : Swift.RawRepresentable {}
