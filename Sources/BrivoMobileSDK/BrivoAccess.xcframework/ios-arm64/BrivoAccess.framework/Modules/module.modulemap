@@ -1,4 +1,0 @@
-framework module BrivoAccess {
-  header "BrivoAccess-Swift.h"
-  requires objc
-}
