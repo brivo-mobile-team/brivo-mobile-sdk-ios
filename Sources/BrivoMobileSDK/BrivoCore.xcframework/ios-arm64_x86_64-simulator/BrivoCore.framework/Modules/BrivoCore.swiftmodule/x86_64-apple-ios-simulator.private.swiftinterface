@@ -1,0 +1,235 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoCore
+import Foundation
+import Network
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public class BrivoTokens : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var accessToken: Swift.String
+  @objc public var refreshToken: Swift.String?
+  @objc public var dictionary: [Swift.String : Swift.String]?
+  public init(accessToken: Swift.String, refreshToken: Swift.String?)
+  @objc required public init?(dictionary: [Swift.String : Any]?)
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class BrivoControlLockConfigRequestBody : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var deviceUuid: Swift.String
+  @objc public var providerTypeId: Swift.String
+  @objc public var deviceModelId: Swift.String
+  @objc public var bleChallenge: Swift.String
+  @objc public var resetTempKey: Swift.Bool
+  @objc public func encode() -> Foundation.Data?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public enum EmptyPropertyError : Foundation.LocalizedError {
+  case emptyClientId
+  case emptyClientSecret
+  case emptyConfiguration
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: BrivoCore.EmptyPropertyError, b: BrivoCore.EmptyPropertyError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class NetworkMonitor : ObjectiveC.NSObject, BrivoCore.INetworkMonitor {
+  @objc override dynamic public init()
+  @objc public func startMonitoring(completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc public func stopMonitoring()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class JSON {
+  public static func dictionary(data: Foundation.Data?) -> Any?
+  public static func serialize<T>(object: T) -> [Swift.String : Any]? where T : Swift.Encodable
+  public static func data(dictionary: [Swift.String : Any]?) -> Foundation.Data?
+  public static func getObject<T>(_ type: T.Type, from data: Foundation.Data?) -> T? where T : Swift.Decodable
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class BrivoUserDefaults {
+  public static func setDictionary(value: [Swift.String : Any]?, forKey key: Swift.String)
+  public static func getDictionary(forKey key: Swift.String) -> [Swift.String : Any]?
+  @objc deinit
+}
+@objc public enum AccessPointDorType : Swift.Int, Swift.Codable {
+  case brivoDoor
+  case controlLock
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class BrivoControlLockAuthenticationResponse : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var authenticationPayload: Swift.String?
+  @objc public var commandPayload: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+public typealias RefreshTokenOnSuccessType = (BrivoCore.BrivoTokens) -> Swift.Void
+public typealias OnRefreshTokenFailureType = (BrivoCore.BrivoError?) -> Swift.Void
+@objc public protocol RefreshTokenDelegate {
+  @objc func refreshToken(brivoTokens: BrivoCore.BrivoTokens, onSuccess: BrivoCore.RefreshTokenOnSuccessType?, onError: BrivoCore.OnRefreshTokenFailureType?)
+}
+@objc public class BrivoControlLockDb : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var usrRcrd: BrivoCore.BrivoControlLockUserRecord
+  @objc public var schedules: [BrivoCore.BrivoControlLockSchedule]
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class SessionRequestTimeout : ObjectiveC.NSObject {
+  final public let interval: Foundation.TimeInterval?
+  public init(after interval: Foundation.TimeInterval?)
+  @objc deinit
+}
+@objc public class BrivoSDKConfiguration : ObjectiveC.NSObject {
+  @objc final public let clientId: Swift.String
+  @objc final public let clientSecret: Swift.String
+  @objc final public let authUrl: Swift.String?
+  @objc final public let apiUrl: Swift.String?
+  @objc final public let smartHomeUrl: Swift.String?
+  @objc final public let smartHomeUrlV1: Swift.String?
+  @objc final public let smartHomeUrlV4: Swift.String?
+  @objc final public let useSDKStorage: Swift.Bool
+  @objc final public let useEURegion: Swift.Bool
+  @objc final public let shouldPromptForContinuation: Swift.Bool
+  @objc weak public var refreshTokenDelegate: (any BrivoCore.RefreshTokenDelegate)?
+  @objc final public let sessionRequestTimeout: BrivoCore.SessionRequestTimeout?
+  @objc public init(clientId: Swift.String, clientSecret: Swift.String, useSDKStorage: Swift.Bool, useEURegion: Swift.Bool, shouldPromptForContinuation: Swift.Bool = false, authUrl: Swift.String? = nil, apiUrl: Swift.String? = nil, smartHomeUrl: Swift.String? = nil, smartHomeUrlV1: Swift.String? = nil, smartHomeUrlV4: Swift.String? = nil, refreshTokenDelegate: (any BrivoCore.RefreshTokenDelegate)? = nil, sessionRequestTimeout: BrivoCore.SessionRequestTimeout? = nil) throws
+  @objc deinit
+}
+@objc public class BrivoControlLockUserRecord : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var deleteAll: Swift.Int
+  @objc public var delete: [Swift.String]
+  @objc public var update: [Swift.String]
+  @objc public var add: [Swift.String]
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BrivoSDK : ObjectiveC.NSObject, BrivoCore.IBrivoSDK {
+  @objc public static let instance: BrivoCore.BrivoSDK
+  @objc public static var sdkVersion: Swift.String {
+    @objc get
+  }
+  @objc public func getBrivoConfiguration() throws -> BrivoCore.BrivoSDKConfiguration
+  @objc public func configure(brivoConfiguration: BrivoCore.BrivoSDKConfiguration)
+  @objc public func getDeviceId() -> Swift.String
+  @objc deinit
+}
+public protocol BrivoSDKActivityDelegate : AnyObject {
+  func log(_ msg: Swift.String)
+  func error(_ error: BrivoCore.BrivoError)
+}
+@objc public enum DoorType : Swift.Int, Swift.Codable {
+  case internet = 0
+  case wavelynx = 1
+  case allegion = 2
+  case wirelessLock = 3
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum AccessPointCommunicationState : Swift.Int, Swift.Codable {
+  case scanning
+  case shouldContinue
+  case connecting
+  case communicating
+  case success
+  case failed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol IBrivoSDK {
+  @objc static var instance: BrivoCore.BrivoSDK { get }
+  @objc static var sdkVersion: Swift.String { get }
+  @objc func configure(brivoConfiguration: BrivoCore.BrivoSDKConfiguration)
+  @objc func getBrivoConfiguration() throws -> BrivoCore.BrivoSDKConfiguration
+  @objc func getDeviceId() -> Swift.String
+}
+@objc public protocol INetworkMonitor {
+  @objc func startMonitoring(completion: ((Swift.Bool) -> Swift.Void)?)
+  @objc func stopMonitoring()
+}
+public enum WrongUrlError : Foundation.LocalizedError {
+  case wrongApiUrl
+  case wrongAuthUrl
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public static func == (a: BrivoCore.WrongUrlError, b: BrivoCore.WrongUrlError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class Constants {
+  public static let KEY_PASSES: Swift.String
+  public static let KEY_PASSES_EU: Swift.String
+  public static let KEY_DEVICE_ID: Swift.String
+  @objc deinit
+}
+@objc public class BrivoResult : ObjectiveC.NSObject {
+  @objc public var accessPointCommunicationState: BrivoCore.AccessPointCommunicationState
+  @objc public var accessPointPath: BrivoCore.AccessPointPath?
+  @objc public var error: BrivoCore.BrivoError?
+  @objc public var shouldContinue: ((Swift.Bool) -> Swift.Void)?
+  @objc public var engagedReaderCommand: Swift.Bool
+  @objc required public init(accessPointCommunicationState: BrivoCore.AccessPointCommunicationState, accessPointPath: BrivoCore.AccessPointPath? = nil, error: BrivoCore.BrivoError? = nil, shouldContinue: ((Swift.Bool) -> Swift.Void)? = nil, engagedReaderCommand: Swift.Bool = false)
+  @objc deinit
+}
+@objc public class BrivoControlLockSchedule : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var days: [Swift.String]
+  @objc public var lngth: Swift.Int
+  @objc public var strtHr: Swift.Int
+  @objc public var strtMn: Swift.Int
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class AccessPointPath : ObjectiveC.NSObject {
+  @objc public var accessPointId: Swift.Int
+  @objc public var siteId: Swift.Int
+  @objc public var passId: Swift.String
+  @objc public var hasTrustedNetwork: Swift.Bool
+  @objc required public init(accessPointId: Swift.Int, siteId: Swift.Int, passId: Swift.String, hasTrustedNetwork: Swift.Bool = false)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class BrivoError : Foundation.NSError {
+  @objc final public let statusCode: Swift.Int
+  @objc final public let errorDescription: Swift.String
+  @objc public init(statusCode: Swift.Int, errorDescription: Swift.String)
+  @objc deinit
+}
+extension BrivoCore.EmptyPropertyError : Swift.Equatable {}
+extension BrivoCore.EmptyPropertyError : Swift.Hashable {}
+extension BrivoCore.AccessPointDorType : Swift.Equatable {}
+extension BrivoCore.AccessPointDorType : Swift.Hashable {}
+extension BrivoCore.AccessPointDorType : Swift.RawRepresentable {}
+extension BrivoCore.DoorType : Swift.Equatable {}
+extension BrivoCore.DoorType : Swift.Hashable {}
+extension BrivoCore.DoorType : Swift.RawRepresentable {}
+extension BrivoCore.AccessPointCommunicationState : Swift.Equatable {}
+extension BrivoCore.AccessPointCommunicationState : Swift.Hashable {}
+extension BrivoCore.AccessPointCommunicationState : Swift.RawRepresentable {}
+extension BrivoCore.WrongUrlError : Swift.Equatable {}
+extension BrivoCore.WrongUrlError : Swift.Hashable {}
