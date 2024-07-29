@@ -82,6 +82,7 @@ struct BrivoPassesView: View {
                             .autocapitalization(.none)
                             .autocorrectionDisabled()
                             .accessibilityIdentifier(AccessibilityIds.mobilePassInviteCodeField)
+
                         Spacer()
                     }
                     .textFieldStyle(.roundedBorder)
@@ -131,6 +132,7 @@ class BrivoPassesViewModel: ObservableObject {
     func onAppear() {
         brivoConfiguration()
         getBrivoOnAirPasses()
+        refreshPasses()
     }
 
     private func brivoConfiguration() {
@@ -159,7 +161,6 @@ class BrivoPassesViewModel: ObservableObject {
                     self?.alertTitle = "Error"
                     self?.alertMessage = brivoError.errorDescription + " " + "Status Code: \(brivoError.statusCode)"
                     self?.isShowingAlert = true
-
                 })
         } catch let error {
             self.alertTitle = error.localizedDescription
