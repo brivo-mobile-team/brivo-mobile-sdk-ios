@@ -61,14 +61,16 @@ struct AccessPointView: View {
 
     // MARK: - Private
 
-    private func icon(_ accessPont: BrivoAccessPoint) -> some View {
+    private func icon(_ accessPoint: BrivoAccessPoint) -> some View {
         Group {
-            accessPont.bluetoothReader != nil ? image("bluetooth") : image("wifi")
+            accessPoint.bluetoothReader != nil ? image("bluetooth") : image("wifi")
         }
     }
 
     private func image(_ name: String) -> some View {
-        Image(name).resizable().frame(width: 32.0, height: 32.0)
+        Image(name)
+            .resizable().frame(width: 32.0, height: 32.0)
+            .background(Color.white)
     }
 }
 
