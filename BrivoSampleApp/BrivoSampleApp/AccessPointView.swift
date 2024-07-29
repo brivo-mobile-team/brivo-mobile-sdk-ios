@@ -47,13 +47,28 @@ struct AccessPointView: View {
                         }
 
                     } label: {
-                        Text(accessPoint.name ?? "")
+                        HStack {
+                            icon(accessPoint)
+                            Text(accessPoint.name ?? "")
+                        }
                     }
                 }
                 .navigationTitle("Access Points for" + " " + (stateModel.brivoSites.siteName ?? ""))
                 .navigationBarTitleDisplayMode(.inline)
             }
         }
+    }
+
+    // MARK: - Private
+
+    private func icon(_ accessPont: BrivoAccessPoint) -> some View {
+        Group {
+            accessPont.bluetoothReader != nil ? image("bluetooth") : image("wifi")
+        }
+    }
+
+    private func image(_ name: String) -> some View {
+        Image(name).resizable().frame(width: 32.0, height: 32.0)
     }
 }
 
