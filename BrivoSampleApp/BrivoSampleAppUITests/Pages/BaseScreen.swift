@@ -37,4 +37,12 @@ class BaseScreen: BaseScreenInterface {
         }
         baseElement.waitForExistence()
     }
+
+    func putAppToBackground() {
+        XCUIDevice.shared.press(XCUIDevice.Button.home)
+    }
+
+    func getAppInForeground() {
+        app.activate()
+    }
 }

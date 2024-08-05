@@ -11,4 +11,5 @@ struct AccessibilityIds {
     static let mobilePassInviteCodeField = "mobilePassInviteCodeFieldId"
     static let redeemInviteButton = "redeemInviteButtonId"
     static let accountNameTextView = "accountNameId"
+    static let noPassesTextView = "noPassesId"
 }

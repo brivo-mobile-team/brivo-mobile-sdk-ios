@@ -13,11 +13,12 @@ import BrivoCore
 class RedeemPassTests: BaseTest {
 
     // MARK: - Properties
-    
+
     lazy var safariApp = XCUIApplication(bundleIdentifier: "com.apple.mobilesafari")
     lazy var generatePassUseCase = DefaultGeneratePassUseCase()
     lazy var revokePassUseCase = DefaultRevokePassUseCase()
-    let passesScreenTests = PassesScreenTests()
+    lazy var cleanupPassUseCase = DefaultCleanupPassUseCase()
+    lazy var passesScreen = PassesScreen()
     var mobilePass: MobilePass?
 
     // MARK: - Setup&Teardown
@@ -28,14 +29,19 @@ class RedeemPassTests: BaseTest {
 
     override func tearDown() async throws {
         try await super.tearDown()
-        await revokePass()
+        try await cleanupPassUseCase.execute()
     }
 
     // MARK: - Tests
 
-//    func test_ManualRedeemPass() async {
-//        await redeemPassManually()
-//    }
+    func testManualRedeemPass() async {
+        await redeemPassManually()
+    }
+
+    func testRefreshPass() async {
+        await redeemPassManually()
+        await checkNoPassesAvailable()
+    }
 
     // MARK: - Private
 
@@ -44,8 +50,8 @@ class RedeemPassTests: BaseTest {
             let mobilePass = try await generatePassUseCase.execute()
             await checkManualRedeem(mobilePass: mobilePass)
             try await revokePassUseCase.execute(credentialId: mobilePass.credentialId)
-        } catch {
-            XCTFail("Could not generate mobile pass")
+        } catch let error {
+            XCTFail("Could not generate mobile pass: \(error.localizedDescription)")
         }
     }
 
@@ -53,29 +59,33 @@ class RedeemPassTests: BaseTest {
         await withCheckedContinuation { continuation in
             DispatchQueue.main.async {
                 self.tapOnEnterInviteCode()
-                self.passesScreenTests.enterInviteCode(redeemCredentials: mobilePass)
-                self.checkConfirmationPopUpScreen()
+                self.passesScreen.enterInviteCode(redeemCredentials: mobilePass)
+                self.validateAccessPointsLoaded()
                 continuation.resume()
             }
         }
     }
 
-    private func checkConfirmationPopUpScreen() {
-        passesScreenTests.validateAccessPointsLoaded()
+    private func checkNoPassesAvailable() async {
+        await withCheckedContinuation { continuation in
+            DispatchQueue.main.async {
+                self.passesScreen.putAppToBackground()
+                self.passesScreen.getAppInForeground()
+                self.validateNoPassesLoaded()
+                continuation.resume()
+            }
+        }
     }
 
-    private func revokePass() async {
-        guard let mobilePass = mobilePass else {
-            return
-        }
-        do {
-            try await revokePassUseCase.execute(credentialId: mobilePass.credentialId)
-        } catch {
-            print("Could not revoke pass")
-        }
+    private func validateAccessPointsLoaded() {
+        passesScreen.validateAccessPointsLoaded()
+    }
+
+    private func validateNoPassesLoaded() {
+        passesScreen.validateNoPassesLoaded()
     }
 
     private func tapOnEnterInviteCode() {
-        passesScreenTests.openBottomSheet()
+        passesScreen.openBottomSheet()
     }
 }

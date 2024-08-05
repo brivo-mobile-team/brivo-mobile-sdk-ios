@@ -18,6 +18,7 @@ struct BrivoPassesView: View {
             List {
                 if stateModel.brivoOnAirPasses.isEmpty {
                     Text("You have no Passes. Please add passes by tapping the + button")
+                        .accessibilityIdentifier(AccessibilityIds.noPassesTextView)
                 } else {
                     ForEach(stateModel.brivoOnAirPasses, id: \.self) { pass in
                         Section {
@@ -56,7 +57,8 @@ struct BrivoPassesView: View {
                     Button {
                         stateModel.isShowingAddSheet.toggle()
                     } label: {
-                        Image(systemName: "plus").accessibilityIdentifier(AccessibilityIds.navigationPlusButton)
+                        Image(systemName: "plus")
+                        .accessibilityIdentifier(AccessibilityIds.navigationPlusButton)
                     }
                 }
                 ToolbarItem(placement: .topBarLeading) {
@@ -106,6 +108,10 @@ struct BrivoPassesView: View {
                     )
                 }
             }
+        }
+        .onReceive(NotificationCenter.default.publisher(
+            for: UIScene.willEnterForegroundNotification)) { _ in
+                stateModel.refreshPasses()
         }
     }
 }

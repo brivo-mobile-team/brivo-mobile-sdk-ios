@@ -15,17 +15,18 @@ protocol GeneratePassUseCase {
 }
 
 enum GeneratePassError: Error {
-    case cannotGeneratePass
-    case needToRevokePass
+    case cannotGeneratePass(reason: String)
+    case revokePass(reason: String)
+    case cancelPass(reason: String)
 }
 
 class DefaultGeneratePassUseCase: GeneratePassUseCase {
 
     // MARK: - Properties
 
-    var brivoHTTPRequest: BrivoHTTPSRequest!
-    var getTokensUseCase = DefaultGetTokensUseCase()
-    var revokePassUseCase = DefaultRevokePassUseCase()
+    private var brivoHTTPRequest: BrivoHTTPSRequest!
+    private var getTokensUseCase = DefaultGetTokensUseCase()
+    private var cleanupPassUseCase = DefaultCleanupPassUseCase()
 
     // MARK: - GeneratePassUseCase
 
@@ -37,13 +38,14 @@ class DefaultGeneratePassUseCase: GeneratePassUseCase {
     // MARK: - Private
 
     private func sendPass(tokens: BrivoTokens) async throws -> MobilePass {
-        try await withCheckedThrowingContinuation { continuation in
-            brivoHTTPRequest = BrivoHTTPSRequest(timeoutIntervalForRequest: 60)
+        try await self.cleanupPassUseCase.execute()
+        return try await withCheckedThrowingContinuation { continuation in
+            brivoHTTPRequest = BrivoHTTPSRequest()
             let body = SendPassBody(referenceId: AutomationTestsConfiguration.redeemPassConfig.referenceId)
             let headers = ["Authorization": "Bearer \(tokens.accessToken)",
                            "Content-type": "application/json"]
             let endpoint = "api/users/\(AutomationTestsConfiguration.redeemPassConfig.userId)/credentials/digital-invitations"
-            let httpsRequestInfo = HTTPSRequestInfo(baseURLString: "https://access.brivo.com/",
+            let httpsRequestInfo = HTTPSRequestInfo(baseURLString: AutomationTestsConfiguration.apiBaseUrl,
                                                     endPoint: endpoint,
                                                     method: .POST,
                                                     body: try? JSONEncoder().encode(body),
@@ -52,19 +54,12 @@ class DefaultGeneratePassUseCase: GeneratePassUseCase {
             brivoHTTPRequest?.performRequest(requestInfo: httpsRequestInfo) { (response, _) in
                 if response?.status?.error == nil {
                     guard let data = response?.data, let mobilePass = try? JSONDecoder().decode(MobilePass.self, from: data) else {
-                        continuation.resume(throwing: GeneratePassError.cannotGeneratePass)
+                        continuation.resume(throwing: GeneratePassError.cannotGeneratePass(reason: response?.dataDictionary?.description ?? ""))
                         return
                     }
                     continuation.resume(returning: mobilePass)
                 } else {
-                    // Based on the error we get we need to either:
-                    // - cancel the invitation
-                    // - revoke pass
-                    if response?.status?.statusCode == 409 {
-                        continuation.resume(throwing: GeneratePassError.needToRevokePass)
-                    } else {
-                        continuation.resume(throwing: GeneratePassError.cannotGeneratePass)
-                    }
+                    continuation.resume(throwing: GeneratePassError.cannotGeneratePass(reason: response?.dataDictionary?.description ?? ""))
                 }
             }
         }
