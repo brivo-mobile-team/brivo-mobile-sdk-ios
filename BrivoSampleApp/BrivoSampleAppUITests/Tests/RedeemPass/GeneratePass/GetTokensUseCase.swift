@@ -22,9 +22,9 @@ struct DefaultGetTokensUseCase: GetTokensUseCase {
 
     // MARK: - Properties
 
-    var brivoHTTPRequest: BrivoHTTPSRequest!
+    private var brivoHTTPRequest: BrivoHTTPSRequest!
 
-    // MARK: - GeneratePassUseCase
+    // MARK: - GetTokensUseCase
 
     mutating
     func execute() async throws -> BrivoTokens {
@@ -36,17 +36,17 @@ struct DefaultGetTokensUseCase: GetTokensUseCase {
     mutating
     private func getToken() async throws -> BrivoTokens {
         try await withCheckedThrowingContinuation { continuation in
-            brivoHTTPRequest = BrivoHTTPSRequest(timeoutIntervalForRequest: 60)
-            let body = GetTokensBody(audience: "https://api.brivo.com",
-                                     grantType: "password",
+            brivoHTTPRequest = BrivoHTTPSRequest()
+            let body = GetTokensBody(audience: AutomationTestsConfiguration.audience,
+                                     grantType: AutomationTestsConfiguration.grantType,
                                      username: AutomationTestsConfiguration.redeemPassConfig.username,
                                      password: AutomationTestsConfiguration.redeemPassConfig.password,
-                                     scope: "openid",
-                                     accountId: 1861040)
-            let base64 = "WDerz2RAdLj1DBEHFlQpKCaLOp9EmN2B:EQD6YifgIj3QSQX38g-pT5_AM1TrNocdCaocncZlrfHmTp6jIdccBEXekjsY_GvC".toBase64() ?? ""
+                                     scope: AutomationTestsConfiguration.scope,
+                                     accountId: AutomationTestsConfiguration.accountId)
+            let base64 = AutomationTestsConfiguration.basicAuthBase64
             let headers = ["Authorization": "Basic \(base64)",
                            "Content-type": "application/json"]
-            let httpsRequestInfo = HTTPSRequestInfo(baseURLString: "https://login.brivo.com/",
+            let httpsRequestInfo = HTTPSRequestInfo(baseURLString: AutomationTestsConfiguration.loginBaseUrl,
                                                     endPoint: "oauth/token",
                                                     method: .POST,
                                                     body: try? JSONEncoder().encode(body),
@@ -58,6 +58,7 @@ struct DefaultGetTokensUseCase: GetTokensUseCase {
                         continuation.resume(throwing: GetTokensError.cannotGetAccessToken)
                         return
                     }
+
                     continuation.resume(returning: tokens)
                 } else {
                     continuation.resume(throwing: GetTokensError.cannotGetAccessToken)

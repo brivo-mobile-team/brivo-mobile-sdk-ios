@@ -1,43 +1,45 @@
 //
-//  RevokePassUseCase.swift
-//  BrivoPassPlusUITests
+//  CancelPassUseCase.swift
+//  BrivoSampleDevUITests
 //
-//  Created by Mihai Dorhan on 22.04.2024.
+//  Created by Gabriel Dusa on 30.07.2024.
 //
 
 import Foundation
 import BrivoCore
 import BrivoNetworkCore
 
-protocol RevokePassUseCase {
+protocol CancelPassUseCase {
     mutating
-    func execute(credentialId: Int) async throws
+    func execute(tokens: BrivoTokens) async throws
 }
 
-struct DefaultRevokePassUseCase: RevokePassUseCase {
+enum CancellPassError: Error {
+    case cannotCancellPass
+}
+
+struct DefaultCancelPassUseCase: CancelPassUseCase {
 
     // MARK: - Properties
 
     private var brivoHTTPRequest: BrivoHTTPSRequest!
-    private var getTokensUseCase = DefaultGetTokensUseCase()
 
-    // MARK: - RevokePassUseCase
+    // MARK: - CancelPassUseCase
 
     mutating
-    func execute(credentialId: Int) async throws {
-        let tokens = try await getTokensUseCase.execute()
-        _ = try await revokePass(tokens: tokens, credentialId: credentialId)
+    func execute(tokens: BrivoTokens) async throws {
+        try await cancelPassPass(tokens: tokens)
     }
 
     // MARK: - Private
 
     mutating
-    private func revokePass(tokens: BrivoTokens, credentialId: Int) async throws {
+    private func cancelPassPass(tokens: BrivoTokens) async throws {
         try await withCheckedThrowingContinuation { (continuation: CheckedContinuation<Void, Error>) -> Void in
             brivoHTTPRequest = BrivoHTTPSRequest()
             let headers = ["Authorization": "Bearer \(tokens.accessToken)",
                            "Content-type": "application/json"]
-            let endpoint = "api/users/\(AutomationTestsConfiguration.redeemPassConfig.userId)/credentials/\(credentialId)"
+            let endpoint = "api/users/\(AutomationTestsConfiguration.redeemPassConfig.userId)/credentials/digital-invitations"
             let httpsRequestInfo = HTTPSRequestInfo(baseURLString: AutomationTestsConfiguration.apiBaseUrl,
                                                     endPoint: endpoint,
                                                     method: .DELETE,
@@ -47,12 +49,12 @@ struct DefaultRevokePassUseCase: RevokePassUseCase {
             brivoHTTPRequest?.performRequest(requestInfo: httpsRequestInfo) { (response, _) in
                 if response?.status?.error == nil {
                     guard (response?.data) != nil else {
-                        continuation.resume(throwing: GeneratePassError.revokePass(reason: response?.dataDictionary?.description ?? ""))
+                        continuation.resume(throwing: CancellPassError.cannotCancellPass)
                         return
                     }
-                    continuation.resume(returning: ())
+                    continuation.resume()
                 } else {
-                    continuation.resume(throwing: GeneratePassError.revokePass(reason: response?.dataDictionary?.description ?? ""))
+                    continuation.resume(throwing: CancellPassError.cannotCancellPass)
                 }
             }
         }

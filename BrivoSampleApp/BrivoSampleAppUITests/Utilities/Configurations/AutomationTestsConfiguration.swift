@@ -15,8 +15,15 @@ struct RedeemPassConfig {
 }
 
 struct AutomationTestsConfiguration {
-    static let redeemPassConfig = RedeemPassConfig(username: "constantin.georgiu@brivo.com",
+    static let redeemPassConfig = RedeemPassConfig(username: "bmp.automation.tests@gmail.com",
                                                    password: "Brivo100",
-                                                   userId: "55221176",
-                                                   referenceId: "bmp.sample.automation.ios@brivo.com")
+                                                   userId: "60263499",
+                                                   referenceId: "sdk.sample.automation.ios@brivo.com")
+    static let accountId = 1861040
+    static let grantType = "password"
+    static let scope = "openid"
+    static let basicAuthBase64 = "WDerz2RAdLj1DBEHFlQpKCaLOp9EmN2B:EQD6YifgIj3QSQX38g-pT5_AM1TrNocdCaocncZlrfHmTp6jIdccBEXekjsY_GvC".toBase64() ?? ""
+    static let apiBaseUrl = "https://access.brivo.com/"
+    static let loginBaseUrl = "https://login.brivo.com/"
+    static let audience = "https://api.brivo.com"
 }
