@@ -496,6 +496,7 @@ typedef SWIFT_ENUM(NSInteger, DoorType, open) {
   DoorTypeWavelynx = 1,
   DoorTypeAllegion = 2,
   DoorTypeWirelessLock = 3,
+  DoorTypeAllegionBle = 4,
 };
 
 
@@ -1033,6 +1034,7 @@ typedef SWIFT_ENUM(NSInteger, DoorType, open) {
   DoorTypeWavelynx = 1,
   DoorTypeAllegion = 2,
   DoorTypeWirelessLock = 3,
+  DoorTypeAllegionBle = 4,
 };
 
 

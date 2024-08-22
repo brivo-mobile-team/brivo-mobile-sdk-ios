@@ -6,6 +6,7 @@ import PackageDescription
 let version = "1.20.0"
 let package = Package(
     name: "BrivoMobileSDK",
+    platforms: [.iOS(.v14)],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
@@ -19,13 +20,20 @@ let package = Package(
                 "BrivoOnAir"
             ]
         ),
+        .library(
+            name: "BrivoMobileBLEAllegionSDK",
+            targets: ["BrivoMobileBLEAllegionSDK"]
+        )
+    ],
+    dependencies: [
+        .package(url: "https://bitbucket.org/brivoinc/mobile-allegion-sdk-ios", branch: "feature/add-allegion-as-package-from-scratch-dynamic")
     ],
     targets: [
 
-            .binaryTarget(
-                name: "BrivoAccess",
-                path: "./Sources/BrivoMobileSDK/BrivoAccess.xcframework"
-            ),
+        .binaryTarget(
+            name: "BrivoAccess",
+            path: "./Sources/BrivoMobileSDK/BrivoAccess.xcframework"
+        ),
 
             .binaryTarget(
                 name: "BrivoBLE",
@@ -50,6 +58,19 @@ let package = Package(
             .binaryTarget(
                 name: "BrivoNetworkCore",
                 path: "./Sources/BrivoMobileSDK/BrivoNetworkCore.xcframework"
+            ),
+
+            .target(
+                name: "BrivoMobileBLEAllegionSDK",
+                dependencies: [
+                    .byName(name: "BrivoBLEAllegion"),
+                    .product(name: "Allegion-Access-MobileAccessSDK-iOS", package: "mobile-allegion-sdk-ios")
+                ],
+                path: "./Sources/BrivoAllegionSDK"
+            ),
+            .binaryTarget(
+                name: "BrivoBLEAllegion",
+                path: "./Sources/BrivoMobileSDK/BrivoBLEAllegion.xcframework"
             ),
 
     ]

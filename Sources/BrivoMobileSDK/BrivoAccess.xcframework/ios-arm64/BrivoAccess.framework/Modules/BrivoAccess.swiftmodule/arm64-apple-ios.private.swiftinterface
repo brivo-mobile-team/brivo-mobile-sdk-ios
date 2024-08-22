@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoAccess
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoAccess
 import BrivoBLE
 import BrivoCore
 import BrivoLocalAuthentication
@@ -37,7 +37,7 @@ import _SwiftConcurrencyShims
   @objc public func getBLEState() -> CoreBluetooth.CBManagerState
   @objc public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber?
   @objc public func removeCompletionFor(id: Foundation.NSNumber)
-  @objc public func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoAccess.OnResultType?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc public func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoCore.OnResultType?, cancellationSignal: BrivoBLE.CancellationSignal?)
   @objc public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
   @objc public func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
   @objc public func lockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onFailure: BrivoAccess.OnFailureType?, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
@@ -51,10 +51,9 @@ import _SwiftConcurrencyShims
 public typealias ControlLockUnlockOnSuccessType = (Swift.String?) -> Swift.Void
 public typealias OnUnlockAccessPointSuccessType = () -> Swift.Void
 public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
-public typealias OnResultType = (BrivoCore.BrivoResult) -> Swift.Void
 @objc public protocol IBrivoSDKAccess {
   @objc static func instance() -> BrivoAccess.BrivoSDKAccess
-  @objc func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoAccess.OnResultType?, cancellationSignal: BrivoBLE.CancellationSignal?)
+  @objc func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoCore.OnResultType?, cancellationSignal: BrivoBLE.CancellationSignal?)
   @objc func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
   @objc func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)
   @objc func lockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onFailure: BrivoAccess.OnFailureType?, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoBLE.CancellationSignal?)

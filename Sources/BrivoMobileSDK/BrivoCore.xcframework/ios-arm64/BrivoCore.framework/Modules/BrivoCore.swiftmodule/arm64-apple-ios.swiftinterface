@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.1 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoCore
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoCore
 import Foundation
 import Network
 import Swift
@@ -57,8 +57,11 @@ public enum EmptyPropertyError : Foundation.LocalizedError {
 @_hasMissingDesignatedInitializers public class BrivoUserDefaults {
   public static func setDictionary(value: [Swift.String : Any]?, forKey key: Swift.String)
   public static func getDictionary(forKey key: Swift.String) -> [Swift.String : Any]?
+  public static func getData<T>(key: Swift.String) -> T? where T : Swift.Decodable
+  public static func storeData<T>(_ data: T, key: Swift.String) where T : Swift.Encodable
   @objc deinit
 }
+public typealias OnResultType = (BrivoCore.BrivoResult) -> Swift.Void
 @objc public enum AccessPointDorType : Swift.Int, Swift.Codable {
   case brivoDoor
   case controlLock
@@ -140,6 +143,7 @@ public protocol BrivoSDKActivityDelegate : AnyObject {
   case wavelynx = 1
   case allegion = 2
   case wirelessLock = 3
+  case allegionBle = 4
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {

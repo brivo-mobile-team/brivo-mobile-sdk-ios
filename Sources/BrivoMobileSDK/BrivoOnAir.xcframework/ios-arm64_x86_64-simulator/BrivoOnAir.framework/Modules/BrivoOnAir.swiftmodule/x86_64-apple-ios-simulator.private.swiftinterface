@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target x86_64-apple-ios12.1-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoOnAir
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoOnAir
 import BrivoCore
 import BrivoNetworkCore
 @_exported import BrivoOnAir
@@ -126,6 +126,7 @@ public struct BrivoReaderCommand : Swift.Codable {
   @objc public func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   public func getAllegionSDKTokens(accessToken: Swift.String, onSuccess: @escaping BrivoOnAir.OnGetAllegionSDKTokensSuccessType, onFailure: @escaping BrivoOnAir.OnFailureType)
   public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String, completionHandler: @escaping (Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>) -> Swift.Void)
+  public func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   @objc deinit
 }
 public struct AllegionSDKTokens : Swift.Codable {
@@ -198,6 +199,8 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   @objc public var userImage: BrivoOnAir.BrivoUserImage?
   @objc public var firstName: Swift.String?
   @objc public var lastName: Swift.String?
+  @objc public var hasAllegionBleCredentials: Swift.Bool
+  @objc public var enablePassTransfer: Swift.Bool
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
@@ -220,6 +223,7 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   @objc public var deviceRequiresUpdate: Swift.Bool
   @objc public var brivoGeolocation: BrivoOnAir.BrivoGeolocation?
   @objc public var preScreening: Swift.String?
+  @objc public var hasTrustedNetwork: Swift.Bool
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
@@ -273,6 +277,8 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   @objc public var controlLockId: Swift.Int
   @objc public var deviceRequiresUpdate: Swift.Bool
   @objc final public let controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?
+  @objc public var isDoorStation: Swift.Bool
+  @objc public var schedules: [BrivoOnAir.BrivoSchedules]?
   public init(controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?)
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
@@ -286,6 +292,29 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class BrivoSchedules : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var id: Swift.Int
+  @objc public var name: Swift.String?
+  @objc public var schedulesDescription: Swift.String?
+  @objc public var scheduleBlocks: BrivoOnAir.ScheduleBlocks?
+  @objc override dynamic public init()
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@objc public class ScheduleBlocks : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_inheritsConvenienceInitializers @objc public class ScheduleTime : ObjectiveC.NSObject, Swift.Codable {
+  @objc public var start: Swift.String?
+  @objc public var end: Swift.String?
+  @objc override dynamic public init()
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
 }
 extension BrivoOnAir.BrivoOnairPass {
   @objc dynamic public var passId: Swift.String? {
@@ -357,6 +386,7 @@ public protocol IBrivoSDKOnAir {
   func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   func getAllegionSDKTokens(accessToken: Swift.String, onSuccess: @escaping BrivoOnAir.OnGetAllegionSDKTokensSuccessType, onFailure: @escaping BrivoOnAir.OnFailureType)
   func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String, completionHandler: @escaping (Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>) -> Swift.Void)
+  func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
 }
 public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   case wavelynxDoor

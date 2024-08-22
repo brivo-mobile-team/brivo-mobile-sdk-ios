@@ -1,0 +1,33 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoBLEAllegion
+@_exported import BrivoBLEAllegion
+import BrivoCore
+import BrivoOnAir
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol IBrivoSDKBLEAllegion {
+  #if compiler(>=5.3) && $AsyncAwait
+  func getAllegionSDKTokens(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
+  #endif
+  func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoCore.OnResultType?)
+  func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, timeDuration: Swift.Int, onResult: BrivoCore.OnResultType?)
+}
+public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
+  public init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration = .default) throws
+  public static func instance() throws -> BrivoBLEAllegion.BrivoSDKBLEAllegion
+  public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoCore.OnResultType?)
+  public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, timeDuration: Swift.Int, onResult: BrivoCore.OnResultType?)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getAllegionSDKTokens(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
+  #endif
+  @objc deinit
+}
+public struct BrivoBLEAllegionConfiguration {
+  public var subscriptionKey: Swift.String
+  public var integrationId: Swift.String
+  public static var `default`: BrivoBLEAllegion.BrivoBLEAllegionConfiguration
+}
