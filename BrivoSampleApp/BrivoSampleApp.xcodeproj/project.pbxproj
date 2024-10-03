@@ -15,6 +15,8 @@
 		2F75BC182C591CAB00B4BD96 /* CancelPassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F75BC172C591CAB00B4BD96 /* CancelPassUseCase.swift */; };
 		2FD3968F2C598D21000A5C40 /* CleanupPassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3968E2C598D21000A5C40 /* CleanupPassUseCase.swift */; };
 		2FD396912C598DFB000A5C40 /* MobileCrdential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD396902C598DFB000A5C40 /* MobileCrdential.swift */; };
+		5D3344DE2CAD9B7100D97833 /* BrivoBLEAllegion in Frameworks */ = {isa = PBXBuildFile; productRef = 5D3344DD2CAD9B7100D97833 /* BrivoBLEAllegion */; };
+		5D3344E02CAD9B7100D97833 /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5D3344DF2CAD9B7100D97833 /* BrivoMobileSDK */; };
 		AF03326F2C4E7CD3003B28B6 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = AF03326E2C4E7CD3003B28B6 /* FirebaseAnalyticsOnDeviceConversion */; };
 		AF0332712C4E7CD3003B28B6 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF0332702C4E7CD3003B28B6 /* FirebaseAnalyticsSwift */; };
 		AF0332732C4E7CD3003B28B6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = AF0332722C4E7CD3003B28B6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -42,7 +44,6 @@
 		AF03329F2C4E7CD3003B28B6 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = AF03329E2C4E7CD3003B28B6 /* FirebaseStorageCombine-Community */; };
 		AF0332A12C4E7CD3003B28B6 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = AF0332A02C4E7CD3003B28B6 /* FirebaseVertexAI-Preview */; };
 		AF0332A82C4FD644003B28B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF0332A72C4FD644003B28B6 /* GoogleService-Info.plist */; };
-		AF370CEA2C3D002700CF432A /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AF370CE92C3D002700CF432A /* BrivoMobileSDK */; };
 		AFAC9DA62C4812F000D15699 /* BrivoSampleAppUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAC9DA52C4812F000D15699 /* BrivoSampleAppUnitTests.swift */; };
 		AFE3EEEF2C50DA2000DFBFDD /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EECA2C50DA2000DFBFDD /* BaseTest.swift */; };
 		AFE3EEF12C50DA2000DFBFDD /* GetTokensBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EECE2C50DA2000DFBFDD /* GetTokensBody.swift */; };
@@ -59,6 +60,7 @@
 		AFE3EF082C50DA2000DFBFDD /* WaitUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EEEC2C50DA2000DFBFDD /* WaitUtilities.swift */; };
 		AFE3EF092C50EB0C00DFBFDD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DDD2BA21E2900B2F901 /* Constants.swift */; };
 		AFE3EF0A2C50EB0C00DFBFDD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DDD2BA21E2900B2F901 /* Constants.swift */; };
+		C4B8833944DB08703A58A61D /* Pods_BrivoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */; };
 		E09E3DCA2BA1F50000B2F901 /* BrivoSampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DC92BA1F50000B2F901 /* BrivoSampleAppApp.swift */; };
 		E09E3DCC2BA1F50000B2F901 /* BrivoPassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DCB2BA1F50000B2F901 /* BrivoPassesView.swift */; };
 		E09E3DCE2BA1F50100B2F901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09E3DCD2BA1F50100B2F901 /* Assets.xcassets */; };
@@ -91,6 +93,8 @@
 		2F75BC172C591CAB00B4BD96 /* CancelPassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPassUseCase.swift; sourceTree = "<group>"; };
 		2FD3968E2C598D21000A5C40 /* CleanupPassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanupPassUseCase.swift; sourceTree = "<group>"; };
 		2FD396902C598DFB000A5C40 /* MobileCrdential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCrdential.swift; sourceTree = "<group>"; };
+		4D9D8FACD8E68CA86099B4A3 /* Pods-BrivoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrivoSampleApp.release.xcconfig"; path = "../BrivoSampleApp/Pods/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		4E34BCB8FB1FCBFE0FE2D9D3 /* Pods-BrivoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrivoSampleApp.debug.xcconfig"; path = "../BrivoSampleApp/Pods/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0332A72C4FD644003B28B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF0332A92C4FD758003B28B6 /* BrivoSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrivoSampleApp.entitlements; sourceTree = "<group>"; };
 		AFAC9D122C480DA200D15699 /* BrivoSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrivoSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +113,7 @@
 		AFE3EEE82C50DA2000DFBFDD /* AutomationTestsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomationTestsConfiguration.swift; sourceTree = "<group>"; };
 		AFE3EEEA2C50DA2000DFBFDD /* XCUIElement+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+.swift"; sourceTree = "<group>"; };
 		AFE3EEEC2C50DA2000DFBFDD /* WaitUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitUtilities.swift; sourceTree = "<group>"; };
+		C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrivoSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09E3DC62BA1F50000B2F901 /* BrivoSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrivoSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09E3DC92BA1F50000B2F901 /* BrivoSampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoSampleAppApp.swift; sourceTree = "<group>"; };
 		E09E3DCB2BA1F50000B2F901 /* BrivoPassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoPassesView.swift; sourceTree = "<group>"; };
@@ -144,7 +149,6 @@
 				AF0332A12C4E7CD3003B28B6 /* FirebaseVertexAI-Preview in Frameworks */,
 				AF03328F2C4E7CD3003B28B6 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				AF0332952C4E7CD3003B28B6 /* FirebaseMessaging in Frameworks */,
-				AF370CEA2C3D002700CF432A /* BrivoMobileSDK in Frameworks */,
 				AF0332732C4E7CD3003B28B6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				AF0332852C4E7CD3003B28B6 /* FirebaseFirestoreCombine-Community in Frameworks */,
 				2F6E77282C3FD9A1001B37DC /* FirebaseCrashlytics in Frameworks */,
@@ -161,19 +165,30 @@
 				AF0332912C4E7CD3003B28B6 /* FirebaseInstallations in Frameworks */,
 				AF0332992C4E7CD3003B28B6 /* FirebaseRemoteConfig in Frameworks */,
 				AF03329D2C4E7CD3003B28B6 /* FirebaseStorage in Frameworks */,
+				5D3344E02CAD9B7100D97833 /* BrivoMobileSDK in Frameworks */,
 				AF03327D2C4E7CD3003B28B6 /* FirebaseDatabase in Frameworks */,
 				AF03329F2C4E7CD3003B28B6 /* FirebaseStorageCombine-Community in Frameworks */,
 				AF0332772C4E7CD3003B28B6 /* FirebaseAppDistribution-Beta in Frameworks */,
 				AF03327B2C4E7CD3003B28B6 /* FirebaseAuthCombine-Community in Frameworks */,
 				AF0332812C4E7CD3003B28B6 /* FirebaseDynamicLinks in Frameworks */,
+				5D3344DE2CAD9B7100D97833 /* BrivoBLEAllegion in Frameworks */,
 				AF0332832C4E7CD3003B28B6 /* FirebaseFirestore in Frameworks */,
 				AF03329B2C4E7CD3003B28B6 /* FirebaseRemoteConfigSwift in Frameworks */,
+				C4B8833944DB08703A58A61D /* Pods_BrivoSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F9792D36CBB7D89020F6F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2F3544792C54505100FAECE1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +301,16 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		D198CDF9A27A95A328049F44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E34BCB8FB1FCBFE0FE2D9D3 /* Pods-BrivoSampleApp.debug.xcconfig */,
+				4D9D8FACD8E68CA86099B4A3 /* Pods-BrivoSampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		E09E3DBD2BA1F50000B2F901 = {
 			isa = PBXGroup;
 			children = (
@@ -293,7 +318,8 @@
 				AFAC9D132C480DA200D15699 /* BrivoSampleAppUITests */,
 				AFAC9DA42C4812F000D15699 /* BrivoSampleAppUnitTests */,
 				E09E3DC72BA1F50000B2F901 /* Products */,
-				E09E3DE12BA2449500B2F901 /* Frameworks */,
+				D198CDF9A27A95A328049F44 /* Pods */,
+				1F9792D36CBB7D89020F6F68 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -331,13 +357,6 @@
 				E09E3DD02BA1F50100B2F901 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E09E3DE12BA2449500B2F901 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,9 +402,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E09E3DD42BA1F50100B2F901 /* Build configuration list for PBXNativeTarget "BrivoSampleApp" */;
 			buildPhases = (
+				27127FEDF03BC43E1FAF0397 /* [CP] Check Pods Manifest.lock */,
 				E09E3DC22BA1F50000B2F901 /* Sources */,
 				E09E3DC32BA1F50000B2F901 /* Frameworks */,
 				E09E3DC42BA1F50000B2F901 /* Resources */,
+				CB53BD90491F321CF6FC0DFC /* [CP] Embed Pods Frameworks */,
+				C63A8A340700E96B8902DF95 /* [CP] Copy Pods Resources */,
 				2FAAC5E62C57462300C81687 /* Crashlytics */,
 			);
 			buildRules = (
@@ -394,7 +416,6 @@
 			);
 			name = BrivoSampleApp;
 			packageProductDependencies = (
-				AF370CE92C3D002700CF432A /* BrivoMobileSDK */,
 				2F6E77272C3FD9A1001B37DC /* FirebaseCrashlytics */,
 				2F6E77292C3FD9A6001B37DC /* FirebaseAnalytics */,
 				AF03326E2C4E7CD3003B28B6 /* FirebaseAnalyticsOnDeviceConversion */,
@@ -423,6 +444,8 @@
 				AF03329C2C4E7CD3003B28B6 /* FirebaseStorage */,
 				AF03329E2C4E7CD3003B28B6 /* FirebaseStorageCombine-Community */,
 				AF0332A02C4E7CD3003B28B6 /* FirebaseVertexAI-Preview */,
+				5D3344DD2CAD9B7100D97833 /* BrivoBLEAllegion */,
+				5D3344DF2CAD9B7100D97833 /* BrivoMobileSDK */,
 			);
 			productName = BrivoSampleApp;
 			productReference = E09E3DC62BA1F50000B2F901 /* BrivoSampleApp.app */;
@@ -461,8 +484,8 @@
 			);
 			mainGroup = E09E3DBD2BA1F50000B2F901;
 			packageReferences = (
-				AF370CE82C3D002700CF432A /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */,
 				2F6E77262C3FD984001B37DC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5D3344DC2CAD9B7100D97833 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */,
 			);
 			productRefGroup = E09E3DC72BA1F50000B2F901 /* Products */;
 			projectDirPath = "";
@@ -503,6 +526,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		27127FEDF03BC43E1FAF0397 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BrivoSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2FAAC5E62C57462300C81687 /* Crashlytics */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -525,6 +570,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
+		C63A8A340700E96B8902DF95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB53BD90491F321CF6FC0DFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -788,6 +867,7 @@
 		};
 		E09E3DD52BA1F50100B2F901 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E34BCB8FB1FCBFE0FE2D9D3 /* Pods-BrivoSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -798,6 +878,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BrivoSampleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = P675WD7PT4;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrivoSampleApp/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "It is used to open Bluetooth access points";
@@ -827,6 +908,7 @@
 		};
 		E09E3DD62BA1F50100B2F901 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D9D8FACD8E68CA86099B4A3 /* Pods-BrivoSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -837,6 +919,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BrivoSampleApp/Preview Content\"";
 				DEVELOPMENT_TEAM = P675WD7PT4;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrivoSampleApp/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "It is used to open Bluetooth access points";
@@ -913,9 +996,9 @@
 				minimumVersion = 10.29.0;
 			};
 		};
-		AF370CE82C3D002700CF432A /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */ = {
+		5D3344DC2CAD9B7100D97833 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git";
+			repositoryURL = "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -933,6 +1016,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 2F6E77262C3FD984001B37DC /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		5D3344DD2CAD9B7100D97833 /* BrivoBLEAllegion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D3344DC2CAD9B7100D97833 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */;
+			productName = BrivoBLEAllegion;
+		};
+		5D3344DF2CAD9B7100D97833 /* BrivoMobileSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D3344DC2CAD9B7100D97833 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */;
+			productName = BrivoMobileSDK;
 		};
 		AF03326E2C4E7CD3003B28B6 /* FirebaseAnalyticsOnDeviceConversion */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -1037,11 +1130,6 @@
 		AF0332A02C4E7CD3003B28B6 /* FirebaseVertexAI-Preview */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "FirebaseVertexAI-Preview";
-		};
-		AF370CE92C3D002700CF432A /* BrivoMobileSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AF370CE82C3D002700CF432A /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */;
-			productName = BrivoMobileSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

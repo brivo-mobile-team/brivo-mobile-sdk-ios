@@ -9,6 +9,7 @@ import SwiftUI
 import BrivoCore
 import BrivoAccess
 import BrivoOnAir
+import BrivoBLEAllegion
 
 struct BrivoPassesView: View {
     @StateObject var stateModel = BrivoPassesViewModel()
@@ -215,6 +216,11 @@ class BrivoPassesViewModel: ObservableObject {
                                 }
                                 if let refreshedPass = refreshedPass {
                                     self?.brivoOnAirPasses[index] = refreshedPass
+                                    if refreshedPass.hasAllegionBleCredentials {
+                                        Task {
+                                            try? await BrivoSDKBLEAllegion.instance.refreshCredentials(brivoOnAirPass: refreshedPass)
+                                        }
+                                    }
                                 } else {
                                     self?.brivoOnAirPasses.remove(at: index)
                                 }

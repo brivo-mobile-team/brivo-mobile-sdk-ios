@@ -1,0 +1,302 @@
+/*
+  Localizable.strings
+ Allegion.Access.MobileAccessSDK.iOS
+
+  Created by Allegion on 3/16/23.
+  Copyright © 2023 Allegion. All rights reserved.
+*/
+
+// Testing
+TESTING_INTERPOLATION_STRING_1 = "%@";
+TESTING_INTERPOLATION_STRING_4 = "This is an %@ test. Message: %@ %@ %@";
+TESTING_SIMPLE_STRING = "This is a test. Hello World!";
+
+// UNIVERSAL
+UNIVERSAL_SEE_SOURCE_RECOVERY_SUGGESTION = "If a source error is available, see the source error's recovery suggestion.";
+/* Recovery suggestion property in LocalizedError meant to be used accross all contexts */
+UNIVERSAL_CONTACT_SUPPORT_RECOVERY_SUGGESTION = "Please contact support.";
+
+/* Description property in LocalizedError concerning problems with ID Token data */
+ID_TOKEN_INVALID_ERROR_DESCRIPTION = "The supplied ID Token could not be parsed.";
+/* Description property in LocalizedError concerning problems where the ID Token is missing a required claim */
+ID_TOKEN_MISSING_CLAIM_ERROR_DESCRIPTION = "The supplied ID token is missing a required claim.";
+/* Description property in LocalizedError concerning problems with the integration ID */
+INTEGRATION_ID_INVALID_ERROR_DESCRIPTION = "The supplied integration ID was missing or malformed.";
+
+/* Failure Reason property in LocalizedError concerning problems with ID Token data */
+INVALID_ID_TOKEN_FAILURE_REASON = "Encountered an error while attempting to parse the ID Token";
+/* Failure Reason property in LocalizedError concerning problems with the integration ID */
+INTEGRATION_ID_INVALID_FAILURE_REASON = "The supplied integration ID was invalid.";
+
+/* Failure reason property in LocalizedError concerning the State Manager */
+JWT_INVALID_PART_COUNT_FAILURE_REASON = "The supplied ID token does not contain the expected number of parts.";
+/* Failure reason property in LocalizedError concerning the State Manager */
+JWT_INVALID_FORMAT_FAILURE_REASON = "The supplied ID token is not in the expected format.";
+/* Recovery suggestion property in LocalizedError concerning problems with ID Token data */
+ID_TOKEN_RETRY_WITH_VALID_TOKEN_RECOVERY_SUGGESTION = "Retry the current operation with a valid ID token.";
+
+/* Description property in LocalizedError concerning the Initialization Operation  */
+SDK_ALREADY_INITIALIZED_ERROR_DESCRIPTION = "SDK already initialized.";
+/* Failure Reason property in LocalizedError concerning the Initialization Operation  */
+SDK_ALREADY_INITIALIZED_FAILURE_REASON = "The SDK has already been initialized.";
+/* Recovery Suggestion property in LocalizedError concerning the Initialization Operation  */
+SDK_ALREADY_INITIALIZED_RECOVERY_SUGGESTION = "The SDK is already initialized and ready to process operations.";
+
+/* Recovery Suggestion property in LocalizedError concerning any operation which requires the SDK to be Initialized  */
+SDK_REQUIRES_INITIALIZATION_RECOVERY_SUGGESTION = "Complete initialization and retry the operation.";
+
+/* Description property in LocalizedError concerning the Uninitialize operation */
+UNINITIALIZE_GENERAL_ERROR_DESCRIPTION = "An error occurred while attempting to uninitialize the SDK.";
+/* Failure reason property in LocalizedError concerning the Uninitialize operation */
+UNINITIALIZE_REQUIRES_INITIALIZATION_FAILURE_REASON = "Uninitialization requires the SDK to be initialized.";
+/* Recovery suggestion property in LocalizedError concerning the Uninitialize operation */
+UNINITIALIZE_REQUIRES_INITIALIZATION_RECOVERY_SUGGESTION = "The SDK is already uninitialized, initialize the SDK to process this and other operations.";
+
+/* Description property in LocalizedError concerning any operation */
+OPERATION_ALREADY_IN_PROGRESS_ERROR_DESCRIPTION = "Cannot start the requested operation as the operation is currently in progress.";
+/* Failure reason property in LocalizedError concerning any operation */
+OPERATION_ALREADY_IN_PROGRESS_FAILURE_REASON = "The requested operation is already in progress.";
+/* Recovery suggestion property in LocalizedError concerning any operation */
+OPERATION_ALREADY_IN_PROGRESS_RECOVERY_SUGGESTION = "Retry the operation - if necessary - after the current invocation completes.";
+
+/* Description property in LocalizedError concerning the State Manager */
+STATE_MANAGER_ENCOUNTERED_A_GENERAL_ERROR_LOCALIZED_ERROR_DESCRIPTION = "An unexpected error occurred while managing application state.";
+/* Failure reason property in LocalizedError concerning the State Manager */
+STATE_MANAGER_ENCOUNTERED_A_GENERAL_ERROR_FAILURE_REASON = "The state manager is unable to process the request.";
+
+/* Recovery suggestion property in LocalizedError concerning problems with Integration ID data */
+INTEGRATION_ID_RETRY_WITH_VALID_TOKEN_RECOVERY_SUGGESTION = "Retry the current operation with a valid integration ID.";
+
+COUNTACT_SUPPORT_RECOVERY_SUGGESTION = "Contact support.";
+
+/* Description property in LocalizedError concerning the Update Access Token operation */
+UPDATE_ACCESS_TOKEN_FAILURE_ERROR_DESCRIPTION = "Encountered an error while attempting to update the access token.";
+/* Description property in LocalizedError concerning the Connected Account Select Operation */
+CONNECTED_ACCOUNT_SELECTION_FAILURE_ERROR_DESCRIPTION = "An error occurred trying to select a connected account.";
+
+/* Description property in LocalizedError concerning any operation which may need to store Account information */
+ACCOUNT_STORAGE_ERROR_DESCRIPTION = "An error occurred while trying to store an account.";
+/* Description property in LocalizedError concerning any operation which may need to retrieve Account information */
+ACCOUNT_RETRIEVAL_ERROR_DESCRIPTION = "An error occurred while trying to retrieve an account from storage.";
+/* Description property in LocalizedError concerning any operation which may need to remove Account information */
+ACCOUNT_REMOVAL_ERROR_DESCRIPTION = "An error occurred while trying to remove a connected account from storage.";
+
+/* Failure Reason property in LocalizedError concerning any operation which may need to store Account information */
+ACCOUNT_STORAGE_FAILURE_REASON = "Account information may be lost or unavailable.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to retrieve Account information */
+ACCOUNT_RETRIEVAL_FAILURE_REASON = "Account information could not be retrieved from storage.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to remove Account information */
+ACCOUNT_REMOVAL_FAILURE_REASON = "Account information could not be removed from storage.";
+
+/* Description property in LocalizedError concerning any operation which may need to store Connected Account information */
+CONNECTED_ACCOUNT_STORAGE_ERROR_DESCRIPTION = "An error occurred while trying to store a connected account.";
+/* Description property in LocalizedError concerning any operation which may need to retrieve Connected Account information */
+CONNECTED_ACCOUNT_RETRIEVAL_ERROR_DESCRIPTION = "An error occurred while trying to retrieve a connected account from storage.";
+/* Description property in LocalizedError concerning any operation which may need to remove Connected Account information */
+CONNECTED_ACCOUNT_REMOVAL_ERROR_DESCRIPTION = "An error occurred while trying to remove a connected account from storage.";
+
+/* Failure Reason property in LocalizedError concerning any operation which may need to store Connected Account information */
+CONNECTED_ACCOUNT_STORAGE_FAILURE_REASON = "Connected account information may be lost or unavailable.";
+/* Failure Reason property in LocalizedError concerning any operation which may need a selected Connected Account */
+CONNECTED_ACCOUNT_NOT_SELECTED_FAILURE_REASON = "No selected connected account was found.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to retrieve Connected Account information */
+CONNECTED_ACCOUNT_RETRIEVAL_FAILURE_REASON = "Connected account information could not be retrieved from storage.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to remove Connected Account information */
+CONNECTED_ACCOUNT_REMOVAL_FAILURE_REASON = "Connected account information could not be removed from storage.";
+
+
+/* Error description property in LocalizedError concerning any operation which may need to store BLE right information */
+BLE_RIGHT_STORAGE_ERROR_DESCRIPTION = "An error occurred while trying to store a BLE right.";
+/* Error description property in LocalizedError concerning any operation which may need to retrieve BLE right information */
+BLE_RIGHT_RETRIEVAL_ERROR_DESCRIPTION = "An error occurred while trying to retrieve a BLE right.";
+/* Error description property in LocalizedError concerning any operation which may need to remove BLE right information */
+BLE_RIGHT_REMOVAL_ERROR_DESCRIPTION = "An error occurred while trying to remove a BLE right.";
+
+/* Failure Reason property in LocalizedError concerning any operation which may need to store BLE right information */
+BLE_RIGHT_STORAGE_FAILURE_REASON = "BLE right information may be lost or unavailable.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to retrieve BLE right information */
+BLE_RIGHT_RETRIEVAL_FAILURE_REASON = "BLE right information could not be retrieved from storage.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to remove BLE right information */
+BLE_RIGHT_REMOVAL_FAILURE_REASON = "BLE right information could not be removed from storage.";
+
+
+/* Error description property in LocalizedError concerning any operation which may need to store access payload information */
+ACCESS_PAYLOAD_STORAGE_ERROR_DESCRIPTION = "An error occurred while trying to store an access payload.";
+/* Error description property in LocalizedError concerning any operation which may need to retrieve access payload information */
+ACCESS_PAYLOAD_RETRIEVAL_ERROR_DESCRIPTION = "An error occurred while trying to retrieve an access payload.";
+/* Error description property in LocalizedError concerning any operation which may need to remove access payload information */
+ACCESS_PAYLOAD_REMOVAL_ERROR_DESCRIPTION = "An error occurred while trying to remove an access payload.";
+
+/* Failure Reason property in LocalizedError concerning any operation which may need to store access payload information */
+ACCESS_PAYLOAD_STORAGE_FAILURE_REASON = "Access payload information may be lost or unavailable.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to retrieve access payload information */
+ACCESS_PAYLOAD_RETRIEVAL_FAILURE_REASON = "Access payload information could not be retrieved from storage.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to remove access payload information */
+ACCESS_PAYLOAD_REMOVAL_FAILURE_REASON = "Access payload information could not be removed from storage.";
+
+
+/* Error description property in LocalizedError concerning any operation which may need to store no tour payload information */
+NO_TOUR_PAYLOAD_STORAGE_ERROR_DESCRIPTION = "An error occurred while trying to store a no tour payload.";
+/* Error description property in LocalizedError concerning any operation which may need to retrieve no tour payload information */
+NO_TOUR_PAYLOAD_RETRIEVAL_ERROR_DESCRIPTION = "An error occurred while trying to retrieve a no tour payload.";
+/* Error description property in LocalizedError concerning any operation which may need to remove no tour payload information */
+NO_TOUR_PAYLOAD_REMOVAL_ERROR_DESCRIPTION = "An error occurred while trying to remove a no tour payload.";
+
+/* Failure Reason property in LocalizedError concerning any operation which may need to store no tour payload information */
+NO_TOUR_PAYLOAD_STORAGE_FAILURE_REASON = "No tour payload information may be lost or unavailable.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to retrieve no tour payload information */
+NO_TOUR_PAYLOAD_RETRIEVAL_FAILURE_REASON = "No tour payload information could not be retrieved from storage.";
+/* Failure Reason property in LocalizedError concerning any operation which may need to remove no tour payload information */
+NO_TOUR_PAYLOAD_REMOVAL_FAILURE_REASON = "No tour payload information could not be removed from storage.";
+
+
+/* Recovery suggestion property in LocalizedError concerning any problem */
+CONNECTED_ACCOUNT_GENERAL_ERROR_RECOVERY_SUGGESTION = "Please consult additional error detail / context or contact support.";
+
+/* Description property in LocalizedError concerning the Enrollment Operation */
+ENROLLMENT_RESULT_ERROR_DESCRIPTION = "An error occurred while trying to store an enrollment result.";
+/* Failure reason property in LocalizedError concerning any operation */
+OPERATION_RESULT_COULD_NOT_BE_STORED_FAILURE_REASON = "The requested operation result could not be stored.";
+
+/* Description property in LocalizedError concerning any operation which may need to retrieve Plenary Account information */
+PLENARY_CREDENTIAL_RETRIEVE_FAILURE_ERROR_DESCRIPTION = "An error occurred while trying to retrieve plenary credential data.";
+
+/* Description property in LocalizedError concerning failures that the server encounters with invalid authentication data  */
+INVALID_AUTHENTICATION_SERVER_ERROR_ERROR_DESCRIPTION = "The server returned an error due to invalid authentication data.";
+/* Description property in LocalizedError concerning failures that the server encounters with invalid headers  */
+INVALID_HEADERS_SERVER_ERROR_ERROR_DESCRIPTION = "The server denied access due to invalid headers.";
+/* Description property in LocalizedError concerning failures that the server encounters with device registration  */
+DEVICE_REGISTRATION_SERVER_ERROR_ERROR_DESCRIPTION = "An unknown error occurred while attempting to register the device.";
+/* Description property in LocalizedError concerning failures that the server encounters with account conflicts  */
+ACCOUNT_CONFLICT_SERVER_ERROR_ERROR_DESCRIPTION = "An account is already registered for this device.";
+/* Description property in LocalizedError concerning unknown failures that the server encounters */
+UNKNOWN_SERVER_ERROR_ERROR_DESCRIPTION = "An internal server error was returned from the server.";
+/* Description property in LocalizedError concerning failures that the server encounters with account creation  */
+ACCOUNT_CREATION_SERVER_ERROR_ERROR_DESCRIPTION = "An unknown error occurred while attempting to create an account.";
+/* Description property in LocalizedError concerning failures that the server encounters with an invalid integration ID  */
+INVALID_INTEGRATION_ID_SERVER_ERROR_ERROR_DESCRIPTION = "The provided integration ID is invalid.";
+/* Description property in LocalizedError concerning failures that the server encounters with account connection  */
+ACCOUNT_CONNECTION_SERVER_ERROR_ERROR_DESCRIPTION = "An unknown error occurred while attempting to connect your account";
+/* Description property in LocalizedError concerning failures that the server encounters with retrieving a connected account  */
+RETRIEVE_CONNECTED_ACCOUNT_SERVER_ERROR_ERROR_DESCRIPTION = "An unknown error occurred while attempting to retrieve a connected account.";
+/* Description property in LocalizedError concerning failures that the server encounters with an invalid subscription key  */
+INVALID_SUBSCRIPTION_KEY_SERVER_ERROR_ERROR_DESCRIPTION = "The provided subscription key is invalid.";
+/* Description property in LocalizedError concerning failures that the server encounters with the configuration  */
+CONFIGURATION_ERROR_ERROR_DESCRIPTION = "An error has occurred accessing the SDK Configuration.";
+/* Description property in LocalizedError concerning failures that the server encounters with the device encryption key  */
+DEVICE_ENCRYPTION_KEY_ERROR_ERROR_DESCRIPTION = "The device encryption key is invalid.";
+/* Description property in LocalizedError concerning failures that the server encounters with accessing device storage  */
+UNKNOWN_DEVICE_STORAGE_ERROR_ERROR_DESCRIPTION = "Failed to access secure storage on the device.";
+
+/* Failure Reason property in LocalizedError concerning any operation which requires Account information  */
+ACCOUNT_NOT_FOUND_FAILURE_REASON = "Unable to find account information for this device.";
+/* Description property in LocalizedError concerning failures with the Authentication Operation  */
+AUTHENTICATION_FAILURE_ERROR_DESCRIPTION = "Unable to successfully complete authentication.";
+
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with invalid authentication data  */
+INVALID_AUTHENTICATION_SERVER_ERROR_FAILURE_REASON = "The request to the server does not contain valid authentication data.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with invalid headers  */
+INVALID_HEADERS_SERVER_ERROR_FAILURE_REASON = "The request to the server does not contain valid headers.";
+/* Failure Reason property in LocalizedError concerning unknown failures that the server encounters */
+UNKNOWN_SERVER_ERROR_FAILURE_REASON = "The server encountered an error.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with device registration  */
+DEVICE_REGISTRATION_SERVER_ERROR_FAILURE_REASON = "The server request to register the device failed.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with account conflicts  */
+ACCOUNT_CONFLICT_SERVER_ERROR_FAILURE_REASON = "An account cannot be created for an already registered device.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with account creation  */
+ACCOUNT_CREATION_SERVER_ERROR_FAILURE_REASON = "The server request to create an account failed.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with an invalid integration ID  */
+INVALID_INTEGRATION_ID_SERVER_ERROR_FAILURE_REASON = "The server request failed due to an invalid integration ID.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with account connection  */
+ACCOUNT_CONNECTION_SERVER_ERROR_FAILURE_REASON = "The server request to connect the account failed.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with retrieving a connected account  */
+RETRIEVE_CONNECTED_ACCOUNT_SERVER_ERROR_FAILURE_REASON = "The server request to retrieve the connected account failed.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with an invalid subscription key  */
+INVALID_SUBSCRIPTION_KEY_SERVER_ERROR_FAILURE_REASON = "The server request failed due to an invalid subscription key.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with the configuration  */
+CONFIGURATION_ERROR_FAILURE_REASON = "The SDK Configuration is invalid or the subscription key is not set.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with the device encryption key  */
+DEVICE_ENCRYPTION_KEY_ERROR_FAILURE_REASON = "The device may not support secure storage.";
+/* Failure Reason property in LocalizedError concerning failures that the server encounters with accessing device storage  */
+UNKNOWN_DEVICE_STORAGE_ERROR_FAILURE_REASON = "The attempt to retrieve or store information through secure storage failed.";
+
+/* Recovery Suggestion property in LocalizedError concerning failures that the server encounters with invalid authentication data */
+INVALID_AUTHENTICATION_SERVER_ERROR_RECOVERY_SUGGESTION = "Retry the current operation with valid authentication information.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the server encounters with an invalid subscription key */
+INVALID_SUBSCRIPTION_KEY_SERVER_ERROR_RECOVERY_SUGGESTION = "Retry the current operation with a valid subscription key.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the server encounters with the configuration */
+CONFIGURATION_ERROR_RECOVERY_SUGGESTION = "Ensure the SDK is properly initialized with a subscription key.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the server encounters with the device encryption key */
+DEVICE_ENCRYPTION_KEY_ERROR_RECOVERY_SUGGESTION = "Ensure you are using a proper context and your device supports secure storage.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the server encounters with accessing device storage */
+UNKNOWN_DEVICE_STORAGE_ERROR_RECOVERY_SUGGESTION = "Ensure your device supports secure storage.";
+
+/* Error description property in LocalizedError concerning failures that the SDK encounters when retrieving an AuthenticationManager instance */
+RETRIEVE_AUTHENTICATION_MANAGER_ERROR_DESCRIPTION = "An error occurred while attempting to retrieve the authentication manager.";
+/* Error description property in LocalizedError concerning failures that the SDK encounters when retrieving an AuthenticationManager instance */
+RETRIEVE_DEVICE_SEARCH_MANAGER_ERROR_DESCRIPTION = "An error occurred while attempting to retrieve the device search manager.";
+/* Description property in LocalizedError concerning any operation which requires the SDK to be Initialized  */
+SDK_INITIALIZATION_REQUIRED_ERROR_DESCRIPTION = "SDK initialization required.";
+/* Failure reason property in LocalizedError concerning failures that the SDK encounters when retrieving an AuthenticationManager instance */
+REQUESTED_OPERATION_REQUIRES_INITIALIZATION_FAILURE_REASON = "Authentication requires the SDK to be initialized.";
+/* Recovery suggestion property in LocalizedError concerning failures that the SDK encounters when retrieving an AuthenticationManager instance */
+RETRY_AFTER_INITIALIZING_RECOVERY_SUGGESTION = "Attempt authentication after initializing the SDK instance.";
+
+/* Description property in LocalizedError concerning any operation which requires the SDK to be Authenticated  */
+SDK_AUTHENTICATION_REQUIRED_ERROR_DESCRIPTION = "SDK authentication required.";
+/* Failure Reason property in LocalizedError concerning any operation which requires the SDK to be Authenticated  */
+REQUESTED_OPERATION_REQUIRES_AUTHENTICATION_FAILURE_REASON = "The requested operation requires authentication.";
+/* Recovery Suggestion property in LocalizedError concerning any operation which requires the SDK to be Authenticated  */
+AUTHENTICATION_REQUIRED_ERROR_RECOVERY_SUGGESTION = "Complete authentication and retry the operation";
+
+/* Description property in LocalizedError concerning failures that the SDK encounters when starting a bluetooth scan  */
+BLE_START_SCAN_ERROR_ERROR_DESCRIPTION = "The BLE scan could not be initiated";
+/* Failure Reason property in LocalizedError concerning failures that the SDK encounters when starting a bluetooth scan  */
+BLE_START_SCAN_ERROR_FAILURE_REASON = "Bluetooth usage is currently disabled, unsupported, or disallowed.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the SDK encounters when starting a bluetooth scan  */
+BLE_START_SCAN_ERROR_RECOVERY_SUGGESTION = "Ensure the mobile device supports bluetooth and that bluetooth is enabled.";
+
+/* Description property in LocalizedError concerning failures that the SDK encounters because the SDK is not currently scanning  */
+SDK_NOT_SCANNING_ERROR_DESCRIPTION = "The BLE scan could not be cancelled.";
+/* Failure Reason property in LocalizedError concerning failures that the SDK encounters because the SDK is not currently scanning  */
+SDK_NOT_SCANNING_FAILURE_REASON = "Canceling a BLE scan requires the SDK to currently be scanning.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the SDK encounters because the SDK is not currently scanning  */
+SDK_NOT_SCANNING_RECOVERY_SUGGESTION = "Cancel scan should only be utilized when the SDK is scanning.";
+
+/* Description property in LocalizedError concerning failures that the SDK encounters when a connection attempt times out  */
+DEVICE_CONNECTION_TIMEOUT_ERROR_DESCRIPTION = "The connection attempt timed out.";
+/* Failure Reason property in LocalizedError concerning failures that the SDK encounters when a connection attempt times out  */
+DEVICE_CONNECTION_TIMEOUT_FAILURE_REASON = "Connection was interrupted or the device is no longer in range.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the SDK encounters when a connection attempt times out  */
+DEVICE_CONNECTION_TIMEOUT_RECOVERY_SUGGESTION = "Ensure the device is in range and retry connection.";
+
+/* Description property in LocalizedError concerning failures that the SDK encounters when a send payloads attempt times out  */
+DEVICE_PAYLOAD_TIMEOUT_ERROR_DESCRIPTION = "The send payloads attempt timed out.";
+/* Failure Reason property in LocalizedError concerning failures that the SDK encounters when a send payloads attempt times out  */
+DEVICE_PAYLOAD_TIMEOUT_FAILURE_REASON = "Sending payloads was interrupted or the device is no longer in range.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the SDK encounters when a send payloads attempt times out  */
+DEVICE_PAYLOAD_TIMEOUT_RECOVERY_SUGGESTION = "Ensure the device is in range and retry sending payloads.";
+
+/* Description property in LocalizedError concerning failures that the SDK encounters during device connection because the device is already connected  */
+DEVICE_ALREADY_CONNECTED_ERROR_DESCRIPTION = "The device is already connected.";
+/* Failure Reason property in LocalizedError concerning failures that the SDK encounters during device connection because the device is already connected  */
+DEVICE_ALREADY_CONNECTED_FAILURE_REASON = "Cannot connect to an already connected device.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the SDK encounters during device connection because the device is already connected  */
+DEVICE_ALREADY_CONNECTED_RECOVERY_SUGGESTION = "Ensure the device is in a disconnected state before attempting connection.";
+
+/* Description property in LocalizedError concerning failures that the SDK encounters that require the device to be connected  */
+DEVICE_NOT_CONNECTED_ERROR_DESCRIPTION = "The operation requires the SDK be connected to the device.";
+/* Failure Reason property in LocalizedError concerning failures that the SDK encounters that require the device to be connected  */
+DEVICE_NOT_CONNECTED_FAILURE_REASON = "The SDK is currently not connected to the device.";
+/* Recovery Suggestion property in LocalizedError concerning failures that the SDK encounters that require the device to be connected  */
+DEVICE_NOT_CONNECTED_RECOVERY_SUGGESTION = "Connect to the device, then retry the operation.";
+
+/* Description property in LocalizedError concerning failures that the SDK encounters when failing to send payloads to the device  */
+SEND_PAYLOAD_FAILED_ERROR_DESCRIPTION = "The attempt to send payloads to the device has failed.";
+/* Failure Reason property in LocalizedError concerning failures that the SDK encounters when failing to send payloads to the device  */
+SEND_PAYLOAD_FAILED_FAILURE_REASON = "The SDK failed to send payloads to the device.";
+
+/* Description property in LocalizedError concerning failures that the SDK encounters when deleting a stored no tour payload  */
+SEND_PAYLOAD_FAILED_ERROR_DESCRIPTION = "The no tour payload could not be deleted.";
+/* Failure Reason property in LocalizedError concerning failures that the SDK encounters when deleting a stored no tour payload  */
+SEND_PAYLOAD_FAILED_FAILURE_REASON = "The SDK failed to delete the stored no tour payload.";

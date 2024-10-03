@@ -1,18 +1,33 @@
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbrivo-mobile-team%2Fbrivo-mobile-sdk-ios%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/brivo-mobile-team/Brivo-Mobile-SDK)
-[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbrivo-mobile-team%2Fbrivo-mobile-sdk-ios%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/brivo-mobile-team/Brivo-Mobile-SDK)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbrivo-mobile-team%2Fbrivo-mobile-sdk-ios%2Fbadge%3Ftype%3Dswift-versions)](https://swiftpackageindex.com/brivo-mobile-team/brivo-mobile-sdk-ios)
+[![](https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2Fbrivo-mobile-team%2Fbrivo-mobile-sdk-ios%2Fbadge%3Ftype%3Dplatforms)](https://swiftpackageindex.com/brivo-mobile-team/brivo-mobile-sdk-ios)
 
 # [<img src="brivo_logo.png" width="25"/>](brivo_logo.png) Brivo Mobile SDK iOS
 
 A set of reusable libraries, services and components for Swift iOS apps.
-### Installation
-#### Swift Package Manager (SPM) ❤️
 
+ **Table of content:**
+
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Brivo Mobile SDK Modules](#brivo_mobile_sdk_modules)
+    - [BrivoCore](#brivo_core)
+    - [BrivoOnAir](#brivo_on_air)
+    - [BrivoAccess](#brivo_access)
+        - [BrivoBLEAllegion - Optional](#brivo_ble_allegion)
+    - [BrivoBLE](#brivo_ble)
+    - [BrivoLocalAuthentication](#brivo_local_authentication)
+    - [BrivoNetworkCore](#brivo_network_core)
+ - [BrivoSDK Errors](#brivo_errors)
+ - [Issues](#issues)
+
+ <a id="installation"></a>
+### Installation
 The BrivoSDK is available for use using Swift Package Manager. It can be found on Swift Package Index here: https://swiftpackageindex.com/brivo-mobile-team/brivo-mobile-sdk-ios.
 It can be also found on Github here: https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.
 In order to add the BrivoSDK one needs to to the following:
-- When working with an XCode project:
+- When working with an Xcode project:
 ```
-1. Go to the XCode project section for Package Dependencies
+1. Go to the Xcode project section for Package Dependencies
 2. Click the "+" button
 3. Enter in the search field called "Search or Enter Package URL" this url: https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git
 4. Select Add Package and add it to the needed target
@@ -22,11 +37,11 @@ In order to add the BrivoSDK one needs to to the following:
 1. Go to the manifest file
 2. Add the reference to the BrivoSDK:
     - if the main branch is needed use this: .package(url: "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git", branch: "main")
-    - if a sepcific version is needed use this: .package(url: "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git", from: "1.20.0")
-3. Select a produc using this: .product(name: "BrivoMobileSDK", package: "brivo-mobile-sdk-ios")
+    - if a specific version is needed use this: .package(url: "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git", from: "1.22.0")
+3. Select a product using this: .product(name: "BrivoMobileSDK", package: "brivo-mobile-sdk-ios")
 ```
 
-The BrivoSDK components were built using the target version iOS 12.1, Apple Swift version required is 5 and Xcode version 11.11
+The BrivoSDK components were built using the target version iOS 14.0, Apple Swift version required is 5 and Xcode version 15.4
 
 The following BrivoSDK components should be added to the application project
 
@@ -42,6 +57,11 @@ The following BrivoSDK components should be added to the application project
 
 In project settings, under "Framework, Libraries, and Embedded content" section, the frameworks must be marked as "Embed & Sign".
 
+### Sample project
+This repository comes with a sample project inside the folder BrivoSampleApp.
+Here we show how the SDK can be used using SPM and fetching the main branch of our SDK.
+
+<a id="usage"></a>
 ## Usage
 Before using the Brivo Mobile SDK it is mandatory to configure (through instance) of BrivoSDK class with a BrivoSDKConfiguration object
 The BrivoSDKConfiguration object requires a set of parameters listed bellow:
@@ -53,7 +73,7 @@ The BrivoSDKConfiguration object requires a set of parameters listed bellow:
  * brivoConfiguration  Brivo client id
  *                     Brivo client secret
  *                     Brivo SDK local storage management enabled
- *                     Brivo API defaults to EU region
+ *                     Brivo API region
  */
 ```
 #### BrivoSDK configuration usage 
@@ -72,8 +92,10 @@ do {
 The exception is thrown if the BrivoConfiguration class is not initialized correctly.
 For example one of the parameters is nil or empty string.
 
+ <a id="brivo_mobile_sdk_modules"></a>
 ## Brivo Mobile SDK Modules
 
+ <a id="brivocore"></a>
 #### BrivoCore
 This module implements the BrivoSDK class that is accessible through 'instance' property. It has the following interface:
 ```
@@ -95,6 +117,7 @@ Returns the device ID.
 func getDeviceId() -> String
 ```
 
+ <a id="brivo_on_air"></a>
 #### BrivoOnAir
 This module manages the connection between the application and the Brivo environment. It has the following interface:
 ```
@@ -463,6 +486,7 @@ do {
 }
 ```
 
+ <a id="brivo_access"></a>
 #### BrivoAccess
 This module provides a simplified interface of unlocking access points either Bluetooth type or Internet type. It has the following interface:
 ```
@@ -626,10 +650,52 @@ do {
 }
 ```
 
+
+<a id="brivo_ble_allegion"></a>
+#### BrivoBLEAllegion - Optional 
+This module acts as wrapper for AllegionSDKs and is an optional dependendency for [BrivoAccess](#brivo_access) to unlock Allegion devices.
+> [!NOTE]
+> Using this module requires access to Allegion SDKs (see [Podfile](BrivoSampleApp/Podfile)).\
+> Allegion SDKs come with a limitation: arm64 architecture is excluded so the app runs only on simulators with Rosetta.
+
+It has the following interface:
+```
+/**
+     Initialise BrivoSDKBLEAllegion
+     - Parameter configuration: credentials to setup AllegionSDK
+     */
+    init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration)
+
+    /**
+     Setup initial comunication with AllegionSDK and restores local credentials if possible
+     - Throws: an error if parameters from ``BrivoBLEAllegionConfiguration`` are rejected by AllegionSDK
+     */
+    func initialise() async throws
+
+    /**
+     Retrieve and store the allegion tokens required for authenticating using AllegionSDK
+     - Parameter brivoOnAirPass: BrivoOnAir pass
+     - Note: ``IBrivoSDKBLEAllegion/initialise()`` must be called  before.
+     */
+    func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
+
+    /**
+     Unlock access point with allegion door type
+     - Parameter accessPoint: BrivoSelectedAccessPoint
+     - Parameter onResult: BrivoResult for unlocking the access point
+     - Parameter cancellationSignal: can be used to cancel the unlocking process
+     - Note: ``IBrivoSDKBLEAllegion/initialise()`` must be before.
+     */
+    func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoCore.OnResultType?, cancellationSignal: BrivoCore.CancellationSignal?)
+```
+
+
+<a id="brivo_ble"></a>
 #### BrivoBLE
 This module manages the connection between an access point and a panel through bluetooth.
 Everything related with BLE communication is handled here.
 
+ <a id="brivo_local_authentication"></a>
 #### BrivoLocalAuthentication
 This module manages the local authenication on a device. It is avaiale through a shared ```instance```.
 It has the following interface:
@@ -647,13 +713,14 @@ func cancelAuthentication()
 func canAuthenticate(onSucces: OnLocalAuthenticationSuccessType?, onFailure: OnFailureType?)
 
 /**
- PErforms the local authentication on the device.
+ Performs the local authentication on the device.
  - Parameter onSuccess: completion block that handles success
  - Parameter onFailure: completion block that handles failure
  */
 func authenticate(onSucces: OnLocalAuthenticationSuccessType?, onFailure: OnFailureType?)
 ```
 
+ <a id="brivo_network_core"></a>
 #### BrivoNetworkCore
 This module manages the main classes for HTTP communication with Brivo Backends.
 Main classes are:
@@ -663,6 +730,7 @@ public class BrivoHTTPSRequest: NSObject { ... }
 
 ```
 
+ <a id="brivo_errors"></a>
 ## BrivoSDK errors
 Each module returns errors through its completion handlers.
 All the errors are BrivoError. Some errors of type BrivoError are sent inline like this:
@@ -765,10 +833,6 @@ public struct BrivoBLEErrors {
 
 ## Issues
 If you run into any bugs or issues, feel free to post an [Issues](https://github.com/brivo-mobile-team/Brivo-Mobile-SDK/issues) to discuss further.
-
-
-
-
 <p align="center">
 Made with ❤️ at <img src="brivo.png" width="60"/>
 </p>

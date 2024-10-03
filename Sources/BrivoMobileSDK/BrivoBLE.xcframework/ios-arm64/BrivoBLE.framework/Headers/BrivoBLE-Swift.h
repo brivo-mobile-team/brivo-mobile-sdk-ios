@@ -333,15 +333,6 @@ SWIFT_CLASS("_TtC8BrivoBLE28BrivoConfigurationBLEService")
 - (void)configureAccessPointWithBrivoBLECredentials:(NSArray<BrivoBLECredential *> * _Nonnull)brivoBLECredentials onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
 @end
 
-
-SWIFT_CLASS("_TtC8BrivoBLE18CancellationSignal")
-@interface CancellationSignal : NSObject
-@property (nonatomic) BOOL isCancelled;
-- (NSInteger)appendToStateChangedWithStateChanged:(void (^ _Nonnull)(BOOL))stateChanged;
-- (void)removeAt:(NSInteger)index;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 @class AccessPointPath;
 
 SWIFT_CLASS("_TtC8BrivoBLE10ReaderData")

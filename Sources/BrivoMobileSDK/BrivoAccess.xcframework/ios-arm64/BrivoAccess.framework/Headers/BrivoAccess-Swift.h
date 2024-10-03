@@ -489,6 +489,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError *
 + (BrivoError * _Nonnull)missingNetworkConnectionError SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull missingReaderUUIDError;)
 + (BrivoError * _Nonnull)missingReaderUUIDError SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull accessPointUnsupportedDoorType;)
++ (BrivoError * _Nonnull)accessPointUnsupportedDoorType SWIFT_WARN_UNUSED_RESULT;
 + (BrivoError * _Nonnull)brivoErrorWithDescription:(NSString * _Nonnull)description SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

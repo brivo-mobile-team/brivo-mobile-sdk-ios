@@ -1,0 +1,6 @@
+framework module BrivoBLEAllegion {
+  umbrella header "BrivoBLEAllegion.h"
+  export *
+
+  module * { export * }
+}

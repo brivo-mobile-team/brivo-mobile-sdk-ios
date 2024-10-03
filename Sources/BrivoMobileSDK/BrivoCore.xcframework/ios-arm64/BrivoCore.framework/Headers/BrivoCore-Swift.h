@@ -491,11 +491,21 @@ SWIFT_CLASS("_TtC9BrivoCore11BrivoTokens")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_CLASS("_TtC9BrivoCore18CancellationSignal")
+@interface CancellationSignal : NSObject
+@property (nonatomic) BOOL isCancelled;
+- (NSInteger)appendToStateChangedWithStateChanged:(void (^ _Nonnull)(BOOL))stateChanged;
+- (void)removeAt:(NSInteger)index;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, DoorType, open) {
   DoorTypeInternet = 0,
   DoorTypeWavelynx = 1,
   DoorTypeAllegion = 2,
   DoorTypeWirelessLock = 3,
+  DoorTypeAllegionBle = 4,
 };
 
 

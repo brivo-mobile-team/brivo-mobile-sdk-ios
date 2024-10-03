@@ -303,6 +303,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSString;
 @class BrivoBluetoothReader;
 @class BrivoLockControlGroup;
+@class BrivoSchedules;
 
 SWIFT_CLASS("_TtC10BrivoOnAir16BrivoAccessPoint")
 @interface BrivoAccessPoint : NSObject
@@ -321,6 +322,8 @@ SWIFT_CLASS("_TtC10BrivoOnAir16BrivoAccessPoint")
 @property (nonatomic) NSInteger controlLockId;
 @property (nonatomic) BOOL deviceRequiresUpdate;
 @property (nonatomic, readonly, copy) NSArray<BrivoLockControlGroup *> * _Nullable controlLockGroups;
+@property (nonatomic) BOOL isDoorStation;
+@property (nonatomic, copy) NSArray<BrivoSchedules *> * _Nullable schedules;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -458,17 +461,19 @@ SWIFT_CLASS("_TtC10BrivoOnAir14BrivoOnairPass")
 @property (nonatomic, strong) BrivoUserImage * _Nullable userImage;
 @property (nonatomic, copy) NSString * _Nullable firstName;
 @property (nonatomic, copy) NSString * _Nullable lastName;
+@property (nonatomic) BOOL hasAllegionBleCredentials;
+@property (nonatomic) BOOL enablePassTransfer;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 @interface BrivoOnairPass (SWIFT_EXTENSION(BrivoOnAir))
-@property (nonatomic, readonly, copy) NSString * _Nullable passId;
+@property (nonatomic, readonly, copy) NSString * _Nullable asJsonString;
 @end
 
 
 @interface BrivoOnairPass (SWIFT_EXTENSION(BrivoOnAir))
-@property (nonatomic, readonly, copy) NSString * _Nullable asJsonString;
+@property (nonatomic, readonly, copy) NSString * _Nullable passId;
 @end
 
 @class BrivoTokens;
@@ -516,6 +521,17 @@ SWIFT_CLASS("_TtC10BrivoOnAir19BrivoSDKOnAirHelper")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class ScheduleBlocks;
+
+SWIFT_CLASS("_TtC10BrivoOnAir14BrivoSchedules")
+@interface BrivoSchedules : NSObject
+@property (nonatomic) NSInteger id;
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic, copy) NSString * _Nullable schedulesDescription;
+@property (nonatomic, strong) ScheduleBlocks * _Nullable scheduleBlocks;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC10BrivoOnAir24BrivoSelectedAccessPoint")
 @interface BrivoSelectedAccessPoint : NSObject
@@ -544,6 +560,7 @@ SWIFT_CLASS("_TtC10BrivoOnAir9BrivoSite")
 @property (nonatomic) BOOL deviceRequiresUpdate;
 @property (nonatomic, strong) BrivoGeolocation * _Nullable brivoGeolocation;
 @property (nonatomic, copy) NSString * _Nullable preScreening;
+@property (nonatomic) BOOL hasTrustedNetwork;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -555,6 +572,19 @@ SWIFT_CLASS("_TtC10BrivoOnAir14BrivoUserImage")
 @property (nonatomic, copy) NSString * _Nullable created;
 @property (nonatomic, copy) NSString * _Nullable contentType;
 @property (nonatomic) NSInteger contentLength;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC10BrivoOnAir14ScheduleBlocks")
+@interface ScheduleBlocks : NSObject
+@end
+
+
+SWIFT_CLASS("_TtC10BrivoOnAir12ScheduleTime")
+@interface ScheduleTime : NSObject
+@property (nonatomic, copy) NSString * _Nullable start;
+@property (nonatomic, copy) NSString * _Nullable end;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

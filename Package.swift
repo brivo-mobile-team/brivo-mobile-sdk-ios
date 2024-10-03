@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "1.20.0"
+let version = "1.22.0"
 let package = Package(
     name: "BrivoMobileSDK",
     products: [
@@ -19,6 +19,12 @@ let package = Package(
                 "BrivoOnAir"
             ]
         ),
+        .library(
+            name: "BrivoBLEAllegion",
+            targets: [
+                "BrivoBLEAllegion"
+            ]
+        )
     ],
     targets: [
 
@@ -52,5 +58,11 @@ let package = Package(
                 path: "./Sources/BrivoMobileSDK/BrivoNetworkCore.xcframework"
             ),
 
+            // BrivoAllegion targets
+
+            .binaryTarget(
+                name: "BrivoBLEAllegion",
+                path: "./Sources/BrivoMobileSDK/BrivoBLEAllegion.xcframework"
+            )
     ]
 )
