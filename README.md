@@ -7,7 +7,8 @@ A set of reusable libraries, services and components for Swift iOS apps.
 
  **Table of content:**
 
- - [Installation](#installation)
+ - [Installation (SPM)](#installation)
+    - [BrivoBLEAllegion (Cocoapods)](#installation_allegion)
  - [Usage](#usage)
  - [Brivo Mobile SDK Modules](#brivo_mobile_sdk_modules)
     - [BrivoCore](#brivo_core)
@@ -21,7 +22,7 @@ A set of reusable libraries, services and components for Swift iOS apps.
  - [Issues](#issues)
 
  <a id="installation"></a>
-### Installation
+### Installation (SPM)
 The BrivoSDK is available for use using Swift Package Manager. It can be found on Swift Package Index here: https://swiftpackageindex.com/brivo-mobile-team/brivo-mobile-sdk-ios.
 It can be also found on Github here: https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.
 In order to add the BrivoSDK one needs to to the following:
@@ -37,25 +38,25 @@ In order to add the BrivoSDK one needs to to the following:
 1. Go to the manifest file
 2. Add the reference to the BrivoSDK:
     - if the main branch is needed use this: .package(url: "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git", branch: "main")
-    - if a specific version is needed use this: .package(url: "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git", from: "1.22.0")
+    - if a specific version is needed use this: .package(url: "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git", from: "1.22.1")
 3. Select a product using this: .product(name: "BrivoMobileSDK", package: "brivo-mobile-sdk-ios")
 ```
 
 The BrivoSDK components were built using the target version iOS 14.0, Apple Swift version required is 5 and Xcode version 15.4
 
-The following BrivoSDK components should be added to the application project
+<a id="installation_allegion"></a>
+#### BrivoBLEAllegion (Cocoapods)
+To use this framework you'll need access to https://github.com/Allegion-Plc/AllegionCocoaPods for fetching AllegionSDK.
+There are 2 steps involved:
+1. Obtain a github personal token from Allegion Team
+2. Use the github token to download dependencies
+    - Replace<br/>
+    `source "https://github.com/Allegion-Plc/AllegionCocoaPods"`<br/>
+with<br/>
+    `source "https://{github_personal_token}@github.com/Allegion-Plc/AllegionCocoaPods"`
+      in [Podfile](BrivoSampleApp/Podfile)
+    - Use `gh auth login` to store the token locally (see [Docs](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git))
 
-```
-    BrivoCore.framework
-    BrivoNetworkCore.framework
-    BrivoConfiguration.framework
-    BrivoAccess.framework
-    BrivoOnAir.framework
-    BrivoBLE.framework
-    BrivoLocalAuthentication.framework
-```
-
-In project settings, under "Framework, Libraries, and Embedded content" section, the frameworks must be marked as "Embed & Sign".
 
 ### Sample project
 This repository comes with a sample project inside the folder BrivoSampleApp.
@@ -63,33 +64,39 @@ Here we show how the SDK can be used using SPM and fetching the main branch of o
 
 <a id="usage"></a>
 ## Usage
-Before using the Brivo Mobile SDK it is mandatory to configure (through instance) of BrivoSDK class with a BrivoSDKConfiguration object
-The BrivoSDKConfiguration object requires a set of parameters listed bellow:
+Before using the Brivo Mobile SDK it is mandatory to configure (through instance) of `BrivoSDK` class with a `BrivoSDKConfiguration` object.\
+The `BrivoSDKConfiguration` object requires a set of parameters listed bellow:
 ```
 /**
- * Configure the BrivoSDK parameter
- *
- * Parameters:
- * brivoConfiguration  Brivo client id
- *                     Brivo client secret
- *                     Brivo SDK local storage management enabled
- *                     Brivo API region
+ Defines the configuration object needed by the BrivoSDK in order to function properly.
+ - Parameter clientId: Brivo client id
+ - Parameter clientSecret: Brivo Client secret
+ - Parameter useSDKStorage: if the SDK should use internal storage for  the passes
+ - Parameter region: the region where the SDK base urls should point in the case apiUrl or authUrl are not provided.
+    Defaults to Region.us
+ - Parameter shouldPromptForContinuation: if the SDK should promt for continuation
+ - Parameter authUrl:the Brivo authentication server base url
+ - Parameter apiUrl:the Brivo OnAir API base url
+ - Parameter smartHomeUrl: the Brivo Smart Home base url
+ - Parameter refreshTokenDelegate: a refresh token delegate that can handle token refresh in case of a HTTP 401 unauthorised
+ - Parameter sessionRequestTimeout: the HTTP session request timeout
  */
 ```
 #### BrivoSDK configuration usage 
 ```
-do {
-    let brivoConfiguration = try BrivoConfiguration(clientId: "CLIENT_ID",
-                                                    clientSecret: "CLIENT_SECRET",
-                                                    useSDKStorage: USE_SDK_STORAGE,
-                                                    useEURegion: false)
-    BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
-} catch let error {
-    // Handle BrivoSDK configuration exception
-}
+   do {
+        let brivoConfiguration = try BrivoSDKConfiguration(
+            clientId: "CLIENT_ID",
+            clientSecret: "CLIENT_SECRET",
+            useSDKStorage: true/false,
+            region: true/false)
+        BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
+        } catch let error {
+            // Handle BrivoSDK configuration exception
+        }
 ```
 
-The exception is thrown if the BrivoConfiguration class is not initialized correctly.
+The exception is thrown if the BrivoSDKConfiguration class is not initialized correctly.
 For example one of the parameters is nil or empty string.
 
  <a id="brivo_mobile_sdk_modules"></a>

@@ -5,7 +5,20 @@ A basic iOS sample app that demonstrates how to configure and use the BrivoSDK.
 
 ### Installation
 > [!NOTE]
->  The Podfile requires access to Allegion SDKs (see [Podfile](BrivoSampleApp/Podfile))\
+>  The Podfile requires access to Allegion SDKs (see [Podfile](Podfile))\
+> To use this framework you'll need access to https://github.com/Allegion-Plc/AllegionCocoaPods for fetching AllegionSDK.
+> There are 2 steps involved:
+> 1. Obtain a github personal token from Allegion Team
+> 2. Use the github token to download dependencies
+    - Replace<br/>
+    `source "https://github.com/Allegion-Plc/AllegionCocoaPods"`<br/>
+with<br/>
+    `source "https://{github_personal_token}@github.com/Allegion-Plc/AllegionCocoaPods"`
+      in [Podfile](BrivoSampleApp/Podfile)
+    - Use `gh auth login` to store the token locally (see [Docs](https://docs.github.com/en/get-started/getting-started-with-git/caching-your-github-credentials-in-git))
+
+
+> [!NOTE]
 > Allegion SDKs come with a limitation: arm64 architecture is excluded so the app runs only on simulators with Rosetta.
 1. Run `pod install` in `BrivoSampleApp` folder.
 2. Open the iOS sample app in Xcode (`BrivoSampleApp.xcworkspace`).
