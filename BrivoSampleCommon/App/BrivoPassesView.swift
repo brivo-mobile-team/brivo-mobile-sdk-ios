@@ -131,7 +131,7 @@ struct BrivoPassesView: View {
     }
 
     // MARK: - Private
-
+#if DEBUG_SWITCH_ENV
     @ToolbarContentBuilder
     func switchEnvToolbarButton() -> some ToolbarContent {
         ToolbarItem {
@@ -153,6 +153,7 @@ struct BrivoPassesView: View {
             }
         }
     }
+#endif
 }
 
 #Preview {
