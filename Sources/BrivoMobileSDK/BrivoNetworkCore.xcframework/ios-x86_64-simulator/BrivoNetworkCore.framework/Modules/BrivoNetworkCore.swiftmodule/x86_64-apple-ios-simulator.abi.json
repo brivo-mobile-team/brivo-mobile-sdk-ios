@@ -22,13 +22,6 @@
         "moduleName": "BrivoNetworkCore"
       },
       {
-        "kind": "Import",
-        "name": "TaskUnifier",
-        "printedName": "TaskUnifier",
-        "declKind": "Import",
-        "moduleName": "BrivoNetworkCore"
-      },
-      {
         "kind": "TypeDecl",
         "name": "HttpStatusCodes",
         "printedName": "HttpStatusCodes",
@@ -8431,49 +8424,49 @@
     {
       "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 241,
+      "offset": 222,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 279,
+      "offset": 260,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 318,
+      "offset": 299,
       "length": 3,
       "value": "400"
     },
     {
       "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 355,
+      "offset": 336,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 404,
+      "offset": 385,
       "length": 5,
       "value": "-1009"
     },
     {
       "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 461,
+      "offset": 442,
       "length": 5,
       "value": "-1020"
     },
     {
       "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 510,
+      "offset": 491,
       "length": 5,
       "value": "-3008"
     },
