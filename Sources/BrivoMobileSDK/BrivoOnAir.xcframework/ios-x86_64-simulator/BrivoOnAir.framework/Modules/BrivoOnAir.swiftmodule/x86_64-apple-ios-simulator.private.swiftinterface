@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoOnAir
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import BrivoCore
 import BrivoNetworkCore
 @_exported import BrivoOnAir
@@ -107,26 +106,62 @@ public struct BrivoReaderCommand : Swift.Codable {
     set
   }
   public static func instance() throws -> BrivoOnAir.BrivoSDKOnAir
+  #if compiler(>=5.3) && $AsyncAwait
   public func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<(BrivoCore.BrivoTokens?, BrivoNetworkCore.BrivoOnAirResponseStatus?), BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func redeemPass(passId: Swift.String, passCode: Swift.String) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
+  #endif
   public func redeemPass(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.RedeemPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
+  #if compiler(>=5.3) && $AsyncAwait
   public func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoAccessPoint, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String) async -> Swift.Result<BrivoCore.BrivoResult, BrivoCore.BrivoError>
+  #endif
   public func unlockAccessPoint(tokens: BrivoCore.BrivoTokens?, passId: Swift.String, accessPointId: Swift.String, accessPointPath: BrivoCore.AccessPointPath?) -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #if compiler(>=5.3) && $AsyncAwait
   public func refreshPass(brivoTokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func retrieveSDKLocallyStoredPasses() async -> Swift.Result<[BrivoOnAir.BrivoOnairPass], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func controlLockUnlock(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func controlLockConfig(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoCore.BrivoControlLockConfigRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func controlLockConfigSave(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, controlLockConfigSaveResponse: BrivoOnAir.BrivoControlLockConfigSaveResponse) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String]) async -> Swift.Result<[BrivoOnAir.BrivoReaderCommand], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func getAllegionSDKTokens(accessToken: Swift.String) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
+  #endif
   public func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   @objc deinit
 }
@@ -368,25 +403,63 @@ public typealias OnGetAllegionSDKTokensSuccessType = (BrivoOnAir.AllegionSDKToke
 public protocol IBrivoSDKOnAir {
   var brivoOnAirHTTPSRequest: BrivoNetworkCore.BrivoHTTPSRequest? { get }
   var onRefreshTokenFailed: BrivoOnAir.OnRefreshTokenFailureType? { get set }
+  #if compiler(>=5.3) && $AsyncAwait
   func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<(BrivoCore.BrivoTokens?, BrivoNetworkCore.BrivoOnAirResponseStatus?), BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func redeemPass(passId: Swift.String, passCode: Swift.String) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func refreshPass(brivoTokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func unlockAccessPoint(tokens: BrivoCore.BrivoTokens?, passId: Swift.String, accessPointId: Swift.String, accessPointPath: BrivoCore.AccessPointPath?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String) async -> Swift.Result<BrivoCore.BrivoResult, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func retrieveSDKLocallyStoredPasses() async -> Swift.Result<[BrivoOnAir.BrivoOnairPass], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func controlLockUnlock(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoAccessPoint, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func controlLockConfig(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoCore.BrivoControlLockConfigRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func controlLockConfigSave(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, controlLockConfigSaveResponse: BrivoOnAir.BrivoControlLockConfigSaveResponse) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String]) async -> Swift.Result<[BrivoOnAir.BrivoReaderCommand], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func getAllegionSDKTokens(accessToken: Swift.String) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
   func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
+  #endif
   func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
 }
 public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
@@ -400,7 +473,7 @@ public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   public init?(rawValue: Swift.String)
   public typealias AllCases = [BrivoOnAir.DoorIdentifier]
   public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [BrivoOnAir.DoorIdentifier] {
+  public static var allCases: [BrivoOnAir.DoorIdentifier] {
     get
   }
   public var rawValue: Swift.String {
