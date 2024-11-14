@@ -18,7 +18,7 @@ public protocol IBrivoSDKBLEAllegion {
   #if compiler(>=5.3) && $AsyncAwait
   func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
   #endif
-  func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoCore.OnResultType?, cancellationSignal: BrivoCore.CancellationSignal?)
+  func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
 }
 final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
   public static var instance: BrivoBLEAllegion.BrivoSDKBLEAllegion
@@ -26,7 +26,7 @@ final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
   #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor final public func initialise() async throws
   #endif
-  final public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoCore.OnResultType?, cancellationSignal: BrivoCore.CancellationSignal?)
+  final public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
   #if compiler(>=5.3) && $AsyncAwait
   @_Concurrency.MainActor final public func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
   #endif

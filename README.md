@@ -128,368 +128,341 @@ func getDeviceId() -> String
 #### BrivoOnAir
 This module manages the connection between the application and the Brivo environment. It has the following interface:
 ```
-/**
- Returns the Brivo http request that can be use to work with the Brivo Backend.
- - Returns: the Brivo HTTP request
- */
-var brivoOnAirHTTPSRequest: BrivoHTTPSRequest? { get }
+//**
+     Authenticate using a Brivo Onair Account.
 
-/**
- Completion handler called whn the refresh token fails.
- Typically used so that the application can take actions.
- */
-var onRefreshTokenFailed: OnRefreshTokenFailureType? {get set}
+     - Parameter credential: Credentials used to authenticate in Brivo Onair
+     - Returns: Result with (BrivoTokens?, BrivoOnAirResponseStatus?) or BrivoError
+     */
 
-/**
- Authenticate using a Brivo Onair Account.
+    func authenticate(credential: BrivoOnAirCredentials) async -> Result<(BrivoTokens?, BrivoOnAirResponseStatus?), BrivoError>
 
- - Parameter credential: Credentials used to authenticate in Brivo Onair
- - Parameter onSuccess: completion block that handles the success
- - Parameter onFailure: completion block that handles the failure
+    /**
+     Redeem a Brivo Onair Pass. Brivo Onair Pass allows you to open doors with your smartphone.
 
- */
+     - Parameter passId: Email received from Brivo
+     - Parameter passCode: Token received from Brivo
+     - Returns: Result with BrivoOnairPass? or BrivoError
+     */
 
-func authenticate(credential: BrivoOnAirCredentials,
-                  onSuccess: AuthenticateCompletionType?,
-                  onFailure: OnAuthenticationFailureType?)
+    func redeemPass(passId: String,
+                    passCode: String) async -> Result<BrivoOnairPass?, BrivoError>
 
-/**
- Redeem a Brivo Onair Pass. Brivo Onair Pass allows you to open doors with your smartphone.
+    /**
+     Refresh a Brivo Onair Pass. Brivo Onair Pass allows you to open doors with your smartphone.
+     - Parameter brivoTokens: accessToken received from Brivo
+     - Returns: Result with BrivoOnairPass? or BrivoError
+     */
 
- - Parameter passId: Email received from Brivo
- - Parameter passCode: Token received from Brivo
- - Parameter onSuccess: completion block that handles the success
- - Parameter onFailure: completion block that handles the failure
+    func refreshPass(brivoTokens: BrivoTokens) async -> Result<BrivoOnairPass?, BrivoError>
 
- */
-func redeemPass(passId: String, passCode: String, onSuccess: RedeemPassOnSuccessType?, onFailure: OnFailureType?)
+    /**
+     Sends a request to unlock an access-point.
 
-/**
- Refresh a Brivo Onair Pass. Brivo Onair Pass allows you to open doors with your smartphone.
- - Parameter brivoTokens: accessToken received from Brivo
- */
-func refreshPass(brivoTokens: BrivoTokens,
-                 onSuccess: RefreshPassOnSuccessType?,
-                 onFailure: OnFailureType?)
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
+     This method should be used when handing the credentials outside of the SDK
 
-/**
- Sends a request to unlock an access-point.
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter passId : Brivo passId
+     - Parameter accessPointId: The id associated with the accesspoint
+     - Returns: AsyncThrowingStream with BrivoResult or BrivoError
+     */
 
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
- This method should be used when handing the credentials outside of the SDK
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter passId : Brivo passId
- - Parameter accessPointId: The id associated with the accesspoint
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles  failure
- */
-func unlockAccessPoint(tokens: BrivoTokens?,
-                       passId: String,
-                       accessPointId: String,
-                       accessPointPath: AccessPointPath?,
-                       onResult: OnResult?)
-
-/**
- Sends a request to unlock an access-point.
-
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
- This method should be used when handing the credentials outside of the SDK
-
- - Parameter passId: Brivo passId
- - Parameter accessPointId: The id associated with the accesspoint
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles  failure
- */
-func unlockAccessPoint(passId: String,
-                       accessPointId: String,
-                       onResult: OnResult?)
-
-
-/**
- Retrieve SDK locally stored passes
-
- - Parameter onSuccess:  completion block that handles success
- - Parameter onFailure:  completion block that handles failure
-
- */
-func retrieveSDKLocallyStoredPasses(onSuccess: RetrieveSDKLocallyStoredPassesOnSuccess?,
-                                    onFailure: OnFailureType?)
-/**
- Sends a request to unlock an access-point that is using a third party lock.
-
-
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter accessPointId: The id associated with the accesspoint
- - Parameter body: BrivoControlLockUnlockStatusRequestBody:
- unlockStatus;
- providerTypeId;
- deviceModelId;
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func controlLockUnlock(tokens: BrivoTokens,
-                       accessPointId: String,
-                       body: BrivoControlLockUnlockRequestBody,
-                       onSuccess: ControlLockUnlockOnSuccessType?,
-                       onFailure: OnFailureType?)
-
-/**
- Sends a request to specify the response status of the previous unlock access-point request that is using a third party lock.
-
-
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter accessPointId: The id associated with the accesspoint
- - Parameter body: BrivoControlLockUnlockStatusRequestBody:
- unlockStatus;
- providerTypeId;
- deviceModelId;
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func controlLockUnlockStatus(tokens: BrivoTokens,
-                             accessPointId: String,
-                             body: BrivoControlLockUnlockStatusRequestBody,
-                             onSuccess: ControlLockUnlockOnSuccessType?,
-                             onFailure: OnFailureType?)
-
-/**
- Sends a request to get all the sites from OnAir
-
-
- The request will be granted if the tokens are valid
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter siteName: value for retrieving by site name
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func retrieveSites(tokens: BrivoTokens,
-                   siteName: String?,
-                   onSuccess: RetrieveSitesOnSuccessType?,
-                   onFailure: OnFailureType?)
-
-/**
- Sends a request to get details about a site from OnAir
-
-
- The request will be granted if the tokens are valid
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter siteId: The id of the site, can be obtained from retrieveSites request
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func retrieveSiteDetails(tokens: BrivoTokens,
-                         siteId: Int,
-                         onSuccess: RetrieveSiteDetailsOnSuccessType?,
-                         onFailure: OnFailureType?)
-
-/**
- Sends a request to get all the access points from a site
-
-
- The request will be granted if the tokens are valid
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter siteId: The id of the site, can be obtained from retrieveSites request
- - Parameter accessPointName: The name of the accessPoint used to filter the accessPoints list
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func retrieveSiteAccessPoints(tokens: BrivoTokens,
-                              siteId: Int,
-                              accessPointName: String?,
-                              onSuccess: RetrieveSiteAccessPointsOnSuccessType?,
-                              onFailure: OnFailureType?)
-
-/**
- Sends a request to get details about an access point
-
-
- The request will be granted if the tokens are valid
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter accessPointId: The id of the access point, can be obtained from retrieveSiteAccessPoints request
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func retrieveAccessPointDetails(tokens: BrivoTokens,
-                                accessPointId: Int,
-                                onSuccess: RetrieveAccessPointDetailsOnSuccessType?,
-                                onFailure: OnFailureType?)
-
-/**
- Sends a request to unlock an access-point that is using a third party lock.
-
-
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter accessPointId : The id associated with the accesspoint
- - Parameter body: BrivoControlLockConfigRequestBody:
- {
- "db": {
- "usrRcrd": {
- "deleteAll": 1,
- "delete": [],
- "update": [],
- "add": []
- },
- "schedules": [
- {
- "days": [
- "Mo",
- "Tu",
- "We",
- "Th",
- "Fr",
- "Sa",
- "Su"
- ],
- "lngth": 1439,
- "strtHr": 0,
- "strtMn": 0
- }
- ]
- }
- }
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func controlLockConfig(tokens: BrivoTokens,
-                       accessPointId: String,
-                       body: BrivoControlLockConfigRequestBody,
-                       onSuccess: ControlLockConfigOnSuccessType?,
-                       onFailure: OnFailureType?)
-
-/**
- Sends a request to specify the response status of the previous config access-point request that is using a third party lock.
-
-
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
-
- - Parameter tokens: Access Token received from Brivo
- - Parameter accessPointId : The id associated with the accesspoint
- - Parameter controlLockConfigSave : The payload that was received from control lock config + the first fragment in the encrypedConfig field
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func controlLockConfigSave(tokens: BrivoTokens,
+    func unlockAccessPoint(tokens: BrivoTokens?,
+                           passId: String,
                            accessPointId: String,
-                           controlLockConfigSave: BrivoControlLockConfigSaveResponse,
-                           onSuccess: ControlLockConfigSaveOnSuccessType?,
-                           onFailure: OnFailureType?)
+                           accessPointPath: AccessPointPath?) async -> AsyncThrowingStream<BrivoResult, Error>
+
+    /**
+     Sends a request to unlock an access-point.
+
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
+     This method should be used when handing the credentials outside of the SDK
+
+     - Parameter passId: Brivo passId
+     - Parameter accessPointId: The id associated with the accesspoint
+     - Returns: Result with BrivoResult or BrivoError
+     */
+
+    func unlockAccessPoint(passId: String,
+                           accessPointId: String) async -> Result<BrivoResult, BrivoError>
+
+    /**
+     Retrieve SDK locally stored passes
+
+     - Returns: Result with [BrivoOnairPass] or BrivoError
+     */
+
+    func retrieveSDKLocallyStoredPasses() async -> Result<[BrivoOnairPass], BrivoError>
+
+    /**
+     Sends a request to unlock an access-point that is using a third party lock.
 
 
-/**
- Sends a request to get the current administrator
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
+
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter accessPointId: The id associated with the accesspoint
+     - Parameter body: BrivoControlLockUnlockStatusRequestBody:
+     unlockStatus;
+     providerTypeId;
+     deviceModelId;
+     - Returns: Result with String? or BrivoError
+     */
+
+    func controlLockUnlock(tokens: BrivoTokens,
+                           accessPointId: String,
+                           body: BrivoControlLockUnlockRequestBody) async -> Result<String?, BrivoError>
+
+    /**
+     Sends a request to specify the response status of the previous unlock access-point request that is using a third party lock.
 
 
- The on success call will provide the administrator information
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
 
- - Parameter tokens: Access Token received from Brivo
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func getCurrentAdministrator(tokens: BrivoTokens,
-                             onSuccess: CurrentAdministratorOnSuccessType?,
-                             onFailure: OnFailureType?)
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter accessPointId: The id associated with the accesspoint
+     - Parameter body: BrivoControlLockUnlockStatusRequestBody:
+     unlockStatus;
+     providerTypeId;
+     deviceModelId;
+     - Returns: Result with String? or BrivoError
+     */
 
-/**
- Retrieve the list of reader commands
+    func controlLockUnlockStatus(tokens: BrivoTokens,
+                                 accessPointId: String,
+                                 body: BrivoControlLockUnlockStatusRequestBody) async -> Result<String?, BrivoError>
 
- The on success call will provide the reader commands
- - Parameter tokens: Access Token received from Brivo
- - Parameter accessPointIds: An array which contains the access point id's for which to fetch the reader commands
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func getReaderCommands(tokens: BrivoTokens,
-                       accessPointIds: [String],
-                       onSuccess: OnGetReaderCommandCompletionType?,
-                       onFailure: OnFailureType?)
+    /**
+     Sends a request to get all the sites from OnAir
 
-/**
- Engage reader command
 
- The on success call will provide the reader commands
- - Parameter tokens: Access Token received from Brivo
- - Parameter readerId : The id associated with the reader command
- - Parameter passId : Brivo passId
- - Parameter option : The option for the reader command
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func engageReaderCommand(tokens: BrivoTokens,
-                         readerId: String,
-                         passId: String,
-                         option: String,
-                         onSuccess: OnSuccessType?,
-                         onFailure: OnFailureType?)
+     The request will be granted if the tokens are valid
 
-/**
- Get Allegion SDK Tokens
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter siteName: value for retrieving by site name
+     - Returns: Result with [BrivoSite] or BrivoError
+     */
 
- The on success closure will provide the allegion SDK tokens
- - Parameter accessToken: Access Token received from Brivo
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- */
-func getAllegionSDKTokens(accessToken: String,
-                          onSuccess: @escaping  OnGetAllegionSDKTokensSuccessType,
-                          onFailure: @escaping  OnFailureType)
+    func retrieveSites(tokens: BrivoTokens,
+                       siteName: String?) async -> Result<[BrivoSite], BrivoError>
+
+    /**
+     Sends a request to get details about a site from OnAir
+
+
+     The request will be granted if the tokens are valid
+
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter siteId: The id of the site, can be obtained from retrieveSites request
+     - Returns: Result with BrivoSite or BrivoError
+     */
+
+    func retrieveSiteDetails(tokens: BrivoTokens,
+                             siteId: Int) async -> Result<BrivoSite, BrivoError>
+
+    /**
+     Sends a request to get all the access points from a site
+
+
+     The request will be granted if the tokens are valid
+
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter siteId: The id of the site, can be obtained from retrieveSites request
+     - Parameter accessPointName: The name of the accessPoint used to filter the accessPoints list
+     - Returns: Result with [BrivoAccessPoint] or BrivoError
+     */
+
+    func retrieveSiteAccessPoints(tokens: BrivoTokens,
+                                  siteId: Int,
+                                  accessPointName: String?) async -> Result<[BrivoAccessPoint], BrivoError>
+
+    /**
+     Sends a request to get details about an access point
+
+
+     The request will be granted if the tokens are valid
+
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter accessPointId: The id of the access point, can be obtained from retrieveSiteAccessPoints request
+     - Returns: Result with BrivoAccessPoint or BrivoError
+     */
+
+    func retrieveAccessPointDetails(tokens: BrivoTokens,
+                                    accessPointId: Int) async -> Result<BrivoAccessPoint, BrivoError>
+
+    /**
+     Sends a request to unlock an access-point that is using a third party lock.
+
+
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
+
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter accessPointId : The id associated with the accesspoint
+     - Parameter body: BrivoControlLockConfigRequestBody:
+     {
+     "db": {
+     "usrRcrd": {
+     "deleteAll": 1,
+     "delete": [],
+     "update": [],
+     "add": []
+     },
+     "schedules": [
+     {
+     "days": [
+     "Mo",
+     "Tu",
+     "We",
+     "Th",
+     "Fr",
+     "Sa",
+     "Su"
+     ],
+     "lngth": 1439,
+     "strtHr": 0,
+     "strtMn": 0
+     }
+     ]
+     }
+     }
+     - Returns: Result with String? or BrivoError
+     */
+
+    func controlLockConfig(tokens: BrivoTokens,
+                           accessPointId: String,
+                           body: BrivoControlLockConfigRequestBody) async -> Result<String?, BrivoError>
+
+    /**
+     Sends a request to specify the response status of the previous config access-point request that is using a third party lock.
+
+
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
+
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter accessPointId : The id associated with the accesspoint
+     - Parameter controlLockConfigSave : The payload that was received from control lock config + the first fragment in the encrypedConfig field
+     - Returns: Result with String? or BrivoError
+     */
+
+    func controlLockConfigSave(tokens: BrivoTokens,
+                               accessPointId: String,
+                               controlLockConfigSaveResponse: BrivoControlLockConfigSaveResponse) async -> Result<String?, BrivoError>
+
+    /**
+     Sends a request to get the current administrator
+
+
+     The on success call will provide the administrator information
+
+     - Parameter tokens: Access Token received from Brivo
+     - Returns: Result with BrivoOnAirAdministrator? or BrivoError
+     */
+
+    func getCurrentAdministrator(tokens: BrivoTokens) async -> Result<BrivoOnAirAdministrator?, BrivoError>
+
+    /**
+     Retrieve the list of reader commands
+
+     The on success call will provide the reader commands
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter accessPointIds: An array which contains the access point id's for which to fetch the reader commands
+     - Returns: Result with [BrivoReaderCommand] or BrivoError
+     */
+
+    func getReaderCommands(tokens: BrivoTokens,
+                           accessPointIds: [String]) async -> Result<[BrivoReaderCommand], BrivoError>
+
+    /**
+     Engage reader command
+
+     The on success call will provide the reader commands
+     - Parameter tokens: Access Token received from Brivo
+     - Parameter readerId : The id associated with the reader command
+     - Parameter passId : Brivo passId
+     - Parameter option : The option for the reader command
+     - Returns: Result with Void or BrivoError
+     */
+
+    func engageReaderCommand(tokens: BrivoTokens,
+                             readerId: String,
+                             passId: String,
+                             option: String) async -> Result<Void, BrivoError>
+
+    /**
+     Get Allegion SDK Tokens
+
+     The on success closure will provide the allegion SDK tokens
+     - Parameter accessToken: Access Token received from Brivo
+     - Returns: Result with AllegionSDKTokens or BrivoError
+     */
+
+    func getAllegionSDKTokens(accessToken: String) async -> Result<AllegionSDKTokens, BrivoError>
+
+    /**
+     Get BLE security config
+
+     - Parameter accessToken: Access Token received from Brivo
+     - Parameter accessToken: deviceUUID provided by Allegion SDK from the Enroll Mobile device response
+     - Parameter siteId: the siteId
+     - Returns: Result with BLESecurityConfigResponse or BrivoError
+     */
+
+    func getBLESecurityConfig(accessToken: String,
+                              deviceUUID: String,
+                              siteId: String) async -> Result<BLESecurityConfigResponse, BrivoError>
 ```
 
 Examples of usage:
 #### BrivoSDKOnair redeem pass usage 
 ```
-do {
-    try BrivoSDKOnAir.instance().redeemPass(passId: "PASS_ID",
-                                            passCode: "PASS_CODE",
-                                            onSuccess: { [weak self] (brivoOnAirPass) in
-                                                //Manage pass
-                                            }) {[weak self] (responseStatus) in
-                                                //Handle redeem pass error case
-                                            }
-} catch let error {
-    //Handle BrivoSDK initialization exception
+Task {
+    let result = try await BrivoSDKOnAir.instance().redeemPass(passId: self.passID,
+                                                               passCode: self.passCode)
+    await MainActor.run {
+        switch result {
+        case .success:
+            // handle success
+        case .failure(let brivoError):
+            // handle error
+        }
+    }
 }
 ```
 #### BrivoSDKOnair refresh pass usage 
 ```
-do {
-   try BrivoSDKOnAir.instance().refreshPass(brivoTokens: tokens, 
-                                            onSuccess: {[weak self] (refreshedPass) in
-                                                //Manage refreshed pass
-                                            }) {[weak self] (responseStatus) in
-                                                //Handle refresh pass error case
-                                            }
-} catch let error {
-   //Handle BrivoSDK initialization exception
+Task {
+    let result = try await BrivoSDKOnAir.instance().refreshPass(brivoTokens: tokens)
+    await MainActor.run {
+        switch result {
+        case .success(let refreshedPass):
+            // handle success
+        case .failure(let responseStatus):
+            // handle error
+        }
+    }
 }
 ```
 
 #### BrivoSDKOnair retrieve locally stored passes usage
 ```
-do {
-    try BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses(onSuccess: { [weak self] (brivoOnAirPasses) in
-                                                                    //Manage retrieved passes
-                                                                }) { [weak self] (status) in
-                                                                    //Handle passes retrieval error case
-                                                                }
-} catch let error {
-    //Handle BrivoSDK initialization exception
+Task {
+    let result = try await BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses()
+
+    await MainActor.run {
+        switch result {
+        case .success(let brivoOnAirPasses):
+            // handle success
+        case .failure(let brivoError):
+            // handle error
+        }
+    }
 }
 ```
 
@@ -499,128 +472,151 @@ This module provides a simplified interface of unlocking access points either Bl
 ```
 static func instance() -> BrivoSDKAccess
 
-/**
- Unlocks an access-point.
- This method should be used when handing the credentials outside of the SDK
+    /**
+     Unlocks an access-point.
+     This method should be used when handing the credentials outside of the SDK
 
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
 
- - Parameter selectedAccessPoint: BrivoSelectedAccessPoint can be created from BrivoAccessPoint.
-                                  The class BrivoSDKOnAirHelper from BrivoOnAir has methods to help with the creation of the object.
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles  failure
- - Parameter cancellationSignal: can be used to cancel the unlocking process
- */
-func unlockAccessPoint(selectedAccessPoint: BrivoSelectedAccessPoint,
-                       onResult: OnResultType?,
-                       cancellationSignal: CancellationSignal?)
+     - Parameter selectedAccessPoint: BrivoSelectedAccessPoint can be created from BrivoAccessPoint.
+                                      The class BrivoSDKOnAirHelper from BrivoOnAir has methods to help with the creation of the object.
+     - Parameter cancellationSignal: can be used to cancel the unlocking process
+     - Returns: AsyncThrowingStream with BrivoResult or Error
+     */
 
-/**
- Unlocks an access-point.
- This method should be used when the SDK handles the credentials.
+    func unlockAccessPoint(selectedAccessPoint: BrivoSelectedAccessPoint,
+                           cancellationSignal: CancellationSignal?) async -> AsyncThrowingStream<BrivoResult, Error>
 
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
+    /**
+     Unlocks an access-point.
+     This method should be used when the SDK handles the credentials.
 
- - Parameter passId : Brivo passId
- - Parameter accessPointId: The id associated with the accesspoint
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles  failure
- - Parameter cancellationSignal: can be used to cancel the unlocking process
- */
-func unlockAccessPoint(passId: String,
-                       accessPointId: String,
-                       onResult: OnResult?,
-                       cancellationSignal: CancellationSignal?)
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
 
-/**
- Locks an access-point.
- This method should be used when handing the credentials outside of the SDK
+     - Parameter passId : Brivo passId
+     - Parameter accessPointId: The id associated with the accesspoint
+     - Parameter cancellationSignal: can be used to cancel the unlocking process
+     - Returns: AsyncThrowingStream with BrivoResult or Error
+     */
+    func unlockAccessPoint(passId: String,
+                           accessPointId: String,
+                           cancellationSignal: CancellationSignal?) async -> AsyncThrowingStream<BrivoResult, Error>
 
- Only a few access-points support the locking process.
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
+    /**
+     Locks an access-point.
+     This method should be used when handing the credentials outside of the SDK
 
- - Parameter selectedAccessPoint: BrivoSelectedAccessPoint can be created from BrivoAccessPoint.
-                                  The class BrivoSDKOnAirHelper from BrivoOnAir has methods to help with the creation of the object.
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- - Parameter cancellationSignal: can be used to cancel the locking process
- */
-func lockAccessPoint(selectedAccessPoint: BrivoSelectedAccessPoint,
-                     onResult: OnResult?,
-                     cancellationSignal: CancellationSignal?)
+     Only a few access-points support the locking process.
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
 
+     - Parameter selectedAccessPoint: BrivoSelectedAccessPoint can be created from BrivoAccessPoint.
+                                      The class BrivoSDKOnAirHelper from BrivoOnAir has methods to help with the creation of the object.
+     - Parameter cancellationSignal: can be used to cancel the locking process
+     - Returns: AsyncThrowingStream with BrivoResult or BrivoError
+     */
 
-/**
- Locks an access-point.
- This method should be used when the SDK handles the credentials.
+    func lockAccessPoint(selectedAccessPoint: BrivoSelectedAccessPoint,
+                         cancellationSignal: CancellationSignal?) async -> AsyncThrowingStream<BrivoResult, Error>
 
- Only a few access-points support the locking process.
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
+    /**
+     Locks an access-point.
+     This method should be used when the SDK handles the credentials.
 
- - Parameter passId : Brivo passId
- - Parameter accessPointId: The id associated with the accesspoint
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles failure
- - Parameter cancellationSignal: can be used to cancel the locking process
- */
-func lockAccessPoint(passId: String,
-                     accessPointId: String,
-                     onFailure: OnFailureType?,
-                     onResult: OnResult?,
-                     cancellationSignal: CancellationSignal?)
+     Only a few access-points support the locking process.
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
 
+     - Parameter passId : Brivo passId
+     - Parameter accessPointId: The id associated with the accesspoint
+     - Parameter cancellationSignal: can be used to cancel the locking process
+     - Returns: AsyncThrowingStream with BrivoResult or Error
+     */
+    func lockAccessPoint(passId: String,
+                         accessPointId: String,
+                         cancellationSignal: CancellationSignal?) async -> AsyncThrowingStream<BrivoResult, Error>
 
-/**
- Unlocks the nearest Bluetooth access point from the list of passes.
- This method should be used when handing the credentials outside of the SDK
+    /**
+     Unlocks the nearest Bluetooth access point from the list of passes.
+     This method should be used when handing the credentials outside of the SDK
 
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
 
- - Parameter passes: A list that contains BrivoOnairPasses from which the access points will be searched
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles  failure
- - Parameter cancellationSignal: can be used to cancel the unlocking process
- */
-func unlockNearestBLEAccessPoint(passes: [BrivoOnairPass],
-                                 onResult: OnResult?,
-                                 cancellationSignal: CancellationSignal?)
+     - Parameter passes: A list that contains BrivoOnairPasses from which the access points will be searched
+     - Parameter cancellationSignal: can be used to cancel the unlocking process
+     - Returns: AsyncThrowingStream with BrivoResult or Error
+     */
 
-/**
- Unlocks the nearest Bluetooth access point from the list of passes.
- This method should be used when handing the credentials outside of the SDK
+    func unlockNearestBLEAccessPoint(passes: [BrivoOnairPass],
+                                     cancellationSignal: CancellationSignal?) async -> AsyncThrowingStream<BrivoResult, Error>
 
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
+    /**
+     Unlocks the nearest Bluetooth access point from the list of passes.
+     This method should be used when handing the credentials outside of the SDK
 
- - Parameter pass: A  BrivoOnairPass from which the access points will be searched
- - Parameter siteId: The id of the site that will be used to search the access points from
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles  failure
- - Parameter cancellationSignal: can be used to cancel the unlocking process
- */
-func unlockNearestBLEAccessPoint(pass: BrivoOnairPass,
-                                 siteId: Int,
-                                 onResult: OnResult?,
-                                 cancellationSignal: CancellationSignal?)
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
 
-/**
- Unlocks the nearest Bluetooth access point from the ones that are currently available.
- This method should be used when the SDK handles the credentials.
+     - Parameter pass: A  BrivoOnairPass from which the access points will be searched
+     - Parameter siteId: The id of the site that will be used to search the access points from
+     - Parameter cancellationSignal: can be used to cancel the unlocking process
+     - Returns: AsyncThrowingStream with BrivoResult or Error
+     */
+    func unlockNearestBLEAccessPoint(pass: BrivoOnairPass,
+                                     siteId: Int,
+                                     cancellationSignal: CancellationSignal?) async -> AsyncThrowingStream<BrivoResult, Error>
 
- The request will be granted if the card holder has permission to access this door based on their groups affiliation.
- Available only to digital credential users
+    /**
+     Unlocks the nearest Bluetooth access point from the ones that are currently available.
+     This method should be used when the SDK handles the credentials.
 
- - Parameter onSuccess: completion block that handles success
- - Parameter onFailure: completion block that handles  failure
- - Parameter cancellationSignal: can be used to cancel the unlocking process
- */
-func unlockNearestBLEAccessPoint(onResult: OnResult?,
-                                 cancellationSignal: CancellationSignal?)
+     The request will be granted if the card holder has permission to access this door based on their groups affiliation.
+     Available only to digital credential users
+
+     - Parameter cancellationSignal: can be used to cancel the unlocking process
+     - Returns: AsyncThrowingStream with BrivoResult or Error
+     */
+    func unlockNearestBLEAccessPoint(cancellationSignal: CancellationSignal?) async -> AsyncThrowingStream<BrivoResult, Error>
+
+    /**
+     Requests external credentials from On Air system.
+
+     - Parameter tokens: the brivo tokens
+     - Parameter accessPointId: the id associated with the accesspoint
+     - Parameter requestData: the request data
+     - Returns: Result with String? or BrivoError
+     */
+
+    func requestExternalCredentialsFromOnAir(tokens: BrivoTokens,
+                                             accessPointId: String,
+                                             requestData: String) async -> Result<String?, BrivoError>
+
+    /**
+     Turns on the BLE scanning.
+     */
+    func turnOnCentral()
+
+    /**
+     Returns the Bluetooth state..
+     - Returns: the BLE state
+     */
+    func getBLEState() -> CBManagerState
+
+    /**
+     Notifies using a completion then the BLE state changes.
+     - Parameter completion: the completion
+     - Returns: the completion identifier
+     */
+    func onBleChanged(completion: @escaping (CBManagerState) -> Void) -> NSNumber?
+
+    /**
+     Removes a completion handler ID from the completion notifications.
+     - Parameter id: the completion hadler id
+     */
+    func removeCompletionFor(id: NSNumber)
 ```
 
 Examples of usage:
@@ -656,8 +652,6 @@ do {
     //Handle BrivoSDK initialization exception
 }
 ```
-
-
 <a id="brivo_ble_allegion"></a>
 #### BrivoBLEAllegion - Optional 
 This module acts as wrapper for AllegionSDKs and is an optional dependendency for [BrivoAccess](#brivo_access) to unlock Allegion devices.
@@ -695,8 +689,6 @@ It has the following interface:
      */
     func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, onResult: BrivoCore.OnResultType?, cancellationSignal: BrivoCore.CancellationSignal?)
 ```
-
-
 <a id="brivo_ble"></a>
 #### BrivoBLE
 This module manages the connection between an access point and a panel through bluetooth.
@@ -838,8 +830,44 @@ public struct BrivoBLEErrors {
 }
 ```
 
+#### BrivoNFCErrorType
+```
+public enum BrivoNFCErrorType: Int, CaseIterable {
+    case walletProvisioning = -5000
+    case nfcCredentialStatus = -5001
+    case addToWallet = -5002
+    case unlink = -5003
+    case unknown = -5004
+}
+
+public class BrivoNFCError: NSObject {
+
+    public static func walletProvisioning(error: WalletConfigurationError) -> BrivoError {
+        BrivoError(statusCode: BrivoNFCErrorType.walletProvisioning.rawValue,
+                   errorDescription: "Wallet provisioning: \(error.localizedDescription)",
+                   context: error)
+    }
+
+    public static func nfcCredentialStatus(reason: String) -> BrivoError {
+        BrivoError(statusCode:BrivoNFCErrorType.nfcCredentialStatus.rawValue, errorDescription: "NFC credentials:  \(reason)")
+    }
+
+    public static func addToWallet(reason: String) -> BrivoError {
+        BrivoError(statusCode: BrivoNFCErrorType.addToWallet.rawValue, errorDescription: "Add to wallet:  \(reason)")
+    }
+
+    public static func unlink(reason: String) -> BrivoError {
+        BrivoError(statusCode: BrivoNFCErrorType.unlink.rawValue, errorDescription: "Unlink:  \(reason)")
+    }
+
+    public static func nfcErrorType(_ error: BrivoError) -> BrivoNFCErrorType {
+        BrivoNFCErrorType.allCases.first { $0.rawValue == error.statusCode } ?? BrivoNFCErrorType.unknown
+    }
+}
+```
+
 ## Issues
 If you run into any bugs or issues, feel free to post an [Issues](https://github.com/brivo-mobile-team/Brivo-Mobile-SDK/issues) to discuss further.
 <p align="center">
-Made with ❤️ at <img src="brivo.png" width="60"/>
+Made with â¤ï¸ at <img src="brivo.png" width="60"/>
 </p>

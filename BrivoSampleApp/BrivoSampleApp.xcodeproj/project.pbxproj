@@ -7,16 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F35447A2C54505100FAECE1 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3544782C54505100FAECE1 /* String.swift */; };
-		2F35448B2C545CC100FAECE1 /* AccessibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35448A2C545CC100FAECE1 /* AccessibilityIds.swift */; };
-		2F35448C2C545CE700FAECE1 /* AccessibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F35448A2C545CC100FAECE1 /* AccessibilityIds.swift */; };
 		2F6E77282C3FD9A1001B37DC /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2F6E77272C3FD9A1001B37DC /* FirebaseCrashlytics */; };
 		2F6E772A2C3FD9A6001B37DC /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 2F6E77292C3FD9A6001B37DC /* FirebaseAnalytics */; };
-		2F75BC182C591CAB00B4BD96 /* CancelPassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F75BC172C591CAB00B4BD96 /* CancelPassUseCase.swift */; };
-		2FD3968F2C598D21000A5C40 /* CleanupPassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD3968E2C598D21000A5C40 /* CleanupPassUseCase.swift */; };
-		2FD396912C598DFB000A5C40 /* MobileCrdential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD396902C598DFB000A5C40 /* MobileCrdential.swift */; };
-		5D3344DE2CAD9B7100D97833 /* BrivoBLEAllegion in Frameworks */ = {isa = PBXBuildFile; productRef = 5D3344DD2CAD9B7100D97833 /* BrivoBLEAllegion */; };
-		5D3344E02CAD9B7100D97833 /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5D3344DF2CAD9B7100D97833 /* BrivoMobileSDK */; };
+		2FE790772C8F33E30016ED45 /* AccessPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790522C8F33E30016ED45 /* AccessPointView.swift */; };
+		2FE790782C8F33E30016ED45 /* BrivoPassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790532C8F33E30016ED45 /* BrivoPassesView.swift */; };
+		2FE790792C8F33E30016ED45 /* BrivoSampleDevApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790542C8F33E30016ED45 /* BrivoSampleDevApp.swift */; };
+		2FE7907A2C8F33E30016ED45 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790552C8F33E30016ED45 /* Constants.swift */; };
+		2FE7907B2C8F33E30016ED45 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790562C8F33E30016ED45 /* ContentView.swift */; };
+		2FE7907C2C8F33E30016ED45 /* UnlockAccessPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790572C8F33E30016ED45 /* UnlockAccessPointView.swift */; };
+		2FE7908E2C8F33E30016ED45 /* AccessibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790752C8F33E30016ED45 /* AccessibilityIds.swift */; };
+		2FE790BA2C8F33FD0016ED45 /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790962C8F33FC0016ED45 /* BaseScreen.swift */; };
+		2FE790BB2C8F33FD0016ED45 /* PassesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790972C8F33FC0016ED45 /* PassesScreen.swift */; };
+		2FE790BC2C8F33FD0016ED45 /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790992C8F33FC0016ED45 /* BaseTest.swift */; };
+		2FE790BD2C8F33FD0016ED45 /* GetTokensBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7909B2C8F33FC0016ED45 /* GetTokensBody.swift */; };
+		2FE790BE2C8F33FD0016ED45 /* MobileCrdential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7909C2C8F33FC0016ED45 /* MobileCrdential.swift */; };
+		2FE790BF2C8F33FD0016ED45 /* MobilePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7909D2C8F33FC0016ED45 /* MobilePass.swift */; };
+		2FE790C02C8F33FD0016ED45 /* SendPassBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE7909E2C8F33FC0016ED45 /* SendPassBody.swift */; };
+		2FE790C12C8F33FD0016ED45 /* CancelPassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790A02C8F33FC0016ED45 /* CancelPassUseCase.swift */; };
+		2FE790C22C8F33FD0016ED45 /* CleanupPassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790A12C8F33FC0016ED45 /* CleanupPassUseCase.swift */; };
+		2FE790C32C8F33FD0016ED45 /* GeneratePassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790A22C8F33FC0016ED45 /* GeneratePassUseCase.swift */; };
+		2FE790C42C8F33FD0016ED45 /* GetTokensUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790A32C8F33FC0016ED45 /* GetTokensUseCase.swift */; };
+		2FE790C52C8F33FD0016ED45 /* RevokePassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790A42C8F33FC0016ED45 /* RevokePassUseCase.swift */; };
+		2FE790C62C8F33FD0016ED45 /* RedeemPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790A62C8F33FC0016ED45 /* RedeemPassTests.swift */; };
+		2FE790C72C8F33FD0016ED45 /* AutomationTestsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790A92C8F33FC0016ED45 /* AutomationTestsConfiguration.swift */; };
+		2FE790C82C8F33FD0016ED45 /* XCUIElement+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790AB2C8F33FC0016ED45 /* XCUIElement+.swift */; };
+		2FE790C92C8F33FD0016ED45 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790AD2C8F33FC0016ED45 /* String.swift */; };
+		2FE790CA2C8F33FD0016ED45 /* WaitUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790AF2C8F33FC0016ED45 /* WaitUtilities.swift */; };
+		2FE790CB2C8F33FD0016ED45 /* AccessibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE790B22C8F33FC0016ED45 /* AccessibilityIds.swift */; };
+		5D9B76B12C86118B0027BBBA /* BrivoAllegion in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9B76B02C86118B0027BBBA /* BrivoAllegion */; };
+		5D9B76B32C86118B0027BBBA /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5D9B76B22C86118B0027BBBA /* BrivoMobileSDK */; };
 		AF03326F2C4E7CD3003B28B6 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = AF03326E2C4E7CD3003B28B6 /* FirebaseAnalyticsOnDeviceConversion */; };
 		AF0332712C4E7CD3003B28B6 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF0332702C4E7CD3003B28B6 /* FirebaseAnalyticsSwift */; };
 		AF0332732C4E7CD3003B28B6 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = AF0332722C4E7CD3003B28B6 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -45,29 +64,9 @@
 		AF0332A12C4E7CD3003B28B6 /* FirebaseVertexAI-Preview in Frameworks */ = {isa = PBXBuildFile; productRef = AF0332A02C4E7CD3003B28B6 /* FirebaseVertexAI-Preview */; };
 		AF0332A82C4FD644003B28B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AF0332A72C4FD644003B28B6 /* GoogleService-Info.plist */; };
 		AFAC9DA62C4812F000D15699 /* BrivoSampleAppUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAC9DA52C4812F000D15699 /* BrivoSampleAppUnitTests.swift */; };
-		AFE3EEEF2C50DA2000DFBFDD /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EECA2C50DA2000DFBFDD /* BaseTest.swift */; };
-		AFE3EEF12C50DA2000DFBFDD /* GetTokensBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EECE2C50DA2000DFBFDD /* GetTokensBody.swift */; };
-		AFE3EEF22C50DA2000DFBFDD /* MobilePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EECF2C50DA2000DFBFDD /* MobilePass.swift */; };
-		AFE3EEF32C50DA2000DFBFDD /* SendPassBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EED02C50DA2000DFBFDD /* SendPassBody.swift */; };
-		AFE3EEF42C50DA2000DFBFDD /* GeneratePassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EED22C50DA2000DFBFDD /* GeneratePassUseCase.swift */; };
-		AFE3EEF52C50DA2000DFBFDD /* GetTokensUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EED32C50DA2000DFBFDD /* GetTokensUseCase.swift */; };
-		AFE3EEF62C50DA2000DFBFDD /* RevokePassUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EED42C50DA2000DFBFDD /* RevokePassUseCase.swift */; };
-		AFE3EEF72C50DA2000DFBFDD /* RedeemPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EED62C50DA2000DFBFDD /* RedeemPassTests.swift */; };
-		AFE3EEFB2C50DA2000DFBFDD /* BaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EEDC2C50DA2000DFBFDD /* BaseScreen.swift */; };
-		AFE3EEFE2C50DA2000DFBFDD /* PassesScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EEDF2C50DA2000DFBFDD /* PassesScreen.swift */; };
-		AFE3EF062C50DA2000DFBFDD /* AutomationTestsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EEE82C50DA2000DFBFDD /* AutomationTestsConfiguration.swift */; };
-		AFE3EF072C50DA2000DFBFDD /* XCUIElement+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EEEA2C50DA2000DFBFDD /* XCUIElement+.swift */; };
-		AFE3EF082C50DA2000DFBFDD /* WaitUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3EEEC2C50DA2000DFBFDD /* WaitUtilities.swift */; };
-		AFE3EF092C50EB0C00DFBFDD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DDD2BA21E2900B2F901 /* Constants.swift */; };
-		AFE3EF0A2C50EB0C00DFBFDD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DDD2BA21E2900B2F901 /* Constants.swift */; };
 		C4B8833944DB08703A58A61D /* Pods_BrivoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */; };
-		E09E3DCA2BA1F50000B2F901 /* BrivoSampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DC92BA1F50000B2F901 /* BrivoSampleAppApp.swift */; };
-		E09E3DCC2BA1F50000B2F901 /* BrivoPassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DCB2BA1F50000B2F901 /* BrivoPassesView.swift */; };
 		E09E3DCE2BA1F50100B2F901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09E3DCD2BA1F50100B2F901 /* Assets.xcassets */; };
 		E09E3DD12BA1F50100B2F901 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09E3DD02BA1F50100B2F901 /* Preview Assets.xcassets */; };
-		E09E3DDE2BA21E2900B2F901 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DDD2BA21E2900B2F901 /* Constants.swift */; };
-		E09E3DE02BA2361900B2F901 /* UnlockAccessPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DDF2BA2361900B2F901 /* UnlockAccessPointView.swift */; };
-		E09E3DF22BA35FF100B2F901 /* AccessPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09E3DF12BA35FF100B2F901 /* AccessPointView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,11 +87,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2F3544782C54505100FAECE1 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		2F35448A2C545CC100FAECE1 /* AccessibilityIds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityIds.swift; sourceTree = "<group>"; };
-		2F75BC172C591CAB00B4BD96 /* CancelPassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPassUseCase.swift; sourceTree = "<group>"; };
-		2FD3968E2C598D21000A5C40 /* CleanupPassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanupPassUseCase.swift; sourceTree = "<group>"; };
-		2FD396902C598DFB000A5C40 /* MobileCrdential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCrdential.swift; sourceTree = "<group>"; };
+		2FE790522C8F33E30016ED45 /* AccessPointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessPointView.swift; sourceTree = "<group>"; };
+		2FE790532C8F33E30016ED45 /* BrivoPassesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrivoPassesView.swift; sourceTree = "<group>"; };
+		2FE790542C8F33E30016ED45 /* BrivoSampleDevApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrivoSampleDevApp.swift; sourceTree = "<group>"; };
+		2FE790552C8F33E30016ED45 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2FE790562C8F33E30016ED45 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2FE790572C8F33E30016ED45 /* UnlockAccessPointView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockAccessPointView.swift; sourceTree = "<group>"; };
+		2FE790752C8F33E30016ED45 /* AccessibilityIds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityIds.swift; sourceTree = "<group>"; };
+		2FE790962C8F33FC0016ED45 /* BaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
+		2FE790972C8F33FC0016ED45 /* PassesScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassesScreen.swift; sourceTree = "<group>"; };
+		2FE790992C8F33FC0016ED45 /* BaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		2FE7909B2C8F33FC0016ED45 /* GetTokensBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTokensBody.swift; sourceTree = "<group>"; };
+		2FE7909C2C8F33FC0016ED45 /* MobileCrdential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileCrdential.swift; sourceTree = "<group>"; };
+		2FE7909D2C8F33FC0016ED45 /* MobilePass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePass.swift; sourceTree = "<group>"; };
+		2FE7909E2C8F33FC0016ED45 /* SendPassBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPassBody.swift; sourceTree = "<group>"; };
+		2FE790A02C8F33FC0016ED45 /* CancelPassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelPassUseCase.swift; sourceTree = "<group>"; };
+		2FE790A12C8F33FC0016ED45 /* CleanupPassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CleanupPassUseCase.swift; sourceTree = "<group>"; };
+		2FE790A22C8F33FC0016ED45 /* GeneratePassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePassUseCase.swift; sourceTree = "<group>"; };
+		2FE790A32C8F33FC0016ED45 /* GetTokensUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTokensUseCase.swift; sourceTree = "<group>"; };
+		2FE790A42C8F33FC0016ED45 /* RevokePassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevokePassUseCase.swift; sourceTree = "<group>"; };
+		2FE790A62C8F33FC0016ED45 /* RedeemPassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemPassTests.swift; sourceTree = "<group>"; };
+		2FE790A92C8F33FC0016ED45 /* AutomationTestsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomationTestsConfiguration.swift; sourceTree = "<group>"; };
+		2FE790AB2C8F33FC0016ED45 /* XCUIElement+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+.swift"; sourceTree = "<group>"; };
+		2FE790AD2C8F33FC0016ED45 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		2FE790AF2C8F33FC0016ED45 /* WaitUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitUtilities.swift; sourceTree = "<group>"; };
+		2FE790B22C8F33FC0016ED45 /* AccessibilityIds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessibilityIds.swift; sourceTree = "<group>"; };
 		4D9D8FACD8E68CA86099B4A3 /* Pods-BrivoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrivoSampleApp.release.xcconfig"; path = "../BrivoSampleApp/Pods/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		4E34BCB8FB1FCBFE0FE2D9D3 /* Pods-BrivoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrivoSampleApp.debug.xcconfig"; path = "../BrivoSampleApp/Pods/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AF0332A72C4FD644003B28B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -100,29 +119,11 @@
 		AFAC9D122C480DA200D15699 /* BrivoSampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrivoSampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAC9DA32C4812F000D15699 /* BrivoSampleAppUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrivoSampleAppUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFAC9DA52C4812F000D15699 /* BrivoSampleAppUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoSampleAppUnitTests.swift; sourceTree = "<group>"; };
-		AFE3EECA2C50DA2000DFBFDD /* BaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
-		AFE3EECE2C50DA2000DFBFDD /* GetTokensBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTokensBody.swift; sourceTree = "<group>"; };
-		AFE3EECF2C50DA2000DFBFDD /* MobilePass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobilePass.swift; sourceTree = "<group>"; };
-		AFE3EED02C50DA2000DFBFDD /* SendPassBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendPassBody.swift; sourceTree = "<group>"; };
-		AFE3EED22C50DA2000DFBFDD /* GeneratePassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratePassUseCase.swift; sourceTree = "<group>"; };
-		AFE3EED32C50DA2000DFBFDD /* GetTokensUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetTokensUseCase.swift; sourceTree = "<group>"; };
-		AFE3EED42C50DA2000DFBFDD /* RevokePassUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevokePassUseCase.swift; sourceTree = "<group>"; };
-		AFE3EED62C50DA2000DFBFDD /* RedeemPassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedeemPassTests.swift; sourceTree = "<group>"; };
-		AFE3EEDC2C50DA2000DFBFDD /* BaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseScreen.swift; sourceTree = "<group>"; };
-		AFE3EEDF2C50DA2000DFBFDD /* PassesScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassesScreen.swift; sourceTree = "<group>"; };
-		AFE3EEE82C50DA2000DFBFDD /* AutomationTestsConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomationTestsConfiguration.swift; sourceTree = "<group>"; };
-		AFE3EEEA2C50DA2000DFBFDD /* XCUIElement+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCUIElement+.swift"; sourceTree = "<group>"; };
-		AFE3EEEC2C50DA2000DFBFDD /* WaitUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitUtilities.swift; sourceTree = "<group>"; };
 		C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrivoSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09E3DC62BA1F50000B2F901 /* BrivoSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrivoSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E09E3DC92BA1F50000B2F901 /* BrivoSampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoSampleAppApp.swift; sourceTree = "<group>"; };
-		E09E3DCB2BA1F50000B2F901 /* BrivoPassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoPassesView.swift; sourceTree = "<group>"; };
 		E09E3DCD2BA1F50100B2F901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E09E3DD02BA1F50100B2F901 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E09E3DDD2BA21E2900B2F901 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		E09E3DDF2BA2361900B2F901 /* UnlockAccessPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockAccessPointView.swift; sourceTree = "<group>"; };
 		E09E3DF02BA244F900B2F901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E09E3DF12BA35FF100B2F901 /* AccessPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,20 +190,147 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2F3544792C54505100FAECE1 /* Extensions */ = {
+		2FE790582C8F33E30016ED45 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				2F3544782C54505100FAECE1 /* String.swift */,
+				2FE790522C8F33E30016ED45 /* AccessPointView.swift */,
+				2FE790532C8F33E30016ED45 /* BrivoPassesView.swift */,
+				2FE790542C8F33E30016ED45 /* BrivoSampleDevApp.swift */,
+				2FE790552C8F33E30016ED45 /* Constants.swift */,
+				2FE790562C8F33E30016ED45 /* ContentView.swift */,
+				2FE790572C8F33E30016ED45 /* UnlockAccessPointView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2FE790762C8F33E30016ED45 /* BrivoSampleCommon */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790582C8F33E30016ED45 /* App */,
+				2FE790752C8F33E30016ED45 /* AccessibilityIds.swift */,
+			);
+			name = BrivoSampleCommon;
+			path = ../../BrivoSampleCommon;
+			sourceTree = "<group>";
+		};
+		2FE790982C8F33FC0016ED45 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790962C8F33FC0016ED45 /* BaseScreen.swift */,
+				2FE790972C8F33FC0016ED45 /* PassesScreen.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		2FE7909A2C8F33FC0016ED45 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790992C8F33FC0016ED45 /* BaseTest.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2FE7909F2C8F33FC0016ED45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FE7909B2C8F33FC0016ED45 /* GetTokensBody.swift */,
+				2FE7909C2C8F33FC0016ED45 /* MobileCrdential.swift */,
+				2FE7909D2C8F33FC0016ED45 /* MobilePass.swift */,
+				2FE7909E2C8F33FC0016ED45 /* SendPassBody.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2FE790A52C8F33FC0016ED45 /* GeneratePass */ = {
+			isa = PBXGroup;
+			children = (
+				2FE7909F2C8F33FC0016ED45 /* Models */,
+				2FE790A02C8F33FC0016ED45 /* CancelPassUseCase.swift */,
+				2FE790A12C8F33FC0016ED45 /* CleanupPassUseCase.swift */,
+				2FE790A22C8F33FC0016ED45 /* GeneratePassUseCase.swift */,
+				2FE790A32C8F33FC0016ED45 /* GetTokensUseCase.swift */,
+				2FE790A42C8F33FC0016ED45 /* RevokePassUseCase.swift */,
+			);
+			path = GeneratePass;
+			sourceTree = "<group>";
+		};
+		2FE790A72C8F33FC0016ED45 /* RedeemPass */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790A52C8F33FC0016ED45 /* GeneratePass */,
+				2FE790A62C8F33FC0016ED45 /* RedeemPassTests.swift */,
+			);
+			path = RedeemPass;
+			sourceTree = "<group>";
+		};
+		2FE790A82C8F33FC0016ED45 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2FE7909A2C8F33FC0016ED45 /* Base */,
+				2FE790A72C8F33FC0016ED45 /* RedeemPass */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2FE790AA2C8F33FC0016ED45 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790A92C8F33FC0016ED45 /* AutomationTestsConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		2FE790AC2C8F33FC0016ED45 /* Expectations */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790AB2C8F33FC0016ED45 /* XCUIElement+.swift */,
+			);
+			path = Expectations;
+			sourceTree = "<group>";
+		};
+		2FE790AE2C8F33FC0016ED45 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790AD2C8F33FC0016ED45 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2FE790B02C8F33FC0016ED45 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790AA2C8F33FC0016ED45 /* Configurations */,
+				2FE790AC2C8F33FC0016ED45 /* Expectations */,
+				2FE790AE2C8F33FC0016ED45 /* Extensions */,
+				2FE790AF2C8F33FC0016ED45 /* WaitUtilities.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2FE790B12C8F33FC0016ED45 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790982C8F33FC0016ED45 /* Pages */,
+				2FE790A82C8F33FC0016ED45 /* Tests */,
+				2FE790B02C8F33FC0016ED45 /* Utilities */,
+			);
+			path = UITests;
+			sourceTree = "<group>";
+		};
+		2FE790B32C8F33FC0016ED45 /* BrivoSampleCommon */ = {
+			isa = PBXGroup;
+			children = (
+				2FE790B12C8F33FC0016ED45 /* UITests */,
+				2FE790B22C8F33FC0016ED45 /* AccessibilityIds.swift */,
+			);
+			name = BrivoSampleCommon;
+			path = ../../BrivoSampleCommon;
 			sourceTree = "<group>";
 		};
 		AFAC9D132C480DA200D15699 /* BrivoSampleAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				AFE3EEE72C50DA2000DFBFDD /* Pages */,
-				AFE3EED82C50DA2000DFBFDD /* Tests */,
-				AFE3EEED2C50DA2000DFBFDD /* Utilities */,
+				2FE790B32C8F33FC0016ED45 /* BrivoSampleCommon */,
 			);
 			path = BrivoSampleAppUITests;
 			sourceTree = "<group>";
@@ -213,92 +341,6 @@
 				AFAC9DA52C4812F000D15699 /* BrivoSampleAppUnitTests.swift */,
 			);
 			path = BrivoSampleAppUnitTests;
-			sourceTree = "<group>";
-		};
-		AFE3EECB2C50DA2000DFBFDD /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				AFE3EECA2C50DA2000DFBFDD /* BaseTest.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		AFE3EED12C50DA2000DFBFDD /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2FD396902C598DFB000A5C40 /* MobileCrdential.swift */,
-				AFE3EECE2C50DA2000DFBFDD /* GetTokensBody.swift */,
-				AFE3EECF2C50DA2000DFBFDD /* MobilePass.swift */,
-				AFE3EED02C50DA2000DFBFDD /* SendPassBody.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		AFE3EED52C50DA2000DFBFDD /* GeneratePass */ = {
-			isa = PBXGroup;
-			children = (
-				2FD3968E2C598D21000A5C40 /* CleanupPassUseCase.swift */,
-				2F75BC172C591CAB00B4BD96 /* CancelPassUseCase.swift */,
-				AFE3EED12C50DA2000DFBFDD /* Models */,
-				AFE3EED22C50DA2000DFBFDD /* GeneratePassUseCase.swift */,
-				AFE3EED32C50DA2000DFBFDD /* GetTokensUseCase.swift */,
-				AFE3EED42C50DA2000DFBFDD /* RevokePassUseCase.swift */,
-			);
-			path = GeneratePass;
-			sourceTree = "<group>";
-		};
-		AFE3EED72C50DA2000DFBFDD /* RedeemPass */ = {
-			isa = PBXGroup;
-			children = (
-				AFE3EED52C50DA2000DFBFDD /* GeneratePass */,
-				AFE3EED62C50DA2000DFBFDD /* RedeemPassTests.swift */,
-			);
-			path = RedeemPass;
-			sourceTree = "<group>";
-		};
-		AFE3EED82C50DA2000DFBFDD /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				AFE3EECB2C50DA2000DFBFDD /* Base */,
-				AFE3EED72C50DA2000DFBFDD /* RedeemPass */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		AFE3EEE72C50DA2000DFBFDD /* Pages */ = {
-			isa = PBXGroup;
-			children = (
-				AFE3EEDC2C50DA2000DFBFDD /* BaseScreen.swift */,
-				AFE3EEDF2C50DA2000DFBFDD /* PassesScreen.swift */,
-			);
-			path = Pages;
-			sourceTree = "<group>";
-		};
-		AFE3EEE92C50DA2000DFBFDD /* Configurations */ = {
-			isa = PBXGroup;
-			children = (
-				AFE3EEE82C50DA2000DFBFDD /* AutomationTestsConfiguration.swift */,
-			);
-			path = Configurations;
-			sourceTree = "<group>";
-		};
-		AFE3EEEB2C50DA2000DFBFDD /* Expectations */ = {
-			isa = PBXGroup;
-			children = (
-				AFE3EEEA2C50DA2000DFBFDD /* XCUIElement+.swift */,
-			);
-			path = Expectations;
-			sourceTree = "<group>";
-		};
-		AFE3EEED2C50DA2000DFBFDD /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				2F3544792C54505100FAECE1 /* Extensions */,
-				AFE3EEE92C50DA2000DFBFDD /* Configurations */,
-				AFE3EEEB2C50DA2000DFBFDD /* Expectations */,
-				AFE3EEEC2C50DA2000DFBFDD /* WaitUtilities.swift */,
-			);
-			path = Utilities;
 			sourceTree = "<group>";
 		};
 		D198CDF9A27A95A328049F44 /* Pods */ = {
@@ -336,15 +378,10 @@
 		E09E3DC82BA1F50000B2F901 /* BrivoSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				2FE790762C8F33E30016ED45 /* BrivoSampleCommon */,
 				AF0332A92C4FD758003B28B6 /* BrivoSampleApp.entitlements */,
 				AF0332A72C4FD644003B28B6 /* GoogleService-Info.plist */,
 				E09E3DF02BA244F900B2F901 /* Info.plist */,
-				E09E3DC92BA1F50000B2F901 /* BrivoSampleAppApp.swift */,
-				E09E3DDD2BA21E2900B2F901 /* Constants.swift */,
-				2F35448A2C545CC100FAECE1 /* AccessibilityIds.swift */,
-				E09E3DCB2BA1F50000B2F901 /* BrivoPassesView.swift */,
-				E09E3DF12BA35FF100B2F901 /* AccessPointView.swift */,
-				E09E3DDF2BA2361900B2F901 /* UnlockAccessPointView.swift */,
 				E09E3DCD2BA1F50100B2F901 /* Assets.xcassets */,
 				E09E3DCF2BA1F50100B2F901 /* Preview Content */,
 			);
@@ -612,25 +649,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFE3EEF12C50DA2000DFBFDD /* GetTokensBody.swift in Sources */,
-				AFE3EF082C50DA2000DFBFDD /* WaitUtilities.swift in Sources */,
-				AFE3EEFB2C50DA2000DFBFDD /* BaseScreen.swift in Sources */,
-				AFE3EF072C50DA2000DFBFDD /* XCUIElement+.swift in Sources */,
-				AFE3EEF32C50DA2000DFBFDD /* SendPassBody.swift in Sources */,
-				AFE3EEF22C50DA2000DFBFDD /* MobilePass.swift in Sources */,
-				2F75BC182C591CAB00B4BD96 /* CancelPassUseCase.swift in Sources */,
-				AFE3EF092C50EB0C00DFBFDD /* Constants.swift in Sources */,
-				AFE3EEF42C50DA2000DFBFDD /* GeneratePassUseCase.swift in Sources */,
-				AFE3EEF62C50DA2000DFBFDD /* RevokePassUseCase.swift in Sources */,
-				2F35448C2C545CE700FAECE1 /* AccessibilityIds.swift in Sources */,
-				AFE3EEEF2C50DA2000DFBFDD /* BaseTest.swift in Sources */,
-				AFE3EEF52C50DA2000DFBFDD /* GetTokensUseCase.swift in Sources */,
-				2FD3968F2C598D21000A5C40 /* CleanupPassUseCase.swift in Sources */,
-				2FD396912C598DFB000A5C40 /* MobileCrdential.swift in Sources */,
-				AFE3EEFE2C50DA2000DFBFDD /* PassesScreen.swift in Sources */,
-				AFE3EEF72C50DA2000DFBFDD /* RedeemPassTests.swift in Sources */,
-				2F35447A2C54505100FAECE1 /* String.swift in Sources */,
-				AFE3EF062C50DA2000DFBFDD /* AutomationTestsConfiguration.swift in Sources */,
+				2FE790BE2C8F33FD0016ED45 /* MobileCrdential.swift in Sources */,
+				2FE790BA2C8F33FD0016ED45 /* BaseScreen.swift in Sources */,
+				2FE790C22C8F33FD0016ED45 /* CleanupPassUseCase.swift in Sources */,
+				2FE790C72C8F33FD0016ED45 /* AutomationTestsConfiguration.swift in Sources */,
+				2FE790C42C8F33FD0016ED45 /* GetTokensUseCase.swift in Sources */,
+				2FE790BD2C8F33FD0016ED45 /* GetTokensBody.swift in Sources */,
+				2FE790CA2C8F33FD0016ED45 /* WaitUtilities.swift in Sources */,
+				2FE790BF2C8F33FD0016ED45 /* MobilePass.swift in Sources */,
+				2FE790C82C8F33FD0016ED45 /* XCUIElement+.swift in Sources */,
+				2FE790C62C8F33FD0016ED45 /* RedeemPassTests.swift in Sources */,
+				2FE790C92C8F33FD0016ED45 /* String.swift in Sources */,
+				2FE790C02C8F33FD0016ED45 /* SendPassBody.swift in Sources */,
+				2FE790BC2C8F33FD0016ED45 /* BaseTest.swift in Sources */,
+				2FE790BB2C8F33FD0016ED45 /* PassesScreen.swift in Sources */,
+				2FE790CB2C8F33FD0016ED45 /* AccessibilityIds.swift in Sources */,
+				2FE790C12C8F33FD0016ED45 /* CancelPassUseCase.swift in Sources */,
+				2FE790C52C8F33FD0016ED45 /* RevokePassUseCase.swift in Sources */,
+				2FE790C32C8F33FD0016ED45 /* GeneratePassUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,7 +675,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFAC9DA62C4812F000D15699 /* BrivoSampleAppUnitTests.swift in Sources */,
-				AFE3EF0A2C50EB0C00DFBFDD /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,12 +682,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E09E3DF22BA35FF100B2F901 /* AccessPointView.swift in Sources */,
-				E09E3DCC2BA1F50000B2F901 /* BrivoPassesView.swift in Sources */,
-				E09E3DE02BA2361900B2F901 /* UnlockAccessPointView.swift in Sources */,
-				E09E3DCA2BA1F50000B2F901 /* BrivoSampleAppApp.swift in Sources */,
-				E09E3DDE2BA21E2900B2F901 /* Constants.swift in Sources */,
-				2F35448B2C545CC100FAECE1 /* AccessibilityIds.swift in Sources */,
+				2FE790782C8F33E30016ED45 /* BrivoPassesView.swift in Sources */,
+				2FE7907C2C8F33E30016ED45 /* UnlockAccessPointView.swift in Sources */,
+				2FE7907B2C8F33E30016ED45 /* ContentView.swift in Sources */,
+				2FE7908E2C8F33E30016ED45 /* AccessibilityIds.swift in Sources */,
+				2FE790792C8F33E30016ED45 /* BrivoSampleDevApp.swift in Sources */,
+				2FE790772C8F33E30016ED45 /* AccessPointView.swift in Sources */,
+				2FE7907A2C8F33E30016ED45 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -675,6 +711,7 @@
 		AFAC9D1A2C480DA200D15699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4TS4JP8J7W;
@@ -693,6 +730,7 @@
 		AFAC9D1B2C480DA200D15699 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4TS4JP8J7W;
@@ -711,6 +749,7 @@
 		AFAC9DAA2C4812F000D15699 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -730,6 +769,7 @@
 		AFAC9DAB2C4812F000D15699 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

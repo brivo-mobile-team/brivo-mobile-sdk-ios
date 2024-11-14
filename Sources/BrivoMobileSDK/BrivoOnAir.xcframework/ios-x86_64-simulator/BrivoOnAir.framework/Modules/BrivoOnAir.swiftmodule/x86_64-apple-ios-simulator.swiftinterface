@@ -62,7 +62,7 @@ public struct BrivoReaderCommand : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class BrivoSDKOnAirHelper : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class BrivoSDKOnAirHelper : ObjectiveC.NSObject {
   public static func getBrivoSelectedAccessPoint(brivoOnAirPasses: [BrivoOnAir.BrivoOnairPass], accessPointId: Swift.String, passId: Swift.String? = nil) -> BrivoOnAir.BrivoSelectedAccessPoint?
   public static func getDoorType(type: Swift.String?, readerUid: Swift.String?) -> BrivoCore.DoorType?
   @objc override dynamic public init()
@@ -71,32 +71,32 @@ public struct BrivoReaderCommand : Swift.Codable {
 @objc public class BrivoControlLockConfigSaveResponse : ObjectiveC.NSObject, Swift.Codable {
   public var encryptedConfig: Swift.String
   public var configEcho: BrivoOnAir.BrivoControlLockConfigResponse?
-  @objc required public init(encryptedConfig: Swift.String, configEcho: BrivoOnAir.BrivoControlLockConfigResponse? = nil)
+  required public init(encryptedConfig: Swift.String, configEcho: BrivoOnAir.BrivoControlLockConfigResponse? = nil)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class BrivoBLEExternalCredentialRequestData : ObjectiveC.NSObject {
-  @objc public var userId: Swift.String?
-  @objc public var accessPointId: Swift.String?
-  @objc public var providerTypeId: Swift.String?
-  @objc public var deviceUuid: Swift.String?
-  @objc public var serializedData: Swift.String?
+@objc @_inheritsConvenienceInitializers public class BrivoBLEExternalCredentialRequestData : ObjectiveC.NSObject {
+  public var userId: Swift.String?
+  public var accessPointId: Swift.String?
+  public var providerTypeId: Swift.String?
+  public var deviceUuid: Swift.String?
+  public var serializedData: Swift.String?
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class BrivoControlLockUnlockRequestBody : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var deviceUuid: Swift.String
-  @objc public var providerTypeId: Swift.String
-  @objc public var deviceModelId: Swift.String
-  @objc public var bleChallenge: Swift.String
-  @objc public var relockDelay: Swift.Int
-  @objc public func encode() -> Foundation.Data?
+@objc @_hasMissingDesignatedInitializers public class BrivoControlLockUnlockRequestBody : ObjectiveC.NSObject, Swift.Codable {
+  public var deviceUuid: Swift.String
+  public var providerTypeId: Swift.String
+  public var deviceModelId: Swift.String
+  public var bleChallenge: Swift.String
+  public var relockDelay: Swift.Int
+  public func encode() -> Foundation.Data?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class BrivoSDKOnAir : ObjectiveC.NSObject, BrivoOnAir.IBrivoSDKOnAir {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoSDKOnAir : ObjectiveC.NSObject, BrivoOnAir.IBrivoSDKOnAir {
   public var onRefreshTokenFailed: BrivoOnAir.OnRefreshTokenFailureType? {
     get
     set
@@ -105,27 +105,63 @@ public struct BrivoReaderCommand : Swift.Codable {
     get
     set
   }
-  @objc public static func instance() throws -> BrivoOnAir.BrivoSDKOnAir
-  public func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials, onSuccess: BrivoOnAir.AuthenticateCompletionType?, onFailure: BrivoOnAir.OnAuthenticationFailureType?)
-  @objc public func redeemPass(passId: Swift.String, passCode: Swift.String, onSuccess: BrivoOnAir.RedeemPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func redeemPass(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.RedeemPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String? = nil, onSuccess: BrivoOnAir.RetrieveSitesOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, onSuccess: BrivoOnAir.RetrieveSiteDetailsOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String? = nil, onSuccess: BrivoOnAir.RetrieveSiteAccessPointsOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int, onSuccess: BrivoOnAir.RetrieveAccessPointDetailsOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onResult: BrivoOnAir.OnResult?)
-  @objc public func unlockAccessPoint(tokens: BrivoCore.BrivoTokens?, passId: Swift.String, accessPointId: Swift.String, accessPointPath: BrivoCore.AccessPointPath?, onResult: BrivoOnAir.OnResult?)
-  @objc public func refreshPass(brivoTokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.RefreshPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func retrieveSDKLocallyStoredPasses(onSuccess: BrivoOnAir.RetrieveSDKLocallyStoredPassesOnSuccess?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func controlLockUnlock(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockRequestBody, onSuccess: BrivoOnAir.ControlLockUnlockOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody, onSuccess: BrivoOnAir.ControlLockUnlockOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func controlLockConfig(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoCore.BrivoControlLockConfigRequestBody, onSuccess: BrivoOnAir.ControlLockConfigOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func controlLockConfigSave(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, controlLockConfigSave: BrivoOnAir.BrivoControlLockConfigSaveResponse, onSuccess: BrivoOnAir.ControlLockConfigSaveOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.CurrentAdministratorOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  public func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String], onSuccess: BrivoOnAir.OnGetReaderCommandCompletionType?, onFailure: BrivoOnAir.OnFailureType?)
-  @objc public func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  public func getAllegionSDKTokens(accessToken: Swift.String, onSuccess: @escaping BrivoOnAir.OnGetAllegionSDKTokensSuccessType, onFailure: @escaping BrivoOnAir.OnFailureType)
-  public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String, completionHandler: @escaping (Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>) -> Swift.Void)
+  public static func instance() throws -> BrivoOnAir.BrivoSDKOnAir
+  #if compiler(>=5.3) && $AsyncAwait
+  public func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<(BrivoCore.BrivoTokens?, BrivoNetworkCore.BrivoOnAirResponseStatus?), BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func redeemPass(passId: Swift.String, passCode: Swift.String) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
+  #endif
+  public func redeemPass(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.RedeemPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
+  #if compiler(>=5.3) && $AsyncAwait
+  public func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoAccessPoint, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String) async -> Swift.Result<BrivoCore.BrivoResult, BrivoCore.BrivoError>
+  #endif
+  public func unlockAccessPoint(tokens: BrivoCore.BrivoTokens?, passId: Swift.String, accessPointId: Swift.String, accessPointPath: BrivoCore.AccessPointPath?) -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #if compiler(>=5.3) && $AsyncAwait
+  public func refreshPass(brivoTokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func retrieveSDKLocallyStoredPasses() async -> Swift.Result<[BrivoOnAir.BrivoOnairPass], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func controlLockUnlock(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func controlLockConfig(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoCore.BrivoControlLockConfigRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func controlLockConfigSave(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, controlLockConfigSaveResponse: BrivoOnAir.BrivoControlLockConfigSaveResponse) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String]) async -> Swift.Result<[BrivoOnAir.BrivoReaderCommand], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getAllegionSDKTokens(accessToken: Swift.String) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
+  #endif
   public func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
   @objc deinit
 }
@@ -136,46 +172,46 @@ public struct AllegionSDKTokens : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class BrivoOnAirAdministrator : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var id: Swift.Int
-  @objc public var externalId: Swift.String?
-  @objc public var username: Swift.String?
-  @objc public var firstName: Swift.String?
-  @objc public var middleName: Swift.String?
-  @objc public var lastName: Swift.String?
-  @objc public var identityType: Swift.String?
-  @objc public var email: Swift.String?
-  @objc public var timezone: Swift.String?
-  @objc public var canCreateAdmins: Swift.Bool
-  @objc public var accountId: Swift.Int
+  public var id: Swift.Int
+  public var externalId: Swift.String?
+  public var username: Swift.String?
+  public var firstName: Swift.String?
+  public var middleName: Swift.String?
+  public var lastName: Swift.String?
+  public var identityType: Swift.String?
+  public var email: Swift.String?
+  public var timezone: Swift.String?
+  public var canCreateAdmins: Swift.Bool
+  public var accountId: Swift.Int
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class BrivoControlLockConfigResponse : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var authenticationPayload: Swift.String
-  @objc public var commandPayload: Swift.String
-  @objc public var additionalCommandPayloads: [Swift.String]?
+  public var authenticationPayload: Swift.String
+  public var commandPayload: Swift.String
+  public var additionalCommandPayloads: [Swift.String]?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class BrivoSelectedAccessPoint : ObjectiveC.NSObject {
-  @objc public var accessPointPath: BrivoCore.AccessPointPath
-  @objc public var doorType: BrivoCore.DoorType
-  @objc public var passCredential: BrivoOnAir.BrivoOnairPassCredentials
-  @objc public var isTwoFactorEnabled: Swift.Bool
-  @objc public var readerUid: Swift.String?
-  @objc public var bleCredentials: Swift.String?
-  @objc public var timeframe: Swift.Int32
-  @objc public var deviceModelId: Swift.String?
-  @objc public var minimumPanelRssi: Swift.Int
-  @objc required public init(accessPointPath: BrivoCore.AccessPointPath, doorType: BrivoCore.DoorType, passCredential: BrivoOnAir.BrivoOnairPassCredentials, isTwoFactorEnabled: Swift.Bool = false, readerUid: Swift.String? = nil, bleCredentials: Swift.String? = nil, timeframe: Swift.Int32 = 0, deviceModelId: Swift.String?)
+  public var accessPointPath: BrivoCore.AccessPointPath
+  public var doorType: BrivoCore.DoorType
+  public var passCredential: BrivoOnAir.BrivoOnairPassCredentials
+  public var isTwoFactorEnabled: Swift.Bool
+  public var readerUid: Swift.String?
+  public var bleCredentials: Swift.String?
+  public var timeframe: Swift.Int32
+  public var deviceModelId: Swift.String?
+  public var minimumPanelRssi: Swift.Int
+  required public init(accessPointPath: BrivoCore.AccessPointPath, doorType: BrivoCore.DoorType, passCredential: BrivoOnAir.BrivoOnairPassCredentials, isTwoFactorEnabled: Swift.Bool = false, readerUid: Swift.String? = nil, bleCredentials: Swift.String? = nil, timeframe: Swift.Int32 = 0, deviceModelId: Swift.String?)
   @objc deinit
 }
 @objc public class BrivoLockControlGroup : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var id: Swift.Int
-  @objc public var name: Swift.String
-  @objc public var noTourGroupId: Swift.Int
+  public var id: Swift.Int
+  public var name: Swift.String
+  public var noTourGroupId: Swift.Int
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -187,117 +223,117 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class BrivoOnairPass : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var pass: Swift.String?
-  @objc public var bleCredential: Swift.String?
-  @objc public var bleAuthTimeFrame: Swift.Int32
-  @objc public var enabled: Swift.String?
-  @objc public var accountName: Swift.String?
-  @objc public var accountId: Swift.Int
-  @objc public var sites: [BrivoOnAir.BrivoSite]?
-  @objc public var brivoOnairPassCredentials: BrivoOnAir.BrivoOnairPassCredentials?
-  @objc public var userImage: BrivoOnAir.BrivoUserImage?
-  @objc public var firstName: Swift.String?
-  @objc public var lastName: Swift.String?
-  @objc public var hasAllegionBleCredentials: Swift.Bool
-  @objc public var enablePassTransfer: Swift.Bool
+@objc @_inheritsConvenienceInitializers public class BrivoOnairPass : ObjectiveC.NSObject, Swift.Codable {
+  public var pass: Swift.String?
+  public var bleCredential: Swift.String?
+  public var bleAuthTimeFrame: Swift.Int32
+  public var enabled: Swift.String?
+  public var accountName: Swift.String?
+  public var accountId: Swift.Int
+  public var sites: [BrivoOnAir.BrivoSite]?
+  public var brivoOnairPassCredentials: BrivoOnAir.BrivoOnairPassCredentials?
+  public var userImage: BrivoOnAir.BrivoUserImage?
+  public var firstName: Swift.String?
+  public var lastName: Swift.String?
+  public var hasAllegionBleCredentials: Swift.Bool
+  public var enablePassTransfer: Swift.Bool
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 @objc public class BrivoOnairPassCredentials : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var userId: Swift.String?
-  @objc public var tokens: BrivoCore.BrivoTokens?
-  @objc required public init(userId: Swift.String?, tokens: BrivoCore.BrivoTokens?)
+  public var userId: Swift.String?
+  public var tokens: BrivoCore.BrivoTokens?
+  required public init(userId: Swift.String?, tokens: BrivoCore.BrivoTokens?)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class BrivoSite : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var id: Swift.Int
-  @objc public var siteName: Swift.String?
-  @objc public var address: BrivoOnAir.BrivoAddress?
-  @objc public var timeZone: Swift.String?
-  @objc public var accessPoints: [BrivoOnAir.BrivoAccessPoint]?
-  @objc public var deviceRequiresUpdate: Swift.Bool
-  @objc public var brivoGeolocation: BrivoOnAir.BrivoGeolocation?
-  @objc public var preScreening: Swift.String?
-  @objc public var hasTrustedNetwork: Swift.Bool
+@objc @_inheritsConvenienceInitializers public class BrivoSite : ObjectiveC.NSObject, Swift.Codable {
+  public var id: Swift.Int
+  public var siteName: Swift.String?
+  public var address: BrivoOnAir.BrivoAddress?
+  public var timeZone: Swift.String?
+  public var accessPoints: [BrivoOnAir.BrivoAccessPoint]?
+  public var deviceRequiresUpdate: Swift.Bool
+  public var brivoGeolocation: BrivoOnAir.BrivoGeolocation?
+  public var preScreening: Swift.String?
+  public var hasTrustedNetwork: Swift.Bool
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class BrivoUserImage : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var userImageUri: Swift.String?
-  @objc public var id: Swift.Int
-  @objc public var created: Swift.String?
-  @objc public var contentType: Swift.String?
-  @objc public var contentLength: Swift.Int
+@objc @_inheritsConvenienceInitializers public class BrivoUserImage : ObjectiveC.NSObject, Swift.Codable {
+  public var userImageUri: Swift.String?
+  public var id: Swift.Int
+  public var created: Swift.String?
+  public var contentType: Swift.String?
+  public var contentLength: Swift.Int
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class BrivoAddress : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var streetAddress1: Swift.String?
-  @objc public var streetAddress2: Swift.String?
-  @objc public var city: Swift.String?
-  @objc public var state: Swift.String?
-  @objc public var postalCode: Swift.String?
+@objc @_inheritsConvenienceInitializers public class BrivoAddress : ObjectiveC.NSObject, Swift.Codable {
+  public var streetAddress1: Swift.String?
+  public var streetAddress2: Swift.String?
+  public var city: Swift.String?
+  public var state: Swift.String?
+  public var postalCode: Swift.String?
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class BrivoGeolocation : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var coordinates: [Swift.Float : Swift.Float]?
-  @objc public var center: [Swift.Float]?
-  @objc public var relevance: Swift.Float
-  @objc public var accuracy: Swift.String?
-  @objc public var validAddress: Swift.Bool
+  public var coordinates: [Swift.Float : Swift.Float]?
+  public var center: [Swift.Float]?
+  public var relevance: Swift.Float
+  public var accuracy: Swift.String?
+  public var validAddress: Swift.Bool
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class BrivoAccessPoint : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var id: Swift.Int
-  @objc public var name: Swift.String?
-  @objc public var type: Swift.String?
-  @objc public var siteId: Swift.Int
-  @objc public var siteName: Swift.String?
-  @objc public var twoFactorEnabled: Swift.Bool
-  @objc public var bluetoothReader: BrivoOnAir.BrivoBluetoothReader?
-  @objc public var controlLockSerialNumber: Swift.String?
-  @objc public var controlLockDeviceReferenceId: Swift.String?
-  @objc public var controlLockDeviceType: Swift.String?
-  @objc public var controlLockSiteName: Swift.String?
-  @objc public var controlLockSiteReferenceId: Swift.String?
-  @objc public var controlLockId: Swift.Int
-  @objc public var deviceRequiresUpdate: Swift.Bool
-  @objc final public let controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?
-  @objc public var isDoorStation: Swift.Bool
-  @objc public var schedules: [BrivoOnAir.BrivoSchedules]?
+  public var id: Swift.Int
+  public var name: Swift.String?
+  public var type: Swift.String?
+  public var siteId: Swift.Int
+  public var siteName: Swift.String?
+  public var twoFactorEnabled: Swift.Bool
+  public var bluetoothReader: BrivoOnAir.BrivoBluetoothReader?
+  public var controlLockSerialNumber: Swift.String?
+  public var controlLockDeviceReferenceId: Swift.String?
+  public var controlLockDeviceType: Swift.String?
+  public var controlLockSiteName: Swift.String?
+  public var controlLockSiteReferenceId: Swift.String?
+  public var controlLockId: Swift.Int
+  public var deviceRequiresUpdate: Swift.Bool
+  final public let controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?
+  public var isDoorStation: Swift.Bool
+  public var schedules: [BrivoOnAir.BrivoSchedules]?
   public init(controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?)
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class BrivoBluetoothReader : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var protocolVersion: Swift.Int
-  @objc public var readerUid: Swift.String?
-  @objc public var securityScheme: Swift.String?
+@objc @_inheritsConvenienceInitializers public class BrivoBluetoothReader : ObjectiveC.NSObject, Swift.Codable {
+  public var protocolVersion: Swift.Int
+  public var readerUid: Swift.String?
+  public var securityScheme: Swift.String?
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class BrivoSchedules : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var id: Swift.Int
-  @objc public var name: Swift.String?
-  @objc public var schedulesDescription: Swift.String?
-  @objc public var scheduleBlocks: BrivoOnAir.ScheduleBlocks?
+@objc @_inheritsConvenienceInitializers public class BrivoSchedules : ObjectiveC.NSObject, Swift.Codable {
+  public var id: Swift.Int
+  public var name: Swift.String?
+  public var schedulesDescription: Swift.String?
+  public var scheduleBlocks: BrivoOnAir.ScheduleBlocks?
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
@@ -308,22 +344,22 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@_inheritsConvenienceInitializers @objc public class ScheduleTime : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var start: Swift.String?
-  @objc public var end: Swift.String?
+@objc @_inheritsConvenienceInitializers public class ScheduleTime : ObjectiveC.NSObject, Swift.Codable {
+  public var start: Swift.String?
+  public var end: Swift.String?
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
 extension BrivoOnAir.BrivoOnairPass {
-  @objc dynamic public var passId: Swift.String? {
-    @objc get
+  public var passId: Swift.String? {
+    get
   }
 }
 extension BrivoOnAir.BrivoOnairPass {
-  @objc dynamic public var asJsonString: Swift.String? {
-    @objc get
+  public var asJsonString: Swift.String? {
+    get
   }
 }
 extension BrivoOnAir.BrivoAccessPoint {
@@ -334,12 +370,12 @@ extension BrivoOnAir.BrivoAccessPoint {
     get
   }
 }
-@_hasMissingDesignatedInitializers @objc public class BrivoControlLockUnlockStatusRequestBody : ObjectiveC.NSObject, Swift.Codable {
-  @objc public var unlockStatus: Swift.Int
-  @objc public var providerTypeId: Swift.String
-  @objc public var deviceModelId: Swift.String
-  @objc public var deviceInfo: [Swift.String : [Swift.UInt8]]?
-  @objc public func encode() -> Foundation.Data?
+@objc @_hasMissingDesignatedInitializers public class BrivoControlLockUnlockStatusRequestBody : ObjectiveC.NSObject, Swift.Codable {
+  public var unlockStatus: Swift.Int
+  public var providerTypeId: Swift.String
+  public var deviceModelId: Swift.String
+  public var deviceInfo: [Swift.String : [Swift.UInt8]]?
+  public func encode() -> Foundation.Data?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -367,25 +403,63 @@ public typealias OnGetAllegionSDKTokensSuccessType = (BrivoOnAir.AllegionSDKToke
 public protocol IBrivoSDKOnAir {
   var brivoOnAirHTTPSRequest: BrivoNetworkCore.BrivoHTTPSRequest? { get }
   var onRefreshTokenFailed: BrivoOnAir.OnRefreshTokenFailureType? { get set }
-  func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials, onSuccess: BrivoOnAir.AuthenticateCompletionType?, onFailure: BrivoOnAir.OnAuthenticationFailureType?)
-  func redeemPass(passId: Swift.String, passCode: Swift.String, onSuccess: BrivoOnAir.RedeemPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func refreshPass(brivoTokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.RefreshPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func unlockAccessPoint(tokens: BrivoCore.BrivoTokens?, passId: Swift.String, accessPointId: Swift.String, accessPointPath: BrivoCore.AccessPointPath?, onResult: BrivoOnAir.OnResult?)
-  func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, onResult: BrivoOnAir.OnResult?)
-  func retrieveSDKLocallyStoredPasses(onSuccess: BrivoOnAir.RetrieveSDKLocallyStoredPassesOnSuccess?, onFailure: BrivoOnAir.OnFailureType?)
-  func controlLockUnlock(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockRequestBody, onSuccess: BrivoOnAir.ControlLockUnlockOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody, onSuccess: BrivoOnAir.ControlLockUnlockOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?, onSuccess: BrivoOnAir.RetrieveSitesOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, onSuccess: BrivoOnAir.RetrieveSiteDetailsOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?, onSuccess: BrivoOnAir.RetrieveSiteAccessPointsOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int, onSuccess: BrivoOnAir.RetrieveAccessPointDetailsOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func controlLockConfig(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoCore.BrivoControlLockConfigRequestBody, onSuccess: BrivoOnAir.ControlLockConfigOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func controlLockConfigSave(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, controlLockConfigSave: BrivoOnAir.BrivoControlLockConfigSaveResponse, onSuccess: BrivoOnAir.ControlLockConfigSaveOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.CurrentAdministratorOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String], onSuccess: BrivoOnAir.OnGetReaderCommandCompletionType?, onFailure: BrivoOnAir.OnFailureType?)
-  func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func getAllegionSDKTokens(accessToken: Swift.String, onSuccess: @escaping BrivoOnAir.OnGetAllegionSDKTokensSuccessType, onFailure: @escaping BrivoOnAir.OnFailureType)
-  func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String, completionHandler: @escaping (Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>) -> Swift.Void)
+  #if compiler(>=5.3) && $AsyncAwait
+  func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<(BrivoCore.BrivoTokens?, BrivoNetworkCore.BrivoOnAirResponseStatus?), BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func redeemPass(passId: Swift.String, passCode: Swift.String) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func refreshPass(brivoTokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func unlockAccessPoint(tokens: BrivoCore.BrivoTokens?, passId: Swift.String, accessPointId: Swift.String, accessPointPath: BrivoCore.AccessPointPath?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String) async -> Swift.Result<BrivoCore.BrivoResult, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func retrieveSDKLocallyStoredPasses() async -> Swift.Result<[BrivoOnAir.BrivoOnairPass], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func controlLockUnlock(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoAccessPoint, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func controlLockConfig(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoCore.BrivoControlLockConfigRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func controlLockConfigSave(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, controlLockConfigSaveResponse: BrivoOnAir.BrivoControlLockConfigSaveResponse) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String]) async -> Swift.Result<[BrivoOnAir.BrivoReaderCommand], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getAllegionSDKTokens(accessToken: Swift.String) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
+  #endif
   func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
 }
 public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
@@ -409,7 +483,7 @@ public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
 @objc public class BrivoOnAirCredentials : ObjectiveC.NSObject, Swift.Codable {
   public var userName: Swift.String?
   public var password: Swift.String?
-  @objc required public init(userName: Swift.String? = nil, password: Swift.String? = nil)
+  required public init(userName: Swift.String? = nil, password: Swift.String? = nil)
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws

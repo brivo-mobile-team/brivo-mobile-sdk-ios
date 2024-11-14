@@ -107,7 +107,7 @@
                 "kind": "TypeNominal",
                 "name": "DoorType",
                 "printedName": "BrivoCore.DoorType",
-                "usr": "c:@M@BrivoCore@E@DoorType"
+                "usr": "s:9BrivoCore8DoorTypeO"
               },
               {
                 "kind": "TypeNominal",
@@ -132,14 +132,12 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@BrivoBLE@objc(cs)ReaderData(im)initWithAccessPointPath:readerUid:doorType:deviceModelId:minimumReaderRssi:",
+            "usr": "s:8BrivoBLE10ReaderDataC15accessPointPath9readerUid8doorType13deviceModelId07minimumC4RssiAC0A4Core06AccessfG0C_SSAI04DoorK0OSSSgSitcfc",
             "mangledName": "$s8BrivoBLE10ReaderDataC15accessPointPath9readerUid8doorType13deviceModelId07minimumC4RssiAC0A4Core06AccessfG0C_SSAI04DoorK0OSSSgSitcfc",
             "moduleName": "BrivoBLE",
-            "objc_name": "initWithAccessPointPath:readerUid:doorType:deviceModelId:minimumReaderRssi:",
             "declAttributes": [
               "Required",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -176,6 +174,7 @@
         "moduleName": "BrivoBLE",
         "declAttributes": [
           "AccessControl",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -284,14 +283,12 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLECredential(im)initWithUserId:bleCredential:accessPoints:timeFrame:",
+            "usr": "s:8BrivoBLE0A13BLECredentialC6userId13bleCredential12accessPoints9timeFrameACSS_SSSayAA10ReaderDataCGs5Int32Vtcfc",
             "mangledName": "$s8BrivoBLE0A13BLECredentialC6userId13bleCredential12accessPoints9timeFrameACSS_SSSayAA10ReaderDataCGs5Int32Vtcfc",
             "moduleName": "BrivoBLE",
-            "objc_name": "initWithUserId:bleCredential:accessPoints:timeFrame:",
             "declAttributes": [
               "Required",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -1147,14 +1144,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLEService(py)onBluetoothStateUpdated",
+            "usr": "s:8BrivoBLE0A10BLEServiceC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvp",
             "mangledName": "$s8BrivoBLE0A10BLEServiceC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvp",
             "moduleName": "BrivoBLE",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -1191,13 +1187,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLEService(im)onBluetoothStateUpdated",
+                "usr": "s:8BrivoBLE0A10BLEServiceC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvg",
                 "mangledName": "$s8BrivoBLE0A10BLEServiceC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvg",
                 "moduleName": "BrivoBLE",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -1238,13 +1231,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLEService(im)setOnBluetoothStateUpdated:",
+                "usr": "s:8BrivoBLE0A10BLEServiceC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvs",
                 "mangledName": "$s8BrivoBLE0A10BLEServiceC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvs",
                 "moduleName": "BrivoBLE",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -1306,12 +1296,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLEService(im)getBLEState",
+            "usr": "s:8BrivoBLE0A10BLEServiceC11getBLEStateSo14CBManagerStateVyF",
             "mangledName": "$s8BrivoBLE0A10BLEServiceC11getBLEStateSo14CBManagerStateVyF",
             "moduleName": "BrivoBLE",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1327,12 +1316,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLEService(im)startCentralManager",
+            "usr": "s:8BrivoBLE0A10BLEServiceC19startCentralManageryyF",
             "mangledName": "$s8BrivoBLE0A10BLEServiceC19startCentralManageryyF",
             "moduleName": "BrivoBLE",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1467,13 +1455,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLEService(im)unlockAccessPointWithBrivoBLECredentials:onResult:cancellationSignal:",
+            "usr": "s:8BrivoBLE0A10BLEServiceC17unlockAccessPoint19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aJ0CcSgAK012CancellationL0CSgtF",
             "mangledName": "$s8BrivoBLE0A10BLEServiceC17unlockAccessPoint19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aJ0CcSgAK012CancellationL0CSgtF",
             "moduleName": "BrivoBLE",
-            "objc_name": "unlockAccessPointWithBrivoBLECredentials:onResult:cancellationSignal:",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1543,13 +1529,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLEService(im)unlockAccessPointWithServicesWithBrivoBLECredentials:onResult:cancellationSignal:",
+            "usr": "s:8BrivoBLE0A10BLEServiceC29unlockAccessPointWithServices19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aL0CcSgAK012CancellationN0CSgtF",
             "mangledName": "$s8BrivoBLE0A10BLEServiceC29unlockAccessPointWithServices19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aL0CcSgAK012CancellationN0CSgtF",
             "moduleName": "BrivoBLE",
-            "objc_name": "unlockAccessPointWithServicesWithBrivoBLECredentials:onResult:cancellationSignal:",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1619,13 +1603,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLEService(im)lockAccessPointWithBrivoBLECredentials:onResult:cancellationSignal:",
+            "usr": "s:8BrivoBLE0A10BLEServiceC15lockAccessPoint19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aJ0CcSgAK012CancellationL0CSgtF",
             "mangledName": "$s8BrivoBLE0A10BLEServiceC15lockAccessPoint19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aJ0CcSgAK012CancellationL0CSgtF",
             "moduleName": "BrivoBLE",
-            "objc_name": "lockAccessPointWithBrivoBLECredentials:onResult:cancellationSignal:",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -2437,12 +2419,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoConfigurationBLEService(im)startCentralManager",
+            "usr": "s:8BrivoBLE0A23ConfigurationBLEServiceC19startCentralManageryyF",
             "mangledName": "$s8BrivoBLE0A23ConfigurationBLEServiceC19startCentralManageryyF",
             "moduleName": "BrivoBLE",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2512,13 +2493,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoBLE@objc(cs)BrivoConfigurationBLEService(im)configureAccessPointWithBrivoBLECredentials:onResult:cancellationSignal:",
+            "usr": "s:8BrivoBLE0A23ConfigurationBLEServiceC20configureAccessPoint19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aK0CcSgAK012CancellationM0CSgtF",
             "mangledName": "$s8BrivoBLE0A23ConfigurationBLEServiceC20configureAccessPoint19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aK0CcSgAK012CancellationM0CSgtF",
             "moduleName": "BrivoBLE",
-            "objc_name": "configureAccessPointWithBrivoBLECredentials:onResult:cancellationSignal:",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -3662,7 +3641,8 @@
         "mangledName": "$s8BrivoBLE12BLEConstantsC",
         "moduleName": "BrivoBLE",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "hasMissingDesignatedInitializers": true
       }
@@ -4065,21 +4045,21 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLECredential.swift",
       "kind": "StringLiteral",
-      "offset": 203,
+      "offset": 235,
       "length": 10,
       "value": "\"BrivoBLE.ReaderData\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLECredential.swift",
       "kind": "StringLiteral",
-      "offset": 1050,
+      "offset": 1046,
       "length": 18,
       "value": "\"BrivoBLE.BrivoBLECredential\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/AllegionCredentials.swift",
       "kind": "BooleanLiteral",
-      "offset": 509,
+      "offset": 554,
       "length": 5,
       "value": "false"
     },
@@ -4128,77 +4108,77 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 275,
+      "offset": 431,
       "length": 12,
       "value": "\"3b01020022\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 331,
+      "offset": 487,
       "length": 20,
       "value": "\"3b0102002203010283\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 675,
+      "offset": 831,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 803,
+      "offset": 959,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2088,
+      "offset": 2249,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2349,
+      "offset": 2510,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2383,
+      "offset": 2544,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 2425,
+      "offset": 2586,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2112,
+      "offset": 2273,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 2769,
+      "offset": 2930,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2829,
+      "offset": 2990,
       "length": 1,
       "value": "0"
     },
@@ -4219,175 +4199,175 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 231,
+      "offset": 277,
       "length": 33,
       "value": "\"Failed to unlock bluetooth door\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 328,
+      "offset": 374,
       "length": 5,
       "value": "-2001"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 354,
+      "offset": 449,
       "length": 24,
       "value": "\"BLE disabled on device\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 450,
+      "offset": 545,
       "length": 5,
       "value": "-2004"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 476,
+      "offset": 628,
       "length": 25,
       "value": "\"Failed BLE transmission\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 567,
+      "offset": 719,
       "length": 5,
       "value": "-2005"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 592,
+      "offset": 796,
       "length": 15,
       "value": "\"Access Denied\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 678,
+      "offset": 882,
       "length": 5,
       "value": "-2006"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 703,
+      "offset": 964,
       "length": 30,
       "value": "\"BLE Authentication timed out\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 798,
+      "offset": 1059,
       "length": 5,
       "value": "-2007"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 823,
+      "offset": 1135,
       "length": 23,
       "value": "\"Bluetooth unsupported\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 910,
+      "offset": 1222,
       "length": 5,
       "value": "-2008"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 935,
+      "offset": 1297,
       "length": 22,
       "value": "\"BLE peripheral error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1019,
+      "offset": 1381,
       "length": 5,
       "value": "-2009"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1044,
+      "offset": 1454,
       "length": 20,
       "value": "\"Failed to call API\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1302,
+      "offset": 1761,
       "length": 38,
       "value": "\"3420d81a-af2c-11e5-bf7f-feff819cdc9f\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1381,
+      "offset": 1840,
       "length": 38,
       "value": "\"52052C11-E701-4782-99F5-8CE88DBB1500\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1479,
+      "offset": 1938,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1532,
+      "offset": 1991,
       "length": 3,
       "value": "-85"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1586,
+      "offset": 2045,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "Array",
-      "offset": 1641,
+      "offset": 2100,
       "length": 20,
       "value": "[\"BRVO\", \"BRVO_ALL\"]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "Array",
-      "offset": 1802,
-      "length": 80,
+      "offset": 2261,
+      "length": 129,
       "value": "[\"52052C11-E701-4782-99F5-8CE88DBB1506\", \"EE8732B3-2D52-409B-9084-70AD31F6C790\"]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1934,
+      "offset": 2442,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 1984,
+      "offset": 2492,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2035,
+      "offset": 2543,
       "length": 1,
       "value": "7"
     }

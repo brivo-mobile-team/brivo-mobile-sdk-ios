@@ -4,6 +4,7 @@
 import BrivoCore
 import Foundation
 import Swift
+import TaskUnifier
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -17,16 +18,16 @@ public struct HttpStatusCodes {
   public static let refreshTokenFailed: Swift.Int
 }
 @objc public class BrivoOnAirError : ObjectiveC.NSObject {
-  @objc public var error: Swift.String
-  @objc public var errorDescription: Swift.String?
-  @objc public init?(error: Swift.String?, errorDescription: Swift.String?)
+  public var error: Swift.String
+  public var errorDescription: Swift.String?
+  public init?(error: Swift.String?, errorDescription: Swift.String?)
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class BrivoOnAirResponseStatus : ObjectiveC.NSObject {
-  @objc public var statusCode: Swift.Int
-  @objc public var error: BrivoNetworkCore.BrivoOnAirError?
-  @objc convenience public init(statusCode: Swift.Int, error: BrivoNetworkCore.BrivoOnAirError?)
+@objc @_inheritsConvenienceInitializers public class BrivoOnAirResponseStatus : ObjectiveC.NSObject {
+  public var statusCode: Swift.Int
+  public var error: BrivoNetworkCore.BrivoOnAirError?
+  convenience public init(statusCode: Swift.Int, error: BrivoNetworkCore.BrivoOnAirError?)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -174,18 +175,24 @@ public enum BrivoNetworkCoreQueryParameter : Swift.String {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class BrivoOnAirErrors : ObjectiveC.NSObject {
-  @objc public static let serverCallError: BrivoCore.BrivoError
-  @objc public static let authenticationMissingDataError: BrivoCore.BrivoError
-  @objc public static let redeemPassMissingDataError: BrivoCore.BrivoError
-  @objc public static let sdkIsNotUsingDefaultStorageError: BrivoCore.BrivoError
-  @objc public static let getSitesMissingDataError: BrivoCore.BrivoError
-  @objc public static let getAccessPointsMissingDataError: BrivoCore.BrivoError
-  @objc public static let controlLockConfigMissingDataError: BrivoCore.BrivoError
-  @objc public static let refreshTokenError: BrivoCore.BrivoError
-  @objc public static func brivoOnAirErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
+@objc @_inheritsConvenienceInitializers public class BrivoOnAirErrors : ObjectiveC.NSObject {
+  public static let serverCallError: BrivoCore.BrivoError
+  public static let authenticationMissingDataError: BrivoCore.BrivoError
+  public static let redeemPassMissingDataError: BrivoCore.BrivoError
+  public static let sdkIsNotUsingDefaultStorageError: BrivoCore.BrivoError
+  public static let getSitesMissingDataError: BrivoCore.BrivoError
+  public static let getAccessPointsMissingDataError: BrivoCore.BrivoError
+  public static let controlLockConfigMissingDataError: BrivoCore.BrivoError
+  public static let refreshTokenError: BrivoCore.BrivoError
+  public static func brivoOnAirErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
+  public static func refreshTokenErrorWithDescription(_ description: Swift.String?) -> BrivoCore.BrivoError
   @objc override dynamic public init()
   @objc deinit
+}
+extension BrivoCore.BrivoError {
+  public var isRefreshTokenError: Swift.Bool {
+    get
+  }
 }
 extension BrivoNetworkCore.HTTPSMethod : Swift.Equatable {}
 extension BrivoNetworkCore.HTTPSMethod : Swift.Hashable {}

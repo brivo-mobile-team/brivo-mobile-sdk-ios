@@ -299,29 +299,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-typedef SWIFT_ENUM(NSInteger, AccessPointCommunicationState, open) {
-  AccessPointCommunicationStateScanning = 0,
-  AccessPointCommunicationStateShouldContinue = 1,
-  AccessPointCommunicationStateConnecting = 2,
-  AccessPointCommunicationStateCommunicating = 3,
-  AccessPointCommunicationStateSuccess = 4,
-  AccessPointCommunicationStateFailed = 5,
-};
-
-typedef SWIFT_ENUM(NSInteger, AccessPointDorType, open) {
-  AccessPointDorTypeBrivoDoor = 0,
-  AccessPointDorTypeControlLock = 1,
-};
-
-@class NSString;
 
 SWIFT_CLASS("_TtC9BrivoCore15AccessPointPath")
 @interface AccessPointPath : NSObject
-@property (nonatomic) NSInteger accessPointId;
-@property (nonatomic) NSInteger siteId;
-@property (nonatomic, copy) NSString * _Nonnull passId;
-@property (nonatomic) BOOL hasTrustedNetwork;
-- (nonnull instancetype)initWithAccessPointId:(NSInteger)accessPointId siteId:(NSInteger)siteId passId:(NSString * _Nonnull)passId hasTrustedNetwork:(BOOL)hasTrustedNetwork OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -329,59 +309,36 @@ SWIFT_CLASS("_TtC9BrivoCore15AccessPointPath")
 
 SWIFT_CLASS("_TtC9BrivoCore38BrivoControlLockAuthenticationResponse")
 @interface BrivoControlLockAuthenticationResponse : NSObject
-@property (nonatomic, copy) NSString * _Nullable authenticationPayload;
-@property (nonatomic, copy) NSString * _Nullable commandPayload;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSData;
 
 SWIFT_CLASS("_TtC9BrivoCore33BrivoControlLockConfigRequestBody")
 @interface BrivoControlLockConfigRequestBody : NSObject
-@property (nonatomic, copy) NSString * _Nonnull deviceUuid;
-@property (nonatomic, copy) NSString * _Nonnull providerTypeId;
-@property (nonatomic, copy) NSString * _Nonnull deviceModelId;
-@property (nonatomic, copy) NSString * _Nonnull bleChallenge;
-@property (nonatomic) BOOL resetTempKey;
-- (NSData * _Nullable)encode SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class BrivoControlLockUserRecord;
-@class BrivoControlLockSchedule;
 
 SWIFT_CLASS("_TtC9BrivoCore18BrivoControlLockDb")
 @interface BrivoControlLockDb : NSObject
-@property (nonatomic, strong) BrivoControlLockUserRecord * _Nonnull usrRcrd;
-@property (nonatomic, copy) NSArray<BrivoControlLockSchedule *> * _Nonnull schedules;
 @end
 
 
 SWIFT_CLASS("_TtC9BrivoCore24BrivoControlLockSchedule")
 @interface BrivoControlLockSchedule : NSObject
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull days;
-@property (nonatomic) NSInteger lngth;
-@property (nonatomic) NSInteger strtHr;
-@property (nonatomic) NSInteger strtMn;
 @end
 
 
 SWIFT_CLASS("_TtC9BrivoCore26BrivoControlLockUserRecord")
 @interface BrivoControlLockUserRecord : NSObject
-@property (nonatomic) NSInteger deleteAll;
-@property (nonatomic, copy, getter=delete, setter=setDelete:) NSArray<NSString *> * _Nonnull delete_;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull update;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull add;
 @end
 
 @class NSCoder;
+@class NSString;
 
 SWIFT_CLASS("_TtC9BrivoCore10BrivoError")
 @interface BrivoError : NSError
-@property (nonatomic, readonly) NSInteger statusCode;
-@property (nonatomic, readonly, copy) NSString * _Nonnull errorDescription;
-- (nonnull instancetype)initWithStatusCode:(NSInteger)statusCode errorDescription:(NSString * _Nonnull)errorDescription OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict SWIFT_UNAVAILABLE;
 @end
@@ -389,52 +346,17 @@ SWIFT_CLASS("_TtC9BrivoCore10BrivoError")
 
 SWIFT_CLASS("_TtC9BrivoCore11BrivoResult")
 @interface BrivoResult : NSObject
-@property (nonatomic) enum AccessPointCommunicationState accessPointCommunicationState;
-@property (nonatomic, strong) AccessPointPath * _Nullable accessPointPath;
-@property (nonatomic, strong) BrivoError * _Nullable error;
-@property (nonatomic, copy) void (^ _Nullable shouldContinue)(BOOL);
-@property (nonatomic) BOOL engagedReaderCommand;
-- (nonnull instancetype)initWithAccessPointCommunicationState:(enum AccessPointCommunicationState)accessPointCommunicationState accessPointPath:(AccessPointPath * _Nullable)accessPointPath error:(BrivoError * _Nullable)error shouldContinue:(void (^ _Nullable)(BOOL))shouldContinue engagedReaderCommand:(BOOL)engagedReaderCommand OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class BrivoSDK;
-@class BrivoSDKConfiguration;
-
-SWIFT_PROTOCOL("_TtP9BrivoCore9IBrivoSDK_")
-@protocol IBrivoSDK
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoSDK * _Nonnull instance;)
-+ (BrivoSDK * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
-+ (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
-/// Configure the Brivo SDK.
-/// \param brivoConfiguration Brivo configuration.
-///
-- (void)configureWithBrivoConfiguration:(BrivoSDKConfiguration * _Nonnull)brivoConfiguration;
-/// Returns the Brivo SDK configuration.
-- (BrivoSDKConfiguration * _Nullable)getBrivoConfigurationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
-/// Returns the device ID.
-/// It also persists the device ID first time it is returned so that succesive calls get the same value.
-- (NSString * _Nonnull)getDeviceId SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 SWIFT_CLASS("_TtC9BrivoCore8BrivoSDK")
-@interface BrivoSDK : NSObject <IBrivoSDK>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoSDK * _Nonnull instance;)
-+ (BrivoSDK * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
-+ (NSString * _Nonnull)sdkVersion SWIFT_WARN_UNUSED_RESULT;
-- (BrivoSDKConfiguration * _Nullable)getBrivoConfigurationAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
+@interface BrivoSDK : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)configureWithBrivoConfiguration:(BrivoSDKConfiguration * _Nonnull)brivoConfiguration;
-- (NSString * _Nonnull)getDeviceId SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@protocol RefreshTokenDelegate;
-@class SessionRequestTimeout;
 
 /// Defines the configuration object needed by the BrivoSDK in order to function properly.
 /// \param clientId Brivo client id
@@ -443,7 +365,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// \param useSDKStorage if the SDK should use internal stoage for the passes
 ///
-/// \param useEURegion if the SDK should point to the eu version of the endpoint in the case apiUrl or authUrl are not provided
+/// \param region the region where the SDK base urls should point in the case apiUrl or authUrl are not provided.
+/// Defaults to Region.us
 ///
 /// \param shouldPromptForContinuation if the SDK should promt for continuation
 ///
@@ -457,25 +380,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 ///
 /// \param smartHomeUrlV4 the Brivo Smart Home base url v4
 ///
-/// \param refreshTokenDelegate a refresh token delegate that can handle token refresh in case on HTTP 401 unauthorised
+/// \param refreshTokenDelegate a refresh token delegate that can handle token refresh in case of a
+/// HTTP 401 unauthorised
 ///
 /// \param sessionRequestTimeout the HTTP session request timeout
 ///
 SWIFT_CLASS("_TtC9BrivoCore21BrivoSDKConfiguration")
 @interface BrivoSDKConfiguration : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull clientId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull clientSecret;
-@property (nonatomic, readonly, copy) NSString * _Nullable authUrl;
-@property (nonatomic, readonly, copy) NSString * _Nullable apiUrl;
-@property (nonatomic, readonly, copy) NSString * _Nullable smartHomeUrl;
-@property (nonatomic, readonly, copy) NSString * _Nullable smartHomeUrlV1;
-@property (nonatomic, readonly, copy) NSString * _Nullable smartHomeUrlV4;
-@property (nonatomic, readonly) BOOL useSDKStorage;
-@property (nonatomic, readonly) BOOL useEURegion;
-@property (nonatomic, readonly) BOOL shouldPromptForContinuation;
-@property (nonatomic, weak) id <RefreshTokenDelegate> _Nullable refreshTokenDelegate;
-@property (nonatomic, readonly, strong) SessionRequestTimeout * _Nullable sessionRequestTimeout;
-- (nullable instancetype)initWithClientId:(NSString * _Nonnull)clientId clientSecret:(NSString * _Nonnull)clientSecret useSDKStorage:(BOOL)useSDKStorage useEURegion:(BOOL)useEURegion shouldPromptForContinuation:(BOOL)shouldPromptForContinuation authUrl:(NSString * _Nullable)authUrl apiUrl:(NSString * _Nullable)apiUrl smartHomeUrl:(NSString * _Nullable)smartHomeUrl smartHomeUrlV1:(NSString * _Nullable)smartHomeUrlV1 smartHomeUrlV4:(NSString * _Nullable)smartHomeUrlV4 refreshTokenDelegate:(id <RefreshTokenDelegate> _Nullable)refreshTokenDelegate sessionRequestTimeout:(SessionRequestTimeout * _Nullable)sessionRequestTimeout error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -483,10 +394,6 @@ SWIFT_CLASS("_TtC9BrivoCore21BrivoSDKConfiguration")
 
 SWIFT_CLASS("_TtC9BrivoCore11BrivoTokens")
 @interface BrivoTokens : NSObject
-@property (nonatomic, copy) NSString * _Nonnull accessToken;
-@property (nonatomic, copy) NSString * _Nullable refreshToken;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable dictionary;
-- (nullable instancetype)initWithDictionary:(NSDictionary<NSString *, id> * _Nullable)dictionary OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -494,40 +401,13 @@ SWIFT_CLASS("_TtC9BrivoCore11BrivoTokens")
 
 SWIFT_CLASS("_TtC9BrivoCore18CancellationSignal")
 @interface CancellationSignal : NSObject
-@property (nonatomic) BOOL isCancelled;
-- (NSInteger)appendToStateChangedWithStateChanged:(void (^ _Nonnull)(BOOL))stateChanged;
-- (void)removeAt:(NSInteger)index;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-typedef SWIFT_ENUM(NSInteger, DoorType, open) {
-  DoorTypeInternet = 0,
-  DoorTypeWavelynx = 1,
-  DoorTypeAllegion = 2,
-  DoorTypeWirelessLock = 3,
-  DoorTypeAllegionBle = 4,
-};
-
-
-
-SWIFT_PROTOCOL("_TtP9BrivoCore15INetworkMonitor_")
-@protocol INetworkMonitor
-- (void)startMonitoringWithCompletion:(void (^ _Nullable)(BOOL))completion;
-- (void)stopMonitoring;
 @end
 
 
 SWIFT_CLASS("_TtC9BrivoCore14NetworkMonitor")
-@interface NetworkMonitor : NSObject <INetworkMonitor>
+@interface NetworkMonitor : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)startMonitoringWithCompletion:(void (^ _Nullable)(BOOL))completion;
-- (void)stopMonitoring;
-@end
-
-
-SWIFT_PROTOCOL("_TtP9BrivoCore20RefreshTokenDelegate_")
-@protocol RefreshTokenDelegate
-- (void)refreshTokenWithBrivoTokens:(BrivoTokens * _Nonnull)brivoTokens onSuccess:(void (^ _Nullable)(BrivoTokens * _Nonnull))onSuccess onError:(void (^ _Nullable)(BrivoError * _Nullable))onError;
 @end
 
 

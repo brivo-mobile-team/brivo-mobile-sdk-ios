@@ -277,8 +277,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import BrivoCore;
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -300,30 +298,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class NSString;
-@class BrivoBluetoothReader;
-@class BrivoLockControlGroup;
-@class BrivoSchedules;
 
 SWIFT_CLASS("_TtC10BrivoOnAir16BrivoAccessPoint")
 @interface BrivoAccessPoint : NSObject
-@property (nonatomic) NSInteger id;
-@property (nonatomic, copy) NSString * _Nullable name;
-@property (nonatomic, copy) NSString * _Nullable type;
-@property (nonatomic) NSInteger siteId;
-@property (nonatomic, copy) NSString * _Nullable siteName;
-@property (nonatomic) BOOL twoFactorEnabled;
-@property (nonatomic, strong) BrivoBluetoothReader * _Nullable bluetoothReader;
-@property (nonatomic, copy) NSString * _Nullable controlLockSerialNumber;
-@property (nonatomic, copy) NSString * _Nullable controlLockDeviceReferenceId;
-@property (nonatomic, copy) NSString * _Nullable controlLockDeviceType;
-@property (nonatomic, copy) NSString * _Nullable controlLockSiteName;
-@property (nonatomic, copy) NSString * _Nullable controlLockSiteReferenceId;
-@property (nonatomic) NSInteger controlLockId;
-@property (nonatomic) BOOL deviceRequiresUpdate;
-@property (nonatomic, readonly, copy) NSArray<BrivoLockControlGroup *> * _Nullable controlLockGroups;
-@property (nonatomic) BOOL isDoorStation;
-@property (nonatomic, copy) NSArray<BrivoSchedules *> * _Nullable schedules;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -332,60 +309,36 @@ SWIFT_CLASS("_TtC10BrivoOnAir16BrivoAccessPoint")
 
 SWIFT_CLASS("_TtC10BrivoOnAir12BrivoAddress")
 @interface BrivoAddress : NSObject
-@property (nonatomic, copy) NSString * _Nullable streetAddress1;
-@property (nonatomic, copy) NSString * _Nullable streetAddress2;
-@property (nonatomic, copy) NSString * _Nullable city;
-@property (nonatomic, copy) NSString * _Nullable state;
-@property (nonatomic, copy) NSString * _Nullable postalCode;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir37BrivoBLEExternalCredentialRequestData")
 @interface BrivoBLEExternalCredentialRequestData : NSObject
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, copy) NSString * _Nullable accessPointId;
-@property (nonatomic, copy) NSString * _Nullable providerTypeId;
-@property (nonatomic, copy) NSString * _Nullable deviceUuid;
-@property (nonatomic, copy) NSString * _Nullable serializedData;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir20BrivoBluetoothReader")
 @interface BrivoBluetoothReader : NSObject
-@property (nonatomic) NSInteger protocolVersion;
-@property (nonatomic, copy) NSString * _Nullable readerUid;
-@property (nonatomic, copy) NSString * _Nullable securityScheme;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir30BrivoControlLockConfigResponse")
 @interface BrivoControlLockConfigResponse : NSObject
-@property (nonatomic, copy) NSString * _Nonnull authenticationPayload;
-@property (nonatomic, copy) NSString * _Nonnull commandPayload;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable additionalCommandPayloads;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir34BrivoControlLockConfigSaveResponse")
 @interface BrivoControlLockConfigSaveResponse : NSObject
-- (nonnull instancetype)initWithEncryptedConfig:(NSString * _Nonnull)encryptedConfig configEcho:(BrivoControlLockConfigResponse * _Nullable)configEcho OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSData;
 
 SWIFT_CLASS("_TtC10BrivoOnAir33BrivoControlLockUnlockRequestBody")
 @interface BrivoControlLockUnlockRequestBody : NSObject
-@property (nonatomic, copy) NSString * _Nonnull deviceUuid;
-@property (nonatomic, copy) NSString * _Nonnull providerTypeId;
-@property (nonatomic, copy) NSString * _Nonnull deviceModelId;
-@property (nonatomic, copy) NSString * _Nonnull bleChallenge;
-@property (nonatomic) NSInteger relockDelay;
-- (NSData * _Nullable)encode SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -393,11 +346,6 @@ SWIFT_CLASS("_TtC10BrivoOnAir33BrivoControlLockUnlockRequestBody")
 
 SWIFT_CLASS("_TtC10BrivoOnAir39BrivoControlLockUnlockStatusRequestBody")
 @interface BrivoControlLockUnlockStatusRequestBody : NSObject
-@property (nonatomic) NSInteger unlockStatus;
-@property (nonatomic, copy) NSString * _Nonnull providerTypeId;
-@property (nonatomic, copy) NSString * _Nonnull deviceModelId;
-@property (nonatomic, copy) NSDictionary<NSString *, NSArray<NSNumber *> *> * _Nullable deviceInfo;
-- (NSData * _Nullable)encode SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -405,114 +353,45 @@ SWIFT_CLASS("_TtC10BrivoOnAir39BrivoControlLockUnlockStatusRequestBody")
 
 SWIFT_CLASS("_TtC10BrivoOnAir16BrivoGeolocation")
 @interface BrivoGeolocation : NSObject
-@property (nonatomic, copy) NSDictionary<NSNumber *, NSNumber *> * _Nullable coordinates;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable center;
-@property (nonatomic) float relevance;
-@property (nonatomic, copy) NSString * _Nullable accuracy;
-@property (nonatomic) BOOL validAddress;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir21BrivoLockControlGroup")
 @interface BrivoLockControlGroup : NSObject
-@property (nonatomic) NSInteger id;
-@property (nonatomic, copy) NSString * _Nonnull name;
-@property (nonatomic) NSInteger noTourGroupId;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir23BrivoOnAirAdministrator")
 @interface BrivoOnAirAdministrator : NSObject
-@property (nonatomic) NSInteger id;
-@property (nonatomic, copy) NSString * _Nullable externalId;
-@property (nonatomic, copy) NSString * _Nullable username;
-@property (nonatomic, copy) NSString * _Nullable firstName;
-@property (nonatomic, copy) NSString * _Nullable middleName;
-@property (nonatomic, copy) NSString * _Nullable lastName;
-@property (nonatomic, copy) NSString * _Nullable identityType;
-@property (nonatomic, copy) NSString * _Nullable email;
-@property (nonatomic, copy) NSString * _Nullable timezone;
-@property (nonatomic) BOOL canCreateAdmins;
-@property (nonatomic) NSInteger accountId;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir21BrivoOnAirCredentials")
 @interface BrivoOnAirCredentials : NSObject
-- (nonnull instancetype)initWithUserName:(NSString * _Nullable)userName password:(NSString * _Nullable)password OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class BrivoSite;
-@class BrivoOnairPassCredentials;
-@class BrivoUserImage;
 
 SWIFT_CLASS("_TtC10BrivoOnAir14BrivoOnairPass")
 @interface BrivoOnairPass : NSObject
-@property (nonatomic, copy) NSString * _Nullable pass;
-@property (nonatomic, copy) NSString * _Nullable bleCredential;
-@property (nonatomic) int32_t bleAuthTimeFrame;
-@property (nonatomic, copy) NSString * _Nullable enabled;
-@property (nonatomic, copy) NSString * _Nullable accountName;
-@property (nonatomic) NSInteger accountId;
-@property (nonatomic, copy) NSArray<BrivoSite *> * _Nullable sites;
-@property (nonatomic, strong) BrivoOnairPassCredentials * _Nullable brivoOnairPassCredentials;
-@property (nonatomic, strong) BrivoUserImage * _Nullable userImage;
-@property (nonatomic, copy) NSString * _Nullable firstName;
-@property (nonatomic, copy) NSString * _Nullable lastName;
-@property (nonatomic) BOOL hasAllegionBleCredentials;
-@property (nonatomic) BOOL enablePassTransfer;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-@interface BrivoOnairPass (SWIFT_EXTENSION(BrivoOnAir))
-@property (nonatomic, readonly, copy) NSString * _Nullable asJsonString;
-@end
 
-
-@interface BrivoOnairPass (SWIFT_EXTENSION(BrivoOnAir))
-@property (nonatomic, readonly, copy) NSString * _Nullable passId;
-@end
-
-@class BrivoTokens;
 
 SWIFT_CLASS("_TtC10BrivoOnAir25BrivoOnairPassCredentials")
 @interface BrivoOnairPassCredentials : NSObject
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, strong) BrivoTokens * _Nullable tokens;
-- (nonnull instancetype)initWithUserId:(NSString * _Nullable)userId tokens:(BrivoTokens * _Nullable)tokens OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class BrivoError;
-@class BrivoResult;
-@class AccessPointPath;
-@class BrivoControlLockConfigRequestBody;
 
 SWIFT_CLASS("_TtC10BrivoOnAir13BrivoSDKOnAir")
 @interface BrivoSDKOnAir : NSObject
-+ (BrivoSDKOnAir * _Nullable)instanceAndReturnError:(NSError * _Nullable * _Nullable)error SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)redeemPassWithPassId:(NSString * _Nonnull)passId passCode:(NSString * _Nonnull)passCode onSuccess:(void (^ _Nullable)(BrivoOnairPass * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)redeemPassWithTokens:(BrivoTokens * _Nonnull)tokens onSuccess:(void (^ _Nullable)(BrivoOnairPass * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)retrieveSitesWithTokens:(BrivoTokens * _Nonnull)tokens siteName:(NSString * _Nullable)siteName onSuccess:(void (^ _Nullable)(NSArray<BrivoSite *> * _Nonnull))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)retrieveSiteDetailsWithTokens:(BrivoTokens * _Nonnull)tokens siteId:(NSInteger)siteId onSuccess:(void (^ _Nullable)(BrivoSite * _Nonnull))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)retrieveSiteAccessPointsWithTokens:(BrivoTokens * _Nonnull)tokens siteId:(NSInteger)siteId accessPointName:(NSString * _Nullable)accessPointName onSuccess:(void (^ _Nullable)(NSArray<BrivoAccessPoint *> * _Nonnull))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)retrieveAccessPointDetailsWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSInteger)accessPointId onSuccess:(void (^ _Nullable)(BrivoAccessPoint * _Nonnull))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)unlockAccessPointWithPassId:(NSString * _Nonnull)passId accessPointId:(NSString * _Nonnull)accessPointId onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult;
-- (void)unlockAccessPointWithTokens:(BrivoTokens * _Nullable)tokens passId:(NSString * _Nonnull)passId accessPointId:(NSString * _Nonnull)accessPointId accessPointPath:(AccessPointPath * _Nullable)accessPointPath onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult;
-- (void)refreshPassWithBrivoTokens:(BrivoTokens * _Nonnull)brivoTokens onSuccess:(void (^ _Nullable)(BrivoOnairPass * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)retrieveSDKLocallyStoredPassesOnSuccess:(void (^ _Nullable)(NSArray<BrivoOnairPass *> * _Nonnull))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)controlLockUnlockWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId body:(BrivoControlLockUnlockRequestBody * _Nonnull)body onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)controlLockUnlockStatusWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId body:(BrivoControlLockUnlockStatusRequestBody * _Nonnull)body onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)controlLockConfigWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId body:(BrivoControlLockConfigRequestBody * _Nonnull)body onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)controlLockConfigSaveWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId controlLockConfigSave:(BrivoControlLockConfigSaveResponse * _Nonnull)controlLockConfigSave onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)getCurrentAdministratorWithTokens:(BrivoTokens * _Nonnull)tokens onSuccess:(void (^ _Nullable)(BrivoOnAirAdministrator * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)engageReaderCommandWithTokens:(BrivoTokens * _Nonnull)tokens readerId:(NSString * _Nonnull)readerId passId:(NSString * _Nonnull)passId option:(NSString * _Nonnull)option onSuccess:(void (^ _Nullable)(void))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
 @end
 
 
@@ -521,30 +400,15 @@ SWIFT_CLASS("_TtC10BrivoOnAir19BrivoSDKOnAirHelper")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class ScheduleBlocks;
 
 SWIFT_CLASS("_TtC10BrivoOnAir14BrivoSchedules")
 @interface BrivoSchedules : NSObject
-@property (nonatomic) NSInteger id;
-@property (nonatomic, copy) NSString * _Nullable name;
-@property (nonatomic, copy) NSString * _Nullable schedulesDescription;
-@property (nonatomic, strong) ScheduleBlocks * _Nullable scheduleBlocks;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir24BrivoSelectedAccessPoint")
 @interface BrivoSelectedAccessPoint : NSObject
-@property (nonatomic, strong) AccessPointPath * _Nonnull accessPointPath;
-@property (nonatomic) enum DoorType doorType;
-@property (nonatomic, strong) BrivoOnairPassCredentials * _Nonnull passCredential;
-@property (nonatomic) BOOL isTwoFactorEnabled;
-@property (nonatomic, copy) NSString * _Nullable readerUid;
-@property (nonatomic, copy) NSString * _Nullable bleCredentials;
-@property (nonatomic) int32_t timeframe;
-@property (nonatomic, copy) NSString * _Nullable deviceModelId;
-@property (nonatomic) NSInteger minimumPanelRssi;
-- (nonnull instancetype)initWithAccessPointPath:(AccessPointPath * _Nonnull)accessPointPath doorType:(enum DoorType)doorType passCredential:(BrivoOnairPassCredentials * _Nonnull)passCredential isTwoFactorEnabled:(BOOL)isTwoFactorEnabled readerUid:(NSString * _Nullable)readerUid bleCredentials:(NSString * _Nullable)bleCredentials timeframe:(int32_t)timeframe deviceModelId:(NSString * _Nullable)deviceModelId OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -552,26 +416,12 @@ SWIFT_CLASS("_TtC10BrivoOnAir24BrivoSelectedAccessPoint")
 
 SWIFT_CLASS("_TtC10BrivoOnAir9BrivoSite")
 @interface BrivoSite : NSObject
-@property (nonatomic) NSInteger id;
-@property (nonatomic, copy) NSString * _Nullable siteName;
-@property (nonatomic, strong) BrivoAddress * _Nullable address;
-@property (nonatomic, copy) NSString * _Nullable timeZone;
-@property (nonatomic, copy) NSArray<BrivoAccessPoint *> * _Nullable accessPoints;
-@property (nonatomic) BOOL deviceRequiresUpdate;
-@property (nonatomic, strong) BrivoGeolocation * _Nullable brivoGeolocation;
-@property (nonatomic, copy) NSString * _Nullable preScreening;
-@property (nonatomic) BOOL hasTrustedNetwork;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC10BrivoOnAir14BrivoUserImage")
 @interface BrivoUserImage : NSObject
-@property (nonatomic, copy) NSString * _Nullable userImageUri;
-@property (nonatomic) NSInteger id;
-@property (nonatomic, copy) NSString * _Nullable created;
-@property (nonatomic, copy) NSString * _Nullable contentType;
-@property (nonatomic) NSInteger contentLength;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -583,8 +433,6 @@ SWIFT_CLASS("_TtC10BrivoOnAir14ScheduleBlocks")
 
 SWIFT_CLASS("_TtC10BrivoOnAir12ScheduleTime")
 @interface ScheduleTime : NSObject
-@property (nonatomic, copy) NSString * _Nullable start;
-@property (nonatomic, copy) NSString * _Nullable end;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

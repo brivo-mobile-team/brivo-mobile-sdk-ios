@@ -11,11 +11,11 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public class ReaderData : ObjectiveC.NSObject {
-  @objc required public init(accessPointPath: BrivoCore.AccessPointPath, readerUid: Swift.String, doorType: BrivoCore.DoorType, deviceModelId: Swift.String?, minimumReaderRssi: Swift.Int = BLEConstants.MINIMUM_ALLOWED_RSSI)
+  required public init(accessPointPath: BrivoCore.AccessPointPath, readerUid: Swift.String, doorType: BrivoCore.DoorType, deviceModelId: Swift.String?, minimumReaderRssi: Swift.Int = BLEConstants.MINIMUM_ALLOWED_RSSI)
   @objc deinit
 }
 @objc public class BrivoBLECredential : ObjectiveC.NSObject {
-  @objc required public init(userId: Swift.String, bleCredential: Swift.String, accessPoints: Swift.Array<BrivoBLE.ReaderData>, timeFrame: Swift.Int32)
+  required public init(userId: Swift.String, bleCredential: Swift.String, accessPoints: Swift.Array<BrivoBLE.ReaderData>, timeFrame: Swift.Int32)
   @objc deinit
 }
 public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
@@ -23,30 +23,30 @@ public typealias OnUnlockBluetoothDoorSuccessType = () -> Swift.Void
 public typealias OnRequestExternalCredentials = (Swift.String, Swift.String, @escaping ((Swift.String?) -> Swift.Void), @escaping ((BrivoCore.BrivoError?) -> Swift.Void)) -> Swift.Void
 public typealias OnProvideResponseForExternalCredentials = (Swift.String, Swift.String, @escaping ((Swift.String?) -> Swift.Void), @escaping ((BrivoCore.BrivoError?) -> Swift.Void)) -> Swift.Void
 public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
-@_inheritsConvenienceInitializers @objc public class BrivoBLEService : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class BrivoBLEService : ObjectiveC.NSObject {
   public var requestExternalCredentials: BrivoBLE.OnRequestExternalCredentials?
   public var provideResponseForExternalCredentials: BrivoBLE.OnProvideResponseForExternalCredentials?
-  @objc public var onBluetoothStateUpdated: ((CoreBluetooth.CBManagerState) -> Swift.Void)? {
-    @objc get
-    @objc set
+  public var onBluetoothStateUpdated: ((CoreBluetooth.CBManagerState) -> Swift.Void)? {
+    get
+    set
   }
   @objc override dynamic public init()
-  @objc public func getBLEState() -> CoreBluetooth.CBManagerState
-  @objc public func startCentralManager()
+  public func getBLEState() -> CoreBluetooth.CBManagerState
+  public func startCentralManager()
   public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber
   public func removeCompletionFor(id: Foundation.NSNumber)
-  @objc public func unlockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
-  @objc public func unlockAccessPointWithServices(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
-  @objc public func lockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  public func unlockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  public func unlockAccessPointWithServices(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  public func lockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
   @objc deinit
 }
 public typealias OnConfigureAccessPointSuccessType = () -> Swift.Void
-@_inheritsConvenienceInitializers @objc public class BrivoConfigurationBLEService : ObjectiveC.NSObject {
+@objc @_inheritsConvenienceInitializers public class BrivoConfigurationBLEService : ObjectiveC.NSObject {
   public var requestExternalCredentials: BrivoBLE.OnRequestExternalCredentials?
   public var provideResponseForExternalCredentials: BrivoBLE.OnProvideResponseForExternalCredentials?
   @objc override dynamic public init()
-  @objc public func startCentralManager()
-  @objc public func configureAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  public func startCentralManager()
+  public func configureAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
   @objc deinit
 }
 public struct BrivoBLEErrors {

@@ -277,8 +277,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreBluetooth;
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -300,201 +298,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class BrivoSDKAccess;
-@class BrivoSelectedAccessPoint;
-@class BrivoResult;
-@class CancellationSignal;
-@class NSString;
-@class BrivoError;
-@class BrivoOnairPass;
-@class BrivoTokens;
-@class NSNumber;
-
-SWIFT_PROTOCOL("_TtP11BrivoAccess15IBrivoSDKAccess_")
-@protocol IBrivoSDKAccess
-+ (BrivoSDKAccess * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
-/// Unlocks an access-point.
-/// This method should be used when handing the credentials outside of the SDK
-/// The request will be granted if the card holder has permission to access this door based on their groups affiliation.
-/// Available only to digital credential users
-/// \param selectedAccessPoint BrivoSelectedAccessPoint can be created from BrivoAccessPoint.
-/// The class BrivoSDKOnAirHelper from BrivoOnAir has methods to help with the creation of the object.
-///
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles  failure
-///
-/// \param cancellationSignal can be used to cancel the unlocking process
-///
-- (void)unlockAccessPointWithSelectedAccessPoint:(BrivoSelectedAccessPoint * _Nonnull)selectedAccessPoint onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-/// Unlocks an access-point.
-/// This method should be used when the SDK handles the credentials.
-/// The request will be granted if the card holder has permission to access this door based on their groups affiliation.
-/// Available only to digital credential users
-/// \param passId Brivo passId
-///
-/// \param accessPointId The id associated with the accesspoint
-///
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles  failure
-///
-/// \param cancellationSignal can be used to cancel the unlocking process
-///
-- (void)unlockAccessPointWithPassId:(NSString * _Nonnull)passId accessPointId:(NSString * _Nonnull)accessPointId onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-/// Locks an access-point.
-/// This method should be used when handing the credentials outside of the SDK
-/// Only a few access-points support the locking process.
-/// The request will be granted if the card holder has permission to access this door based on their groups affiliation.
-/// Available only to digital credential users
-/// \param selectedAccessPoint BrivoSelectedAccessPoint can be created from BrivoAccessPoint.
-/// The class BrivoSDKOnAirHelper from BrivoOnAir has methods to help with the creation of the object.
-///
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles failure
-///
-/// \param cancellationSignal can be used to cancel the locking process
-///
-- (void)lockAccessPointWithSelectedAccessPoint:(BrivoSelectedAccessPoint * _Nonnull)selectedAccessPoint onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-/// Locks an access-point.
-/// This method should be used when the SDK handles the credentials.
-/// Only a few access-points support the locking process.
-/// The request will be granted if the card holder has permission to access this door based on their groups affiliation.
-/// Available only to digital credential users
-/// \param passId Brivo passId
-///
-/// \param accessPointId The id associated with the accesspoint
-///
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles failure
-///
-/// \param cancellationSignal can be used to cancel the locking process
-///
-- (void)lockAccessPointWithPassId:(NSString * _Nonnull)passId accessPointId:(NSString * _Nonnull)accessPointId onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-/// Unlocks the nearest Bluetooth access point from the list of passes.
-/// This method should be used when handing the credentials outside of the SDK
-/// The request will be granted if the card holder has permission to access this door based on their groups affiliation.
-/// Available only to digital credential users
-/// \param passes A list that contains BrivoOnairPasses from which the access points will be searched
-///
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles  failure
-///
-/// \param cancellationSignal can be used to cancel the unlocking process
-///
-- (void)unlockNearestBLEAccessPointWithPasses:(NSArray<BrivoOnairPass *> * _Nonnull)passes onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-/// Unlocks the nearest Bluetooth access point from the list of passes.
-/// This method should be used when handing the credentials outside of the SDK
-/// The request will be granted if the card holder has permission to access this door based on their groups affiliation.
-/// Available only to digital credential users
-/// \param pass A  BrivoOnairPass from which the access points will be searched
-///
-/// \param siteId The id of the site that will be used to search the access points from
-///
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles  failure
-///
-/// \param cancellationSignal can be used to cancel the unlocking process
-///
-- (void)unlockNearestBLEAccessPointWithPass:(BrivoOnairPass * _Nonnull)pass siteId:(NSInteger)siteId onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-/// Unlocks the nearest Bluetooth access point from the ones that are currently available.
-/// This method should be used when the SDK handles the credentials.
-/// The request will be granted if the card holder has permission to access this door based on their groups affiliation.
-/// Available only to digital credential users
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles  failure
-///
-/// \param cancellationSignal can be used to cancel the unlocking process
-///
-- (void)unlockNearestBLEAccessPointOnResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-/// Requests external credentials from On Air system.
-/// \param tokens the brivo tokens
-///
-/// \param accessPointId the id associated with the accesspoint
-///
-/// \param requestData the request data
-///
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles  failure
-///
-- (void)requestExternalCredentialsFromOnAirWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId requestData:(NSString * _Nonnull)requestData onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-/// Turns on the BLE scanning.
-- (void)turnOnCentral;
-/// Returns the Bluetooth state..
-///
-/// returns:
-/// the BLE state
-- (CBManagerState)getBLEState SWIFT_WARN_UNUSED_RESULT;
-/// Notifies using a completion then the BLE state changes.
-/// \param completion the completion
-///
-///
-/// returns:
-/// the completion identifier
-- (NSNumber * _Nullable)onBleChangedWithCompletion:(void (^ _Nonnull)(CBManagerState))completion SWIFT_WARN_UNUSED_RESULT;
-/// Removes a completion handler ID from the completion notifications.
-/// \param id the completion hadler id
-///
-- (void)removeCompletionForId:(NSNumber * _Nonnull)id;
-@end
-
 
 SWIFT_CLASS("_TtC11BrivoAccess14BrivoSDKAccess")
-@interface BrivoSDKAccess : NSObject <IBrivoSDKAccess>
-+ (BrivoSDKAccess * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
-@property (nonatomic, copy) void (^ _Nullable onBluetoothStateUpdated)(CBManagerState);
+@interface BrivoSDKAccess : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)turnOnCentral;
-- (CBManagerState)getBLEState SWIFT_WARN_UNUSED_RESULT;
-- (NSNumber * _Nullable)onBleChangedWithCompletion:(void (^ _Nonnull)(CBManagerState))completion SWIFT_WARN_UNUSED_RESULT;
-- (void)removeCompletionForId:(NSNumber * _Nonnull)id;
-- (void)unlockAccessPointWithSelectedAccessPoint:(BrivoSelectedAccessPoint * _Nonnull)selectedAccessPoint onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)unlockAccessPointWithPassId:(NSString * _Nonnull)passId accessPointId:(NSString * _Nonnull)accessPointId onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)lockAccessPointWithSelectedAccessPoint:(BrivoSelectedAccessPoint * _Nonnull)selectedAccessPoint onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)lockAccessPointWithPassId:(NSString * _Nonnull)passId accessPointId:(NSString * _Nonnull)accessPointId onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)unlockNearestBLEAccessPointWithPasses:(NSArray<BrivoOnairPass *> * _Nonnull)passes onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)unlockNearestBLEAccessPointWithPass:(BrivoOnairPass * _Nonnull)pass siteId:(NSInteger)siteId onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)unlockNearestBLEAccessPointOnResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)requestExternalCredentialsFromOnAirWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId requestData:(NSString * _Nonnull)requestData onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)provideExternalCredentialsResponseToOnAirWithTokens:(BrivoTokens * _Nonnull)tokens accessPointId:(NSString * _Nonnull)accessPointId requestData:(NSString * _Nonnull)requestData onSuccess:(void (^ _Nullable)(NSString * _Nullable))onSuccess onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
 @end
 
 
 SWIFT_CLASS("_TtC11BrivoAccess20BrivoSDKAccessErrors")
 @interface BrivoSDKAccessErrors : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull unknownError;)
-+ (BrivoError * _Nonnull)unknownError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull notInitializedError;)
-+ (BrivoError * _Nonnull)notInitializedError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull notConfiguredForLocalStorageError;)
-+ (BrivoError * _Nonnull)notConfiguredForLocalStorageError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull noPassesFoundInLocalStorageError;)
-+ (BrivoError * _Nonnull)noPassesFoundInLocalStorageError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull accessPointNotFoundInLocalStorageError;)
-+ (BrivoError * _Nonnull)accessPointNotFoundInLocalStorageError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull passNotFoundInLocalStorageError;)
-+ (BrivoError * _Nonnull)passNotFoundInLocalStorageError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull missingBLECredentialError;)
-+ (BrivoError * _Nonnull)missingBLECredentialError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull accessPointInvalidDoorType;)
-+ (BrivoError * _Nonnull)accessPointInvalidDoorType SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull missingNetworkConnectionError;)
-+ (BrivoError * _Nonnull)missingNetworkConnectionError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull missingReaderUUIDError;)
-+ (BrivoError * _Nonnull)missingReaderUUIDError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull accessPointUnsupportedDoorType;)
-+ (BrivoError * _Nonnull)accessPointUnsupportedDoorType SWIFT_WARN_UNUSED_RESULT;
-+ (BrivoError * _Nonnull)brivoErrorWithDescription:(NSString * _Nonnull)description SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 #endif
 #if __has_attribute(external_source_symbol)

@@ -142,44 +142,27 @@
           {
             "kind": "Function",
             "name": "unlockAccessPoint",
-            "printedName": "unlockAccessPoint(accessPoint:onResult:cancellationSignal:)",
+            "printedName": "unlockAccessPoint(accessPoint:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<BrivoCore.BrivoResult>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  }
+                ],
+                "usr": "s:ScS"
               },
               {
                 "kind": "TypeNominal",
                 "name": "BrivoSelectedAccessPoint",
                 "printedName": "BrivoOnAir.BrivoSelectedAccessPoint",
                 "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSelectedAccessPoint"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -197,8 +180,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP17unlockAccessPoint06accessG08onResult18cancellationSignaly0A5OnAir0a8SelectedfG0C_y0A4Core0aJ0CcSgAK012CancellationL0CSgtF",
-            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP17unlockAccessPoint06accessG08onResult18cancellationSignaly0A5OnAir0a8SelectedfG0C_y0A4Core0aJ0CcSgAK012CancellationL0CSgtF",
+            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP17unlockAccessPoint06accessG018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedfG0C_AG012CancellationJ0CSgtF",
+            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP17unlockAccessPoint06accessG018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedfG0C_AG012CancellationJ0CSgtF",
             "moduleName": "BrivoBLEAllegion",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
             "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
@@ -430,44 +413,27 @@
           {
             "kind": "Function",
             "name": "unlockAccessPoint",
-            "printedName": "unlockAccessPoint(accessPoint:onResult:cancellationSignal:)",
+            "printedName": "unlockAccessPoint(accessPoint:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<BrivoCore.BrivoResult>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  }
+                ],
+                "usr": "s:ScS"
               },
               {
                 "kind": "TypeNominal",
                 "name": "BrivoSelectedAccessPoint",
                 "printedName": "BrivoOnAir.BrivoSelectedAccessPoint",
                 "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSelectedAccessPoint"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -485,8 +451,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17unlockAccessPoint06accessF08onResult18cancellationSignaly0A5OnAir0a8SelectedeF0C_y0A4Core0aI0CcSgAK012CancellationK0CSgtF",
-            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC17unlockAccessPoint06accessF08onResult18cancellationSignaly0A5OnAir0a8SelectedeF0C_y0A4Core0aI0CcSgAK012CancellationK0CSgtF",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17unlockAccessPoint06accessF018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedeF0C_AG012CancellationI0CSgtF",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC17unlockAccessPoint06accessF018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedeF0C_AG012CancellationI0CSgtF",
             "moduleName": "BrivoBLEAllegion",
             "declAttributes": [
               "Final",
@@ -1141,72 +1107,86 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/BrivoSDKBLEAllegion.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1572,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 318,
+      "offset": 426,
       "length": 5,
       "value": "-6000"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 368,
+      "offset": 479,
+      "length": 5,
+      "value": "-6001"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
       "length": 5,
       "value": "-6002"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 418,
+      "offset": 579,
       "length": 5,
       "value": "-6003"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 467,
+      "offset": 628,
       "length": 5,
       "value": "-6004"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 521,
+      "offset": 682,
       "length": 5,
       "value": "-6005"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 568,
+      "offset": 729,
       "length": 5,
       "value": "-6006"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 614,
+      "offset": 775,
       "length": 5,
       "value": "-6007"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 655,
+      "offset": 816,
       "length": 5,
       "value": "-6008"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 707,
+      "offset": 868,
       "length": 5,
       "value": "-6009"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
-      "offset": 751,
+      "offset": 912,
       "length": 5,
       "value": "-6010"
     },
@@ -1255,21 +1235,21 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 501,
+      "offset": 497,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
-      "offset": 551,
+      "offset": 547,
       "length": 23,
       "value": "\"allegionCredentialKey\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
-      "offset": 612,
+      "offset": 608,
       "length": 14,
       "value": "\"BLE_PLATINUM\""
     }

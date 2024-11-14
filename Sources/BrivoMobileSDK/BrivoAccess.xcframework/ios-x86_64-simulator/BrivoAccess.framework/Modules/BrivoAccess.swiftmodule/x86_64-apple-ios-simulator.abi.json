@@ -39,7 +39,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)unknownError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC12unknownError0A4Core0aF0CvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC12unknownError0A4Core0aF0CvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -47,8 +47,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -66,14 +65,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)unknownError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC12unknownError0A4Core0aF0CvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC12unknownError0A4Core0aF0CvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -92,7 +90,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)notInitializedError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC19notInitializedError0A4Core0aG0CvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC19notInitializedError0A4Core0aG0CvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -100,8 +98,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -119,14 +116,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)notInitializedError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC19notInitializedError0A4Core0aG0CvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC19notInitializedError0A4Core0aG0CvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -145,7 +141,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)notConfiguredForLocalStorageError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC33notConfiguredForLocalStorageError0A4Core0aJ0CvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC33notConfiguredForLocalStorageError0A4Core0aJ0CvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -153,8 +149,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -172,14 +167,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)notConfiguredForLocalStorageError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC33notConfiguredForLocalStorageError0A4Core0aJ0CvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC33notConfiguredForLocalStorageError0A4Core0aJ0CvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -198,7 +192,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)noPassesFoundInLocalStorageError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC32noPassesFoundInLocalStorageError0A4Core0aK0CvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC32noPassesFoundInLocalStorageError0A4Core0aK0CvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -206,8 +200,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -225,14 +218,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)noPassesFoundInLocalStorageError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC32noPassesFoundInLocalStorageError0A4Core0aK0CvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC32noPassesFoundInLocalStorageError0A4Core0aK0CvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -251,7 +243,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)accessPointNotFoundInLocalStorageError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC38accessPointNotFoundInLocalStorageError0A4Core0aL0CvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC38accessPointNotFoundInLocalStorageError0A4Core0aL0CvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -259,8 +251,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -278,14 +269,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)accessPointNotFoundInLocalStorageError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC38accessPointNotFoundInLocalStorageError0A4Core0aL0CvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC38accessPointNotFoundInLocalStorageError0A4Core0aL0CvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -304,7 +294,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)passNotFoundInLocalStorageError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC31passNotFoundInLocalStorageError0A4Core0aK0CvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC31passNotFoundInLocalStorageError0A4Core0aK0CvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -312,8 +302,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -331,14 +320,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)passNotFoundInLocalStorageError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC31passNotFoundInLocalStorageError0A4Core0aK0CvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC31passNotFoundInLocalStorageError0A4Core0aK0CvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -357,7 +345,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)missingBLECredentialError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC25missingBLECredentialError0A4Core0aG0CvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC25missingBLECredentialError0A4Core0aG0CvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -365,8 +353,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -384,14 +371,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)missingBLECredentialError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC25missingBLECredentialError0A4Core0aG0CvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC25missingBLECredentialError0A4Core0aG0CvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -410,7 +396,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)accessPointInvalidDoorType",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC26accessPointInvalidDoorType0A4Core0A5ErrorCvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC26accessPointInvalidDoorType0A4Core0A5ErrorCvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -418,8 +404,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -437,14 +422,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)accessPointInvalidDoorType",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC26accessPointInvalidDoorType0A4Core0A5ErrorCvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC26accessPointInvalidDoorType0A4Core0A5ErrorCvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -463,7 +447,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)missingNetworkConnectionError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC29missingNetworkConnectionError0A4Core0aH0CvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC29missingNetworkConnectionError0A4Core0aH0CvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -471,8 +455,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -490,14 +473,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)missingNetworkConnectionError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC29missingNetworkConnectionError0A4Core0aH0CvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC29missingNetworkConnectionError0A4Core0aH0CvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -516,7 +498,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)missingReaderUUIDError",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC22missingReaderUUIDError0A4Core0A5ErrorCvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC22missingReaderUUIDError0A4Core0A5ErrorCvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -524,8 +506,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -543,14 +524,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)missingReaderUUIDError",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC22missingReaderUUIDError0A4Core0A5ErrorCvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC22missingReaderUUIDError0A4Core0A5ErrorCvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -569,7 +549,7 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cpy)accessPointUnsupportedDoorType",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC30accessPointUnsupportedDoorType0A4Core0A5ErrorCvpZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC30accessPointUnsupportedDoorType0A4Core0A5ErrorCvpZ",
             "moduleName": "BrivoAccess",
             "static": true,
@@ -577,8 +557,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -596,14 +575,13 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)accessPointUnsupportedDoorType",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC30accessPointUnsupportedDoorType0A4Core0A5ErrorCvgZ",
                 "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC30accessPointUnsupportedDoorType0A4Core0A5ErrorCvgZ",
                 "moduleName": "BrivoAccess",
                 "static": true,
                 "implicit": true,
                 "declAttributes": [
-                  "Final",
-                  "ObjC"
+                  "Final"
                 ],
                 "accessorKind": "get"
               }
@@ -628,14 +606,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccessErrors(cm)brivoErrorWithDescription:",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC25brivoErrorWithDescriptiony0A4Core0aF0CSSFZ",
             "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC25brivoErrorWithDescriptiony0A4Core0aF0CSSFZ",
             "moduleName": "BrivoAccess",
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -804,14 +781,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(cm)instance",
+            "usr": "s:11BrivoAccess0A9SDKAccessC8instanceACyFZ",
             "mangledName": "$s11BrivoAccess0A9SDKAccessC8instanceACyFZ",
             "moduleName": "BrivoAccess",
             "static": true,
-            "objc_name": "instance",
             "declAttributes": [
               "Final",
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -849,14 +824,13 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(py)onBluetoothStateUpdated",
+            "usr": "s:11BrivoAccess0A9SDKAccessC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvp",
             "mangledName": "$s11BrivoAccess0A9SDKAccessC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvp",
             "moduleName": "BrivoAccess",
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "hasStorage": true,
             "accessors": [
@@ -893,13 +867,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)onBluetoothStateUpdated",
+                "usr": "s:11BrivoAccess0A9SDKAccessC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvg",
                 "mangledName": "$s11BrivoAccess0A9SDKAccessC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvg",
                 "moduleName": "BrivoAccess",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "get"
               },
               {
@@ -940,13 +911,10 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)setOnBluetoothStateUpdated:",
+                "usr": "s:11BrivoAccess0A9SDKAccessC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvs",
                 "mangledName": "$s11BrivoAccess0A9SDKAccessC23onBluetoothStateUpdatedySo09CBManagerF0VcSgvs",
                 "moduleName": "BrivoAccess",
                 "implicit": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
                 "accessorKind": "set"
               },
               {
@@ -981,12 +949,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)turnOnCentral",
+            "usr": "s:11BrivoAccess0A9SDKAccessC13turnOnCentralyyF",
             "mangledName": "$s11BrivoAccess0A9SDKAccessC13turnOnCentralyyF",
             "moduleName": "BrivoAccess",
-            "objc_name": "turnOnCentral",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1004,12 +970,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)getBLEState",
+            "usr": "s:11BrivoAccess0A9SDKAccessC11getBLEStateSo14CBManagerStateVyF",
             "mangledName": "$s11BrivoAccess0A9SDKAccessC11getBLEStateSo14CBManagerStateVyF",
             "moduleName": "BrivoAccess",
-            "objc_name": "getBLEState",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1053,12 +1017,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)onBleChangedWithCompletion:",
+            "usr": "s:11BrivoAccess0A9SDKAccessC12onBleChanged10completionSo8NSNumberCSgySo14CBManagerStateVc_tF",
             "mangledName": "$s11BrivoAccess0A9SDKAccessC12onBleChanged10completionSo8NSNumberCSgySo14CBManagerStateVc_tF",
             "moduleName": "BrivoAccess",
-            "objc_name": "onBleChangedWithCompletion:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1081,12 +1043,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)removeCompletionForId:",
+            "usr": "s:11BrivoAccess0A9SDKAccessC19removeCompletionFor2idySo8NSNumberC_tF",
             "mangledName": "$s11BrivoAccess0A9SDKAccessC19removeCompletionFor2idySo8NSNumberC_tF",
             "moduleName": "BrivoAccess",
-            "objc_name": "removeCompletionForId:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1094,12 +1054,27 @@
           {
             "kind": "Function",
             "name": "unlockAccessPoint",
-            "printedName": "unlockAccessPoint(selectedAccessPoint:onResult:cancellationSignal:)",
+            "printedName": "unlockAccessPoint(selectedAccessPoint:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -1110,32 +1085,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "BrivoCore.CancellationSignal?",
                 "children": [
                   {
@@ -1149,12 +1098,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)unlockAccessPointWithSelectedAccessPoint:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC06unlockB5Point08selectedbE08onResult18cancellationSignaly0A5OnAir0a8SelectedbE0C_y0A4Core0aH0CcSgAK012CancellationJ0CSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC06unlockB5Point08selectedbE018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbE0C_AG012CancellationH0CSgtYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC06unlockB5Point08selectedbE018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbE0C_AG012CancellationH0CSgtYaF",
             "moduleName": "BrivoAccess",
-            "objc_name": "unlockAccessPointWithSelectedAccessPoint:onResult:cancellationSignal:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1162,50 +1109,39 @@
           {
             "kind": "Function",
             "name": "unlockAccessPoint",
-            "printedName": "unlockAccessPoint(passId:accessPointId:onResult:cancellationSignal:)",
+            "printedName": "unlockAccessPoint(passId:accessPointId:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Scs"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -1223,12 +1159,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)unlockAccessPointWithPassId:accessPointId:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC06unlockB5Point6passId06accesseG08onResult18cancellationSignalySS_SSy0A4Core0aJ0CcSgAI012CancellationL0CSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC06unlockB5Point6passId06accesseG018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationJ0CSgtYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC06unlockB5Point6passId06accesseG018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationJ0CSgtYaF",
             "moduleName": "BrivoAccess",
-            "objc_name": "unlockAccessPointWithPassId:accessPointId:onResult:cancellationSignal:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1236,12 +1170,27 @@
           {
             "kind": "Function",
             "name": "lockAccessPoint",
-            "printedName": "lockAccessPoint(selectedAccessPoint:onResult:cancellationSignal:)",
+            "printedName": "lockAccessPoint(selectedAccessPoint:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -1252,32 +1201,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "BrivoCore.CancellationSignal?",
                 "children": [
                   {
@@ -1291,12 +1214,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)lockAccessPointWithSelectedAccessPoint:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC04lockB5Point08selectedbE08onResult18cancellationSignaly0A5OnAir0a8SelectedbE0C_y0A4Core0aH0CcSgAK012CancellationJ0CSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC04lockB5Point08selectedbE018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbE0C_AG012CancellationH0CSgtYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC04lockB5Point08selectedbE018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbE0C_AG012CancellationH0CSgtYaF",
             "moduleName": "BrivoAccess",
-            "objc_name": "lockAccessPointWithSelectedAccessPoint:onResult:cancellationSignal:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1304,12 +1225,27 @@
           {
             "kind": "Function",
             "name": "lockAccessPoint",
-            "printedName": "lockAccessPoint(passId:accessPointId:onFailure:onResult:cancellationSignal:)",
+            "printedName": "lockAccessPoint(passId:accessPointId:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -1322,58 +1258,6 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoError) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoError) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoError",
-                        "printedName": "BrivoCore.BrivoError",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -1391,12 +1275,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)lockAccessPointWithPassId:accessPointId:onFailure:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC04lockB5Point6passId06accesseG09onFailure0I6Result18cancellationSignalySS_SSy0A4Core0A5ErrorCcSgyAJ0aK0CcSgAJ012CancellationM0CSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC04lockB5Point6passId06accesseG018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationJ0CSgtYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC04lockB5Point6passId06accesseG018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationJ0CSgtYaF",
             "moduleName": "BrivoAccess",
-            "objc_name": "lockAccessPointWithPassId:accessPointId:onFailure:onResult:cancellationSignal:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1404,12 +1286,27 @@
           {
             "kind": "Function",
             "name": "unlockNearestBLEAccessPoint",
-            "printedName": "unlockNearestBLEAccessPoint(passes:onResult:cancellationSignal:)",
+            "printedName": "unlockNearestBLEAccessPoint(passes:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -1428,32 +1325,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "BrivoCore.CancellationSignal?",
                 "children": [
                   {
@@ -1467,12 +1338,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)unlockNearestBLEAccessPointWithPasses:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint6passes8onResult18cancellationSignalySay0A5OnAir0A9OnairPassCG_y0A4Core0aJ0CcSgAL012CancellationL0CSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint6passes18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSay0A5OnAir0A9OnairPassCG_AG012CancellationJ0CSgtYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint6passes18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSay0A5OnAir0A9OnairPassCG_AG012CancellationJ0CSgtYaF",
             "moduleName": "BrivoAccess",
-            "objc_name": "unlockNearestBLEAccessPointWithPasses:onResult:cancellationSignal:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1480,12 +1349,27 @@
           {
             "kind": "Function",
             "name": "unlockNearestBLEAccessPoint",
-            "printedName": "unlockNearestBLEAccessPoint(pass:siteId:onResult:cancellationSignal:)",
+            "printedName": "unlockNearestBLEAccessPoint(pass:siteId:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -1502,32 +1386,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "BrivoCore.CancellationSignal?",
                 "children": [
                   {
@@ -1541,12 +1399,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)unlockNearestBLEAccessPointWithPass:siteId:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint4pass6siteId8onResult18cancellationSignaly0A5OnAir0A9OnairPassC_Siy0A4Core0aL0CcSgAL012CancellationN0CSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint4pass6siteId18cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0A9OnairPassC_SiAH012CancellationL0CSgtYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint4pass6siteId18cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0A9OnairPassC_SiAH012CancellationL0CSgtYaF",
             "moduleName": "BrivoAccess",
-            "objc_name": "unlockNearestBLEAccessPointWithPass:siteId:onResult:cancellationSignal:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1554,38 +1410,27 @@
           {
             "kind": "Function",
             "name": "unlockNearestBLEAccessPoint",
-            "printedName": "unlockNearestBLEAccessPoint(onResult:cancellationSignal:)",
+            "printedName": "unlockNearestBLEAccessPoint(cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -1603,12 +1448,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)unlockNearestBLEAccessPointOnResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint8onResult18cancellationSignalyy0A4Core0aI0CcSg_AG012CancellationK0CSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGAF012CancellationI0CSg_tYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC27unlockNearestBLEAccessPoint18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGAF012CancellationI0CSg_tYaF",
             "moduleName": "BrivoAccess",
-            "objc_name": "unlockNearestBLEAccessPointOnResult:cancellationSignal:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1616,12 +1459,35 @@
           {
             "kind": "Function",
             "name": "requestExternalCredentialsFromOnAir",
-            "printedName": "requestExternalCredentialsFromOnAir(tokens:accessPointId:requestData:onSuccess:onFailure:)",
+            "printedName": "requestExternalCredentialsFromOnAir(tokens:accessPointId:requestData:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Result",
+                "printedName": "Swift.Result<Swift.String?, BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
               },
               {
                 "kind": "TypeNominal",
@@ -1640,75 +1506,13 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoError) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoError) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoError",
-                        "printedName": "BrivoCore.BrivoError",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)requestExternalCredentialsFromOnAirWithTokens:accessPointId:requestData:onSuccess:onFailure:",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC35requestExternalCredentialsFromOnAir6tokens13accessPointId0D4Data9onSuccess0O7Failurey0A4Core0A6TokensC_S2SySSSgcSgyAJ0A5ErrorCcSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC35requestExternalCredentialsFromOnAir6tokens13accessPointId0D4Datas6ResultOySSSg0A4Core0A5ErrorCGAK0A6TokensC_S2StYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC35requestExternalCredentialsFromOnAir6tokens13accessPointId0D4Datas6ResultOySSSg0A4Core0A5ErrorCGAK0A6TokensC_S2StYaF",
             "moduleName": "BrivoAccess",
-            "objc_name": "requestExternalCredentialsFromOnAirWithTokens:accessPointId:requestData:onSuccess:onFailure:",
             "declAttributes": [
-              "ObjC",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1803,13 +1607,11 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(cs)BrivoSDKAccess(im)provideExternalCredentialsResponseToOnAirWithTokens:accessPointId:requestData:onSuccess:onFailure:",
+            "usr": "s:11BrivoAccess0A9SDKAccessC41provideExternalCredentialsResponseToOnAir6tokens13accessPointId11requestData9onSuccess0Q7Failurey0A4Core0A6TokensC_S2SySSSgcSgyAJ0A5ErrorCcSgtF",
             "mangledName": "$s11BrivoAccess0A9SDKAccessC41provideExternalCredentialsResponseToOnAir6tokens13accessPointId11requestData9onSuccess0Q7Failurey0A4Core0A6TokensC_S2SySSSgcSgyAJ0A5ErrorCcSgtF",
             "moduleName": "BrivoAccess",
-            "objc_name": "provideExternalCredentialsResponseToOnAirWithTokens:accessPointId:requestData:onSuccess:onFailure:",
             "declAttributes": [
-              "AccessControl",
-              "ObjC"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -1820,6 +1622,7 @@
         "moduleName": "BrivoAccess",
         "declAttributes": [
           "AccessControl",
+          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -1833,7 +1636,7 @@
             "kind": "Conformance",
             "name": "IBrivoSDKAccess",
             "printedName": "IBrivoSDKAccess",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP",
             "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP"
           },
           {
@@ -1953,28 +1756,40 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(cm)instance",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP8instanceAA0aD0CyFZ",
             "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP8instanceAA0aD0CyFZ",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "static": true,
             "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
             "name": "unlockAccessPoint",
-            "printedName": "unlockAccessPoint(selectedAccessPoint:onResult:cancellationSignal:)",
+            "printedName": "unlockAccessPoint(selectedAccessPoint:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -1985,32 +1800,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "BrivoCore.CancellationSignal?",
                 "children": [
                   {
@@ -2024,15 +1813,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)unlockAccessPointWithSelectedAccessPoint:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP06unlockB5Point08selectedbF08onResult18cancellationSignaly0A5OnAir0a8SelectedbF0C_y0A4Core0aI0CcSgAK012CancellationK0CSgtF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP06unlockB5Point08selectedbF018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbF0C_AG012CancellationI0CSgtYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP06unlockB5Point08selectedbF018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbF0C_AG012CancellationI0CSgtYaF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2040,50 +1828,39 @@
           {
             "kind": "Function",
             "name": "unlockAccessPoint",
-            "printedName": "unlockAccessPoint(passId:accessPointId:onResult:cancellationSignal:)",
+            "printedName": "unlockAccessPoint(passId:accessPointId:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Scs"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -2101,15 +1878,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)unlockAccessPointWithPassId:accessPointId:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP06unlockB5Point6passId06accessfH08onResult18cancellationSignalySS_SSy0A4Core0aK0CcSgAI012CancellationM0CSgtF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP06unlockB5Point6passId06accessfH018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationK0CSgtYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP06unlockB5Point6passId06accessfH018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationK0CSgtYaF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2117,12 +1893,27 @@
           {
             "kind": "Function",
             "name": "lockAccessPoint",
-            "printedName": "lockAccessPoint(selectedAccessPoint:onResult:cancellationSignal:)",
+            "printedName": "lockAccessPoint(selectedAccessPoint:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -2133,32 +1924,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "BrivoCore.CancellationSignal?",
                 "children": [
                   {
@@ -2172,15 +1937,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)lockAccessPointWithSelectedAccessPoint:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP04lockB5Point08selectedbF08onResult18cancellationSignaly0A5OnAir0a8SelectedbF0C_y0A4Core0aI0CcSgAK012CancellationK0CSgtF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP04lockB5Point08selectedbF018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbF0C_AG012CancellationI0CSgtYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP04lockB5Point08selectedbF018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbF0C_AG012CancellationI0CSgtYaF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2188,12 +1952,27 @@
           {
             "kind": "Function",
             "name": "lockAccessPoint",
-            "printedName": "lockAccessPoint(passId:accessPointId:onFailure:onResult:cancellationSignal:)",
+            "printedName": "lockAccessPoint(passId:accessPointId:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -2206,58 +1985,6 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoError) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoError) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoError",
-                        "printedName": "BrivoCore.BrivoError",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -2275,15 +2002,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)lockAccessPointWithPassId:accessPointId:onFailure:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP04lockB5Point6passId06accessfH09onFailure0J6Result18cancellationSignalySS_SSy0A4Core0A5ErrorCcSgyAJ0aL0CcSgAJ012CancellationN0CSgtF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP04lockB5Point6passId06accessfH018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationK0CSgtYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP04lockB5Point6passId06accessfH018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationK0CSgtYaF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2291,12 +2017,27 @@
           {
             "kind": "Function",
             "name": "unlockNearestBLEAccessPoint",
-            "printedName": "unlockNearestBLEAccessPoint(passes:onResult:cancellationSignal:)",
+            "printedName": "unlockNearestBLEAccessPoint(passes:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -2315,32 +2056,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "BrivoCore.CancellationSignal?",
                 "children": [
                   {
@@ -2354,15 +2069,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)unlockNearestBLEAccessPointWithPasses:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint6passes8onResult18cancellationSignalySay0A5OnAir0A9OnairPassCG_y0A4Core0aK0CcSgAL012CancellationM0CSgtF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint6passes18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSay0A5OnAir0A9OnairPassCG_AG012CancellationK0CSgtYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint6passes18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSay0A5OnAir0A9OnairPassCG_AG012CancellationK0CSgtYaF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2370,12 +2084,27 @@
           {
             "kind": "Function",
             "name": "unlockNearestBLEAccessPoint",
-            "printedName": "unlockNearestBLEAccessPoint(pass:siteId:onResult:cancellationSignal:)",
+            "printedName": "unlockNearestBLEAccessPoint(pass:siteId:cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
+                  }
+                ],
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -2392,32 +2121,6 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
                 "printedName": "BrivoCore.CancellationSignal?",
                 "children": [
                   {
@@ -2431,15 +2134,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)unlockNearestBLEAccessPointWithPass:siteId:onResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint4pass6siteId8onResult18cancellationSignaly0A5OnAir0A9OnairPassC_Siy0A4Core0aM0CcSgAL012CancellationO0CSgtF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint4pass6siteId18cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0A9OnairPassC_SiAH012CancellationM0CSgtYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint4pass6siteId18cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0A9OnairPassC_SiAH012CancellationM0CSgtYaF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2447,38 +2149,27 @@
           {
             "kind": "Function",
             "name": "unlockNearestBLEAccessPoint",
-            "printedName": "unlockNearestBLEAccessPoint(onResult:cancellationSignal:)",
+            "printedName": "unlockNearestBLEAccessPoint(cancellationSignal:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoResult) -> ())?",
+                "name": "AsyncThrowingStream",
+                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoResult) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoResult",
-                        "printedName": "BrivoCore.BrivoResult",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Error",
+                    "printedName": "any Swift.Error",
+                    "usr": "s:s5ErrorP"
                   }
                 ],
-                "usr": "s:Sq"
+                "usr": "s:Scs"
               },
               {
                 "kind": "TypeNominal",
@@ -2496,15 +2187,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)unlockNearestBLEAccessPointOnResult:cancellationSignal:",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint8onResult18cancellationSignalyy0A4Core0aJ0CcSg_AG012CancellationL0CSgtF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGAF012CancellationJ0CSg_tYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP27unlockNearestBLEAccessPoint18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGAF012CancellationJ0CSg_tYaF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2512,12 +2202,35 @@
           {
             "kind": "Function",
             "name": "requestExternalCredentialsFromOnAir",
-            "printedName": "requestExternalCredentialsFromOnAir(tokens:accessPointId:requestData:onSuccess:onFailure:)",
+            "printedName": "requestExternalCredentialsFromOnAir(tokens:accessPointId:requestData:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Result",
+                "printedName": "Swift.Result<Swift.String?, BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
               },
               {
                 "kind": "TypeNominal",
@@ -2536,78 +2249,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoError) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoError) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoError",
-                        "printedName": "BrivoCore.BrivoError",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)requestExternalCredentialsFromOnAirWithTokens:accessPointId:requestData:onSuccess:onFailure:",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP35requestExternalCredentialsFromOnAir6tokens13accessPointId0E4Data9onSuccess0P7Failurey0A4Core0A6TokensC_S2SySSSgcSgyAJ0A5ErrorCcSgtF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP35requestExternalCredentialsFromOnAir6tokens13accessPointId0E4Datas6ResultOySSSg0A4Core0A5ErrorCGAK0A6TokensC_S2StYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP35requestExternalCredentialsFromOnAir6tokens13accessPointId0E4Datas6ResultOySSSg0A4Core0A5ErrorCGAK0A6TokensC_S2StYaF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2624,15 +2276,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)turnOnCentral",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP13turnOnCentralyyF",
             "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP13turnOnCentralyyF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2650,15 +2301,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)getBLEState",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP11getBLEStateSo14CBManagerStateVyF",
             "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP11getBLEStateSo14CBManagerStateVyF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2702,15 +2352,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)onBleChangedWithCompletion:",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP12onBleChanged10completionSo8NSNumberCSgySo14CBManagerStateVc_tF",
             "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP12onBleChanged10completionSo8NSNumberCSgySo14CBManagerStateVc_tF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
@@ -2733,29 +2382,25 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess(im)removeCompletionForId:",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP19removeCompletionFor2idySo8NSNumberC_tF",
             "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP19removeCompletionFor2idySo8NSNumberC_tF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
-              "RawDocComment",
-              "ObjC"
+              "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "c:@M@BrivoAccess@objc(pl)IBrivoSDKAccess",
+        "usr": "s:11BrivoAccess15IBrivoSDKAccessP",
         "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP",
         "moduleName": "BrivoAccess",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
+          "AccessControl"
         ]
       }
     ],
@@ -2800,161 +2445,161 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 543,
+      "offset": 531,
       "length": 5,
       "value": "-1000"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 568,
+      "offset": 556,
       "length": 16,
       "value": "\"Unknown error.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 659,
+      "offset": 641,
       "length": 5,
       "value": "-1001"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 684,
+      "offset": 721,
       "length": 42,
       "value": "\"BrivoSDK init failed. SDK not configured\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 815,
+      "offset": 846,
       "length": 5,
       "value": "-1002"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 840,
+      "offset": 940,
       "length": 41,
       "value": "\"SDK not configured to use local storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 969,
+      "offset": 1063,
       "length": 5,
       "value": "-1003"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 994,
+      "offset": 1156,
       "length": 38,
       "value": "\"There are no passes on local storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1126,
+      "offset": 1282,
       "length": 5,
       "value": "-1004"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1151,
+      "offset": 1381,
       "length": 40,
       "value": "\"Acess point not found in local storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1278,
+      "offset": 1502,
       "length": 5,
       "value": "-1005"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1303,
+      "offset": 1594,
       "length": 33,
       "value": "\"Pass not found in local storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1417,
+      "offset": 1702,
       "length": 5,
       "value": "-1006"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1442,
+      "offset": 1788,
       "length": 24,
       "value": "\"Missing ble credential\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1548,
+      "offset": 1888,
       "length": 5,
       "value": "-1007"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1573,
+      "offset": 1975,
       "length": 32,
       "value": "\"Access point invalid door type\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1690,
+      "offset": 2086,
       "length": 5,
       "value": "-1008"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1715,
+      "offset": 2176,
       "length": 29,
       "value": "\"Missing internet connection\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1822,
+      "offset": 2277,
       "length": 5,
       "value": "-1009"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1847,
+      "offset": 2360,
       "length": 21,
       "value": "\"Missing reader UUID\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1954,
+      "offset": 2461,
       "length": 5,
       "value": "-1010"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1979,
+      "offset": 2552,
       "length": 36,
       "value": "\"Access point unsupported door type\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
-      "offset": 793,
+      "offset": 864,
       "length": 24,
       "value": "\"BrivoBLEAllegionModule\""
     }

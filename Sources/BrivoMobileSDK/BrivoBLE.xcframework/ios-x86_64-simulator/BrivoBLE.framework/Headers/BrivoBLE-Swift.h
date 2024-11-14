@@ -277,9 +277,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import BrivoCore;
-@import CoreBluetooth;
-@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -301,43 +298,28 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class NSString;
-@class ReaderData;
 
 SWIFT_CLASS("_TtC8BrivoBLE18BrivoBLECredential")
 @interface BrivoBLECredential : NSObject
-- (nonnull instancetype)initWithUserId:(NSString * _Nonnull)userId bleCredential:(NSString * _Nonnull)bleCredential accessPoints:(NSArray<ReaderData *> * _Nonnull)accessPoints timeFrame:(int32_t)timeFrame OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class BrivoResult;
-@class CancellationSignal;
 
 SWIFT_CLASS("_TtC8BrivoBLE15BrivoBLEService")
 @interface BrivoBLEService : NSObject
-@property (nonatomic, copy) void (^ _Nullable onBluetoothStateUpdated)(CBManagerState);
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (CBManagerState)getBLEState SWIFT_WARN_UNUSED_RESULT;
-- (void)startCentralManager;
-- (void)unlockAccessPointWithBrivoBLECredentials:(NSArray<BrivoBLECredential *> * _Nonnull)brivoBLECredentials onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)unlockAccessPointWithServicesWithBrivoBLECredentials:(NSArray<BrivoBLECredential *> * _Nonnull)brivoBLECredentials onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
-- (void)lockAccessPointWithBrivoBLECredentials:(NSArray<BrivoBLECredential *> * _Nonnull)brivoBLECredentials onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
 @end
 
 
 SWIFT_CLASS("_TtC8BrivoBLE28BrivoConfigurationBLEService")
 @interface BrivoConfigurationBLEService : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)startCentralManager;
-- (void)configureAccessPointWithBrivoBLECredentials:(NSArray<BrivoBLECredential *> * _Nonnull)brivoBLECredentials onResult:(void (^ _Nullable)(BrivoResult * _Nonnull))onResult cancellationSignal:(CancellationSignal * _Nullable)cancellationSignal;
 @end
 
-@class AccessPointPath;
 
 SWIFT_CLASS("_TtC8BrivoBLE10ReaderData")
 @interface ReaderData : NSObject
-- (nonnull instancetype)initWithAccessPointPath:(AccessPointPath * _Nonnull)accessPointPath readerUid:(NSString * _Nonnull)readerUid doorType:(enum DoorType)doorType deviceModelId:(NSString * _Nullable)deviceModelId minimumReaderRssi:(NSInteger)minimumReaderRssi OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

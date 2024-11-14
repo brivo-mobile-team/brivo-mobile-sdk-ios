@@ -298,62 +298,18 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class BrivoError;
 
 SWIFT_CLASS("_TtC24BrivoLocalAuthentication30BrivoLocalAuthenticationErrors")
 @interface BrivoLocalAuthenticationErrors : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull unknownError;)
-+ (BrivoError * _Nonnull)unknownError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull localHardwareUnavailableError;)
-+ (BrivoError * _Nonnull)localHardwareUnavailableError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull timeOutError;)
-+ (BrivoError * _Nonnull)timeOutError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull localHardwareNotPresentError;)
-+ (BrivoError * _Nonnull)localHardwareNotPresentError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull notEnroledError;)
-+ (BrivoError * _Nonnull)notEnroledError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull contextNotSetError;)
-+ (BrivoError * _Nonnull)contextNotSetError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull applicationCanceledError;)
-+ (BrivoError * _Nonnull)applicationCanceledError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull notInteractiveError;)
-+ (BrivoError * _Nonnull)notInteractiveError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull biometryLockoutError;)
-+ (BrivoError * _Nonnull)biometryLockoutError SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
-SWIFT_PROTOCOL("_TtP24BrivoLocalAuthentication28IBrivoSDKLocalAuthentication_")
-@protocol IBrivoSDKLocalAuthentication
-/// Cancels an on going authentication process.
-- (void)cancelAuthentication;
-/// Checks if a local authentication can be performed.
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles failure
-///
-- (void)canAuthenticateOnSucces:(void (^ _Nullable)(void))onSucces onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-/// Performs the local authentication on the device.
-/// \param onSuccess completion block that handles success
-///
-/// \param onFailure completion block that handles failure
-///
-- (void)authenticateOnSucces:(void (^ _Nullable)(void))onSucces onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-@end
-
-
 SWIFT_CLASS("_TtC24BrivoLocalAuthentication27BrivoSDKLocalAuthentication")
-@interface BrivoSDKLocalAuthentication : NSObject <IBrivoSDKLocalAuthentication>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoSDKLocalAuthentication * _Nonnull instance;)
-+ (BrivoSDKLocalAuthentication * _Nonnull)instance SWIFT_WARN_UNUSED_RESULT;
-- (void)canAuthenticateOnSucces:(void (^ _Nullable)(void))onSucces onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)authenticateOnSucces:(void (^ _Nullable)(void))onSucces onFailure:(void (^ _Nullable)(BrivoError * _Nonnull))onFailure;
-- (void)cancelAuthentication;
+@interface BrivoSDKLocalAuthentication : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
-
 
 #endif
 #if __has_attribute(external_source_symbol)

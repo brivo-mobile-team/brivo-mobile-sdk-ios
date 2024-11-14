@@ -299,54 +299,30 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+
 SWIFT_CLASS("_TtC16BrivoNetworkCore17BrivoHTTPSRequest")
 @interface BrivoHTTPSRequest : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSString;
 
 SWIFT_CLASS("_TtC16BrivoNetworkCore15BrivoOnAirError")
 @interface BrivoOnAirError : NSObject
-@property (nonatomic, copy) NSString * _Nonnull error;
-@property (nonatomic, copy) NSString * _Nullable errorDescription;
-- (nullable instancetype)initWithError:(NSString * _Nullable)error errorDescription:(NSString * _Nullable)errorDescription OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class BrivoError;
 
 SWIFT_CLASS("_TtC16BrivoNetworkCore16BrivoOnAirErrors")
 @interface BrivoOnAirErrors : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull serverCallError;)
-+ (BrivoError * _Nonnull)serverCallError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull authenticationMissingDataError;)
-+ (BrivoError * _Nonnull)authenticationMissingDataError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull redeemPassMissingDataError;)
-+ (BrivoError * _Nonnull)redeemPassMissingDataError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull sdkIsNotUsingDefaultStorageError;)
-+ (BrivoError * _Nonnull)sdkIsNotUsingDefaultStorageError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull getSitesMissingDataError;)
-+ (BrivoError * _Nonnull)getSitesMissingDataError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull getAccessPointsMissingDataError;)
-+ (BrivoError * _Nonnull)getAccessPointsMissingDataError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull controlLockConfigMissingDataError;)
-+ (BrivoError * _Nonnull)controlLockConfigMissingDataError SWIFT_WARN_UNUSED_RESULT;
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BrivoError * _Nonnull refreshTokenError;)
-+ (BrivoError * _Nonnull)refreshTokenError SWIFT_WARN_UNUSED_RESULT;
-+ (BrivoError * _Nonnull)brivoOnAirErrorWithDescription:(NSString * _Nonnull)description SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC16BrivoNetworkCore24BrivoOnAirResponseStatus")
 @interface BrivoOnAirResponseStatus : NSObject
-@property (nonatomic) NSInteger statusCode;
-@property (nonatomic, strong) BrivoOnAirError * _Nullable error;
-- (nonnull instancetype)initWithStatusCode:(NSInteger)statusCode error:(BrivoOnAirError * _Nullable)error;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
