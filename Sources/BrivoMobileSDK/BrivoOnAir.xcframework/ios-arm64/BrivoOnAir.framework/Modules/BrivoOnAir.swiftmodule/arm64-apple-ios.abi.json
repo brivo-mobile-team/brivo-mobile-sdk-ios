@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BrivoOnAir",
+    "printedName": "BrivoOnAir",
     "children": [
       {
         "kind": "Import",
@@ -188,6 +188,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -466,6 +480,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -740,6 +768,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -1551,6 +1593,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -3301,6 +3357,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -3504,6 +3574,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3915,6 +3999,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -4575,6 +4673,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5201,6 +5313,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6855,6 +6981,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7159,6 +7299,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -8409,6 +8563,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8858,6 +9026,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -9921,6 +10103,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10324,6 +10520,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -10650,6 +10860,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -12299,6 +12523,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12730,6 +12968,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -13842,6 +14094,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -14508,6 +14774,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -15226,6 +15506,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -15927,6 +16221,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -17975,6 +18283,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -18443,6 +18765,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -19029,6 +19365,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -19164,6 +19514,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -19551,6 +19915,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -20203,6 +20581,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -21780,6 +22172,22 @@
         "moduleName": "BrivoOnAir",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -22161,6 +22569,9 @@
             "moduleName": "BrivoOnAir",
             "static": true,
             "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "accessors": [
               {
                 "kind": "Accessor",
@@ -22202,6 +22613,20 @@
         ],
         "enumRawTypeName": "String",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -22667,6 +23092,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -22721,557 +23160,410 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 322,
       "length": 6,
       "value": "\"data\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
-      "kind": "StringLiteral",
-      "offset": 322,
-      "length": 6,
-      "value": "\"data\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 543,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 581,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
-      "kind": "StringLiteral",
-      "offset": 543,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
-      "kind": "StringLiteral",
-      "offset": 581,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 880,
       "length": 6,
       "value": "\"name\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
-      "kind": "StringLiteral",
-      "offset": 831,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
-      "kind": "StringLiteral",
-      "offset": 880,
-      "length": 6,
-      "value": "\"name\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 2179,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
       "kind": "StringLiteral",
       "offset": 2218,
       "length": 13,
       "value": "\"description\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
-      "kind": "StringLiteral",
-      "offset": 2179,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoReaderCommand.swift",
-      "kind": "StringLiteral",
-      "offset": 2218,
-      "length": 13,
-      "value": "\"description\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockConfigSaveResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 183,
-      "length": 34,
-      "value": "\"BrivoOnAir.BrivoControlLockConfigSaveResponse\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockUnlockRequestBody.swift",
-      "kind": "StringLiteral",
-      "offset": 190,
-      "length": 33,
-      "value": "\"BrivoOnAir.BrivoControlLockUnlockRequestBody\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 603,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 640,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 679,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
       "offset": 8602,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
       "offset": 8777,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
       "offset": 8876,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 9413,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 9433,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 9780,
       "length": 22,
       "value": "\"name__eq:\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 9801,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 9882,
       "length": 25,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 9906,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
       "offset": 10898,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
       "offset": 11100,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
       "offset": 11145,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 12261,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
       "offset": 15919,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
       "offset": 16115,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
       "offset": 16221,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 16681,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 16697,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 17152,
       "length": 29,
       "value": "\"name__eq:\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 17180,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 17261,
       "length": 25,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 17285,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 17530,
       "length": 68,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 17573,
       "length": 1,
       "value": "\"\/\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 17583,
       "length": 1,
       "value": "\"\/access-points\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
       "offset": 18324,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
       "offset": 18528,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
       "offset": 18573,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
       "offset": 19753,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "IntegerLiteral",
       "offset": 549,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "BooleanLiteral",
       "offset": 865,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "IntegerLiteral",
       "offset": 1023,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
-      "kind": "StringLiteral",
-      "offset": 225,
-      "length": 24,
-      "value": "\"BrivoOnAir.BrivoSelectedAccessPoint\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "IntegerLiteral",
       "offset": 361,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 736,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 784,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
-      "kind": "StringLiteral",
-      "offset": 4297,
-      "length": 25,
-      "value": "\"BrivoOnAir.BrivoOnairPassCredentials\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 4843,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 4978,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 9721,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 10114,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
       "kind": "BooleanLiteral",
       "offset": 10216,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnairPass.swift",
-      "kind": "StringLiteral",
-      "offset": 9476,
-      "length": 16,
-      "value": "\"BrivoOnAir.BrivoAccessPoint\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoControlLockUnlockStatusRequestBody.swift",
-      "kind": "StringLiteral",
-      "offset": 201,
-      "length": 39,
-      "value": "\"BrivoOnAir.BrivoControlLockUnlockStatusRequestBody\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 215,
       "length": 6,
       "value": "\"door\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 246,
       "length": 10,
       "value": "\"elevator\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 281,
       "length": 19,
       "value": "\"offline door lock\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 321,
       "length": 17,
       "value": "\"salto door lock\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 367,
       "length": 20,
       "value": "\"allegion door lock\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 417,
       "length": 22,
       "value": "\"assa abloy door lock\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 459,
       "length": 18,
       "value": "\"door keypad v1.0\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 215,
-      "length": 6,
-      "value": "\"door\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 246,
-      "length": 10,
-      "value": "\"elevator\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 281,
-      "length": 19,
-      "value": "\"offline door lock\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 321,
-      "length": 17,
-      "value": "\"salto door lock\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 367,
-      "length": 20,
-      "value": "\"allegion door lock\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 417,
-      "length": 22,
-      "value": "\"assa abloy door lock\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 459,
-      "length": 18,
-      "value": "\"door keypad v1.0\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoOnAir\/BrivoOnAir\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 560,
       "length": 57,
       "value": "\"A Brivo Mobile Pass was not found for the current user.\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoOnAirCredentials.swift",
-      "kind": "StringLiteral",
-      "offset": 184,
-      "length": 21,
-      "value": "\"BrivoOnAir.BrivoOnAirCredentials\""
     }
   ]
 }

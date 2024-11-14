@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BrivoBLE",
+    "printedName": "BrivoBLE",
     "children": [
       {
         "kind": "Import",
@@ -184,6 +184,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -332,6 +346,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1628,6 +1656,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2518,6 +2560,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3121,6 +3177,22 @@
         "moduleName": "BrivoBLE",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3644,728 +3716,450 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
       "kind": "IntegerLiteral",
       "offset": 207,
       "length": 4,
       "value": "0x70"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
       "kind": "IntegerLiteral",
       "offset": 236,
       "length": 4,
       "value": "0x7B"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
       "kind": "IntegerLiteral",
       "offset": 257,
       "length": 4,
       "value": "0xF1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
       "kind": "IntegerLiteral",
       "offset": 281,
       "length": 4,
       "value": "0xFE"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
       "length": 4,
       "value": "0xFF"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 207,
-      "length": 4,
-      "value": "0x70"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 236,
-      "length": 4,
-      "value": "0x7B"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 257,
-      "length": 4,
-      "value": "0xF1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 281,
-      "length": 4,
-      "value": "0xFE"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 304,
-      "length": 4,
-      "value": "0xFF"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 207,
-      "length": 4,
-      "value": "0x70"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 236,
-      "length": 4,
-      "value": "0x7B"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 257,
-      "length": 4,
-      "value": "0xF1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 281,
-      "length": 4,
-      "value": "0xFE"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Tag.swift",
-      "kind": "IntegerLiteral",
-      "offset": 304,
-      "length": 4,
-      "value": "0xFF"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 222,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 241,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 275,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 315,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 337,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 391,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 411,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
       "kind": "IntegerLiteral",
       "offset": 443,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 222,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 241,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 275,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 315,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 337,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 391,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 411,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 443,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 222,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 241,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 275,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 315,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 337,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 391,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 411,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/OperationType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 443,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BTDevice.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Models\/BTDevice.swift",
       "kind": "BooleanLiteral",
       "offset": 517,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BTDevice.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Models\/BTDevice.swift",
       "kind": "Array",
       "offset": 725,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
       "kind": "IntegerLiteral",
       "offset": 209,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
       "kind": "IntegerLiteral",
       "offset": 227,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
       "kind": "IntegerLiteral",
       "offset": 247,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
-      "kind": "IntegerLiteral",
-      "offset": 209,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
-      "kind": "IntegerLiteral",
-      "offset": 227,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
-      "kind": "IntegerLiteral",
-      "offset": 247,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
-      "kind": "IntegerLiteral",
-      "offset": 268,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
-      "kind": "IntegerLiteral",
-      "offset": 209,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
-      "kind": "IntegerLiteral",
-      "offset": 227,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
-      "kind": "IntegerLiteral",
-      "offset": 247,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/Status.swift",
-      "kind": "IntegerLiteral",
-      "offset": 268,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLECredential.swift",
-      "kind": "StringLiteral",
-      "offset": 235,
-      "length": 10,
-      "value": "\"BrivoBLE.ReaderData\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLECredential.swift",
-      "kind": "StringLiteral",
-      "offset": 1046,
-      "length": 18,
-      "value": "\"BrivoBLE.BrivoBLECredential\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/AllegionCredentials.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Models\/AllegionCredentials.swift",
       "kind": "BooleanLiteral",
       "offset": 554,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
       "kind": "IntegerLiteral",
       "offset": 238,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
       "kind": "IntegerLiteral",
       "offset": 258,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 238,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 258,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 238,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
-      "kind": "IntegerLiteral",
-      "offset": 258,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 12,
       "value": "\"3b01020022\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
       "offset": 487,
       "length": 20,
       "value": "\"3b0102002203010283\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
       "offset": 959,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2249,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2510,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2544,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
       "offset": 2586,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
       "offset": 2273,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
       "offset": 2930,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2990,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BTService.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Models\/BTService.swift",
       "kind": "Array",
       "offset": 403,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 5,
       "value": "-2000"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 277,
       "length": 33,
       "value": "\"Failed to unlock bluetooth door\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 374,
       "length": 5,
       "value": "-2001"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 24,
       "value": "\"BLE disabled on device\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 545,
       "length": 5,
       "value": "-2004"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 628,
       "length": 25,
       "value": "\"Failed BLE transmission\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 719,
       "length": 5,
       "value": "-2005"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 796,
       "length": 15,
       "value": "\"Access Denied\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 882,
       "length": 5,
       "value": "-2006"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 964,
       "length": 30,
       "value": "\"BLE Authentication timed out\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1059,
       "length": 5,
       "value": "-2007"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1135,
       "length": 23,
       "value": "\"Bluetooth unsupported\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1222,
       "length": 5,
       "value": "-2008"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1297,
       "length": 22,
       "value": "\"BLE peripheral error\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1381,
       "length": 5,
       "value": "-2009"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1454,
       "length": 20,
       "value": "\"Failed to call API\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1761,
       "length": 38,
       "value": "\"3420d81a-af2c-11e5-bf7f-feff819cdc9f\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1840,
       "length": 38,
       "value": "\"52052C11-E701-4782-99F5-8CE88DBB1500\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1938,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 1991,
       "length": 3,
       "value": "-85"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 2045,
       "length": 4,
       "value": "0x00"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "Array",
       "offset": 2100,
       "length": 20,
       "value": "[\"BRVO\", \"BRVO_ALL\"]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "Array",
       "offset": 2261,
       "length": 129,
       "value": "[\"52052C11-E701-4782-99F5-8CE88DBB1506\", \"EE8732B3-2D52-409B-9084-70AD31F6C790\"]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 2442,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "FloatLiteral",
       "offset": 2492,
       "length": 4,
       "value": "60.0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 2543,
       "length": 1,

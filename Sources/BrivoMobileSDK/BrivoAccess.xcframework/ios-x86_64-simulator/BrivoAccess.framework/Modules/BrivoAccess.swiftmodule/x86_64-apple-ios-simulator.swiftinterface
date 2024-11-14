@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoAccess
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import BrivoBLE
 import BrivoCore
 import BrivoLocalAuthentication
@@ -38,30 +39,14 @@ import _SwiftConcurrencyShims
   public func getBLEState() -> CoreBluetooth.CBManagerState
   public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber?
   public func removeCompletionFor(id: Foundation.NSNumber)
-  #if compiler(>=5.3) && $AsyncAwait
   public func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func lockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func unlockNearestBLEAccessPoint(passes: [BrivoOnAir.BrivoOnairPass], cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func unlockNearestBLEAccessPoint(pass: BrivoOnAir.BrivoOnairPass, siteId: Swift.Int, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func unlockNearestBLEAccessPoint(cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
-  #endif
   public func provideExternalCredentialsResponseToOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String, onSuccess: BrivoAccess.ControlLockUnlockOnSuccessType?, onFailure: BrivoAccess.OnFailureType?)
   @objc deinit
 }
@@ -70,30 +55,14 @@ public typealias OnUnlockAccessPointSuccessType = () -> Swift.Void
 public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
 public protocol IBrivoSDKAccess {
   static func instance() -> BrivoAccess.BrivoSDKAccess
-  #if compiler(>=5.3) && $AsyncAwait
   func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func lockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func unlockNearestBLEAccessPoint(passes: [BrivoOnAir.BrivoOnairPass], cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func unlockNearestBLEAccessPoint(pass: BrivoOnAir.BrivoOnairPass, siteId: Swift.Int, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func unlockNearestBLEAccessPoint(cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
-  #endif
   func turnOnCentral()
   func getBLEState() -> CoreBluetooth.CBManagerState
   func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber?

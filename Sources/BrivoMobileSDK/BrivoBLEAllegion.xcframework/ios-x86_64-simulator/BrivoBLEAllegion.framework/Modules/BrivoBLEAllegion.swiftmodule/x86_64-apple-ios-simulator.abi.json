@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BrivoBLEAllegion",
+    "printedName": "BrivoBLEAllegion",
     "children": [
       {
         "kind": "Import",
@@ -199,6 +199,22 @@
         "moduleName": "BrivoBLEAllegion",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -499,6 +515,20 @@
           "AccessControl"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "IBrivoSDKBLEAllegion",
@@ -1070,6 +1100,22 @@
         "moduleName": "BrivoBLEAllegion",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1107,147 +1153,147 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/BrivoSDKBLEAllegion.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/BrivoSDKBLEAllegion.swift",
       "kind": "BooleanLiteral",
       "offset": 1572,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 5,
       "value": "-6000"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 479,
       "length": 5,
       "value": "-6001"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 529,
       "length": 5,
       "value": "-6002"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 579,
       "length": 5,
       "value": "-6003"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 628,
       "length": 5,
       "value": "-6004"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 682,
       "length": 5,
       "value": "-6005"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 729,
       "length": 5,
       "value": "-6006"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 775,
       "length": 5,
       "value": "-6007"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 816,
       "length": 5,
       "value": "-6008"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 868,
       "length": 5,
       "value": "-6009"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 912,
       "length": 5,
       "value": "-6010"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionDeviceSearchService.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionDeviceSearchService.swift",
       "kind": "IntegerLiteral",
       "offset": 335,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionDeviceSearchService.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionDeviceSearchService.swift",
       "kind": "BooleanLiteral",
       "offset": 804,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
       "offset": 204,
       "length": 38,
       "value": "\"adae71f2-0a6f-4486-84a2-ceca81cd26f1\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
       "offset": 282,
       "length": 38,
       "value": "\"1c0eb0f5-9318-ef11-86d2-00224823de9c\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
       "offset": 355,
       "length": 46,
       "value": "\"8YwWk+E9mLlS2bbAr5dWsAyM7kui5ho0Gl\/H4BKHyP8=\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
       "offset": 434,
       "length": 18,
       "value": "\"api.allegion.com\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 497,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
       "offset": 547,
       "length": 23,
       "value": "\"allegionCredentialKey\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
       "offset": 608,
       "length": 14,
