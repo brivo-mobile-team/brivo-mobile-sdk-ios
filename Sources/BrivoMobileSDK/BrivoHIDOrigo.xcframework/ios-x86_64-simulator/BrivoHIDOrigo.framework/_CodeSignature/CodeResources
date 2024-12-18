@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zM4h0JJ13tne51S8jyOf3yP5ExQ=
+		QniXdcPud1In3Vg9la6CSMWKXbI=
 		</data>
 		<key>Modules/BrivoHIDOrigo.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		lWwdb0muVnNWqU5QwJlObGgbkoA=
+		kr73++bkHuvjqt5OpKwyHRTloxw=
 		</data>
 		<key>Modules/BrivoHIDOrigo.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BrivoHIDOrigo.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HE9XAYw8xj4emsqrPSAKuaQWfjA=
+		rnG9TOFPWmOFCdQGGVBau9gDsv8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>OrigoSDK-Release_Privacy.bundle/Info.plist</key>
 		<data>
-		TbgaxFA3re6wjufSeCVBuO/u6ko=
+		em3I81Se466yfabPHBgIm7HMEQQ=
 		</data>
 		<key>SeosMobileKeysSDK-Release_Privacy.bundle/Info.plist</key>
 		<data>
-		AkVCFg4W758hd5joTrJnEgOYvsE=
+		eNjOu86M7wTqOMBqwbM2/asPug0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -69,7 +69,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZNTwsB8H2JNDoAN+0RGrWsT8+yTeR/YlL4V9FPebrAI=
+			9Fr6N939Se+9qczBwfEH7f5/du2Lx/fNwEIEEPBy5nU=
 			</data>
 		</dict>
 		<key>Modules/BrivoHIDOrigo.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ixBDdicI9oTEUQ59pvq81T8K42KeMcpsLzHevBcymdk=
+			aXmCRCnHI6u88/n7/SsO4zJTxiCnkG2+crg83XITYcw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SelA/Vjw+598RlZRppsPgOCzrveiG9wJAxpgihDvjHU=
+			AlnUu5LnFHxYOoxh0HDK9aWlZoFosumGwKOVY6M5Boo=
 			</data>
 		</dict>
 		<key>SeosMobileKeysSDK-Release_Privacy.bundle/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			HTmNNUJXlQNu3N76EP6XOMsRSkgBCaU1y0k02RQlL84=
+			MpMAtUHOXRcZGlaYuosWfCIQY43rl12hqNdYmGLTQSs=
 			</data>
 		</dict>
 	</dict>

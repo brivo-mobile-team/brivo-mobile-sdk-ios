@@ -1628,140 +1628,140 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 938,
       "length": 68,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 969,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
       "offset": 1003,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1005,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1033,
       "length": 69,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1064,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1090,
       "length": 10,
       "value": "\"BRIVOSDK\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1101,
       "length": 14,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1230,
       "length": 48,
       "value": "\"HID-BRIVO-\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1258,
       "length": 1,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1277,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1319,
       "length": 29,
       "value": "\"HID-BRIVO-\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1347,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
       "offset": 1445,
       "length": 45,
       "value": "\"com.HID.origoSDK.backgroundProcessingTaskID\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "BooleanLiteral",
       "offset": 1534,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
       "offset": 1561,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
       "offset": 1608,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
       "offset": 1731,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
       "kind": "StringLiteral",
       "offset": 278,
       "length": 18,
       "value": "\"BrivoSDKHIDOrigo\""
     },
     {
-      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
       "kind": "BooleanLiteral",
       "offset": 526,
       "length": 5,

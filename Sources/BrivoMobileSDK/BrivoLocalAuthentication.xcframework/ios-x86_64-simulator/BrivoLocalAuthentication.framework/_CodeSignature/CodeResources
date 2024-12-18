@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		BAuRuP17g2IPIx1wsULzsdNS5N4=
+		JZA5X6xfAP/xH3UoScv1u8oKwD4=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rxZ6KSapotxFBLCPF5jeMFzBQOg=
+		rFhHs55y79Lg8Lz+uItg4HU9sSo=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		mdrB1xFa2kaO8+Fb6yTmW1WqgTM=
+		Tk/X6Uq9ROmQXW4WaLrbmHuFK9Q=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -50,7 +50,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3175g8Bx+SAxmVB6TGX/AI5xlpsTqQY+gDojmF2fjxw=
+			XrSZnhddPNuAjWiRYf5LOVj3ZW7/P++bMUs+4Jriz2E=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -78,7 +78,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fZ7hz7eVBcuCriD092JM8wK1qrffvDoa/NKVVADxjXY=
+			wU0llEYMcVTYO2fIufP/yY6gX3sBQYYcJfnJ2CaqMic=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
