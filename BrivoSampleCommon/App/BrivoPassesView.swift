@@ -11,11 +11,13 @@ import BrivoAccess
 import BrivoOnAir
 import BrivoBLEAllegion
 import BrivoNetworkCore
+import BrivoHIDOrigo
 
 // swiftlint:disable line_length
 
 struct BrivoPassesView: View {
     @StateObject var stateModel = BrivoPassesViewModel()
+    @State private var textFieldContent: String = ""
 
     var body: some View {
         NavigationStack {
@@ -30,14 +32,12 @@ struct BrivoPassesView: View {
                                 if sites.isEmpty {
                                     Text("There are no sites assigned to you")
                                 }
-
                                 ForEach(sites, id: \.self) { site in
                                     NavigationLink {
                                         AccessPointView(stateModel: .init(brivoOnAirPass: pass, brivoSites: site))
                                     } label: {
                                         Text(site.siteName ?? "")
                                     }
-
                                 }
                             }
                         } header: {
@@ -82,45 +82,8 @@ struct BrivoPassesView: View {
                     }
                 }
             }
-            .sheet(isPresented: $stateModel.isShowingAddSheet) {
-                NavigationStack {
-                    VStack(spacing: 20) {
-                        Toggle(isOn: $stateModel.isEURegion) {
-                            Text(stateModel.isEURegion ? "EU Region" : "US Region")
-                        }
-                        TextField("Pass ID", text: $stateModel.passID, prompt: Text("Pass ID"))
-                            .autocapitalization(.none)
-                            .autocorrectionDisabled()
-                            .accessibilityIdentifier(AccessibilityIds.mobilePassEmailField)
-
-                        TextField("Pass Code", text: $stateModel.passCode, prompt: Text("Pass Code"))
-                            .autocapitalization(.none)
-                            .autocorrectionDisabled()
-                            .accessibilityIdentifier(AccessibilityIds.mobilePassInviteCodeField)
-
-                        Spacer()
-                    }
-                    .textFieldStyle(.roundedBorder)
-                    .padding()
-                    .toolbar {
-                        Button {
-                            stateModel.redeemPass()
-                        } label: {
-                            Text("Add Pass")
-                                .accessibilityIdentifier(AccessibilityIds.redeemInviteButton)
-                        }
-                    }
-
-                }
-                .presentationDetents([.fraction(0.30)])
-                .alert(isPresented: $stateModel.isShowingAlert) {
-                    Alert(
-                        title: Text(stateModel.alertTitle),
-                        message: Text(stateModel.alertMessage),
-                        dismissButton: .default(Text("OK"))
-                    )
-                }
-            }
+            .sheet(isPresented: $stateModel.isShowingAddSheet) { addBrivoPassSheet }
+            .sheet(isPresented: $stateModel.isShowingOrigoActivationSheet) { addOrigoPassSheet }
         }
         .onReceive(NotificationCenter.default.publisher(
             for: UIScene.willEnterForegroundNotification)) { _ in
@@ -154,16 +117,89 @@ struct BrivoPassesView: View {
         }
     }
 #endif
+
+    @ViewBuilder
+    private var addBrivoPassSheet: some View {
+        NavigationStack {
+            VStack(spacing: 20) {
+                Toggle(isOn: $stateModel.isEURegion) {
+                    Text(stateModel.isEURegion ? "EU Region" : "US Region")
+                }
+                TextField("Pass ID", text: $stateModel.passID, prompt: Text("Pass ID"))
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                    .accessibilityIdentifier(AccessibilityIds.mobilePassEmailField)
+                TextField("Pass Code", text: $stateModel.passCode, prompt: Text("Pass Code"))
+                    .autocapitalization(.none)
+                    .autocorrectionDisabled()
+                    .accessibilityIdentifier(AccessibilityIds.mobilePassInviteCodeField)
+                Spacer()
+            }
+            .textFieldStyle(.roundedBorder)
+            .padding()
+            .toolbar {
+                Button {
+                    stateModel.redeemPass()
+                } label: {
+                    Text("Add Pass")
+                        .accessibilityIdentifier(AccessibilityIds.redeemInviteButton)
+                }
+            }
+        }
+        .presentationDetents([.fraction(0.30)])
+        .alert(isPresented: $stateModel.isShowingAlert) {
+            Alert(
+                title: Text(stateModel.alertTitle),
+                message: Text(stateModel.alertMessage),
+                dismissButton: .default(Text("OK"))
+            )
+        }
+    }
+
+    @ViewBuilder
+    private var addOrigoPassSheet: some View {
+        VStack {
+            TextField("Origo Activation Code", text: $stateModel.origoInvitationCode, prompt: Text("Origo Activation Code"))
+                .autocapitalization(.none)
+                .autocorrectionDisabled()
+                .textFieldStyle(.roundedBorder)
+                .submitLabel(.done)
+                .accessibilityIdentifier(AccessibilityIds.origoActivationCodeField)
+            Button("Submit") {
+                stateModel.redeemOrigoInvitationCode()
+            }
+            .accessibilityIdentifier(AccessibilityIds.origoRedeemButton)
+            .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.capsule)
+        }
+        .disabled(stateModel.isSubmittingOrigoInvitationCode)
+        .padding()
+        .overlay(loadingOverlay)
+        .presentationDetents([.fraction(0.2)])
+        .alert(isPresented: $stateModel.isShowingAlert) {
+            Alert(
+                title: Text(stateModel.alertTitle),
+                message: Text(stateModel.alertMessage),
+                dismissButton: .default(Text("OK"))
+            )
+        }
+    }
+
+    @ViewBuilder
+    private var loadingOverlay: some View {
+        if stateModel.isSubmittingOrigoInvitationCode {
+            ProgressView().tint(.gray)
+        }
+    }
 }
 
-#Preview {
-    BrivoPassesView()
-}
-
+// MARK: - ViewModel
 class BrivoPassesViewModel: ObservableObject {
     @Published var brivoOnAirPasses: [BrivoOnairPass] = []
     @Published var isShowingAddSheet = false
+    @Published var isShowingOrigoActivationSheet = false
     @Published var isShowingAlert = false
+    @Published var isSubmittingOrigoInvitationCode = false
     @Published var isShowingSwitchEnvironments = false
     @Published var selectedEnvironment: Environment?
     @Published var brivoConfig: BrivoSDKConfiguration?
@@ -178,54 +214,13 @@ class BrivoPassesViewModel: ObservableObject {
 
     @Published var passID = "".lowercased()
     @Published var passCode = ""
+    @Published var origoInvitationCode = ""
 
     func onAppear() async {
         setRegion(isEURegion: isEURegion)
         brivoConfiguration()
         await getBrivoOnAirPasses()
         await refreshPasses()
-    }
-
-    // MARK: - Private
-
-    private func setRegion(isEURegion: Bool) {
-        UserDefaultsAccessService().setRegion((isEURegion ? Region.eu : Region.us).rawValue)
-    }
-
-    private func brivoConfiguration() {
-        do {
-            let brivoConfiguration = try BrivoSDKConfiguration(
-                clientId: Configuration.default.environment.clientId,
-                clientSecret: Configuration.default.environment.clientSecret,
-                useSDKStorage: true,
-                region: self.isEURegion ? Region.eu : Region.us,
-                authUrl: Configuration.default.environment.brivoOnAirAuth,
-                apiUrl: Configuration.default.environment.brivoOnAirAPI
-            )
-            BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
-
-        } catch let error {
-            self.alertTitle = "Brivo configuration error"
-            self.alertMessage = error.localizedDescription
-            self.isShowingAlert = true
-        }
-    }
-
-    private func getBrivoOnAirPasses() async {
-        do {
-            let result = try await BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses()
-
-            await MainActor.run {
-                switch result {
-                case .success(let brivoOnAirPasses):
-                    self.brivoOnAirPasses = brivoOnAirPasses
-                case .failure(let error):
-                    onError(error)
-                }
-            }
-        } catch (let error) {
-            onError(error)
-        }
     }
 
     func redeemPass() {
@@ -249,6 +244,23 @@ class BrivoPassesViewModel: ObservableObject {
         }
     }
 
+    func redeemOrigoInvitationCode() {
+        Task { @MainActor in
+            isSubmittingOrigoInvitationCode = true
+            switch await BrivoSDKHIDOrigo.instance.redeem(invitationCode: origoInvitationCode) {
+            case .success:
+                isSubmittingOrigoInvitationCode = false
+                isShowingOrigoActivationSheet = false
+                origoInvitationCode = ""
+            case .failure(let brivoError):
+                isSubmittingOrigoInvitationCode = false
+                alertTitle = "Brivo Error (code: \(brivoError.statusCode))"
+                alertMessage = brivoError.errorDescription
+                isShowingAlert = true
+            }
+        }
+    }
+
     func resetPasses() {
         BrivoUserDefaults.setDictionary(value: [:], forKey: BrivoCore.Constants.KEY_PASSES)
         BrivoUserDefaults.setDictionary(value: [:], forKey: BrivoCore.Constants.KEY_PASSES_EU)
@@ -261,6 +273,63 @@ class BrivoPassesViewModel: ObservableObject {
         }
         refreshEachPass()
     }
+
+    // MARK: - Private
+
+    private func setRegion(isEURegion: Bool) {
+        UserDefaultsAccessService().setRegion((isEURegion ? Region.eu : Region.us).rawValue)
+    }
+
+    private func brivoConfiguration() {
+        do {
+            let brivoConfiguration = try BrivoSDKConfiguration(
+                clientId: Configuration.default.environment.clientId,
+                clientSecret: Configuration.default.environment.clientSecret,
+                useSDKStorage: true,
+                region: self.isEURegion ? Region.eu : Region.us,
+                authUrl: Configuration.default.environment.brivoOnAirAuth,
+                apiUrl: Configuration.default.environment.brivoOnAirAPI
+            )
+            BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
+        } catch let error {
+            self.alertTitle = "Brivo configuration error"
+            self.alertMessage = error.localizedDescription
+            self.isShowingAlert = true
+        }
+    }
+
+    private func getBrivoOnAirPasses() async {
+        do {
+            let result = try await BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses()
+
+            await MainActor.run {
+                switch result {
+                case .success(let brivoOnAirPasses):
+                    self.brivoOnAirPasses = brivoOnAirPasses
+                    self.showOrigoActivationSheetIfNeeded()
+                case .failure(let error):
+                    onError(error)
+                }
+            }
+        } catch (let error) {
+            onError(error)
+        }
+    }    
+
+    private func hasUserOrigoDoors() -> Bool {
+        brivoOnAirPasses.contains { pass in
+        pass.hasHidOrigoMobilePass && pass.sites?.contains { site in
+            site.accessPoints?.contains { $0.readerType == .hidOrigo} ?? false
+        } ?? false
+    }
+}
+
+    private func showOrigoActivationSheetIfNeeded() {
+          Task { @MainActor in
+              _  = await BrivoSDKHIDOrigo.instance.refresh()
+              isShowingOrigoActivationSheet = hasUserOrigoDoors() && !BrivoSDKHIDOrigo.instance.isEndpointSetup()
+          }
+      }
 
     private func getAllegionCredentialsIfPossible(_ brivoOnairPass: BrivoOnairPass?) {
         if let brivoOnairPass = brivoOnairPass, brivoOnairPass.hasAllegionBleCredentials {
@@ -316,5 +385,10 @@ class BrivoPassesViewModel: ObservableObject {
         alertMessage = brivoError.errorDescription + " " + "Status Code: \(brivoError.statusCode)"
         isShowingAlert = true
     }
+}
+
+// MARK: - Preview
+#Preview {
+    BrivoPassesView()
 }
 // swiftlint:enable line_length

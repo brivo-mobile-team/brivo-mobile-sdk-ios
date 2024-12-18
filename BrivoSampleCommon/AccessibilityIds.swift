@@ -10,6 +10,8 @@ struct AccessibilityIds {
     static let mobilePassEmailField = "mobilePassEmailFieldId"
     static let mobilePassInviteCodeField = "mobilePassInviteCodeFieldId"
     static let redeemInviteButton = "redeemInviteButtonId"
+    static let origoActivationCodeField = "origoActivationCodeFieldId"
+    static let origoRedeemButton = "origoRedeemButtonId"
     static let accountNameTextView = "accountNameId"
     static let noPassesTextView = "noPassesId"
     static let navigationSwitchEnvButton = "navigationSwitchEnvButtonId"
