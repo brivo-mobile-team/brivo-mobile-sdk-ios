@@ -1,0 +1,1771 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "BrivoHIDOrigo",
+    "printedName": "BrivoHIDOrigo",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoBLE",
+        "printedName": "BrivoBLE",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "IBrivoSDKHIDOrigo",
+        "printedName": "IBrivoSDKHIDOrigo",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP5starts6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP5starts6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "redeem",
+            "printedName": "redeem(invitationCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP6redeem14invitationCodes6ResultOyyt0A4Core0A5ErrorCGSS_tYaF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP6redeem14invitationCodes6ResultOyyt0A4Core0A5ErrorCGSS_tYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refresh",
+            "printedName": "refresh()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP7refreshs6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP7refreshs6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlockAccessPoint",
+            "printedName": "unlockAccessPoint(accessPoint:cancellationSignal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<BrivoCore.BrivoResult>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  }
+                ],
+                "usr": "s:ScS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSelectedAccessPoint",
+                "printedName": "BrivoOnAir.BrivoSelectedAccessPoint",
+                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSelectedAccessPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.CancellationSignal?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CancellationSignal",
+                    "printedName": "BrivoCore.CancellationSignal",
+                    "usr": "c:@M@BrivoCore@objc(cs)CancellationSignal"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP17unlockAccessPoint06accessG018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedfG0C_AG012CancellationJ0CSgtF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP17unlockAccessPoint06accessG018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedfG0C_AG012CancellationJ0CSgtF",
+            "moduleName": "BrivoHIDOrigo",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isEndpointSetup",
+            "printedName": "isEndpointSetup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP15isEndpointSetupSbyF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP15isEndpointSetupSbyF",
+            "moduleName": "BrivoHIDOrigo",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearCredentials",
+            "printedName": "clearCredentials()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP",
+        "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoBLE",
+        "printedName": "BrivoBLE",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrivoSDKHIDOrigo",
+        "printedName": "BrivoSDKHIDOrigo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "instance",
+            "printedName": "instance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKHIDOrigo",
+                "printedName": "BrivoHIDOrigo.BrivoSDKHIDOrigo",
+                "usr": "c:@M@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC8instanceACvpZ",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC8instanceACvpZ",
+            "moduleName": "BrivoHIDOrigo",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoSDKHIDOrigo",
+                    "printedName": "BrivoHIDOrigo.BrivoSDKHIDOrigo",
+                    "usr": "c:@M@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC8instanceACvgZ",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC8instanceACvgZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(configuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKHIDOrigo",
+                "printedName": "BrivoHIDOrigo.BrivoSDKHIDOrigo",
+                "usr": "c:@M@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Configuration",
+                "printedName": "BrivoHIDOrigo.BrivoSDKHIDOrigo.Configuration",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13configurationA2C13ConfigurationV_tcfc",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13configurationA2C13ConfigurationV_tcfc",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "start",
+            "printedName": "start()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC5starts6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC5starts6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "redeem",
+            "printedName": "redeem(invitationCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC6redeem14invitationCodes6ResultOyyt0A4Core0A5ErrorCGSS_tYaF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC6redeem14invitationCodes6ResultOyyt0A4Core0A5ErrorCGSS_tYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refresh",
+            "printedName": "refresh()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC7refreshs6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC7refreshs6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlockAccessPoint",
+            "printedName": "unlockAccessPoint(accessPoint:cancellationSignal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<BrivoCore.BrivoResult>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoResult",
+                    "printedName": "BrivoCore.BrivoResult",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                  }
+                ],
+                "usr": "s:ScS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSelectedAccessPoint",
+                "printedName": "BrivoOnAir.BrivoSelectedAccessPoint",
+                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSelectedAccessPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.CancellationSignal?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CancellationSignal",
+                    "printedName": "BrivoCore.CancellationSignal",
+                    "usr": "c:@M@BrivoCore@objc(cs)CancellationSignal"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC17unlockAccessPoint06accessF018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedeF0C_AG012CancellationI0CSgtF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC17unlockAccessPoint06accessF018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedeF0C_AG012CancellationI0CSgtF",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isEndpointSetup",
+            "printedName": "isEndpointSetup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC15isEndpointSetupSbyF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC15isEndpointSetupSbyF",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearCredentials",
+            "printedName": "clearCredentials()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKHIDOrigo",
+                "printedName": "BrivoHIDOrigo.BrivoSDKHIDOrigo",
+                "usr": "c:@M@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)init",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoCACycfc",
+            "moduleName": "BrivoHIDOrigo",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Configuration",
+            "printedName": "Configuration",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "applicationID",
+                "printedName": "applicationID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV13applicationIDSSvp",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV13applicationIDSSvp",
+                "moduleName": "BrivoHIDOrigo",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV13applicationIDSSvg",
+                    "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV13applicationIDSSvg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "applicationVersion",
+                "printedName": "applicationVersion",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV18applicationVersionSSvp",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV18applicationVersionSSvp",
+                "moduleName": "BrivoHIDOrigo",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV18applicationVersionSSvg",
+                    "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV18applicationVersionSSvg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "backgroundTaskID",
+                "printedName": "backgroundTaskID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV16backgroundTaskIDSSvp",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV16backgroundTaskIDSSvp",
+                "moduleName": "BrivoHIDOrigo",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV16backgroundTaskIDSSvg",
+                    "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV16backgroundTaskIDSSvg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "suppressApplePay",
+                "printedName": "suppressApplePay",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV16suppressApplePaySbvp",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV16suppressApplePaySbvp",
+                "moduleName": "BrivoHIDOrigo",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV16suppressApplePaySbvg",
+                    "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV16suppressApplePaySbvg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lockServiceCodeAAMK",
+                "printedName": "lockServiceCodeAAMK",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV19lockServiceCodeAAMKSivp",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV19lockServiceCodeAAMKSivp",
+                "moduleName": "BrivoHIDOrigo",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV19lockServiceCodeAAMKSivg",
+                    "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV19lockServiceCodeAAMKSivg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "lockServiceCodeHID",
+                "printedName": "lockServiceCodeHID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV18lockServiceCodeHIDSivp",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV18lockServiceCodeHIDSivp",
+                "moduleName": "BrivoHIDOrigo",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV18lockServiceCodeHIDSivg",
+                    "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV18lockServiceCodeHIDSivg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "scanningMode",
+                "printedName": "scanningMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OrigoKeysScanMode",
+                    "printedName": "OrigoSDK.OrigoKeysScanMode",
+                    "usr": "c:@E@OrigoKeysScanMode"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV12scanningModeSo013OrigoKeysScanF0Vvp",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV12scanningModeSo013OrigoKeysScanF0Vvp",
+                "moduleName": "BrivoHIDOrigo",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OrigoKeysScanMode",
+                        "printedName": "OrigoSDK.OrigoKeysScanMode",
+                        "usr": "c:@E@OrigoKeysScanMode"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV12scanningModeSo013OrigoKeysScanF0Vvg",
+                    "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV12scanningModeSo013OrigoKeysScanF0Vvg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unlockTimeoutDuration",
+                "printedName": "unlockTimeoutDuration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV21unlockTimeoutDurationSdvp",
+                "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV21unlockTimeoutDurationSdvp",
+                "moduleName": "BrivoHIDOrigo",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV21unlockTimeoutDurationSdvg",
+                    "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV21unlockTimeoutDurationSdvg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13ConfigurationV",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidStartup",
+            "printedName": "origoKeysDidStartup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidStartup",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC19origoKeysDidStartupyyF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidStartup",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidFail",
+            "printedName": "origoKeysDidFail(toStartup:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidFailToStartup:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC16origoKeysDidFail9toStartupys5Error_p_tF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidFailToStartup:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidSetupEndpoint",
+            "printedName": "origoKeysDidSetupEndpoint()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidSetupEndpoint",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC25origoKeysDidSetupEndpointyyF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidSetupEndpoint",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidFail",
+            "printedName": "origoKeysDidFail(toSetupEndpoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidFailToSetupEndpoint:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC16origoKeysDidFail15toSetupEndpointys5Error_p_tF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidFailToSetupEndpoint:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidUpdateEndpoint",
+            "printedName": "origoKeysDidUpdateEndpoint()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidUpdateEndpoint",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC26origoKeysDidUpdateEndpointyyF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidUpdateEndpoint",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidFail",
+            "printedName": "origoKeysDidFail(toUpdateEndpoint:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidFailToUpdateEndpoint:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC16origoKeysDidFail16toUpdateEndpointys5Error_p_tF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidFailToUpdateEndpoint:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidTerminateEndpoint",
+            "printedName": "origoKeysDidTerminateEndpoint()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidTerminateEndpoint",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC29origoKeysDidTerminateEndpointyyF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidTerminateEndpoint",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysReaderAppeared",
+            "printedName": "origoKeysReaderAppeared(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysReader",
+                "printedName": "OrigoSDK.OrigoKeysReader",
+                "usr": "c:objc(cs)OrigoKeysReader"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysReaderAppeared:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC23origoKeysReaderAppearedyySo05OrigoeF0CF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysReaderAppeared:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysReaderDisappeared",
+            "printedName": "origoKeysReaderDisappeared(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysReader",
+                "printedName": "OrigoSDK.OrigoKeysReader",
+                "usr": "c:objc(cs)OrigoKeysReader"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysReaderDisappeared:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC26origoKeysReaderDisappearedyySo05OrigoeF0CF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysReaderDisappeared:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysShouldAttempt",
+            "printedName": "origoKeysShouldAttempt(toOpen:openingType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OrigoSDK.OrigoKeysReader?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OrigoKeysReader",
+                    "printedName": "OrigoSDK.OrigoKeysReader",
+                    "usr": "c:objc(cs)OrigoKeysReader"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysOpeningType",
+                "printedName": "OrigoSDK.OrigoKeysOpeningType",
+                "usr": "c:@E@OrigoKeysOpeningType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysShouldAttemptToOpen:openingType:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC22origoKeysShouldAttempt6toOpen11openingTypeSbSo05OrigoE6ReaderCSg_So0le7OpeningK0VtF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysShouldAttemptToOpen:openingType:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidConnect",
+            "printedName": "origoKeysDidConnect(to:openingType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysReader",
+                "printedName": "OrigoSDK.OrigoKeysReader",
+                "usr": "c:objc(cs)OrigoKeysReader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysOpeningType",
+                "printedName": "OrigoSDK.OrigoKeysOpeningType",
+                "usr": "c:@E@OrigoKeysOpeningType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidConnectToReader:openingType:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC19origoKeysDidConnect2to11openingTypeySo05OrigoE6ReaderC_So0ke7OpeningJ0VtF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidConnectToReader:openingType:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidFailToConnect",
+            "printedName": "origoKeysDidFailToConnect(to:openingType:openingStatus:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysReader",
+                "printedName": "OrigoSDK.OrigoKeysReader",
+                "usr": "c:objc(cs)OrigoKeysReader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysOpeningType",
+                "printedName": "OrigoSDK.OrigoKeysOpeningType",
+                "usr": "c:@E@OrigoKeysOpeningType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysOpeningStatusType",
+                "printedName": "OrigoSDK.OrigoKeysOpeningStatusType",
+                "usr": "c:@E@OrigoKeysOpeningStatusType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidFailToConnectToReader:openingType:openingStatus:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC25origoKeysDidFailToConnect2to11openingType0K6StatusySo05OrigoE6ReaderC_So0ne7OpeningL0VSo0nepmL0VtF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidFailToConnectToReader:openingType:openingStatus:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "origoKeysDidDisconnect",
+            "printedName": "origoKeysDidDisconnect(from:openingType:openingResult:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysReader",
+                "printedName": "OrigoSDK.OrigoKeysReader",
+                "usr": "c:objc(cs)OrigoKeysReader"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysOpeningType",
+                "printedName": "OrigoSDK.OrigoKeysOpeningType",
+                "usr": "c:@E@OrigoKeysOpeningType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OrigoKeysOpeningResult",
+                "printedName": "OrigoSDK.OrigoKeysOpeningResult",
+                "usr": "c:objc(cs)OrigoKeysOpeningResult"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidDisconnectFromReader:openingType:openingResult:",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC22origoKeysDidDisconnect4from11openingType0I6ResultySo05OrigoE6ReaderC_So0le7OpeningJ0VSo0lenK0CtF",
+            "moduleName": "BrivoHIDOrigo",
+            "objc_name": "origoKeysDidDisconnectFromReader:openingType:openingResult:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo",
+        "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "IBrivoSDKHIDOrigo",
+            "printedName": "IBrivoSDKHIDOrigo",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 938,
+      "length": 68,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 969,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1003,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1005,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1033,
+      "length": 69,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1064,
+      "length": 21,
+      "value": "\"CFBundleDisplayName\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1090,
+      "length": 10,
+      "value": "\"BRIVOSDK\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1101,
+      "length": 14,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1230,
+      "length": 48,
+      "value": "\"HID-BRIVO-\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1258,
+      "length": 1,
+      "value": "\"-\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1277,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
+      "length": 29,
+      "value": "\"HID-BRIVO-\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1347,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1445,
+      "length": 45,
+      "value": "\"com.HID.origoSDK.backgroundProcessingTaskID\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1534,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1561,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1608,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1731,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 18,
+      "value": "\"BrivoSDKHIDOrigo\""
+    },
+    {
+      "filePath": "\/Users\/claudiu.iordache\/Documents\/Projects\/mobile-sdk-ios\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
+      "kind": "BooleanLiteral",
+      "offset": 526,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

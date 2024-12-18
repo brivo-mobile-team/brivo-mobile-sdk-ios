@@ -1,0 +1,31 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoBLEAllegion
+import BrivoBLE
+@_exported import BrivoBLEAllegion
+import BrivoCore
+import BrivoOnAir
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol IBrivoSDKBLEAllegion {
+  init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration)
+  func initialise() async throws
+  func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
+  func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
+}
+final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
+  public static var instance: BrivoBLEAllegion.BrivoSDKBLEAllegion
+  public init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration = .default)
+  @_Concurrency.MainActor final public func initialise() async throws
+  final public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
+  @_Concurrency.MainActor final public func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
+  @objc deinit
+}
+public struct BrivoBLEAllegionConfiguration {
+  public var subscriptionKey: Swift.String
+  public var integrationId: Swift.String
+  public static var `default`: BrivoBLEAllegion.BrivoBLEAllegionConfiguration
+}
