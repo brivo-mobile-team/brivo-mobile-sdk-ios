@@ -79,6 +79,6 @@ class Configuration {
 
     var environment: Environment = {
         let environment = UserDefaultsAccessService().getEnvironment()
-        return environment ?? .int
+        return environment ?? .production
     }()
 }

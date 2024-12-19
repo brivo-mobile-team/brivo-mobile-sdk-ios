@@ -9,9 +9,13 @@ import SwiftUI
 import BrivoCore
 import BrivoAccess
 import BrivoOnAir
-import BrivoBLEAllegion
 import BrivoNetworkCore
+#if canImport(BrivoBLEAllegion)
+import BrivoBLEAllegion
+#endif
+#if canImport(BrivoHIDOrigo)
 import BrivoHIDOrigo
+#endif
 
 // swiftlint:disable line_length
 
@@ -83,7 +87,9 @@ struct BrivoPassesView: View {
                 }
             }
             .sheet(isPresented: $stateModel.isShowingAddSheet) { addBrivoPassSheet }
+#if canImport(BrivoHIDOrigo)
             .sheet(isPresented: $stateModel.isShowingOrigoActivationSheet) { addOrigoPassSheet }
+#endif
         }
         .onReceive(NotificationCenter.default.publisher(
             for: UIScene.willEnterForegroundNotification)) { _ in
@@ -156,6 +162,7 @@ struct BrivoPassesView: View {
         }
     }
 
+#if canImport(BrivoHIDOrigo)
     @ViewBuilder
     private var addOrigoPassSheet: some View {
         VStack {
@@ -184,6 +191,7 @@ struct BrivoPassesView: View {
             )
         }
     }
+#endif
 
     @ViewBuilder
     private var loadingOverlay: some View {
@@ -244,6 +252,7 @@ class BrivoPassesViewModel: ObservableObject {
         }
     }
 
+#if canImport(BrivoHIDOrigo)
     func redeemOrigoInvitationCode() {
         Task { @MainActor in
             isSubmittingOrigoInvitationCode = true
@@ -260,6 +269,7 @@ class BrivoPassesViewModel: ObservableObject {
             }
         }
     }
+#endif
 
     func resetPasses() {
         BrivoUserDefaults.setDictionary(value: [:], forKey: BrivoCore.Constants.KEY_PASSES)
@@ -306,7 +316,9 @@ class BrivoPassesViewModel: ObservableObject {
                 switch result {
                 case .success(let brivoOnAirPasses):
                     self.brivoOnAirPasses = brivoOnAirPasses
+#if canImport(BrivoHIDOrigo)
                     self.showOrigoActivationSheetIfNeeded()
+#endif
                 case .failure(let error):
                     onError(error)
                 }
@@ -324,13 +336,16 @@ class BrivoPassesViewModel: ObservableObject {
     }
 }
 
+#if canImport(BrivoHIDOrigo)
     private func showOrigoActivationSheetIfNeeded() {
           Task { @MainActor in
               _  = await BrivoSDKHIDOrigo.instance.refresh()
               isShowingOrigoActivationSheet = hasUserOrigoDoors() && !BrivoSDKHIDOrigo.instance.isEndpointSetup()
           }
       }
+#endif
 
+#if canImport(BrivoBLEAllegion)
     private func getAllegionCredentialsIfPossible(_ brivoOnairPass: BrivoOnairPass?) {
         if let brivoOnairPass = brivoOnairPass, brivoOnairPass.hasAllegionBleCredentials {
             Task {
@@ -340,6 +355,7 @@ class BrivoPassesViewModel: ObservableObject {
             }
         }
     }
+#endif
 
     private func deletePassIfNeeded(for error: BrivoError, passIndex: Int) {
         if error.isRefreshTokenError, brivoOnAirPasses.count > passIndex {
@@ -360,7 +376,9 @@ class BrivoPassesViewModel: ObservableObject {
                             }
                             if let refreshedPass = refreshedPass {
                                 self.brivoOnAirPasses[index] = refreshedPass
+#if canImport(BrivoBLEAllegion)
                                 getAllegionCredentialsIfPossible(refreshedPass)
+#endif
                             } else {
                                 self.brivoOnAirPasses.remove(at: index)
                             }

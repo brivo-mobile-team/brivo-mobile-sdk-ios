@@ -65,7 +65,7 @@ DEPENDENCIES:
   - Allegion.Access.MobileAccessSDK.iOS (~> 4.0.0)
 
 SPEC REPOS:
-  https://github.com/Allegion-Plc/AllegionCocoaPods.git:
+  https://github.com/Allegion-Plc/AllegionCocoaPods:
     - Allegion.Access.BLECredential.iOS
     - Allegion.Access.Hub.iOS
     - Allegion.Access.MobileAccessSDK.iOS
