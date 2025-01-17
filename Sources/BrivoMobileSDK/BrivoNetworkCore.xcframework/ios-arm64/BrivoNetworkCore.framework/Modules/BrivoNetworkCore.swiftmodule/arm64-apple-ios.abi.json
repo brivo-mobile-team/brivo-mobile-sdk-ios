@@ -307,53 +307,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "refreshTokenFailed",
-            "printedName": "refreshTokenFailed",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore15HttpStatusCodesV18refreshTokenFailedSivpZ",
-            "mangledName": "$s16BrivoNetworkCore15HttpStatusCodesV18refreshTokenFailedSivpZ",
-            "moduleName": "BrivoNetworkCore",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15HttpStatusCodesV18refreshTokenFailedSivgZ",
-                "mangledName": "$s16BrivoNetworkCore15HttpStatusCodesV18refreshTokenFailedSivgZ",
-                "moduleName": "BrivoNetworkCore",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Struct",
@@ -2036,8 +1989,8 @@
           },
           {
             "kind": "Function",
-            "name": "addAuthenticationTokenAfterTokenRefresh",
-            "printedName": "addAuthenticationTokenAfterTokenRefresh(to:token:)",
+            "name": "updateRequestTokensAfterTokenRefresh",
+            "printedName": "updateRequestTokensAfterTokenRefresh(for:token:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2046,10 +1999,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "URLRequest",
-                "printedName": "Foundation.URLRequest",
-                "paramValueOwnership": "InOut",
-                "usr": "s:10Foundation10URLRequestV"
+                "name": "HTTPSRequestInfo",
+                "printedName": "BrivoNetworkCore.HTTPSRequestInfo",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC"
               },
               {
                 "kind": "TypeNominal",
@@ -2059,8 +2011,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoNetworkCore0A12HTTPSRequestC027addAuthenticationTokenAfterG7Refresh2to5tokeny10Foundation10URLRequestVz_SStF",
-            "mangledName": "$s16BrivoNetworkCore0A12HTTPSRequestC027addAuthenticationTokenAfterG7Refresh2to5tokeny10Foundation10URLRequestVz_SStF",
+            "usr": "s:16BrivoNetworkCore0A12HTTPSRequestC36updateRequestTokensAfterTokenRefresh3for5tokenyAA0D4InfoC_SStF",
+            "mangledName": "$s16BrivoNetworkCore0A12HTTPSRequestC36updateRequestTokensAfterTokenRefresh3for5tokenyAA0D4InfoC_SStF",
             "moduleName": "BrivoNetworkCore",
             "isOpen": true,
             "declAttributes": [
@@ -3475,9 +3427,94 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "maxRetryCount",
+            "printedName": "maxRetryCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivs",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivs",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivM",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivM",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(baseURLString:endPoint:method:body:parameters:headers:tokens:)",
+            "printedName": "init(baseURLString:endPoint:method:body:parameters:headers:tokens:maxRetryCount:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3606,11 +3643,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13baseURLString8endPoint6method4body10parameters7headers6tokensACSS_SSSgAA11HTTPSMethodO10Foundation4DataVSgSDySSAKGSgSDyS2SGSg0aC00A6TokensCSgtcfc",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13baseURLString8endPoint6method4body10parameters7headers6tokensACSS_SSSgAA11HTTPSMethodO10Foundation4DataVSgSDySSAKGSgSDyS2SGSg0aC00A6TokensCSgtcfc",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13baseURLString8endPoint6method4body10parameters7headers6tokens13maxRetryCountACSS_SSSgAA11HTTPSMethodO10Foundation4DataVSgSDySSALGSgSDyS2SGSg0aC00A6TokensCSgSitcfc",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13baseURLString8endPoint6method4body10parameters7headers6tokens13maxRetryCountACSS_SSSgAA11HTTPSMethodO10Foundation4DataVSgSDySSALGSgSDyS2SGSg0aC00A6TokensCSgSitcfc",
             "moduleName": "BrivoNetworkCore",
             "declAttributes": [
               "AccessControl"
@@ -4143,124 +4187,6 @@
             "declKind": "Func",
             "usr": "s:16BrivoNetworkCore12HTTPSRequestC6cancelyyF",
             "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC6cancelyyF",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "executeDataTaskWithURLRequest",
-            "printedName": "executeDataTaskWithURLRequest(_:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.URLRequest?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URLRequest",
-                    "printedName": "Foundation.URLRequest",
-                    "usr": "s:10Foundation10URLRequestV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.URLRequest?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "URLRequest",
-                                "printedName": "Foundation.URLRequest",
-                                "usr": "s:10Foundation10URLRequestV"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.Data?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Data",
-                                "printedName": "Foundation.Data",
-                                "usr": "s:10Foundation4DataV"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.Int?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int",
-                                "printedName": "Swift.Int",
-                                "usr": "s:Si"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16BrivoNetworkCore12HTTPSRequestC29executeDataTaskWithURLRequest_10completiony10Foundation0I0VSg_yAI_AF0F0VSgSiSgs5Error_pSgtcSgtF",
-            "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC29executeDataTaskWithURLRequest_10completiony10Foundation0I0VSg_yAI_AF0F0VSgSiSgs5Error_pSgtcSgtF",
             "moduleName": "BrivoNetworkCore",
             "declAttributes": [
               "AccessControl"
@@ -8202,6 +8128,459 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "BrivoOnAirErrorStatusCode",
+        "printedName": "BrivoOnAirErrorStatusCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "serverCallFailed",
+            "printedName": "serverCallFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO16serverCallFailedSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO16serverCallFailedSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO16serverCallFailedSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO16serverCallFailedSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationMissingData",
+            "printedName": "authenticationMissingData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO25authenticationMissingDataSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO25authenticationMissingDataSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO25authenticationMissingDataSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO25authenticationMissingDataSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "redeemPassMissingData",
+            "printedName": "redeemPassMissingData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO21redeemPassMissingDataSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO21redeemPassMissingDataSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO21redeemPassMissingDataSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO21redeemPassMissingDataSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkNotUsingDefaultStorage",
+            "printedName": "sdkNotUsingDefaultStorage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO25sdkNotUsingDefaultStorageSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO25sdkNotUsingDefaultStorageSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO25sdkNotUsingDefaultStorageSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO25sdkNotUsingDefaultStorageSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "getSitesMissingData",
+            "printedName": "getSitesMissingData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO19getSitesMissingDataSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO19getSitesMissingDataSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO19getSitesMissingDataSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO19getSitesMissingDataSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "getAccessPointsMissingData",
+            "printedName": "getAccessPointsMissingData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO26getAccessPointsMissingDataSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO26getAccessPointsMissingDataSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO26getAccessPointsMissingDataSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO26getAccessPointsMissingDataSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "controlLockConfigMissingData",
+            "printedName": "controlLockConfigMissingData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO28controlLockConfigMissingDataSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO28controlLockConfigMissingDataSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO28controlLockConfigMissingDataSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO28controlLockConfigMissingDataSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refreshTokenFailed",
+            "printedName": "refreshTokenFailed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO18refreshTokenFailedSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO18refreshTokenFailedSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO18refreshTokenFailedSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO18refreshTokenFailedSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "other",
+            "printedName": "other",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO5otherSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO5otherSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO5otherSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO5otherSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO",
+        "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "BrivoOnAirErrors",
         "printedName": "BrivoOnAirErrors",
         "children": [
@@ -8983,9 +9362,9 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 491,
-      "length": 5,
-      "value": "-3008"
+      "offset": 6846,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
@@ -9016,9 +9395,16 @@
       "value": "\"expires_on\""
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/HTTPSRequestInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 745,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/HTTPSRequest.swift",
       "kind": "Array",
-      "offset": 1029,
+      "offset": 1194,
       "length": 2,
       "value": "[]"
     },
@@ -9270,105 +9656,119 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4450,
+      "offset": 4426,
       "length": 5,
       "value": "-3001"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4526,
-      "length": 21,
-      "value": "\"Server call failed.\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4627,
+      "offset": 4482,
       "length": 5,
       "value": "-3002"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4718,
-      "length": 30,
-      "value": "\"Authentication missing data.\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4824,
+      "offset": 4534,
       "length": 5,
       "value": "-3003"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 4911,
-      "length": 26,
-      "value": "\"Redeem pass missing data\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5019,
+      "offset": 4590,
       "length": 5,
       "value": "-3004"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5112,
-      "length": 35,
-      "value": "\"SDK is set to not use SDK storage\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5221,
+      "offset": 4640,
       "length": 5,
       "value": "-3005"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5306,
-      "length": 24,
-      "value": "\"Get sites missing data\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5411,
+      "offset": 4697,
       "length": 5,
       "value": "-3006"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 5503,
-      "length": 32,
-      "value": "\"Get access points missing data\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 5618,
+      "offset": 4756,
       "length": 5,
       "value": "-3007"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4805,
+      "length": 5,
+      "value": "-3008"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4841,
+      "length": 5,
+      "value": "-3010"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5712,
+      "offset": 5068,
+      "length": 21,
+      "value": "\"Server call failed.\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5306,
+      "length": 30,
+      "value": "\"Authentication missing data.\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5541,
+      "length": 26,
+      "value": "\"Redeem pass missing data\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 5788,
+      "length": 35,
+      "value": "\"SDK is set to not use SDK storage\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6022,
+      "length": 24,
+      "value": "\"Get sites missing data\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6266,
+      "length": 32,
+      "value": "\"Get access points missing data\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 6524,
       "length": 34,
       "value": "\"Control Lock config missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5920,
+      "offset": 6742,
       "length": 23,
       "value": "\"Refresh token failed.\""
     }

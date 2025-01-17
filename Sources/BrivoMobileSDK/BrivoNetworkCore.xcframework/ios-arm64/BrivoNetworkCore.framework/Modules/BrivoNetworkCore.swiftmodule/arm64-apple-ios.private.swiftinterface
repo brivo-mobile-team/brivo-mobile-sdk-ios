@@ -15,7 +15,6 @@ public struct HttpStatusCodes {
   public static let notFound: Swift.Int
   public static let noInternetStatusCode: Swift.Int
   public static let noDataConnectionStatusCode: Swift.Int
-  public static let refreshTokenFailed: Swift.Int
 }
 @objc public class BrivoOnAirError : ObjectiveC.NSObject {
   public var error: Swift.String
@@ -45,7 +44,7 @@ public struct BrivoOnAirResponse {
   public func cancel()
   public func refreshToken(tokens: BrivoCore.BrivoTokens?, onRefreshTokenSuccessfully: ((BrivoCore.BrivoTokens?) -> Swift.Void)?, onRefreshTokenFailed: BrivoNetworkCore.BrivoHTTPSRequest.OnRefreshTokenFailureType?)
   open func shouldTokenBeRefreshed(responseStatus: BrivoNetworkCore.BrivoOnAirResponseStatus?) -> Swift.Bool
-  open func addAuthenticationTokenAfterTokenRefresh(to urlRequest: inout Foundation.URLRequest, token: Swift.String)
+  open func updateRequestTokensAfterTokenRefresh(for requestInfo: BrivoNetworkCore.HTTPSRequestInfo, token: Swift.String)
   @objc deinit
 }
 @objc public class SmartHomeTokens : ObjectiveC.NSObject, Swift.Codable {
@@ -66,7 +65,8 @@ public class HTTPSRequestInfo {
   final public let parameters: [Swift.String : Swift.String?]?
   public var headers: [Swift.String : Swift.String]
   public var tokens: BrivoCore.BrivoTokens?
-  public init(baseURLString: Swift.String, endPoint: Swift.String?, method: BrivoNetworkCore.HTTPSMethod, body: Foundation.Data? = nil, parameters: [Swift.String : Swift.String?]? = nil, headers: [Swift.String : Swift.String]? = nil, tokens: BrivoCore.BrivoTokens? = nil)
+  public var maxRetryCount: Swift.Int
+  public init(baseURLString: Swift.String, endPoint: Swift.String?, method: BrivoNetworkCore.HTTPSMethod, body: Foundation.Data? = nil, parameters: [Swift.String : Swift.String?]? = nil, headers: [Swift.String : Swift.String]? = nil, tokens: BrivoCore.BrivoTokens? = nil, maxRetryCount: Swift.Int = 1)
   @objc deinit
 }
 public enum HTTPSMethod : Swift.String {
@@ -86,7 +86,6 @@ public class HTTPSRequest {
   public init(timeoutIntervalForRequest: Foundation.TimeInterval? = BrivoNetworkCoreConstants.sessionRequestTimeoutInterval)
   public func performRequest(requestInfo: BrivoNetworkCore.HTTPSRequestInfo, completion: BrivoNetworkCore.HTTPSRequest.ResponseType? = nil)
   public func cancel()
-  public func executeDataTaskWithURLRequest(_ urlRequest: Foundation.URLRequest?, completion: BrivoNetworkCore.HTTPSRequest.ResponseType? = nil)
   @objc deinit
 }
 public struct BrivoNetworkCoreConstants {
@@ -193,6 +192,17 @@ public enum BrivoNetworkCoreQueryParameter : Swift.String {
   public var rawValue: Swift.String {
     get
   }
+}
+public enum BrivoOnAirErrorStatusCode {
+  public static let serverCallFailed: Swift.Int
+  public static let authenticationMissingData: Swift.Int
+  public static let redeemPassMissingData: Swift.Int
+  public static let sdkNotUsingDefaultStorage: Swift.Int
+  public static let getSitesMissingData: Swift.Int
+  public static let getAccessPointsMissingData: Swift.Int
+  public static let controlLockConfigMissingData: Swift.Int
+  public static let refreshTokenFailed: Swift.Int
+  public static let other: Swift.Int
 }
 @objc @_inheritsConvenienceInitializers public class BrivoOnAirErrors : ObjectiveC.NSObject {
   public static let serverCallError: BrivoCore.BrivoError
