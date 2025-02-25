@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoBLEAllegion
+// swift-module-flags: -target arm64-apple-ios17 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoBLEAllegion
 import BrivoBLE
 @_exported import BrivoBLEAllegion
 import BrivoCore
@@ -12,16 +12,14 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 public protocol IBrivoSDKBLEAllegion {
   init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration)
-  func initialise() async throws
-  func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
+  func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
 }
 final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
   public static var instance: BrivoBLEAllegion.BrivoSDKBLEAllegion
   public init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration = .default)
-  @_Concurrency.MainActor final public func initialise() async throws
   final public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
-  @_Concurrency.MainActor final public func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async throws
+  @_Concurrency.MainActor final public func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   @objc deinit
 }
 public struct BrivoBLEAllegionConfiguration {

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoNetworkCore
+// swift-module-flags: -target x86_64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoNetworkCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import BrivoCore
 import Foundation
@@ -92,14 +92,10 @@ public struct BrivoNetworkCoreConstants {
   public static let defaultPageSize: Swift.Int
   public static let sessionRequestTimeoutInterval: Swift.Double
 }
-public enum BrivoOnAirHeaderField : Swift.String {
-  case authorization
-  case contentType
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
+public enum BrivoOnAirHeaderField {
+  public static let authorization: Swift.String
+  public static let contentType: Swift.String
+  public static let version: Swift.String
 }
 public enum BrivoNetworkCoreEndPoint : Swift.String {
   case oauth
@@ -122,6 +118,7 @@ public enum BrivoNetworkCoreEndPoint : Swift.String {
   case allegionTokens
   case synchroniseLocks
   case engageAppToken
+  case getHidOrigoInvitationCode
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -226,9 +223,6 @@ extension BrivoCore.BrivoError {
 extension BrivoNetworkCore.HTTPSMethod : Swift.Equatable {}
 extension BrivoNetworkCore.HTTPSMethod : Swift.Hashable {}
 extension BrivoNetworkCore.HTTPSMethod : Swift.RawRepresentable {}
-extension BrivoNetworkCore.BrivoOnAirHeaderField : Swift.Equatable {}
-extension BrivoNetworkCore.BrivoOnAirHeaderField : Swift.Hashable {}
-extension BrivoNetworkCore.BrivoOnAirHeaderField : Swift.RawRepresentable {}
 extension BrivoNetworkCore.BrivoNetworkCoreEndPoint : Swift.Equatable {}
 extension BrivoNetworkCore.BrivoNetworkCoreEndPoint : Swift.Hashable {}
 extension BrivoNetworkCore.BrivoNetworkCoreEndPoint : Swift.RawRepresentable {}

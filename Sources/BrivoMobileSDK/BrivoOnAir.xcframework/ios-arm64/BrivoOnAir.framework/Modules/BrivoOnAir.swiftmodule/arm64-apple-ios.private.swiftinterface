@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoOnAir
+// swift-module-flags: -target arm64-apple-ios17 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoOnAir
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import BrivoCore
 import BrivoNetworkCore
@@ -128,8 +128,10 @@ public struct BrivoReaderCommand : Swift.Codable {
   public func getAllegionSDKTokens(accessToken: Swift.String) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
   public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
   public func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  public func createAccessPoint(accessToken: Swift.String, siteId: Swift.Int, serialNumber: Swift.String, name: Swift.String, deviceType: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  public func createAccessPoint(accessToken: Swift.String, siteId: Swift.Int, serialNumber: Swift.String, name: Swift.String, deviceType: Swift.String) async -> Swift.Result<Swift.Int, BrivoCore.BrivoError>
   public func deleteAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  public func renameAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.Int, name: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  public func getHidOrigoInvitationCode(brivoOnairPass: BrivoOnAir.BrivoOnairPass, forced: Swift.Bool) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
   @objc deinit
 }
 public struct AllegionSDKTokens : Swift.Codable {
@@ -205,10 +207,22 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   public var hasAllegionBleCredentials: Swift.Bool
   public var enablePassTransfer: Swift.Bool
   public var hasHidOrigoMobilePass: Swift.Bool
+  public var hidOrigoWalletPassEnabled: Swift.Bool
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
+}
+extension BrivoOnAir.BrivoOnairPass {
+  public var passId: Swift.String? {
+    get
+  }
+  public var asJsonString: Swift.String? {
+    get
+  }
+  public var hasOrigoDoors: Swift.Bool {
+    get
+  }
 }
 @objc public class BrivoOnairPassCredentials : ObjectiveC.NSObject, Swift.Codable {
   public var userId: Swift.String?
@@ -298,6 +312,14 @@ public enum BrivoReaderType : Swift.String, Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
+extension BrivoOnAir.BrivoAccessPoint {
+  public var doorType: BrivoCore.DoorType? {
+    get
+  }
+  public var readerUid: Swift.String? {
+    get
+  }
+}
 @objc @_inheritsConvenienceInitializers public class BrivoBluetoothReader : ObjectiveC.NSObject, Swift.Codable {
   public var protocolVersion: Swift.Int
   public var readerUid: Swift.String?
@@ -329,24 +351,6 @@ public enum BrivoReaderType : Swift.String, Swift.Codable {
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
-}
-extension BrivoOnAir.BrivoOnairPass {
-  public var passId: Swift.String? {
-    get
-  }
-}
-extension BrivoOnAir.BrivoOnairPass {
-  public var asJsonString: Swift.String? {
-    get
-  }
-}
-extension BrivoOnAir.BrivoAccessPoint {
-  public var doorType: BrivoCore.DoorType? {
-    get
-  }
-  public var readerUid: Swift.String? {
-    get
-  }
 }
 @objc @_hasMissingDesignatedInitializers public class BrivoControlLockUnlockStatusRequestBody : ObjectiveC.NSObject, Swift.Codable {
   public var unlockStatus: Swift.Int
@@ -401,8 +405,10 @@ public protocol IBrivoSDKOnAir {
   func getAllegionSDKTokens(accessToken: Swift.String) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
   func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
   func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  func createAccessPoint(accessToken: Swift.String, siteId: Swift.Int, serialNumber: Swift.String, name: Swift.String, deviceType: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  func createAccessPoint(accessToken: Swift.String, siteId: Swift.Int, serialNumber: Swift.String, name: Swift.String, deviceType: Swift.String) async -> Swift.Result<Swift.Int, BrivoCore.BrivoError>
   func deleteAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  func renameAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.Int, name: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  func getHidOrigoInvitationCode(brivoOnairPass: BrivoOnAir.BrivoOnairPass, forced: Swift.Bool) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
 }
 public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   case wavelynxDoor

@@ -14,7 +14,7 @@
 		</data>
 		<key>Allegion_Access_MobileAccessSDK_iOS.bundle/Info.plist</key>
 		<data>
-		upt4LqbJshNWvf/0l7pSA7G9Leo=
+		LJk2wEEb7tii2yhjxtULaxFZwHM=
 		</data>
 		<key>Allegion_Access_MobileAccessSDK_iOS.bundle/allegion_logo.png</key>
 		<data>
@@ -30,20 +30,20 @@
 		</data>
 		<key>Allegion_Access_MobileAccessSDK_iOS_Localization.bundle/Info.plist</key>
 		<data>
-		Yp2K0y6Y2yrCkq6eygaDBh4po1Y=
+		NmXhrAIXPSWVwh/mMM+n4gjFW8E=
 		</data>
 		<key>Allegion_Access_MobileAccessSDK_iOS_Localization.bundle/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			erHjYiAF5HGR/nKY3R5P0uE6xzo=
+			Ucw0E0iFHqzIS/jPMMx2HQ32P5A=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
 		<key>AppCenter.bundle/Info.plist</key>
 		<data>
-		lc3jTlpejXRX6btJdDF/frosIZo=
+		0joaLpnDf8z9DKxdQdXl3QqSpN4=
 		</data>
 		<key>AppCenter.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -51,7 +51,7 @@
 		</data>
 		<key>AppCenterAnalytics.bundle/Info.plist</key>
 		<data>
-		oXZdmF4sMOVREjiYQPk8d+yeHLc=
+		yHpzhPfJQFDL/0d2ZVCsBvx00Ds=
 		</data>
 		<key>AppCenterAnalytics.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -59,7 +59,7 @@
 		</data>
 		<key>AppCenterCrashes.bundle/Info.plist</key>
 		<data>
-		riLl/vtvHPjetLAFom04zg8AuoE=
+		SzE1T0RZZcBFn6dti8XXplnSoz4=
 		</data>
 		<key>AppCenterCrashes.bundle/PrivacyInfo.xcprivacy</key>
 		<data>
@@ -75,27 +75,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QnD4hV9ntiVBfnAqqNK1uHY39JM=
+		8DK9IOp1PtqKIZdatyimPBRfg5g=
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hia51Dssb+j67mgmhgBFJKydvBg=
+		w302XKL9ydlNfqkqxw+GJuHxpn0=
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		BLqr4VnBZGBmRSZBJRczB02ORGU=
+		3UGI5mBBv7/0OOXtMjATw0ZfHuo=
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		RaTGdiVXoeQ9D4NzXEIytWmISP4=
+		I7iNK5BQowwBh6AyfjfbmVCFE8s=
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		BLqr4VnBZGBmRSZBJRczB02ORGU=
+		3UGI5mBBv7/0OOXtMjATw0ZfHuo=
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gu3Tgajuo/pIeU6PXtE82YqujNI=
+		eyBlKkNNQFonegQUP/xFgmrqKGE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5qs34OSqleLMoYNohplfR2F/FUhvwGrZCpr27bKIKK4=
+			nTwr6h0hcOXbfmRdd8Dry1xhfZdo+qV5j7PWi6kdCjo=
 			</data>
 		</dict>
 		<key>Allegion_Access_MobileAccessSDK_iOS.bundle/allegion_logo.png</key>
@@ -150,14 +150,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VF4h+Pf4h3XgfDKhRI0Xr/xtt/uMcLbo/P6kBcaZRvs=
+			6BhwvbVax+pvIn8pPWgnBrXfmZX+uV+MNvGJL39S7ps=
 			</data>
 		</dict>
 		<key>Allegion_Access_MobileAccessSDK_iOS_Localization.bundle/en.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aAqGZbpJWsSMGDGetaYO6due8rtc6J6vR04KWBxHudY=
+			GqeT49AUeTjBflOx6ytoNlNWQfelT81mmrXIChCTvJQ=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vgtYjbetPIVtvzXZgs9im0MDw3gOJSSoqakZqhyQjyQ=
+			xjQ+PWESu3CXPCAv6PiNJmslB1Rx04jRsnMxNEwWyVs=
 			</data>
 		</dict>
 		<key>AppCenter.bundle/PrivacyInfo.xcprivacy</key>
@@ -180,7 +180,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LYTmZqzF6H4b0QvHP+owvJc7CK/sKeEAQC8goexYRbs=
+			TeGlULmPKkc3H554EPETuqDH5i13p1eH4eC7VFnEDBc=
 			</data>
 		</dict>
 		<key>AppCenterAnalytics.bundle/PrivacyInfo.xcprivacy</key>
@@ -194,7 +194,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tw8jE8G3PbLjbxKDKDEnAHEu9WvG/gjYQaGWynXmR4w=
+			dj0NHxTO6BpiI0JI3ngnwtPW3wFiPGJSuDoYl+vGTgM=
 			</data>
 		</dict>
 		<key>AppCenterCrashes.bundle/PrivacyInfo.xcprivacy</key>
@@ -222,35 +222,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9u66k44pUK/9BeGuVjLETMrlojmcCBnbEwFCOxbKjZs=
+			wKD0OwKmXnVf86QZISgXdg66lnxEAVN2DQ57fNgfTz4=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gu46b3+RXo/QQmioRsWW0mClwabr3G1Qk9KqIJLIRyo=
+			7ygS24picvLWAAnj7pNrZXND7UP8CAF4l3sHd789RpA=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aHqRXRQZHR5n2B9h9eKF0mMJcDo9f05MCQMMXaZM2xs=
+			juFb4U9G8wOrvfdE2IU1cUpzMFFJzxeIW+7qb/XE6T8=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gu46b3+RXo/QQmioRsWW0mClwabr3G1Qk9KqIJLIRyo=
+			7ygS24picvLWAAnj7pNrZXND7UP8CAF4l3sHd789RpA=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			outu2WQDnAJfomwqRvOIr7BgVXmPP7JVJuPE9vRs4uY=
+			9dlMb5wI6a+eQ22R3dpcii+g5liGc/yHJo5vzjiVVqo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoCore
+// swift-module-flags: -target x86_64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoCore
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Foundation
 import Network
@@ -89,6 +89,10 @@ public enum EmptyPropertyError : Foundation.LocalizedError {
   @objc deinit
 }
 public typealias OnResultType = (BrivoCore.BrivoResult) -> Swift.Void
+@_hasMissingDesignatedInitializers public class ControlLockUtils {
+  public static func isAllegionDeviceThatCallsV1Endpoint(_ deviceModelId: Swift.String) -> Swift.Bool
+  @objc deinit
+}
 public enum AccessPointDorType : Swift.Int, Swift.Codable {
   case brivoDoor
   case controlLock
@@ -187,6 +191,25 @@ public enum DoorType : Swift.Int, Swift.Codable {
     get
   }
 }
+public enum NFCUnlinkStatus : Swift.Equatable {
+  case successfullyUnlinked
+  case nothingToUnlink
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrivoCore.NFCUnlinkStatus, b: BrivoCore.NFCUnlinkStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum NFCAddToWalletStatus : Swift.Equatable {
+  case alreadyAddedToWallet
+  case notEligibleForAddingToWallet
+  case canBeAddedToWallet
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrivoCore.NFCAddToWalletStatus, b: BrivoCore.NFCAddToWalletStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public enum AccessPointCommunicationState : Swift.Int, Swift.Codable {
   case scanning
   case shouldContinue
@@ -194,6 +217,7 @@ public enum AccessPointCommunicationState : Swift.Int, Swift.Codable {
   case communicating
   case success
   case failed
+  case nearestReaderFound
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -263,11 +287,34 @@ public enum WrongUrlError : Foundation.LocalizedError {
   required public init(accessPointId: Swift.Int, siteId: Swift.Int, passId: Swift.String, hasTrustedNetwork: Swift.Bool = false)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class BrivoError : Foundation.NSError {
-  final public let statusCode: Swift.Int
-  final public let errorDescription: Swift.String
-  final public let context: Any?
-  public init(statusCode: Swift.Int? = NSNotFound, errorDescription: Swift.String? = "empty description", context: Any? = nil)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoError : Foundation.NSError, @unchecked Swift.Sendable {
+  public struct Keys {
+    public static let context: Swift.String
+    public static let accessPointAdditionalInfo: Swift.String
+  }
+  @available(*, deprecated, message: "Use `code`")
+  public var statusCode: Swift.Int {
+    get
+  }
+  @available(*, deprecated, message: "Use `localizedDescription`")
+  public var errorDescription: Swift.String {
+    get
+  }
+  @available(*, deprecated, message: "Use `userInfo`")
+  public var context: Any? {
+    get
+  }
+  @available(*, deprecated, message: "Use `userInfo`")
+  public var accessPointAdditionalInfo: [Swift.String : Any?]?
+  @available(*, deprecated, message: "Use init(domain:code:userInfo:)")
+  convenience public init(statusCode: Swift.Int? = NSNotFound, errorDescription: Swift.String? = "Empty Description")
+  @available(*, deprecated, message: "Use init(domain:code:userInfo:)")
+  convenience public init(statusCode: Swift.Int, errorDescription: Swift.String, context: Any?)
+  @available(*, deprecated, message: "Use init(domain:code:userInfo:)")
+  convenience public init(statusCode: Swift.Int, errorDescription: Swift.String, accessPointAdditionalInfo: [Swift.String : Any])
+  convenience public init(domain: Swift.String, code: Swift.Int, description: Swift.String)
+  @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
+  public func updatingUserInfo(with additions: [Swift.String : Any]) -> BrivoCore.BrivoError
   @objc deinit
 }
 extension BrivoCore.EmptyPropertyError : Swift.Equatable {}
@@ -281,6 +328,8 @@ extension BrivoCore.Region : Swift.RawRepresentable {}
 extension BrivoCore.DoorType : Swift.Equatable {}
 extension BrivoCore.DoorType : Swift.Hashable {}
 extension BrivoCore.DoorType : Swift.RawRepresentable {}
+extension BrivoCore.NFCUnlinkStatus : Swift.Hashable {}
+extension BrivoCore.NFCAddToWalletStatus : Swift.Hashable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.Equatable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.Hashable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.RawRepresentable {}

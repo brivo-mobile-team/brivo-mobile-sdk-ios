@@ -85,38 +85,27 @@
           },
           {
             "kind": "Function",
-            "name": "initialise",
-            "printedName": "initialise()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP10initialiseyyYaKF",
-            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP10initialiseyyYaKF",
-            "moduleName": "BrivoBLEAllegion",
-            "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
-            "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "refreshCredentials",
             "printedName": "refreshCredentials(brivoOnAirPass:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
               },
               {
                 "kind": "TypeNominal",
@@ -126,8 +115,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials14brivoOnAirPassy0ahI00a5OnairJ0C_tYaKF",
-            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials14brivoOnAirPassy0ahI00a5OnairJ0C_tYaKF",
+            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials14brivoOnAirPasss6ResultOyyt0A4Core0A5ErrorCG0ahI00a5OnairJ0C_tYaF",
+            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials14brivoOnAirPasss6ResultOyyt0A4Core0A5ErrorCG0ahI00a5OnairJ0C_tYaF",
             "moduleName": "BrivoBLEAllegion",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
             "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
@@ -135,7 +124,6 @@
             "declAttributes": [
               "RawDocComment"
             ],
-            "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -404,30 +392,6 @@
           },
           {
             "kind": "Function",
-            "name": "initialise",
-            "printedName": "initialise()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC10initialiseyyYaKF",
-            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC10initialiseyyYaKF",
-            "moduleName": "BrivoBLEAllegion",
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "Custom",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "unlockAccessPoint",
             "printedName": "unlockAccessPoint(accessPoint:cancellationSignal:)",
             "children": [
@@ -472,7 +436,8 @@
             "moduleName": "BrivoBLEAllegion",
             "declAttributes": [
               "Final",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -483,8 +448,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
               },
               {
                 "kind": "TypeNominal",
@@ -494,15 +473,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials14brivoOnAirPassy0agH00a5OnairI0C_tYaKF",
-            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials14brivoOnAirPassy0agH00a5OnairI0C_tYaKF",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials14brivoOnAirPasss6ResultOyyt0A4Core0A5ErrorCG0agH00a5OnairI0C_tYaF",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials14brivoOnAirPasss6ResultOyyt0A4Core0A5ErrorCG0agH00a5OnairI0C_tYaF",
             "moduleName": "BrivoBLEAllegion",
             "declAttributes": [
               "Final",
               "AccessControl",
               "Custom"
             ],
-            "throwing": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -1154,8 +1132,15 @@
   "ConstValues": [
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/BrivoSDKBLEAllegion.swift",
+      "kind": "StringLiteral",
+      "offset": 347,
+      "length": 21,
+      "value": "\"BrivoSDKBLEAllegion\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/BrivoSDKBLEAllegion.swift",
       "kind": "BooleanLiteral",
-      "offset": 1560,
+      "offset": 1633,
       "length": 5,
       "value": "false"
     },

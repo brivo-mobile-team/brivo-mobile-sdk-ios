@@ -338,13 +338,13 @@ SWIFT_CLASS("_TtC9BrivoCore26BrivoControlLockUserRecord")
 @interface BrivoControlLockUserRecord : NSObject
 @end
 
-@class NSCoder;
 @class NSString;
+@class NSCoder;
 
 SWIFT_CLASS("_TtC9BrivoCore10BrivoError")
 @interface BrivoError : NSError
+- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
-- (nonnull instancetype)initWithDomain:(NSString * _Nonnull)domain code:(NSInteger)code userInfo:(NSDictionary<NSString *, id> * _Nullable)dict SWIFT_UNAVAILABLE;
 @end
 
 

@@ -1493,6 +1493,80 @@
           },
           {
             "kind": "Function",
+            "name": "scanForNearbyReadersAndNotifyWhenReaderFound",
+            "printedName": "scanForNearbyReadersAndNotifyWhenReaderFound(brivoBLECredentials:onResult:cancellationSignal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BrivoBLE.BrivoBLECredential]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoBLECredential",
+                    "printedName": "BrivoBLE.BrivoBLECredential",
+                    "usr": "c:@M@BrivoBLE@objc(cs)BrivoBLECredential"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((BrivoCore.BrivoResult) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoCore.BrivoResult) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoResult",
+                        "printedName": "BrivoCore.BrivoResult",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.CancellationSignal?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CancellationSignal",
+                    "printedName": "BrivoCore.CancellationSignal",
+                    "usr": "c:@M@BrivoCore@objc(cs)CancellationSignal"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8BrivoBLE0A10BLEServiceC44scanForNearbyReadersAndNotifyWhenReaderFound19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aP0CcSgAK012CancellationR0CSgtF",
+            "mangledName": "$s8BrivoBLE0A10BLEServiceC44scanForNearbyReadersAndNotifyWhenReaderFound19brivoBLECredentials8onResult18cancellationSignalySayAA0A13BLECredentialCG_y0A4Core0aP0CcSgAK012CancellationR0CSgtF",
+            "moduleName": "BrivoBLE",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "unlockAccessPointWithServices",
             "printedName": "unlockAccessPointWithServices(brivoBLECredentials:onResult:cancellationSignal:)",
             "children": [
@@ -2621,6 +2695,16 @@
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "BrivoBLE",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -3929,50 +4013,71 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2249,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2510,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2544,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 1112,
+      "length": 22,
+      "value": "\"BleConnectionManager\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 2586,
+      "offset": 3045,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2273,
+      "offset": 3070,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3331,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3365,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 2930,
+      "offset": 3407,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "kind": "Dictionary",
+      "offset": 3453,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3094,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "kind": "Dictionary",
+      "offset": 3797,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2990,
+      "offset": 3857,
       "length": 1,
       "value": "0"
     },

@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		o+RT3vodQLi3qwX/1aBWJRiyuLU=
+		UvfFF+vRx5B/dlhKywk8GAhdiVk=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -18,23 +18,27 @@
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		54NMUEsTW+FFF2nhFNpFd96gRBE=
+		mN0/RlIY34WUuoMSXziYbFKmYWA=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		TTd/LYwnTLJn77sV2vyDyokgY2Q=
+		ZPQXgubhekQf4om7T6oh3PweIJg=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		54NMUEsTW+FFF2nhFNpFd96gRBE=
+		mN0/RlIY34WUuoMSXziYbFKmYWA=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Tk/X6Uq9ROmQXW4WaLrbmHuFK9Q=
+		+PiJgnWOmtb7pHUazICHDXUg5lc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		reh5R8/A94K1c8mr/cF4d17t2PI=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		Z8ogWcSAOuSOtuSgRlCVN6M5CxA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -57,28 +61,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PmCk1jwTF4gCc8Vh4GOt4I2Gd14lFWDFHtQ/Gw/qvkc=
+			vtk26sHNwsaxYrKyvGNlrG8XK7CmzKO1P6lHID1n07o=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			htRAhV2MCkvW9AoIR51MQkutT9lJFRw/GhDhs16RGGQ=
+			P5S27LrplJ7mgaNL9P4/8UtmU+wGxb+oKEOBAEuraFM=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PmCk1jwTF4gCc8Vh4GOt4I2Gd14lFWDFHtQ/Gw/qvkc=
+			vtk26sHNwsaxYrKyvGNlrG8XK7CmzKO1P6lHID1n07o=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wU0llEYMcVTYO2fIufP/yY6gX3sBQYYcJfnJ2CaqMic=
+			Uq8olSL3o2zk1zPJO78/cEUKa5wFZ75kMrrG07rPIZ0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -86,6 +90,13 @@
 			<key>hash2</key>
 			<data>
 			ESYFZhdMyGNq0+e25KNb/24S1JUAfoOuFdMEc3Wakiw=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			e8NIDiZwYsdmOI6RnIfkvth+IZTBtXG3ixd92pHu0U4=
 			</data>
 		</dict>
 	</dict>
