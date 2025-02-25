@@ -42,7 +42,7 @@ In order to add the BrivoSDK one needs to to the following:
 3. Select a product using this: .product(name: "BrivoMobileSDK", package: "brivo-mobile-sdk-ios")
 ```
 
-The BrivoSDK components were built using the target version iOS 14.0, Apple Swift version required is 5 and Xcode version 15.4
+The BrivoSDK components were built using the target version iOS 17.0, Apple Swift version required is 5 and Xcode version 16.1
 
 <a id="installation_allegion"></a>
 #### BrivoBLEAllegion (Cocoapods)

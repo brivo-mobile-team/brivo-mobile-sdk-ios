@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/BrivoAccess-Swift.h</key>
 		<data>
-		ACHHJHZ63aNen+bALB7Y07Cur/s=
+		yK0ibmkEUhAYGqoHjQT2PhkeTXA=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mWr6zheD8dumNY2JyKdRC8+tNQ0=
+		IUHUnMCoHcgy5QRa4xFlwnfxMjQ=
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -18,23 +18,27 @@
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		rjVL99+d1YF4TVFmbRaKYfsTCJk=
+		IMYE9Ev8kCiE2Qrn9vw5oGRZCUE=
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ELI2mm1TCXkscAzd3VkEeYD2oqM=
+		Vw4svg4XPPNJFUweTF80kHkM3m0=
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		rjVL99+d1YF4TVFmbRaKYfsTCJk=
+		IMYE9Ev8kCiE2Qrn9vw5oGRZCUE=
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gnyvJWVJcFPqEPEhNoY9cjj+fR8=
+		vbl860nemI8g3Zkh/kVy4q18mlA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		gTGf12eG5Tck/F4YmydwnKF8YvU=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		mhxirGa+91JctQhEIHaRmYiMTwY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,7 +47,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iDKikWORhg6x0aqRqO37DzwZgntM+dXJ3x510yVSoV8=
+			tiVeBKK4a/QGLT4fr08YBArYSYW68qSBoImJgjVKa6M=
 			</data>
 		</dict>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -57,28 +61,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qjds8zySts6Y+UbDNlZm3KmgH3VOV5NkIq9ANVWI4Eo=
+			yYE9OPj7Wdhu6KKLg04h99CS/5TNEL4U5xOxMSapGMI=
 			</data>
 		</dict>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zwX930H71OQpW/DsFeCzs75h8idH9JanTerK2aLUq74=
+			xaaeAoy/99RAEYWeS/ATlmZGeMzCsG1KIz+DlZBcEfo=
 			</data>
 		</dict>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qjds8zySts6Y+UbDNlZm3KmgH3VOV5NkIq9ANVWI4Eo=
+			yYE9OPj7Wdhu6KKLg04h99CS/5TNEL4U5xOxMSapGMI=
 			</data>
 		</dict>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			viifMyEBj8nlg6R2W7WR24TdIsCqMp3KiBrBg5gG1r0=
+			6CutbnrlSG7Ftsnn7ya/FMlmIr13uJ4onskEL8Aqieo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -86,6 +90,13 @@
 			<key>hash2</key>
 			<data>
 			CUtmKTKVZ8xF9XNOyVGf7PWu97zwT7kG4B1DMjiB/DY=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kCst0c9fJBDzLjeLqJIAnzjG6D52btDZh371SQunUhc=
 			</data>
 		</dict>
 	</dict>

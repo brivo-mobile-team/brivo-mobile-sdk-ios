@@ -4370,113 +4370,6 @@
             "printedName": "authorization",
             "children": [
               {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoNetworkCore.BrivoOnAirHeaderField.Type) -> BrivoNetworkCore.BrivoOnAirHeaderField",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoOnAirHeaderField",
-                    "printedName": "BrivoNetworkCore.BrivoOnAirHeaderField",
-                    "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoNetworkCore.BrivoOnAirHeaderField.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoOnAirHeaderField",
-                        "printedName": "BrivoNetworkCore.BrivoOnAirHeaderField",
-                        "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO13authorizationyA2CmF",
-            "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO13authorizationyA2CmF",
-            "moduleName": "BrivoNetworkCore"
-          },
-          {
-            "kind": "Var",
-            "name": "contentType",
-            "printedName": "contentType",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoNetworkCore.BrivoOnAirHeaderField.Type) -> BrivoNetworkCore.BrivoOnAirHeaderField",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoOnAirHeaderField",
-                    "printedName": "BrivoNetworkCore.BrivoOnAirHeaderField",
-                    "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoNetworkCore.BrivoOnAirHeaderField.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoOnAirHeaderField",
-                        "printedName": "BrivoNetworkCore.BrivoOnAirHeaderField",
-                        "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO11contentTypeyA2CmF",
-            "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO11contentTypeyA2CmF",
-            "moduleName": "BrivoNetworkCore"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoNetworkCore.BrivoOnAirHeaderField?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoOnAirHeaderField",
-                    "printedName": "BrivoNetworkCore.BrivoOnAirHeaderField",
-                    "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO8rawValueACSgSS_tcfc",
-            "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO8rawValueACSgSS_tcfc",
-            "moduleName": "BrivoNetworkCore",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
@@ -4484,10 +4377,17 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO8rawValueSSvp",
-            "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO8rawValueSSvp",
+            "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO13authorizationSSvpZ",
+            "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO13authorizationSSvpZ",
             "moduleName": "BrivoNetworkCore",
-            "implicit": true,
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -4502,9 +4402,104 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO8rawValueSSvg",
-                "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO8rawValueSSvg",
+                "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO13authorizationSSvgZ",
+                "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO13authorizationSSvgZ",
                 "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentType",
+            "printedName": "contentType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO11contentTypeSSvpZ",
+            "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO11contentTypeSSvpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO11contentTypeSSvgZ",
+                "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO11contentTypeSSvgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO7versionSSvpZ",
+            "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO7versionSSvpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A16OnAirHeaderFieldO7versionSSvgZ",
+                "mangledName": "$s16BrivoNetworkCore0A16OnAirHeaderFieldO7versionSSvgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
                 "implicit": true,
                 "accessorKind": "get"
               }
@@ -4518,7 +4513,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "enumRawTypeName": "String",
         "conformances": [
           {
             "kind": "Conformance",
@@ -4533,42 +4527,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
           }
         ]
       },
@@ -5611,6 +5569,43 @@
             "declKind": "EnumElement",
             "usr": "s:16BrivoNetworkCore0abC8EndPointO14engageAppTokenyA2CmF",
             "mangledName": "$s16BrivoNetworkCore0abC8EndPointO14engageAppTokenyA2CmF",
+            "moduleName": "BrivoNetworkCore"
+          },
+          {
+            "kind": "Var",
+            "name": "getHidOrigoInvitationCode",
+            "printedName": "getHidOrigoInvitationCode",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoNetworkCore.BrivoNetworkCoreEndPoint.Type) -> BrivoNetworkCore.BrivoNetworkCoreEndPoint",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoNetworkCoreEndPoint",
+                    "printedName": "BrivoNetworkCore.BrivoNetworkCoreEndPoint",
+                    "usr": "s:16BrivoNetworkCore0abC8EndPointO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoNetworkCore.BrivoNetworkCoreEndPoint.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoNetworkCoreEndPoint",
+                        "printedName": "BrivoNetworkCore.BrivoNetworkCoreEndPoint",
+                        "usr": "s:16BrivoNetworkCore0abC8EndPointO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoNetworkCore0abC8EndPointO25getHidOrigoInvitationCodeyA2CmF",
+            "mangledName": "$s16BrivoNetworkCore0abC8EndPointO25getHidOrigoInvitationCodeyA2CmF",
             "moduleName": "BrivoNetworkCore"
           },
           {
@@ -9229,6 +9224,7 @@
         "superclassUsr": "c:objc(cs)NSError",
         "isExternal": true,
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "Foundation.NSError",
           "ObjectiveC.NSObject"
@@ -9361,8 +9357,15 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "kind": "Dictionary",
+      "offset": 1905,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 6846,
+      "offset": 7764,
       "length": 1,
       "value": "0"
     },
@@ -9446,329 +9449,343 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 543,
+      "offset": 548,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 582,
+      "offset": 600,
       "length": 14,
       "value": "\"Content-type\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 664,
+      "offset": 647,
+      "length": 20,
+      "value": "\"X-Endpoint-Version\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 735,
       "length": 13,
       "value": "\"oauth\/token\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 694,
+      "offset": 765,
       "length": 6,
       "value": "\"pass\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 718,
+      "offset": 789,
       "length": 7,
       "value": "\"sites\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 755,
+      "offset": 826,
       "length": 27,
       "value": "\"users\/credentials\/digital\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 807,
+      "offset": 878,
       "length": 15,
       "value": "\"access-points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 846,
+      "offset": 917,
       "length": 14,
       "value": "\"control-lock\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 888,
+      "offset": 959,
       "length": 23,
       "value": "\"administrators\/whoami\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1021,
+      "offset": 1092,
       "length": 16,
       "value": "\"password\/reset\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1067,
+      "offset": 1138,
       "length": 22,
       "value": "\"unaffiliated\/devices\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1115,
+      "offset": 1186,
       "length": 16,
       "value": "\"firebase-token\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1154,
+      "offset": 1225,
       "length": 13,
       "value": "\"mobile-pass\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1184,
+      "offset": 1255,
       "length": 10,
       "value": "\"users\/me\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1213,
+      "offset": 1284,
       "length": 8,
       "value": "\"access\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1242,
+      "offset": 1313,
       "length": 10,
       "value": "\"accesses\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1279,
+      "offset": 1350,
       "length": 17,
       "value": "\"reader-commands\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1317,
+      "offset": 1388,
       "length": 11,
       "value": "\"set_level\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1355,
+      "offset": 1426,
       "length": 20,
       "value": "\"allegion\/api\/token\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1404,
+      "offset": 1475,
       "length": 41,
       "value": "\"\/control-lock\/synchronize-control-locks\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1472,
+      "offset": 1543,
       "length": 17,
       "value": "\"\/engageAppToken\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2705,
+      "offset": 1598,
+      "length": 42,
+      "value": "\"\/hid-origo-mobile-pass\/getInvitationCode\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 2838,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "Dictionary",
-      "offset": 3254,
+      "offset": 3378,
       "length": 36,
       "value": "[(\"Content-type\", \"application\/json\")]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3915,
+      "offset": 4039,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3950,
+      "offset": 4074,
       "length": 13,
       "value": "\"access_code\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 3988,
+      "offset": 4112,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4025,
+      "offset": 4149,
       "length": 12,
       "value": "\"serial_num\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4062,
+      "offset": 4186,
       "length": 15,
       "value": "\"serial_number\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4105,
+      "offset": 4229,
       "length": 18,
       "value": "\"firmware_version\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4142,
+      "offset": 4266,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4426,
+      "offset": 4550,
       "length": 5,
       "value": "-3001"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4482,
+      "offset": 4606,
       "length": 5,
       "value": "-3002"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4534,
+      "offset": 4658,
       "length": 5,
       "value": "-3003"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4590,
+      "offset": 4714,
       "length": 5,
       "value": "-3004"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4640,
+      "offset": 4764,
       "length": 5,
       "value": "-3005"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4697,
+      "offset": 4821,
       "length": 5,
       "value": "-3006"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4756,
+      "offset": 4880,
       "length": 5,
       "value": "-3007"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4805,
+      "offset": 4929,
       "length": 5,
       "value": "-3008"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4841,
+      "offset": 4965,
       "length": 5,
       "value": "-3010"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5068,
+      "offset": 5192,
       "length": 21,
       "value": "\"Server call failed.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5306,
+      "offset": 5430,
       "length": 30,
       "value": "\"Authentication missing data.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5541,
+      "offset": 5665,
       "length": 26,
       "value": "\"Redeem pass missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5788,
+      "offset": 5912,
       "length": 35,
       "value": "\"SDK is set to not use SDK storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6022,
+      "offset": 6146,
       "length": 24,
       "value": "\"Get sites missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6266,
+      "offset": 6390,
       "length": 32,
       "value": "\"Get access points missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6524,
+      "offset": 6648,
       "length": 34,
       "value": "\"Control Lock config missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6742,
+      "offset": 6866,
       "length": 23,
       "value": "\"Refresh token failed.\""
     }

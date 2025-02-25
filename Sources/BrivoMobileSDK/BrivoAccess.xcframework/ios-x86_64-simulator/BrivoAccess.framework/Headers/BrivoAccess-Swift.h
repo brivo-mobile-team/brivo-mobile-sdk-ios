@@ -303,6 +303,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+
 SWIFT_CLASS("_TtC11BrivoAccess14BrivoSDKAccess")
 @interface BrivoSDKAccess : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

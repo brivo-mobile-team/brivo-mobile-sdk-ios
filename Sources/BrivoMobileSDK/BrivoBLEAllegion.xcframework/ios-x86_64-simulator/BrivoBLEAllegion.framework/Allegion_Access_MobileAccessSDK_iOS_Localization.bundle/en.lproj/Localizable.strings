@@ -149,6 +149,9 @@ NO_TOUR_PAYLOAD_RETRIEVAL_FAILURE_REASON = "No tour payload information could no
 /* Failure Reason property in LocalizedError concerning any operation which may need to remove no tour payload information */
 NO_TOUR_PAYLOAD_REMOVAL_FAILURE_REASON = "No tour payload information could not be removed from storage.";
 
+/* Failure reason property in LocalizedError because authentication data could not be confirmed */
+AUTHENTICATION_COULD_NOT_BE_CONFIRMED = "The application was unable to confirm authentication information.";
+
 
 /* Recovery suggestion property in LocalizedError concerning any problem */
 CONNECTED_ACCOUNT_GENERAL_ERROR_RECOVERY_SUGGESTION = "Please consult additional error detail / context or contact support.";
