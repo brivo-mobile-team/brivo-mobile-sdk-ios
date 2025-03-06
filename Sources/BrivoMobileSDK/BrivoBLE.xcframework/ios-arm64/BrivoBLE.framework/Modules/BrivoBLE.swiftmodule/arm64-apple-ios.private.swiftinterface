@@ -21,8 +21,8 @@ import _SwiftConcurrencyShims
 }
 public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
 public typealias OnUnlockBluetoothDoorSuccessType = () -> Swift.Void
-public typealias OnRequestExternalCredentials = (Swift.String, Swift.String, @escaping ((Swift.String?) -> Swift.Void), @escaping ((BrivoCore.BrivoError?) -> Swift.Void)) -> Swift.Void
-public typealias OnProvideResponseForExternalCredentials = (Swift.String, Swift.String, @escaping ((Swift.String?) -> Swift.Void), @escaping ((BrivoCore.BrivoError?) -> Swift.Void)) -> Swift.Void
+public typealias OnRequestExternalCredentials = (_ accessPointId: Swift.String, _ dataJSONString: Swift.String, _ onSuccess: @escaping ((Swift.String?) -> Swift.Void), _ onError: @escaping ((BrivoCore.BrivoError?) -> Swift.Void)) -> Swift.Void
+public typealias OnProvideResponseForExternalCredentials = (_ accessPointId: Swift.String, _ dataJSONString: Swift.String, _ onSuccess: @escaping ((Swift.String?) -> Swift.Void), _ onError: @escaping ((BrivoCore.BrivoError?) -> Swift.Void)) -> Swift.Void
 public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
 @objc @_inheritsConvenienceInitializers public class BrivoBLEService : ObjectiveC.NSObject {
   public var requestExternalCredentials: BrivoBLE.OnRequestExternalCredentials?
@@ -62,7 +62,7 @@ public struct BrivoBLEErrors {
   public static let confirmError: BrivoCore.BrivoError
   public static func brivoBleErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
 }
-@_hasMissingDesignatedInitializers public class BLEConstants {
+public enum BLEConstants {
   public static let DEFAULT_BLE_AUTH_TIME_FRAME: Swift.Int32
   public static let MINIMUM_ALLOWED_RSSI: Swift.Int
   public static let OK_STATUS_RESPONSE: Swift.UInt8
@@ -72,5 +72,5 @@ public struct BrivoBLEErrors {
   public static let MAXIMUM_TRANSFER_UNIT: Swift.Int
   public static let SCANNING_TIME: Swift.Double
   public static let ALLEGION_RELOCK_DELAY: Swift.Int
-  @objc deinit
+  public static let ALLEGION_UNLOCK_RESPONSE_TIMEOUT: Swift.Double
 }
