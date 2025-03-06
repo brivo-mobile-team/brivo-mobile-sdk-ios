@@ -121,6 +121,7 @@ struct BrivoPassesView: View {
                 Text("Pass ID: \(passItem.onAirPass.passId ?? "")")
             }
         } footer: {
+            #if canImport(BrivoHIDOrigo)
             HStack {
                 Text("HID ORIGO: ")
                 switch passItem.hidNFCAddToWalletStatus {
@@ -139,6 +140,7 @@ struct BrivoPassesView: View {
                     Text("Unknown")
                 }
             }
+            #endif
         }
     }
 
@@ -374,7 +376,7 @@ class BrivoPassesViewModel: ObservableObject {
     private var previousUpdateTask: Task<Void, Never>?
 
     private func updateUI() {
-        previousUpdateTask = Task {  @MainActor [previousUpdateTask] in
+        previousUpdateTask = Task { @MainActor [previousUpdateTask] in
             await previousUpdateTask?.value
             var newBrivoOnAirPassListItems = [BrivoOnAirPassListItem]()
             for brivoOnAirPass in brivoOnAirPasses {
@@ -404,7 +406,9 @@ class BrivoPassesViewModel: ObservableObject {
                     } 
                 }
                 .map { BrivoOnAirPassPickerItem(onAirPass: $0) }
+            #if canImport(BrivoHIDOrigo)
             self.showOrigoActivationSheetIfNeeded()
+            #endif
         }
     }
 

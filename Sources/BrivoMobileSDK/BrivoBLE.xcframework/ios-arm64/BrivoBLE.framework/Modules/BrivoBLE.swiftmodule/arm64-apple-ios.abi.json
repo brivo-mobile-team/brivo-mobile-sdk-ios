@@ -3297,13 +3297,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC08DEFAULT_B16_AUTH_TIME_FRAMEs5Int32VvpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC08DEFAULT_B16_AUTH_TIME_FRAMEs5Int32VvpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO08DEFAULT_B16_AUTH_TIME_FRAMEs5Int32VvpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO08DEFAULT_B16_AUTH_TIME_FRAMEs5Int32VvpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3323,14 +3322,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC08DEFAULT_B16_AUTH_TIME_FRAMEs5Int32VvgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC08DEFAULT_B16_AUTH_TIME_FRAMEs5Int32VvgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO08DEFAULT_B16_AUTH_TIME_FRAMEs5Int32VvgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO08DEFAULT_B16_AUTH_TIME_FRAMEs5Int32VvgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3348,13 +3344,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC20MINIMUM_ALLOWED_RSSISivpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC20MINIMUM_ALLOWED_RSSISivpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO20MINIMUM_ALLOWED_RSSISivpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO20MINIMUM_ALLOWED_RSSISivpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3374,14 +3369,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC20MINIMUM_ALLOWED_RSSISivgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC20MINIMUM_ALLOWED_RSSISivgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO20MINIMUM_ALLOWED_RSSISivgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO20MINIMUM_ALLOWED_RSSISivgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3399,13 +3391,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC18OK_STATUS_RESPONSEs5UInt8VvpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC18OK_STATUS_RESPONSEs5UInt8VvpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO18OK_STATUS_RESPONSEs5UInt8VvpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO18OK_STATUS_RESPONSEs5UInt8VvpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3425,14 +3416,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC18OK_STATUS_RESPONSEs5UInt8VvgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC18OK_STATUS_RESPONSEs5UInt8VvgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO18OK_STATUS_RESPONSEs5UInt8VvgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO18OK_STATUS_RESPONSEs5UInt8VvgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3458,13 +3446,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC15ALLOWED_READERSSaySSGvpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC15ALLOWED_READERSSaySSGvpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO15ALLOWED_READERSSaySSGvpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO15ALLOWED_READERSSaySSGvpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3492,14 +3479,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC15ALLOWED_READERSSaySSGvgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC15ALLOWED_READERSSaySSGvgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO15ALLOWED_READERSSaySSGvgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO15ALLOWED_READERSSaySSGvgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3525,13 +3509,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC0B24_CREDENTIAL_SERVICE_UUIDSaySSGvpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC0B24_CREDENTIAL_SERVICE_UUIDSaySSGvpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO0B24_CREDENTIAL_SERVICE_UUIDSaySSGvpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO0B24_CREDENTIAL_SERVICE_UUIDSaySSGvpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3559,14 +3542,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC0B24_CREDENTIAL_SERVICE_UUIDSaySSGvgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC0B24_CREDENTIAL_SERVICE_UUIDSaySSGvgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO0B24_CREDENTIAL_SERVICE_UUIDSaySSGvgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO0B24_CREDENTIAL_SERVICE_UUIDSaySSGvgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3592,13 +3572,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC23DATA_TRANSFER_CHRC_UUIDSaySSGvpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC23DATA_TRANSFER_CHRC_UUIDSaySSGvpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO23DATA_TRANSFER_CHRC_UUIDSaySSGvpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO23DATA_TRANSFER_CHRC_UUIDSaySSGvpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3626,14 +3605,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC23DATA_TRANSFER_CHRC_UUIDSaySSGvgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC23DATA_TRANSFER_CHRC_UUIDSaySSGvgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO23DATA_TRANSFER_CHRC_UUIDSaySSGvgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO23DATA_TRANSFER_CHRC_UUIDSaySSGvgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3651,13 +3627,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC21MAXIMUM_TRANSFER_UNITSivpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC21MAXIMUM_TRANSFER_UNITSivpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO21MAXIMUM_TRANSFER_UNITSivpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO21MAXIMUM_TRANSFER_UNITSivpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3677,14 +3652,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC21MAXIMUM_TRANSFER_UNITSivgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC21MAXIMUM_TRANSFER_UNITSivgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO21MAXIMUM_TRANSFER_UNITSivgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO21MAXIMUM_TRANSFER_UNITSivgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3702,13 +3674,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC13SCANNING_TIMESdvpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC13SCANNING_TIMESdvpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO13SCANNING_TIMESdvpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO13SCANNING_TIMESdvpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3728,14 +3699,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC13SCANNING_TIMESdvgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC13SCANNING_TIMESdvgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO13SCANNING_TIMESdvgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO13SCANNING_TIMESdvgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -3753,13 +3721,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsC21ALLEGION_RELOCK_DELAYSivpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsC21ALLEGION_RELOCK_DELAYSivpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO21ALLEGION_RELOCK_DELAYSivpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO21ALLEGION_RELOCK_DELAYSivpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -3779,28 +3746,71 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsC21ALLEGION_RELOCK_DELAYSivgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsC21ALLEGION_RELOCK_DELAYSivgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO21ALLEGION_RELOCK_DELAYSivgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO21ALLEGION_RELOCK_DELAYSivgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ALLEGION_UNLOCK_RESPONSE_TIMEOUT",
+            "printedName": "ALLEGION_UNLOCK_RESPONSE_TIMEOUT",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8BrivoBLE12BLEConstantsO32ALLEGION_UNLOCK_RESPONSE_TIMEOUTSdvpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO32ALLEGION_UNLOCK_RESPONSE_TIMEOUTSdvpZ",
+            "moduleName": "BrivoBLE",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
                 ],
+                "declKind": "Accessor",
+                "usr": "s:8BrivoBLE12BLEConstantsO32ALLEGION_UNLOCK_RESPONSE_TIMEOUTSdvgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO32ALLEGION_UNLOCK_RESPONSE_TIMEOUTSdvgZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "implicit": true,
                 "accessorKind": "get"
               }
             ]
           }
         ],
-        "declKind": "Class",
-        "usr": "s:8BrivoBLE12BLEConstantsC",
-        "mangledName": "$s8BrivoBLE12BLEConstantsC",
+        "declKind": "Enum",
+        "usr": "s:8BrivoBLE12BLEConstantsO",
+        "mangledName": "$s8BrivoBLE12BLEConstantsO",
         "moduleName": "BrivoBLE",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -3986,98 +3996,98 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 431,
+      "offset": 435,
       "length": 12,
       "value": "\"3b01020022\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 487,
+      "offset": 491,
       "length": 20,
       "value": "\"3b0102002203010283\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 831,
+      "offset": 843,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 959,
+      "offset": 971,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 1112,
+      "offset": 1164,
       "length": 22,
       "value": "\"BleConnectionManager\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3045,
+      "offset": 3133,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3070,
+      "offset": 3162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3331,
+      "offset": 3475,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3365,
+      "offset": 3509,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3407,
+      "offset": 3551,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3453,
+      "offset": 3597,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3094,
+      "offset": 3186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3797,
+      "offset": 3949,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3857,
+      "offset": 4009,
       "length": 1,
       "value": "0"
     },
@@ -4203,72 +4213,79 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1761,
+      "offset": 1760,
       "length": 38,
       "value": "\"3420d81a-af2c-11e5-bf7f-feff819cdc9f\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1840,
+      "offset": 1839,
       "length": 38,
       "value": "\"52052C11-E701-4782-99F5-8CE88DBB1500\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1938,
+      "offset": 1937,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1991,
+      "offset": 1990,
       "length": 3,
       "value": "-85"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2045,
+      "offset": 2044,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "Array",
-      "offset": 2100,
+      "offset": 2099,
       "length": 20,
       "value": "[\"BRVO\", \"BRVO_ALL\"]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "Array",
-      "offset": 2261,
+      "offset": 2260,
       "length": 129,
       "value": "[\"52052C11-E701-4782-99F5-8CE88DBB1506\", \"EE8732B3-2D52-409B-9084-70AD31F6C790\"]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2442,
+      "offset": 2441,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 2492,
+      "offset": 2491,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2543,
+      "offset": 2542,
       "length": 1,
       "value": "7"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2615,
+      "length": 1,
+      "value": "3"
     }
   ]
 }
