@@ -974,8 +974,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios";
 			requirement = {
-				branch = main;
-				kind = branch;
+				kind = exactVersion;
+				version = 2.2.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
