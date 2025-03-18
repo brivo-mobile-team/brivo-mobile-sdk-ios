@@ -8,11 +8,13 @@
 import Foundation
 import BrivoCore
 
+enum UserDefaultsKeys {
+    static let region = "region"
+}
+
 protocol IUserDefaultsAccessService {
     func getRegion() -> Int?
     func setRegion(_ region: Int)
-    func getEnvironment() -> Environment?
-    func setEnvironment(_ environment: Environment)
 }
 
 class UserDefaultsAccessService: IUserDefaultsAccessService {
@@ -25,20 +27,11 @@ class UserDefaultsAccessService: IUserDefaultsAccessService {
 
     func setRegion(_ region: Int) {
         storeData(region,
-                  key: UserDefaultsKeys.region.rawValue)
+                  key: UserDefaultsKeys.region)
     }
 
     func getRegion() -> Int? {
-        getData(key: UserDefaultsKeys.region.rawValue) ?? Region.us.rawValue
-    }
-
-    func getEnvironment() -> Environment? {
-        getData(key: UserDefaultsKeys.environment.rawValue)
-    }
-
-    func setEnvironment(_ environment: Environment) {
-        storeData(environment,
-                  key: UserDefaultsKeys.environment.rawValue)
+        getData(key: UserDefaultsKeys.region) ?? Region.us.rawValue
     }
 
     func getData<T: Decodable>(key: String) -> T? {

@@ -96,7 +96,7 @@ class UnlockAccessPointViewModel: ObservableObject {
 
                             if let error = result.error {
                                 self.alertTitle = "Error"
-                                self.alertMessage = (error.errorDescription) + " " + "Status Code: \(error.statusCode)"
+                                self.alertMessage = (error.localizedDescription) + " " + "Status Code: \(error.code)"
                                 self.isShowingAlert = true
                             }
                         }
@@ -116,7 +116,7 @@ class UnlockAccessPointViewModel: ObservableObject {
                             timer.invalidate()
                             self.resetToInitialState()
                             self.alertTitle = "Error"
-                            self.alertMessage = (result.error?.errorDescription ?? "") + " " + "Status Code: \(result.error?.statusCode ?? 0)"
+                            self.alertMessage = (result.error?.localizedDescription ?? "") + " " + "Status Code: \(result.error?.code ?? 0)"
                             self.isShowingAlert = true
                         default:
                             break
