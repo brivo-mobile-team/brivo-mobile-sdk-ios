@@ -125,9 +125,9 @@ public struct BrivoReaderCommand : Swift.Codable {
   public func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
   public func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String]) async -> Swift.Result<[BrivoOnAir.BrivoReaderCommand], BrivoCore.BrivoError>
   public func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  public func getAllegionSDKTokens(accessToken: Swift.String) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
+  public func getAllegionSDKTokens(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
   public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
-  public func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
+  public func synchroniseControlLocks(brivoTokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.AllegionControlLocks, BrivoCore.BrivoError>
   public func createAccessPoint(accessToken: Swift.String, siteId: Swift.Int, serialNumber: Swift.String, name: Swift.String, deviceType: Swift.String) async -> Swift.Result<Swift.Int, BrivoCore.BrivoError>
   public func deleteAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   public func renameAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.Int, name: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
@@ -301,7 +301,7 @@ public enum BrivoReaderType : Swift.String, Swift.Codable {
   public var controlLockDeviceType: Swift.String?
   public var controlLockSiteName: Swift.String?
   public var controlLockSiteReferenceId: Swift.String?
-  public var controlLockId: Swift.Int
+  public var controlLockId: Swift.Int?
   public var deviceRequiresUpdate: Swift.Bool
   final public let controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?
   public var isDoorStation: Swift.Bool
@@ -351,6 +351,17 @@ extension BrivoOnAir.BrivoAccessPoint {
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
+}
+public struct AllegionControlLocks : Swift.Codable {
+  public let allegionControlLocks: [BrivoOnAir.AllegionControlLockStatus]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AllegionControlLockStatus : Swift.Codable {
+  public let id: Swift.Int
+  public let isEligible: Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 @objc @_hasMissingDesignatedInitializers public class BrivoControlLockUnlockStatusRequestBody : ObjectiveC.NSObject, Swift.Codable {
   public var unlockStatus: Swift.Int
@@ -402,9 +413,9 @@ public protocol IBrivoSDKOnAir {
   func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
   func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String]) async -> Swift.Result<[BrivoOnAir.BrivoReaderCommand], BrivoCore.BrivoError>
   func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  func getAllegionSDKTokens(accessToken: Swift.String) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
+  func getAllegionSDKTokens(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.AllegionSDKTokens, BrivoCore.BrivoError>
   func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
-  func synchroniseControlLocks(accessToken: Swift.String, onSuccess: BrivoOnAir.OnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
+  func synchroniseControlLocks(brivoTokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.AllegionControlLocks, BrivoCore.BrivoError>
   func createAccessPoint(accessToken: Swift.String, siteId: Swift.Int, serialNumber: Swift.String, name: Swift.String, deviceType: Swift.String) async -> Swift.Result<Swift.Int, BrivoCore.BrivoError>
   func deleteAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   func renameAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.Int, name: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>

@@ -9,19 +9,6 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public typealias OnLogClosure = (_ message: Swift.String) -> Swift.Void
-public typealias OnErrorClosure = (_ error: any Swift.Error) -> Swift.Void
-@_hasMissingDesignatedInitializers public class SDKLogger {
-  public static func configureOnLog(_ onLogClosure: BrivoCore.OnLogClosure?)
-  public static func configureOnError(_ onErrorClosure: BrivoCore.OnErrorClosure?)
-  public static func v(message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, tag: Swift.String? = nil)
-  public static func d(message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, tag: Swift.String? = nil)
-  public static func i(message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, tag: Swift.String? = nil)
-  public static func w(message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, tag: Swift.String? = nil)
-  public static func e(error: any Swift.Error, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, tag: Swift.String? = nil)
-  public static func s(message: Swift.String, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line, tag: Swift.String? = nil)
-  @objc deinit
-}
 public typealias CancellationClosure = (Swift.Bool) -> Swift.Void
 @objc @_inheritsConvenienceInitializers public class CancellationSignal : ObjectiveC.NSObject {
   public var isCancelled: Swift.Bool {
@@ -86,6 +73,7 @@ public enum EmptyPropertyError : Foundation.LocalizedError {
   public static func getDictionary(forKey key: Swift.String) -> [Swift.String : Any]?
   public static func getData<T>(key: Swift.String) -> T? where T : Swift.Decodable
   public static func storeData<T>(_ data: T, key: Swift.String) where T : Swift.Encodable
+  public static func removeData(key: Swift.String)
   @objc deinit
 }
 public typealias OnResultType = (BrivoCore.BrivoResult) -> Swift.Void
@@ -102,6 +90,18 @@ public enum AccessPointDorType : Swift.Int, Swift.Codable {
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum SDKLogLevel : Swift.String, Swift.Sendable {
+  case verbose
+  case debug
+  case info
+  case warning
+  case error
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -152,7 +152,8 @@ public enum Region : Swift.Int {
   final public let shouldPromptForContinuation: Swift.Bool
   weak public var refreshTokenDelegate: (any BrivoCore.RefreshTokenDelegate)?
   final public let sessionRequestTimeout: BrivoCore.SessionRequestTimeout?
-  public init(clientId: Swift.String, clientSecret: Swift.String, useSDKStorage: Swift.Bool, region: BrivoCore.Region = .us, shouldPromptForContinuation: Swift.Bool = false, authUrl: Swift.String? = nil, apiUrl: Swift.String? = nil, smartHomeUrl: Swift.String? = nil, smartHomeUrlV1: Swift.String? = nil, smartHomeUrlV4: Swift.String? = nil, refreshTokenDelegate: (any BrivoCore.RefreshTokenDelegate)? = nil, sessionRequestTimeout: BrivoCore.SessionRequestTimeout? = nil) throws
+  final public let isConsoleLoggingEnabled: Swift.Bool
+  public init(clientId: Swift.String, clientSecret: Swift.String, useSDKStorage: Swift.Bool, region: BrivoCore.Region = .us, shouldPromptForContinuation: Swift.Bool = false, authUrl: Swift.String? = nil, apiUrl: Swift.String? = nil, smartHomeUrl: Swift.String? = nil, smartHomeUrlV1: Swift.String? = nil, smartHomeUrlV4: Swift.String? = nil, refreshTokenDelegate: (any BrivoCore.RefreshTokenDelegate)? = nil, sessionRequestTimeout: BrivoCore.SessionRequestTimeout? = nil, isConsoleLoggingEnabled: Swift.Bool = true) throws
   @objc deinit
 }
 @objc public class BrivoControlLockUserRecord : ObjectiveC.NSObject, Swift.Codable {
@@ -174,9 +175,9 @@ public enum Region : Swift.Int {
   public func getDeviceId() -> Swift.String
   @objc deinit
 }
-public protocol BrivoSDKActivityDelegate : AnyObject {
-  func log(_ msg: Swift.String)
-  func error(_ error: BrivoCore.BrivoError)
+public typealias LoggingMonitor = BrivoCore.LoggerOutput
+extension BrivoCore.BrivoSDK {
+  public func addLoggingMonitor(_ loggingMonitor: any BrivoCore.LoggerOutput)
 }
 public enum DoorType : Swift.Int, Swift.Codable {
   case internet
@@ -185,11 +186,20 @@ public enum DoorType : Swift.Int, Swift.Codable {
   case wirelessLock
   case allegionBle
   case hidOrigo
+  public var stringValue: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
+}
+public class ConsoleOutput : BrivoCore.LoggerOutput {
+  public var acceptedLogLevels: Swift.Set<BrivoCore.SDKLogLevel>
+  public init()
+  public func sendLog(subsystem: Swift.String, level: BrivoCore.SDKLogLevel, message: Swift.String, tag: Swift.String?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?, file: Swift.String, function: Swift.String, line: Swift.Int)
+  @objc deinit
 }
 public enum NFCUnlinkStatus : Swift.Equatable {
   case successfullyUnlinked
@@ -200,6 +210,11 @@ public enum NFCUnlinkStatus : Swift.Equatable {
     get
   }
 }
+extension BrivoCore.NFCUnlinkStatus : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
 public enum NFCAddToWalletStatus : Swift.Equatable {
   case alreadyAddedToWallet
   case notEligibleForAddingToWallet
@@ -207,6 +222,11 @@ public enum NFCAddToWalletStatus : Swift.Equatable {
   public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: BrivoCore.NFCAddToWalletStatus, b: BrivoCore.NFCAddToWalletStatus) -> Swift.Bool
   public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BrivoCore.NFCAddToWalletStatus : Swift.CustomStringConvertible {
+  public var description: Swift.String {
     get
   }
 }
@@ -230,15 +250,63 @@ public protocol IBrivoSDK {
   func configure(brivoConfiguration: BrivoCore.BrivoSDKConfiguration)
   func getBrivoConfiguration() throws -> BrivoCore.BrivoSDKConfiguration
   func getDeviceId() -> Swift.String
+  func addLoggingMonitor(_ monitor: any BrivoCore.LoggerOutput)
 }
 public protocol INetworkMonitor {
   func startMonitoring(completion: ((Swift.Bool) -> Swift.Void)?)
   func stopMonitoring()
 }
+public enum LoggerTagType : Swift.String, Swift.Hashable {
+  case network
+  case auth
+  case database
+  case brivoSDKConfigure
+  case brivoAccess
+  case brivoOnAir
+  case brivoBLE
+  case brivoLocalAuthentication
+  case brivoSmartHome
+  case brivoCore
+  case brivoHidOrigo
+  case brivoNFC
+  case brivoSDKBLEAllegion
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum LoggerWrapper {
+  public static func error(_ message: Swift.String, tag: BrivoCore.LoggerTagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func warning(_ message: Swift.String, tag: BrivoCore.LoggerTagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func debug(_ message: Swift.String, tag: BrivoCore.LoggerTagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func info(_ message: Swift.String, tag: BrivoCore.LoggerTagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public static func verbose(_ message: Swift.String, tag: BrivoCore.LoggerTagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+}
 extension Foundation.Data {
   public var toHex: Swift.String {
     get
   }
+}
+public protocol LoggerOutput {
+  var acceptedLogLevels: Swift.Set<BrivoCore.SDKLogLevel> { get }
+  func sendLog(subsystem: Swift.String, level: BrivoCore.SDKLogLevel, message: Swift.String, tag: Swift.String?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?, file: Swift.String, function: Swift.String, line: Swift.Int)
+}
+public typealias LoggerMetadataValueType = Swift.CustomStringConvertible & Swift.Sendable
+public class BrivoLogger<TagType> : @unchecked Swift.Sendable where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String {
+  public var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  public init(subsystem: Swift.String, outputs: [any BrivoCore.LoggerOutput] = [ConsoleOutput()])
+  public func add(output: any BrivoCore.LoggerOutput)
+  public func removeAllOutputs()
+  public func error(_ message: Swift.String, tag: TagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func warning(_ message: Swift.String, tag: TagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func debug(_ message: Swift.String, tag: TagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func info(_ message: Swift.String, tag: TagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  public func verbose(_ message: Swift.String, tag: TagType?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]? = nil, file: Swift.String = #file, function: Swift.String = #function, line: Swift.Int = #line)
+  @objc deinit
 }
 public enum WrongUrlError : Foundation.LocalizedError {
   case wrongApiUrl
@@ -252,11 +320,10 @@ public enum WrongUrlError : Foundation.LocalizedError {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class Constants {
+public enum Constants {
   public static let KEY_PASSES: Swift.String
   public static let KEY_PASSES_EU: Swift.String
   public static let KEY_DEVICE_ID: Swift.String
-  @objc deinit
 }
 @objc public class BrivoResult : ObjectiveC.NSObject {
   public var accessPointCommunicationState: BrivoCore.AccessPointCommunicationState
@@ -322,6 +389,9 @@ extension BrivoCore.EmptyPropertyError : Swift.Hashable {}
 extension BrivoCore.AccessPointDorType : Swift.Equatable {}
 extension BrivoCore.AccessPointDorType : Swift.Hashable {}
 extension BrivoCore.AccessPointDorType : Swift.RawRepresentable {}
+extension BrivoCore.SDKLogLevel : Swift.Equatable {}
+extension BrivoCore.SDKLogLevel : Swift.Hashable {}
+extension BrivoCore.SDKLogLevel : Swift.RawRepresentable {}
 extension BrivoCore.Region : Swift.Equatable {}
 extension BrivoCore.Region : Swift.Hashable {}
 extension BrivoCore.Region : Swift.RawRepresentable {}
@@ -333,5 +403,6 @@ extension BrivoCore.NFCAddToWalletStatus : Swift.Hashable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.Equatable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.Hashable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.RawRepresentable {}
+extension BrivoCore.LoggerTagType : Swift.RawRepresentable {}
 extension BrivoCore.WrongUrlError : Swift.Equatable {}
 extension BrivoCore.WrongUrlError : Swift.Hashable {}

@@ -430,6 +430,13 @@
       },
       {
         "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoBLE"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -4044,29 +4051,36 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3274,
+      "length": 17,
+      "value": "\"StopBLE is true\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3475,
+      "offset": 3548,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3509,
+      "offset": 3582,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3551,
+      "offset": 3624,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3597,
+      "offset": 3670,
       "length": 3,
       "value": "[]"
     },
@@ -4080,14 +4094,14 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3949,
+      "offset": 4022,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 4009,
+      "offset": 4082,
       "length": 1,
       "value": "0"
     },

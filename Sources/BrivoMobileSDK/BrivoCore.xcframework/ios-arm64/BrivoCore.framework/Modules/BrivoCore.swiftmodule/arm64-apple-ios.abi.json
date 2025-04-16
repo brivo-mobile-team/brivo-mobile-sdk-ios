@@ -15,543 +15,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
-        "declKind": "Import",
-        "moduleName": "BrivoCore"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SDKLogger",
-        "printedName": "SDKLogger",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "configureOnLog",
-            "printedName": "configureOnLog(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore9SDKLoggerC14configureOnLogyyySScSgFZ",
-            "mangledName": "$s9BrivoCore9SDKLoggerC14configureOnLogyyySScSgFZ",
-            "moduleName": "BrivoCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "configureOnError",
-            "printedName": "configureOnError(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((any Swift.Error) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(any Swift.Error) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore9SDKLoggerC16configureOnErroryyys0F0_pcSgFZ",
-            "mangledName": "$s9BrivoCore9SDKLoggerC16configureOnErroryyys0F0_pcSgFZ",
-            "moduleName": "BrivoCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "v",
-            "printedName": "v(message:file:function:line:tag:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore9SDKLoggerC1v7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "mangledName": "$s9BrivoCore9SDKLoggerC1v7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "moduleName": "BrivoCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "d",
-            "printedName": "d(message:file:function:line:tag:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore9SDKLoggerC1d7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "mangledName": "$s9BrivoCore9SDKLoggerC1d7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "moduleName": "BrivoCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "i",
-            "printedName": "i(message:file:function:line:tag:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore9SDKLoggerC1i7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "mangledName": "$s9BrivoCore9SDKLoggerC1i7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "moduleName": "BrivoCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "w",
-            "printedName": "w(message:file:function:line:tag:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore9SDKLoggerC1w7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "mangledName": "$s9BrivoCore9SDKLoggerC1w7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "moduleName": "BrivoCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "e",
-            "printedName": "e(error:file:function:line:tag:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Error",
-                "printedName": "any Swift.Error",
-                "usr": "s:s5ErrorP"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore9SDKLoggerC1e5error4file8function4line3tagys5Error_p_S2SSiSSSgtFZ",
-            "mangledName": "$s9BrivoCore9SDKLoggerC1e5error4file8function4line3tagys5Error_p_S2SSiSSSgtFZ",
-            "moduleName": "BrivoCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "s",
-            "printedName": "s(message:file:function:line:tag:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore9SDKLoggerC1s7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "mangledName": "$s9BrivoCore9SDKLoggerC1s7message4file8function4line3tagySS_S2SSiSSSgtFZ",
-            "moduleName": "BrivoCore",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:9BrivoCore9SDKLoggerC",
-        "mangledName": "$s9BrivoCore9SDKLoggerC",
-        "moduleName": "BrivoCore",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "hasMissingDesignatedInitializers": true,
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "CancellationSignal",
         "printedName": "CancellationSignal",
@@ -3073,6 +2536,34 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeData",
+            "printedName": "removeData(key:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A12UserDefaultsC10removeData3keyySS_tFZ",
+            "mangledName": "$s9BrivoCore0A12UserDefaultsC10removeData3keyySS_tFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3445,6 +2936,347 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SDKLogLevel",
+        "printedName": "SDKLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "verbose",
+            "printedName": "verbose",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.SDKLogLevel.Type) -> BrivoCore.SDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLogLevel",
+                    "printedName": "BrivoCore.SDKLogLevel",
+                    "usr": "s:9BrivoCore11SDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.SDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLogLevel",
+                        "printedName": "BrivoCore.SDKLogLevel",
+                        "usr": "s:9BrivoCore11SDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore11SDKLogLevelO7verboseyA2CmF",
+            "mangledName": "$s9BrivoCore11SDKLogLevelO7verboseyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.SDKLogLevel.Type) -> BrivoCore.SDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLogLevel",
+                    "printedName": "BrivoCore.SDKLogLevel",
+                    "usr": "s:9BrivoCore11SDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.SDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLogLevel",
+                        "printedName": "BrivoCore.SDKLogLevel",
+                        "usr": "s:9BrivoCore11SDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore11SDKLogLevelO5debugyA2CmF",
+            "mangledName": "$s9BrivoCore11SDKLogLevelO5debugyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.SDKLogLevel.Type) -> BrivoCore.SDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLogLevel",
+                    "printedName": "BrivoCore.SDKLogLevel",
+                    "usr": "s:9BrivoCore11SDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.SDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLogLevel",
+                        "printedName": "BrivoCore.SDKLogLevel",
+                        "usr": "s:9BrivoCore11SDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore11SDKLogLevelO4infoyA2CmF",
+            "mangledName": "$s9BrivoCore11SDKLogLevelO4infoyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "warning",
+            "printedName": "warning",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.SDKLogLevel.Type) -> BrivoCore.SDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLogLevel",
+                    "printedName": "BrivoCore.SDKLogLevel",
+                    "usr": "s:9BrivoCore11SDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.SDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLogLevel",
+                        "printedName": "BrivoCore.SDKLogLevel",
+                        "usr": "s:9BrivoCore11SDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore11SDKLogLevelO7warningyA2CmF",
+            "mangledName": "$s9BrivoCore11SDKLogLevelO7warningyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.SDKLogLevel.Type) -> BrivoCore.SDKLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLogLevel",
+                    "printedName": "BrivoCore.SDKLogLevel",
+                    "usr": "s:9BrivoCore11SDKLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.SDKLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLogLevel",
+                        "printedName": "BrivoCore.SDKLogLevel",
+                        "usr": "s:9BrivoCore11SDKLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore11SDKLogLevelO5erroryA2CmF",
+            "mangledName": "$s9BrivoCore11SDKLogLevelO5erroryA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.SDKLogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLogLevel",
+                    "printedName": "BrivoCore.SDKLogLevel",
+                    "usr": "s:9BrivoCore11SDKLogLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore11SDKLogLevelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9BrivoCore11SDKLogLevelO8rawValueACSgSS_tcfc",
+            "moduleName": "BrivoCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore11SDKLogLevelO8rawValueSSvp",
+            "mangledName": "$s9BrivoCore11SDKLogLevelO8rawValueSSvp",
+            "moduleName": "BrivoCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore11SDKLogLevelO8rawValueSSvg",
+                "mangledName": "$s9BrivoCore11SDKLogLevelO8rawValueSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9BrivoCore11SDKLogLevelO",
+        "mangledName": "$s9BrivoCore11SDKLogLevelO",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -5509,9 +5341,57 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isConsoleLoggingEnabled",
+            "printedName": "isConsoleLoggingEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC23isConsoleLoggingEnabledSbvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC23isConsoleLoggingEnabledSbvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC23isConsoleLoggingEnabledSbvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC23isConsoleLoggingEnabledSbvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(clientId:clientSecret:useSDKStorage:region:shouldPromptForContinuation:authUrl:apiUrl:smartHomeUrl:smartHomeUrlV1:smartHomeUrlV4:refreshTokenDelegate:sessionRequestTimeout:)",
+            "printedName": "init(clientId:clientSecret:useSDKStorage:region:shouldPromptForContinuation:authUrl:apiUrl:smartHomeUrl:smartHomeUrlV1:smartHomeUrlV4:refreshTokenDelegate:sessionRequestTimeout:isConsoleLoggingEnabled:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -5655,11 +5535,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9BrivoCore0A16SDKConfigurationC8clientId0D6Secret13useSDKStorage6region27shouldPromptForContinuation7authUrl03apiO009smartHomeO00qrO2V10qrO2V420refreshTokenDelegate21sessionRequestTimeoutACSS_SSSbAA6RegionOSbSSSgA4rA07RefreshvW0_pSgAA07SessionyZ0CSgtKcfc",
-            "mangledName": "$s9BrivoCore0A16SDKConfigurationC8clientId0D6Secret13useSDKStorage6region27shouldPromptForContinuation7authUrl03apiO009smartHomeO00qrO2V10qrO2V420refreshTokenDelegate21sessionRequestTimeoutACSS_SSSbAA6RegionOSbSSSgA4rA07RefreshvW0_pSgAA07SessionyZ0CSgtKcfc",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC8clientId0D6Secret13useSDKStorage6region27shouldPromptForContinuation7authUrl03apiO009smartHomeO00qrO2V10qrO2V420refreshTokenDelegate21sessionRequestTimeout23isConsoleLoggingEnabledACSS_SSSbAA6RegionOSbSSSgA4sA07RefreshvW0_pSgAA07SessionyZ0CSgSbtKcfc",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC8clientId0D6Secret13useSDKStorage6region27shouldPromptForContinuation7authUrl03apiO009smartHomeO00qrO2V10qrO2V420refreshTokenDelegate21sessionRequestTimeout23isConsoleLoggingEnabledACSS_SSSbAA6RegionOSbSSSgA4sA07RefreshvW0_pSgAA07SessionyZ0CSgSbtKcfc",
             "moduleName": "BrivoCore",
             "declAttributes": [
               "AccessControl"
@@ -6528,6 +6415,33 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addLoggingMonitor",
+            "printedName": "addLoggingMonitor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoggerOutput",
+                "printedName": "any BrivoCore.LoggerOutput",
+                "usr": "s:9BrivoCore12LoggerOutputP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A3SDKC17addLoggingMonitoryyAA12LoggerOutput_pF",
+            "mangledName": "$s9BrivoCore0A3SDKC17addLoggingMonitoryyAA12LoggerOutput_pF",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -6614,102 +6528,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BrivoSDKActivityDelegate",
-        "printedName": "BrivoSDKActivityDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "log",
-            "printedName": "log(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore0A19SDKActivityDelegateP3logyySSF",
-            "mangledName": "$s9BrivoCore0A19SDKActivityDelegateP3logyySSF",
-            "moduleName": "BrivoCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : BrivoCore.BrivoSDKActivityDelegate>",
-            "sugared_genericSig": "<Self where Self : BrivoCore.BrivoSDKActivityDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "error",
-            "printedName": "error(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:9BrivoCore0A19SDKActivityDelegateP5erroryyAA0A5ErrorCF",
-            "mangledName": "$s9BrivoCore0A19SDKActivityDelegateP5erroryyAA0A5ErrorCF",
-            "moduleName": "BrivoCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : BrivoCore.BrivoSDKActivityDelegate>",
-            "sugared_genericSig": "<Self where Self : BrivoCore.BrivoSDKActivityDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:9BrivoCore0A19SDKActivityDelegateP",
-        "mangledName": "$s9BrivoCore0A19SDKActivityDelegateP",
-        "moduleName": "BrivoCore",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -6951,6 +6769,46 @@
             "moduleName": "BrivoCore"
           },
           {
+            "kind": "Var",
+            "name": "stringValue",
+            "printedName": "stringValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore8DoorTypeO11stringValueSSvp",
+            "mangledName": "$s9BrivoCore8DoorTypeO11stringValueSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore8DoorTypeO11stringValueSSvg",
+                "mangledName": "$s9BrivoCore8DoorTypeO11stringValueSSvg",
+                "moduleName": "BrivoCore",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -7095,6 +6953,299 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OSLog",
+        "printedName": "OSLog",
+        "declKind": "Import",
+        "moduleName": "BrivoCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ConsoleOutput",
+        "printedName": "ConsoleOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "acceptedLogLevels",
+            "printedName": "acceptedLogLevels",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<BrivoCore.SDKLogLevel>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLogLevel",
+                    "printedName": "BrivoCore.SDKLogLevel",
+                    "usr": "s:9BrivoCore11SDKLogLevelO"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore13ConsoleOutputC17acceptedLogLevelsShyAA11SDKLogLevelOGvp",
+            "mangledName": "$s9BrivoCore13ConsoleOutputC17acceptedLogLevelsShyAA11SDKLogLevelOGvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<BrivoCore.SDKLogLevel>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLogLevel",
+                        "printedName": "BrivoCore.SDKLogLevel",
+                        "usr": "s:9BrivoCore11SDKLogLevelO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore13ConsoleOutputC17acceptedLogLevelsShyAA11SDKLogLevelOGvg",
+                "mangledName": "$s9BrivoCore13ConsoleOutputC17acceptedLogLevelsShyAA11SDKLogLevelOGvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<BrivoCore.SDKLogLevel>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLogLevel",
+                        "printedName": "BrivoCore.SDKLogLevel",
+                        "usr": "s:9BrivoCore11SDKLogLevelO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore13ConsoleOutputC17acceptedLogLevelsShyAA11SDKLogLevelOGvs",
+                "mangledName": "$s9BrivoCore13ConsoleOutputC17acceptedLogLevelsShyAA11SDKLogLevelOGvs",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore13ConsoleOutputC17acceptedLogLevelsShyAA11SDKLogLevelOGvM",
+                "mangledName": "$s9BrivoCore13ConsoleOutputC17acceptedLogLevelsShyAA11SDKLogLevelOGvM",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ConsoleOutput",
+                "printedName": "BrivoCore.ConsoleOutput",
+                "usr": "s:9BrivoCore13ConsoleOutputC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore13ConsoleOutputCACycfc",
+            "mangledName": "$s9BrivoCore13ConsoleOutputCACycfc",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "sendLog",
+            "printedName": "sendLog(subsystem:level:message:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDKLogLevel",
+                "printedName": "BrivoCore.SDKLogLevel",
+                "usr": "s:9BrivoCore11SDKLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore13ConsoleOutputC7sendLog9subsystem5level7message3tag8metadata4file8function4lineySS_AA11SDKLogLevelOS2SSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "mangledName": "$s9BrivoCore13ConsoleOutputC7sendLog9subsystem5level7message3tag8metadata4file8function4lineySS_AA11SDKLogLevelOS2SSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9BrivoCore13ConsoleOutputC",
+        "mangledName": "$s9BrivoCore13ConsoleOutputC",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LoggerOutput",
+            "printedName": "LoggerOutput",
+            "usr": "s:9BrivoCore12LoggerOutputP",
+            "mangledName": "$s9BrivoCore12LoggerOutputP"
           }
         ]
       },
@@ -7282,6 +7433,48 @@
             "static": true,
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore15NFCUnlinkStatusO11descriptionSSvp",
+            "mangledName": "$s9BrivoCore15NFCUnlinkStatusO11descriptionSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore15NFCUnlinkStatusO11descriptionSSvg",
+                "mangledName": "$s9BrivoCore15NFCUnlinkStatusO11descriptionSSvg",
+                "moduleName": "BrivoCore",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -7319,6 +7512,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
           }
         ]
       },
@@ -7543,6 +7743,48 @@
             "static": true,
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore20NFCAddToWalletStatusO11descriptionSSvp",
+            "mangledName": "$s9BrivoCore20NFCAddToWalletStatusO11descriptionSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore20NFCAddToWalletStatusO11descriptionSSvg",
+                "mangledName": "$s9BrivoCore20NFCAddToWalletStatusO11descriptionSSvg",
+                "moduleName": "BrivoCore",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -7580,6 +7822,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
           }
         ]
       },
@@ -8188,6 +8437,36 @@
             ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addLoggingMonitor",
+            "printedName": "addLoggingMonitor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoggerOutput",
+                "printedName": "any BrivoCore.LoggerOutput",
+                "usr": "s:9BrivoCore12LoggerOutputP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore9IBrivoSDKP17addLoggingMonitoryyAA12LoggerOutput_pF",
+            "mangledName": "$s9BrivoCore9IBrivoSDKP17addLoggingMonitoryyAA12LoggerOutput_pF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoCore.IBrivoSDK>",
+            "sugared_genericSig": "<Self where Self : BrivoCore.IBrivoSDK>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
@@ -8323,6 +8602,1148 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "LoggerTagType",
+        "printedName": "LoggerTagType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "network",
+            "printedName": "network",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO7networkyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO7networkyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "auth",
+            "printedName": "auth",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO4authyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO4authyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "database",
+            "printedName": "database",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO8databaseyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO8databaseyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoSDKConfigure",
+            "printedName": "brivoSDKConfigure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO17brivoSDKConfigureyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO17brivoSDKConfigureyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoAccess",
+            "printedName": "brivoAccess",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO11brivoAccessyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO11brivoAccessyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoOnAir",
+            "printedName": "brivoOnAir",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO10brivoOnAiryA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO10brivoOnAiryA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoBLE",
+            "printedName": "brivoBLE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO8brivoBLEyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO8brivoBLEyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoLocalAuthentication",
+            "printedName": "brivoLocalAuthentication",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO24brivoLocalAuthenticationyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO24brivoLocalAuthenticationyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoSmartHome",
+            "printedName": "brivoSmartHome",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO14brivoSmartHomeyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO14brivoSmartHomeyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoCore",
+            "printedName": "brivoCore",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO05brivoB0yA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO05brivoB0yA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoHidOrigo",
+            "printedName": "brivoHidOrigo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO13brivoHidOrigoyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO13brivoHidOrigoyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoNFC",
+            "printedName": "brivoNFC",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO8brivoNFCyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO8brivoNFCyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoSDKBLEAllegion",
+            "printedName": "brivoSDKBLEAllegion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO19brivoSDKBLEAllegionyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO19brivoSDKBLEAllegionyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.LoggerTagType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore13LoggerTagTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "BrivoCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore13LoggerTagTypeO8rawValueSSvp",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO8rawValueSSvp",
+            "moduleName": "BrivoCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore13LoggerTagTypeO8rawValueSSvg",
+                "mangledName": "$s9BrivoCore13LoggerTagTypeO8rawValueSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9BrivoCore13LoggerTagTypeO",
+        "mangledName": "$s9BrivoCore13LoggerTagTypeO",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoggerWrapper",
+        "printedName": "LoggerWrapper",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.LoggerTagType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore13LoggerWrapperO5error_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "mangledName": "$s9BrivoCore13LoggerWrapperO5error_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warning",
+            "printedName": "warning(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.LoggerTagType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore13LoggerWrapperO7warning_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "mangledName": "$s9BrivoCore13LoggerWrapperO7warning_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.LoggerTagType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore13LoggerWrapperO5debug_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "mangledName": "$s9BrivoCore13LoggerWrapperO5debug_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.LoggerTagType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore13LoggerWrapperO4info_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "mangledName": "$s9BrivoCore13LoggerWrapperO4info_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verbose",
+            "printedName": "verbose(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.LoggerTagType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore13LoggerWrapperO7verbose_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "mangledName": "$s9BrivoCore13LoggerWrapperO7verbose_3tag8metadata4file8function4lineySS_AA0C7TagTypeOSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:9BrivoCore13LoggerWrapperO",
+        "mangledName": "$s9BrivoCore13LoggerWrapperO",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -8330,6 +9751,939 @@
         "moduleName": "BrivoCore",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LoggerOutput",
+        "printedName": "LoggerOutput",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "acceptedLogLevels",
+            "printedName": "acceptedLogLevels",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Set",
+                "printedName": "Swift.Set<BrivoCore.SDKLogLevel>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SDKLogLevel",
+                    "printedName": "BrivoCore.SDKLogLevel",
+                    "usr": "s:9BrivoCore11SDKLogLevelO"
+                  }
+                ],
+                "usr": "s:Sh"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore12LoggerOutputP17acceptedLogLevelsShyAA11SDKLogLevelOGvp",
+            "mangledName": "$s9BrivoCore12LoggerOutputP17acceptedLogLevelsShyAA11SDKLogLevelOGvp",
+            "moduleName": "BrivoCore",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Set",
+                    "printedName": "Swift.Set<BrivoCore.SDKLogLevel>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SDKLogLevel",
+                        "printedName": "BrivoCore.SDKLogLevel",
+                        "usr": "s:9BrivoCore11SDKLogLevelO"
+                      }
+                    ],
+                    "usr": "s:Sh"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore12LoggerOutputP17acceptedLogLevelsShyAA11SDKLogLevelOGvg",
+                "mangledName": "$s9BrivoCore12LoggerOutputP17acceptedLogLevelsShyAA11SDKLogLevelOGvg",
+                "moduleName": "BrivoCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : BrivoCore.LoggerOutput>",
+                "sugared_genericSig": "<Self where Self : BrivoCore.LoggerOutput>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "sendLog",
+            "printedName": "sendLog(subsystem:level:message:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SDKLogLevel",
+                "printedName": "BrivoCore.SDKLogLevel",
+                "usr": "s:9BrivoCore11SDKLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore12LoggerOutputP7sendLog9subsystem5level7message3tag8metadata4file8function4lineySS_AA11SDKLogLevelOS2SSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "mangledName": "$s9BrivoCore12LoggerOutputP7sendLog9subsystem5level7message3tag8metadata4file8function4lineySS_AA11SDKLogLevelOS2SSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoCore.LoggerOutput>",
+            "sugared_genericSig": "<Self where Self : BrivoCore.LoggerOutput>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:9BrivoCore12LoggerOutputP",
+        "mangledName": "$s9BrivoCore12LoggerOutputP",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrivoLogger",
+        "printedName": "BrivoLogger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isEnabled",
+            "printedName": "isEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A6LoggerC9isEnabledSbvp",
+            "mangledName": "$s9BrivoCore0A6LoggerC9isEnabledSbvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A6LoggerC9isEnabledSbvg",
+                "mangledName": "$s9BrivoCore0A6LoggerC9isEnabledSbvg",
+                "moduleName": "BrivoCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+                "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A6LoggerC9isEnabledSbvs",
+                "mangledName": "$s9BrivoCore0A6LoggerC9isEnabledSbvs",
+                "moduleName": "BrivoCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+                "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A6LoggerC9isEnabledSbvM",
+                "mangledName": "$s9BrivoCore0A6LoggerC9isEnabledSbvM",
+                "moduleName": "BrivoCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+                "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(subsystem:outputs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoLogger",
+                "printedName": "BrivoCore.BrivoLogger<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:9BrivoCore0A6LoggerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any BrivoCore.LoggerOutput]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerOutput",
+                    "printedName": "any BrivoCore.LoggerOutput",
+                    "usr": "s:9BrivoCore12LoggerOutputP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore0A6LoggerC9subsystem7outputsACyxGSS_SayAA0C6Output_pGtcfc",
+            "mangledName": "$s9BrivoCore0A6LoggerC9subsystem7outputsACyxGSS_SayAA0C6Output_pGtcfc",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "add",
+            "printedName": "add(output:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LoggerOutput",
+                "printedName": "any BrivoCore.LoggerOutput",
+                "usr": "s:9BrivoCore12LoggerOutputP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A6LoggerC3add6outputyAA0C6Output_p_tF",
+            "mangledName": "$s9BrivoCore0A6LoggerC3add6outputyAA0C6Output_p_tF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAllOutputs",
+            "printedName": "removeAllOutputs()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A6LoggerC16removeAllOutputsyyF",
+            "mangledName": "$s9BrivoCore0A6LoggerC16removeAllOutputsyyF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "error",
+            "printedName": "error(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A6LoggerC5error_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "mangledName": "$s9BrivoCore0A6LoggerC5error_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "warning",
+            "printedName": "warning(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A6LoggerC7warning_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "mangledName": "$s9BrivoCore0A6LoggerC7warning_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "debug",
+            "printedName": "debug(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A6LoggerC5debug_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "mangledName": "$s9BrivoCore0A6LoggerC5debug_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "info",
+            "printedName": "info(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A6LoggerC4info_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "mangledName": "$s9BrivoCore0A6LoggerC4info_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "verbose",
+            "printedName": "verbose(_:tag:metadata:file:function:line:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.CustomStringConvertible & Swift.Sendable)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "any Swift.CustomStringConvertible & Swift.Sendable"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A6LoggerC7verbose_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "mangledName": "$s9BrivoCore0A6LoggerC7verbose_3tag8metadata4file8function4lineySS_xSgSDySSs23CustomStringConvertible_s8SendablepSgGSgS2SSitF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+            "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9BrivoCore0A6LoggerC",
+        "mangledName": "$s9BrivoCore0A6LoggerC",
+        "moduleName": "BrivoCore",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.RawRepresentable, τ_0_0 : Swift.Sendable, τ_0_0.RawValue == Swift.String>",
+        "sugared_genericSig": "<TagType where TagType : Swift.RawRepresentable, TagType : Swift.Sendable, TagType.RawValue == Swift.String>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
         ]
       },
       {
@@ -8661,13 +11015,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9BrivoCore9ConstantsC10KEY_PASSESSSvpZ",
-            "mangledName": "$s9BrivoCore9ConstantsC10KEY_PASSESSSvpZ",
+            "usr": "s:9BrivoCore9ConstantsO10KEY_PASSESSSvpZ",
+            "mangledName": "$s9BrivoCore9ConstantsO10KEY_PASSESSSvpZ",
             "moduleName": "BrivoCore",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -8687,14 +11040,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9BrivoCore9ConstantsC10KEY_PASSESSSvgZ",
-                "mangledName": "$s9BrivoCore9ConstantsC10KEY_PASSESSSvgZ",
+                "usr": "s:9BrivoCore9ConstantsO10KEY_PASSESSSvgZ",
+                "mangledName": "$s9BrivoCore9ConstantsO10KEY_PASSESSSvgZ",
                 "moduleName": "BrivoCore",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -8712,13 +11062,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9BrivoCore9ConstantsC13KEY_PASSES_EUSSvpZ",
-            "mangledName": "$s9BrivoCore9ConstantsC13KEY_PASSES_EUSSvpZ",
+            "usr": "s:9BrivoCore9ConstantsO13KEY_PASSES_EUSSvpZ",
+            "mangledName": "$s9BrivoCore9ConstantsO13KEY_PASSES_EUSSvpZ",
             "moduleName": "BrivoCore",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -8738,14 +11087,11 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9BrivoCore9ConstantsC13KEY_PASSES_EUSSvgZ",
-                "mangledName": "$s9BrivoCore9ConstantsC13KEY_PASSES_EUSSvgZ",
+                "usr": "s:9BrivoCore9ConstantsO13KEY_PASSES_EUSSvgZ",
+                "mangledName": "$s9BrivoCore9ConstantsO13KEY_PASSES_EUSSvgZ",
                 "moduleName": "BrivoCore",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -8763,13 +11109,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:9BrivoCore9ConstantsC13KEY_DEVICE_IDSSvpZ",
-            "mangledName": "$s9BrivoCore9ConstantsC13KEY_DEVICE_IDSSvpZ",
+            "usr": "s:9BrivoCore9ConstantsO13KEY_DEVICE_IDSSvpZ",
+            "mangledName": "$s9BrivoCore9ConstantsO13KEY_DEVICE_IDSSvpZ",
             "moduleName": "BrivoCore",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
-              "Final",
               "HasStorage",
               "AccessControl"
             ],
@@ -8789,28 +11134,24 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9BrivoCore9ConstantsC13KEY_DEVICE_IDSSvgZ",
-                "mangledName": "$s9BrivoCore9ConstantsC13KEY_DEVICE_IDSSvgZ",
+                "usr": "s:9BrivoCore9ConstantsO13KEY_DEVICE_IDSSvgZ",
+                "mangledName": "$s9BrivoCore9ConstantsO13KEY_DEVICE_IDSSvgZ",
                 "moduleName": "BrivoCore",
                 "static": true,
                 "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
           }
         ],
-        "declKind": "Class",
-        "usr": "s:9BrivoCore9ConstantsC",
-        "mangledName": "$s9BrivoCore9ConstantsC",
+        "declKind": "Enum",
+        "usr": "s:9BrivoCore9ConstantsO",
+        "mangledName": "$s9BrivoCore9ConstantsO",
         "moduleName": "BrivoCore",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -12117,9 +14458,16 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2247,
+      "offset": 2269,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2614,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoControlLockUserRecord.swift",
@@ -12213,25 +14561,60 @@
       "value": "6"
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 441,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
+      "kind": "Array",
+      "offset": 790,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1143,
+      "length": 18,
+      "value": "\"com.brivo.logger\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 1228,
+      "length": 24,
+      "value": "\"com.brivo.logger.state\""
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 262,
+      "offset": 261,
       "length": 12,
       "value": "\"KEY_PASSES\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 321,
+      "offset": 320,
       "length": 15,
       "value": "\"KEY_PASSES_EU\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 383,
+      "offset": 382,
       "length": 15,
       "value": "\"KEY_DEVICE_ID\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 461,
+      "length": 21,
+      "value": "\"com.brivo.MobileSDK\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",

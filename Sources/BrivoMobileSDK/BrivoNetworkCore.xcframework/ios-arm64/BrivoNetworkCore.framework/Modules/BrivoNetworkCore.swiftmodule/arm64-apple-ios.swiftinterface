@@ -13,6 +13,7 @@ public struct HttpStatusCodes {
   public static let forbidden: Swift.Int
   public static let badRequest: Swift.Int
   public static let notFound: Swift.Int
+  public static let internalServerError: Swift.Int
   public static let noInternetStatusCode: Swift.Int
   public static let noDataConnectionStatusCode: Swift.Int
 }

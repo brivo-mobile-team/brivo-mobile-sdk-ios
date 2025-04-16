@@ -2154,126 +2154,126 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 744,
+      "offset": 736,
       "length": 68,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 775,
+      "offset": 767,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 809,
+      "offset": 801,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 811,
+      "offset": 803,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 835,
+      "offset": 827,
       "length": 69,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 866,
+      "offset": 858,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 892,
+      "offset": 884,
       "length": 10,
       "value": "\"BRIVOSDK\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 903,
+      "offset": 895,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1024,
+      "offset": 1016,
       "length": 48,
       "value": "\"HID-BRIVO-\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1052,
+      "offset": 1044,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1071,
+      "offset": 1063,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1117,
+      "offset": 1101,
       "length": 29,
       "value": "\"HID-BRIVO-\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1145,
+      "offset": 1129,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1235,
+      "offset": 1219,
       "length": 45,
       "value": "\"com.HID.origoSDK.backgroundProcessingTaskID\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1320,
+      "offset": 1304,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1367,
+      "offset": 1351,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1410,
+      "offset": 1394,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1525,
+      "offset": 1509,
       "length": 2,
       "value": "30"
     },
@@ -2286,22 +2286,15 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
-      "kind": "StringLiteral",
-      "offset": 278,
-      "length": 18,
-      "value": "\"BrivoSDKHIDOrigo\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
       "kind": "IntegerLiteral",
-      "offset": 337,
+      "offset": 290,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
       "kind": "BooleanLiteral",
-      "offset": 631,
+      "offset": 584,
       "length": 5,
       "value": "false"
     }

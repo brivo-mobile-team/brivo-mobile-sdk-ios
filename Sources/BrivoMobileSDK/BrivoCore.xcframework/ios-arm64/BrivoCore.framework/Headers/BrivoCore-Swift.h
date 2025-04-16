@@ -363,6 +363,7 @@ SWIFT_CLASS("_TtC9BrivoCore8BrivoSDK")
 @end
 
 
+
 /// Defines the configuration object needed by the BrivoSDK in order to function properly.
 /// \param clientId Brivo client id
 ///

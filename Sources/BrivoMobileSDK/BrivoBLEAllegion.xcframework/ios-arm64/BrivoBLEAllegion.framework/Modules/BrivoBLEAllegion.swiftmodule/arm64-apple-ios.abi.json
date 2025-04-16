@@ -16,6 +16,23 @@
       },
       {
         "kind": "Import",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion"
+      },
+      {
+        "kind": "Import",
         "name": "Allegion_Access_MobileAccessSDK_iOS",
         "printedName": "Allegion_Access_MobileAccessSDK_iOS",
         "declKind": "Import",
@@ -42,17 +59,330 @@
         "moduleName": "BrivoBLEAllegion"
       },
       {
-        "kind": "Import",
-        "name": "BrivoBLE",
-        "printedName": "BrivoBLE",
-        "declKind": "Import",
-        "moduleName": "BrivoBLEAllegion"
+        "kind": "TypeDecl",
+        "name": "RefreshType",
+        "printedName": "RefreshType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ignoringLocalCacheData",
+            "printedName": "ignoringLocalCacheData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLEAllegion.RefreshType.Type) -> BrivoBLEAllegion.RefreshType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshType",
+                    "printedName": "BrivoBLEAllegion.RefreshType",
+                    "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLEAllegion.RefreshType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefreshType",
+                        "printedName": "BrivoBLEAllegion.RefreshType",
+                        "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoBLEAllegion11RefreshTypeO22ignoringLocalCacheDatayA2CmF",
+            "mangledName": "$s16BrivoBLEAllegion11RefreshTypeO22ignoringLocalCacheDatayA2CmF",
+            "moduleName": "BrivoBLEAllegion"
+          },
+          {
+            "kind": "Var",
+            "name": "validatingCacheData",
+            "printedName": "validatingCacheData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLEAllegion.RefreshType.Type) -> BrivoBLEAllegion.RefreshType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshType",
+                    "printedName": "BrivoBLEAllegion.RefreshType",
+                    "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLEAllegion.RefreshType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefreshType",
+                        "printedName": "BrivoBLEAllegion.RefreshType",
+                        "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoBLEAllegion11RefreshTypeO19validatingCacheDatayA2CmF",
+            "mangledName": "$s16BrivoBLEAllegion11RefreshTypeO19validatingCacheDatayA2CmF",
+            "moduleName": "BrivoBLEAllegion"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshType",
+                "printedName": "BrivoBLEAllegion.RefreshType",
+                "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshType",
+                "printedName": "BrivoBLEAllegion.RefreshType",
+                "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion11RefreshTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16BrivoBLEAllegion11RefreshTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "BrivoBLEAllegion",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion11RefreshTypeO9hashValueSivp",
+            "mangledName": "$s16BrivoBLEAllegion11RefreshTypeO9hashValueSivp",
+            "moduleName": "BrivoBLEAllegion",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion11RefreshTypeO9hashValueSivg",
+                "mangledName": "$s16BrivoBLEAllegion11RefreshTypeO9hashValueSivg",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion11RefreshTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s16BrivoBLEAllegion11RefreshTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "BrivoBLEAllegion",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16BrivoBLEAllegion11RefreshTypeO",
+        "mangledName": "$s16BrivoBLEAllegion11RefreshTypeO",
+        "moduleName": "BrivoBLEAllegion",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
         "name": "IBrivoSDKBLEAllegion",
         "printedName": "IBrivoSDKBLEAllegion",
         "children": [
+          {
+            "kind": "Var",
+            "name": "sdkState",
+            "printedName": "sdkState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP8sdkStateAA0aD0C0F0Vvp",
+            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP8sdkStateAA0aD0C0F0Vvp",
+            "moduleName": "BrivoBLEAllegion",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP8sdkStateAA0aD0C0F0Vvg",
+                "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP8sdkStateAA0aD0C0F0Vvg",
+                "moduleName": "BrivoBLEAllegion",
+                "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
+                "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkStates",
+            "printedName": "sdkStates",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<BrivoBLEAllegion.BrivoSDKBLEAllegion.State>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                  }
+                ],
+                "usr": "s:ScS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP9sdkStatesScSyAA0aD0C5StateVGvp",
+            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP9sdkStatesScSyAA0aD0C5StateVGvp",
+            "moduleName": "BrivoBLEAllegion",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AsyncStream",
+                    "printedName": "_Concurrency.AsyncStream<BrivoBLEAllegion.BrivoSDKBLEAllegion.State>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                      }
+                    ],
+                    "usr": "s:ScS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP9sdkStatesScSyAA0aD0C5StateVGvg",
+                "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP9sdkStatesScSyAA0aD0C5StateVGvg",
+                "moduleName": "BrivoBLEAllegion",
+                "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
+                "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -86,7 +416,7 @@
           {
             "kind": "Function",
             "name": "refreshCredentials",
-            "printedName": "refreshCredentials(brivoOnAirPass:)",
+            "printedName": "refreshCredentials(brivoOnAirPass:refreshType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -112,11 +442,77 @@
                 "name": "BrivoOnairPass",
                 "printedName": "BrivoOnAir.BrivoOnairPass",
                 "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshType",
+                "printedName": "BrivoBLEAllegion.RefreshType",
+                "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials14brivoOnAirPasss6ResultOyyt0A4Core0A5ErrorCG0ahI00a5OnairJ0C_tYaF",
-            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials14brivoOnAirPasss6ResultOyyt0A4Core0A5ErrorCG0ahI00a5OnairJ0C_tYaF",
+            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials14brivoOnAirPass0E4Types6ResultOyyt0A4Core0A5ErrorCG0ahI00a5OnairJ0C_AA07RefreshK0OtYaF",
+            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials14brivoOnAirPass0E4Types6ResultOyyt0A4Core0A5ErrorCG0ahI00a5OnairJ0C_AA07RefreshK0OtYaF",
+            "moduleName": "BrivoBLEAllegion",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
+            "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
+            "deprecated": true,
+            "protocolReq": true,
+            "declAttributes": [
+              "Available",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshCredentials",
+            "printedName": "refreshCredentials(brivoOnAirPasses:refreshType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BrivoOnAir.BrivoOnairPass]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoOnairPass",
+                    "printedName": "BrivoOnAir.BrivoOnairPass",
+                    "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshType",
+                "printedName": "BrivoBLEAllegion.RefreshType",
+                "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials16brivoOnAirPasses0E4Types6ResultOyyt0A4Core0A5ErrorCGSay0ahI00A9OnairPassCG_AA07RefreshK0OtYaF",
+            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials16brivoOnAirPasses0E4Types6ResultOyyt0A4Core0A5ErrorCGSay0ahI00A9OnairPassCG_AA07RefreshK0OtYaF",
             "moduleName": "BrivoBLEAllegion",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
             "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
@@ -170,6 +566,44 @@
             "declKind": "Func",
             "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP17unlockAccessPoint06accessG018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedfG0C_AG012CancellationJ0CSgtF",
             "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP17unlockAccessPoint06accessG018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedfG0C_AG012CancellationJ0CSgtF",
+            "moduleName": "BrivoBLEAllegion",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
+            "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearCredentials",
+            "printedName": "clearCredentials()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
             "moduleName": "BrivoBLEAllegion",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
             "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
@@ -248,6 +682,13 @@
       },
       {
         "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion"
+      },
+      {
+        "kind": "Import",
         "name": "Allegion_Access_MobileAccessSDK_iOS",
         "printedName": "Allegion_Access_MobileAccessSDK_iOS",
         "declKind": "Import",
@@ -261,6 +702,160 @@
         "name": "BrivoSDKBLEAllegion",
         "printedName": "BrivoSDKBLEAllegion",
         "children": [
+          {
+            "kind": "Var",
+            "name": "sdkState",
+            "printedName": "sdkState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "State",
+                "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC8sdkStateAC0E0Vvp",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC8sdkStateAC0E0Vvp",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "Final",
+              "ProjectedValueProperty",
+              "SetterAccess",
+              "AccessControl",
+              "Custom",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC8sdkStateAC0E0Vvg",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC8sdkStateAC0E0Vvg",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "$sdkState",
+            "printedName": "$sdkState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Publisher",
+                "printedName": "Combine.Published<BrivoBLEAllegion.BrivoSDKBLEAllegion.State>.Publisher",
+                "usr": "s:7Combine9PublishedV9PublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC9$sdkState7Combine9PublishedV9PublisherVyAC0E0V_Gvp",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC9$sdkState7Combine9PublishedV9PublisherVyAC0E0V_Gvp",
+            "moduleName": "BrivoBLEAllegion",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Publisher",
+                    "printedName": "Combine.Published<BrivoBLEAllegion.BrivoSDKBLEAllegion.State>.Publisher",
+                    "usr": "s:7Combine9PublishedV9PublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC9$sdkState7Combine9PublishedV9PublisherVyAC0E0V_Gvg",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC9$sdkState7Combine9PublishedV9PublisherVyAC0E0V_Gvg",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkStates",
+            "printedName": "sdkStates",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<BrivoBLEAllegion.BrivoSDKBLEAllegion.State>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                  }
+                ],
+                "usr": "s:ScS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC9sdkStatesScSyAC5StateVGvp",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC9sdkStatesScSyAC5StateVGvp",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AsyncStream",
+                    "printedName": "_Concurrency.AsyncStream<BrivoBLEAllegion.BrivoSDKBLEAllegion.State>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                      }
+                    ],
+                    "usr": "s:ScS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC9sdkStatesScSyAC5StateVGvg",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC9sdkStatesScSyAC5StateVGvg",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "instance",
@@ -444,7 +1039,63 @@
           {
             "kind": "Function",
             "name": "refreshCredentials",
-            "printedName": "refreshCredentials(brivoOnAirPass:)",
+            "printedName": "refreshCredentials(brivoOnAirPasses:refreshType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BrivoOnAir.BrivoOnairPass]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoOnairPass",
+                    "printedName": "BrivoOnAir.BrivoOnairPass",
+                    "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshType",
+                "printedName": "BrivoBLEAllegion.RefreshType",
+                "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials16brivoOnAirPasses0D4Types6ResultOyyt0A4Core0A5ErrorCGSay0agH00A9OnairPassCG_AA07RefreshJ0OtYaF",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials16brivoOnAirPasses0D4Types6ResultOyyt0A4Core0A5ErrorCGSay0agH00A9OnairPassCG_AA07RefreshJ0OtYaF",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Custom"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshCredentials",
+            "printedName": "refreshCredentials(brivoOnAirPass:refreshType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -470,11 +1121,54 @@
                 "name": "BrivoOnairPass",
                 "printedName": "BrivoOnAir.BrivoOnairPass",
                 "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshType",
+                "printedName": "BrivoBLEAllegion.RefreshType",
+                "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials14brivoOnAirPasss6ResultOyyt0A4Core0A5ErrorCG0agH00a5OnairI0C_tYaF",
-            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials14brivoOnAirPasss6ResultOyyt0A4Core0A5ErrorCG0agH00a5OnairI0C_tYaF",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials14brivoOnAirPass0D4Types6ResultOyyt0A4Core0A5ErrorCG0agH00a5OnairI0C_AA07RefreshJ0OtYaF",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials14brivoOnAirPass0D4Types6ResultOyyt0A4Core0A5ErrorCG0agH00a5OnairI0C_AA07RefreshJ0OtYaF",
+            "moduleName": "BrivoBLEAllegion",
+            "deprecated": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearCredentials",
+            "printedName": "clearCredentials()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<(), BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
             "moduleName": "BrivoBLEAllegion",
             "declAttributes": [
               "Final",
@@ -482,6 +1176,852 @@
               "Custom"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "State",
+            "printedName": "State",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "activeOperation",
+                "printedName": "activeOperation",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActiveOperation",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperationAC06ActiveF0Ovp",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperationAC06ActiveF0Ovp",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActiveOperation",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperationAC06ActiveF0Ovg",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperationAC06ActiveF0Ovg",
+                    "moduleName": "BrivoBLEAllegion",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActiveOperation",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperationAC06ActiveF0Ovs",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperationAC06ActiveF0Ovs",
+                    "moduleName": "BrivoBLEAllegion",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperationAC06ActiveF0OvM",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperationAC06ActiveF0OvM",
+                    "moduleName": "BrivoBLEAllegion",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "passesSynchroniseStatus",
+                "printedName": "passesSynchroniseStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SynchroniseStatus",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV23passesSynchroniseStatusSDySSAC0fG0OGvp",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV23passesSynchroniseStatusSDySSAC0fG0OGvp",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SynchroniseStatus",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV23passesSynchroniseStatusSDySSAC0fG0OGvg",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV23passesSynchroniseStatusSDySSAC0fG0OGvg",
+                    "moduleName": "BrivoBLEAllegion",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Set",
+                    "printedName": "Set()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SynchroniseStatus",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV23passesSynchroniseStatusSDySSAC0fG0OGvs",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV23passesSynchroniseStatusSDySSAC0fG0OGvs",
+                    "moduleName": "BrivoBLEAllegion",
+                    "implicit": true,
+                    "accessorKind": "set"
+                  },
+                  {
+                    "kind": "Accessor",
+                    "name": "Modify",
+                    "printedName": "Modify()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV23passesSynchroniseStatusSDySSAC0fG0OGvM",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV23passesSynchroniseStatusSDySSAC0fG0OGvM",
+                    "moduleName": "BrivoBLEAllegion",
+                    "implicit": true,
+                    "accessorKind": "_modify"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(activeOperation:passesSynchroniseStatus:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActiveOperation",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SynchroniseStatus",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperation23passesSynchroniseStatusAeC06ActiveF0O_SDySSAC0hI0OGtcfc",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV15activeOperation23passesSynchroniseStatusAeC06ActiveF0O_SDySSAC0hI0OGtcfc",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.State",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV2eeoiySbAE_AEtFZ",
+                "moduleName": "BrivoBLEAllegion",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC5StateV",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "SynchroniseStatus",
+            "printedName": "SynchroniseStatus",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "unknown",
+                "printedName": "unknown",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus.Type) -> BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SynchroniseStatus",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SynchroniseStatus",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO7unknownyA2EmF",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO7unknownyA2EmF",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "success",
+                "printedName": "success",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus.Type) -> ([BrivoBLEAllegion.LockStatus]) -> BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "([BrivoBLEAllegion.LockStatus]) -> BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SynchroniseStatus",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[BrivoBLEAllegion.LockStatus]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "LockStatus",
+                                "printedName": "BrivoBLEAllegion.LockStatus",
+                                "usr": "s:16BrivoBLEAllegion10LockStatusV"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SynchroniseStatus",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO7successyAESayAA04LockE0VGcAEmF",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO7successyAESayAA04LockE0VGcAEmF",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "failure",
+                "printedName": "failure",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus.Type) -> BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SynchroniseStatus",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "SynchroniseStatus",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO7failureyA2EmF",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO7failureyA2EmF",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SynchroniseStatus",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SynchroniseStatus",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO2eeoiySbAE_AEtFZ",
+                "moduleName": "BrivoBLEAllegion",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC17SynchroniseStatusO",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "ActiveOperation",
+            "printedName": "ActiveOperation",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "none",
+                "printedName": "none",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation.Type) -> BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActiveOperation",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ActiveOperation",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO4noneyA2EmF",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO4noneyA2EmF",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "initialising",
+                "printedName": "initialising",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation.Type) -> BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActiveOperation",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ActiveOperation",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO12initialisingyA2EmF",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO12initialisingyA2EmF",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "refreshing",
+                "printedName": "refreshing",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation.Type) -> BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActiveOperation",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ActiveOperation",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO10refreshingyA2EmF",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO10refreshingyA2EmF",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unlocking",
+                "printedName": "unlocking",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation.Type) -> BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActiveOperation",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ActiveOperation",
+                            "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9unlockingyA2EmF",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9unlockingyA2EmF",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActiveOperation",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActiveOperation",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO2eeoiySbAE_AEtFZ",
+                "moduleName": "BrivoBLEAllegion",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9hashValueSivp",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9hashValueSivp",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9hashValueSivg",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9hashValueSivg",
+                    "moduleName": "BrivoBLEAllegion",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO4hash4intoys6HasherVz_tF",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
           }
         ],
         "declKind": "Class",
@@ -518,8 +2058,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
         "declKind": "Import",
         "moduleName": "BrivoBLEAllegion",
         "declAttributes": [
@@ -528,8 +2068,15 @@
       },
       {
         "kind": "Import",
-        "name": "BrivoCore",
-        "printedName": "BrivoCore",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BrivoBLEAllegion"
       },
@@ -572,6 +2119,13 @@
       },
       {
         "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -588,6 +2142,343 @@
         "moduleName": "BrivoBLEAllegion",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LockStatus",
+        "printedName": "LockStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "lockId",
+            "printedName": "lockId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV6lockIdSivp",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV6lockIdSivp",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV6lockIdSivg",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV6lockIdSivg",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV6lockIdSivs",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV6lockIdSivs",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV6lockIdSivM",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV6lockIdSivM",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isEligible",
+            "printedName": "isEligible",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV10isEligibleSbvp",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV10isEligibleSbvp",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV10isEligibleSbvg",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV10isEligibleSbvg",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV10isEligibleSbvs",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV10isEligibleSbvs",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV10isEligibleSbvM",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV10isEligibleSbvM",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(lockId:isEligible:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LockStatus",
+                "printedName": "BrivoBLEAllegion.LockStatus",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV6lockId10isEligibleACSi_Sbtcfc",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV6lockId10isEligibleACSi_Sbtcfc",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LockStatus",
+                "printedName": "BrivoBLEAllegion.LockStatus",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BrivoBLEAllegion",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BrivoBLEAllegion",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LockStatus",
+                "printedName": "BrivoBLEAllegion.LockStatus",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LockStatus",
+                "printedName": "BrivoBLEAllegion.LockStatus",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV2eeoiySbAC_ACtFZ",
+            "moduleName": "BrivoBLEAllegion",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16BrivoBLEAllegion10LockStatusV",
+        "mangledName": "$s16BrivoBLEAllegion10LockStatusV",
+        "moduleName": "BrivoBLEAllegion",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
         ]
       },
       {
@@ -700,12 +2591,29 @@
       },
       {
         "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion"
+      },
+      {
+        "kind": "Import",
         "name": "Allegion_Access_MobileAccessSDK_iOS",
         "printedName": "Allegion_Access_MobileAccessSDK_iOS",
         "declKind": "Import",
         "moduleName": "BrivoBLEAllegion",
         "declAttributes": [
           "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -768,6 +2676,13 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion"
       },
       {
         "kind": "Import",
@@ -1131,20 +3046,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/BrivoSDKBLEAllegion.swift",
-      "kind": "StringLiteral",
-      "offset": 347,
-      "length": 21,
-      "value": "\"BrivoSDKBLEAllegion\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/BrivoSDKBLEAllegion.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1633,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
       "kind": "IntegerLiteral",
       "offset": 414,
@@ -1222,6 +3123,20 @@
       "value": "-6010"
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 943,
+      "length": 5,
+      "value": "-6011"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 988,
+      "length": 5,
+      "value": "-6012"
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionDeviceSearchService.swift",
       "kind": "IntegerLiteral",
       "offset": 323,
@@ -1280,7 +3195,14 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
       "kind": "StringLiteral",
-      "offset": 608,
+      "offset": 618,
+      "length": 23,
+      "value": "\"allegionNeedsToResync\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoBLEAllegionConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 679,
       "length": 14,
       "value": "\"BLE_PLATINUM\""
     }

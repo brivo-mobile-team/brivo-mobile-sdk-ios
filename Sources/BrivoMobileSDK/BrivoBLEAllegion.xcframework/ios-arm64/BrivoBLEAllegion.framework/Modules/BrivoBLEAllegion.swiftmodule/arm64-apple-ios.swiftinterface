@@ -5,25 +5,89 @@ import BrivoBLE
 @_exported import BrivoBLEAllegion
 import BrivoCore
 import BrivoOnAir
+import Combine
 import Foundation
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension BrivoBLEAllegion.BrivoSDKBLEAllegion {
+  public struct State : Swift.Equatable {
+    public var activeOperation: BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation
+    public var passesSynchroniseStatus: [Swift.String : BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus]
+    public init(activeOperation: BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation, passesSynchroniseStatus: [Swift.String : BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus])
+    public static func == (a: BrivoBLEAllegion.BrivoSDKBLEAllegion.State, b: BrivoBLEAllegion.BrivoSDKBLEAllegion.State) -> Swift.Bool
+  }
+  public enum SynchroniseStatus : Swift.Equatable {
+    case unknown
+    case success([BrivoBLEAllegion.LockStatus])
+    case failure
+    public static func == (a: BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus, b: BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus) -> Swift.Bool
+  }
+  public enum ActiveOperation {
+    case none
+    case initialising
+    case refreshing
+    case unlocking
+    public static func == (a: BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation, b: BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public enum RefreshType {
+  case ignoringLocalCacheData
+  case validatingCacheData
+  public static func == (a: BrivoBLEAllegion.RefreshType, b: BrivoBLEAllegion.RefreshType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 public protocol IBrivoSDKBLEAllegion {
+  var sdkState: BrivoBLEAllegion.BrivoSDKBLEAllegion.State { get }
+  var sdkStates: _Concurrency.AsyncStream<BrivoBLEAllegion.BrivoSDKBLEAllegion.State> { get }
   init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration)
-  func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  @available(*, deprecated, message: "Use `refreshCredentials(brivoOnAirPasses: [BrivoOnairPass], refreshType: RefreshType) async -> Result<Void, BrivoError>`")
+  func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass, refreshType: BrivoBLEAllegion.RefreshType) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  func refreshCredentials(brivoOnAirPasses: [BrivoOnAir.BrivoOnairPass], refreshType: BrivoBLEAllegion.RefreshType) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
+  func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
 }
 final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
+  @Combine.Published @_projectedValueProperty($sdkState) final public var sdkState: BrivoBLEAllegion.BrivoSDKBLEAllegion.State {
+    get
+  }
+  final public var $sdkState: Combine.Published<BrivoBLEAllegion.BrivoSDKBLEAllegion.State>.Publisher {
+    get
+  }
+  final public var sdkStates: _Concurrency.AsyncStream<BrivoBLEAllegion.BrivoSDKBLEAllegion.State> {
+    get
+  }
   public static var instance: BrivoBLEAllegion.BrivoSDKBLEAllegion
   public init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration = .default)
   final public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
-  @_Concurrency.MainActor final public func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  @_Concurrency.MainActor final public func refreshCredentials(brivoOnAirPasses: [BrivoOnAir.BrivoOnairPass], refreshType: BrivoBLEAllegion.RefreshType) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  @available(*, deprecated, message: "Use `refreshCredentials(brivoOnAirPasses: [BrivoOnairPass], refreshType: RefreshType) async -> Result<Void, BrivoError>`")
+  final public func refreshCredentials(brivoOnAirPass: BrivoOnAir.BrivoOnairPass, refreshType: BrivoBLEAllegion.RefreshType) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  @_Concurrency.MainActor final public func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   @objc deinit
+}
+public struct LockStatus : Swift.Codable, Swift.Equatable {
+  public var lockId: Swift.Int
+  public var isEligible: Swift.Bool
+  public init(lockId: Swift.Int, isEligible: Swift.Bool)
+  public static func == (a: BrivoBLEAllegion.LockStatus, b: BrivoBLEAllegion.LockStatus) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public struct BrivoBLEAllegionConfiguration {
   public var subscriptionKey: Swift.String
   public var integrationId: Swift.String
   public static var `default`: BrivoBLEAllegion.BrivoBLEAllegionConfiguration
 }
+extension BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation : Swift.Equatable {}
+extension BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation : Swift.Hashable {}
+extension BrivoBLEAllegion.RefreshType : Swift.Equatable {}
+extension BrivoBLEAllegion.RefreshType : Swift.Hashable {}

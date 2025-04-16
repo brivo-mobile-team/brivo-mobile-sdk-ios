@@ -233,7 +233,10 @@ class BrivoPassesViewModel: ObservableObject {
     private func refreshAllegionCredentialsIfPossible(_ brivoOnairPass: BrivoOnairPass) async {
         guard brivoOnairPass.hasAllegionBleCredentials else { return }
         let brivoSDKBLEAllegion = BrivoSDKBLEAllegion.instance
-        _ = await brivoSDKBLEAllegion.refreshCredentials(brivoOnAirPass: brivoOnairPass)
+        _ = await brivoSDKBLEAllegion.refreshCredentials(
+            brivoOnAirPass: brivoOnairPass,
+            refreshType: .ignoringLocalCacheData
+        )
     }
 #endif
     

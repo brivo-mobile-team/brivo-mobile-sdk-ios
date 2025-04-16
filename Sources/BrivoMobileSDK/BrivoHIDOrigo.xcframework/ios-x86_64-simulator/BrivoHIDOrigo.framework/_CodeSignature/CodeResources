@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		4uGKnuwTNrFR1K1xic7/Ns+hzI0=
+		XDtEfetnyM6n7bh/2JJf1TVQL0U=
 		</data>
 		<key>Modules/BrivoHIDOrigo.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DN+8H5u7V2hUkREHZ2l4hVFuE8M=
+		G3iCHMW5HefpAeBY168ptD2NHJM=
 		</data>
 		<key>Modules/BrivoHIDOrigo.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/BrivoHIDOrigo.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		v9f5jis9mkXZAMdp54nfCXuR+UA=
+		RJ89vYGk2cdcHPjGag7S45gnSGw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,7 +69,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dgWGVFd9GIbMgcs4h67id0I6nM7f6mpI0hiaDbsg7BI=
+			z248LoOPmj3j67d2VE9Ws9xGNFWm5tVjkAQjSW/9SbE=
 			</data>
 		</dict>
 		<key>Modules/BrivoHIDOrigo.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f6GswM2TYq3msLmYYRgTGAexS/BrJSZsilmRLGSppLE=
+			NyB9dvaLQHKDsv6U8Bq7PYvFnTleU9u3XCJ9Qn7wmAY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -5,7 +5,7 @@
 //  Created by Gabriel Dusa on 27.07.2024.
 //
 
-struct AccessibilityIds {
+enum AccessibilityIds {
     static let navigationPlusButton = "navigationPlusButtonId"
     static let mobilePassEmailField = "mobilePassEmailFieldId"
     static let mobilePassInviteCodeField = "mobilePassInviteCodeFieldId"
@@ -15,4 +15,5 @@ struct AccessibilityIds {
     static let accountNameTextView = "accountNameId"
     static let noPassesTextView = "noPassesId"
     static let navigationSwitchEnvButton = "navigationSwitchEnvButtonId"
+    static let okButton = "OK"
 }
