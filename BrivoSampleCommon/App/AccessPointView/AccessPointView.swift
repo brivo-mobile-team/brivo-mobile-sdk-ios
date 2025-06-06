@@ -87,18 +87,6 @@ struct AccessPointView: View {
     }
 }
 
-class AccessPointViewModel {
-    init(brivoOnAirPass: BrivoOnairPass, brivoSites: BrivoOnAir.BrivoSite) {
-        self.brivoSites = brivoSites
-        self.brivoOnAirPass = brivoOnAirPass
-    }
-
-    let brivoOnAirPass: BrivoOnairPass
-    var brivoSites: BrivoOnAir.BrivoSite
-    private(set) lazy var accessPoints: [BrivoAccessPoint] = { brivoSites.accessPoints?.filter { $0.doorType != .hidOrigo } ?? [] }()
-    private(set) lazy var origoAccessPoints: [BrivoAccessPoint] = { brivoSites.accessPoints?.filter { $0.doorType == .hidOrigo } ?? [] }()
-}
-
 #Preview {
     AccessPointView(stateModel: .init(brivoOnAirPass: .init(), brivoSites: .init()))
 }

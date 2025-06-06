@@ -1,9 +1,10 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios17 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoHIDOrigo
 import BrivoBLE
 import BrivoCore
 @_exported import BrivoHIDOrigo
+import BrivoNetworkCore
 import BrivoOnAir
 import Foundation
 import OrigoSDK
@@ -12,6 +13,49 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum BrivoHIDOrigoError : Swift.Error {
+  public static var domain: Swift.String {
+    get
+  }
+  public struct Code {
+    public static let sdkIsBusy: Swift.Int
+    public static let startup: Swift.Int
+    public static let setup: Swift.Int
+    public static let update: Swift.Int
+    public static let scan: Swift.Int
+    public static let connect: Swift.Int
+    public static let communication: Swift.Int
+    public static let missingMobileKeys: Swift.Int
+    public static let cancelled: Swift.Int
+    public static let api: Swift.Int
+    public static let missingRights: Swift.Int
+    public static let walletSetup: Swift.Int
+    public static let walletUnsupported: Swift.Int
+  }
+  public enum Context : Swift.String {
+    case redeem
+    case unlockAccessPoint
+    case clearCredentials
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  case sdkIsBusy(context: BrivoHIDOrigo.BrivoHIDOrigoError.Context)
+  case startup(nsError: Foundation.NSError)
+  case setup(nsError: Foundation.NSError)
+  case update(nsError: Foundation.NSError)
+  case scan(readerId: Swift.String, availableReaders: [OrigoSDK.OrigoKeysReader])
+  case connect(nsError: Foundation.NSError)
+  case communication(reader: OrigoSDK.OrigoKeysReader, openingType: OrigoSDK.OrigoKeysOpeningType, status: OrigoSDK.OrigoKeysOpeningStatusType, availableReaders: [OrigoSDK.OrigoKeysReader])
+  case missingMobileKeys
+  case cancelled
+  case api(error: Foundation.NSError)
+  case missingRights
+  case walletUnsupported
+  case walletSetup(nsError: Foundation.NSError)
+}
 public struct BrivoSDKHIDOrigoConfiguration {
   public let applicationID: Swift.String
   public let applicationVersion: Swift.String
@@ -22,54 +66,51 @@ public struct BrivoSDKHIDOrigoConfiguration {
   public let scanningMode: OrigoSDK.OrigoKeysScanMode
   public let unlockTimeoutDuration: Foundation.TimeInterval
 }
-public enum RedeemTarget {
-  case ble(pass: BrivoOnAir.BrivoOnairPass)
-  case wallet(invitationCode: Swift.String, pass: BrivoOnAir.BrivoOnairPass)
+@_Concurrency.MainActor public protocol IBrivoSDKHIDOrigo {
+  @_Concurrency.MainActor init(configuration: BrivoHIDOrigo.BrivoSDKHIDOrigoConfiguration)
+  @_Concurrency.MainActor var isEndpointSetup: Swift.Bool { get async }
+  @_Concurrency.MainActor var hasCredentialsAssigned: Swift.Bool { get async }
+  @_Concurrency.MainActor func refreshCredentials(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  @_Concurrency.MainActor func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
+  @_Concurrency.MainActor func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  @_Concurrency.MainActor func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCAddToWalletStatus, BrivoCore.BrivoError>
+  @_Concurrency.MainActor func addNFCCredentialToWallet(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<[PassKit.PKSecureElementPass], BrivoCore.BrivoError>
 }
-public protocol IBrivoSDKHIDOrigo {
-  init(configuration: BrivoHIDOrigo.BrivoSDKHIDOrigoConfiguration)
-  var isEndpointSetup: Swift.Bool { get }
-  var hasCredentialsAssigned: Swift.Bool { get }
-  func refreshCredentials(target: BrivoHIDOrigo.RedeemTarget) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
-  func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCAddToWalletStatus, BrivoCore.BrivoError>
-  func addNFCCredentialToWallet(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<[PassKit.PKSecureElementPass], BrivoCore.BrivoError>
-}
-#warning("Temporary Component until API contract is established")
-@objc public class BrivoSDKHIDOrigo : ObjectiveC.NSObject, BrivoHIDOrigo.IBrivoSDKHIDOrigo {
-  public static let instance: BrivoHIDOrigo.BrivoSDKHIDOrigo
-  required public init(configuration: BrivoHIDOrigo.BrivoSDKHIDOrigoConfiguration)
+@objc @_Concurrency.MainActor public class BrivoSDKHIDOrigo : ObjectiveC.NSObject, BrivoHIDOrigo.IBrivoSDKHIDOrigo {
+  @_Concurrency.MainActor public static let instance: BrivoHIDOrigo.BrivoSDKHIDOrigo
+  @_Concurrency.MainActor required public init(configuration: BrivoHIDOrigo.BrivoSDKHIDOrigoConfiguration)
   @objc deinit
-  public var isEndpointSetup: Swift.Bool {
+  @_Concurrency.MainActor public var isEndpointSetup: Swift.Bool {
     get
   }
-  public var hasCredentialsAssigned: Swift.Bool {
+  @_Concurrency.MainActor public var hasCredentialsAssigned: Swift.Bool {
     get
   }
-  @_Concurrency.MainActor public func refreshCredentials(target: BrivoHIDOrigo.RedeemTarget) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
+  @_Concurrency.MainActor public func refreshCredentials(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  @_Concurrency.MainActor public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
   @_Concurrency.MainActor public func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   @_Concurrency.MainActor public func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCAddToWalletStatus, BrivoCore.BrivoError>
   @_Concurrency.MainActor public func addNFCCredentialToWallet(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<[PassKit.PKSecureElementPass], BrivoCore.BrivoError>
 }
-extension BrivoHIDOrigo.BrivoSDKHIDOrigo : OrigoSDK.OrigoKeysManagerDelegate {
-  @objc dynamic public func origoKeysDidStartup()
-  @objc dynamic public func origoKeysDidFail(toStartup error: any Swift.Error)
-  @objc dynamic public func origoKeysDidSetupEndpoint()
-  @objc dynamic public func origoKeysDidFail(toSetupEndpoint error: any Swift.Error)
-  @objc dynamic public func origoKeysDidUpdateEndpoint()
-  @objc dynamic public func origoKeysDidFail(toUpdateEndpoint error: any Swift.Error)
-  @objc dynamic public func origoKeysDidTerminateEndpoint()
-  @objc dynamic public func origoKeysReaderAppeared(_ reader: OrigoSDK.OrigoKeysReader)
-  @objc dynamic public func origoKeysReaderDisappeared(_ reader: OrigoSDK.OrigoKeysReader)
-  @objc dynamic public func origoKeysShouldAttempt(toOpen reader: OrigoSDK.OrigoKeysReader?, openingType type: OrigoSDK.OrigoKeysOpeningType) -> Swift.Bool
-  @objc dynamic public func origoKeysDidConnect(to reader: OrigoSDK.OrigoKeysReader, openingType type: OrigoSDK.OrigoKeysOpeningType)
-  @objc dynamic public func origoKeysDidFailToConnect(to reader: OrigoSDK.OrigoKeysReader, openingType type: OrigoSDK.OrigoKeysOpeningType, openingStatus status: OrigoSDK.OrigoKeysOpeningStatusType)
-  @objc dynamic public func origoKeysDidDisconnect(from reader: OrigoSDK.OrigoKeysReader, openingType type: OrigoSDK.OrigoKeysOpeningType, openingResult result: OrigoSDK.OrigoKeysOpeningResult)
+extension BrivoHIDOrigo.BrivoSDKHIDOrigo : @preconcurrency OrigoSDK.OrigoKeysManagerDelegate {
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidStartup()
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidFail(toStartup error: any Swift.Error)
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidSetupEndpoint()
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidFail(toSetupEndpoint error: any Swift.Error)
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidUpdateEndpoint()
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidFail(toUpdateEndpoint error: any Swift.Error)
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidTerminateEndpoint()
+  @_Concurrency.MainActor @objc dynamic public func origoKeysReaderAppeared(_ reader: OrigoSDK.OrigoKeysReader)
+  @_Concurrency.MainActor @objc dynamic public func origoKeysReaderDisappeared(_ reader: OrigoSDK.OrigoKeysReader)
+  @_Concurrency.MainActor @objc dynamic public func origoKeysShouldAttempt(toOpen reader: OrigoSDK.OrigoKeysReader?, openingType type: OrigoSDK.OrigoKeysOpeningType) -> Swift.Bool
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidConnect(to reader: OrigoSDK.OrigoKeysReader, openingType type: OrigoSDK.OrigoKeysOpeningType)
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidFailToConnect(to reader: OrigoSDK.OrigoKeysReader, openingType type: OrigoSDK.OrigoKeysOpeningType, openingStatus status: OrigoSDK.OrigoKeysOpeningStatusType)
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidDisconnect(from reader: OrigoSDK.OrigoKeysReader, openingType type: OrigoSDK.OrigoKeysOpeningType, openingResult result: OrigoSDK.OrigoKeysOpeningResult)
 }
-extension BrivoHIDOrigo.BrivoSDKHIDOrigo : OrigoSDK.OrigoKeysManagerWalletDelegate {
-  @objc dynamic public func origoKeysDidSetupSecureElementPasses()
-  @objc dynamic public func origoKeysDidFinishRedemption(_ provisioningData: OrigoSDK.OrigoProvisioningData, withError error: (any Swift.Error)?)
-  @objc dynamic public func origoKeysDidFinishAddingSecureElementPasses(_ secureElementPasses: [Any]!, withError error: (any Swift.Error)!)
+extension BrivoHIDOrigo.BrivoSDKHIDOrigo : @preconcurrency OrigoSDK.OrigoKeysManagerWalletDelegate {
+  @_Concurrency.MainActor @objc dynamic public func origoKeysDidFinishAddingSecureElementPasses(_ secureElementPasses: [Any]!, withError error: (any Swift.Error)!)
 }
+extension BrivoHIDOrigo.BrivoHIDOrigoError.Context : Swift.Equatable {}
+extension BrivoHIDOrigo.BrivoHIDOrigoError.Context : Swift.Hashable {}
+extension BrivoHIDOrigo.BrivoHIDOrigoError.Context : Swift.RawRepresentable {}
+extension BrivoHIDOrigo.BrivoSDKHIDOrigo : Swift.Sendable {}

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BrivoBLE-Swift.h</key>
 		<data>
-		pcX+X2kvJIqm0iYiO0Bc5svdAzM=
+		tn48061QQwD3qr93ScyCmAZeank=
 		</data>
 		<key>Headers/BrivoBLE.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ntAhhofjko/js+HOcVTGb8ZQVwA=
+		WPcUR1I8QL7wZirOJZ05lUQvqSQ=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DuAdi+2o60NdkxtumgbwHrKX0/Q=
+		za+bhXv8hWuFhVRG5a642shT3AA=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Ah59fvC4mN5Nnpm3XdtQHooNM5Y=
+		HogSEiWuoUo1iBRzgnurp2fA0uE=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		dQkCBGmpCyZ9WO1bsqjvJjiaxnI=
+		5vDHoyEVVtai6rNlF/7vsLY/OjE=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Ah59fvC4mN5Nnpm3XdtQHooNM5Y=
+		HogSEiWuoUo1iBRzgnurp2fA0uE=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NJ7+qcwY87WfmGY5bBq48N+Fvig=
+		vhUoGEnxwaZ48Pu5Y8UgmrjAA3A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YfjtaETe8Poph3ozFagEnW8pE70jBgSkWS00uAYpW3w=
+			FjY4IcHG1maQ3bRBRfazR7F8PDefm/w6m5go/bV6Z5g=
 			</data>
 		</dict>
 		<key>Headers/BrivoBLE.h</key>
@@ -65,35 +65,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C2dj0rhc3gWviZKohvFBBpdBCy0dLvWm1gmioyLH9k4=
+			dIA2fgGZ/NVnelQuGPBrBooL4KbbvkrXIVk0zf9aDB0=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ob9Jh1Dc6EHvP0RogNH0qRLnjor/xoEIPK/+4b5XyDc=
+			NhvfiuLLL29DbIwP4uwKyn/HuvjtNb1O1YnPvJ8PHDI=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rE88RXtl/FiJzrf8OlBIVNUcINhHV0uJTo6oGGg7iGs=
+			H6bAqeaSSbf2W2XEU34VCHeB8y9HZ6mkopDpj4HW4Zk=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ob9Jh1Dc6EHvP0RogNH0qRLnjor/xoEIPK/+4b5XyDc=
+			NhvfiuLLL29DbIwP4uwKyn/HuvjtNb1O1YnPvJ8PHDI=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2o4BCQo8DxT/271LwROofbYfTkDuZ5LqGovdVSOKs7U=
+			x2zP8DKKfmFikRJAQ852LHSiqF+OT+iesc2RBhByCPI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

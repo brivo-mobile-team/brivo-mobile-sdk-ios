@@ -6,8 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
         "declKind": "Import",
         "moduleName": "BrivoHIDOrigo",
         "declAttributes": [
@@ -16,8 +16,15 @@
       },
       {
         "kind": "Import",
-        "name": "BrivoCore",
-        "printedName": "BrivoCore",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BrivoHIDOrigo"
       },
@@ -29,11 +36,1683 @@
         "moduleName": "BrivoHIDOrigo"
       },
       {
-        "kind": "Import",
-        "name": "BrivoOnAir",
-        "printedName": "BrivoOnAir",
-        "declKind": "Import",
-        "moduleName": "BrivoHIDOrigo"
+        "kind": "TypeDecl",
+        "name": "BrivoHIDOrigoError",
+        "printedName": "BrivoHIDOrigoError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "domain",
+            "printedName": "domain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO6domainSSvpZ",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO6domainSSvpZ",
+            "moduleName": "BrivoHIDOrigo",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO6domainSSvgZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO6domainSSvgZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Code",
+            "printedName": "Code",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "sdkIsBusy",
+                "printedName": "sdkIsBusy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV9sdkIsBusySivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV9sdkIsBusySivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV9sdkIsBusySivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV9sdkIsBusySivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "startup",
+                "printedName": "startup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV7startupSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV7startupSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV7startupSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV7startupSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "setup",
+                "printedName": "setup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV5setupSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV5setupSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV5setupSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV5setupSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "update",
+                "printedName": "update",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV6updateSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV6updateSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV6updateSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV6updateSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "scan",
+                "printedName": "scan",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV4scanSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV4scanSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV4scanSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV4scanSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "connect",
+                "printedName": "connect",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV7connectSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV7connectSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV7connectSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV7connectSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "communication",
+                "printedName": "communication",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV13communicationSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV13communicationSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV13communicationSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV13communicationSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "missingMobileKeys",
+                "printedName": "missingMobileKeys",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV17missingMobileKeysSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV17missingMobileKeysSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV17missingMobileKeysSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV17missingMobileKeysSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "cancelled",
+                "printedName": "cancelled",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV9cancelledSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV9cancelledSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV9cancelledSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV9cancelledSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "api",
+                "printedName": "api",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV3apiSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV3apiSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV3apiSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV3apiSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "missingRights",
+                "printedName": "missingRights",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV13missingRightsSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV13missingRightsSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV13missingRightsSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV13missingRightsSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "walletSetup",
+                "printedName": "walletSetup",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV11walletSetupSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV11walletSetupSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV11walletSetupSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV11walletSetupSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "walletUnsupported",
+                "printedName": "walletUnsupported",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV17walletUnsupportedSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV17walletUnsupportedSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV17walletUnsupportedSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV17walletUnsupportedSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Context",
+            "printedName": "Context",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "redeem",
+                "printedName": "redeem",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Context.Type) -> BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Context",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Context",
+                            "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                            "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO6redeemyA2EmF",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7ContextO6redeemyA2EmF",
+                "moduleName": "BrivoHIDOrigo"
+              },
+              {
+                "kind": "Var",
+                "name": "unlockAccessPoint",
+                "printedName": "unlockAccessPoint",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Context.Type) -> BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Context",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Context",
+                            "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                            "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO17unlockAccessPointyA2EmF",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7ContextO17unlockAccessPointyA2EmF",
+                "moduleName": "BrivoHIDOrigo"
+              },
+              {
+                "kind": "Var",
+                "name": "clearCredentials",
+                "printedName": "clearCredentials",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Context.Type) -> BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Context",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Context",
+                            "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                            "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO16clearCredentialsyA2EmF",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7ContextO16clearCredentialsyA2EmF",
+                "moduleName": "BrivoHIDOrigo"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Context",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO8rawValueAESgSS_tcfc",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7ContextO8rawValueAESgSS_tcfc",
+                "moduleName": "BrivoHIDOrigo",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO8rawValueSSvp",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7ContextO8rawValueSSvp",
+                "moduleName": "BrivoHIDOrigo",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO8rawValueSSvg",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7ContextO8rawValueSSvg",
+                    "moduleName": "BrivoHIDOrigo",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7ContextO",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "enumRawTypeName": "String",
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkIsBusy",
+            "printedName": "sdkIsBusy",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (BrivoHIDOrigo.BrivoHIDOrigoError.Context) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Context) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(context: BrivoHIDOrigo.BrivoHIDOrigoError.Context)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Context",
+                            "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Context",
+                            "usr": "s:13BrivoHIDOrigo0aB5ErrorO7ContextO"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO9sdkIsBusyyA2C7ContextO_tcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO9sdkIsBusyyA2C7ContextO_tcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "startup",
+            "printedName": "startup",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(nsError: Foundation.NSError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO7startupyACSo7NSErrorC_tcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7startupyACSo7NSErrorC_tcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "setup",
+            "printedName": "setup",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(nsError: Foundation.NSError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO5setupyACSo7NSErrorC_tcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO5setupyACSo7NSErrorC_tcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "update",
+            "printedName": "update",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(nsError: Foundation.NSError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO6updateyACSo7NSErrorC_tcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO6updateyACSo7NSErrorC_tcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "scan",
+            "printedName": "scan",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (Swift.String, [OrigoSDK.OrigoKeysReader]) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, [OrigoSDK.OrigoKeysReader]) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(readerId: Swift.String, availableReaders: [OrigoSDK.OrigoKeysReader])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[OrigoSDK.OrigoKeysReader]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "OrigoKeysReader",
+                                "printedName": "OrigoSDK.OrigoKeysReader",
+                                "usr": "c:objc(cs)OrigoKeysReader"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO4scanyACSS_SaySo15OrigoKeysReaderCGtcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4scanyACSS_SaySo15OrigoKeysReaderCGtcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "connect",
+            "printedName": "connect",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(nsError: Foundation.NSError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO7connectyACSo7NSErrorC_tcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO7connectyACSo7NSErrorC_tcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "communication",
+            "printedName": "communication",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (OrigoSDK.OrigoKeysReader, OrigoSDK.OrigoKeysOpeningType, OrigoSDK.OrigoKeysOpeningStatusType, [OrigoSDK.OrigoKeysReader]) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(OrigoSDK.OrigoKeysReader, OrigoSDK.OrigoKeysOpeningType, OrigoSDK.OrigoKeysOpeningStatusType, [OrigoSDK.OrigoKeysReader]) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reader: OrigoSDK.OrigoKeysReader, openingType: OrigoSDK.OrigoKeysOpeningType, status: OrigoSDK.OrigoKeysOpeningStatusType, availableReaders: [OrigoSDK.OrigoKeysReader])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OrigoKeysReader",
+                            "printedName": "OrigoSDK.OrigoKeysReader",
+                            "usr": "c:objc(cs)OrigoKeysReader"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OrigoKeysOpeningType",
+                            "printedName": "OrigoSDK.OrigoKeysOpeningType",
+                            "usr": "c:@E@OrigoKeysOpeningType"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "OrigoKeysOpeningStatusType",
+                            "printedName": "OrigoSDK.OrigoKeysOpeningStatusType",
+                            "usr": "c:@E@OrigoKeysOpeningStatusType"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[OrigoSDK.OrigoKeysReader]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "OrigoKeysReader",
+                                "printedName": "OrigoSDK.OrigoKeysReader",
+                                "usr": "c:objc(cs)OrigoKeysReader"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO13communicationyACSo15OrigoKeysReaderC_So0eF11OpeningTypeVSo0efh6StatusI0VSayAFGtcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO13communicationyACSo15OrigoKeysReaderC_So0eF11OpeningTypeVSo0efh6StatusI0VSayAFGtcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "missingMobileKeys",
+            "printedName": "missingMobileKeys",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoHIDOrigoError",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO17missingMobileKeysyA2CmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO17missingMobileKeysyA2CmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "cancelled",
+            "printedName": "cancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoHIDOrigoError",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO9cancelledyA2CmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO9cancelledyA2CmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "api",
+            "printedName": "api",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: Foundation.NSError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO3apiyACSo7NSErrorC_tcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO3apiyACSo7NSErrorC_tcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "missingRights",
+            "printedName": "missingRights",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoHIDOrigoError",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO13missingRightsyA2CmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO13missingRightsyA2CmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "walletUnsupported",
+            "printedName": "walletUnsupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoHIDOrigoError",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO17walletUnsupportedyA2CmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO17walletUnsupportedyA2CmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
+            "name": "walletSetup",
+            "printedName": "walletSetup",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> (Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.NSError) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(nsError: Foundation.NSError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO11walletSetupyACSo7NSErrorC_tcACmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO11walletSetupyACSo7NSErrorC_tcACmF",
+            "moduleName": "BrivoHIDOrigo"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:13BrivoHIDOrigo0aB5ErrorO",
+        "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -474,156 +2153,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "RedeemTarget",
-        "printedName": "RedeemTarget",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "ble",
-            "printedName": "ble",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoHIDOrigo.RedeemTarget.Type) -> (BrivoOnAir.BrivoOnairPass) -> BrivoHIDOrigo.RedeemTarget",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoOnAir.BrivoOnairPass) -> BrivoHIDOrigo.RedeemTarget",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RedeemTarget",
-                        "printedName": "BrivoHIDOrigo.RedeemTarget",
-                        "usr": "s:13BrivoHIDOrigo12RedeemTargetO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(pass: BrivoOnAir.BrivoOnairPass)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "BrivoOnairPass",
-                            "printedName": "BrivoOnAir.BrivoOnairPass",
-                            "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoHIDOrigo.RedeemTarget.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RedeemTarget",
-                        "printedName": "BrivoHIDOrigo.RedeemTarget",
-                        "usr": "s:13BrivoHIDOrigo12RedeemTargetO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13BrivoHIDOrigo12RedeemTargetO3bleyAC0A5OnAir0A9OnairPassC_tcACmF",
-            "mangledName": "$s13BrivoHIDOrigo12RedeemTargetO3bleyAC0A5OnAir0A9OnairPassC_tcACmF",
-            "moduleName": "BrivoHIDOrigo"
-          },
-          {
-            "kind": "Var",
-            "name": "wallet",
-            "printedName": "wallet",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoHIDOrigo.RedeemTarget.Type) -> (Swift.String, BrivoOnAir.BrivoOnairPass) -> BrivoHIDOrigo.RedeemTarget",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String, BrivoOnAir.BrivoOnairPass) -> BrivoHIDOrigo.RedeemTarget",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RedeemTarget",
-                        "printedName": "BrivoHIDOrigo.RedeemTarget",
-                        "usr": "s:13BrivoHIDOrigo12RedeemTargetO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(invitationCode: Swift.String, pass: BrivoOnAir.BrivoOnairPass)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "BrivoOnairPass",
-                            "printedName": "BrivoOnAir.BrivoOnairPass",
-                            "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
-                          }
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoHIDOrigo.RedeemTarget.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RedeemTarget",
-                        "printedName": "BrivoHIDOrigo.RedeemTarget",
-                        "usr": "s:13BrivoHIDOrigo12RedeemTargetO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:13BrivoHIDOrigo12RedeemTargetO6walletyACSS_0A5OnAir0A9OnairPassCtcACmF",
-            "mangledName": "$s13BrivoHIDOrigo12RedeemTargetO6walletyACSS_0A5OnAir0A9OnairPassCtcACmF",
-            "moduleName": "BrivoHIDOrigo"
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:13BrivoHIDOrigo12RedeemTargetO",
-        "mangledName": "$s13BrivoHIDOrigo12RedeemTargetO",
-        "moduleName": "BrivoHIDOrigo",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "IBrivoSDKHIDOrigo",
         "printedName": "IBrivoSDKHIDOrigo",
         "children": [
@@ -651,6 +2180,9 @@
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "protocolReq": true,
+            "declAttributes": [
+              "Custom"
+            ],
             "reqNewWitnessTableEntry": true,
             "init_kind": "Designated"
           },
@@ -672,6 +2204,7 @@
             "moduleName": "BrivoHIDOrigo",
             "protocolReq": true,
             "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "accessors": [
@@ -717,6 +2250,7 @@
             "moduleName": "BrivoHIDOrigo",
             "protocolReq": true,
             "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "accessors": [
@@ -747,7 +2281,7 @@
           {
             "kind": "Function",
             "name": "refreshCredentials",
-            "printedName": "refreshCredentials(target:)",
+            "printedName": "refreshCredentials(pass:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -770,19 +2304,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "RedeemTarget",
-                "printedName": "BrivoHIDOrigo.RedeemTarget",
-                "usr": "s:13BrivoHIDOrigo12RedeemTargetO"
+                "name": "BrivoOnairPass",
+                "printedName": "BrivoOnAir.BrivoOnairPass",
+                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
               }
             ],
             "declKind": "Func",
-            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP18refreshCredentials6targets6ResultOyyt0A4Core0A5ErrorCGAA12RedeemTargetO_tYaF",
-            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP18refreshCredentials6targets6ResultOyyt0A4Core0A5ErrorCGAA12RedeemTargetO_tYaF",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP18refreshCredentials4passs6ResultOyyt0A4Core0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP18refreshCredentials4passs6ResultOyyt0A4Core0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
             "moduleName": "BrivoHIDOrigo",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "protocolReq": true,
             "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -836,6 +2371,7 @@
             "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "protocolReq": true,
             "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -874,6 +2410,7 @@
             "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "protocolReq": true,
             "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -919,6 +2456,7 @@
             "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "protocolReq": true,
             "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -972,6 +2510,7 @@
             "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "protocolReq": true,
             "declAttributes": [
+              "Custom",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -983,7 +2522,8 @@
         "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP",
         "moduleName": "BrivoHIDOrigo",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "Custom"
         ],
         "conformances": [
           {
@@ -1004,8 +2544,8 @@
       },
       {
         "kind": "Import",
-        "name": "BrivoOnAir",
-        "printedName": "BrivoOnAir",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
         "declKind": "Import",
         "moduleName": "BrivoHIDOrigo",
         "declAttributes": [
@@ -1014,67 +2554,10 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoHIDOrigo",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "OrigoSDK",
-        "printedName": "OrigoSDK",
+        "name": "BrivoNetworkCore",
+        "printedName": "BrivoNetworkCore",
         "declKind": "Import",
         "moduleName": "BrivoHIDOrigo"
-      },
-      {
-        "kind": "Import",
-        "name": "OrigoSDK",
-        "printedName": "OrigoSDK",
-        "declKind": "Import",
-        "moduleName": "BrivoHIDOrigo",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "OrigoSDK",
-        "printedName": "OrigoSDK",
-        "declKind": "Import",
-        "moduleName": "BrivoHIDOrigo",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoHIDOrigo",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "OrigoSDK",
-        "printedName": "OrigoSDK",
-        "declKind": "Import",
-        "moduleName": "BrivoHIDOrigo"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoHIDOrigo",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -1082,6 +2565,70 @@
         "printedName": "BrivoOnAir",
         "declKind": "Import",
         "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "OrigoSDK",
+        "printedName": "OrigoSDK",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoBLE",
+        "printedName": "BrivoBLE",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -1092,8 +2639,15 @@
       },
       {
         "kind": "Import",
-        "name": "BrivoBLE",
-        "printedName": "BrivoBLE",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BrivoHIDOrigo"
       },
@@ -1130,8 +2684,8 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
-              "AccessControl",
-              "RawDocComment"
+              "Custom",
+              "AccessControl"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -1184,8 +2738,9 @@
             "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC13configurationAcA0aC13ConfigurationV_tcfc",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
-              "AccessControl",
-              "Required"
+              "Custom",
+              "Required",
+              "AccessControl"
             ],
             "init_kind": "Designated"
           },
@@ -1206,7 +2761,9 @@
             "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC15isEndpointSetupSbvp",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
-              "AccessControl"
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
             ],
             "accessors": [
               {
@@ -1246,6 +2803,7 @@
             "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC22hasCredentialsAssignedSbvp",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
+              "Custom",
               "AccessControl"
             ],
             "accessors": [
@@ -1272,7 +2830,7 @@
           {
             "kind": "Function",
             "name": "refreshCredentials",
-            "printedName": "refreshCredentials(target:)",
+            "printedName": "refreshCredentials(pass:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1295,18 +2853,18 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "RedeemTarget",
-                "printedName": "BrivoHIDOrigo.RedeemTarget",
-                "usr": "s:13BrivoHIDOrigo12RedeemTargetO"
+                "name": "BrivoOnairPass",
+                "printedName": "BrivoOnAir.BrivoOnairPass",
+                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
               }
             ],
             "declKind": "Func",
-            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC18refreshCredentials6targets6ResultOyyt0A4Core0A5ErrorCGAA12RedeemTargetO_tYaF",
-            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC18refreshCredentials6targets6ResultOyyt0A4Core0A5ErrorCGAA12RedeemTargetO_tYaF",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC18refreshCredentials4passs6ResultOyyt0A4Core0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC18refreshCredentials4passs6ResultOyyt0A4Core0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
-              "AccessControl",
-              "Custom"
+              "Custom",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1355,6 +2913,7 @@
             "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC17unlockAccessPoint06accessF018cancellationSignalScSy0A4Core0A6ResultCG0A5OnAir0a8SelectedeF0C_AG012CancellationI0CSgtF",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
+              "Custom",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -1389,8 +2948,8 @@
             "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC16clearCredentialss6ResultOyyt0A4Core0A5ErrorCGyYaF",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
-              "AccessControl",
-              "Custom"
+              "Custom",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1431,8 +2990,8 @@
             "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC22getNFCCredentialStatus4passs6ResultOy0A4Core014NFCAddToWalletF0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
-              "AccessControl",
               "Custom",
+              "AccessControl",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -1482,8 +3041,8 @@
             "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC24addNFCCredentialToWallet4passs6ResultOySaySo19PKSecureElementPassCG0A4Core0A5ErrorCG0A5OnAir0a5OnairL0C_tYaF",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
-              "AccessControl",
-              "Custom"
+              "Custom",
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1509,6 +3068,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "Override"
             ],
             "init_kind": "Designated"
@@ -1532,6 +3092,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1563,6 +3124,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1587,6 +3149,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1618,6 +3181,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1642,6 +3206,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1672,6 +3237,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1696,6 +3262,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1726,6 +3293,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl",
               "RawDocComment"
             ],
@@ -1757,6 +3325,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1802,6 +3371,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1838,6 +3408,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1880,6 +3451,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1922,74 +3494,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "origoKeysDidSetupSecureElementPasses",
-            "printedName": "origoKeysDidSetupSecureElementPasses()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidSetupSecureElementPasses",
-            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC36origoKeysDidSetupSecureElementPassesyyF",
-            "moduleName": "BrivoHIDOrigo",
-            "objc_name": "origoKeysDidSetupSecureElementPasses",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "origoKeysDidFinishRedemption",
-            "printedName": "origoKeysDidFinishRedemption(_:withError:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "OrigoProvisioningData",
-                "printedName": "OrigoSDK.OrigoProvisioningData",
-                "usr": "c:objc(cs)OrigoProvisioningData"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any Swift.Error)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@BrivoHIDOrigo@objc(cs)BrivoSDKHIDOrigo(im)origoKeysDidFinishRedemption:withError:",
-            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC28origoKeysDidFinishRedemption_9withErrorySo21OrigoProvisioningDataC_s0J0_pSgtF",
-            "moduleName": "BrivoHIDOrigo",
-            "objc_name": "origoKeysDidFinishRedemption:withError:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -2049,6 +3554,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Custom",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -2061,6 +3567,7 @@
         "moduleName": "BrivoHIDOrigo",
         "declAttributes": [
           "AccessControl",
+          "Custom",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -2137,6 +3644,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       }
@@ -2146,8 +3660,99 @@
   "ConstValues": [
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 421,
+      "length": 5,
+      "value": "-8000"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 463,
+      "length": 5,
+      "value": "-8001"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 503,
+      "length": 5,
+      "value": "-8002"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 544,
+      "length": 5,
+      "value": "-8003"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 583,
+      "length": 5,
+      "value": "-8004"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 625,
+      "length": 5,
+      "value": "-8005"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 673,
+      "length": 5,
+      "value": "-8006"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 725,
+      "length": 5,
+      "value": "-8007"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 769,
+      "length": 5,
+      "value": "-8008"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 807,
+      "length": 5,
+      "value": "-8009"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 855,
+      "length": 5,
+      "value": "-8010"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 919,
+      "length": 5,
+      "value": "-8020"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 971,
+      "length": 5,
+      "value": "-8021"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
       "kind": "StringLiteral",
-      "offset": 377,
+      "offset": 1776,
       "length": 19,
       "value": "\"Available Readers\""
     },
@@ -2210,91 +3815,112 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 1093,
+      "length": 22,
+      "value": "\"HID-BRIVO-WALLET-DEV\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1138,
       "length": 48,
       "value": "\"HID-BRIVO-\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1044,
+      "offset": 1166,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1063,
+      "offset": 1185,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1101,
-      "length": 29,
-      "value": "\"HID-BRIVO-\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
-      "kind": "StringLiteral",
-      "offset": 1129,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
-      "kind": "StringLiteral",
-      "offset": 1219,
+      "offset": 1325,
       "length": 45,
       "value": "\"com.HID.origoSDK.backgroundProcessingTaskID\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1304,
+      "offset": 1410,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1351,
+      "offset": 1457,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1394,
+      "offset": 1500,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1509,
+      "offset": 1615,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/BrivoHIDStorage.swift",
-      "kind": "Dictionary",
-      "offset": 256,
-      "length": 3,
-      "value": "[]"
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
+      "kind": "StringLiteral",
+      "offset": 358,
+      "length": 42,
+      "value": "\"\/hid-origo-mobile-pass\/getInvitationCode\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
+      "kind": "StringLiteral",
+      "offset": 450,
+      "length": 41,
+      "value": "\"\/hid-origo-wallet-pass\/getIssuanceToken\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
+      "kind": "StringLiteral",
+      "offset": 536,
+      "length": 48,
+      "value": "\"\/hid-origo-wallet-pass\/isEligibleToAddToWallet\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
+      "kind": "StringLiteral",
+      "offset": 2016,
+      "length": 38,
+      "value": "\"brivoConfiguration missing: \""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
+      "kind": "StringLiteral",
+      "offset": 2053,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
       "kind": "IntegerLiteral",
-      "offset": 290,
+      "offset": 300,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo.swift",
       "kind": "BooleanLiteral",
-      "offset": 584,
+      "offset": 547,
       "length": 5,
       "value": "false"
     }

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target arm64-apple-ios17 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoBLE
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import BrivoBLE
@@ -63,14 +63,15 @@ public struct BrivoBLEErrors {
   public static func brivoBleErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
 }
 public enum BLEConstants {
-  public static let DEFAULT_BLE_AUTH_TIME_FRAME: Swift.Int32
   public static let MINIMUM_ALLOWED_RSSI: Swift.Int
+  public static let SCANNING_TIME: Swift.Double
+  public static let ALLEGION_RELOCK_DELAY: Swift.Int
+  public static let ALLEGION_UNLOCK_RESPONSE_TIMEOUT: Swift.Double
+  public static let DEFAULT_BLE_AUTH_TIME_FRAME: Swift.Int32
   public static let OK_STATUS_RESPONSE: Swift.UInt8
   public static let ALLOWED_READERS: [Swift.String]
   public static let BLE_CREDENTIAL_SERVICE_UUID: [Swift.String]
   public static let DATA_TRANSFER_CHRC_UUID: [Swift.String]
   public static let MAXIMUM_TRANSFER_UNIT: Swift.Int
-  public static let SCANNING_TIME: Swift.Double
-  public static let ALLEGION_RELOCK_DELAY: Swift.Int
-  public static let ALLEGION_UNLOCK_RESPONSE_TIMEOUT: Swift.Double
+  public static let BLE_DEVICE_SCANNING_TIMER: Swift.Double
 }

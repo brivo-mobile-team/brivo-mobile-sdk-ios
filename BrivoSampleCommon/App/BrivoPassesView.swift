@@ -15,43 +15,26 @@ struct BrivoPassesView: View {
     
     var body: some View {
         List {
-            if viewModel.brivoOnAirPassListItems.isEmpty {
-                Text("You have no Passes. Please add passes by tapping the + button")
-                    .accessibilityIdentifier(AccessibilityIds.noPassesTextView)
+            if viewModel.shouldShowEmptyView {
+                emptyView
             } else {
-                ForEach(viewModel.brivoOnAirPassListItems) { passItem in
-                    listItem(passItem: passItem)
-                }
+                passFeed
             }
         }
         .onAppear {
             viewModel.onAppear()
         }
-        .refreshable { await viewModel.refreshPasses() }
+        .refreshable {
+            await viewModel.refreshPasses()
+        }
         .navigationTitle(viewModel.brivoSDKVersion)
         .toolbar {
-            ToolbarItem {
-                Button {
-                    viewModel.isShowingBrivoRedeemSheet.toggle()
-                } label: {
-                    Image(systemName: "plus")
-                        .accessibilityIdentifier(AccessibilityIds.navigationPlusButton)
-                }
-            }
-            ToolbarItem(placement: .topBarLeading) {
-                NavigationLink {
-                    UnlockAccessPointView(stateModel: .init())
-                } label: {
-                    Text("Magic Button")
-                }
-            }
+            toolBar
         }
-        .sheet(isPresented: $viewModel.isShowingBrivoRedeemSheet) { addBrivoPassSheet }
-        //Commented the code in case we continue with HID Origo wallet integration
-        //Will remove if not needed
-        //#if canImport(BrivoHIDOrigo)
-        //.sheet(isPresented: $viewModel.isShowingOrigoActivationSheet) { addOrigoPassSheet }
-        //#endif
+        .sheet(isPresented: $viewModel.isShowingBrivoRedeemSheet) {
+            brivoPassSheet
+        }
+        .alert(isPresented: $viewModel.isShowingAlert) { alert }
         .onReceive(NotificationCenter.default.publisher(
             for: UIScene.willEnterForegroundNotification)) { _ in
                 Task {
@@ -59,9 +42,9 @@ struct BrivoPassesView: View {
                 }
             }
     }
-    
+
     // MARK: - Private
-    
+
     private func listItem(passItem: BrivoOnAirPassListItem) -> some View {
         Section {
             if let sites = passItem.onAirPass.sites {
@@ -82,137 +65,80 @@ struct BrivoPassesView: View {
                 }
             }
         } header: {
-            VStack(alignment: .leading) {
-                Text("\(passItem.onAirPass.accountName ?? "")")
-                    .accessibilityIdentifier(AccessibilityIds.accountNameTextView)
-                Text("Account ID: \(passItem.onAirPass.accountId)")
-                Text("\(passItem.onAirPass.firstName ?? "") \(passItem.onAirPass.lastName ?? "")")
-                Text("Pass ID: \(passItem.onAirPass.passId ?? "")")
-            }
+            header(passItem: passItem)
         } footer: {
+            #if canImport(BrivoHIDOrigo)
+            footer(passItem: passItem)
+            #endif
+        }
+    }
+
+    @ToolbarContentBuilder
+    private var toolBar: some ToolbarContent {
+        ToolbarItem {
+            Button {
+                viewModel.isShowingBrivoRedeemSheet.toggle()
+            } label: {
+                Image(systemName: "plus")
+                    .accessibilityIdentifier(AccessibilityIds.navigationPlusButton)
+            }
+        }
+        ToolbarItem(placement: .topBarLeading) {
+            NavigationLink {
+                UnlockAccessPointView(stateModel: .init())
+            } label: {
+                Text("Magic Button")
+            }
+        }
+    }
+
+    private var emptyView: some View {
+        Text("You have no Passes. Please add passes by tapping the + button")
+            .accessibilityIdentifier(AccessibilityIds.noPassesTextView)
+    }
+
+    private var passFeed: some View {
+        ForEach(viewModel.brivoOnAirPassListItems) { passItem in
+            listItem(passItem: passItem)
+        }
+    }
+
+    private func header(passItem: BrivoOnAirPassListItem) -> some View {
+        VStack(alignment: .leading) {
+            Text("\(passItem.onAirPass.accountName ?? "")")
+                .accessibilityIdentifier(AccessibilityIds.accountNameTextView)
+            Text("Account ID: \(passItem.onAirPass.accountId)")
+            Text("\(passItem.onAirPass.firstName ?? "") \(passItem.onAirPass.lastName ?? "")")
+            Text("Pass ID: \(passItem.onAirPass.passId ?? "")")
+        }
+    }
+
 #if canImport(BrivoHIDOrigo)
-            HStack {
-                Text("HID ORIGO: ")
-                switch passItem.hidNFCAddToWalletStatus {
-                case .alreadyAddedToWallet:
-                    Text("Already added to Wallet")
-                case .canBeAddedToWallet:
-                    AddPassToWalletButton {
-                        Task {
-                            await viewModel.addToWallet(pass: passItem.onAirPass)
-                        }
-                    }
-                    .addPassToWalletButtonStyle(.blackOutline)
-                case .notEligibleForAddingToWallet:
-                    Text("Not eligible for adding to Wallet")
-                @unknown default:
-                    Text("Unknown")
-                }
+    private func footer(passItem: BrivoOnAirPassListItem) -> some View {
+        HIDOrigoFooterView(passItem: passItem, addToWalletAction: {
+            Task {
+                await viewModel.addToWallet(pass: passItem.onAirPass)
             }
-#endif
-        }
-    }
-    
-    @ViewBuilder
-    private var addBrivoPassSheet: some View {
-        NavigationStack {
-            VStack(spacing: 20) {
-                Toggle(isOn: $viewModel.isEURegion) {
-                    Text(viewModel.isEURegion ? "EU Region" : "US Region")
-                }
-                TextField("Pass ID", text: $viewModel.passID, prompt: Text("Pass ID"))
-                    .autocapitalization(.none)
-                    .autocorrectionDisabled()
-                    .accessibilityIdentifier(AccessibilityIds.mobilePassEmailField)
-                TextField("Pass Code", text: $viewModel.passCode, prompt: Text("Pass Code"))
-                    .autocapitalization(.none)
-                    .autocorrectionDisabled()
-                    .accessibilityIdentifier(AccessibilityIds.mobilePassInviteCodeField)
-                Spacer()
-            }
-            .textFieldStyle(.roundedBorder)
-            .padding()
-            .toolbar {
-                Button {
-                    Task {
-                        await viewModel.redeemPass()
-                    }
-                } label: {
-                    if viewModel.isSubmittingBrivoPass {
-                        ProgressView()
-                    } else {
-                        Text("Add Pass")
-                            .accessibilityIdentifier(AccessibilityIds.redeemInviteButton)
-                    }
-                }
-            }
-            .disabled(viewModel.isSubmittingBrivoPass)
-        }
-        .presentationDetents([.fraction(0.30)])
-        .alert(isPresented: $viewModel.isShowingAlert) {
-            Alert(
-                title: Text(viewModel.alertTitle),
-                message: Text(viewModel.alertMessage),
-                dismissButton: .default(Text("OK"))
-            )
-        }
-    }
-    
-#if canImport(BrivoHIDOrigo)
-    //Commented the code in case we continue with HID Origo wallet integration
-    //Will remove if not needed
-    @ViewBuilder
-    private var addOrigoPassSheet: some View {
-        VStack {
-            Picker("", selection: $viewModel.origoSelectedPassPickerItem) {
-                ForEach(viewModel.origoPassPickerItems) { origoPassItem in
-                    Text(origoPassItem.title)
-                }
-            }
-            .pickerStyle(.wheel)
-            .onAppear {
-                viewModel.origoSelectedPassPickerItem = viewModel.origoPassPickerItems.first
-            }
-            Toggle("Wallet Integration", isOn: $viewModel.isOrigoWalletIntegrationEnabled)
-            TextField("Origo Activation Code",
-                      text: $viewModel.origoInvitationCode,
-                      prompt: Text("Origo Activation Code"))
-            .autocapitalization(.none)
-            .autocorrectionDisabled()
-            .textFieldStyle(.roundedBorder)
-            .submitLabel(.done)
-            .accessibilityIdentifier(AccessibilityIds.origoActivationCodeField)
-            Button("Submit") {
-                Task {
-                    await viewModel.redeemOrigoInvitationCode()
-                }
-            }
-            .accessibilityIdentifier(AccessibilityIds.origoRedeemButton)
-            .buttonStyle(.borderedProminent)
-            .buttonBorderShape(.capsule)
-            .disabled(viewModel.origoInvitationCode.isEmpty)
-        }
-        .disabled(viewModel.isSubmittingOrigoInvitationCode)
-        .padding()
-        .overlay(origoLoadingOverlay)
-        .presentationDetents([.fraction(0.4)])
-        .alert(isPresented: $viewModel.isShowingAlert) {
-            Alert(
-                title: Text(viewModel.alertTitle),
-                message: Text(viewModel.alertMessage),
-                dismissButton: .default(Text("OK"))
-            )
-        }
-    }
-    
-    @ViewBuilder
-    private var origoLoadingOverlay: some View {
-        if viewModel.isSubmittingOrigoInvitationCode {
-            ProgressView().tint(.gray)
-        }
+        })
     }
 #endif
-    
+
+    @ViewBuilder
+    private var brivoPassSheet: some View {
+        BrivoPassSheet(viewModel: viewModel, onAddPassAction: {
+            Task {
+                await viewModel.redeemPass()
+            }
+        })
+    }
+
+    private var alert: Alert {
+        Alert(
+            title: Text(viewModel.alertTitle),
+            message: Text(viewModel.alertMessage),
+            dismissButton: .default(Text("OK"))
+        )
+    }
 }
 
 // MARK: - Preview

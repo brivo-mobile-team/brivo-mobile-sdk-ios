@@ -15,17 +15,14 @@ import BrivoBLEAllegion
 import BrivoHIDOrigo
 #endif
 
-
-// MARK: - ViewModel
-
 class BrivoPassesViewModel: ObservableObject {
+    // MARK: - Properties
+
     private var brivoOnAirPasses: [BrivoOnairPass] = []
     @Published var brivoOnAirPassListItems: [BrivoOnAirPassListItem] = []
     @Published var isShowingBrivoRedeemSheet = false
     @Published var isSubmittingBrivoPass = false
-    @Published var isShowingOrigoActivationSheet = false
     @Published var isShowingAlert = false
-    @Published var isSubmittingOrigoInvitationCode = false
     @Published var brivoConfig: BrivoSDKConfiguration?
     @Published var isEURegion = false {
         didSet {
@@ -39,14 +36,14 @@ class BrivoPassesViewModel: ObservableObject {
     
     @Published var passID = ""
     @Published var passCode = ""
-    @Published var origoInvitationCode = ""
-    @Published var origoSelectedPassPickerItem: BrivoOnAirPassPickerItem?
-    @Published var isOrigoWalletIntegrationEnabled: Bool = false
-    var origoPassPickerItems: [BrivoOnAirPassPickerItem] = []
     var brivoSDKVersion: String {
         "BrivoSDK \(BrivoSDK.sdkVersion)"
     }
-    
+
+    var shouldShowEmptyView: Bool {
+        brivoOnAirPassListItems.isEmpty
+    }
+
     func onAppear() {
         setRegion(isEURegion: isEURegion)
         setupBrivoConfiguration()
@@ -68,29 +65,6 @@ class BrivoPassesViewModel: ObservableObject {
             onError(error)
         }
     }
-    
-#if canImport(BrivoHIDOrigo)
-    @MainActor
-    func redeemOrigoInvitationCode() async {
-        guard let selectedOnAirPass = origoSelectedPassPickerItem?.onAirPass else {
-            return
-        }
-        guard let redeemTarget = getHidOrigoRedeemTarget() else {
-            return
-        }
-        isSubmittingOrigoInvitationCode = true
-        switch await BrivoSDKHIDOrigo.instance.refreshCredentials(target: redeemTarget) {
-        case .success:
-            isSubmittingOrigoInvitationCode = false
-            isShowingOrigoActivationSheet = false
-            origoInvitationCode = ""
-            updateUI()
-        case .failure(let brivoError):
-            isSubmittingOrigoInvitationCode = false
-            onError(brivoError)
-        }
-    }
-#endif
     
     func resetPasses() {
         BrivoUserDefaults.setDictionary(value: [:], forKey: BrivoCore.Constants.KEY_PASSES)
@@ -116,14 +90,14 @@ class BrivoPassesViewModel: ObservableObject {
                 }
                 self.brivoOnAirPasses = newPasses
             }
-            for brivoOnAirPass in brivoOnAirPasses {
 #if canImport(BrivoBLEAllegion)
-                await refreshAllegionCredentialsIfPossible(brivoOnAirPass)
+            await refreshAllegionCredentialsIfPossible(brivoOnAirPasses)
 #endif
 #if canImport(BrivoHIDOrigo)
-                await getHidOrigoActivationCodeIfPossible(brivoOnAirPass)
-#endif
+            for brivoOnAirPass in brivoOnAirPasses {
+                await refreshHidOrigoCredentialsIfPossible(brivoOnAirPass)
             }
+#endif
             updateUI()
         } catch {
             onError(error)
@@ -135,8 +109,8 @@ class BrivoPassesViewModel: ObservableObject {
     func addToWallet(pass: BrivoOnairPass) async {
         switch await BrivoSDKHIDOrigo.instance.addNFCCredentialToWallet(pass: pass) {
         case .success(let pkPasses):
-            showAlert(title: "Success",
-                      message: pkPasses.map { $0.description }.joined(separator: ","))
+            let message = pkPasses.map { $0.localizedDescription }.joined(separator: "\n")
+            showAlert(title: "Success", message: message)
         case .failure(let error):
             onError(error)
         }
@@ -147,50 +121,35 @@ class BrivoPassesViewModel: ObservableObject {
     private var previousUpdateTask: Task<Void, Never>?
     
     private func updateUI() {
-        previousUpdateTask = Task { @MainActor [previousUpdateTask] in
-            await previousUpdateTask?.value
+        previousUpdateTask?.cancel()
+        previousUpdateTask = Task { @MainActor  in
             var newBrivoOnAirPassListItems = [BrivoOnAirPassListItem]()
             for brivoOnAirPass in brivoOnAirPasses {
-                var addToWalletStatusResult: NFCAddToWalletStatus? = .notEligibleForAddingToWallet
+                guard !Task.isCancelled else { return }
+                var addToWalletStatusResult: AddToWalletStatus = .ineligible(reason: "Not Eligible")
 #if canImport(BrivoHIDOrigo)
-                addToWalletStatusResult = try? await BrivoSDKHIDOrigo.instance.getNFCCredentialStatus(pass: brivoOnAirPass).get()
-#endif
-                newBrivoOnAirPassListItems.append(.init(onAirPass: brivoOnAirPass, hidNFCAddToWalletStatus: addToWalletStatusResult ?? .notEligibleForAddingToWallet))
-            }
-            self.brivoOnAirPassListItems = newBrivoOnAirPassListItems
-            self.origoPassPickerItems = brivoOnAirPassListItems
-                .filter {
-                    switch $0.hidNFCAddToWalletStatus {
+                switch await BrivoSDKHIDOrigo.instance.getNFCCredentialStatus(pass: brivoOnAirPass) {
+                case .success(let status):
+                    switch status {
+                    case .alreadyAddedToWallet:
+                        addToWalletStatusResult = .ineligible(reason: "Already added")
+                    case .canBeAddedToWallet:
+                        addToWalletStatusResult = .eligible
                     case .notEligibleForAddingToWallet:
-                        return true
-                    case .alreadyAddedToWallet, .canBeAddedToWallet:
-                        return false
+                        addToWalletStatusResult = .ineligible(reason: "Not Eligible")
                     @unknown default:
-                        return false
+                        fatalError()
                     }
+                case .failure:
+                    addToWalletStatusResult = .ineligible(reason: "Unsupported")
                 }
-                .map { $0.onAirPass }
-                .filter { brivoOnAirPass in
-                    guard brivoOnAirPass.hasHidOrigoMobilePass, let sites = brivoOnAirPass.sites else { return false }
-                    return  sites.contains { site in
-                        site.accessPoints?.contains { $0.readerType == .hidOrigo} ?? false
-                    }
-                }
-                .map { BrivoOnAirPassPickerItem(onAirPass: $0) }
-#if canImport(BrivoHIDOrigo)
-            self.showOrigoActivationSheetIfNeeded()
 #endif
+                newBrivoOnAirPassListItems.append(.init(onAirPass: brivoOnAirPass, hidNFCAddToWalletStatus: addToWalletStatusResult))
+            }
+            guard !Task.isCancelled else { return }
+            self.brivoOnAirPassListItems = newBrivoOnAirPassListItems
         }
     }
-    
-#if canImport(BrivoHIDOrigo)
-    private func getHidOrigoRedeemTarget () -> RedeemTarget? {
-        guard let selectedOnAirPass = origoSelectedPassPickerItem?.onAirPass else {
-            return nil
-        }
-        return isOrigoWalletIntegrationEnabled ? .wallet(invitationCode: origoInvitationCode, pass: selectedOnAirPass) : .ble(pass: selectedOnAirPass)
-    }
-#endif
     
     private func setRegion(isEURegion: Bool) {
         UserDefaultsAccessService().setRegion((isEURegion ? Region.eu : Region.us).rawValue)
@@ -212,40 +171,20 @@ class BrivoPassesViewModel: ObservableObject {
         }
     }
     
-#if canImport(BrivoHIDOrigo)
-    private func showOrigoActivationSheetIfNeeded() {
-        Task { @MainActor in
-            if let redeemTarget = getHidOrigoRedeemTarget() {
-                switch redeemTarget {
-                case .wallet:
-                    isShowingOrigoActivationSheet = !origoPassPickerItems.isEmpty && !BrivoSDKHIDOrigo.instance.isEndpointSetup
-                case .ble:
-                    isShowingOrigoActivationSheet = false
-                @unknown default:
-                    isShowingOrigoActivationSheet = false
-                }
-            }
-        }
-    }
-#endif
-    
 #if canImport(BrivoBLEAllegion)
-    private func refreshAllegionCredentialsIfPossible(_ brivoOnairPass: BrivoOnairPass) async {
-        guard brivoOnairPass.hasAllegionBleCredentials else { return }
+    private func refreshAllegionCredentialsIfPossible(_ brivoOnairPasses: [BrivoOnairPass]) async {
         let brivoSDKBLEAllegion = BrivoSDKBLEAllegion.instance
-        _ = await brivoSDKBLEAllegion.refreshCredentials(
-            brivoOnAirPass: brivoOnairPass,
-            refreshType: .ignoringLocalCacheData
-        )
+        _ = await brivoSDKBLEAllegion.refreshCredentials(brivoOnAirPasses: brivoOnairPasses, refreshType: .validatingCacheData)
     }
 #endif
     
 #if canImport(BrivoHIDOrigo)
-    private func getHidOrigoActivationCodeIfPossible(_ brivoOnairPass: BrivoOnairPass) async {
-        switch await BrivoSDKHIDOrigo.instance.refreshCredentials(target: .ble(pass: brivoOnairPass)) {
+    private func refreshHidOrigoCredentialsIfPossible(_ brivoOnairPass: BrivoOnairPass) async {
+        switch await BrivoSDKHIDOrigo.instance.refreshCredentials(pass: brivoOnairPass) {
         case .success:
             showAlert(title: "Success", message: "HID Origo activated successfully")
         case .failure(let error):
+            guard error.code != BrivoHIDOrigoError.Code.missingRights else { return }
             onError(error)
         }
     }
@@ -281,13 +220,10 @@ struct BrivoOnAirPassListItem: Identifiable, Hashable {
     var id: String { onAirPass.passId ?? UUID().uuidString }
     var title: String { "\(onAirPass.accountName ?? "") - \(onAirPass.firstName ?? "") \(onAirPass.lastName ?? "")" }
     let onAirPass: BrivoOnairPass
-    let hidNFCAddToWalletStatus: NFCAddToWalletStatus
+    let hidNFCAddToWalletStatus: AddToWalletStatus
 }
 
-// MARK: - BrivoOnAirPassPickerItem
-
-struct BrivoOnAirPassPickerItem: Identifiable, Hashable {
-    var id: String { onAirPass.passId ?? UUID().uuidString }
-    var title: String { "\(onAirPass.accountName ?? "") - \(onAirPass.firstName ?? "") \(onAirPass.lastName ?? "")" }
-    let onAirPass: BrivoOnairPass
+enum AddToWalletStatus: Equatable, Hashable {
+    case eligible
+    case ineligible(reason: String)
 }
