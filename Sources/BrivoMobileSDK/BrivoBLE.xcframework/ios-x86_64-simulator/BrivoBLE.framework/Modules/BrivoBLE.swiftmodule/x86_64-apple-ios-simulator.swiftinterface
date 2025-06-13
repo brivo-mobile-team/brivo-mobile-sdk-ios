@@ -73,5 +73,4 @@ public enum BLEConstants {
   public static let BLE_CREDENTIAL_SERVICE_UUID: [Swift.String]
   public static let DATA_TRANSFER_CHRC_UUID: [Swift.String]
   public static let MAXIMUM_TRANSFER_UNIT: Swift.Int
-  public static let BLE_DEVICE_SCANNING_TIMER: Swift.Double
 }

@@ -3809,53 +3809,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "BLE_DEVICE_SCANNING_TIMER",
-            "printedName": "BLE_DEVICE_SCANNING_TIMER",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsO0B22_DEVICE_SCANNING_TIMERSdvpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsO0B22_DEVICE_SCANNING_TIMERSdvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsO0B22_DEVICE_SCANNING_TIMERSdvgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsO0B22_DEVICE_SCANNING_TIMERSdvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Enum",
@@ -4072,70 +4025,70 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 2790,
+      "offset": 2986,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2815,
+      "offset": 3011,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 2927,
+      "offset": 3123,
       "length": 17,
       "value": "\"StopBLE is true\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3201,
+      "offset": 3400,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3235,
+      "offset": 3434,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3277,
+      "offset": 3476,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3323,
+      "offset": 3522,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2839,
+      "offset": 3035,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3667,
+      "offset": 3866,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3727,
+      "offset": 3926,
       "length": 1,
       "value": "0"
     },
@@ -4373,7 +4326,7 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3142,
+      "offset": 3152,
       "length": 1,
       "value": "3"
     }
