@@ -5933,6 +5933,68 @@
           {
             "kind": "Function",
             "name": "retrieveSites",
+            "printedName": "retrieveSites(tokens:offset:siteName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<BrivoOnAir.Sites, BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sites",
+                    "printedName": "BrivoOnAir.Sites",
+                    "usr": "s:10BrivoOnAir5SitesV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoTokens",
+                "printedName": "BrivoCore.BrivoTokens",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BrivoOnAir0a5SDKOnC0C13retrieveSites6tokens6offset8siteNames6ResultOyAA0F0V0A4Core0A5ErrorCGAL0A6TokensC_SiSSSgtYaF",
+            "mangledName": "$s10BrivoOnAir0a5SDKOnC0C13retrieveSites6tokens6offset8siteNames6ResultOyAA0F0V0A4Core0A5ErrorCGAL0A6TokensC_SiSSSgtYaF",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "retrieveSites",
             "printedName": "retrieveSites(tokens:siteName:)",
             "children": [
               {
@@ -21181,6 +21243,616 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "BrivoSites",
+        "printedName": "BrivoSites",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSites",
+                "printedName": "BrivoOnAir.BrivoSites",
+                "usr": "s:10BrivoOnAir0A5SitesC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10BrivoOnAir0A5SitesC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10BrivoOnAir0A5SitesC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BrivoOnAir",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BrivoOnAir0A5SitesC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10BrivoOnAir0A5SitesC6encode2toys7Encoder_p_tKF",
+            "moduleName": "BrivoOnAir",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10BrivoOnAir0A5SitesC",
+        "mangledName": "$s10BrivoOnAir0A5SitesC",
+        "moduleName": "BrivoOnAir",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Sites",
+        "printedName": "Sites",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sites:offset:pageSize:count:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Sites",
+                "printedName": "BrivoOnAir.Sites",
+                "usr": "s:10BrivoOnAir5SitesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BrivoOnAir.BrivoSite]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoSite",
+                    "printedName": "BrivoOnAir.BrivoSite",
+                    "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSite"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10BrivoOnAir5SitesV5sites6offset8pageSize5countACSayAA0A4SiteCG_S3itcfc",
+            "mangledName": "$s10BrivoOnAir5SitesV5sites6offset8pageSize5countACSayAA0A4SiteCG_S3itcfc",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "sites",
+            "printedName": "sites",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BrivoOnAir.BrivoSite]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoSite",
+                    "printedName": "BrivoOnAir.BrivoSite",
+                    "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSite"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10BrivoOnAir5SitesV5sitesSayAA0A4SiteCGvp",
+            "mangledName": "$s10BrivoOnAir5SitesV5sitesSayAA0A4SiteCGvp",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[BrivoOnAir.BrivoSite]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoSite",
+                        "printedName": "BrivoOnAir.BrivoSite",
+                        "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSite"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV5sitesSayAA0A4SiteCGvg",
+                "mangledName": "$s10BrivoOnAir5SitesV5sitesSayAA0A4SiteCGvg",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[BrivoOnAir.BrivoSite]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoSite",
+                        "printedName": "BrivoOnAir.BrivoSite",
+                        "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSite"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV5sitesSayAA0A4SiteCGvs",
+                "mangledName": "$s10BrivoOnAir5SitesV5sitesSayAA0A4SiteCGvs",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV5sitesSayAA0A4SiteCGvM",
+                "mangledName": "$s10BrivoOnAir5SitesV5sitesSayAA0A4SiteCGvM",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "offset",
+            "printedName": "offset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10BrivoOnAir5SitesV6offsetSivp",
+            "mangledName": "$s10BrivoOnAir5SitesV6offsetSivp",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV6offsetSivg",
+                "mangledName": "$s10BrivoOnAir5SitesV6offsetSivg",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV6offsetSivs",
+                "mangledName": "$s10BrivoOnAir5SitesV6offsetSivs",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV6offsetSivM",
+                "mangledName": "$s10BrivoOnAir5SitesV6offsetSivM",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pageSize",
+            "printedName": "pageSize",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10BrivoOnAir5SitesV8pageSizeSivp",
+            "mangledName": "$s10BrivoOnAir5SitesV8pageSizeSivp",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV8pageSizeSivg",
+                "mangledName": "$s10BrivoOnAir5SitesV8pageSizeSivg",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV8pageSizeSivs",
+                "mangledName": "$s10BrivoOnAir5SitesV8pageSizeSivs",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV8pageSizeSivM",
+                "mangledName": "$s10BrivoOnAir5SitesV8pageSizeSivM",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10BrivoOnAir5SitesV5countSivp",
+            "mangledName": "$s10BrivoOnAir5SitesV5countSivp",
+            "moduleName": "BrivoOnAir",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV5countSivg",
+                "mangledName": "$s10BrivoOnAir5SitesV5countSivg",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV5countSivs",
+                "mangledName": "$s10BrivoOnAir5SitesV5countSivs",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10BrivoOnAir5SitesV5countSivM",
+                "mangledName": "$s10BrivoOnAir5SitesV5countSivM",
+                "moduleName": "BrivoOnAir",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Sites",
+                "printedName": "BrivoOnAir.Sites",
+                "usr": "s:10BrivoOnAir5SitesV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10BrivoOnAir5SitesV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10BrivoOnAir5SitesV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BrivoOnAir",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BrivoOnAir5SitesV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10BrivoOnAir5SitesV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BrivoOnAir",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10BrivoOnAir5SitesV",
+        "mangledName": "$s10BrivoOnAir5SitesV",
+        "moduleName": "BrivoOnAir",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -22015,6 +22687,68 @@
             "declAttributes": [
               "RawDocComment"
             ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "retrieveSites",
+            "printedName": "retrieveSites(tokens:offset:siteName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<BrivoOnAir.Sites, BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Sites",
+                    "printedName": "BrivoOnAir.Sites",
+                    "usr": "s:10BrivoOnAir5SitesV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoTokens",
+                "printedName": "BrivoCore.BrivoTokens",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10BrivoOnAir011IBrivoSDKOnC0P13retrieveSites6tokens6offset8siteNames6ResultOyAA0G0V0A4Core0A5ErrorCGAL0A6TokensC_SiSSSgtYaF",
+            "mangledName": "$s10BrivoOnAir011IBrivoSDKOnC0P13retrieveSites6tokens6offset8siteNames6ResultOyAA0G0V0A4Core0A5ErrorCGAL0A6TokensC_SiSSSgtYaF",
+            "moduleName": "BrivoOnAir",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoOnAir.IBrivoSDKOnAir>",
+            "sugared_genericSig": "<Self where Self : BrivoOnAir.IBrivoSDKOnAir>",
+            "protocolReq": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -23816,315 +24550,322 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 10088,
+      "offset": 9224,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13132,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 10263,
+      "offset": 13307,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 10362,
+      "offset": 13406,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 10899,
+      "offset": 13943,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 10919,
+      "offset": 13963,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 11266,
+      "offset": 14310,
       "length": 22,
       "value": "\"name__eq:\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 11287,
+      "offset": 14331,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 11368,
+      "offset": 14412,
       "length": 25,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 11392,
+      "offset": 14436,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 12384,
+      "offset": 15428,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 12586,
+      "offset": 15630,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 12631,
+      "offset": 15675,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13226,
+      "offset": 16270,
       "length": 48,
       "value": "\"Fail to decode response data in retrieve sites\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13361,
+      "offset": 16405,
       "length": 10,
       "value": "\"siteName\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13422,
+      "offset": 16466,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13768,
+      "offset": 16812,
       "length": 51,
       "value": "\"Fail to retrieve sites with missing response data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 13898,
+      "offset": 16942,
       "length": 10,
       "value": "\"siteName\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14170,
+      "offset": 17214,
       "length": 24,
       "value": "\"Fail to retrieve sites\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14265,
+      "offset": 17309,
       "length": 10,
       "value": "\"siteName\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14318,
+      "offset": 17362,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14593,
+      "offset": 17637,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 19180,
+      "offset": 22224,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 19376,
+      "offset": 22420,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 19482,
+      "offset": 22526,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 19942,
+      "offset": 22986,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 19958,
+      "offset": 23002,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 20413,
+      "offset": 23457,
       "length": 29,
       "value": "\"name__eq:\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 20441,
+      "offset": 23485,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 20522,
+      "offset": 23566,
       "length": 25,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 20546,
+      "offset": 23590,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 20791,
+      "offset": 23835,
       "length": 68,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 20834,
+      "offset": 23878,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 20844,
+      "offset": 23888,
       "length": 1,
       "value": "\"\/access-points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 21585,
+      "offset": 24629,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 21789,
+      "offset": 24833,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 21834,
+      "offset": 24878,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 22479,
+      "offset": 25523,
       "length": 58,
       "value": "\"Fail to decode response in retrieving site access points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 22624,
+      "offset": 25668,
       "length": 8,
       "value": "\"siteId\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 22681,
+      "offset": 25725,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23034,
+      "offset": 26078,
       "length": 56,
       "value": "\"Missing data response in retrieving site access points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23169,
+      "offset": 26213,
       "length": 8,
       "value": "\"siteId\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23444,
+      "offset": 26488,
       "length": 40,
       "value": "\"Failure to retrieve site access points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23555,
+      "offset": 26599,
       "length": 8,
       "value": "\"siteId\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23604,
+      "offset": 26648,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23879,
+      "offset": 26923,
       "length": 2,
       "value": "\"\""
     },
