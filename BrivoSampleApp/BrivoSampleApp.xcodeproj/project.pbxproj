@@ -579,7 +579,7 @@
 			repositoryURL = "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios";
 			requirement = {
 				kind = exactVersion;
-				version = 2.2.2;
+				version = 2.4.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

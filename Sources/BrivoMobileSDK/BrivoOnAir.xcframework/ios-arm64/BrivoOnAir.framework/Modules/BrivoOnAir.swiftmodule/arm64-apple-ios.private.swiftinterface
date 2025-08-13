@@ -110,7 +110,8 @@ public struct BrivoReaderCommand : Swift.Codable {
   public func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<(BrivoCore.BrivoTokens?, BrivoNetworkCore.BrivoOnAirResponseStatus?), BrivoCore.BrivoError>
   public func redeemPass(passId: Swift.String, passCode: Swift.String) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
   public func redeemPass(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.RedeemPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  public func retrieveSites(tokens: BrivoCore.BrivoTokens, offset: Swift.Int = 0, siteName: Swift.String?) async -> Swift.Result<BrivoOnAir.Sites, BrivoCore.BrivoError>
+  public func retrieveSites(tokens: BrivoCore.BrivoTokens, offset: Swift.Int = 0, siteName: Swift.String?) async -> Swift.Result<BrivoOnAir.BrivoSites, BrivoCore.BrivoError>
+  @available(*, deprecated, message: "Use retrieveSites(tokens:siteName:offset:) instead")
   public func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
   public func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
   public func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
@@ -356,23 +357,13 @@ extension BrivoOnAir.BrivoAccessPoint {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public class BrivoSites : Swift.Codable {
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-public struct Sites : Swift.Codable {
-  public init(sites: [BrivoOnAir.BrivoSite], offset: Swift.Int, pageSize: Swift.Int, count: Swift.Int)
-  public var sites: [BrivoOnAir.BrivoSite]
-  public var offset: Swift.Int
-  public var pageSize: Swift.Int
-  public var count: Swift.Int
+public struct BrivoSites : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public typealias RedeemPassOnSuccessType = ((BrivoOnAir.BrivoOnairPass?)) -> Swift.Void
 public typealias RetrieveSitesOnSuccessType = ([BrivoOnAir.BrivoSite]) -> Swift.Void
-public typealias RetrieveSiteOnSuccessType = (BrivoOnAir.Sites) -> Swift.Void
+public typealias RetrieveSitesPaginatedOnSuccessType = (BrivoOnAir.BrivoSites) -> Swift.Void
 public typealias RetrieveSiteDetailsOnSuccessType = (BrivoOnAir.BrivoSite) -> Swift.Void
 public typealias RetrieveSiteAccessPointsOnSuccessType = ([BrivoOnAir.BrivoAccessPoint]) -> Swift.Void
 public typealias RetrieveAccessPointDetailsOnSuccessType = (BrivoOnAir.BrivoAccessPoint) -> Swift.Void
@@ -401,8 +392,9 @@ public protocol IBrivoSDKOnAir {
   func retrieveSDKLocallyStoredPasses() async -> Swift.Result<[BrivoOnAir.BrivoOnairPass], BrivoCore.BrivoError>
   func controlLockUnlock(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
   func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  @available(*, deprecated, message: "Use retrieveSites(tokens:offset:siteName:) instead")
   func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
-  func retrieveSites(tokens: BrivoCore.BrivoTokens, offset: Swift.Int, siteName: Swift.String?) async -> Swift.Result<BrivoOnAir.Sites, BrivoCore.BrivoError>
+  func retrieveSites(tokens: BrivoCore.BrivoTokens, offset: Swift.Int, siteName: Swift.String?) async -> Swift.Result<BrivoOnAir.BrivoSites, BrivoCore.BrivoError>
   func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
   func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
   func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoAccessPoint, BrivoCore.BrivoError>
