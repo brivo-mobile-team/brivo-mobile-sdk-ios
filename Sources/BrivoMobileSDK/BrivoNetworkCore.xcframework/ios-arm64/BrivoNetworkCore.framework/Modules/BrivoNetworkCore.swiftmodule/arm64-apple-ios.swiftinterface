@@ -9,6 +9,8 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 public struct HttpStatusCodes {
+  public static let ok: Swift.Int
+  public static let noContent: Swift.Int
   public static let unauthorised: Swift.Int
   public static let forbidden: Swift.Int
   public static let badRequest: Swift.Int

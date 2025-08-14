@@ -9,6 +9,7 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os
 public typealias CancellationClosure = (Swift.Bool) -> Swift.Void
 @objc @_inheritsConvenienceInitializers public class CancellationSignal : ObjectiveC.NSObject {
   public var isCancelled: Swift.Bool {
@@ -80,18 +81,6 @@ public typealias OnResultType = (BrivoCore.BrivoResult) -> Swift.Void
 @_hasMissingDesignatedInitializers public class ControlLockUtils {
   public static func isAllegionDeviceThatCallsV1Endpoint(_ deviceModelId: Swift.String) -> Swift.Bool
   @objc deinit
-}
-public enum AccessPointDorType : Swift.Int, Swift.Codable {
-  case brivoDoor
-  case controlLock
-  public var description: Swift.String {
-    get
-  }
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
 }
 public enum SDKLogLevel : Swift.String, Swift.Sendable {
   case verbose
@@ -201,6 +190,16 @@ public class ConsoleOutput : BrivoCore.LoggerOutput {
   public func sendLog(subsystem: Swift.String, level: BrivoCore.SDKLogLevel, message: Swift.String, tag: Swift.String?, metadata: [Swift.String : (any Swift.CustomStringConvertible & Swift.Sendable)?]?, file: Swift.String, function: Swift.String, line: Swift.Int)
   @objc deinit
 }
+final public class Atomic<Value> : Swift.Sendable where Value : Swift.Sendable {
+  public init(_ value: Value)
+  final public var value: Value {
+    get
+  }
+  final public func get<T>(_ block: @Sendable (Value) throws -> T) rethrows -> T where T : Swift.Sendable
+  @discardableResult
+  final public func modify<T>(_ block: @Sendable (inout Value) throws -> T) rethrows -> T where T : Swift.Sendable
+  @objc deinit
+}
 public enum NFCUnlinkStatus : Swift.Equatable {
   case successfullyUnlinked
   case nothingToUnlink
@@ -215,18 +214,28 @@ extension BrivoCore.NFCUnlinkStatus : Swift.CustomStringConvertible {
     get
   }
 }
-public enum NFCAddToWalletStatus : Swift.Equatable {
-  case alreadyAddedToWallet
-  case notEligibleForAddingToWallet
-  case canBeAddedToWallet
+@frozen public enum NFCCredentialStatus : Swift.Equatable {
+  case notEligible
+  case eligible(BrivoCore.NFCDevicesStatus)
+  public static func == (a: BrivoCore.NFCCredentialStatus, b: BrivoCore.NFCCredentialStatus) -> Swift.Bool
+}
+public struct NFCDevicesStatus : Swift.Equatable, Swift.Hashable {
+  public let phoneStatus: BrivoCore.NFCPassStatus
+  public let watchStatus: BrivoCore.NFCPassStatus?
+  public init(phoneStatus: BrivoCore.NFCPassStatus, watchStatus: BrivoCore.NFCPassStatus?)
+  public static func == (a: BrivoCore.NFCDevicesStatus, b: BrivoCore.NFCDevicesStatus) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
-  public static func == (a: BrivoCore.NFCAddToWalletStatus, b: BrivoCore.NFCAddToWalletStatus) -> Swift.Bool
   public var hashValue: Swift.Int {
     get
   }
 }
-extension BrivoCore.NFCAddToWalletStatus : Swift.CustomStringConvertible {
-  public var description: Swift.String {
+@frozen public enum NFCPassStatus : Swift.Equatable {
+  case active
+  case pending
+  case suspended
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrivoCore.NFCPassStatus, b: BrivoCore.NFCPassStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -386,9 +395,6 @@ public enum Constants {
 }
 extension BrivoCore.EmptyPropertyError : Swift.Equatable {}
 extension BrivoCore.EmptyPropertyError : Swift.Hashable {}
-extension BrivoCore.AccessPointDorType : Swift.Equatable {}
-extension BrivoCore.AccessPointDorType : Swift.Hashable {}
-extension BrivoCore.AccessPointDorType : Swift.RawRepresentable {}
 extension BrivoCore.SDKLogLevel : Swift.Equatable {}
 extension BrivoCore.SDKLogLevel : Swift.Hashable {}
 extension BrivoCore.SDKLogLevel : Swift.RawRepresentable {}
@@ -399,7 +405,9 @@ extension BrivoCore.DoorType : Swift.Equatable {}
 extension BrivoCore.DoorType : Swift.Hashable {}
 extension BrivoCore.DoorType : Swift.RawRepresentable {}
 extension BrivoCore.NFCUnlinkStatus : Swift.Hashable {}
-extension BrivoCore.NFCAddToWalletStatus : Swift.Hashable {}
+extension BrivoCore.NFCPassStatus : Swift.Hashable {}
+extension BrivoCore.NFCPassStatus : Swift.Sendable {}
+extension BrivoCore.NFCPassStatus : Swift.BitwiseCopyable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.Equatable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.Hashable {}
 extension BrivoCore.AccessPointCommunicationState : Swift.RawRepresentable {}

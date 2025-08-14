@@ -51,7 +51,6 @@ struct AccessPointView: View {
     private func createNavigationLinkForAccessPoint(_ accessPoint: BrivoAccessPoint) -> some View {
         NavigationLink {
             if let userId = stateModel.brivoOnAirPass.brivoOnairPassCredentials?.userId,
-               let doorType = accessPoint.doorType,
                let passId = stateModel.brivoOnAirPass.passId
             {
                 UnlockAccessPointView(
@@ -62,7 +61,7 @@ struct AccessPointView: View {
                                 siteId: accessPoint.siteId,
                                 passId: passId
                             ),
-                            doorType: doorType,
+                            doorType: accessPoint.doorType,
                             passCredential: .init(
                                 userId: userId,
                                 tokens: stateModel.brivoOnAirPass.brivoOnairPassCredentials?.tokens

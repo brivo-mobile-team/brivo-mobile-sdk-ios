@@ -4013,15 +4013,22 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Repository\/EventsRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1148,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Repository\/EventsRepository.swift",
       "kind": "StringLiteral",
-      "offset": 1033,
+      "offset": 1185,
       "length": 42,
       "value": "\"Database initialization failed: \""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Repository\/EventsRepository.swift",
       "kind": "StringLiteral",
-      "offset": 1074,
+      "offset": 1226,
       "length": 2,
       "value": "\"\""
     },
@@ -4161,28 +4168,28 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 1936,
+      "offset": 1876,
       "length": 38,
       "value": "\"brivoConfiguration missing: \""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 1973,
+      "offset": 1913,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 2268,
+      "offset": 2208,
       "length": 38,
       "value": "\"brivoConfiguration missing: \""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Services\/AllegionOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 2305,
+      "offset": 2245,
       "length": 2,
       "value": "\"\""
     },

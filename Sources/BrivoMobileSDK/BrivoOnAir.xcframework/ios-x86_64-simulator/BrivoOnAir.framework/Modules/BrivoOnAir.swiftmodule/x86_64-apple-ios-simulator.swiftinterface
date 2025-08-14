@@ -63,11 +63,8 @@ public struct BrivoReaderCommand : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers public class BrivoSDKOnAirHelper : ObjectiveC.NSObject {
-  public static func getBrivoSelectedAccessPoint(brivoOnAirPasses: [BrivoOnAir.BrivoOnairPass], accessPointId: Swift.String, passId: Swift.String? = nil) -> BrivoOnAir.BrivoSelectedAccessPoint?
-  public static func getDoorType(type: Swift.String?, readerUid: Swift.String?) -> BrivoCore.DoorType?
-  @objc override dynamic public init()
-  @objc deinit
+extension Swift.Array where Element == BrivoOnAir.BrivoOnairPass {
+  public func getBrivoSelectedAccessPoint(accessPointId: Swift.String, passId: Swift.String? = nil) -> BrivoOnAir.BrivoSelectedAccessPoint?
 }
 @objc public class BrivoControlLockConfigSaveResponse : ObjectiveC.NSObject, Swift.Codable {
   public var encryptedConfig: Swift.String
@@ -198,8 +195,9 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   public var userImage: BrivoOnAir.BrivoUserImage?
   public var firstName: Swift.String?
   public var lastName: Swift.String?
-  public var hasAllegionBleCredentials: Swift.Bool
   public var enablePassTransfer: Swift.Bool
+  public var nfcEnabled: Swift.Bool
+  public var hasAllegionBleCredentials: Swift.Bool
   public var hasHidOrigoMobilePass: Swift.Bool
   public var hidOrigoWalletPassEnabled: Swift.Bool
   @objc override dynamic public init()
@@ -308,7 +306,7 @@ public enum BrivoReaderType : Swift.String, Swift.Codable {
   @objc deinit
 }
 extension BrivoOnAir.BrivoAccessPoint {
-  public var doorType: BrivoCore.DoorType? {
+  public var doorType: BrivoCore.DoorType {
     get
   }
   public var readerUid: Swift.String? {

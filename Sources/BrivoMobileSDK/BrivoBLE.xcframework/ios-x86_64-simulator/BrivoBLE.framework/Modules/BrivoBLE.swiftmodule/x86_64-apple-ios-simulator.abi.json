@@ -2746,6 +2746,16 @@
       },
       {
         "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
+        "declKind": "Import",
+        "moduleName": "BrivoBLE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2820,6 +2830,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoBLE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreBluetooth",
         "printedName": "CoreBluetooth",
         "declKind": "Import",
@@ -2841,450 +2861,6 @@
         "printedName": "CoreBluetooth",
         "declKind": "Import",
         "moduleName": "BrivoBLE"
-      },
-      {
-        "kind": "Import",
-        "name": "BrivoCore",
-        "printedName": "BrivoCore",
-        "declKind": "Import",
-        "moduleName": "BrivoBLE",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BrivoBLEErrors",
-        "printedName": "BrivoBLEErrors",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "unknownError",
-            "printedName": "unknownError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV12unknownError0A4Core0aE0CvpZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV12unknownError0A4Core0aE0CvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE0A9BLEErrorsV12unknownError0A4Core0aE0CvgZ",
-                "mangledName": "$s8BrivoBLE0A9BLEErrorsV12unknownError0A4Core0aE0CvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "poweredOffError",
-            "printedName": "poweredOffError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV15poweredOffError0A4Core0aF0CvpZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV15poweredOffError0A4Core0aF0CvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE0A9BLEErrorsV15poweredOffError0A4Core0aF0CvgZ",
-                "mangledName": "$s8BrivoBLE0A9BLEErrorsV15poweredOffError0A4Core0aF0CvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "failedTransmissionError",
-            "printedName": "failedTransmissionError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV23failedTransmissionError0A4Core0aF0CvpZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV23failedTransmissionError0A4Core0aF0CvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE0A9BLEErrorsV23failedTransmissionError0A4Core0aF0CvgZ",
-                "mangledName": "$s8BrivoBLE0A9BLEErrorsV23failedTransmissionError0A4Core0aF0CvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "unauthorizedError",
-            "printedName": "unauthorizedError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV17unauthorizedError0A4Core0aE0CvpZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV17unauthorizedError0A4Core0aE0CvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE0A9BLEErrorsV17unauthorizedError0A4Core0aE0CvgZ",
-                "mangledName": "$s8BrivoBLE0A9BLEErrorsV17unauthorizedError0A4Core0aE0CvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "authenticationTimedOut",
-            "printedName": "authenticationTimedOut",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV22authenticationTimedOut0A4Core0A5ErrorCvpZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV22authenticationTimedOut0A4Core0A5ErrorCvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE0A9BLEErrorsV22authenticationTimedOut0A4Core0A5ErrorCvgZ",
-                "mangledName": "$s8BrivoBLE0A9BLEErrorsV22authenticationTimedOut0A4Core0A5ErrorCvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "unsupportedError",
-            "printedName": "unsupportedError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV16unsupportedError0A4Core0aE0CvpZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV16unsupportedError0A4Core0aE0CvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE0A9BLEErrorsV16unsupportedError0A4Core0aE0CvgZ",
-                "mangledName": "$s8BrivoBLE0A9BLEErrorsV16unsupportedError0A4Core0aE0CvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "peripheralError",
-            "printedName": "peripheralError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV15peripheralError0A4Core0aE0CvpZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV15peripheralError0A4Core0aE0CvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE0A9BLEErrorsV15peripheralError0A4Core0aE0CvgZ",
-                "mangledName": "$s8BrivoBLE0A9BLEErrorsV15peripheralError0A4Core0aE0CvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "confirmError",
-            "printedName": "confirmError",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV12confirmError0A4Core0aE0CvpZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV12confirmError0A4Core0aE0CvpZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:8BrivoBLE0A9BLEErrorsV12confirmError0A4Core0aE0CvgZ",
-                "mangledName": "$s8BrivoBLE0A9BLEErrorsV12confirmError0A4Core0aE0CvgZ",
-                "moduleName": "BrivoBLE",
-                "static": true,
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "brivoBleErrorWithDescription",
-            "printedName": "brivoBleErrorWithDescription(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoError",
-                "printedName": "BrivoCore.BrivoError",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:8BrivoBLE0A9BLEErrorsV28brivoBleErrorWithDescriptiony0A4Core0aF0CSSFZ",
-            "mangledName": "$s8BrivoBLE0A9BLEErrorsV28brivoBleErrorWithDescriptiony0A4Core0aF0CSSFZ",
-            "moduleName": "BrivoBLE",
-            "static": true,
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:8BrivoBLE0A9BLEErrorsV",
-        "mangledName": "$s8BrivoBLE0A9BLEErrorsV",
-        "moduleName": "BrivoBLE",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
       },
       {
         "kind": "TypeDecl",
@@ -3293,25 +2869,26 @@
         "children": [
           {
             "kind": "Var",
-            "name": "MINIMUM_ALLOWED_RSSI",
-            "printedName": "MINIMUM_ALLOWED_RSSI",
+            "name": "MAXIMUM_DISTANCE",
+            "printedName": "MAXIMUM_DISTANCE",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
               }
             ],
             "declKind": "Var",
-            "usr": "s:8BrivoBLE12BLEConstantsO20MINIMUM_ALLOWED_RSSISivpZ",
-            "mangledName": "$s8BrivoBLE12BLEConstantsO20MINIMUM_ALLOWED_RSSISivpZ",
+            "usr": "s:8BrivoBLE12BLEConstantsO16MAXIMUM_DISTANCESdvpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO16MAXIMUM_DISTANCESdvpZ",
             "moduleName": "BrivoBLE",
             "static": true,
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "isLet": true,
             "hasStorage": true,
@@ -3323,14 +2900,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:8BrivoBLE12BLEConstantsO20MINIMUM_ALLOWED_RSSISivgZ",
-                "mangledName": "$s8BrivoBLE12BLEConstantsO20MINIMUM_ALLOWED_RSSISivgZ",
+                "usr": "s:8BrivoBLE12BLEConstantsO16MAXIMUM_DISTANCESdvgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO16MAXIMUM_DISTANCESdvgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
@@ -3472,6 +3049,53 @@
                 "declKind": "Accessor",
                 "usr": "s:8BrivoBLE12BLEConstantsO32ALLEGION_UNLOCK_RESPONSE_TIMEOUTSdvgZ",
                 "mangledName": "$s8BrivoBLE12BLEConstantsO32ALLEGION_UNLOCK_RESPONSE_TIMEOUTSdvgZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "EXPECTED_RSSI",
+            "printedName": "EXPECTED_RSSI",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8BrivoBLE12BLEConstantsO13EXPECTED_RSSISivpZ",
+            "mangledName": "$s8BrivoBLE12BLEConstantsO13EXPECTED_RSSISivpZ",
+            "moduleName": "BrivoBLE",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8BrivoBLE12BLEConstantsO13EXPECTED_RSSISivgZ",
+                "mangledName": "$s8BrivoBLE12BLEConstantsO13EXPECTED_RSSISivgZ",
                 "moduleName": "BrivoBLE",
                 "static": true,
                 "implicit": true,
@@ -3835,6 +3459,1237 @@
             "mangledName": "$ss9EscapableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoBLE",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoBLE"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrivoBLEError",
+        "printedName": "BrivoBLEError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "domain",
+            "printedName": "domain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8BrivoBLE0A8BLEErrorO6domainSSvpZ",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO6domainSSvpZ",
+            "moduleName": "BrivoBLE",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8BrivoBLE0A8BLEErrorO6domainSSvgZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO6domainSSvgZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Code",
+            "printedName": "Code",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "unknownError",
+                "printedName": "unknownError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV12unknownErrorSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV12unknownErrorSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV12unknownErrorSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV12unknownErrorSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "poweredOffError",
+                "printedName": "poweredOffError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV15poweredOffErrorSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV15poweredOffErrorSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV15poweredOffErrorSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV15poweredOffErrorSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "scanningTimedOut",
+                "printedName": "scanningTimedOut",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV16scanningTimedOutSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV16scanningTimedOutSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV16scanningTimedOutSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV16scanningTimedOutSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "failedTransmissionError",
+                "printedName": "failedTransmissionError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV23failedTransmissionErrorSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV23failedTransmissionErrorSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV23failedTransmissionErrorSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV23failedTransmissionErrorSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unauthorizedError",
+                "printedName": "unauthorizedError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV17unauthorizedErrorSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV17unauthorizedErrorSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV17unauthorizedErrorSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV17unauthorizedErrorSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "authenticationTimedOut",
+                "printedName": "authenticationTimedOut",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV22authenticationTimedOutSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV22authenticationTimedOutSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV22authenticationTimedOutSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV22authenticationTimedOutSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "unsupportedError",
+                "printedName": "unsupportedError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV16unsupportedErrorSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV16unsupportedErrorSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV16unsupportedErrorSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV16unsupportedErrorSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "peripheralError",
+                "printedName": "peripheralError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV15peripheralErrorSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV15peripheralErrorSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV15peripheralErrorSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV15peripheralErrorSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "confirmError",
+                "printedName": "confirmError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV12confirmErrorSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV12confirmErrorSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV12confirmErrorSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV12confirmErrorSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "brivoBleErrorWithDescription",
+                "printedName": "brivoBleErrorWithDescription",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV28brivoBleErrorWithDescriptionSivpZ",
+                "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV28brivoBleErrorWithDescriptionSivpZ",
+                "moduleName": "BrivoBLE",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV28brivoBleErrorWithDescriptionSivgZ",
+                    "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV28brivoBleErrorWithDescriptionSivgZ",
+                    "moduleName": "BrivoBLE",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:8BrivoBLE0A8BLEErrorO4CodeV",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO4CodeV",
+            "moduleName": "BrivoBLE",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unknownError",
+            "printedName": "unknownError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> (Swift.String) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO12unknownErroryACSS_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO12unknownErroryACSS_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "poweredOffError",
+            "printedName": "poweredOffError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> (Swift.String) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO15poweredOffErroryACSS_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO15poweredOffErroryACSS_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "scanningTimedOut",
+            "printedName": "scanningTimedOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> (Swift.String) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO16scanningTimedOutyACSS_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO16scanningTimedOutyACSS_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "failedTransmissionError",
+            "printedName": "failedTransmissionError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> ([Swift.String : Any]) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(info: [Swift.String : Any])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO23failedTransmissionErroryACSDySSypG_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO23failedTransmissionErroryACSDySSypG_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "unauthorizedError",
+            "printedName": "unauthorizedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> (Swift.String) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO17unauthorizedErroryACSS_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO17unauthorizedErroryACSS_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "authenticationTimedOut",
+            "printedName": "authenticationTimedOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> (Swift.String) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO22authenticationTimedOutyACSS_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO22authenticationTimedOutyACSS_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "unsupportedError",
+            "printedName": "unsupportedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> (Swift.String) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO16unsupportedErroryACSS_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO16unsupportedErroryACSS_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "peripheralError",
+            "printedName": "peripheralError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> ([Swift.String : Any]) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(info: [Swift.String : Any])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO15peripheralErroryACSDySSypG_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO15peripheralErroryACSDySSypG_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "confirmError",
+            "printedName": "confirmError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> ([Swift.String : Any]) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String : Any]) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(info: [Swift.String : Any])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO12confirmErroryACSDySSypG_tcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO12confirmErroryACSDySSypG_tcACmF",
+            "moduleName": "BrivoBLE"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoBleErrorWithDescription",
+            "printedName": "brivoBleErrorWithDescription",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLE.BrivoBLEError.Type) -> (Swift.String, [Swift.String : Any]) -> BrivoBLE.BrivoBLEError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String, [Swift.String : Any]) -> BrivoBLE.BrivoBLEError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String, info: [Swift.String : Any])",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLE.BrivoBLEError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEError",
+                        "printedName": "BrivoBLE.BrivoBLEError",
+                        "usr": "s:8BrivoBLE0A8BLEErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:8BrivoBLE0A8BLEErrorO28brivoBleErrorWithDescriptionyACSS_SDySSypGtcACmF",
+            "mangledName": "$s8BrivoBLE0A8BLEErrorO28brivoBleErrorWithDescriptionyACSS_SDySSypGtcACmF",
+            "moduleName": "BrivoBLE"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:8BrivoBLE0A8BLEErrorO",
+        "mangledName": "$s8BrivoBLE0A8BLEErrorO",
+        "moduleName": "BrivoBLE",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -3988,6 +4843,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/MultiDeviceRSSIManager.swift",
+      "kind": "Dictionary",
+      "offset": 291,
+      "length": 3,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Enums\/CharacteristicType.swift",
       "kind": "IntegerLiteral",
       "offset": 238,
@@ -4025,72 +4887,121 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 2986,
+      "offset": 3063,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3011,
+      "offset": 3088,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3123,
+      "offset": 3200,
       "length": 17,
       "value": "\"StopBLE is true\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3400,
+      "offset": 3477,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3434,
+      "offset": 3511,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3476,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
-      "kind": "Dictionary",
-      "offset": 3522,
+      "offset": 3559,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3035,
+      "offset": 3112,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3866,
+      "offset": 3947,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3926,
+      "offset": 4007,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
+      "kind": "Array",
+      "offset": 310,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
+      "kind": "FloatLiteral",
+      "offset": 599,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
+      "kind": "FloatLiteral",
+      "offset": 637,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
+      "kind": "FloatLiteral",
+      "offset": 676,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
+      "kind": "IntegerLiteral",
+      "offset": 720,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
+      "kind": "IntegerLiteral",
+      "offset": 747,
+      "length": 3,
+      "value": "-73"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
+      "kind": "FloatLiteral",
+      "offset": 790,
+      "length": 4,
+      "value": "1.75"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
+      "kind": "FloatLiteral",
+      "offset": 820,
+      "length": 3,
+      "value": "0.3"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BTService.swift",
@@ -4101,234 +5012,241 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 205,
-      "length": 5,
-      "value": "-2000"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 277,
-      "length": 33,
-      "value": "\"Failed to unlock bluetooth door\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 374,
-      "length": 5,
-      "value": "-2001"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 449,
-      "length": 24,
-      "value": "\"BLE disabled on device\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 545,
-      "length": 5,
-      "value": "-2004"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 628,
-      "length": 25,
-      "value": "\"Failed BLE transmission\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 719,
-      "length": 5,
-      "value": "-2005"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 796,
-      "length": 15,
-      "value": "\"Access Denied\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 882,
-      "length": 5,
-      "value": "-2006"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 964,
-      "length": 30,
-      "value": "\"BLE Authentication timed out\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1059,
-      "length": 5,
-      "value": "-2007"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1135,
-      "length": 23,
-      "value": "\"Bluetooth unsupported\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1222,
-      "length": 5,
-      "value": "-2008"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1297,
-      "length": 22,
-      "value": "\"BLE peripheral error\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1381,
-      "length": 5,
-      "value": "-2009"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1454,
-      "length": 20,
-      "value": "\"Failed to call API\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1780,
-      "length": 38,
-      "value": "\"3420d81a-af2c-11e5-bf7f-feff819cdc9f\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1880,
-      "length": 38,
-      "value": "\"52052C11-E701-4782-99F5-8CE88DBB1500\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "StringLiteral",
-      "offset": 1975,
+      "offset": 251,
       "length": 12,
       "value": "\"3b01020022\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2039,
-      "length": 38,
-      "value": "\"00009800-0000-1000-8000-00177a000002\""
+      "offset": 337,
+      "length": 12,
+      "value": "\"3b01020011\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2141,
+      "offset": 412,
       "length": 20,
       "value": "\"3b0102002203010283\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2219,
-      "length": 2,
-      "value": "10"
+      "kind": "StringLiteral",
+      "offset": 506,
+      "length": 38,
+      "value": "\"3420d81a-af2c-11e5-bf7f-feff819cdc9f\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 606,
+      "length": 38,
+      "value": "\"52052C11-E701-4782-99F5-8CE88DBB1500\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 696,
+      "length": 38,
+      "value": "\"00009800-0000-1000-8000-00177a000002\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2279,
-      "length": 2,
-      "value": "10"
+      "offset": 839,
+      "length": 3,
+      "value": "-90"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2333,
+      "offset": 890,
+      "length": 3,
+      "value": "-52"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 953,
+      "length": 3,
+      "value": "-61"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1009,
+      "length": 3,
+      "value": "-52"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1058,
       "length": 3,
       "value": "-85"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1167,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1227,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "FloatLiteral",
-      "offset": 2383,
+      "offset": 1342,
+      "length": 4,
+      "value": "1.78"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1393,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2434,
+      "offset": 1444,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2507,
+      "offset": 1517,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2589,
+      "offset": 1558,
+      "length": 3,
+      "value": "-85"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1642,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2642,
+      "offset": 1695,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "Array",
-      "offset": 2697,
+      "offset": 1750,
       "length": 20,
       "value": "[\"BRVO\", \"BRVO_ALL\"]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "Array",
-      "offset": 2899,
+      "offset": 1952,
       "length": 129,
       "value": "[\"52052C11-E701-4782-99F5-8CE88DBB1506\", \"EE8732B3-2D52-409B-9084-70AD31F6C790\"]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3080,
+      "offset": 2133,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 3152,
+      "offset": 2205,
       "length": 1,
       "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 428,
+      "length": 5,
+      "value": "-2000"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 478,
+      "length": 5,
+      "value": "-2001"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 529,
+      "length": 5,
+      "value": "-2002"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 587,
+      "length": 5,
+      "value": "-2004"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 639,
+      "length": 5,
+      "value": "-2005"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 696,
+      "length": 5,
+      "value": "-2006"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 747,
+      "length": 5,
+      "value": "-2007"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 797,
+      "length": 5,
+      "value": "-2008"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 844,
+      "length": 5,
+      "value": "-2009"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 907,
+      "length": 5,
+      "value": "-2010"
     }
   ]
 }

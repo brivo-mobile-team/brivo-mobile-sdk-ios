@@ -311,6 +311,7 @@ SWIFT_CLASS("_TtC10BrivoOnAir16BrivoAccessPoint")
 
 
 
+
 SWIFT_CLASS("_TtC10BrivoOnAir12BrivoAddress")
 @interface BrivoAddress : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -384,6 +385,7 @@ SWIFT_CLASS("_TtC10BrivoOnAir14BrivoOnairPass")
 
 
 
+
 SWIFT_CLASS("_TtC10BrivoOnAir25BrivoOnairPassCredentials")
 @interface BrivoOnairPassCredentials : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -396,12 +398,6 @@ SWIFT_CLASS("_TtC10BrivoOnAir13BrivoSDKOnAir")
 @interface BrivoSDKOnAir : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC10BrivoOnAir19BrivoSDKOnAirHelper")
-@interface BrivoSDKOnAirHelper : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

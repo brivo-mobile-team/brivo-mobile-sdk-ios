@@ -6,31 +6,31 @@
 	<dict>
 		<key>Headers/BrivoLocalAuthentication-Swift.h</key>
 		<data>
-		R4ogQKmr9vsa0PRm5CzUD9wppvU=
+		60Rl8kftMR+eaqW5ff+1IImt+xY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		RRV99MT4M6E9Knn9JjGsDhrdjaM=
+		x1P5ta4kPwjfsCr44HGVWUkeQ2Q=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rFhHs55y79Lg8Lz+uItg4HU9sSo=
+		jAfSCFi2TEMfDPLNzLXcyWkBpYQ=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vztSiKCaIYRFCseR/1oCy3Cn2WY=
+		IPNSWjGFHS3yxa7annc987a6cPA=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		l1im8ZUxojnELRdC3/d+YRfz4vo=
+		q2uDloH7yABqqSGJP9Sx+oPlENU=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vztSiKCaIYRFCseR/1oCy3Cn2WY=
+		IPNSWjGFHS3yxa7annc987a6cPA=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TPBPQC/XHkP7VSzZr2YPNhpTtwI=
+		h2s3o15+TzZMOwBM/DUKnphs2ao=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -47,42 +47,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wH+sVuSomDgrFrVZZK3aEaL+ZU3GLDxZBku5kmKlv2c=
+			kkYpyD34+ECIrgH+El5n0OGYd/9qkk/ZRfDWpdeXr2s=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XrSZnhddPNuAjWiRYf5LOVj3ZW7/P++bMUs+4Jriz2E=
+			QPRP43OpNioaNp3pk1VPqnOm7NkU9ezxLe+sWtZI+To=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jhFlTZxoqSn3/mJ8tNSAWNao5yEOb9+pu1WTIJyzG8g=
+			0IFe6iiWj8T1nUYKLpsFoBD9NuzPVksMKVOtJ2311iE=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			iJXJx/VwdETErw/j3X1YCBRNsTxc4eXNzj2c2a57QfU=
+			7ERohTqSG1eRC5pPZtTP3tWAkiQ/s9+52g+MdsdUoDY=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jhFlTZxoqSn3/mJ8tNSAWNao5yEOb9+pu1WTIJyzG8g=
+			0IFe6iiWj8T1nUYKLpsFoBD9NuzPVksMKVOtJ2311iE=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2HFbjpPWQnb1c0v6YIT8KS/a7rgfzqAVOMIlEi/tkXE=
+			M+X6yMJSF9BZNECxEB3JYk+XB9XHVOZsJtEayNkum04=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

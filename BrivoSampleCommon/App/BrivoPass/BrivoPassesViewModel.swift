@@ -26,9 +26,7 @@ class BrivoPassesViewModel: ObservableObject {
     @Published var brivoConfig: BrivoSDKConfiguration?
     @Published var isEURegion = false {
         didSet {
-            resetPasses()
-            setRegion(isEURegion: isEURegion)
-            setupBrivoConfiguration()
+            handleRegionChange(isEURegion: isEURegion)
         }
     }
     @Published var alertTitle = ""
@@ -45,9 +43,15 @@ class BrivoPassesViewModel: ObservableObject {
     }
 
     func onAppear() {
-        setRegion(isEURegion: isEURegion)
-        setupBrivoConfiguration()
-        Task { await refreshPasses() }
+        cacheRegion(isEURegion: isEURegion)
+        do {
+            try setupBrivoConfiguration()
+            Task {
+                await refreshPasses()
+            }
+        } catch {
+            onError(error)
+        }
     }
     
     @MainActor
@@ -104,6 +108,16 @@ class BrivoPassesViewModel: ObservableObject {
         }
     }
     
+    func handleRegionChange(isEURegion: Bool) {
+        resetPasses()
+        cacheRegion(isEURegion: isEURegion)
+        do {
+            try setupBrivoConfiguration()
+        } catch {
+            onError(error)
+        }
+    }
+    
 #if canImport(BrivoHIDOrigo)
     @MainActor
     func addToWallet(pass: BrivoOnairPass) async {
@@ -130,15 +144,13 @@ class BrivoPassesViewModel: ObservableObject {
 #if canImport(BrivoHIDOrigo)
                 switch await BrivoSDKHIDOrigo.instance.getNFCCredentialStatus(pass: brivoOnAirPass) {
                 case .success(let status):
-                    switch status {
-                    case .alreadyAddedToWallet:
-                        addToWalletStatusResult = .ineligible(reason: "Already added")
-                    case .canBeAddedToWallet:
+                    switch status{
+                    case .eligible(let devices):
                         addToWalletStatusResult = .eligible
-                    case .notEligibleForAddingToWallet:
+                    case .notEligible:
                         addToWalletStatusResult = .ineligible(reason: "Not Eligible")
                     @unknown default:
-                        fatalError()
+                        addToWalletStatusResult = .ineligible(reason: "Not Eligible. Unknown Status")
                     }
                 case .failure:
                     addToWalletStatusResult = .ineligible(reason: "Unsupported")
@@ -151,24 +163,20 @@ class BrivoPassesViewModel: ObservableObject {
         }
     }
     
-    private func setRegion(isEURegion: Bool) {
+    private func cacheRegion(isEURegion: Bool) {
         UserDefaultsAccessService().setRegion((isEURegion ? Region.eu : Region.us).rawValue)
     }
     
-    private func setupBrivoConfiguration() {
-        do {
-            let brivoConfiguration = try BrivoSDKConfiguration(
-                clientId: Configuration.default.clientId,
-                clientSecret: Configuration.default.clientSecret,
-                useSDKStorage: true,
-                region: self.isEURegion ? Region.eu : Region.us,
-                authUrl: Configuration.default.brivoOnAirAuth,
-                apiUrl: Configuration.default.brivoOnAirAPI
-            )
-            BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
-        } catch let error {
-            onError(error)
-        }
+    private func setupBrivoConfiguration() throws {
+        let brivoConfiguration = try BrivoSDKConfiguration(
+            clientId: Configuration.default.clientId,
+            clientSecret: Configuration.default.clientSecret,
+            useSDKStorage: true,
+            region: self.isEURegion ? Region.eu : Region.us,
+            authUrl: Configuration.default.brivoOnAirAuth,
+            apiUrl: Configuration.default.brivoOnAirAPI
+        )
+        BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
     }
     
 #if canImport(BrivoBLEAllegion)

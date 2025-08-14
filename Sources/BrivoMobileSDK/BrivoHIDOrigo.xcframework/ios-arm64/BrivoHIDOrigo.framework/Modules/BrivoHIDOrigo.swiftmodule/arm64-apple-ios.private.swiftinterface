@@ -10,6 +10,7 @@ import Foundation
 import OrigoSDK
 import PassKit
 import Swift
+import WatchConnectivity
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -30,6 +31,7 @@ public enum BrivoHIDOrigoError : Swift.Error {
     public static let api: Swift.Int
     public static let missingRights: Swift.Int
     public static let walletSetup: Swift.Int
+    public static let walletSetupCancelled: Swift.Int
     public static let walletUnsupported: Swift.Int
   }
   public enum Context : Swift.String {
@@ -54,6 +56,7 @@ public enum BrivoHIDOrigoError : Swift.Error {
   case api(error: Foundation.NSError)
   case missingRights
   case walletUnsupported
+  case walletSetupCancelled
   case walletSetup(nsError: Foundation.NSError)
 }
 public struct BrivoSDKHIDOrigoConfiguration {
@@ -73,8 +76,9 @@ public struct BrivoSDKHIDOrigoConfiguration {
   @_Concurrency.MainActor func refreshCredentials(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   @_Concurrency.MainActor func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
   @_Concurrency.MainActor func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  @_Concurrency.MainActor func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCAddToWalletStatus, BrivoCore.BrivoError>
+  @_Concurrency.MainActor func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCCredentialStatus, BrivoCore.BrivoError>
   @_Concurrency.MainActor func addNFCCredentialToWallet(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<[PassKit.PKSecureElementPass], BrivoCore.BrivoError>
+  @_Concurrency.MainActor func unlinkNFCCredential(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCUnlinkStatus, BrivoCore.BrivoError>
 }
 @objc @_Concurrency.MainActor public class BrivoSDKHIDOrigo : ObjectiveC.NSObject, BrivoHIDOrigo.IBrivoSDKHIDOrigo {
   @_Concurrency.MainActor public static let instance: BrivoHIDOrigo.BrivoSDKHIDOrigo
@@ -89,8 +93,9 @@ public struct BrivoSDKHIDOrigoConfiguration {
   @_Concurrency.MainActor public func refreshCredentials(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   @_Concurrency.MainActor public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
   @_Concurrency.MainActor public func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  @_Concurrency.MainActor public func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCAddToWalletStatus, BrivoCore.BrivoError>
+  @_Concurrency.MainActor public func getNFCCredentialStatus(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCCredentialStatus, BrivoCore.BrivoError>
   @_Concurrency.MainActor public func addNFCCredentialToWallet(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<[PassKit.PKSecureElementPass], BrivoCore.BrivoError>
+  @_Concurrency.MainActor public func unlinkNFCCredential(pass: BrivoOnAir.BrivoOnairPass) async -> Swift.Result<BrivoCore.NFCUnlinkStatus, BrivoCore.BrivoError>
 }
 extension BrivoHIDOrigo.BrivoSDKHIDOrigo : @preconcurrency OrigoSDK.OrigoKeysManagerDelegate {
   @_Concurrency.MainActor @objc dynamic public func origoKeysDidStartup()

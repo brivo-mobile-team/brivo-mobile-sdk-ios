@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BrivoOnAir-Swift.h</key>
 		<data>
-		nSOR1q+Bepa4oICV9TZW90HWkvQ=
+		7TpPQQWebxJkdYZVrIOcnUiv04I=
 		</data>
 		<key>Headers/BrivoOnair.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sPPoCIFjc+jO9ANbCYdiAPNx4G8=
+		qfT2lDFsVzeGt7WNzjjOFcvXc5U=
 		</data>
 		<key>Modules/BrivoOnAir.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		/v3J0qw9L013uZhqN6+ymZ9VfCU=
+		EuqSGJ+5jWYMxNcZbj2oVXbJPyw=
 		</data>
 		<key>Modules/BrivoOnAir.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		y4WqB0gkm/7j40p19rKZM3k0Mrc=
+		2T4n7Caq+Cxif95i66dFSxzGRa0=
 		</data>
 		<key>Modules/BrivoOnAir.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BrivoOnAir.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		y4WqB0gkm/7j40p19rKZM3k0Mrc=
+		2T4n7Caq+Cxif95i66dFSxzGRa0=
 		</data>
 		<key>Modules/BrivoOnAir.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tna6bVtASviBsHMUiPzbezuPTdo=
+		ar+OEHL5XJZ4lk+Yi3pLaWfiCIA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -51,7 +51,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rgQnQW0U3rM8ha4Cmjj2k4EWUzQLdLpHSohbV8fci7I=
+			WiPmWh2lTTXID2ntN++L3Ov2J+K4P6C4f80IikWIX6M=
 			</data>
 		</dict>
 		<key>Headers/BrivoOnair.h</key>
@@ -65,14 +65,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fpkzYihwZ3DJPPM3zgVj1S7hs2EVR7qx5Hv0JjBzdhw=
+			fgYTWFt8O+Hhtho2MMDbxPvWAl543fuQyVCUVKV2xXo=
 			</data>
 		</dict>
 		<key>Modules/BrivoOnAir.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G+1mfaziwljjZn43l+BsDeiB2tg2xTQc0Qct8B5z6DE=
+			TfBv6y8lDXGi8Yaem2bPXmt5fE0TjMrOylW73fcDdeQ=
 			</data>
 		</dict>
 		<key>Modules/BrivoOnAir.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -86,14 +86,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G+1mfaziwljjZn43l+BsDeiB2tg2xTQc0Qct8B5z6DE=
+			TfBv6y8lDXGi8Yaem2bPXmt5fE0TjMrOylW73fcDdeQ=
 			</data>
 		</dict>
 		<key>Modules/BrivoOnAir.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nax8399eVFaVQxmJxnESxTqMOVA9xKC8ns/r/fg4lHc=
+			s94yX/xH/7CxprYJOzqsQlY+G0qBJKyCttfNuNKO178=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

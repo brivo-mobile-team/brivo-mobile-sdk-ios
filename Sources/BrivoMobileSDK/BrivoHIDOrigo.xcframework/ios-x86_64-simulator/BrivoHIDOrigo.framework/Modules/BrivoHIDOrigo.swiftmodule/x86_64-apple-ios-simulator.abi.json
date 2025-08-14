@@ -654,6 +654,53 @@
               },
               {
                 "kind": "Var",
+                "name": "walletSetupCancelled",
+                "printedName": "walletSetupCancelled",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV20walletSetupCancelledSivpZ",
+                "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV20walletSetupCancelledSivpZ",
+                "moduleName": "BrivoHIDOrigo",
+                "static": true,
+                "declAttributes": [
+                  "HasInitialValue",
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO4CodeV20walletSetupCancelledSivgZ",
+                    "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO4CodeV20walletSetupCancelledSivgZ",
+                    "moduleName": "BrivoHIDOrigo",
+                    "static": true,
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "walletUnsupported",
                 "printedName": "walletUnsupported",
                 "children": [
@@ -1620,6 +1667,43 @@
           },
           {
             "kind": "Var",
+            "name": "walletSetupCancelled",
+            "printedName": "walletSetupCancelled",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoHIDOrigo.BrivoHIDOrigoError.Type) -> BrivoHIDOrigo.BrivoHIDOrigoError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoHIDOrigoError",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                    "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoHIDOrigoError",
+                        "printedName": "BrivoHIDOrigo.BrivoHIDOrigoError",
+                        "usr": "s:13BrivoHIDOrigo0aB5ErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:13BrivoHIDOrigo0aB5ErrorO20walletSetupCancelledyA2CmF",
+            "mangledName": "$s13BrivoHIDOrigo0aB5ErrorO20walletSetupCancelledyA2CmF",
+            "moduleName": "BrivoHIDOrigo"
+          },
+          {
+            "kind": "Var",
             "name": "walletSetup",
             "printedName": "walletSetup",
             "children": [
@@ -2424,13 +2508,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<BrivoCore.NFCAddToWalletStatus, BrivoCore.BrivoError>",
+                "printedName": "Swift.Result<BrivoCore.NFCCredentialStatus, BrivoCore.BrivoError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NFCAddToWalletStatus",
-                    "printedName": "BrivoCore.NFCAddToWalletStatus",
-                    "usr": "s:9BrivoCore20NFCAddToWalletStatusO"
+                    "name": "NFCCredentialStatus",
+                    "printedName": "BrivoCore.NFCCredentialStatus",
+                    "usr": "s:9BrivoCore19NFCCredentialStatusO"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2449,8 +2533,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP22getNFCCredentialStatus4passs6ResultOy0A4Core014NFCAddToWalletG0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
-            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP22getNFCCredentialStatus4passs6ResultOy0A4Core014NFCAddToWalletG0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP22getNFCCredentialStatus4passs6ResultOy0A4Core0fG0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP22getNFCCredentialStatus4passs6ResultOy0A4Core0fG0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
             "moduleName": "BrivoHIDOrigo",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
@@ -2505,6 +2589,52 @@
             "declKind": "Func",
             "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP24addNFCCredentialToWallet4passs6ResultOySaySo19PKSecureElementPassCG0A4Core0A5ErrorCG0A5OnAir0a5OnairM0C_tYaF",
             "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP24addNFCCredentialToWallet4passs6ResultOySaySo19PKSecureElementPassCG0A4Core0A5ErrorCG0A5OnAir0a5OnairM0C_tYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlinkNFCCredential",
+            "printedName": "unlinkNFCCredential(pass:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<BrivoCore.NFCUnlinkStatus, BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCUnlinkStatus",
+                    "printedName": "BrivoCore.NFCUnlinkStatus",
+                    "usr": "s:9BrivoCore15NFCUnlinkStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoOnairPass",
+                "printedName": "BrivoOnAir.BrivoOnairPass",
+                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo17IBrivoSDKHIDOrigoP19unlinkNFCCredential4passs6ResultOy0A4Core15NFCUnlinkStatusOAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
+            "mangledName": "$s13BrivoHIDOrigo17IBrivoSDKHIDOrigoP19unlinkNFCCredential4passs6ResultOy0A4Core15NFCUnlinkStatusOAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
             "moduleName": "BrivoHIDOrigo",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
             "sugared_genericSig": "<Self where Self : BrivoHIDOrigo.IBrivoSDKHIDOrigo>",
@@ -2585,6 +2715,16 @@
       },
       {
         "kind": "Import",
+        "name": "WatchConnectivity",
+        "printedName": "WatchConnectivity",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "OrigoSDK",
         "printedName": "OrigoSDK",
         "declKind": "Import",
@@ -2602,6 +2742,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoHIDOrigo"
       },
       {
         "kind": "Import",
@@ -2961,13 +3118,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Result",
-                "printedName": "Swift.Result<BrivoCore.NFCAddToWalletStatus, BrivoCore.BrivoError>",
+                "printedName": "Swift.Result<BrivoCore.NFCCredentialStatus, BrivoCore.BrivoError>",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "NFCAddToWalletStatus",
-                    "printedName": "BrivoCore.NFCAddToWalletStatus",
-                    "usr": "s:9BrivoCore20NFCAddToWalletStatusO"
+                    "name": "NFCCredentialStatus",
+                    "printedName": "BrivoCore.NFCCredentialStatus",
+                    "usr": "s:9BrivoCore19NFCCredentialStatusO"
                   },
                   {
                     "kind": "TypeNominal",
@@ -2986,8 +3143,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC22getNFCCredentialStatus4passs6ResultOy0A4Core014NFCAddToWalletF0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
-            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC22getNFCCredentialStatus4passs6ResultOy0A4Core014NFCAddToWalletF0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC22getNFCCredentialStatus4passs6ResultOy0A4Core0eF0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC22getNFCCredentialStatus4passs6ResultOy0A4Core0eF0OAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
               "Custom",
@@ -3039,6 +3196,48 @@
             "declKind": "Func",
             "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC24addNFCCredentialToWallet4passs6ResultOySaySo19PKSecureElementPassCG0A4Core0A5ErrorCG0A5OnAir0a5OnairL0C_tYaF",
             "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC24addNFCCredentialToWallet4passs6ResultOySaySo19PKSecureElementPassCG0A4Core0A5ErrorCG0A5OnAir0a5OnairL0C_tYaF",
+            "moduleName": "BrivoHIDOrigo",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unlinkNFCCredential",
+            "printedName": "unlinkNFCCredential(pass:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Result",
+                "printedName": "Swift.Result<BrivoCore.NFCUnlinkStatus, BrivoCore.BrivoError>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NFCUnlinkStatus",
+                    "printedName": "BrivoCore.NFCUnlinkStatus",
+                    "usr": "s:9BrivoCore15NFCUnlinkStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "usr": "s:s6ResultO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoOnairPass",
+                "printedName": "BrivoOnAir.BrivoOnairPass",
+                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13BrivoHIDOrigo0A11SDKHIDOrigoC19unlinkNFCCredential4passs6ResultOy0A4Core15NFCUnlinkStatusOAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
+            "mangledName": "$s13BrivoHIDOrigo0A11SDKHIDOrigoC19unlinkNFCCredential4passs6ResultOy0A4Core15NFCUnlinkStatusOAH0A5ErrorCG0A5OnAir0A9OnairPassC_tYaF",
             "moduleName": "BrivoHIDOrigo",
             "declAttributes": [
               "Custom",
@@ -3745,168 +3944,189 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
       "kind": "IntegerLiteral",
-      "offset": 971,
+      "offset": 974,
       "length": 5,
       "value": "-8021"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1026,
+      "length": 5,
+      "value": "-8022"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Models\/BrivoHIDOrigoError.swift",
       "kind": "StringLiteral",
-      "offset": 1776,
+      "offset": 1861,
       "length": 19,
       "value": "\"Available Readers\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 736,
-      "length": 68,
+      "offset": 718,
+      "length": 67,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 767,
+      "offset": 749,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 801,
+      "offset": 782,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 803,
+      "offset": 784,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 827,
+      "offset": 808,
       "length": 69,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 858,
+      "offset": 839,
       "length": 21,
       "value": "\"CFBundleDisplayName\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 884,
+      "offset": 865,
       "length": 10,
       "value": "\"BRIVOSDK\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 895,
+      "offset": 876,
       "length": 14,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1093,
-      "length": 22,
-      "value": "\"HID-BRIVO-WALLET-DEV\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
-      "kind": "StringLiteral",
-      "offset": 1138,
+      "offset": 997,
       "length": 48,
       "value": "\"HID-BRIVO-\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 1025,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1185,
+      "offset": 1044,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 1325,
+      "offset": 1082,
+      "length": 29,
+      "value": "\"HID-BRIVO-\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1110,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
+      "kind": "StringLiteral",
+      "offset": 1200,
       "length": 45,
       "value": "\"com.HID.origoSDK.backgroundProcessingTaskID\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "BooleanLiteral",
-      "offset": 1410,
+      "offset": 1285,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1457,
+      "offset": 1332,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1500,
+      "offset": 1375,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/BrivoSDKHIDOrigo+Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 1615,
+      "offset": 1490,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 358,
+      "offset": 375,
       "length": 42,
       "value": "\"\/hid-origo-mobile-pass\/getInvitationCode\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 450,
+      "offset": 467,
       "length": 41,
       "value": "\"\/hid-origo-wallet-pass\/getIssuanceToken\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 536,
+      "offset": 553,
       "length": 48,
       "value": "\"\/hid-origo-wallet-pass\/isEligibleToAddToWallet\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 2016,
+      "offset": 632,
+      "length": 31,
+      "value": "\"\/hid-origo-wallet-pass\/unlink\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
+      "kind": "StringLiteral",
+      "offset": 2514,
       "length": 38,
       "value": "\"brivoConfiguration missing: \""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoHIDOrigo\/BrivoHIDOrigo\/Services\/HIDOrigoOnAirService.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 2551,
       "length": 2,
       "value": "\"\""
     },

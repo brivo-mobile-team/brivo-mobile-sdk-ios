@@ -315,6 +315,7 @@ SWIFT_CLASS("_TtC24BrivoLocalAuthentication27BrivoSDKLocalAuthentication")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
 #endif
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop

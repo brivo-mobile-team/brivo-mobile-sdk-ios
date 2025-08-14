@@ -6,8 +6,8 @@
     "children": [
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
         "declKind": "Import",
         "moduleName": "BrivoLocalAuthentication",
         "declAttributes": [
@@ -16,15 +16,15 @@
       },
       {
         "kind": "Import",
-        "name": "LocalAuthentication",
-        "printedName": "LocalAuthentication",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BrivoLocalAuthentication"
       },
       {
         "kind": "Import",
-        "name": "BrivoCore",
-        "printedName": "BrivoCore",
+        "name": "LocalAuthentication",
+        "printedName": "LocalAuthentication",
         "declKind": "Import",
         "moduleName": "BrivoLocalAuthentication"
       },
@@ -171,32 +171,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoSDKLocalAuthentication",
-                "printedName": "BrivoLocalAuthentication.BrivoSDKLocalAuthentication",
-                "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BrivoLocalAuthentication@objc(cs)BrivoSDKLocalAuthentication(im)init",
-            "mangledName": "$s24BrivoLocalAuthentication0a8SDKLocalC0CACycfc",
-            "moduleName": "BrivoLocalAuthentication",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -209,6 +183,7 @@
         ],
         "superclassUsr": "c:objc(cs)NSObject",
         "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
@@ -309,8 +284,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "unknownError",
-            "printedName": "unknownError",
+            "name": "authenticationFailureError",
+            "printedName": "authenticationFailureError",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -320,8 +295,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC12unknownError0A4Core0aF0CvpZ",
-            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC12unknownError0A4Core0aF0CvpZ",
+            "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC26authenticationFailureError0A4Core0aG0CvpZ",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC26authenticationFailureError0A4Core0aG0CvpZ",
             "moduleName": "BrivoLocalAuthentication",
             "static": true,
             "declAttributes": [
@@ -346,8 +321,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC12unknownError0A4Core0aF0CvgZ",
-                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC12unknownError0A4Core0aF0CvgZ",
+                "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC26authenticationFailureError0A4Core0aG0CvgZ",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC26authenticationFailureError0A4Core0aG0CvgZ",
                 "moduleName": "BrivoLocalAuthentication",
                 "static": true,
                 "implicit": true,
@@ -513,8 +488,8 @@
           },
           {
             "kind": "Var",
-            "name": "notEnroledError",
-            "printedName": "notEnroledError",
+            "name": "passcodeNotSetError",
+            "printedName": "passcodeNotSetError",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -524,8 +499,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC15notEnroledError0A4Core0aG0CvpZ",
-            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC15notEnroledError0A4Core0aG0CvpZ",
+            "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC19passcodeNotSetError0A4Core0aH0CvpZ",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC19passcodeNotSetError0A4Core0aH0CvpZ",
             "moduleName": "BrivoLocalAuthentication",
             "static": true,
             "declAttributes": [
@@ -550,8 +525,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC15notEnroledError0A4Core0aG0CvgZ",
-                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC15notEnroledError0A4Core0aG0CvgZ",
+                "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC19passcodeNotSetError0A4Core0aH0CvgZ",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC19passcodeNotSetError0A4Core0aH0CvgZ",
                 "moduleName": "BrivoLocalAuthentication",
                 "static": true,
                 "implicit": true,
@@ -615,8 +590,8 @@
           },
           {
             "kind": "Var",
-            "name": "applicationCanceledError",
-            "printedName": "applicationCanceledError",
+            "name": "authenticationCancelledError",
+            "printedName": "authenticationCancelledError",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -626,8 +601,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC24applicationCanceledError0A4Core0aG0CvpZ",
-            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC24applicationCanceledError0A4Core0aG0CvpZ",
+            "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC28authenticationCancelledError0A4Core0aG0CvpZ",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC28authenticationCancelledError0A4Core0aG0CvpZ",
             "moduleName": "BrivoLocalAuthentication",
             "static": true,
             "declAttributes": [
@@ -652,8 +627,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC24applicationCanceledError0A4Core0aG0CvgZ",
-                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC24applicationCanceledError0A4Core0aG0CvgZ",
+                "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC28authenticationCancelledError0A4Core0aG0CvgZ",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC28authenticationCancelledError0A4Core0aG0CvgZ",
                 "moduleName": "BrivoLocalAuthentication",
                 "static": true,
                 "implicit": true,
@@ -767,6 +742,57 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "biometryNotEnrolledError",
+            "printedName": "biometryNotEnrolledError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC24biometryNotEnrolledError0A4Core0aH0CvpZ",
+            "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC24biometryNotEnrolledError0A4Core0aH0CvpZ",
+            "moduleName": "BrivoLocalAuthentication",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24BrivoLocalAuthentication0abC6ErrorsC24biometryNotEnrolledError0A4Core0aH0CvgZ",
+                "mangledName": "$s24BrivoLocalAuthentication0abC6ErrorsC24biometryNotEnrolledError0A4Core0aH0CvgZ",
+                "moduleName": "BrivoLocalAuthentication",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -799,7 +825,6 @@
         "moduleName": "BrivoLocalAuthentication",
         "declAttributes": [
           "AccessControl",
-          "RawDocComment",
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -1025,130 +1050,172 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 556,
+      "length": 14,
+      "value": "\"Use Passcode\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 642,
+      "length": 30,
+      "value": "\"To access Configuration Menu\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "kind": "StringLiteral",
+      "offset": 683,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 336,
+      "offset": 347,
       "length": 5,
       "value": "-4000"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 409,
-      "length": 21,
-      "value": "\"Incorrect Passcode.\""
+      "offset": 380,
+      "length": 23,
+      "value": "\"Authentication failed\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 509,
+      "offset": 496,
       "length": 5,
       "value": "-4001"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 599,
+      "offset": 529,
       "length": 47,
       "value": "\"Hardware unavailable for local authentication\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 708,
+      "offset": 652,
       "length": 5,
       "value": "-4002"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 781,
+      "offset": 685,
       "length": 33,
       "value": "\"Local authentication timed out.\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 892,
+      "offset": 810,
       "length": 5,
       "value": "-4003"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 981,
+      "offset": 843,
       "length": 49,
       "value": "\"Hardware doesn't exist for local authentication\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1095,
+      "offset": 975,
       "length": 5,
       "value": "-4004"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1171,
-      "length": 126,
-      "value": "\"Biometric or passcode verification is required to unlock this door. Please enable one of these security options to continue.\""
+      "offset": 1008,
+      "length": 39,
+      "value": "\"A passcode isn’t set on the device.\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1365,
+      "offset": 1129,
       "length": 5,
       "value": "-4005"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1444,
+      "offset": 1162,
       "length": 42,
       "value": "\"Context not set for local authentication\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1560,
+      "offset": 1296,
       "length": 5,
       "value": "-4006"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1645,
+      "offset": 1329,
       "length": 45,
       "value": "\"Authentication was cancelled by application\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1759,
+      "offset": 1457,
       "length": 5,
       "value": "-4007"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1839,
+      "offset": 1490,
       "length": 55,
       "value": "\"Authentication failed because interaction is disabled\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1964,
+      "offset": 1629,
       "length": 5,
       "value": "-4008"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 2045,
+      "offset": 1662,
       "length": 101,
       "value": "\"Biometry is now locked because of too many failed attempts. Passcode is required to unlock biometry\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1851,
+      "length": 5,
+      "value": "-4009"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "kind": "StringLiteral",
+      "offset": 1884,
+      "length": 48,
+      "value": "\"The user has no enrolled biometric identities.\""
     }
   ]
 }

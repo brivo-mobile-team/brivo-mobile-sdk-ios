@@ -9,7 +9,7 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_hasMissingDesignatedInitializers public class BrivoSDKLocalAuthentication : ObjectiveC.NSObject, BrivoLocalAuthentication.IBrivoSDKLocalAuthentication {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoSDKLocalAuthentication : ObjectiveC.NSObject, BrivoLocalAuthentication.IBrivoSDKLocalAuthentication {
   public static let instance: BrivoLocalAuthentication.BrivoSDKLocalAuthentication
   public func canAuthenticate() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   public func authenticate() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
@@ -17,15 +17,16 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class BrivoLocalAuthenticationErrors : ObjectiveC.NSObject {
-  public static let unknownError: BrivoCore.BrivoError
+  public static let authenticationFailureError: BrivoCore.BrivoError
   public static let localHardwareUnavailableError: BrivoCore.BrivoError
   public static let timeOutError: BrivoCore.BrivoError
   public static let localHardwareNotPresentError: BrivoCore.BrivoError
-  public static let notEnroledError: BrivoCore.BrivoError
+  public static let passcodeNotSetError: BrivoCore.BrivoError
   public static let contextNotSetError: BrivoCore.BrivoError
-  public static let applicationCanceledError: BrivoCore.BrivoError
+  public static let authenticationCancelledError: BrivoCore.BrivoError
   public static let notInteractiveError: BrivoCore.BrivoError
   public static let biometryLockoutError: BrivoCore.BrivoError
+  public static let biometryNotEnrolledError: BrivoCore.BrivoError
   @objc override dynamic public init()
   @objc deinit
 }
