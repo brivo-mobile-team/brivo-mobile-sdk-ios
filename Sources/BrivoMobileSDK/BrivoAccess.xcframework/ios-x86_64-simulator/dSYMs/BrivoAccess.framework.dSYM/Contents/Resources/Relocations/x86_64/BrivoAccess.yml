@@ -1,5 +1,0 @@
----
-triple:          'x86_64-apple-darwin'
-binary-path:     '/Volumes/workspace/repository/XCFrameworks/BrivoAccess.xcframework/ios-x86_64-simulator/BrivoAccess.framework/BrivoAccess'
-relocations:     []
-...

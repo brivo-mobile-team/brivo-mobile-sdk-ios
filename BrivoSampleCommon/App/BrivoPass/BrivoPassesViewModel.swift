@@ -14,6 +14,9 @@ import BrivoBLEAllegion
 #if canImport(BrivoHIDOrigo)
 import BrivoHIDOrigo
 #endif
+#if canImport(BrivoDormakaba)
+import BrivoDormakaba
+#endif
 
 class BrivoPassesViewModel: ObservableObject {
     // MARK: - Properties
@@ -42,13 +45,11 @@ class BrivoPassesViewModel: ObservableObject {
         brivoOnAirPassListItems.isEmpty
     }
 
-    func onAppear() {
+    init() {
         cacheRegion(isEURegion: isEURegion)
         do {
             try setupBrivoConfiguration()
-            Task {
-                await refreshPasses()
-            }
+            setupDormakaba()
         } catch {
             onError(error)
         }
@@ -101,6 +102,9 @@ class BrivoPassesViewModel: ObservableObject {
             for brivoOnAirPass in brivoOnAirPasses {
                 await refreshHidOrigoCredentialsIfPossible(brivoOnAirPass)
             }
+#endif
+#if canImport(BrivoDormakaba)
+            await refreshDormakabaCredentialsIfPossible(brivoOnAirPasses)
 #endif
             updateUI()
         } catch {
@@ -179,6 +183,20 @@ class BrivoPassesViewModel: ObservableObject {
         BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
     }
     
+    private func setupDormakaba() {
+#if canImport(BrivoDormakaba)
+        let brivoDormakabaConfiguration = BrivoDormakabaConfiguration(
+            mobileAppID: Configuration.default.dormakabaMobileAppID,
+            userName: Configuration.default.dormakabaUserName,
+            password: Configuration.default.dormakabaPassword,
+            serverURL: Configuration.default.dormakabaServerURL,
+            evoloSmartProjectId: Configuration.default.dormakabaEvoloSmartProjectID,
+            unlockTimeoutDuration: Configuration.default.dormakabaUnlockTimeoutDuration
+        )
+        BrivoSDKDormakaba.initialize(configuration: brivoDormakabaConfiguration)
+#endif
+    }
+    
 #if canImport(BrivoBLEAllegion)
     private func refreshAllegionCredentialsIfPossible(_ brivoOnairPasses: [BrivoOnairPass]) async {
         let brivoSDKBLEAllegion = BrivoSDKBLEAllegion.instance
@@ -197,7 +215,19 @@ class BrivoPassesViewModel: ObservableObject {
         }
     }
 #endif
-    
+
+#if canImport(BrivoDormakaba)
+    private func refreshDormakabaCredentialsIfPossible(_ brivoOnairPasses: [BrivoOnairPass]) async {
+        switch await BrivoSDKDormakaba.instance.refreshCredentials(passes: brivoOnairPasses) {
+        case .success:
+            showAlert(title: "Success", message: "Dormakaba activated successfully")
+        case .failure(let error):
+            guard error.code != BrivoDormakabaError.Code.missingRights.rawValue else { return }
+            onError(error)
+        }
+    }
+#endif
+
     private func showAlert(title: String, message: String) {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }

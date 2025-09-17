@@ -1,6 +1,0 @@
-framework module BrivoHIDOrigo {
-  umbrella header "BrivoHIDOrigo.h"
-  export *
-
-  module * { export * }
-}

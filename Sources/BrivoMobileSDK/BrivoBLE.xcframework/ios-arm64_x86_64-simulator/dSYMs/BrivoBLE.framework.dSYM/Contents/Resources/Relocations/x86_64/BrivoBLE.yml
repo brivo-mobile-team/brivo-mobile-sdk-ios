@@ -1,0 +1,5 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Volumes/workspace/repository/XCFrameworks/BrivoBLE.xcframework/ios-arm64_x86_64-simulator/BrivoBLE.framework/BrivoBLE'
+relocations:     []
+...

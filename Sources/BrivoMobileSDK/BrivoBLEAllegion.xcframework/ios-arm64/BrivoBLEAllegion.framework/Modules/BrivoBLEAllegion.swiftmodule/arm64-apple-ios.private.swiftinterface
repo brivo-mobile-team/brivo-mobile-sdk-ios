@@ -97,7 +97,7 @@ final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
   final public var sdkStates: _Concurrency.AsyncStream<BrivoBLEAllegion.BrivoSDKBLEAllegion.State> {
     get
   }
-  public static var instance: BrivoBLEAllegion.BrivoSDKBLEAllegion
+  public static let instance: BrivoBLEAllegion.BrivoSDKBLEAllegion
   public init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration = .default)
   final public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
   @_Concurrency.MainActor final public func refreshCredentials(brivoOnAirPasses: [BrivoOnAir.BrivoOnairPass], refreshType: BrivoBLEAllegion.RefreshType) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>

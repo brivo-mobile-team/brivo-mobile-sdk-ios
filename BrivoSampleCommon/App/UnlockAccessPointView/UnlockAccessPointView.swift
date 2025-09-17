@@ -39,6 +39,7 @@ struct UnlockAccessPointView: View {
             )
         }
         .toast(message: "Successfully Unlocked!", isShowing: $stateModel.isShowingToast, duration: Toast.long)
+        .toast(message: "Tap your phone on the lock", isShowing: $stateModel.isShowingDormakabaToast, duration: Toast.long)
     }
 }
 

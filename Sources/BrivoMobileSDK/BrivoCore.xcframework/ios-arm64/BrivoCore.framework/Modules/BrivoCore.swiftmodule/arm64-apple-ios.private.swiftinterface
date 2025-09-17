@@ -175,6 +175,7 @@ public enum DoorType : Swift.Int, Swift.Codable {
   case wirelessLock
   case allegionBle
   case hidOrigo
+  case dormakaba
   public var stringValue: Swift.String {
     get
   }
@@ -279,6 +280,7 @@ public enum LoggerTagType : Swift.String, Swift.Hashable {
   case brivoHidOrigo
   case brivoNFC
   case brivoSDKBLEAllegion
+  case brivoDormakaba
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {

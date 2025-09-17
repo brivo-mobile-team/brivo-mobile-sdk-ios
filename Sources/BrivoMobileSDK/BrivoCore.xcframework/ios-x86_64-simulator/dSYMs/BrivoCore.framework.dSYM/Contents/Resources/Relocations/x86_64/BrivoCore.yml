@@ -1,5 +1,0 @@
----
-triple:          'x86_64-apple-darwin'
-binary-path:     '/Volumes/workspace/repository/XCFrameworks/BrivoCore.xcframework/ios-x86_64-simulator/BrivoCore.framework/BrivoCore'
-relocations:     []
-...

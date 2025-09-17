@@ -21,6 +21,7 @@ class UnlockAccessPointViewModel: ObservableObject {
     @Published var isLocked = true
     @Published var isShowingToast = false
     @Published var isShowingLoading = false
+    @Published var isShowingDormakabaToast = false
 
     // MARK: - init
 
@@ -55,7 +56,9 @@ class UnlockAccessPointViewModel: ObservableObject {
         if let selectedAccessPoint = selectedAccessPoint {
             let passId = selectedAccessPoint.accessPointPath.passId
             let accessPointIdString = "\(selectedAccessPoint.accessPointPath.accessPointId)"
-
+            if selectedAccessPoint.doorType == .dormakaba {
+                isShowingDormakabaToast = true
+            }
             unlockSelectedAccessPoint(passId: passId,
                                       accessPointIdString: accessPointIdString,
                                       brivoSDKAccess: brivoSDKAccess,
@@ -86,8 +89,9 @@ class UnlockAccessPointViewModel: ObservableObject {
                     if result.accessPointCommunicationState == .success {
                         timer.invalidate()
                         self.setLocked(isLocked: false)
-                        self.isShowingToast = true
+                        self.isShowingDormakabaToast = false
                         isShowingLoading = false
+                        self.isShowingToast = true
                     } else if result.accessPointCommunicationState == .failed {
                         timer.invalidate()
                         self.resetToInitialState()
@@ -132,6 +136,7 @@ class UnlockAccessPointViewModel: ObservableObject {
     private func resetToInitialState() {
         setLocked(isLocked: true)
         isShowingLoading = false
+        isShowingDormakabaToast = false
     }
 
     private func setLocked(isLocked: Bool) {

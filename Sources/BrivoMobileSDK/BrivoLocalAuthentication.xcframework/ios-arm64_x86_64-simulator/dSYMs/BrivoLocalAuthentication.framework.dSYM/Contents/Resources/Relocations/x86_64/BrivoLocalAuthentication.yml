@@ -1,0 +1,5 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Volumes/workspace/repository/XCFrameworks/BrivoLocalAuthentication.xcframework/ios-arm64_x86_64-simulator/BrivoLocalAuthentication.framework/BrivoLocalAuthentication'
+relocations:     []
+...

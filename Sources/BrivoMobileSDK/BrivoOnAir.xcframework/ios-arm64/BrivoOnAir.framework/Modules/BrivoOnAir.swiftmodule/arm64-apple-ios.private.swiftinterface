@@ -200,6 +200,7 @@ public struct BLESecurityConfigResponse : Swift.Codable, Swift.Equatable {
   public var hasAllegionBleCredentials: Swift.Bool
   public var hasHidOrigoMobilePass: Swift.Bool
   public var hidOrigoWalletPassEnabled: Swift.Bool
+  public var dormakabaMobilePassEnabled: Swift.Bool
   @objc override dynamic public init()
   required public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
@@ -414,6 +415,7 @@ public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   case allegionDoorLock
   case assaAbloyDoorLock
   case bdsLock
+  case dormakaba
   public init?(rawValue: Swift.String)
   public typealias AllCases = [BrivoOnAir.DoorIdentifier]
   public typealias RawValue = Swift.String
