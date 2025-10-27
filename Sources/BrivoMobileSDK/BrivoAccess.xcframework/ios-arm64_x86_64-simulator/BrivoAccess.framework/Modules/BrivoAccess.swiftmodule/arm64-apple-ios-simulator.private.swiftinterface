@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoAccess
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoAccess
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import BrivoBLE
 import BrivoCore
 import BrivoLocalAuthentication
@@ -37,8 +37,8 @@ import _SwiftConcurrencyShims
   }
   public func turnOnCentral()
   public func getBLEState() -> CoreBluetooth.CBManagerState
-  public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber?
-  public func removeCompletionFor(id: Foundation.NSNumber)
+  public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
+  public func removeCompletionFor(id: Foundation.UUID)
   public func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   public func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
@@ -65,6 +65,6 @@ public protocol IBrivoSDKAccess {
   func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
   func turnOnCentral()
   func getBLEState() -> CoreBluetooth.CBManagerState
-  func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber?
-  func removeCompletionFor(id: Foundation.NSNumber)
+  func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
+  func removeCompletionFor(id: Foundation.UUID)
 }

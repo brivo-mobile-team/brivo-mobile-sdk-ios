@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoCore
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoCore
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 import Foundation
 import Network
 import OSLog
@@ -204,8 +204,8 @@ final public class Atomic<Value> : Swift.Sendable where Value : Swift.Sendable {
 public enum NFCUnlinkStatus : Swift.Equatable {
   case successfullyUnlinked
   case nothingToUnlink
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: BrivoCore.NFCUnlinkStatus, b: BrivoCore.NFCUnlinkStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
@@ -234,8 +234,8 @@ public struct NFCDevicesStatus : Swift.Equatable, Swift.Hashable {
   case active
   case pending
   case suspended
-  public func hash(into hasher: inout Swift.Hasher)
   public static func == (a: BrivoCore.NFCPassStatus, b: BrivoCore.NFCPassStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }

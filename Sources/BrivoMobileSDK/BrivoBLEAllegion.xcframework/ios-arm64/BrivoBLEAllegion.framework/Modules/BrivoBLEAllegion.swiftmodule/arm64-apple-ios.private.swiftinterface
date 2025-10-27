@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios17 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoBLEAllegion
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios17 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoBLEAllegion
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
 import BrivoBLE
 @_exported import BrivoBLEAllegion
 import BrivoCore
@@ -15,19 +16,19 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 extension BrivoBLEAllegion.BrivoSDKBLEAllegion {
-  public struct State : Swift.Equatable {
+  public struct State : Swift.Equatable, Swift.Sendable {
     public var activeOperation: BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation
     public var passesSynchroniseStatus: [Swift.String : BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus]
     public init(activeOperation: BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation, passesSynchroniseStatus: [Swift.String : BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus])
     public static func == (a: BrivoBLEAllegion.BrivoSDKBLEAllegion.State, b: BrivoBLEAllegion.BrivoSDKBLEAllegion.State) -> Swift.Bool
   }
-  public enum SynchroniseStatus : Swift.Equatable {
+  public enum SynchroniseStatus : Swift.Equatable, Swift.Sendable {
     case unknown
     case success([BrivoBLEAllegion.LockStatus])
     case failure
     public static func == (a: BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus, b: BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus) -> Swift.Bool
   }
-  public enum ActiveOperation {
+  public enum ActiveOperation : Swift.Sendable {
     case none
     case initialising
     case refreshing
@@ -79,13 +80,16 @@ public struct AllegionControlLockStatus : Swift.Codable {
   @objc deinit
 }
 extension BrivoBLEAllegion.Event : SwiftData.PersistentModel {
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = SwiftData.PersistentIdentifier
   public var hashValue: Swift.Int {
     get
   }
 }
 extension BrivoBLEAllegion.Event : Observation.Observable {
+}
+@available(swift, deprecated: 5.9, message: "PersistentModels are not Sendable, consider utilizing a ModelActor or use Event's persistentModelID instead")
+@available(*, unavailable, message: "PersistentModels are not Sendable, consider utilizing a ModelActor or use Event's persistentModelID instead")
+extension BrivoBLEAllegion.Event : Swift.Sendable {
 }
 final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
   @Combine.Published @_projectedValueProperty($sdkState) final public var sdkState: BrivoBLEAllegion.BrivoSDKBLEAllegion.State {
@@ -104,7 +108,7 @@ final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
   @_Concurrency.MainActor final public func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   @objc deinit
 }
-public struct LockStatus : Swift.Codable, Swift.Equatable {
+public struct LockStatus : Swift.Codable, Swift.Equatable, Swift.Sendable {
   public var lockId: Swift.Int
   public var isEligible: Swift.Bool
   public init(lockId: Swift.Int, isEligible: Swift.Bool)

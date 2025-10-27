@@ -1366,9 +1366,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "NSNumber",
-                "printedName": "Foundation.NSNumber",
-                "usr": "c:objc(cs)NSNumber"
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
               },
               {
                 "kind": "TypeFunc",
@@ -1390,8 +1390,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:8BrivoBLE0A10BLEServiceC12onBleChanged10completionSo8NSNumberCySo14CBManagerStateVc_tF",
-            "mangledName": "$s8BrivoBLE0A10BLEServiceC12onBleChanged10completionSo8NSNumberCySo14CBManagerStateVc_tF",
+            "usr": "s:8BrivoBLE0A10BLEServiceC12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
+            "mangledName": "$s8BrivoBLE0A10BLEServiceC12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
             "moduleName": "BrivoBLE",
             "declAttributes": [
               "AccessControl"
@@ -1410,14 +1410,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NSNumber",
-                "printedName": "Foundation.NSNumber",
-                "usr": "c:objc(cs)NSNumber"
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:8BrivoBLE0A10BLEServiceC19removeCompletionFor2idySo8NSNumberC_tF",
-            "mangledName": "$s8BrivoBLE0A10BLEServiceC19removeCompletionFor2idySo8NSNumberC_tF",
+            "usr": "s:8BrivoBLE0A10BLEServiceC19removeCompletionFor2idy10Foundation4UUIDV_tF",
+            "mangledName": "$s8BrivoBLE0A10BLEServiceC19removeCompletionFor2idy10Foundation4UUIDV_tF",
             "moduleName": "BrivoBLE",
             "declAttributes": [
               "AccessControl"
@@ -4845,7 +4845,7 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/MultiDeviceRSSIManager.swift",
       "kind": "Dictionary",
-      "offset": 291,
+      "offset": 278,
       "length": 3,
       "value": "[]"
     },
@@ -4887,65 +4887,58 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3063,
+      "offset": 2906,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3088,
+      "offset": 2931,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "StringLiteral",
-      "offset": 3200,
+      "offset": 3043,
       "length": 17,
       "value": "\"StopBLE is true\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3477,
+      "offset": 3320,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3511,
+      "offset": 3354,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3559,
+      "offset": 3402,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3112,
+      "offset": 2955,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
       "kind": "Dictionary",
-      "offset": 3947,
+      "offset": 3788,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/BleConnectionManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4007,
-      "length": 1,
-      "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Helpers\/RSSISmoother.swift",
@@ -5173,10 +5166,10 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Constants.swift",
-      "kind": "IntegerLiteral",
+      "kind": "FloatLiteral",
       "offset": 2205,
-      "length": 1,
-      "value": "3"
+      "length": 3,
+      "value": "1.0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLE\/BrivoBLE\/Models\/BrivoBLEError.swift",

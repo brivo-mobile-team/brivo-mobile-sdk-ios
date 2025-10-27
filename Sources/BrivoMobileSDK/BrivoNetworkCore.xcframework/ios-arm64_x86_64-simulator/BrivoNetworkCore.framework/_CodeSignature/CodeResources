@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/BrivoNetworkCore-Swift.h</key>
 		<data>
-		eOFK5Lf780//7K9r2Roft6ManG8=
+		r0M99HjHWgqks4aZOgexQx7LHD8=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gS3GpYD7E5i4Fsl+JJHLsYLIdvk=
+		XdN2QwCQBjEdqn+uwGv7PjMAMoE=
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fvh8ysUuO3eDi8Y/rvVe6tCRxyk=
+		nGifNg2liJSuhBAAClt11St58QA=
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ON306cJM0agcPEQ0QPMrYmbtfWI=
+		McHb6zJ+wAHWDMKW5S7KOF+LvvQ=
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fvh8ysUuO3eDi8Y/rvVe6tCRxyk=
+		nGifNg2liJSuhBAAClt11St58QA=
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JTPZddcIpkdsShFSbWkvFYvA06w=
+		ZRDrdhkuVj5cHidgZXYV8m7rMr4=
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IGrPh35QNmBEpmOzDmtYyqU94Qw=
+		yCjoizUlgv6kqFjd6koSEq/b5Lg=
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		t4N7/gv4T8OWKNxPcIR1FMtcBXI=
+		8OI+v0Lw8GitwvR4suKCNqJj3SQ=
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IGrPh35QNmBEpmOzDmtYyqU94Qw=
+		yCjoizUlgv6kqFjd6koSEq/b5Lg=
 		</data>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eSAv/8f0W2jAtp4IJgtfywqoUgA=
+		likxLftWEALximNWxMLMPWPNlcU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IZWojgJuaEKZr258da93Uj193BkZu/5JqYffWNiKA0w=
+			CnuivC3ZteE5gtl/L9heLC7qmVezvWEJ+03SCy/tmJg=
 			</data>
 		</dict>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -81,28 +81,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			mJA8kCVB6pKzzcqMsufGdDiSGudEmxDx9uz+e+Qp5n4=
+			woRXR/iyse7zpg+hA8sQZGs3/+0RRsuK8ytO+fWD/xs=
 			</data>
 		</dict>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9hr0mRG8y0NyOYBhyMA9LcwEf6jKUhiWrE9K2jxGCPo=
+			T5XrM/qogMJ7B6Dcyo1jP0ERUBpjjOQ6YGVbW2gZWus=
 			</data>
 		</dict>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mJA8kCVB6pKzzcqMsufGdDiSGudEmxDx9uz+e+Qp5n4=
+			woRXR/iyse7zpg+hA8sQZGs3/+0RRsuK8ytO+fWD/xs=
 			</data>
 		</dict>
 		<key>Modules/BrivoNetworkCore.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+v+L5pQBqAGpg1pXOjR0TA/nlepU2XPXlZWoVA2uTXc=
+			KJzaBti7hq1Idrdpg7isMHPgU/4NDBuepH1uA/pqU0s=
 			</data>
 		</dict>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -116,28 +116,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WkPEVPOIvN2olrHOUb95tptz0v1nX7QooRm/9QlO7RQ=
+			NUgtbOeLLm6Yndb0Bf6DN8U5aEDMrum1OKOlC+HpSHQ=
 			</data>
 		</dict>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qN428Dh4okOQ9Z68NbJ1suRJqAMvHZ5u8iEfa7yM8M8=
+			7NrYBzqIzAasLCC9H4OjmIYKC8kbqSicjJDwqtQQDgQ=
 			</data>
 		</dict>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WkPEVPOIvN2olrHOUb95tptz0v1nX7QooRm/9QlO7RQ=
+			NUgtbOeLLm6Yndb0Bf6DN8U5aEDMrum1OKOlC+HpSHQ=
 			</data>
 		</dict>
 		<key>Modules/BrivoNetworkCore.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jfhDACfyf1eP6M3yLDc76KU3i9UfAFbP1aPdMcaB5yw=
+			etKODQDWi0GfbRVgu5NvyJn4yNSRcGzZSauK2vFkpBY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

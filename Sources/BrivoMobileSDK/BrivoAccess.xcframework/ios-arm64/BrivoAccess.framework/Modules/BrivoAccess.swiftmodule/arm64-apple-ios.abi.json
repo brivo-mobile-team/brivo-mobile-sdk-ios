@@ -1019,17 +1019,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
               },
               {
                 "kind": "TypeFunc",
@@ -1051,8 +1043,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess0A9SDKAccessC12onBleChanged10completionSo8NSNumberCSgySo14CBManagerStateVc_tF",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC12onBleChanged10completionSo8NSNumberCSgySo14CBManagerStateVc_tF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
             "moduleName": "BrivoAccess",
             "declAttributes": [
               "AccessControl"
@@ -1071,14 +1063,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NSNumber",
-                "printedName": "Foundation.NSNumber",
-                "usr": "c:objc(cs)NSNumber"
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess0A9SDKAccessC19removeCompletionFor2idySo8NSNumberC_tF",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC19removeCompletionFor2idySo8NSNumberC_tF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC19removeCompletionFor2idy10Foundation4UUIDV_tF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC19removeCompletionFor2idy10Foundation4UUIDV_tF",
             "moduleName": "BrivoAccess",
             "declAttributes": [
               "AccessControl"
@@ -2368,17 +2360,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSNumber?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSNumber",
-                    "printedName": "Foundation.NSNumber",
-                    "usr": "c:objc(cs)NSNumber"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
               },
               {
                 "kind": "TypeFunc",
@@ -2400,8 +2384,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess15IBrivoSDKAccessP12onBleChanged10completionSo8NSNumberCSgySo14CBManagerStateVc_tF",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP12onBleChanged10completionSo8NSNumberCSgySo14CBManagerStateVc_tF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
@@ -2424,14 +2408,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "NSNumber",
-                "printedName": "Foundation.NSNumber",
-                "usr": "c:objc(cs)NSNumber"
+                "name": "UUID",
+                "printedName": "Foundation.UUID",
+                "usr": "s:10Foundation4UUIDV"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess15IBrivoSDKAccessP19removeCompletionFor2idySo8NSNumberC_tF",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP19removeCompletionFor2idySo8NSNumberC_tF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP19removeCompletionFor2idy10Foundation4UUIDV_tF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP19removeCompletionFor2idy10Foundation4UUIDV_tF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",

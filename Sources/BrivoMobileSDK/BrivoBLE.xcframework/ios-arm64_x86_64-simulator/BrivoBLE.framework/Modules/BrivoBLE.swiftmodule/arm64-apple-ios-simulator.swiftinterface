@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
-// swift-module-flags: -target arm64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrivoBLE
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target arm64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoBLE
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
 @_exported import BrivoBLE
 import BrivoCore
 import CoreBluetooth.CBManager
@@ -21,8 +21,8 @@ import _SwiftConcurrencyShims
 }
 public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
 public typealias OnUnlockBluetoothDoorSuccessType = () -> Swift.Void
-public typealias OnRequestExternalCredentials = (_ accessPointId: Swift.String, _ dataJSONString: Swift.String, _ onSuccess: @escaping ((Swift.String?) -> Swift.Void), _ onError: @escaping ((BrivoCore.BrivoError?) -> Swift.Void)) -> Swift.Void
-public typealias OnProvideResponseForExternalCredentials = (_ accessPointId: Swift.String, _ dataJSONString: Swift.String, _ onSuccess: @escaping ((Swift.String?) -> Swift.Void), _ onError: @escaping ((BrivoCore.BrivoError?) -> Swift.Void)) -> Swift.Void
+public typealias OnRequestExternalCredentials = (_ accessPointId: Swift.String, _ dataJSONString: Swift.String, _ onSuccess: @escaping (Swift.String?) -> Swift.Void, _ onError: @escaping (BrivoCore.BrivoError?) -> Swift.Void) -> Swift.Void
+public typealias OnProvideResponseForExternalCredentials = (_ accessPointId: Swift.String, _ dataJSONString: Swift.String, _ onSuccess: @escaping (Swift.String?) -> Swift.Void, _ onError: @escaping (BrivoCore.BrivoError?) -> Swift.Void) -> Swift.Void
 public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
 @objc @_inheritsConvenienceInitializers public class BrivoBLEService : ObjectiveC.NSObject {
   public var requestExternalCredentials: BrivoBLE.OnRequestExternalCredentials?
@@ -34,8 +34,8 @@ public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
   @objc override dynamic public init()
   public func getBLEState() -> CoreBluetooth.CBManagerState
   public func startCentralManager()
-  public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.NSNumber
-  public func removeCompletionFor(id: Foundation.NSNumber)
+  public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
+  public func removeCompletionFor(id: Foundation.UUID)
   public func unlockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
   public func scanForNearbyReadersAndNotifyWhenReaderFound(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
   public func unlockAccessPointWithServices(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
