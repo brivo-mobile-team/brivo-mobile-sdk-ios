@@ -416,7 +416,7 @@
           {
             "kind": "Function",
             "name": "refreshCredentials",
-            "printedName": "refreshCredentials(brivoOnAirPasses:refreshType:)",
+            "printedName": "refreshCredentials(brivoOnAirPasses:refreshType:forceNewCredentials:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -456,11 +456,17 @@
                 "name": "RefreshType",
                 "printedName": "BrivoBLEAllegion.RefreshType",
                 "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials16brivoOnAirPasses0E4Types6ResultOyyt0A4Core0A5ErrorCGSay0ahI00A9OnairPassCG_AA07RefreshK0OtYaF",
-            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials16brivoOnAirPasses0E4Types6ResultOyyt0A4Core0A5ErrorCGSay0ahI00A9OnairPassCG_AA07RefreshK0OtYaF",
+            "usr": "s:16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials16brivoOnAirPasses0E4Type08forceNewF0s6ResultOyyt0A4Core0A5ErrorCGSay0ahI00A9OnairPassCG_AA07RefreshK0OSbtYaF",
+            "mangledName": "$s16BrivoBLEAllegion20IBrivoSDKBLEAllegionP18refreshCredentials16brivoOnAirPasses0E4Type08forceNewF0s6ResultOyyt0A4Core0A5ErrorCGSay0ahI00A9OnairPassCG_AA07RefreshK0OSbtYaF",
             "moduleName": "BrivoBLEAllegion",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
             "sugared_genericSig": "<Self where Self : BrivoBLEAllegion.IBrivoSDKBLEAllegion>",
@@ -1647,7 +1653,7 @@
           {
             "kind": "Function",
             "name": "refreshCredentials",
-            "printedName": "refreshCredentials(brivoOnAirPasses:refreshType:)",
+            "printedName": "refreshCredentials(brivoOnAirPasses:refreshType:forceNewCredentials:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1687,11 +1693,17 @@
                 "name": "RefreshType",
                 "printedName": "BrivoBLEAllegion.RefreshType",
                 "usr": "s:16BrivoBLEAllegion11RefreshTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials16brivoOnAirPasses0D4Types6ResultOyyt0A4Core0A5ErrorCGSay0agH00A9OnairPassCG_AA07RefreshJ0OtYaF",
-            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials16brivoOnAirPasses0D4Types6ResultOyyt0A4Core0A5ErrorCGSay0agH00A9OnairPassCG_AA07RefreshJ0OtYaF",
+            "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials16brivoOnAirPasses0D4Type08forceNewE0s6ResultOyyt0A4Core0A5ErrorCGSay0agH00A9OnairPassCG_AA07RefreshJ0OSbtYaF",
+            "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC18refreshCredentials16brivoOnAirPasses0D4Type08forceNewE0s6ResultOyyt0A4Core0A5ErrorCGSay0agH00A9OnairPassCG_AA07RefreshJ0OSbtYaF",
             "moduleName": "BrivoBLEAllegion",
             "declAttributes": [
               "Final",

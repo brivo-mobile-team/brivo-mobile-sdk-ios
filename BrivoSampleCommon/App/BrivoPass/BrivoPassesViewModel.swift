@@ -200,7 +200,7 @@ class BrivoPassesViewModel: ObservableObject {
 #if canImport(BrivoBLEAllegion)
     private func refreshAllegionCredentialsIfPossible(_ brivoOnairPasses: [BrivoOnairPass]) async {
         let brivoSDKBLEAllegion = BrivoSDKBLEAllegion.instance
-        _ = await brivoSDKBLEAllegion.refreshCredentials(brivoOnAirPasses: brivoOnairPasses, refreshType: .validatingCacheData)
+		_ = await brivoSDKBLEAllegion.refreshCredentials(brivoOnAirPasses: brivoOnairPasses, refreshType: .validatingCacheData, forceNewCredentials: false)
     }
 #endif
     
