@@ -6,7 +6,7 @@ source "https://cdn.cocoapods.org/"
 use_frameworks!
 
 target "BrivoSampleApp" do
-    pod "Allegion.Access.MobileAccessSDK.iOS", "~> 4.0.0"
+    pod "Allegion.Access.MobileAccessSDK.iOS", "~> 5.0.0"
 end
 
 post_install do |installer|
