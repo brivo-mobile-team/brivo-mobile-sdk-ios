@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoBLEAllegion
-// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import BrivoBLE
 @_exported import BrivoBLEAllegion
 import BrivoCore
@@ -53,9 +53,15 @@ public protocol IBrivoSDKBLEAllegion {
   var sdkState: BrivoBLEAllegion.BrivoSDKBLEAllegion.State { get }
   var sdkStates: _Concurrency.AsyncStream<BrivoBLEAllegion.BrivoSDKBLEAllegion.State> { get }
   init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
   func refreshCredentials(brivoOnAirPasses: [BrivoOnAir.BrivoOnairPass], refreshType: BrivoBLEAllegion.RefreshType, forceNewCredentials: Swift.Bool) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
 }
 public struct AllegionControlLocks : Swift.Codable {
   public let allegionControlLocks: [BrivoBLEAllegion.AllegionControlLockStatus]
@@ -73,19 +79,22 @@ public struct AllegionControlLockStatus : Swift.Codable {
     get
     set
   }
-  public static var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
+  public class var schemaMetadata: [SwiftData.Schema.PropertyMetadata] {
     get
   }
   required public init(backingData: any SwiftData.BackingData<BrivoBLEAllegion.Event>)
   @objc deinit
 }
-extension BrivoBLEAllegion.Event : SwiftData.PersistentModel {
+extension BrivoBLEAllegion.Event : nonisolated SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
+  @available(swift 5.9)
+  @available(iOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0, macOS 26.0, *)
+  public typealias Root = BrivoBLEAllegion.Event
   public var hashValue: Swift.Int {
     get
   }
 }
-extension BrivoBLEAllegion.Event : Observation.Observable {
+extension BrivoBLEAllegion.Event : nonisolated Observation.Observable {
 }
 @available(swift, deprecated: 5.9, message: "PersistentModels are not Sendable, consider utilizing a ModelActor or use Event's persistentModelID instead")
 @available(*, unavailable, message: "PersistentModels are not Sendable, consider utilizing a ModelActor or use Event's persistentModelID instead")
@@ -103,9 +112,15 @@ final public class BrivoSDKBLEAllegion : BrivoBLEAllegion.IBrivoSDKBLEAllegion {
   }
   public static let instance: BrivoBLEAllegion.BrivoSDKBLEAllegion
   public init(configuration: BrivoBLEAllegion.BrivoBLEAllegionConfiguration = .default)
+  #if compiler(>=5.3) && $NonescapableTypes
   final public func unlockAccessPoint(accessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func refreshCredentials(brivoOnAirPasses: [BrivoOnAir.BrivoOnairPass], refreshType: BrivoBLEAllegion.RefreshType, forceNewCredentials: Swift.Bool) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func clearCredentials() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
   @objc deinit
 }
 public struct LockStatus : Swift.Codable, Swift.Equatable, Swift.Sendable {

@@ -1,74 +1,79 @@
 PODS:
-  - Allegion.Access.BLECredential.iOS (3.1.3):
-    - AllegionBLECore (~> 3.0)
-    - AllegionExtensions (~> 3.0)
-    - AllegionLogging/Lite (~> 3.0)
-    - AllegionSecurity (~> 2.0)
-    - AllegionTranslation (~> 2.0)
-    - SwiftCBOR (= 0.4.5)
-  - Allegion.Access.Hub.iOS (5.0.1):
-    - AllegionExtensions (~> 3.0)
-    - AllegionLogging/Lite (~> 3.0)
-    - AllegionSecurity (~> 2.0)
-    - AllegionTranslation (~> 2.0)
+  - Allegion.Access.MobileAccessSDK.iOS (5.0.0):
+    - AllegionAccessBLECredential (~> 5.0)
+    - AllegionAccessHub (~> 7.0)
+    - AllegionAnalytics (~> 4.0)
+    - AllegionBLECore (~> 4.0)
+    - AllegionExtensions (~> 4.0)
+    - AllegionLogging/Lite (~> 4.0)
+    - AllegionSecurity (~> 4.0)
+    - AllegionTranslation (~> 3.0)
+  - AllegionAccessBLECredential (5.0.0):
+    - AllegionBLECore (~> 4.0)
+    - AllegionExtensions (~> 4.0)
+    - AllegionLogging/Lite (~> 4.0)
+    - AllegionSecurity (~> 4.0)
+    - AllegionTranslation (~> 3.0)
+  - AllegionAccessHub (7.0.0):
+    - AllegionExtensions (~> 4.0)
+    - AllegionLogging/Lite (~> 4.0)
+    - AllegionSecurity (~> 4.0)
+    - AllegionTranslation (~> 3.0)
     - PromiseKit (~> 8.0)
-    - SwiftCBOR (= 0.4.5)
-  - Allegion.Access.MobileAccessSDK.iOS (4.0.0):
-    - Allegion.Access.BLECredential.iOS (~> 3.0)
-    - Allegion.Access.Hub.iOS (~> 5.0)
-    - AllegionAnalytics (~> 3.0)
-    - AllegionBLECore (~> 3.0)
-    - AllegionExtensions (~> 3.0)
-    - AllegionLogging/Lite (~> 3.0)
-    - AllegionSecurity (~> 2.0)
-    - AllegionTranslation (~> 2.0)
-    - SwiftCBOR (= 0.4.5)
-  - AllegionAnalytics (3.1.1):
-    - AllegionLogging/Lite (~> 3.0)
+  - AllegionAnalytics (4.3.0):
+    - AllegionLogging/Lite (~> 4.0)
+    - AmplitudeSwift (~> 1.12)
+    - Analytics (~> 4.1)
     - AppCenter (~> 5.0)
-  - AllegionBLECore (3.3.1):
-    - AllegionExtensions (~> 3.0)
-    - AllegionLogging/Lite (~> 3.0)
-  - AllegionExtensions (3.0.2)
-  - AllegionLogging/Lite (3.0.5)
-  - AllegionSecurity (2.1.1):
-    - AllegionExtensions (~> 3.0)
-    - AllegionLogging/Lite (~> 3.0)
-    - CryptoSwift (~> 1.0)
-    - IOSSecuritySuite (~> 1.9)
-  - AllegionTranslation (2.0.2):
-    - AllegionExtensions (~> 3.0)
-    - AllegionLogging/Lite (~> 3.0)
+  - AllegionBLECore (4.4.1):
+    - AllegionExtensions (~> 4.0)
+    - AllegionLogging/Lite (~> 4.0)
+  - AllegionExtensions (4.1.0)
+  - AllegionLogging/Lite (4.3.0)
+  - AllegionSecurity (4.0.0):
+    - AllegionExtensions (~> 4.0)
+    - AllegionLogging/Lite (~> 4.0)
+    - CryptoSwift (<= 1.8.4)
+    - IOSSecuritySuite (~> 2.0)
+  - AllegionTranslation (3.1.0):
+    - AllegionExtensions (~> 4.0)
+    - AllegionLogging/Lite (~> 4.0)
     - SwiftCBOR (= 0.4.5)
-  - AppCenter (5.0.5):
-    - AppCenter/Analytics (= 5.0.5)
-    - AppCenter/Crashes (= 5.0.5)
-  - AppCenter/Analytics (5.0.5):
+  - AmplitudeCore (1.3.1)
+  - AmplitudeSwift (1.15.5):
+    - AmplitudeCore (< 2.0.0, >= 1.2.4)
+    - AnalyticsConnector (~> 1.3.0)
+  - Analytics (4.1.8)
+  - AnalyticsConnector (1.3.1)
+  - AppCenter (5.10.0):
+    - AppCenter/Analytics (= 5.10.0)
+    - AppCenter/Crashes (= 5.10.0)
+  - AppCenter/Analytics (5.10.0):
     - AppCenter/Core
-  - AppCenter/Core (5.0.5)
-  - AppCenter/Crashes (5.0.5):
+  - AppCenter/Core (5.10.0)
+  - AppCenter/Crashes (5.10.0):
     - AppCenter/Core
-  - CryptoSwift (1.8.3)
-  - IOSSecuritySuite (1.9.11)
-  - PromiseKit (8.1.1):
-    - PromiseKit/CorePromise (= 8.1.1)
-    - PromiseKit/Foundation (= 8.1.1)
-    - PromiseKit/UIKit (= 8.1.1)
-  - PromiseKit/CorePromise (8.1.1)
-  - PromiseKit/Foundation (8.1.1):
+  - CryptoSwift (1.8.4)
+  - IOSSecuritySuite (2.2.0)
+  - PromiseKit (8.2.0):
+    - PromiseKit/CorePromise (= 8.2.0)
+    - PromiseKit/Foundation (= 8.2.0)
+    - PromiseKit/UIKit (= 8.2.0)
+  - PromiseKit/CorePromise (8.2.0)
+  - PromiseKit/Foundation (8.2.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (8.1.1):
+  - PromiseKit/UIKit (8.2.0):
     - PromiseKit/CorePromise
   - SwiftCBOR (0.4.5)
 
 DEPENDENCIES:
-  - Allegion.Access.MobileAccessSDK.iOS (~> 4.0.0)
+  - Allegion.Access.MobileAccessSDK.iOS (~> 5.0.0)
 
 SPEC REPOS:
   https://github.com/Allegion-Plc/AllegionCocoaPods:
-    - Allegion.Access.BLECredential.iOS
-    - Allegion.Access.Hub.iOS
     - Allegion.Access.MobileAccessSDK.iOS
+    - AllegionAccessBLECredential
+    - AllegionAccessHub
     - AllegionAnalytics
     - AllegionBLECore
     - AllegionExtensions
@@ -76,6 +81,10 @@ SPEC REPOS:
     - AllegionSecurity
     - AllegionTranslation
   trunk:
+    - AmplitudeCore
+    - AmplitudeSwift
+    - Analytics
+    - AnalyticsConnector
     - AppCenter
     - CryptoSwift
     - IOSSecuritySuite
@@ -83,21 +92,25 @@ SPEC REPOS:
     - SwiftCBOR
 
 SPEC CHECKSUMS:
-  Allegion.Access.BLECredential.iOS: aadc87fb1a2ca1a18be5088d1a8ab5b649481af3
-  Allegion.Access.Hub.iOS: 5ce5cbe86fe00b66954c775ce8aa4dbefb441969
-  Allegion.Access.MobileAccessSDK.iOS: de84fa076b95573806faff25ab092b8c6779d681
-  AllegionAnalytics: fb0fb8eeb38984a9eeadd0c07695676d16f0825b
-  AllegionBLECore: 114e1f8348c49397803256a01d6ce3eb84cd9f73
-  AllegionExtensions: 0c36c9cc9d9d2463faac56309084447b8363b31b
-  AllegionLogging: 025e92b57b1c5dd020e2702f54562469fffde94a
-  AllegionSecurity: 8831bff85ec03631b2f4882d1c71829826ac27c0
-  AllegionTranslation: 780d8191976b3edb308a9451536a91b2e7063053
-  AppCenter: 994875ea7941b9e168babb98299f900a94bcef13
-  CryptoSwift: 967f37cea5a3294d9cce358f78861652155be483
-  IOSSecuritySuite: b51056d5411aee567153ca86ce7f6edfdc5d2654
-  PromiseKit: d1be44b474e5acfa16adf007a1f49f104e10fead
+  Allegion.Access.MobileAccessSDK.iOS: ec2a7bfe4d01284bee2cf5ede694c706e0d692f2
+  AllegionAccessBLECredential: 5be6f2608dd6e53f9212b04b853c990a00514ff4
+  AllegionAccessHub: 64f5993aa78ab26ae7cfce498e35b07f1e19e8f7
+  AllegionAnalytics: 5d151d9d2d40f9ac6ae8d336d2bc803b213a8bed
+  AllegionBLECore: 701bccfe71f1046a35fbd8d4447ec9bb285bccae
+  AllegionExtensions: 040366262048f213327cc529e77455ee3bc295fe
+  AllegionLogging: cc6196db4c8c6959cb3be9185c694dceb6e490e8
+  AllegionSecurity: d20b92a1ceb823d745c446ddcef13893c22d2046
+  AllegionTranslation: 8c663c6e284ebe980f8800b2ca765c129ce7f294
+  AmplitudeCore: c47c0a661bec076a197bc75a5a7b4c413da288a5
+  AmplitudeSwift: 9ab3b1624ea544a2e7d85030f73e64ccce2b460d
+  Analytics: 9655e0e1c71ea98107cfcb2b14891168acc6c6c9
+  AnalyticsConnector: 3def11199b4ddcad7202c778bde982ec5da0ebb3
+  AppCenter: 7eb0ba42c148a5efb36dbdf0da15b64a9c3ce317
+  CryptoSwift: e64e11850ede528a02a0f3e768cec8e9d92ecb90
+  IOSSecuritySuite: ba76f34cb367b9230934ac37904e26a40d033e3d
+  PromiseKit: 74e6ab5894856b4762fef547055c809bca91d440
   SwiftCBOR: ac340b74d3b2cf1f8884bb748bd09875848e3873
 
-PODFILE CHECKSUM: 4560bba039453c4e9aad483f8139f8e06a5c72af
+PODFILE CHECKSUM: 9422e482540de3fbf97bfb6bd7db89412ae4d745
 
 COCOAPODS: 1.16.2

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoAccess
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import BrivoBLE
 import BrivoCore
 import BrivoLocalAuthentication
@@ -39,15 +39,33 @@ import _SwiftConcurrencyShims
   public func getBLEState() -> CoreBluetooth.CBManagerState
   public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
   public func removeCompletionFor(id: Foundation.UUID)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func lockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unlockNearestBLEAccessPoint(passes: [BrivoOnAir.BrivoOnairPass], cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unlockNearestBLEAccessPoint(pass: BrivoOnAir.BrivoOnairPass, siteId: Swift.Int, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unlockNearestBLEAccessPoint(cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func provideExternalCredentialsResponseToOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String, onSuccess: BrivoAccess.ControlLockUnlockOnSuccessType?, onFailure: BrivoAccess.OnFailureType?)
+  #endif
   @objc deinit
 }
 public typealias ControlLockUnlockOnSuccessType = (Swift.String?) -> Swift.Void
@@ -55,14 +73,30 @@ public typealias OnUnlockAccessPointSuccessType = () -> Swift.Void
 public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
 public protocol IBrivoSDKAccess {
   static func instance() -> BrivoAccess.BrivoSDKAccess
+  #if compiler(>=5.3) && $NonescapableTypes
   func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func lockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func lockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func unlockNearestBLEAccessPoint(passes: [BrivoOnAir.BrivoOnairPass], cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func unlockNearestBLEAccessPoint(pass: BrivoOnAir.BrivoOnairPass, siteId: Swift.Int, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func unlockNearestBLEAccessPoint(cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
+  #endif
   func turnOnCentral()
   func getBLEState() -> CoreBluetooth.CBManagerState
   func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID

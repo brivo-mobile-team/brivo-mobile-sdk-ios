@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoBLE
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import BrivoBLE
 import BrivoCore
 import CoreBluetooth.CBManager
@@ -12,7 +12,9 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public class ReaderData : ObjectiveC.NSObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   required public init(accessPointPath: BrivoCore.AccessPointPath, readerUid: Swift.String, doorType: BrivoCore.DoorType, deviceModelId: Swift.String?, minimumReaderRssi: Swift.Int = BLEConstants.EXPECTED_RSSI)
+  #endif
   @objc deinit
 }
 @objc public class BrivoBLECredential : ObjectiveC.NSObject {
@@ -36,10 +38,18 @@ public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
   public func startCentralManager()
   public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
   public func removeCompletionFor(id: Foundation.UUID)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unlockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func scanForNearbyReadersAndNotifyWhenReaderFound(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func unlockAccessPointWithServices(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func lockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  #endif
   @objc deinit
 }
 public typealias OnConfigureAccessPointSuccessType = () -> Swift.Void
@@ -48,7 +58,9 @@ public typealias OnConfigureAccessPointSuccessType = () -> Swift.Void
   public var provideResponseForExternalCredentials: BrivoBLE.OnProvideResponseForExternalCredentials?
   @objc override dynamic public init()
   public func startCentralManager()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func configureAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  #endif
   @objc deinit
 }
 public enum BLEConstants {

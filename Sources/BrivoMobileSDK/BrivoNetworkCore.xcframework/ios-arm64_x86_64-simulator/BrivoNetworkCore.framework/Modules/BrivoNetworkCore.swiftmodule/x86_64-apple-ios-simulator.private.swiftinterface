@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target x86_64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoNetworkCore
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import BrivoCore
 import Foundation
 import Swift
@@ -22,14 +22,20 @@ public struct HttpStatusCodes {
 @objc public class BrivoOnAirError : ObjectiveC.NSObject {
   public var error: Swift.String
   public var errorDescription: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(error: Swift.String?, errorDescription: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
+  #endif
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class BrivoOnAirResponseStatus : ObjectiveC.NSObject {
   public var statusCode: Swift.Int
   public var error: BrivoNetworkCore.BrivoOnAirError?
+  #if compiler(>=5.3) && $NonescapableTypes
   convenience public init(statusCode: Swift.Int, error: BrivoNetworkCore.BrivoOnAirError?)
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -42,11 +48,19 @@ public struct BrivoOnAirResponse {
   public typealias CompletionType = (BrivoNetworkCore.BrivoOnAirResponse?, BrivoCore.BrivoTokens?) -> Swift.Void
   public typealias OnRefreshTokenFailureType = (BrivoCore.BrivoError?) -> Swift.Void
   public var onRefreshTokenFailed: BrivoNetworkCore.BrivoHTTPSRequest.OnRefreshTokenFailureType?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(authUrl: Swift.String? = nil, authValue: Swift.String? = nil, delegate: (any BrivoCore.RefreshTokenDelegate)? = nil, timeoutIntervalForRequest: Foundation.TimeInterval? = BrivoNetworkCoreConstants.sessionRequestTimeoutInterval)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func performRequest(requestInfo: BrivoNetworkCore.HTTPSRequestInfo, completion: BrivoNetworkCore.BrivoHTTPSRequest.CompletionType? = nil)
+  #endif
   public func cancel()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func refreshToken(tokens: BrivoCore.BrivoTokens?, onRefreshTokenSuccessfully: ((BrivoCore.BrivoTokens?) -> Swift.Void)?, onRefreshTokenFailed: BrivoNetworkCore.BrivoHTTPSRequest.OnRefreshTokenFailureType?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   open func shouldTokenBeRefreshed(responseStatus: BrivoNetworkCore.BrivoOnAirResponseStatus?) -> Swift.Bool
+  #endif
   open func updateRequestTokensAfterTokenRefresh(for requestInfo: BrivoNetworkCore.HTTPSRequestInfo, token: Swift.String)
   @objc deinit
 }
@@ -55,7 +69,9 @@ public struct BrivoOnAirResponse {
   public var refreshToken: Swift.String?
   public var firebaseToken: Swift.String?
   public var expiresOn: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(token: Swift.String? = nil, refreshToken: Swift.String? = nil, firebaseToken: Swift.String? = nil, expiresOn: Swift.String? = nil)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -69,7 +85,9 @@ public class HTTPSRequestInfo {
   public var headers: [Swift.String : Swift.String]
   public var tokens: BrivoCore.BrivoTokens?
   public var maxRetryCount: Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(baseURLString: Swift.String, endPoint: Swift.String?, method: BrivoNetworkCore.HTTPSMethod, body: Foundation.Data? = nil, parameters: [Swift.String : Swift.String?]? = nil, headers: [Swift.String : Swift.String]? = nil, tokens: BrivoCore.BrivoTokens? = nil, maxRetryCount: Swift.Int = 1)
+  #endif
   @objc deinit
 }
 public enum HTTPSMethod : Swift.String {
@@ -78,7 +96,9 @@ public enum HTTPSMethod : Swift.String {
   case PUT
   case PATCH
   case DELETE
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -86,8 +106,12 @@ public enum HTTPSMethod : Swift.String {
 }
 public class HTTPSRequest {
   public typealias ResponseType = (Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?) -> Swift.Void
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(timeoutIntervalForRequest: Foundation.TimeInterval? = BrivoNetworkCoreConstants.sessionRequestTimeoutInterval)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func performRequest(requestInfo: BrivoNetworkCore.HTTPSRequestInfo, completion: BrivoNetworkCore.HTTPSRequest.ResponseType? = nil)
+  #endif
   public func cancel()
   @objc deinit
 }
@@ -119,7 +143,9 @@ public enum BrivoNetworkCoreEndPoint : Swift.String {
   case readerCommands
   case setLevel
   case engageAppToken
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -129,7 +155,9 @@ public enum AllegionQueryParams : Swift.String {
   case serialNumber
   case name
   case deviceType
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -146,7 +174,9 @@ public struct AllegionAccessPointParamsData {
 }
 public enum BrivoNetworkCoreParams : Swift.String {
   case duid
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -158,7 +188,9 @@ public enum BSHThermostatModes : Swift.String {
   case cool
   case off
   case on
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -167,12 +199,16 @@ public enum BSHThermostatModes : Swift.String {
 public struct BrivoOnAirHeaderFields {
   public func getDefaultAuthHeaderFields() -> [Swift.String : Swift.String]
   public static let defaultAPIHeaderFields: [Swift.String : Swift.String]
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func defaultAPIAuthHeaderFields(accessToken: Swift.String? = nil) -> [Swift.String : Swift.String]
+  #endif
   public init(authValue: Swift.String)
 }
 public struct SmartHomeHeaderFields {
   public static let defaultAPIHeaderFields: [Swift.String : Swift.String]
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getDefaultApiHeader(token: Swift.String?) -> [Swift.String : Swift.String]
+  #endif
 }
 public enum BrivoNetworkCoreQueryParameter : Swift.String {
   case offset, pageSize, filter, email, username, password, property, lookup, company, id, page, limit, product, name, level
@@ -184,7 +220,9 @@ public enum BrivoNetworkCoreQueryParameter : Swift.String {
   case firmwareVersion
   case userId
   public static func getDefaultPageSizeParameters() -> [Swift.String : Swift.String]
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -211,7 +249,9 @@ public enum BrivoOnAirErrorStatusCode {
   public static let controlLockConfigMissingDataError: BrivoCore.BrivoError
   public static let refreshTokenError: BrivoCore.BrivoError
   public static func brivoOnAirErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func refreshTokenErrorWithDescription(_ description: Swift.String?) -> BrivoCore.BrivoError
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }

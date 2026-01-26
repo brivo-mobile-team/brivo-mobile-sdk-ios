@@ -1082,7 +1082,6 @@
             "moduleName": "BrivoBLEAllegion",
             "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl"
             ],
             "accessors": [
@@ -1111,9 +1110,6 @@
                 "mangledName": "$s16BrivoBLEAllegion5EventC14schemaMetadataSay9SwiftData6SchemaC08PropertyE0VGvgZ",
                 "moduleName": "BrivoBLEAllegion",
                 "static": true,
-                "declAttributes": [
-                  "Final"
-                ],
                 "accessorKind": "get"
               }
             ]
@@ -1216,6 +1212,21 @@
             "kind": "Conformance",
             "name": "PersistentModel",
             "printedName": "PersistentModel",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Root",
+                "printedName": "Root",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Event",
+                    "printedName": "BrivoBLEAllegion.Event",
+                    "usr": "s:16BrivoBLEAllegion5EventC"
+                  }
+                ]
+              }
+            ],
             "usr": "s:9SwiftData15PersistentModelP",
             "mangledName": "$s9SwiftData15PersistentModelP"
           },
@@ -1247,6 +1258,13 @@
             ],
             "usr": "s:s12IdentifiableP",
             "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -2084,6 +2102,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -2303,6 +2328,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           },
@@ -2612,6 +2644,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
               }
             ]
           }
@@ -3077,6 +3116,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
