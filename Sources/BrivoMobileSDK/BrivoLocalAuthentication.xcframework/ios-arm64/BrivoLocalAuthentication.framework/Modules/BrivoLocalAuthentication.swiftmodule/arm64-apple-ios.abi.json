@@ -1050,168 +1050,168 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 556,
       "length": 14,
       "value": "\"Use Passcode\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 581,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 642,
       "length": 30,
       "value": "\"To access Configuration Menu\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoSDKLocalAuthentication.swift",
       "kind": "StringLiteral",
       "offset": 683,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 347,
       "length": 5,
       "value": "-4000"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 380,
       "length": 23,
       "value": "\"Authentication failed\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 496,
       "length": 5,
       "value": "-4001"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 529,
       "length": 47,
       "value": "\"Hardware unavailable for local authentication\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 652,
       "length": 5,
       "value": "-4002"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 685,
       "length": 33,
       "value": "\"Local authentication timed out.\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 810,
       "length": 5,
       "value": "-4003"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 843,
       "length": 49,
       "value": "\"Hardware doesn't exist for local authentication\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 975,
       "length": 5,
       "value": "-4004"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 1008,
       "length": 39,
       "value": "\"A passcode isn’t set on the device.\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 1129,
       "length": 5,
       "value": "-4005"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 1162,
       "length": 42,
       "value": "\"Context not set for local authentication\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 1296,
       "length": 5,
       "value": "-4006"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 1329,
       "length": 45,
       "value": "\"Authentication was cancelled by application\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 1457,
       "length": 5,
       "value": "-4007"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 1490,
       "length": 55,
       "value": "\"Authentication failed because interaction is disabled\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 1629,
       "length": 5,
       "value": "-4008"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 1662,
       "length": 101,
       "value": "\"Biometry is now locked because of too many failed attempts. Passcode is required to unlock biometry\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
       "offset": 1851,
       "length": 5,
       "value": "-4009"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
+      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
       "offset": 1884,
       "length": 48,
