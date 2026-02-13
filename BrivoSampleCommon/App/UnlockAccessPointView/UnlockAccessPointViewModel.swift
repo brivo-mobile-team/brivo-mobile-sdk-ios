@@ -22,6 +22,11 @@ class UnlockAccessPointViewModel: ObservableObject {
     @Published var isShowingToast = false
     @Published var isShowingLoading = false
     @Published var isShowingDormakabaToast = false
+    @Published var shouldForceInternetUnlock: Bool = false
+
+    var shouldShowInternetUnlockToggle: Bool {
+        selectedAccessPoint?.doorType == .wavelynx
+    }
 
     // MARK: - init
 
@@ -84,6 +89,7 @@ class UnlockAccessPointViewModel: ObservableObject {
         Task {
             for try await result in await brivoSDKAccess.unlockAccessPoint(passId: passId,
                                                                            accessPointId: accessPointIdString,
+                                                                           unlockStrategy: shouldForceInternetUnlock ? .forceInternetUnlockforBrivoDoors : nil,
                                                                            cancellationSignal: cancellationSignal) {
                 await MainActor.run {
                     if result.accessPointCommunicationState == .success {
