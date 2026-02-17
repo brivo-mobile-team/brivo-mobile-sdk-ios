@@ -1,13 +1,13 @@
 {
-  "originHash" : "8f83e18c0da4ddb7c3e8dccc7845a491f4b5396aa0dcf8cb3a4555640f5e9452",
+  "originHash" : "d92953b6005a7f7f415490117d50350fa585f467d4b67c3ad46a892a13c785ea",
   "pins" : [
     {
       "identity" : "brivo-mobile-sdk-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios",
+      "location" : "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git",
       "state" : {
-        "revision" : "1cf1628ad9b2b783afcc89b55d879b2403c38907",
-        "version" : "2.6.3"
+        "revision" : "0cab483e1ebc86cfb0fa8f3e522cd7f3ea196f3f",
+        "version" : "2.7.0"
       }
     }
   ],

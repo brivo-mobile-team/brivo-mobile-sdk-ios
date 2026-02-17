@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C803C9E2E72FF1C00351E47 /* BrivoPassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C9D2E72FF1C00351E47 /* BrivoPassesView.swift */; };
-		5D1180702CE6622500F81314 /* BrivoBLEAllegion in Frameworks */ = {isa = PBXBuildFile; productRef = 5D3344DD2CAD9B7100D97833 /* BrivoBLEAllegion */; };
-		5D1180712CE6622500F81314 /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5D3344DF2CAD9B7100D97833 /* BrivoMobileSDK */; };
 		5D9E0D342DE4A25F00A49DC4 /* UserDefaultsAccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D2B2DE4A25F00A49DC4 /* UserDefaultsAccessService.swift */; };
 		5D9E0D352DE4A25F00A49DC4 /* AccessPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D212DE4A25F00A49DC4 /* AccessPointViewModel.swift */; };
 		5D9E0D362DE4A25F00A49DC4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D2F2DE4A25F00A49DC4 /* Toast.swift */; };
@@ -24,6 +22,7 @@
 		5D9E0D402DE4A25F00A49DC4 /* AccessPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D202DE4A25F00A49DC4 /* AccessPointView.swift */; };
 		C02B6A632D81CFC000E03B0F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B6A622D81CFC000E03B0F /* Configuration.swift */; };
 		C0717AAD2D81DF8900728779 /* BrivoSampleDevApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0717AAC2D81DF8900728779 /* BrivoSampleDevApp.swift */; };
+		C08446C32F3B631E00226C71 /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C08446C22F3B631E00226C71 /* BrivoMobileSDK */; };
 		C4B8833944DB08703A58A61D /* Pods_BrivoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */; };
 		E09E3DCE2BA1F50100B2F901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09E3DCD2BA1F50100B2F901 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -58,8 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1180712CE6622500F81314 /* BrivoMobileSDK in Frameworks */,
-				5D1180702CE6622500F81314 /* BrivoBLEAllegion in Frameworks */,
+				C08446C32F3B631E00226C71 /* BrivoMobileSDK in Frameworks */,
 				C4B8833944DB08703A58A61D /* Pods_BrivoSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,8 +211,7 @@
 			);
 			name = BrivoSampleApp;
 			packageProductDependencies = (
-				5D3344DD2CAD9B7100D97833 /* BrivoBLEAllegion */,
-				5D3344DF2CAD9B7100D97833 /* BrivoMobileSDK */,
+				C08446C22F3B631E00226C71 /* BrivoMobileSDK */,
 			);
 			productName = BrivoSampleApp;
 			productReference = E09E3DC62BA1F50000B2F901 /* BrivoSampleApp.app */;
@@ -245,7 +242,7 @@
 			);
 			mainGroup = E09E3DBD2BA1F50000B2F901;
 			packageReferences = (
-				5D3344DC2CAD9B7100D97833 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */,
+				C0C336932F43AF5C0083C854 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */,
 			);
 			productRefGroup = E09E3DC72BA1F50000B2F901 /* Products */;
 			projectDirPath = "";
@@ -586,25 +583,19 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5D3344DC2CAD9B7100D97833 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */ = {
+		C0C336932F43AF5C0083C854 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios";
+			repositoryURL = "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git";
 			requirement = {
-				kind = exactVersion;
-				version = 2.7.0;
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5D3344DD2CAD9B7100D97833 /* BrivoBLEAllegion */ = {
+		C08446C22F3B631E00226C71 /* BrivoMobileSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5D3344DC2CAD9B7100D97833 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */;
-			productName = BrivoBLEAllegion;
-		};
-		5D3344DF2CAD9B7100D97833 /* BrivoMobileSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5D3344DC2CAD9B7100D97833 /* XCRemoteSwiftPackageReference "brivo-mobile-sdk-ios" */;
 			productName = BrivoMobileSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

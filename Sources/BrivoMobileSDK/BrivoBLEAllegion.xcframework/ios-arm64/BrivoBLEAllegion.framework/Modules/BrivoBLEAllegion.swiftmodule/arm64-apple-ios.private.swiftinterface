@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios17 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoBLEAllegion
-// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import BrivoBLE
 @_exported import BrivoBLEAllegion
 import BrivoCore
@@ -85,7 +85,7 @@ public struct AllegionControlLockStatus : Swift.Codable {
   required public init(backingData: any SwiftData.BackingData<BrivoBLEAllegion.Event>)
   @objc deinit
 }
-extension BrivoBLEAllegion.Event : SwiftData.PersistentModel {
+extension BrivoBLEAllegion.Event : nonisolated SwiftData.PersistentModel {
   public typealias ID = SwiftData.PersistentIdentifier
   @available(swift 5.9)
   @available(iOS 26.0, tvOS 26.0, watchOS 26.0, visionOS 26.0, macOS 26.0, *)
@@ -94,7 +94,7 @@ extension BrivoBLEAllegion.Event : SwiftData.PersistentModel {
     get
   }
 }
-extension BrivoBLEAllegion.Event : Observation.Observable {
+extension BrivoBLEAllegion.Event : nonisolated Observation.Observable {
 }
 @available(swift, deprecated: 5.9, message: "PersistentModels are not Sendable, consider utilizing a ModelActor or use Event's persistentModelID instead")
 @available(*, unavailable, message: "PersistentModels are not Sendable, consider utilizing a ModelActor or use Event's persistentModelID instead")

@@ -14897,308 +14897,308 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/CancellationSignal.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/CancellationSignal.swift",
       "kind": "Array",
       "offset": 316,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/CancellationSignal.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/CancellationSignal.swift",
       "kind": "BooleanLiteral",
       "offset": 348,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoControlLockConfigRequestBody.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoControlLockConfigRequestBody.swift",
       "kind": "BooleanLiteral",
       "offset": 582,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/ControlLockUtils.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/ControlLockUtils.swift",
       "kind": "Array",
       "offset": 328,
       "length": 18,
       "value": "[\"BE467\", \"FE410\"]"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 209,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2269,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
       "kind": "BooleanLiteral",
       "offset": 2614,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoControlLockUserRecord.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoControlLockUserRecord.swift",
       "kind": "IntegerLiteral",
       "offset": 265,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
       "offset": 211,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
       "offset": 233,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
       "offset": 255,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
       "offset": 281,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
       "offset": 306,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
       "offset": 328,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
       "offset": 351,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
       "kind": "IntegerLiteral",
       "offset": 263,
       "length": 14,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
       "kind": "IntegerLiteral",
       "offset": 287,
       "length": 10,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
       "kind": "IntegerLiteral",
       "offset": 307,
       "length": 13,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
       "kind": "IntegerLiteral",
       "offset": 330,
       "length": 7,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
       "kind": "IntegerLiteral",
       "offset": 347,
       "length": 6,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
       "kind": "IntegerLiteral",
       "offset": 363,
       "length": 18,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
       "kind": "BooleanLiteral",
       "offset": 441,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
       "kind": "Array",
       "offset": 790,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
       "kind": "StringLiteral",
       "offset": 1143,
       "length": 18,
       "value": "\"com.brivo.logger\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
       "kind": "StringLiteral",
       "offset": 1228,
       "length": 24,
       "value": "\"com.brivo.logger.state\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 12,
       "value": "\"KEY_PASSES\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 15,
       "value": "\"KEY_PASSES_EU\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 382,
       "length": 15,
       "value": "\"KEY_DEVICE_ID\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 457,
       "length": 21,
       "value": "\"com.brivo.MobileSDK\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "BooleanLiteral",
       "offset": 772,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1133,
       "length": 19,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1151,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1176,
       "length": 67,
       "value": "\"(accessPointCommunicationState: \""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1241,
       "length": 1,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1322,
       "length": 39,
       "value": "\" accessPointPath: \""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1359,
       "length": 1,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1430,
       "length": 19,
       "value": "\" error: \""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1447,
       "length": 1,
       "value": "\",\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1483,
       "length": 49,
       "value": "\" engagedReaderCommand: \""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoResult.swift",
       "kind": "StringLiteral",
       "offset": 1530,
       "length": 1,
       "value": "\")\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Models\/AccessPointPath.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/AccessPointPath.swift",
       "kind": "BooleanLiteral",
       "offset": 504,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/BrivoError.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoError.swift",
       "kind": "StringLiteral",
       "offset": 309,
       "length": 9,
       "value": "\"context\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/BrivoError.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoError.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 27,
       "value": "\"accessPointAdditionalInfo\""
     },
     {
-      "filePath": "\/Users\/adriansomesan\/VSP\/Projects\/mobile-sdk-ios\/BrivoCore\/BrivoCore\/Utils\/BrivoError.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoError.swift",
       "kind": "StringLiteral",
       "offset": 1036,
       "length": 19,
