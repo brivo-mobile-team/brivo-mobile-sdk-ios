@@ -9,22 +9,23 @@ import SwiftUI
 
 struct Toast: ViewModifier {
 
-    static let short: TimeInterval = 2
-    static let long: TimeInterval = 3.5
+    static let short: TimeInterval = 1.5
+    static let long: TimeInterval = 2.5
 
     let message: String
     @Binding var isShowing: Bool
     let config: Config
 
     func body(content: Content) -> some View {
-        ZStack {
-            toastView
-            content
-        }
+        content
+            .overlay(alignment: .center) {
+                toastView
+            }
     }
 
     private var toastView: some View {
         VStack {
+            Spacer()
             if isShowing {
                 Group {
                     Text(message)
@@ -38,18 +39,14 @@ struct Toast: ViewModifier {
                 .onTapGesture {
                     isShowing = false
                 }
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + config.duration) {
-                        isShowing = false
-                    }
+                .task {
+                    try? await Task.sleep(for: .seconds(config.duration))
+                    isShowing = false
                 }
             }
-            Spacer()
         }
         .padding(.horizontal, 16)
         .padding(.bottom, 18)
-        .animation(config.animation, value: isShowing)
-        .transition(config.transition)
     }
 
     struct Config {

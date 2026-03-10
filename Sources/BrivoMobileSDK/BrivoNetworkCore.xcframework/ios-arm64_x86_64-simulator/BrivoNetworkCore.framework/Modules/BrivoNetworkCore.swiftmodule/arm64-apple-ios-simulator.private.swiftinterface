@@ -49,17 +49,15 @@ public struct BrivoOnAirResponse {
   public typealias OnRefreshTokenFailureType = (BrivoCore.BrivoError?) -> Swift.Void
   public var onRefreshTokenFailed: BrivoNetworkCore.BrivoHTTPSRequest.OnRefreshTokenFailureType?
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(authUrl: Swift.String? = nil, authValue: Swift.String? = nil, delegate: (any BrivoCore.RefreshTokenDelegate)? = nil, timeoutIntervalForRequest: Foundation.TimeInterval? = BrivoNetworkCoreConstants.sessionRequestTimeoutInterval)
+  public init(authUrl: Swift.String? = nil, authValue: Swift.String? = nil, tokenRefresher: (any BrivoCore.TokenRefresher)? = nil, timeoutIntervalForRequest: Foundation.TimeInterval? = BrivoNetworkCoreConstants.sessionRequestTimeoutInterval)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func performRequest(requestInfo: BrivoNetworkCore.HTTPSRequestInfo, completion: BrivoNetworkCore.BrivoHTTPSRequest.CompletionType? = nil)
   #endif
   public func cancel()
+  open func shouldTokenBeRefreshed(responseStatus: BrivoNetworkCore.BrivoOnAirResponseStatus, requestURL: Swift.String) -> Swift.Bool
   #if compiler(>=5.3) && $NonescapableTypes
   public func refreshToken(tokens: BrivoCore.BrivoTokens?, onRefreshTokenSuccessfully: ((BrivoCore.BrivoTokens?) -> Swift.Void)?, onRefreshTokenFailed: BrivoNetworkCore.BrivoHTTPSRequest.OnRefreshTokenFailureType?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  open func shouldTokenBeRefreshed(responseStatus: BrivoNetworkCore.BrivoOnAirResponseStatus?) -> Swift.Bool
   #endif
   open func updateRequestTokensAfterTokenRefresh(for requestInfo: BrivoNetworkCore.HTTPSRequestInfo, token: Swift.String)
   @objc deinit
@@ -132,11 +130,8 @@ public enum BrivoNetworkCoreEndPoint : Swift.String {
   case accessPoints
   case controlLock
   case getCurrentAdmin
-  case login, property, gateway, devices, properties, device, lock, unlock, engage
-  case passworReset
+  case engage
   case brivoWirelessLock
-  case firebaseToken
-  case mobilePass
   case user
   case access
   case accesses
@@ -248,6 +243,7 @@ public enum BrivoOnAirErrorStatusCode {
   public static let getAccessPointsMissingDataError: BrivoCore.BrivoError
   public static let controlLockConfigMissingDataError: BrivoCore.BrivoError
   public static let refreshTokenError: BrivoCore.BrivoError
+  public static let tokenRefreshAlreadyInProgressError: BrivoCore.BrivoError
   public static func brivoOnAirErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
   #if compiler(>=5.3) && $NonescapableTypes
   public static func refreshTokenErrorWithDescription(_ description: Swift.String?) -> BrivoCore.BrivoError

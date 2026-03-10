@@ -5,13 +5,14 @@
 //  Created by Paul Marc on 13.05.2025.
 //
 
-import SwiftUI
+import Foundation
 import BrivoCore
 import BrivoBLE
 import BrivoOnAir
 import BrivoAccess
 
-class UnlockAccessPointViewModel: ObservableObject {
+class AccessPointDetailsViewModel: ObservableObject {
+
     // MARK: - Properties
 
     let selectedAccessPoint: BrivoSelectedAccessPoint?
@@ -22,11 +23,39 @@ class UnlockAccessPointViewModel: ObservableObject {
     @Published var isShowingToast = false
     @Published var isShowingLoading = false
     @Published var isShowingDormakabaToast = false
+    @Published var shouldShowCopyToast: Bool = false
+    @Published var shouldShowBottomSheet: Bool = false
     @Published var shouldForceInternetUnlock: Bool = false
-
+    
     var shouldShowInternetUnlockToggle: Bool {
         selectedAccessPoint?.doorType == .wavelynx
     }
+    
+    private(set) lazy var doorExtendedDetails: [ExtendedInfoItem] = {
+        
+        guard let selectedAccessPoint = selectedAccessPoint else {
+            return []
+        }
+        let id = String(selectedAccessPoint.accessPointPath.accessPointId)
+        let doorType = selectedAccessPoint.doorType.stringValue
+        let modelId = selectedAccessPoint.deviceModelId
+        let lockID = selectedAccessPoint.controlLockId.map { String($0) }
+        let readerUid = selectedAccessPoint.readerUid
+        let twoFactor = selectedAccessPoint.isTwoFactorEnabled == true ? "Enabled" : "Disabled"
+        let rssi = String(selectedAccessPoint.minimumPanelRssi)
+        let timeframe = String(selectedAccessPoint.timeframe)
+
+        return [
+            ExtendedInfoItem(name: "Access Point ID", value: id),
+            ExtendedInfoItem(name: "Door Type", value: doorType),
+            ExtendedInfoItem(name: "Door model ID", value: modelId),
+            ExtendedInfoItem(name: "Lock ID", value: lockID),
+            ExtendedInfoItem(name: "Reader UID", value: readerUid),
+            ExtendedInfoItem(name: "Two Factor Status", value: twoFactor),
+            ExtendedInfoItem(name: "Minimum Panel Rssi", value: rssi),
+            ExtendedInfoItem(name: "Time Frame", value: timeframe)
+        ]
+    }()
 
     // MARK: - init
 
@@ -41,6 +70,8 @@ class UnlockAccessPointViewModel: ObservableObject {
         self.alertMessage = alertMessage
         self.isLocked = isLocked
     }
+    
+    //MARK: - Public
 
     // swiftlint:disable line_length
     // swiftlint:disable function_body_length
@@ -86,6 +117,7 @@ class UnlockAccessPointViewModel: ObservableObject {
                                            brivoSDKAccess: BrivoSDKAccess,
                                            cancellationSignal: CancellationSignal,
                                            timer: Timer) {
+        
         Task {
             for try await result in await brivoSDKAccess.unlockAccessPoint(passId: passId,
                                                                            accessPointId: accessPointIdString,
@@ -103,9 +135,9 @@ class UnlockAccessPointViewModel: ObservableObject {
                         self.resetToInitialState()
 
                         if let error = result.error {
-                            self.alertTitle = "Error"
-                            self.alertMessage = (error.localizedDescription) + " " + "Status Code: \(error.code)"
-                            self.isShowingAlert = true
+                            self.displayErrorMessage(
+                                message: (error.localizedDescription) + " " + "Status Code: \(error.code)"
+                            )
                         }
                     }
                 }
@@ -128,9 +160,9 @@ class UnlockAccessPointViewModel: ObservableObject {
                     case .failed:
                         timer.invalidate()
                         self.resetToInitialState()
-                        self.alertTitle = "Error"
-                        self.alertMessage = (result.error?.localizedDescription ?? "") + " " + "Status Code: \(result.error?.code ?? 0)"
-                        self.isShowingAlert = true
+                        self.displayErrorMessage(
+                            message: (result.error?.localizedDescription ?? "") + " " + "Status Code: \(result.error?.code ?? 0)"
+                        )
                     default:
                         break
                     }
@@ -155,5 +187,14 @@ class UnlockAccessPointViewModel: ObservableObject {
             timer.invalidate()
         }
         RunLoop.current.add(timer, forMode: .common)
+    }
+
+    private func displayErrorMessage(
+        title: String = "Error",
+        message: String
+    ) {
+        self.alertTitle = title
+        self.alertMessage = message
+        self.isShowingAlert = true
     }
 }

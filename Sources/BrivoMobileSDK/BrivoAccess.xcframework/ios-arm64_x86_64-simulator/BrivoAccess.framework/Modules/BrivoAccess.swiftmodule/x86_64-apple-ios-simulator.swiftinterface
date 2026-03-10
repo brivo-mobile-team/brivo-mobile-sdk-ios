@@ -25,6 +25,7 @@ import _SwiftConcurrencyShims
   public static let missingNetworkConnectionError: BrivoCore.BrivoError
   public static let missingReaderUUIDError: BrivoCore.BrivoError
   public static let accessPointUnsupportedDoorType: BrivoCore.BrivoError
+  public static let accessPointDoesNotSupportInternetUnlock: BrivoCore.BrivoError
   public static func brivoErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
   @objc override dynamic public init()
   @objc deinit
@@ -37,6 +38,22 @@ public enum UnlockStrategy {
     get
   }
 }
+public enum RefreshCredentialErrorType {
+  case allegion
+  case hidOrigo
+  case dormakaba
+  case brivoSDK
+  case salto
+  public static func == (a: BrivoAccess.RefreshCredentialErrorType, b: BrivoAccess.RefreshCredentialErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct RefreshCredentialsResult {
+  public let result: [BrivoAccess.RefreshCredentialErrorType : [BrivoCore.BrivoError]]
+  public init(result: [BrivoAccess.RefreshCredentialErrorType : [BrivoCore.BrivoError]])
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoSDKAccess : ObjectiveC.NSObject, BrivoAccess.IBrivoSDKAccess {
   public static func instance() -> BrivoAccess.BrivoSDKAccess
   public var onBluetoothStateUpdated: ((CoreBluetooth.CBManagerState) -> Swift.Void)? {
@@ -45,8 +62,8 @@ public enum UnlockStrategy {
   }
   public func turnOnCentral()
   public func getBLEState() -> CoreBluetooth.CBManagerState
-  public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
-  public func removeCompletionFor(id: Foundation.UUID)
+  public func addBluetoothStateObserver(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
+  public func removeBluetoothStateObserver(id: Foundation.UUID)
   #if compiler(>=5.3) && $NonescapableTypes
   public func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, unlockStrategy: BrivoAccess.UnlockStrategy?, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   #endif
@@ -68,12 +85,7 @@ public enum UnlockStrategy {
   #if compiler(>=5.3) && $NonescapableTypes
   public func unlockNearestBLEAccessPoint(cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func provideExternalCredentialsResponseToOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String, onSuccess: BrivoAccess.ControlLockUnlockOnSuccessType?, onFailure: BrivoAccess.OnFailureType?)
-  #endif
+  public func refreshCredentials(passes: [BrivoOnAir.BrivoOnairPass]) async -> BrivoAccess.RefreshCredentialsResult
   @objc deinit
 }
 public typealias ControlLockUnlockOnSuccessType = (Swift.String?) -> Swift.Void
@@ -102,13 +114,12 @@ public protocol IBrivoSDKAccess {
   #if compiler(>=5.3) && $NonescapableTypes
   func unlockNearestBLEAccessPoint(cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func requestExternalCredentialsFromOnAir(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, requestData: Swift.String) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
-  #endif
   func turnOnCentral()
   func getBLEState() -> CoreBluetooth.CBManagerState
-  func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
-  func removeCompletionFor(id: Foundation.UUID)
+  func addBluetoothStateObserver(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
+  func removeBluetoothStateObserver(id: Foundation.UUID)
+  @discardableResult
+  func refreshCredentials(passes: [BrivoOnAir.BrivoOnairPass]) async -> BrivoAccess.RefreshCredentialsResult
 }
 extension BrivoAccess.IBrivoSDKAccess {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -120,3 +131,5 @@ extension BrivoAccess.IBrivoSDKAccess {
 }
 extension BrivoAccess.UnlockStrategy : Swift.Equatable {}
 extension BrivoAccess.UnlockStrategy : Swift.Hashable {}
+extension BrivoAccess.RefreshCredentialErrorType : Swift.Equatable {}
+extension BrivoAccess.RefreshCredentialErrorType : Swift.Hashable {}

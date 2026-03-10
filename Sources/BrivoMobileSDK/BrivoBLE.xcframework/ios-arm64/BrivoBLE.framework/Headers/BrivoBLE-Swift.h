@@ -315,11 +315,6 @@ SWIFT_CLASS("_TtC8BrivoBLE15BrivoBLEService")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-SWIFT_CLASS("_TtC8BrivoBLE28BrivoConfigurationBLEService")
-@interface BrivoConfigurationBLEService : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
 SWIFT_CLASS("_TtC8BrivoBLE10ReaderData")
 @interface ReaderData : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

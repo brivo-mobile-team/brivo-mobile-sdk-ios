@@ -588,6 +588,57 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "accessPointDoesNotSupportInternetUnlock",
+            "printedName": "accessPointDoesNotSupportInternetUnlock",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11BrivoAccess0A15SDKAccessErrorsC39accessPointDoesNotSupportInternetUnlock0A4Core0A5ErrorCvpZ",
+            "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC39accessPointDoesNotSupportInternetUnlock0A4Core0A5ErrorCvpZ",
+            "moduleName": "BrivoAccess",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11BrivoAccess0A15SDKAccessErrorsC39accessPointDoesNotSupportInternetUnlock0A4Core0A5ErrorCvgZ",
+                "mangledName": "$s11BrivoAccess0A15SDKAccessErrorsC39accessPointDoesNotSupportInternetUnlock0A4Core0A5ErrorCvgZ",
+                "moduleName": "BrivoAccess",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "brivoErrorWithDescription",
             "printedName": "brivoErrorWithDescription(_:)",
@@ -976,6 +1027,508 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "BrivoSalto",
+        "printedName": "BrivoSalto",
+        "declKind": "Import",
+        "moduleName": "BrivoAccess",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RefreshCredentialErrorType",
+        "printedName": "RefreshCredentialErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "allegion",
+            "printedName": "allegion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoAccess.RefreshCredentialErrorType.Type) -> BrivoAccess.RefreshCredentialErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshCredentialErrorType",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                    "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefreshCredentialErrorType",
+                        "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                        "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO8allegionyA2CmF",
+            "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO8allegionyA2CmF",
+            "moduleName": "BrivoAccess"
+          },
+          {
+            "kind": "Var",
+            "name": "hidOrigo",
+            "printedName": "hidOrigo",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoAccess.RefreshCredentialErrorType.Type) -> BrivoAccess.RefreshCredentialErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshCredentialErrorType",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                    "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefreshCredentialErrorType",
+                        "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                        "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO8hidOrigoyA2CmF",
+            "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO8hidOrigoyA2CmF",
+            "moduleName": "BrivoAccess"
+          },
+          {
+            "kind": "Var",
+            "name": "dormakaba",
+            "printedName": "dormakaba",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoAccess.RefreshCredentialErrorType.Type) -> BrivoAccess.RefreshCredentialErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshCredentialErrorType",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                    "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefreshCredentialErrorType",
+                        "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                        "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO9dormakabayA2CmF",
+            "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO9dormakabayA2CmF",
+            "moduleName": "BrivoAccess"
+          },
+          {
+            "kind": "Var",
+            "name": "brivoSDK",
+            "printedName": "brivoSDK",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoAccess.RefreshCredentialErrorType.Type) -> BrivoAccess.RefreshCredentialErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshCredentialErrorType",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                    "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefreshCredentialErrorType",
+                        "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                        "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO8brivoSDKyA2CmF",
+            "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO8brivoSDKyA2CmF",
+            "moduleName": "BrivoAccess"
+          },
+          {
+            "kind": "Var",
+            "name": "salto",
+            "printedName": "salto",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoAccess.RefreshCredentialErrorType.Type) -> BrivoAccess.RefreshCredentialErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshCredentialErrorType",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                    "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefreshCredentialErrorType",
+                        "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                        "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO5saltoyA2CmF",
+            "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO5saltoyA2CmF",
+            "moduleName": "BrivoAccess"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshCredentialErrorType",
+                "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshCredentialErrorType",
+                "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "BrivoAccess",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO9hashValueSivp",
+            "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO9hashValueSivp",
+            "moduleName": "BrivoAccess",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO9hashValueSivg",
+                "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO9hashValueSivg",
+                "moduleName": "BrivoAccess",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "BrivoAccess",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO",
+        "mangledName": "$s11BrivoAccess26RefreshCredentialErrorTypeO",
+        "moduleName": "BrivoAccess",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RefreshCredentialsResult",
+        "printedName": "RefreshCredentialsResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "result",
+            "printedName": "result",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[BrivoAccess.RefreshCredentialErrorType : [BrivoCore.BrivoError]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshCredentialErrorType",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                    "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[BrivoCore.BrivoError]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoError",
+                        "printedName": "BrivoCore.BrivoError",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11BrivoAccess24RefreshCredentialsResultV6resultSDyAA0C19CredentialErrorTypeOSay0A4Core0aH0CGGvp",
+            "mangledName": "$s11BrivoAccess24RefreshCredentialsResultV6resultSDyAA0C19CredentialErrorTypeOSay0A4Core0aH0CGGvp",
+            "moduleName": "BrivoAccess",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[BrivoAccess.RefreshCredentialErrorType : [BrivoCore.BrivoError]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RefreshCredentialErrorType",
+                        "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                        "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[BrivoCore.BrivoError]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BrivoError",
+                            "printedName": "BrivoCore.BrivoError",
+                            "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11BrivoAccess24RefreshCredentialsResultV6resultSDyAA0C19CredentialErrorTypeOSay0A4Core0aH0CGGvg",
+                "mangledName": "$s11BrivoAccess24RefreshCredentialsResultV6resultSDyAA0C19CredentialErrorTypeOSay0A4Core0aH0CGGvg",
+                "moduleName": "BrivoAccess",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshCredentialsResult",
+                "printedName": "BrivoAccess.RefreshCredentialsResult",
+                "usr": "s:11BrivoAccess24RefreshCredentialsResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[BrivoAccess.RefreshCredentialErrorType : [BrivoCore.BrivoError]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RefreshCredentialErrorType",
+                    "printedName": "BrivoAccess.RefreshCredentialErrorType",
+                    "usr": "s:11BrivoAccess26RefreshCredentialErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[BrivoCore.BrivoError]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoError",
+                        "printedName": "BrivoCore.BrivoError",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11BrivoAccess24RefreshCredentialsResultV6resultACSDyAA0C19CredentialErrorTypeOSay0A4Core0aH0CGG_tcfc",
+            "mangledName": "$s11BrivoAccess24RefreshCredentialsResultV6resultACSDyAA0C19CredentialErrorTypeOSay0A4Core0aH0CGG_tcfc",
+            "moduleName": "BrivoAccess",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:11BrivoAccess24RefreshCredentialsResultV",
+        "mangledName": "$s11BrivoAccess24RefreshCredentialsResultV",
+        "moduleName": "BrivoAccess",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "BrivoSDKAccess",
         "printedName": "BrivoSDKAccess",
@@ -1192,8 +1745,8 @@
           },
           {
             "kind": "Function",
-            "name": "onBleChanged",
-            "printedName": "onBleChanged(completion:)",
+            "name": "addBluetoothStateObserver",
+            "printedName": "addBluetoothStateObserver(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1221,8 +1774,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess0A9SDKAccessC12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC25addBluetoothStateObserver10completion10Foundation4UUIDVySo09CBManagerF0Vc_tF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC25addBluetoothStateObserver10completion10Foundation4UUIDVySo09CBManagerF0Vc_tF",
             "moduleName": "BrivoAccess",
             "declAttributes": [
               "AccessControl"
@@ -1231,8 +1784,8 @@
           },
           {
             "kind": "Function",
-            "name": "removeCompletionFor",
-            "printedName": "removeCompletionFor(id:)",
+            "name": "removeBluetoothStateObserver",
+            "printedName": "removeBluetoothStateObserver(id:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1247,8 +1800,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess0A9SDKAccessC19removeCompletionFor2idy10Foundation4UUIDV_tF",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC19removeCompletionFor2idy10Foundation4UUIDV_tF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC28removeBluetoothStateObserver2idy10Foundation4UUIDV_tF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC28removeBluetoothStateObserver2idy10Foundation4UUIDV_tF",
             "moduleName": "BrivoAccess",
             "declAttributes": [
               "AccessControl"
@@ -1690,157 +2243,33 @@
           },
           {
             "kind": "Function",
-            "name": "requestExternalCredentialsFromOnAir",
-            "printedName": "requestExternalCredentialsFromOnAir(tokens:accessPointId:requestData:)",
+            "name": "refreshCredentials",
+            "printedName": "refreshCredentials(passes:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "Swift.Result<Swift.String?, BrivoCore.BrivoError>",
+                "name": "RefreshCredentialsResult",
+                "printedName": "BrivoAccess.RefreshCredentialsResult",
+                "usr": "s:11BrivoAccess24RefreshCredentialsResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BrivoOnAir.BrivoOnairPass]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                    "name": "BrivoOnairPass",
+                    "printedName": "BrivoOnAir.BrivoOnairPass",
+                    "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
                   }
                 ],
-                "usr": "s:s6ResultO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoTokens",
-                "printedName": "BrivoCore.BrivoTokens",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "usr": "s:Sa"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess0A9SDKAccessC35requestExternalCredentialsFromOnAir6tokens13accessPointId0D4Datas6ResultOySSSg0A4Core0A5ErrorCGAK0A6TokensC_S2StYaF",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC35requestExternalCredentialsFromOnAir6tokens13accessPointId0D4Datas6ResultOySSSg0A4Core0A5ErrorCGAK0A6TokensC_S2StYaF",
-            "moduleName": "BrivoAccess",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "provideExternalCredentialsResponseToOnAir",
-            "printedName": "provideExternalCredentialsResponseToOnAir(tokens:accessPointId:requestData:onSuccess:onFailure:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoTokens",
-                "printedName": "BrivoCore.BrivoTokens",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.String?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoError) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoError) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoError",
-                        "printedName": "BrivoCore.BrivoError",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11BrivoAccess0A9SDKAccessC41provideExternalCredentialsResponseToOnAir6tokens13accessPointId11requestData9onSuccess0Q7Failurey0A4Core0A6TokensC_S2SySSSgcSgyAJ0A5ErrorCcSgtF",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC41provideExternalCredentialsResponseToOnAir6tokens13accessPointId11requestData9onSuccess0Q7Failurey0A4Core0A6TokensC_S2SySSSgcSgyAJ0A5ErrorCcSgtF",
+            "usr": "s:11BrivoAccess0A9SDKAccessC18refreshCredentials6passesAA07RefreshE6ResultVSay0A5OnAir0A9OnairPassCG_tYaF",
+            "mangledName": "$s11BrivoAccess0A9SDKAccessC18refreshCredentials6passesAA07RefreshE6ResultVSay0A5OnAir0A9OnairPassCG_tYaF",
             "moduleName": "BrivoAccess",
             "declAttributes": [
               "AccessControl"
@@ -2009,6 +2438,9 @@
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "static": true,
             "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
@@ -2475,71 +2907,6 @@
           },
           {
             "kind": "Function",
-            "name": "requestExternalCredentialsFromOnAir",
-            "printedName": "requestExternalCredentialsFromOnAir(tokens:accessPointId:requestData:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Result",
-                "printedName": "Swift.Result<Swift.String?, BrivoCore.BrivoError>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoError",
-                    "printedName": "BrivoCore.BrivoError",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                  }
-                ],
-                "usr": "s:s6ResultO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoTokens",
-                "printedName": "BrivoCore.BrivoTokens",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11BrivoAccess15IBrivoSDKAccessP35requestExternalCredentialsFromOnAir6tokens13accessPointId0E4Datas6ResultOySSSg0A4Core0A5ErrorCGAK0A6TokensC_S2StYaF",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP35requestExternalCredentialsFromOnAir6tokens13accessPointId0E4Datas6ResultOySSSg0A4Core0A5ErrorCGAK0A6TokensC_S2StYaF",
-            "moduleName": "BrivoAccess",
-            "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
-            "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "turnOnCentral",
             "printedName": "turnOnCentral()",
             "children": [
@@ -2589,8 +2956,8 @@
           },
           {
             "kind": "Function",
-            "name": "onBleChanged",
-            "printedName": "onBleChanged(completion:)",
+            "name": "addBluetoothStateObserver",
+            "printedName": "addBluetoothStateObserver(completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2618,8 +2985,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess15IBrivoSDKAccessP12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP12onBleChanged10completion10Foundation4UUIDVySo14CBManagerStateVc_tF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP25addBluetoothStateObserver10completion10Foundation4UUIDVySo09CBManagerG0Vc_tF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP25addBluetoothStateObserver10completion10Foundation4UUIDVySo09CBManagerG0Vc_tF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
@@ -2632,8 +2999,8 @@
           },
           {
             "kind": "Function",
-            "name": "removeCompletionFor",
-            "printedName": "removeCompletionFor(id:)",
+            "name": "removeBluetoothStateObserver",
+            "printedName": "removeBluetoothStateObserver(id:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2648,13 +3015,53 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11BrivoAccess15IBrivoSDKAccessP19removeCompletionFor2idy10Foundation4UUIDV_tF",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP19removeCompletionFor2idy10Foundation4UUIDV_tF",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP28removeBluetoothStateObserver2idy10Foundation4UUIDV_tF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP28removeBluetoothStateObserver2idy10Foundation4UUIDV_tF",
             "moduleName": "BrivoAccess",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
             "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
             "protocolReq": true,
             "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "refreshCredentials",
+            "printedName": "refreshCredentials(passes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RefreshCredentialsResult",
+                "printedName": "BrivoAccess.RefreshCredentialsResult",
+                "usr": "s:11BrivoAccess24RefreshCredentialsResultV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BrivoOnAir.BrivoOnairPass]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoOnairPass",
+                    "printedName": "BrivoOnAir.BrivoOnairPass",
+                    "usr": "c:@M@BrivoOnAir@objc(cs)BrivoOnairPass"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11BrivoAccess15IBrivoSDKAccessP18refreshCredentials6passesAA07RefreshF6ResultVSay0A5OnAir0A9OnairPassCG_tYaF",
+            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP18refreshCredentials6passesAA07RefreshF6ResultVSay0A5OnAir0A9OnairPassCG_tYaF",
+            "moduleName": "BrivoAccess",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
+            "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
+            "protocolReq": true,
+            "declAttributes": [
+              "DiscardableResult",
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
@@ -2834,178 +3241,206 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 504,
+      "length": 27,
+      "value": "\"com.brivo.sdk.BrivoAccess\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 531,
+      "offset": 620,
       "length": 5,
       "value": "-1000"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 556,
+      "offset": 648,
       "length": 16,
       "value": "\"Unknown error.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 641,
+      "offset": 766,
       "length": 5,
       "value": "-1001"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 721,
+      "offset": 794,
       "length": 42,
       "value": "\"BrivoSDK init failed. SDK not configured\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 846,
+      "offset": 952,
       "length": 5,
       "value": "-1002"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 940,
+      "offset": 980,
       "length": 41,
       "value": "\"SDK not configured to use local storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1063,
+      "offset": 1136,
       "length": 5,
       "value": "-1003"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1156,
+      "offset": 1164,
       "length": 38,
       "value": "\"There are no passes on local storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1282,
+      "offset": 1323,
       "length": 5,
       "value": "-1004"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1381,
+      "offset": 1351,
       "length": 40,
       "value": "\"Acess point not found in local storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1502,
+      "offset": 1505,
       "length": 5,
       "value": "-1005"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1594,
+      "offset": 1533,
       "length": 33,
       "value": "\"Pass not found in local storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1702,
+      "offset": 1674,
       "length": 5,
       "value": "-1006"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1788,
+      "offset": 1702,
       "length": 24,
       "value": "\"Missing ble credential\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1888,
+      "offset": 1835,
       "length": 5,
       "value": "-1007"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 1975,
+      "offset": 1863,
       "length": 32,
       "value": "\"Access point invalid door type\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2086,
+      "offset": 2007,
       "length": 5,
       "value": "-1008"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2176,
+      "offset": 2035,
       "length": 29,
       "value": "\"Missing internet connection\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2277,
+      "offset": 2169,
       "length": 5,
       "value": "-1009"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2360,
+      "offset": 2197,
       "length": 21,
       "value": "\"Missing reader UUID\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 2461,
+      "offset": 2330,
       "length": 5,
       "value": "-1010"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 2552,
+      "offset": 2358,
       "length": 36,
       "value": "\"Access point unsupported door type\""
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2515,
+      "length": 5,
+      "value": "-1011"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 2543,
+      "length": 47,
+      "value": "\"Access point does not support internet unlock\""
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
-      "offset": 426,
+      "offset": 453,
       "length": 24,
       "value": "\"BrivoBLEAllegionModule\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
-      "offset": 471,
+      "offset": 498,
       "length": 21,
       "value": "\"BrivoHIDOrigoModule\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 541,
       "length": 22,
       "value": "\"BrivoDormakabaModule\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "kind": "StringLiteral",
+      "offset": 581,
+      "length": 18,
+      "value": "\"BrivoSaltoModule\""
     }
   ]
 }

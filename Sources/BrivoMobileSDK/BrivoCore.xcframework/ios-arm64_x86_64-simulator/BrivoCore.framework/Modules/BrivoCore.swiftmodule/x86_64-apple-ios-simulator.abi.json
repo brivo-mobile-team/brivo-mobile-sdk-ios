@@ -528,7 +528,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -3438,19 +3439,14 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "RefreshTokenDelegate",
-        "printedName": "RefreshTokenDelegate",
+        "name": "TokenRefresher",
+        "printedName": "TokenRefresher",
         "children": [
           {
             "kind": "Function",
             "name": "refreshToken",
-            "printedName": "refreshToken(brivoTokens:onSuccess:onError:)",
+            "printedName": "refreshToken(brivoTokens:)",
             "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
               {
                 "kind": "TypeNominal",
                 "name": "BrivoTokens",
@@ -3459,85 +3455,31 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoTokens) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoTokens) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoTokens",
-                        "printedName": "BrivoCore.BrivoTokens",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((BrivoCore.BrivoError?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(BrivoCore.BrivoError?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "BrivoCore.BrivoError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "BrivoError",
-                            "printedName": "BrivoCore.BrivoError",
-                            "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "BrivoTokens",
+                "printedName": "BrivoCore.BrivoTokens",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9BrivoCore20RefreshTokenDelegateP07refreshD011brivoTokens9onSuccess0I5ErroryAA0aH0C_yAIcSgyAA0aK0CSgcSgtF",
-            "mangledName": "$s9BrivoCore20RefreshTokenDelegateP07refreshD011brivoTokens9onSuccess0I5ErroryAA0aH0C_yAIcSgyAA0aK0CSgcSgtF",
+            "usr": "s:9BrivoCore14TokenRefresherP07refreshC011brivoTokensAA0aG0CAG_tYaKF",
+            "mangledName": "$s9BrivoCore14TokenRefresherP07refreshC011brivoTokensAA0aG0CAG_tYaKF",
             "moduleName": "BrivoCore",
-            "genericSig": "<τ_0_0 where τ_0_0 : BrivoCore.RefreshTokenDelegate>",
-            "sugared_genericSig": "<Self where Self : BrivoCore.RefreshTokenDelegate>",
+            "genericSig": "<τ_0_0 where τ_0_0 : BrivoCore.TokenRefresher>",
+            "sugared_genericSig": "<Self where Self : BrivoCore.TokenRefresher>",
             "protocolReq": true,
+            "throwing": true,
             "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Protocol",
-        "usr": "s:9BrivoCore20RefreshTokenDelegateP",
-        "mangledName": "$s9BrivoCore20RefreshTokenDelegateP",
+        "usr": "s:9BrivoCore14TokenRefresherP",
+        "mangledName": "$s9BrivoCore14TokenRefresherP",
         "moduleName": "BrivoCore",
-        "genericSig": "<τ_0_0 : ObjectiveC.NSObject>",
-        "sugared_genericSig": "<Self : ObjectiveC.NSObject>",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -4576,198 +4518,6 @@
           },
           {
             "kind": "Var",
-            "name": "smartHomeUrl",
-            "printedName": "smartHomeUrl",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9BrivoCore0A16SDKConfigurationC12smartHomeUrlSSSgvp",
-            "mangledName": "$s9BrivoCore0A16SDKConfigurationC12smartHomeUrlSSSgvp",
-            "moduleName": "BrivoCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9BrivoCore0A16SDKConfigurationC12smartHomeUrlSSSgvg",
-                "mangledName": "$s9BrivoCore0A16SDKConfigurationC12smartHomeUrlSSSgvg",
-                "moduleName": "BrivoCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "smartHomeUrlV1",
-            "printedName": "smartHomeUrlV1",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9BrivoCore0A16SDKConfigurationC14smartHomeUrlV1SSSgvp",
-            "mangledName": "$s9BrivoCore0A16SDKConfigurationC14smartHomeUrlV1SSSgvp",
-            "moduleName": "BrivoCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9BrivoCore0A16SDKConfigurationC14smartHomeUrlV1SSSgvg",
-                "mangledName": "$s9BrivoCore0A16SDKConfigurationC14smartHomeUrlV1SSSgvg",
-                "moduleName": "BrivoCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "smartHomeUrlV4",
-            "printedName": "smartHomeUrlV4",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:9BrivoCore0A16SDKConfigurationC14smartHomeUrlV4SSSgvp",
-            "mangledName": "$s9BrivoCore0A16SDKConfigurationC14smartHomeUrlV4SSSgvp",
-            "moduleName": "BrivoCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:9BrivoCore0A16SDKConfigurationC14smartHomeUrlV4SSSgvg",
-                "mangledName": "$s9BrivoCore0A16SDKConfigurationC14smartHomeUrlV4SSSgvg",
-                "moduleName": "BrivoCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "useSDKStorage",
             "printedName": "useSDKStorage",
             "children": [
@@ -4912,18 +4662,18 @@
           },
           {
             "kind": "Var",
-            "name": "refreshTokenDelegate",
-            "printedName": "refreshTokenDelegate",
+            "name": "tokenRefresher",
+            "printedName": "tokenRefresher",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "WeakStorage",
-                "printedName": "(any BrivoCore.RefreshTokenDelegate)?"
+                "printedName": "(any BrivoCore.TokenRefresher)?"
               }
             ],
             "declKind": "Var",
-            "usr": "s:9BrivoCore0A16SDKConfigurationC20refreshTokenDelegateAA07RefresheF0_pSgvp",
-            "mangledName": "$s9BrivoCore0A16SDKConfigurationC20refreshTokenDelegateAA07RefresheF0_pSgvp",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC14tokenRefresherAA05TokenE0_pSgvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC14tokenRefresherAA05TokenE0_pSgvp",
             "moduleName": "BrivoCore",
             "declAttributes": [
               "HasInitialValue",
@@ -4942,21 +4692,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any BrivoCore.RefreshTokenDelegate)?",
+                    "printedName": "(any BrivoCore.TokenRefresher)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "RefreshTokenDelegate",
-                        "printedName": "any BrivoCore.RefreshTokenDelegate",
-                        "usr": "s:9BrivoCore20RefreshTokenDelegateP"
+                        "name": "TokenRefresher",
+                        "printedName": "any BrivoCore.TokenRefresher",
+                        "usr": "s:9BrivoCore14TokenRefresherP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9BrivoCore0A16SDKConfigurationC20refreshTokenDelegateAA07RefresheF0_pSgvg",
-                "mangledName": "$s9BrivoCore0A16SDKConfigurationC20refreshTokenDelegateAA07RefresheF0_pSgvg",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC14tokenRefresherAA05TokenE0_pSgvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC14tokenRefresherAA05TokenE0_pSgvg",
                 "moduleName": "BrivoCore",
                 "implicit": true,
                 "accessorKind": "get"
@@ -4974,21 +4724,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any BrivoCore.RefreshTokenDelegate)?",
+                    "printedName": "(any BrivoCore.TokenRefresher)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "RefreshTokenDelegate",
-                        "printedName": "any BrivoCore.RefreshTokenDelegate",
-                        "usr": "s:9BrivoCore20RefreshTokenDelegateP"
+                        "name": "TokenRefresher",
+                        "printedName": "any BrivoCore.TokenRefresher",
+                        "usr": "s:9BrivoCore14TokenRefresherP"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9BrivoCore0A16SDKConfigurationC20refreshTokenDelegateAA07RefresheF0_pSgvs",
-                "mangledName": "$s9BrivoCore0A16SDKConfigurationC20refreshTokenDelegateAA07RefresheF0_pSgvs",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC14tokenRefresherAA05TokenE0_pSgvs",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC14tokenRefresherAA05TokenE0_pSgvs",
                 "moduleName": "BrivoCore",
                 "implicit": true,
                 "accessorKind": "set"
@@ -5005,8 +4755,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:9BrivoCore0A16SDKConfigurationC20refreshTokenDelegateAA07RefresheF0_pSgvM",
-                "mangledName": "$s9BrivoCore0A16SDKConfigurationC20refreshTokenDelegateAA07RefresheF0_pSgvM",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC14tokenRefresherAA05TokenE0_pSgvM",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC14tokenRefresherAA05TokenE0_pSgvM",
                 "moduleName": "BrivoCore",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -5126,211 +4876,881 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(clientId:clientSecret:useSDKStorage:region:shouldPromptForContinuation:authUrl:apiUrl:smartHomeUrl:smartHomeUrlV1:smartHomeUrlV4:refreshTokenDelegate:sessionRequestTimeout:isConsoleLoggingEnabled:)",
+            "kind": "Var",
+            "name": "allegionEnabled",
+            "printedName": "allegionEnabled",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "BrivoSDKConfiguration",
-                "printedName": "BrivoCore.BrivoSDKConfiguration",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoSDKConfiguration"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Bool",
                 "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Region",
-                "printedName": "BrivoCore.Region",
-                "hasDefaultArg": true,
-                "usr": "s:9BrivoCore6RegionO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any BrivoCore.RefreshTokenDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RefreshTokenDelegate",
-                    "printedName": "any BrivoCore.RefreshTokenDelegate",
-                    "usr": "s:9BrivoCore20RefreshTokenDelegateP"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoCore.SessionRequestTimeout?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "SessionRequestTimeout",
-                    "printedName": "BrivoCore.SessionRequestTimeout",
-                    "usr": "c:@M@BrivoCore@objc(cs)SessionRequestTimeout"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "hasDefaultArg": true,
                 "usr": "s:Sb"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "s:9BrivoCore0A16SDKConfigurationC8clientId0D6Secret13useSDKStorage6region27shouldPromptForContinuation7authUrl03apiO009smartHomeO00qrO2V10qrO2V420refreshTokenDelegate21sessionRequestTimeout23isConsoleLoggingEnabledACSS_SSSbAA6RegionOSbSSSgA4sA07RefreshvW0_pSgAA07SessionyZ0CSgSbtKcfc",
-            "mangledName": "$s9BrivoCore0A16SDKConfigurationC8clientId0D6Secret13useSDKStorage6region27shouldPromptForContinuation7authUrl03apiO009smartHomeO00qrO2V10qrO2V420refreshTokenDelegate21sessionRequestTimeout23isConsoleLoggingEnabledACSS_SSSbAA6RegionOSbSSSgA4sA07RefreshvW0_pSgAA07SessionyZ0CSgSbtKcfc",
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC15allegionEnabledSbvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC15allegionEnabledSbvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC15allegionEnabledSbvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC15allegionEnabledSbvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "brivoBLEAllegionConfiguration",
+            "printedName": "brivoBLEAllegionConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.BrivoBLEAllegionConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoBLEAllegionConfiguration",
+                    "printedName": "BrivoCore.BrivoBLEAllegionConfiguration",
+                    "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC29brivoBLEAllegionConfigurationAA0aeF0VSgvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC29brivoBLEAllegionConfigurationAA0aeF0VSgvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.BrivoBLEAllegionConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEAllegionConfiguration",
+                        "printedName": "BrivoCore.BrivoBLEAllegionConfiguration",
+                        "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC29brivoBLEAllegionConfigurationAA0aeF0VSgvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC29brivoBLEAllegionConfigurationAA0aeF0VSgvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hidorigoEnabled",
+            "printedName": "hidorigoEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC15hidorigoEnabledSbvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC15hidorigoEnabledSbvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC15hidorigoEnabledSbvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC15hidorigoEnabledSbvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "brivoSDKHIDOrigoConfiguration",
+            "printedName": "brivoSDKHIDOrigoConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoSDKHIDOrigoConfiguration",
+                    "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration",
+                    "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC29brivoSDKHIDOrigoConfigurationAA0aeF0VSgvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC29brivoSDKHIDOrigoConfigurationAA0aeF0VSgvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoSDKHIDOrigoConfiguration",
+                        "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration",
+                        "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC29brivoSDKHIDOrigoConfigurationAA0aeF0VSgvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC29brivoSDKHIDOrigoConfigurationAA0aeF0VSgvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dormakabaEnabled",
+            "printedName": "dormakabaEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC16dormakabaEnabledSbvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC16dormakabaEnabledSbvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC16dormakabaEnabledSbvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC16dormakabaEnabledSbvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "brivoDormakabaConfiguration",
+            "printedName": "brivoDormakabaConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.BrivoDormakabaConfiguration?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoDormakabaConfiguration",
+                    "printedName": "BrivoCore.BrivoDormakabaConfiguration",
+                    "usr": "s:9BrivoCore0A22DormakabaConfigurationV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC27brivoDormakabaConfigurationAA0aeF0VSgvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC27brivoDormakabaConfigurationAA0aeF0VSgvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.BrivoDormakabaConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoDormakabaConfiguration",
+                        "printedName": "BrivoCore.BrivoDormakabaConfiguration",
+                        "usr": "s:9BrivoCore0A22DormakabaConfigurationV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC27brivoDormakabaConfigurationAA0aeF0VSgvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC27brivoDormakabaConfigurationAA0aeF0VSgvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "saltoEnabled",
+            "printedName": "saltoEnabled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC12saltoEnabledSbvp",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC12saltoEnabledSbvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC12saltoEnabledSbvg",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC12saltoEnabledSbvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Builder",
+            "printedName": "Builder",
+            "children": [
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(clientId:clientSecret:useSDKStorage:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC8clientId0E6Secret13useSDKStorageAESS_SSSbtcfc",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC8clientId0E6Secret13useSDKStorageAESS_SSSbtcfc",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "region",
+                "printedName": "region(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Region",
+                    "printedName": "BrivoCore.Region",
+                    "usr": "s:9BrivoCore6RegionO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC6regionyAeA6RegionOF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC6regionyAeA6RegionOF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "shouldPromptForContinuation",
+                "printedName": "shouldPromptForContinuation(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC27shouldPromptForContinuationyAESbF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC27shouldPromptForContinuationyAESbF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "authUrl",
+                "printedName": "authUrl(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC7authUrlyAESSSgF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC7authUrlyAESSSgF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "apiUrl",
+                "printedName": "apiUrl(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC6apiUrlyAESSSgF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC6apiUrlyAESSSgF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "tokenRefresher",
+                "printedName": "tokenRefresher(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any BrivoCore.TokenRefresher)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TokenRefresher",
+                        "printedName": "any BrivoCore.TokenRefresher",
+                        "usr": "s:9BrivoCore14TokenRefresherP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC14tokenRefresheryAeA05TokenF0_pSgF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC14tokenRefresheryAeA05TokenF0_pSgF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "sessionRequestTimeout",
+                "printedName": "sessionRequestTimeout(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.SessionRequestTimeout?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SessionRequestTimeout",
+                        "printedName": "BrivoCore.SessionRequestTimeout",
+                        "usr": "c:@M@BrivoCore@objc(cs)SessionRequestTimeout"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC21sessionRequestTimeoutyAeA07SessionfG0CSgF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC21sessionRequestTimeoutyAeA07SessionfG0CSgF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "isConsoleLoggingEnabled",
+                "printedName": "isConsoleLoggingEnabled(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC23isConsoleLoggingEnabledyAESbF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC23isConsoleLoggingEnabledyAESbF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "brivoBLEAllegionConfiguration",
+                "printedName": "brivoBLEAllegionConfiguration(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.BrivoBLEAllegionConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoBLEAllegionConfiguration",
+                        "printedName": "BrivoCore.BrivoBLEAllegionConfiguration",
+                        "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC29brivoBLEAllegionConfigurationyAeA0afG0VSgF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC29brivoBLEAllegionConfigurationyAeA0afG0VSgF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "brivoSDKHIDOrigoConfiguration",
+                "printedName": "brivoSDKHIDOrigoConfiguration(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoSDKHIDOrigoConfiguration",
+                        "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration",
+                        "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC29brivoSDKHIDOrigoConfigurationyAeA0afG0VSgF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC29brivoSDKHIDOrigoConfigurationyAeA0afG0VSgF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "brivoDormakabaConfiguration",
+                "printedName": "brivoDormakabaConfiguration(_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.BrivoDormakabaConfiguration?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoDormakabaConfiguration",
+                        "printedName": "BrivoCore.BrivoDormakabaConfiguration",
+                        "usr": "s:9BrivoCore0A22DormakabaConfigurationV"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC27brivoDormakabaConfigurationyAeA0afG0VSgF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC27brivoDormakabaConfigurationyAeA0afG0VSgF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "brivoSaltoConfiguration",
+                "printedName": "brivoSaltoConfiguration()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Builder",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration.Builder",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC23brivoSaltoConfigurationAEyF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC23brivoSaltoConfigurationAEyF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl",
+                  "DiscardableResult"
+                ],
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Function",
+                "name": "build",
+                "printedName": "build()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoSDKConfiguration",
+                    "printedName": "BrivoCore.BrivoSDKConfiguration",
+                    "usr": "s:9BrivoCore0A16SDKConfigurationC"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC5buildACyKF",
+                "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC5buildACyKF",
+                "moduleName": "BrivoCore",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Class",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC7BuilderC",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC7BuilderC",
             "moduleName": "BrivoCore",
             "declAttributes": [
               "AccessControl"
             ],
-            "throwing": true,
-            "init_kind": "Designated"
+            "isFromExtension": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              }
+            ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
               {
                 "kind": "TypeNominal",
                 "name": "BrivoSDKConfiguration",
                 "printedName": "BrivoCore.BrivoSDKConfiguration",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoSDKConfiguration"
+                "usr": "s:9BrivoCore0A16SDKConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKConfiguration",
+                "printedName": "BrivoCore.BrivoSDKConfiguration",
+                "usr": "s:9BrivoCore0A16SDKConfigurationC"
               }
             ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BrivoCore@objc(cs)BrivoSDKConfiguration(im)init",
-            "mangledName": "$s9BrivoCore0A16SDKConfigurationCACycfc",
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A16SDKConfigurationC2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9BrivoCore0A16SDKConfigurationC2eeoiySbAC_ACtFZ",
             "moduleName": "BrivoCore",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
+            "static": true,
             "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
+              "Final",
+              "AccessControl"
             ],
-            "init_kind": "Designated"
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@BrivoCore@objc(cs)BrivoSDKConfiguration",
+        "usr": "s:9BrivoCore0A16SDKConfigurationC",
         "mangledName": "$s9BrivoCore0A16SDKConfigurationC",
         "moduleName": "BrivoCore",
         "declAttributes": [
           "AccessControl",
-          "RawDocComment",
-          "ObjC"
+          "RawDocComment"
         ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
+        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
@@ -5352,48 +5772,6 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -6093,7 +6471,7 @@
                 "kind": "TypeNominal",
                 "name": "BrivoSDKConfiguration",
                 "printedName": "BrivoCore.BrivoSDKConfiguration",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoSDKConfiguration"
+                "usr": "s:9BrivoCore0A16SDKConfigurationC"
               }
             ],
             "declKind": "Func",
@@ -6120,7 +6498,7 @@
                 "kind": "TypeNominal",
                 "name": "BrivoSDKConfiguration",
                 "printedName": "BrivoCore.BrivoSDKConfiguration",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoSDKConfiguration"
+                "usr": "s:9BrivoCore0A16SDKConfigurationC"
               }
             ],
             "declKind": "Func",
@@ -6265,6 +6643,200 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrivoBLEAllegionConfiguration",
+        "printedName": "BrivoBLEAllegionConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "subscriptionKey",
+            "printedName": "subscriptionKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV15subscriptionKeySSvp",
+            "mangledName": "$s9BrivoCore0A24BLEAllegionConfigurationV15subscriptionKeySSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV15subscriptionKeySSvg",
+                "mangledName": "$s9BrivoCore0A24BLEAllegionConfigurationV15subscriptionKeySSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "integrationId",
+            "printedName": "integrationId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV13integrationIdSSvp",
+            "mangledName": "$s9BrivoCore0A24BLEAllegionConfigurationV13integrationIdSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV13integrationIdSSvg",
+                "mangledName": "$s9BrivoCore0A24BLEAllegionConfigurationV13integrationIdSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(subscriptionKey:integrationId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoBLEAllegionConfiguration",
+                "printedName": "BrivoCore.BrivoBLEAllegionConfiguration",
+                "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV15subscriptionKey13integrationIdACSS_SStcfc",
+            "mangledName": "$s9BrivoCore0A24BLEAllegionConfigurationV15subscriptionKey13integrationIdACSS_SStcfc",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoBLEAllegionConfiguration",
+                "printedName": "BrivoCore.BrivoBLEAllegionConfiguration",
+                "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoBLEAllegionConfiguration",
+                "printedName": "BrivoCore.BrivoBLEAllegionConfiguration",
+                "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9BrivoCore0A24BLEAllegionConfigurationV2eeoiySbAC_ACtFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9BrivoCore0A24BLEAllegionConfigurationV",
+        "mangledName": "$s9BrivoCore0A24BLEAllegionConfigurationV",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -6540,6 +7112,117 @@
             "declKind": "EnumElement",
             "usr": "s:9BrivoCore8DoorTypeO9dormakabayA2CmF",
             "mangledName": "$s9BrivoCore8DoorTypeO9dormakabayA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "yonomi",
+            "printedName": "yonomi",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.DoorType.Type) -> BrivoCore.DoorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorType",
+                    "printedName": "BrivoCore.DoorType",
+                    "usr": "s:9BrivoCore8DoorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.DoorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorType",
+                        "printedName": "BrivoCore.DoorType",
+                        "usr": "s:9BrivoCore8DoorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore8DoorTypeO6yonomiyA2CmF",
+            "mangledName": "$s9BrivoCore8DoorTypeO6yonomiyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "realSyncBle",
+            "printedName": "realSyncBle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.DoorType.Type) -> BrivoCore.DoorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorType",
+                    "printedName": "BrivoCore.DoorType",
+                    "usr": "s:9BrivoCore8DoorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.DoorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorType",
+                        "printedName": "BrivoCore.DoorType",
+                        "usr": "s:9BrivoCore8DoorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore8DoorTypeO11realSyncBleyA2CmF",
+            "mangledName": "$s9BrivoCore8DoorTypeO11realSyncBleyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
+            "name": "salto",
+            "printedName": "salto",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.DoorType.Type) -> BrivoCore.DoorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorType",
+                    "printedName": "BrivoCore.DoorType",
+                    "usr": "s:9BrivoCore8DoorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.DoorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorType",
+                        "printedName": "BrivoCore.DoorType",
+                        "usr": "s:9BrivoCore8DoorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore8DoorTypeO5saltoyA2CmF",
+            "mangledName": "$s9BrivoCore8DoorTypeO5saltoyA2CmF",
             "moduleName": "BrivoCore"
           },
           {
@@ -7521,6 +8204,437 @@
             "printedName": "CustomStringConvertible",
             "usr": "s:s23CustomStringConvertibleP",
             "mangledName": "$ss23CustomStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BrivoDormakabaConfiguration",
+        "printedName": "BrivoDormakabaConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "mobileAppID",
+            "printedName": "mobileAppID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A22DormakabaConfigurationV11mobileAppIDSivp",
+            "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV11mobileAppIDSivp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV11mobileAppIDSivg",
+                "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV11mobileAppIDSivg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userName",
+            "printedName": "userName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A22DormakabaConfigurationV8userNameSSvp",
+            "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV8userNameSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV8userNameSSvg",
+                "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV8userNameSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "password",
+            "printedName": "password",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A22DormakabaConfigurationV8passwordSSvp",
+            "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV8passwordSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV8passwordSSvg",
+                "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV8passwordSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serverURL",
+            "printedName": "serverURL",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A22DormakabaConfigurationV9serverURLSSvp",
+            "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV9serverURLSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV9serverURLSSvg",
+                "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV9serverURLSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "evoloSmartProjectId",
+            "printedName": "evoloSmartProjectId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A22DormakabaConfigurationV19evoloSmartProjectIdSiSgvp",
+            "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV19evoloSmartProjectIdSiSgvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV19evoloSmartProjectIdSiSgvg",
+                "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV19evoloSmartProjectIdSiSgvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "unlockTimeoutDuration",
+            "printedName": "unlockTimeoutDuration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A22DormakabaConfigurationV21unlockTimeoutDurationSdvp",
+            "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV21unlockTimeoutDurationSdvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV21unlockTimeoutDurationSdvg",
+                "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV21unlockTimeoutDurationSdvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(mobileAppID:userName:password:serverURL:evoloSmartProjectId:unlockTimeoutDuration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoDormakabaConfiguration",
+                "printedName": "BrivoCore.BrivoDormakabaConfiguration",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore0A22DormakabaConfigurationV11mobileAppID8userName8password9serverURL19evoloSmartProjectId21unlockTimeoutDurationACSi_S3SSiSgSdtcfc",
+            "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV11mobileAppID8userName8password9serverURL19evoloSmartProjectId21unlockTimeoutDurationACSi_S3SSiSgSdtcfc",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoDormakabaConfiguration",
+                "printedName": "BrivoCore.BrivoDormakabaConfiguration",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoDormakabaConfiguration",
+                "printedName": "BrivoCore.BrivoDormakabaConfiguration",
+                "usr": "s:9BrivoCore0A22DormakabaConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A22DormakabaConfigurationV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV2eeoiySbAC_ACtFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9BrivoCore0A22DormakabaConfigurationV",
+        "mangledName": "$s9BrivoCore0A22DormakabaConfigurationV",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -8672,6 +9786,200 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "BrivoSDKHIDOrigoConfiguration",
+        "printedName": "BrivoSDKHIDOrigoConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "applicationID",
+            "printedName": "applicationID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV13applicationIDSSvp",
+            "mangledName": "$s9BrivoCore0A24SDKHIDOrigoConfigurationV13applicationIDSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV13applicationIDSSvg",
+                "mangledName": "$s9BrivoCore0A24SDKHIDOrigoConfigurationV13applicationIDSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "applicationVersion",
+            "printedName": "applicationVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV18applicationVersionSSvp",
+            "mangledName": "$s9BrivoCore0A24SDKHIDOrigoConfigurationV18applicationVersionSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV18applicationVersionSSvg",
+                "mangledName": "$s9BrivoCore0A24SDKHIDOrigoConfigurationV18applicationVersionSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(applicationID:applicationVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKHIDOrigoConfiguration",
+                "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration",
+                "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV13applicationID0E7VersionACSS_SStcfc",
+            "mangledName": "$s9BrivoCore0A24SDKHIDOrigoConfigurationV13applicationID0E7VersionACSS_SStcfc",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKHIDOrigoConfiguration",
+                "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration",
+                "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoSDKHIDOrigoConfiguration",
+                "printedName": "BrivoCore.BrivoSDKHIDOrigoConfiguration",
+                "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9BrivoCore0A24SDKHIDOrigoConfigurationV2eeoiySbAC_ACtFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9BrivoCore0A24SDKHIDOrigoConfigurationV",
+        "mangledName": "$s9BrivoCore0A24SDKHIDOrigoConfigurationV",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -8788,7 +10096,7 @@
                 "kind": "TypeNominal",
                 "name": "BrivoSDKConfiguration",
                 "printedName": "BrivoCore.BrivoSDKConfiguration",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoSDKConfiguration"
+                "usr": "s:9BrivoCore0A16SDKConfigurationC"
               }
             ],
             "declKind": "Func",
@@ -8813,7 +10121,7 @@
                 "kind": "TypeNominal",
                 "name": "BrivoSDKConfiguration",
                 "printedName": "BrivoCore.BrivoSDKConfiguration",
-                "usr": "c:@M@BrivoCore@objc(cs)BrivoSDKConfiguration"
+                "usr": "s:9BrivoCore0A16SDKConfigurationC"
               }
             ],
             "declKind": "Func",
@@ -9542,6 +10850,43 @@
             "moduleName": "BrivoCore"
           },
           {
+            "kind": "Var",
+            "name": "brivoSalto",
+            "printedName": "brivoSalto",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.LoggerTagType.Type) -> BrivoCore.LoggerTagType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LoggerTagType",
+                    "printedName": "BrivoCore.LoggerTagType",
+                    "usr": "s:9BrivoCore13LoggerTagTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.LoggerTagType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LoggerTagType",
+                        "printedName": "BrivoCore.LoggerTagType",
+                        "usr": "s:9BrivoCore13LoggerTagTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore13LoggerTagTypeO10brivoSaltoyA2CmF",
+            "mangledName": "$s9BrivoCore13LoggerTagTypeO10brivoSaltoyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -10205,6 +11550,326 @@
         "moduleName": "BrivoCore",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SyncErrorInfo",
+        "printedName": "SyncErrorInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "domain",
+            "printedName": "domain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore13SyncErrorInfoV6domainSSvp",
+            "mangledName": "$s9BrivoCore13SyncErrorInfoV6domainSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore13SyncErrorInfoV6domainSSvg",
+                "mangledName": "$s9BrivoCore13SyncErrorInfoV6domainSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore13SyncErrorInfoV4codeSivp",
+            "mangledName": "$s9BrivoCore13SyncErrorInfoV4codeSivp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore13SyncErrorInfoV4codeSivg",
+                "mangledName": "$s9BrivoCore13SyncErrorInfoV4codeSivg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore13SyncErrorInfoV7messageSSvp",
+            "mangledName": "$s9BrivoCore13SyncErrorInfoV7messageSSvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore13SyncErrorInfoV7messageSSvg",
+                "mangledName": "$s9BrivoCore13SyncErrorInfoV7messageSSvg",
+                "moduleName": "BrivoCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(domain:code:message:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SyncErrorInfo",
+                "printedName": "BrivoCore.SyncErrorInfo",
+                "usr": "s:9BrivoCore13SyncErrorInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore13SyncErrorInfoV6domain4code7messageACSS_SiSStcfc",
+            "mangledName": "$s9BrivoCore13SyncErrorInfoV6domain4code7messageACSS_SiSStcfc",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SyncErrorInfo",
+                "printedName": "BrivoCore.SyncErrorInfo",
+                "usr": "s:9BrivoCore13SyncErrorInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore13SyncErrorInfoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s9BrivoCore13SyncErrorInfoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BrivoCore",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SyncErrorInfo",
+                "printedName": "BrivoCore.SyncErrorInfo",
+                "usr": "s:9BrivoCore13SyncErrorInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SyncErrorInfo",
+                "printedName": "BrivoCore.SyncErrorInfo",
+                "usr": "s:9BrivoCore13SyncErrorInfoV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore13SyncErrorInfoV2eeoiySbAC_ACtFZ",
+            "mangledName": "$s9BrivoCore13SyncErrorInfoV2eeoiySbAC_ACtFZ",
+            "moduleName": "BrivoCore",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore13SyncErrorInfoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s9BrivoCore13SyncErrorInfoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BrivoCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:9BrivoCore13SyncErrorInfoV",
+        "mangledName": "$s9BrivoCore13SyncErrorInfoV",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
         ]
       },
       {
@@ -14911,6 +16576,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 606,
+      "length": 14,
+      "value": "\"access_token\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 649,
+      "length": 15,
+      "value": "\"refresh_token\""
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoControlLockConfigRequestBody.swift",
       "kind": "BooleanLiteral",
       "offset": 582,
@@ -14920,30 +16599,58 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/ControlLockUtils.swift",
       "kind": "Array",
-      "offset": 328,
+      "offset": 329,
       "length": 18,
       "value": "[\"BE467\", \"FE410\"]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/Configuration\/BrivoSDKConfiguration.swift",
       "kind": "IntegerLiteral",
       "offset": 209,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/Configuration\/BrivoSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2269,
+      "offset": 4172,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/BrivoSDKConfiguration.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/Configuration\/BrivoSDKConfiguration.swift",
       "kind": "BooleanLiteral",
-      "offset": 2614,
+      "offset": 4446,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/Configuration\/BrivoSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4499,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/Configuration\/BrivoSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4639,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/Configuration\/BrivoSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4780,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/Configuration\/BrivoSDKConfiguration.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4913,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Models\/BrivoControlLockUserRecord.swift",
@@ -15002,6 +16709,27 @@
       "value": "6"
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 371,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 396,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 415,
+      "length": 1,
+      "value": "9"
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",
       "kind": "IntegerLiteral",
       "offset": 263,
@@ -15046,28 +16774,28 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
       "kind": "BooleanLiteral",
-      "offset": 441,
+      "offset": 394,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
       "kind": "Array",
-      "offset": 790,
+      "offset": 741,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1143,
+      "offset": 1092,
       "length": 18,
       "value": "\"com.brivo.logger\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Logger\/BrivoLogger.swift",
       "kind": "StringLiteral",
-      "offset": 1228,
+      "offset": 1177,
       "length": 24,
       "value": "\"com.brivo.logger.state\""
     },

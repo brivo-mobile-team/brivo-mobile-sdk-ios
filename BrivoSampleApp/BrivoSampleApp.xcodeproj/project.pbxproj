@@ -7,37 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C803C9E2E72FF1C00351E47 /* BrivoPassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C9D2E72FF1C00351E47 /* BrivoPassesView.swift */; };
+		0C803C2D2E72B6DA00351E47 /* BrivoPassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C2C2E72B6DA00351E47 /* BrivoPassesView.swift */; };
+		0C803C332E72B6EB00351E47 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C312E72B6EB00351E47 /* InfoRow.swift */; };
+		0C803C342E72B6EB00351E47 /* ExtendedInfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C2F2E72B6EB00351E47 /* ExtendedInfoSheet.swift */; };
+		0C803C352E72B6EB00351E47 /* HeaderWithInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C302E72B6EB00351E47 /* HeaderWithInfo.swift */; };
+		0C803C362E72B6EB00351E47 /* ExtendedInfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C2E2E72B6EB00351E47 /* ExtendedInfoItem.swift */; };
 		5D9E0D342DE4A25F00A49DC4 /* UserDefaultsAccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D2B2DE4A25F00A49DC4 /* UserDefaultsAccessService.swift */; };
 		5D9E0D352DE4A25F00A49DC4 /* AccessPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D212DE4A25F00A49DC4 /* AccessPointViewModel.swift */; };
 		5D9E0D362DE4A25F00A49DC4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D2F2DE4A25F00A49DC4 /* Toast.swift */; };
 		5D9E0D372DE4A25F00A49DC4 /* BrivoPassSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D242DE4A25F00A49DC4 /* BrivoPassSheet.swift */; };
 		5D9E0D382DE4A25F00A49DC4 /* AccessibilityIds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D2D2DE4A25F00A49DC4 /* AccessibilityIds.swift */; };
-		5D9E0D392DE4A25F00A49DC4 /* UnlockAccessPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D292DE4A25F00A49DC4 /* UnlockAccessPointViewModel.swift */; };
+		5D9E0D392DE4A25F00A49DC4 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		5D9E0D3B2DE4A25F00A49DC4 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D2E2DE4A25F00A49DC4 /* ActivityIndicator.swift */; };
 		5D9E0D3C2DE4A25F00A49DC4 /* BrivoPassesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D232DE4A25F00A49DC4 /* BrivoPassesViewModel.swift */; };
 		5D9E0D3D2DE4A25F00A49DC4 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D302DE4A25F00A49DC4 /* View+Extensions.swift */; };
-		5D9E0D3E2DE4A25F00A49DC4 /* HIDOrigoFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D262DE4A25F00A49DC4 /* HIDOrigoFooterView.swift */; };
-		5D9E0D3F2DE4A25F00A49DC4 /* UnlockAccessPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D282DE4A25F00A49DC4 /* UnlockAccessPointView.swift */; };
 		5D9E0D402DE4A25F00A49DC4 /* AccessPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D202DE4A25F00A49DC4 /* AccessPointView.swift */; };
 		C02B6A632D81CFC000E03B0F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B6A622D81CFC000E03B0F /* Configuration.swift */; };
 		C0717AAD2D81DF8900728779 /* BrivoSampleDevApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0717AAC2D81DF8900728779 /* BrivoSampleDevApp.swift */; };
 		C08446C32F3B631E00226C71 /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C08446C22F3B631E00226C71 /* BrivoMobileSDK */; };
+		C0C202EB2E61A4B1009B4993 /* AccessPointDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C202E92E61A4B1009B4993 /* AccessPointDetailsViewModel.swift */; };
+		C0C202EC2E61A4B1009B4993 /* AccessPointDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C202E82E61A4B1009B4993 /* AccessPointDetailsView.swift */; };
+		C0C203182E61A536009B4993 /* AccessPointExtrasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C203162E61A536009B4993 /* AccessPointExtrasView.swift */; };
+		C0C203192E61A536009B4993 /* AccessPointExtrasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C203152E61A536009B4993 /* AccessPointExtrasViewModel.swift */; };
 		C4B8833944DB08703A58A61D /* Pods_BrivoSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */; };
 		E09E3DCE2BA1F50100B2F901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E09E3DCD2BA1F50100B2F901 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C803C9D2E72FF1C00351E47 /* BrivoPassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoPassesView.swift; sourceTree = "<group>"; };
+		0C803C2C2E72B6DA00351E47 /* BrivoPassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoPassesView.swift; sourceTree = "<group>"; };
+		0C803C2E2E72B6EB00351E47 /* ExtendedInfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedInfoItem.swift; sourceTree = "<group>"; };
+		0C803C2F2E72B6EB00351E47 /* ExtendedInfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedInfoSheet.swift; sourceTree = "<group>"; };
+		0C803C302E72B6EB00351E47 /* HeaderWithInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWithInfo.swift; sourceTree = "<group>"; };
+		0C803C312E72B6EB00351E47 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
 		4D9D8FACD8E68CA86099B4A3 /* Pods-BrivoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrivoSampleApp.release.xcconfig"; path = "../BrivoSampleApp/Pods/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		4E34BCB8FB1FCBFE0FE2D9D3 /* Pods-BrivoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrivoSampleApp.debug.xcconfig"; path = "../BrivoSampleApp/Pods/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5D9E0D202DE4A25F00A49DC4 /* AccessPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointView.swift; sourceTree = "<group>"; };
 		5D9E0D212DE4A25F00A49DC4 /* AccessPointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointViewModel.swift; sourceTree = "<group>"; };
 		5D9E0D232DE4A25F00A49DC4 /* BrivoPassesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoPassesViewModel.swift; sourceTree = "<group>"; };
 		5D9E0D242DE4A25F00A49DC4 /* BrivoPassSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoPassSheet.swift; sourceTree = "<group>"; };
-		5D9E0D262DE4A25F00A49DC4 /* HIDOrigoFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIDOrigoFooterView.swift; sourceTree = "<group>"; };
-		5D9E0D282DE4A25F00A49DC4 /* UnlockAccessPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockAccessPointView.swift; sourceTree = "<group>"; };
-		5D9E0D292DE4A25F00A49DC4 /* UnlockAccessPointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlockAccessPointViewModel.swift; sourceTree = "<group>"; };
 		5D9E0D2B2DE4A25F00A49DC4 /* UserDefaultsAccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsAccessService.swift; sourceTree = "<group>"; };
 		5D9E0D2D2DE4A25F00A49DC4 /* AccessibilityIds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIds.swift; sourceTree = "<group>"; };
 		5D9E0D2E2DE4A25F00A49DC4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
@@ -47,6 +54,10 @@
 		C02B6A622D81CFC000E03B0F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BrivoSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0717AAC2D81DF8900728779 /* BrivoSampleDevApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoSampleDevApp.swift; sourceTree = "<group>"; };
+		C0C202E82E61A4B1009B4993 /* AccessPointDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointDetailsView.swift; sourceTree = "<group>"; };
+		C0C202E92E61A4B1009B4993 /* AccessPointDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointDetailsViewModel.swift; sourceTree = "<group>"; };
+		C0C203152E61A536009B4993 /* AccessPointExtrasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointExtrasViewModel.swift; sourceTree = "<group>"; };
+		C0C203162E61A536009B4993 /* AccessPointExtrasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointExtrasView.swift; sourceTree = "<group>"; };
 		E09E3DC62BA1F50000B2F901 /* BrivoSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrivoSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E09E3DCD2BA1F50100B2F901 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E09E3DF02BA244F900B2F901 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +76,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C803C322E72B6EB00351E47 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0C803C2E2E72B6EB00351E47 /* ExtendedInfoItem.swift */,
+				0C803C2F2E72B6EB00351E47 /* ExtendedInfoSheet.swift */,
+				0C803C302E72B6EB00351E47 /* HeaderWithInfo.swift */,
+				0C803C312E72B6EB00351E47 /* InfoRow.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		1F9792D36CBB7D89020F6F68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,26 +118,9 @@
 			children = (
 				5D9E0D232DE4A25F00A49DC4 /* BrivoPassesViewModel.swift */,
 				5D9E0D242DE4A25F00A49DC4 /* BrivoPassSheet.swift */,
-				0C803C9D2E72FF1C00351E47 /* BrivoPassesView.swift */,
+				0C803C2C2E72B6DA00351E47 /* BrivoPassesView.swift */,
 			);
 			path = BrivoPass;
-			sourceTree = "<group>";
-		};
-		5D9E0D272DE4A25F00A49DC4 /* HIDOrigo */ = {
-			isa = PBXGroup;
-			children = (
-				5D9E0D262DE4A25F00A49DC4 /* HIDOrigoFooterView.swift */,
-			);
-			path = HIDOrigo;
-			sourceTree = "<group>";
-		};
-		5D9E0D2A2DE4A25F00A49DC4 /* UnlockAccessPointView */ = {
-			isa = PBXGroup;
-			children = (
-				5D9E0D282DE4A25F00A49DC4 /* UnlockAccessPointView.swift */,
-				5D9E0D292DE4A25F00A49DC4 /* UnlockAccessPointViewModel.swift */,
-			);
-			path = UnlockAccessPointView;
 			sourceTree = "<group>";
 		};
 		5D9E0D2C2DE4A25F00A49DC4 /* UserDefaultsService */ = {
@@ -141,13 +146,31 @@
 			isa = PBXGroup;
 			children = (
 				5D9E0D222DE4A25F00A49DC4 /* AccessPointView */,
+				C0C202EA2E61A4B1009B4993 /* AccessPointDetailsView */,
 				5D9E0D252DE4A25F00A49DC4 /* BrivoPass */,
-				5D9E0D272DE4A25F00A49DC4 /* HIDOrigo */,
-				5D9E0D2A2DE4A25F00A49DC4 /* UnlockAccessPointView */,
 				5D9E0D2C2DE4A25F00A49DC4 /* UserDefaultsService */,
 				5D9E0D312DE4A25F00A49DC4 /* Utils */,
+				0C803C322E72B6EB00351E47 /* Common */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		C0C202EA2E61A4B1009B4993 /* AccessPointDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				C0C202E82E61A4B1009B4993 /* AccessPointDetailsView.swift */,
+				C0C202E92E61A4B1009B4993 /* AccessPointDetailsViewModel.swift */,
+			);
+			path = AccessPointDetailsView;
+			sourceTree = "<group>";
+		};
+		C0C203172E61A536009B4993 /* AccessPointDetailsView */ = {
+			isa = PBXGroup;
+			children = (
+				C0C203152E61A536009B4993 /* AccessPointExtrasViewModel.swift */,
+				C0C203162E61A536009B4993 /* AccessPointExtrasView.swift */,
+			);
+			path = AccessPointDetailsView;
 			sourceTree = "<group>";
 		};
 		D198CDF9A27A95A328049F44 /* Pods */ = {
@@ -181,6 +204,7 @@
 		E09E3DC82BA1F50000B2F901 /* BrivoSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				C0C203172E61A536009B4993 /* AccessPointDetailsView */,
 				C0717AAC2D81DF8900728779 /* BrivoSampleDevApp.swift */,
 				C02B6A622D81CFC000E03B0F /* Configuration.swift */,
 				2FE790762C8F33E30016ED45 /* BrivoSampleCommon */,
@@ -338,18 +362,24 @@
 			files = (
 				C0717AAD2D81DF8900728779 /* BrivoSampleDevApp.swift in Sources */,
 				C02B6A632D81CFC000E03B0F /* Configuration.swift in Sources */,
+				C0C202EB2E61A4B1009B4993 /* AccessPointDetailsViewModel.swift in Sources */,
+				C0C202EC2E61A4B1009B4993 /* AccessPointDetailsView.swift in Sources */,
+				0C803C2D2E72B6DA00351E47 /* BrivoPassesView.swift in Sources */,
 				5D9E0D342DE4A25F00A49DC4 /* UserDefaultsAccessService.swift in Sources */,
 				5D9E0D352DE4A25F00A49DC4 /* AccessPointViewModel.swift in Sources */,
 				5D9E0D362DE4A25F00A49DC4 /* Toast.swift in Sources */,
 				5D9E0D372DE4A25F00A49DC4 /* BrivoPassSheet.swift in Sources */,
+				C0C203182E61A536009B4993 /* AccessPointExtrasView.swift in Sources */,
+				C0C203192E61A536009B4993 /* AccessPointExtrasViewModel.swift in Sources */,
 				5D9E0D382DE4A25F00A49DC4 /* AccessibilityIds.swift in Sources */,
-				5D9E0D392DE4A25F00A49DC4 /* UnlockAccessPointViewModel.swift in Sources */,
+				5D9E0D392DE4A25F00A49DC4 /* (null) in Sources */,
 				5D9E0D3B2DE4A25F00A49DC4 /* ActivityIndicator.swift in Sources */,
 				5D9E0D3C2DE4A25F00A49DC4 /* BrivoPassesViewModel.swift in Sources */,
-				0C803C9E2E72FF1C00351E47 /* BrivoPassesView.swift in Sources */,
 				5D9E0D3D2DE4A25F00A49DC4 /* View+Extensions.swift in Sources */,
-				5D9E0D3E2DE4A25F00A49DC4 /* HIDOrigoFooterView.swift in Sources */,
-				5D9E0D3F2DE4A25F00A49DC4 /* UnlockAccessPointView.swift in Sources */,
+				0C803C332E72B6EB00351E47 /* InfoRow.swift in Sources */,
+				0C803C342E72B6EB00351E47 /* ExtendedInfoSheet.swift in Sources */,
+				0C803C352E72B6EB00351E47 /* HeaderWithInfo.swift in Sources */,
+				0C803C362E72B6EB00351E47 /* ExtendedInfoItem.swift in Sources */,
 				5D9E0D402DE4A25F00A49DC4 /* AccessPointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,7 +441,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 2.6.1;
+				MARKETING_VERSION = 3.1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -469,7 +499,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 2.6.1;
+				MARKETING_VERSION = 3.1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -487,7 +517,7 @@
 				CODE_SIGN_ENTITLEMENTS = BrivoSampleApp/BrivoSampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = P675WD7PT4;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -504,7 +534,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -545,7 +575,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

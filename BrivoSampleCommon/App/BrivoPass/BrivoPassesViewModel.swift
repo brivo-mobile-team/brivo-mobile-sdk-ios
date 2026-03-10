@@ -8,20 +8,14 @@
 import Foundation
 import BrivoCore
 import BrivoOnAir
-#if canImport(BrivoBLEAllegion)
-import BrivoBLEAllegion
-#endif
-#if canImport(BrivoHIDOrigo)
-import BrivoHIDOrigo
-#endif
-#if canImport(BrivoDormakaba)
-import BrivoDormakaba
-#endif
+import BrivoAccess
 
 class BrivoPassesViewModel: ObservableObject {
     // MARK: - Properties
 
     private var brivoOnAirPasses: [BrivoOnairPass] = []
+    private var brivoSDKAccess = BrivoSDKAccess.instance()
+
     @Published var brivoOnAirPassListItems: [BrivoOnAirPassListItem] = []
     @Published var isShowingBrivoRedeemSheet = false
     @Published var isSubmittingBrivoPass = false
@@ -37,22 +31,25 @@ class BrivoPassesViewModel: ObservableObject {
     
     @Published var passID = ""
     @Published var passCode = ""
+    @Published var shouldShowDetailsBottomSheet: Bool = false
+    
+    @Published var passExtendedDetails: [ExtendedInfoItem] = []
+
+    init() {
+        cacheRegion(isEURegion: isEURegion)
+        do {
+            try setupBrivoConfiguration()
+        } catch {
+            onError(error)
+        }
+    }
+    
     var brivoSDKVersion: String {
         "BrivoSDK \(BrivoSDK.sdkVersion)"
     }
 
     var shouldShowEmptyView: Bool {
         brivoOnAirPassListItems.isEmpty
-    }
-
-    init() {
-        cacheRegion(isEURegion: isEURegion)
-        do {
-            try setupBrivoConfiguration()
-            setupDormakaba()
-        } catch {
-            onError(error)
-        }
     }
     
     @MainActor
@@ -78,34 +75,32 @@ class BrivoPassesViewModel: ObservableObject {
         updateUI()
     }
     
+    func getPassUIModel(passItem: BrivoOnAirPassListItem) {
+      passExtendedDetails = [
+        ExtendedInfoItem(name: "Pass Transfer Status", value: passItem.onAirPass.enablePassTransfer ? "Enabled" : "Disabled"),
+        ExtendedInfoItem(name: "Brivo Wallet Pass Status", value:passItem.onAirPass.nfcEnabled ? "Enabled" : "Disabled"),
+        ExtendedInfoItem(name: "Allegion BLE Credentials Status", value: passItem.onAirPass.hasAllegionBleCredentials ? "Enabled" : "Disabled"),
+        ExtendedInfoItem(name: "HID Origo Mobile Pass", value: passItem.onAirPass.hasHidOrigoMobilePass ? "Enabled" : "Disabled"),
+        ExtendedInfoItem(name: "HID Origo Wallet Pass Status", value: passItem.onAirPass.hidOrigoWalletPassEnabled ? "Enabled" : "Disabled"),
+        ExtendedInfoItem(name: "Dormakaba Mobile Pass",
+                         value: passItem.onAirPass.dormakabaMobilePassEnabled ? "Enabled" : "Disabled")
+        ]
+    }
+
     @MainActor
     func refreshPasses() async {
         do {
-            if brivoOnAirPasses.isEmpty {
-                let passes = try await BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses().get()
-                self.brivoOnAirPasses = passes
-            } else {
-                var newPasses = [BrivoOnairPass]()
-                for brivoOnAirPass in brivoOnAirPasses {
-                    guard let tokens = brivoOnAirPass.brivoOnairPassCredentials?.tokens else { return }
-                    let refreshedPass = try await BrivoSDKOnAir.instance().refreshPass(brivoTokens: tokens).get()
-                    if let refreshedPass = refreshedPass {
-                        newPasses.append(refreshedPass)
-                    }
+            let storedPasses = try await BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses().get()
+            var newPasses = [BrivoOnairPass]()
+            for brivoOnAirPass in storedPasses {
+                guard let tokens = brivoOnAirPass.brivoOnairPassCredentials?.tokens else { return }
+                let refreshedPass = try await BrivoSDKOnAir.instance().refreshPass(brivoTokens: tokens).get()
+                if let refreshedPass = refreshedPass {
+                    newPasses.append(refreshedPass)
                 }
-                self.brivoOnAirPasses = newPasses
             }
-#if canImport(BrivoBLEAllegion)
-            await refreshAllegionCredentialsIfPossible(brivoOnAirPasses)
-#endif
-#if canImport(BrivoHIDOrigo)
-            for brivoOnAirPass in brivoOnAirPasses {
-                await refreshHidOrigoCredentialsIfPossible(brivoOnAirPass)
-            }
-#endif
-#if canImport(BrivoDormakaba)
-            await refreshDormakabaCredentialsIfPossible(brivoOnAirPasses)
-#endif
+            brivoOnAirPasses = newPasses.sorted(by: { $0.accountName ?? "N/A" < $1.accountName ?? "N/A" })
+            _ = await brivoSDKAccess.refreshCredentials(passes: brivoOnAirPasses)
             updateUI()
         } catch {
             onError(error)
@@ -121,20 +116,7 @@ class BrivoPassesViewModel: ObservableObject {
             onError(error)
         }
     }
-    
-#if canImport(BrivoHIDOrigo)
-    @MainActor
-    func addToWallet(pass: BrivoOnairPass) async {
-        switch await BrivoSDKHIDOrigo.instance.addNFCCredentialToWallet(pass: pass) {
-        case .success(let pkPasses):
-            let message = pkPasses.map { $0.localizedDescription }.joined(separator: "\n")
-            showAlert(title: "Success", message: message)
-        case .failure(let error):
-            onError(error)
-        }
-    }
-#endif
-    
+
     // MARK: - Private
     private var previousUpdateTask: Task<Void, Never>?
     
@@ -144,23 +126,7 @@ class BrivoPassesViewModel: ObservableObject {
             var newBrivoOnAirPassListItems = [BrivoOnAirPassListItem]()
             for brivoOnAirPass in brivoOnAirPasses {
                 guard !Task.isCancelled else { return }
-                var addToWalletStatusResult: AddToWalletStatus = .ineligible(reason: "Not Eligible")
-#if canImport(BrivoHIDOrigo)
-                switch await BrivoSDKHIDOrigo.instance.getNFCCredentialStatus(pass: brivoOnAirPass) {
-                case .success(let status):
-                    switch status{
-                    case .eligible(let devices):
-                        addToWalletStatusResult = .eligible
-                    case .notEligible:
-                        addToWalletStatusResult = .ineligible(reason: "Not Eligible")
-                    @unknown default:
-                        addToWalletStatusResult = .ineligible(reason: "Not Eligible. Unknown Status")
-                    }
-                case .failure:
-                    addToWalletStatusResult = .ineligible(reason: "Unsupported")
-                }
-#endif
-                newBrivoOnAirPassListItems.append(.init(onAirPass: brivoOnAirPass, hidNFCAddToWalletStatus: addToWalletStatusResult))
+                newBrivoOnAirPassListItems.append(.init(onAirPass: brivoOnAirPass))
             }
             guard !Task.isCancelled else { return }
             self.brivoOnAirPassListItems = newBrivoOnAirPassListItems
@@ -172,61 +138,30 @@ class BrivoPassesViewModel: ObservableObject {
     }
     
     private func setupBrivoConfiguration() throws {
-        let brivoConfiguration = try BrivoSDKConfiguration(
+        let brivoConfiguration = try BrivoSDKConfiguration.Builder(
             clientId: Configuration.default.clientId,
             clientSecret: Configuration.default.clientSecret,
-            useSDKStorage: true,
-            region: self.isEURegion ? Region.eu : Region.us,
-            authUrl: Configuration.default.brivoOnAirAuth,
-            apiUrl: Configuration.default.brivoOnAirAPI
+            useSDKStorage: true
         )
+            .region(self.isEURegion ? .eu : .us)
+            .authUrl(Configuration.default.brivoOnAirAuth)
+            .apiUrl(Configuration.default.brivoOnAirAPI)
+            .brivoBLEAllegionConfiguration()
+            .brivoDormakabaConfiguration(
+                .init(
+                    mobileAppID: Configuration.default.dormakabaMobileAppID,
+                    userName: Configuration.default.dormakabaUserName,
+                    password: Configuration.default.dormakabaPassword,
+                    serverURL: Configuration.default.dormakabaServerURL,
+                    evoloSmartProjectId: Configuration.default.dormakabaEvoloSmartProjectID,
+                    unlockTimeoutDuration: Configuration.default.dormakabaUnlockTimeoutDuration
+                )
+            )
+            .brivoSDKHIDOrigoConfiguration()
+            .brivoSaltoConfiguration()
+            .build()
         BrivoSDK.instance.configure(brivoConfiguration: brivoConfiguration)
     }
-    
-    private func setupDormakaba() {
-#if canImport(BrivoDormakaba)
-        let brivoDormakabaConfiguration = BrivoDormakabaConfiguration(
-            mobileAppID: Configuration.default.dormakabaMobileAppID,
-            userName: Configuration.default.dormakabaUserName,
-            password: Configuration.default.dormakabaPassword,
-            serverURL: Configuration.default.dormakabaServerURL,
-            evoloSmartProjectId: Configuration.default.dormakabaEvoloSmartProjectID,
-            unlockTimeoutDuration: Configuration.default.dormakabaUnlockTimeoutDuration
-        )
-        BrivoSDKDormakaba.initialize(configuration: brivoDormakabaConfiguration)
-#endif
-    }
-    
-#if canImport(BrivoBLEAllegion)
-    private func refreshAllegionCredentialsIfPossible(_ brivoOnairPasses: [BrivoOnairPass]) async {
-        let brivoSDKBLEAllegion = BrivoSDKBLEAllegion.instance
-		_ = await brivoSDKBLEAllegion.refreshCredentials(brivoOnAirPasses: brivoOnairPasses, refreshType: .validatingCacheData, forceNewCredentials: false)
-    }
-#endif
-    
-#if canImport(BrivoHIDOrigo)
-    private func refreshHidOrigoCredentialsIfPossible(_ brivoOnairPass: BrivoOnairPass) async {
-        switch await BrivoSDKHIDOrigo.instance.refreshCredentials(pass: brivoOnairPass) {
-        case .success:
-            showAlert(title: "Success", message: "HID Origo activated successfully")
-        case .failure(let error):
-            guard error.code != BrivoHIDOrigoError.Code.missingRights else { return }
-            onError(error)
-        }
-    }
-#endif
-
-#if canImport(BrivoDormakaba)
-    private func refreshDormakabaCredentialsIfPossible(_ brivoOnairPasses: [BrivoOnairPass]) async {
-        switch await BrivoSDKDormakaba.instance.refreshCredentials(passes: brivoOnairPasses) {
-        case .success:
-            showAlert(title: "Success", message: "Dormakaba activated successfully")
-        case .failure(let error):
-            guard error.code != BrivoDormakabaError.Code.missingRights.rawValue else { return }
-            onError(error)
-        }
-    }
-#endif
 
     private func showAlert(title: String, message: String) {
         DispatchQueue.main.async { [weak self] in
@@ -258,10 +193,4 @@ struct BrivoOnAirPassListItem: Identifiable, Hashable {
     var id: String { onAirPass.passId ?? UUID().uuidString }
     var title: String { "\(onAirPass.accountName ?? "") - \(onAirPass.firstName ?? "") \(onAirPass.lastName ?? "")" }
     let onAirPass: BrivoOnairPass
-    let hidNFCAddToWalletStatus: AddToWalletStatus
-}
-
-enum AddToWalletStatus: Equatable, Hashable {
-    case eligible
-    case ineligible(reason: String)
 }

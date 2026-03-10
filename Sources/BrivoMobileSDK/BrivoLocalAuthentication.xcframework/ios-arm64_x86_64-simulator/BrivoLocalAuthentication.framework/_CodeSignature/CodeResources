@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Judi6nnr7M9Xk6OWck6ehUEnefA=
+		0dkKOL+/zy8sWcx7JycpKXyalIs=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		jAfSCFi2TEMfDPLNzLXcyWkBpYQ=
+		84xfs/F6AKenXTWzmIhM0T72q6A=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Gmql/cX8phJWwg797YG9qxxZWfc=
+		pZt3gftWjdAVZhv0zjfuOcdhERY=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		jAfSCFi2TEMfDPLNzLXcyWkBpYQ=
+		84xfs/F6AKenXTWzmIhM0T72q6A=
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IzkC7mUcug9JppdQ38F/WckfKsc=
+		q8jMtsHF2WNHdonmIql+15b6Nec=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QPRP43OpNioaNp3pk1VPqnOm7NkU9ezxLe+sWtZI+To=
+			PY8vQG7gPr5ki37QgsNdNaVFSZhTutjw6VSIJHM6F/8=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5it+7hLmg89o6L60H44016iynm5SvhLhCZWP4FQZ8E4=
+			qKO/ilC80SQ1a8FACJwycyl/lvrTN8NL4pFBNhM6+Ok=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QPRP43OpNioaNp3pk1VPqnOm7NkU9ezxLe+sWtZI+To=
+			PY8vQG7gPr5ki37QgsNdNaVFSZhTutjw6VSIJHM6F/8=
 			</data>
 		</dict>
 		<key>Modules/BrivoLocalAuthentication.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R9Z6fonDq/dJ9kX5iA6riKuNqwsh6hzyNpfgvCLSDwM=
+			uB3mtXuMixZZX03IdZCZonaobpKXgohmPq78VOzAJXc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

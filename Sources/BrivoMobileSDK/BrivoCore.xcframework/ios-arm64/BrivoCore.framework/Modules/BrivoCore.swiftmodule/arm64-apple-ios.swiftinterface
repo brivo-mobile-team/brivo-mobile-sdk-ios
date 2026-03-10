@@ -102,6 +102,7 @@ public enum EmptyPropertyError : Foundation.LocalizedError {
   @objc deinit
 }
 public typealias OnResultType = (BrivoCore.BrivoResult) -> Swift.Void
+public typealias PassID = Swift.String
 @_hasMissingDesignatedInitializers public class ControlLockUtils {
   public static func isAllegionDeviceThatCallsV1Endpoint(_ deviceModelId: Swift.String) -> Swift.Bool
   @objc deinit
@@ -130,10 +131,8 @@ public enum SDKLogLevel : Swift.String, Swift.Sendable {
 }
 public typealias RefreshTokenOnSuccessType = (BrivoCore.BrivoTokens) -> Swift.Void
 public typealias OnRefreshTokenFailureType = (BrivoCore.BrivoError?) -> Swift.Void
-public protocol RefreshTokenDelegate : ObjectiveC.NSObject {
-  #if compiler(>=5.3) && $NonescapableTypes
-  func refreshToken(brivoTokens: BrivoCore.BrivoTokens, onSuccess: BrivoCore.RefreshTokenOnSuccessType?, onError: BrivoCore.OnRefreshTokenFailureType?)
-  #endif
+public protocol TokenRefresher : AnyObject {
+  func refreshToken(brivoTokens: BrivoCore.BrivoTokens) async throws -> BrivoCore.BrivoTokens
 }
 @objc public class BrivoControlLockDb : ObjectiveC.NSObject, Swift.Codable {
   public var usrRcrd: BrivoCore.BrivoControlLockUserRecord
@@ -160,24 +159,64 @@ public enum Region : Swift.Int {
   #endif
   @objc deinit
 }
-@objc public class BrivoSDKConfiguration : ObjectiveC.NSObject {
+@_hasMissingDesignatedInitializers public class BrivoSDKConfiguration {
   final public let clientId: Swift.String
   final public let clientSecret: Swift.String
   final public let authUrl: Swift.String?
   final public let apiUrl: Swift.String?
-  final public let smartHomeUrl: Swift.String?
-  final public let smartHomeUrlV1: Swift.String?
-  final public let smartHomeUrlV4: Swift.String?
   final public let useSDKStorage: Swift.Bool
   final public let region: BrivoCore.Region
   final public let shouldPromptForContinuation: Swift.Bool
-  weak public var refreshTokenDelegate: (any BrivoCore.RefreshTokenDelegate)?
+  weak public var tokenRefresher: (any BrivoCore.TokenRefresher)?
   final public let sessionRequestTimeout: BrivoCore.SessionRequestTimeout?
   final public let isConsoleLoggingEnabled: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(clientId: Swift.String, clientSecret: Swift.String, useSDKStorage: Swift.Bool, region: BrivoCore.Region = .us, shouldPromptForContinuation: Swift.Bool = false, authUrl: Swift.String? = nil, apiUrl: Swift.String? = nil, smartHomeUrl: Swift.String? = nil, smartHomeUrlV1: Swift.String? = nil, smartHomeUrlV4: Swift.String? = nil, refreshTokenDelegate: (any BrivoCore.RefreshTokenDelegate)? = nil, sessionRequestTimeout: BrivoCore.SessionRequestTimeout? = nil, isConsoleLoggingEnabled: Swift.Bool = true) throws
-  #endif
+  final public let allegionEnabled: Swift.Bool
+  final public let brivoBLEAllegionConfiguration: BrivoCore.BrivoBLEAllegionConfiguration?
+  final public let hidorigoEnabled: Swift.Bool
+  final public let brivoSDKHIDOrigoConfiguration: BrivoCore.BrivoSDKHIDOrigoConfiguration?
+  final public let dormakabaEnabled: Swift.Bool
+  final public let brivoDormakabaConfiguration: BrivoCore.BrivoDormakabaConfiguration?
+  final public let saltoEnabled: Swift.Bool
   @objc deinit
+}
+extension BrivoCore.BrivoSDKConfiguration {
+  public class Builder {
+    public init(clientId: Swift.String, clientSecret: Swift.String, useSDKStorage: Swift.Bool)
+    public func region(_ region: BrivoCore.Region) -> BrivoCore.BrivoSDKConfiguration.Builder
+    public func shouldPromptForContinuation(_ shouldPrompt: Swift.Bool) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func authUrl(_ url: Swift.String?) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func apiUrl(_ url: Swift.String?) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func tokenRefresher(_ tokenRefresher: (any BrivoCore.TokenRefresher)?) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    public func sessionRequestTimeout(_ timeout: BrivoCore.SessionRequestTimeout?) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #endif
+    public func isConsoleLoggingEnabled(_ isEnabled: Swift.Bool) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #if compiler(>=5.3) && $NonescapableTypes
+    @discardableResult
+    public func brivoBLEAllegionConfiguration(_ config: BrivoCore.BrivoBLEAllegionConfiguration? = nil) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @discardableResult
+    public func brivoSDKHIDOrigoConfiguration(_ config: BrivoCore.BrivoSDKHIDOrigoConfiguration? = nil) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
+    @discardableResult
+    public func brivoDormakabaConfiguration(_ config: BrivoCore.BrivoDormakabaConfiguration? = nil) -> BrivoCore.BrivoSDKConfiguration.Builder
+    #endif
+    @discardableResult
+    public func brivoSaltoConfiguration() -> BrivoCore.BrivoSDKConfiguration.Builder
+    public func build() throws -> BrivoCore.BrivoSDKConfiguration
+    @objc deinit
+  }
+}
+extension BrivoCore.BrivoSDKConfiguration : Swift.Equatable {
+  public static func == (lhs: BrivoCore.BrivoSDKConfiguration, rhs: BrivoCore.BrivoSDKConfiguration) -> Swift.Bool
 }
 @objc public class BrivoControlLockUserRecord : ObjectiveC.NSObject, Swift.Codable {
   public var deleteAll: Swift.Int
@@ -202,6 +241,12 @@ public typealias LoggingMonitor = BrivoCore.LoggerOutput
 extension BrivoCore.BrivoSDK {
   public func addLoggingMonitor(_ loggingMonitor: any BrivoCore.LoggerOutput)
 }
+public struct BrivoBLEAllegionConfiguration : Swift.Equatable {
+  public let subscriptionKey: Swift.String
+  public let integrationId: Swift.String
+  public init(subscriptionKey: Swift.String, integrationId: Swift.String)
+  public static func == (a: BrivoCore.BrivoBLEAllegionConfiguration, b: BrivoCore.BrivoBLEAllegionConfiguration) -> Swift.Bool
+}
 public enum DoorType : Swift.Int, Swift.Codable {
   case internet
   case wavelynx
@@ -210,6 +255,9 @@ public enum DoorType : Swift.Int, Swift.Codable {
   case allegionBle
   case hidOrigo
   case dormakaba
+  case yonomi
+  case realSyncBle
+  case salto
   public var stringValue: Swift.String {
     get
   }
@@ -252,6 +300,18 @@ extension BrivoCore.NFCUnlinkStatus : Swift.CustomStringConvertible {
   public var description: Swift.String {
     get
   }
+}
+public struct BrivoDormakabaConfiguration : Swift.Equatable {
+  public let mobileAppID: Swift.Int
+  public let userName: Swift.String
+  public let password: Swift.String
+  public let serverURL: Swift.String
+  public let evoloSmartProjectId: Swift.Int?
+  public let unlockTimeoutDuration: Foundation.TimeInterval
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(mobileAppID: Swift.Int, userName: Swift.String, password: Swift.String, serverURL: Swift.String, evoloSmartProjectId: Swift.Int?, unlockTimeoutDuration: Foundation.TimeInterval)
+  #endif
+  public static func == (a: BrivoCore.BrivoDormakabaConfiguration, b: BrivoCore.BrivoDormakabaConfiguration) -> Swift.Bool
 }
 @frozen public enum NFCCredentialStatus : Swift.Equatable {
   case notEligible
@@ -296,6 +356,12 @@ public enum AccessPointCommunicationState : Swift.Int, Swift.Codable {
     get
   }
 }
+public struct BrivoSDKHIDOrigoConfiguration : Swift.Equatable {
+  public let applicationID: Swift.String
+  public let applicationVersion: Swift.String
+  public init(applicationID: Swift.String, applicationVersion: Swift.String)
+  public static func == (a: BrivoCore.BrivoSDKHIDOrigoConfiguration, b: BrivoCore.BrivoSDKHIDOrigoConfiguration) -> Swift.Bool
+}
 public protocol IBrivoSDK {
   static var instance: BrivoCore.BrivoSDK { get }
   static var sdkVersion: Swift.String { get }
@@ -325,6 +391,7 @@ public enum LoggerTagType : Swift.String, Swift.Hashable {
   case brivoNFC
   case brivoSDKBLEAllegion
   case brivoDormakaba
+  case brivoSalto
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -354,6 +421,15 @@ extension Foundation.Data {
   public var toHex: Swift.String {
     get
   }
+}
+public struct SyncErrorInfo : Swift.Equatable, Swift.Sendable, Swift.Codable {
+  public let domain: Swift.String
+  public let code: Swift.Int
+  public let message: Swift.String
+  public init(domain: Swift.String, code: Swift.Int, message: Swift.String)
+  public static func == (a: BrivoCore.SyncErrorInfo, b: BrivoCore.SyncErrorInfo) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public protocol LoggerOutput {
   var acceptedLogLevels: Swift.Set<BrivoCore.SDKLogLevel> { get }

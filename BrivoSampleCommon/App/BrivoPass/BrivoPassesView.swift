@@ -6,19 +6,23 @@
 //
 
 import SwiftUI
-import _PassKit_SwiftUI
-
-// swiftlint:disable line_length
+import BrivoOnAir
 
 struct BrivoPassesView: View {
+    
+    //MARK: - Properties
+    
     @ObservedObject var viewModel: BrivoPassesViewModel
+    @State var shouldShowCopyToast = false
+    
+    //MARK: - Body
     
     var body: some View {
-        List {
+        VStack {
             if viewModel.shouldShowEmptyView {
                 emptyView
             } else {
-                passFeed
+                passView
             }
         }
         .task {
@@ -34,6 +38,14 @@ struct BrivoPassesView: View {
         .sheet(isPresented: $viewModel.isShowingBrivoRedeemSheet) {
             brivoPassSheet
         }
+        .sheet(isPresented: $viewModel.shouldShowDetailsBottomSheet) {
+            ExtendedInfoSheet(title: "Pass info", items: viewModel.passExtendedDetails)
+        }
+        .toast(
+            message: "Copied to clipboard",
+            isShowing: $shouldShowCopyToast,
+            duration: Toast.short
+        )
         .alert(isPresented: $viewModel.isShowingAlert) { alert }
         .onReceive(NotificationCenter.default.publisher(
             for: UIScene.willEnterForegroundNotification)) { _ in
@@ -44,6 +56,29 @@ struct BrivoPassesView: View {
     }
 
     // MARK: - Private
+    
+    private var passView: some View {
+        List {
+            ForEach(viewModel.brivoOnAirPassListItems, id: \.self) { passUIModel in
+                Section {
+                    InfoRow(key: "Account Name", value: passUIModel.onAirPass.accountName ?? "-", showToast: $shouldShowCopyToast)
+                    InfoRow(key: "Account ID",   value: "\(passUIModel.onAirPass.accountId)", showToast: $shouldShowCopyToast)
+                    InfoRow(key: "User Name",    value: "\(passUIModel.onAirPass.firstName ?? "") \(passUIModel.onAirPass.lastName ?? "")", showToast: $shouldShowCopyToast)
+                    InfoRow(key: "Pass ID",      value:  "\(passUIModel.onAirPass.passId ?? "")", showToast: $shouldShowCopyToast)
+                } header: {
+                    HeaderWithInfo(title: "Pass details") {
+                        viewModel.getPassUIModel(passItem: passUIModel)
+                        viewModel.shouldShowDetailsBottomSheet = true }
+                }
+                .onAppear {
+                    viewModel.getPassUIModel(passItem: passUIModel)
+                }
+                listItem(passItem: passUIModel)
+            }
+        }
+        .listStyle(.insetGrouped)
+        
+    }
 
     private func listItem(passItem: BrivoOnAirPassListItem) -> some View {
         Section {
@@ -56,7 +91,7 @@ struct BrivoPassesView: View {
                         AccessPointView(
                             stateModel: .init(
                                 brivoOnAirPass: passItem.onAirPass,
-                                brivoSites: site
+                                brivoSite: site
                             )
                         )
                     } label: {
@@ -64,12 +99,6 @@ struct BrivoPassesView: View {
                     }
                 }
             }
-        } header: {
-            header(passItem: passItem)
-        } footer: {
-            #if canImport(BrivoHIDOrigo)
-            footer(passItem: passItem)
-            #endif
         }
     }
 
@@ -85,7 +114,7 @@ struct BrivoPassesView: View {
         }
         ToolbarItem(placement: .topBarLeading) {
             NavigationLink {
-                UnlockAccessPointView(stateModel: .init())
+                AccessPointDetailsView(stateModel: .init())
             } label: {
                 Text("Magic Button")
             }
@@ -94,34 +123,10 @@ struct BrivoPassesView: View {
 
     private var emptyView: some View {
         Text("You have no Passes. Please add passes by tapping the + button")
+            .padding(.horizontal, 10)
+            .multilineTextAlignment(.center)
             .accessibilityIdentifier(AccessibilityIds.noPassesTextView)
     }
-
-    private var passFeed: some View {
-        ForEach(viewModel.brivoOnAirPassListItems) { passItem in
-            listItem(passItem: passItem)
-        }
-    }
-
-    private func header(passItem: BrivoOnAirPassListItem) -> some View {
-        VStack(alignment: .leading) {
-            Text("\(passItem.onAirPass.accountName ?? "")")
-                .accessibilityIdentifier(AccessibilityIds.accountNameTextView)
-            Text("Account ID: \(passItem.onAirPass.accountId)")
-            Text("\(passItem.onAirPass.firstName ?? "") \(passItem.onAirPass.lastName ?? "")")
-            Text("Pass ID: \(passItem.onAirPass.passId ?? "")")
-        }
-    }
-
-#if canImport(BrivoHIDOrigo)
-    private func footer(passItem: BrivoOnAirPassListItem) -> some View {
-        HIDOrigoFooterView(passItem: passItem, addToWalletAction: {
-            Task {
-                await viewModel.addToWallet(pass: passItem.onAirPass)
-            }
-        })
-    }
-#endif
 
     @ViewBuilder
     private var brivoPassSheet: some View {
@@ -146,4 +151,3 @@ struct BrivoPassesView: View {
 #Preview {
     BrivoPassesView(viewModel: BrivoPassesViewModel())
 }
-// swiftlint:enable line_length

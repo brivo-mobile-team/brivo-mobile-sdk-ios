@@ -9,10 +9,14 @@ import SystemConfiguration.CaptiveNetwork
 import Foundation
 import Swift
 import SystemConfiguration
-import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct BrivoYonomiLock : Swift.Codable {
+  public init(deviceId: Swift.Int, deviceOid: Swift.Int, serialNumber: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public struct BrivoReaderCommands : Swift.Codable {
   public var commands: [BrivoOnAir.BrivoReaderCommand]
   public func encode(to encoder: any Swift.Encoder) throws
@@ -78,6 +82,16 @@ extension Swift.Array where Element == BrivoOnAir.BrivoOnairPass {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+public struct BrivoThermostatResponse : Swift.Decodable, Swift.Equatable {
+  public let deviceId: Swift.Int
+  public let deviceSettings: BrivoOnAir.BrivoThermostatSettings
+  public let deviceData: BrivoOnAir.BrivoThermostatData
+  public let deviceState: BrivoOnAir.BrivoThermostatState
+  public let externalId: Swift.String
+  public init(deviceId: Swift.Int, deviceSettings: BrivoOnAir.BrivoThermostatSettings, deviceData: BrivoOnAir.BrivoThermostatData, deviceState: BrivoOnAir.BrivoThermostatState, externalId: Swift.String)
+  public static func == (a: BrivoOnAir.BrivoThermostatResponse, b: BrivoOnAir.BrivoThermostatResponse) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
 @objc @_inheritsConvenienceInitializers public class BrivoBLEExternalCredentialRequestData : ObjectiveC.NSObject {
   public var userId: Swift.String?
   public var accessPointId: Swift.String?
@@ -86,6 +100,15 @@ extension Swift.Array where Element == BrivoOnAir.BrivoOnairPass {
   public var serializedData: Swift.String?
   @objc override dynamic public init()
   @objc deinit
+}
+public struct BrivoThermostatRangeInfo : Swift.Codable, Swift.Equatable {
+  public let value: Swift.Double
+  public let minValue: Swift.Double
+  public let maxValue: Swift.Double
+  public init(value: Swift.Double, minValue: Swift.Double, maxValue: Swift.Double)
+  public static func == (a: BrivoOnAir.BrivoThermostatRangeInfo, b: BrivoOnAir.BrivoThermostatRangeInfo) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_hasMissingDesignatedInitializers public class BrivoControlLockUnlockRequestBody : ObjectiveC.NSObject, Swift.Codable {
   public var deviceUuid: Swift.String
@@ -99,6 +122,11 @@ extension Swift.Array where Element == BrivoOnAir.BrivoOnairPass {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
+}
+extension BrivoOnAir.BrivoOnairPass {
+  public var hasSaltoLocks: Swift.Bool {
+    get
+  }
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoSDKOnAir : ObjectiveC.NSObject, BrivoOnAir.IBrivoSDKOnAir {
   public var onRefreshTokenFailed: BrivoOnAir.OnRefreshTokenFailureType? {
@@ -182,7 +210,25 @@ extension Swift.Array where Element == BrivoOnAir.BrivoOnairPass {
   #if compiler(>=5.3) && $NonescapableTypes
   public func renameAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.Int, name: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func setBrivoThermostatSettings(brivoTokens: BrivoCore.BrivoTokens, ilAccountIntegrationId: Swift.Int, deviceObjectId: Swift.Int, body: BrivoOnAir.BrivoThermostatUpdateSettingsBody) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getBrivoThermostatSettings(brivoTokens: BrivoCore.BrivoTokens, ilAccountIntegrationId: Swift.Int, deviceObjectId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoThermostatResponse, BrivoCore.BrivoError>
+  #endif
   @objc deinit
+}
+extension BrivoOnAir.BrivoSite {
+  public func hasSaltoLocks(from pass: BrivoOnAir.BrivoOnairPass) -> Swift.Bool
+}
+public struct BrivoThermostatSettings : Swift.Decodable, Swift.Equatable {
+  public let mode: BrivoOnAir.BrivoThermostatModeInfo
+  public let heat: BrivoOnAir.BrivoThermostatRangeInfo
+  public let cool: BrivoOnAir.BrivoThermostatRangeInfo
+  public let units: BrivoOnAir.BrivoThermostatModeInfo
+  public let fan: BrivoOnAir.BrivoThermostatModeInfo?
+  public static func == (a: BrivoOnAir.BrivoThermostatSettings, b: BrivoOnAir.BrivoThermostatSettings) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc public class BrivoOnAirAdministrator : ObjectiveC.NSObject, Swift.Codable {
   public var id: Swift.Int
@@ -196,6 +242,16 @@ extension Swift.Array where Element == BrivoOnAir.BrivoOnairPass {
   public var timezone: Swift.String?
   public var canCreateAdmins: Swift.Bool
   public var accountId: Swift.Int
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc public class BrivoOnairPassCredentials : ObjectiveC.NSObject, Swift.Codable {
+  public var userId: Swift.String?
+  public var tokens: BrivoCore.BrivoTokens?
+  #if compiler(>=5.3) && $NonescapableTypes
+  required public init(userId: Swift.String?, tokens: BrivoCore.BrivoTokens?)
+  #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -217,17 +273,72 @@ extension Swift.Array where Element == BrivoOnAir.BrivoOnairPass {
   public var bleCredentials: Swift.String?
   public var timeframe: Swift.Int32
   public var deviceModelId: Swift.String?
+  public var controlLockId: Swift.Int?
   public var sendEvents: Swift.Bool
   public var minimumPanelRssi: Swift.Int
   #if compiler(>=5.3) && $NonescapableTypes
-  required public init(accessPointPath: BrivoCore.AccessPointPath, doorType: BrivoCore.DoorType, passCredential: BrivoOnAir.BrivoOnairPassCredentials, isTwoFactorEnabled: Swift.Bool = false, readerUid: Swift.String? = nil, bleCredentials: Swift.String? = nil, timeframe: Swift.Int32 = 0, deviceModelId: Swift.String?, sendEvents: Swift.Bool = true)
+  required public init(accessPointPath: BrivoCore.AccessPointPath, doorType: BrivoCore.DoorType, passCredential: BrivoOnAir.BrivoOnairPassCredentials, isTwoFactorEnabled: Swift.Bool = false, readerUid: Swift.String? = nil, bleCredentials: Swift.String? = nil, timeframe: Swift.Int32 = 0, deviceModelId: Swift.String?, controlLockId: Swift.Int? = nil, sendEvents: Swift.Bool = true)
   #endif
   @objc deinit
+}
+@objc public class BrivoAccessPoint : ObjectiveC.NSObject, Swift.Codable {
+  public var id: Swift.Int
+  public var name: Swift.String?
+  public var type: Swift.String?
+  public var siteId: Swift.Int
+  public var siteName: Swift.String?
+  public var twoFactorEnabled: Swift.Bool
+  public var bluetoothReader: BrivoOnAir.BrivoBluetoothReader?
+  public var controlLockSerialNumber: Swift.String?
+  public var controlLockDeviceReferenceId: Swift.String?
+  public var controlLockDeviceType: Swift.String?
+  public var controlLockSiteName: Swift.String?
+  public var controlLockSiteReferenceId: Swift.String?
+  public var controlLockId: Swift.Int?
+  public var deviceRequiresUpdate: Swift.Bool
+  final public let controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?
+  public var isDoorStation: Swift.Bool
+  public var schedules: [BrivoOnAir.BrivoSchedules]?
+  public var readerType: BrivoOnAir.BrivoReaderType
+  public var sendEvents: Swift.Bool
+  public var yonomiLock: BrivoOnAir.BrivoYonomiLock?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?)
+  #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+extension BrivoOnAir.BrivoAccessPoint {
+  public func getDoorType(from pass: BrivoOnAir.BrivoOnairPass) -> BrivoCore.DoorType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getReaderUid(from pass: BrivoOnAir.BrivoOnairPass) -> Swift.String?
+  #endif
+}
+public enum BrivoReaderType : Swift.String, Swift.Codable {
+  case none
+  case hidOrigo
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @objc public class BrivoLockControlGroup : ObjectiveC.NSObject, Swift.Codable {
   public var id: Swift.Int
   public var name: Swift.String
   public var noTourGroupId: Swift.Int
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class BrivoBluetoothReader : ObjectiveC.NSObject, Swift.Codable {
+  public var protocolVersion: Swift.Int
+  public var readerUid: Swift.String?
+  public var securityScheme: Swift.String?
+  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -273,34 +384,57 @@ extension BrivoOnAir.BrivoOnairPass {
     get
   }
   #endif
-  public var hasOrigoDoors: Swift.Bool {
-    get
-  }
 }
-@objc public class BrivoOnairPassCredentials : ObjectiveC.NSObject, Swift.Codable {
-  public var userId: Swift.String?
-  public var tokens: BrivoCore.BrivoTokens?
+public struct BrivoThermostatModeInfo : Swift.Codable, Swift.Equatable {
+  public let value: Swift.String
+  public let allowedModes: [Swift.String]
+  public init(value: Swift.String, allowedModes: [Swift.String])
+  public static func == (a: BrivoOnAir.BrivoThermostatModeInfo, b: BrivoOnAir.BrivoThermostatModeInfo) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BrivoThermostatUpdateSettingsBody : Swift.Encodable {
+  public let mode: Swift.String
+  public let fanMode: Swift.String?
+  public let heatSetpoint: Swift.Double
+  public let coolSetpoint: Swift.Double
   #if compiler(>=5.3) && $NonescapableTypes
-  required public init(userId: Swift.String?, tokens: BrivoCore.BrivoTokens?)
+  public init(mode: Swift.String, fanMode: Swift.String?, heatSetpoint: Swift.Double, coolSetpoint: Swift.Double)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct BrivoThermostatData : Swift.Decodable, Swift.Equatable {
+  public let deviceType: Swift.String
+  public let locationName: Swift.String
+  public let locationId: Swift.String
+  public let macID: Swift.String
+  public let name: Swift.String
+  public let deviceModel: Swift.String
+  public static func == (a: BrivoOnAir.BrivoThermostatData, b: BrivoOnAir.BrivoThermostatData) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers public class BrivoControlLockUnlockStatusRequestBody : ObjectiveC.NSObject, Swift.Codable {
+  public var unlockStatus: Swift.Int
+  public var providerTypeId: Swift.String
+  public var deviceModelId: Swift.String
+  public var deviceInfo: [Swift.String : [Swift.UInt8]]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func encode() -> Foundation.Data?
   #endif
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers public class BrivoSite : ObjectiveC.NSObject, Swift.Codable {
-  public var id: Swift.Int
-  public var siteName: Swift.String?
-  public var address: BrivoOnAir.BrivoAddress?
-  public var timeZone: Swift.String?
-  public var accessPoints: [BrivoOnAir.BrivoAccessPoint]?
-  public var deviceRequiresUpdate: Swift.Bool
-  public var brivoGeolocation: BrivoOnAir.BrivoGeolocation?
-  public var preScreening: Swift.String?
-  public var hasTrustedNetwork: Swift.Bool
-  @objc override dynamic public init()
-  required public init(from decoder: any Swift.Decoder) throws
+public struct BrivoThermostatState : Swift.Decodable, Swift.Equatable {
+  public let isAlive: Swift.Bool
+  public let temperature: Swift.Double
+  public let subscribedToRealtimeUpdates: Swift.Bool
+  public static func == (a: BrivoOnAir.BrivoThermostatState, b: BrivoOnAir.BrivoThermostatState) -> Swift.Bool
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BrivoSites : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
+  public init(from decoder: any Swift.Decoder) throws
 }
 @objc @_inheritsConvenienceInitializers public class BrivoUserImage : ObjectiveC.NSObject, Swift.Codable {
   public var userImageUri: Swift.String?
@@ -334,101 +468,43 @@ extension BrivoOnAir.BrivoOnairPass {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
-public enum BrivoReaderType : Swift.String, Swift.Codable {
-  case none
-  case hidOrigo
+public struct BrivoThermostat : Swift.Codable, Swift.Equatable {
+  public let id: Swift.Int
+  public let name: Swift.String
+  public let temperature: Swift.Double
+  public let siteId: Swift.Int
+  public let modeValue: Swift.String
+  public let mode: BrivoOnAir.BrivoThermostatModeInfo
+  public let fanValue: Swift.String?
+  public let fan: BrivoOnAir.BrivoThermostatModeInfo?
+  public let unitsValue: Swift.String?
+  public let units: BrivoOnAir.BrivoThermostatModeInfo?
+  public let cool: BrivoOnAir.BrivoThermostatRangeInfo
+  public let heat: BrivoOnAir.BrivoThermostatRangeInfo
+  public let isAlive: Swift.Bool
+  public let ilAccountIntegrationId: Swift.Int
   #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.String)
+  public init(id: Swift.Int, name: Swift.String, temperature: Swift.Double, siteId: Swift.Int, modeValue: Swift.String, mode: BrivoOnAir.BrivoThermostatModeInfo, fanValue: Swift.String?, fan: BrivoOnAir.BrivoThermostatModeInfo?, unitsValue: Swift.String?, units: BrivoOnAir.BrivoThermostatModeInfo?, cool: BrivoOnAir.BrivoThermostatRangeInfo, heat: BrivoOnAir.BrivoThermostatRangeInfo, isAlive: Swift.Bool, ilAccountIntegrationId: Swift.Int)
   #endif
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-@objc public class BrivoAccessPoint : ObjectiveC.NSObject, Swift.Codable {
-  public var id: Swift.Int
-  public var name: Swift.String?
-  public var type: Swift.String?
-  public var siteId: Swift.Int
-  public var siteName: Swift.String?
-  public var twoFactorEnabled: Swift.Bool
-  public var bluetoothReader: BrivoOnAir.BrivoBluetoothReader?
-  public var controlLockSerialNumber: Swift.String?
-  public var controlLockDeviceReferenceId: Swift.String?
-  public var controlLockDeviceType: Swift.String?
-  public var controlLockSiteName: Swift.String?
-  public var controlLockSiteReferenceId: Swift.String?
-  public var controlLockId: Swift.Int?
-  public var deviceRequiresUpdate: Swift.Bool
-  final public let controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?
-  public var isDoorStation: Swift.Bool
-  public var schedules: [BrivoOnAir.BrivoSchedules]?
-  public var readerType: BrivoOnAir.BrivoReaderType
-  public var sendEvents: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?)
-  #endif
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-extension BrivoOnAir.BrivoAccessPoint {
-  public var doorType: BrivoCore.DoorType {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public var readerUid: Swift.String? {
-    get
-  }
-  #endif
-}
-@objc @_inheritsConvenienceInitializers public class BrivoBluetoothReader : ObjectiveC.NSObject, Swift.Codable {
-  public var protocolVersion: Swift.Int
-  public var readerUid: Swift.String?
-  public var securityScheme: Swift.String?
-  @objc override dynamic public init()
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class BrivoSchedules : ObjectiveC.NSObject, Swift.Codable {
-  public var id: Swift.Int
-  public var name: Swift.String?
-  public var schedulesDescription: Swift.String?
-  public var scheduleBlocks: BrivoOnAir.ScheduleBlocks?
-  @objc override dynamic public init()
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-@objc public class ScheduleBlocks : ObjectiveC.NSObject, Swift.Codable {
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class ScheduleTime : ObjectiveC.NSObject, Swift.Codable {
-  public var start: Swift.String?
-  public var end: Swift.String?
-  @objc override dynamic public init()
-  required public init(from decoder: any Swift.Decoder) throws
-  public func encode(to encoder: any Swift.Encoder) throws
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class BrivoControlLockUnlockStatusRequestBody : ObjectiveC.NSObject, Swift.Codable {
-  public var unlockStatus: Swift.Int
-  public var providerTypeId: Swift.String
-  public var deviceModelId: Swift.String
-  public var deviceInfo: [Swift.String : [Swift.UInt8]]?
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func encode() -> Foundation.Data?
-  #endif
-  @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
-}
-public struct BrivoSites : Swift.Codable {
+  public static func == (a: BrivoOnAir.BrivoThermostat, b: BrivoOnAir.BrivoThermostat) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class BrivoSite : ObjectiveC.NSObject, Swift.Codable {
+  public var id: Swift.Int
+  public var siteName: Swift.String?
+  public var address: BrivoOnAir.BrivoAddress?
+  public var timeZone: Swift.String?
+  public var accessPoints: [BrivoOnAir.BrivoAccessPoint]?
+  public var thermostats: [BrivoOnAir.BrivoThermostat]?
+  public var deviceRequiresUpdate: Swift.Bool
+  public var brivoGeolocation: BrivoOnAir.BrivoGeolocation?
+  public var preScreening: Swift.String?
+  public var hasTrustedNetwork: Swift.Bool
+  @objc override dynamic public init()
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
 }
 public typealias RedeemPassOnSuccessType = (BrivoOnAir.BrivoOnairPass?) -> Swift.Void
 public typealias RetrieveSitesOnSuccessType = ([BrivoOnAir.BrivoSite]) -> Swift.Void
@@ -524,6 +600,12 @@ public protocol IBrivoSDKOnAir {
   #if compiler(>=5.3) && $NonescapableTypes
   func renameAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.Int, name: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func setBrivoThermostatSettings(brivoTokens: BrivoCore.BrivoTokens, ilAccountIntegrationId: Swift.Int, deviceObjectId: Swift.Int, body: BrivoOnAir.BrivoThermostatUpdateSettingsBody) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  func getBrivoThermostatSettings(brivoTokens: BrivoCore.BrivoTokens, ilAccountIntegrationId: Swift.Int, deviceObjectId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoThermostatResponse, BrivoCore.BrivoError>
+  #endif
 }
 public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   case wavelynxDoor
@@ -534,6 +616,8 @@ public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   case assaAbloyDoorLock
   case bdsLock
   case dormakaba
+  case yonomi
+  case salto
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -555,6 +639,29 @@ public enum DoorIdentifier : Swift.String, Swift.CaseIterable {
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class BrivoSchedules : ObjectiveC.NSObject, Swift.Codable {
+  public var id: Swift.Int
+  public var name: Swift.String?
+  public var schedulesDescription: Swift.String?
+  public var scheduleBlocks: BrivoOnAir.ScheduleBlocks?
+  @objc override dynamic public init()
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
+}
+@objc public class ScheduleBlocks : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class ScheduleTime : ObjectiveC.NSObject, Swift.Codable {
+  public var start: Swift.String?
+  public var end: Swift.String?
+  @objc override dynamic public init()
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  @objc deinit
 }
 extension BrivoOnAir.BrivoReaderType : Swift.Equatable {}
 extension BrivoOnAir.BrivoReaderType : Swift.Hashable {}

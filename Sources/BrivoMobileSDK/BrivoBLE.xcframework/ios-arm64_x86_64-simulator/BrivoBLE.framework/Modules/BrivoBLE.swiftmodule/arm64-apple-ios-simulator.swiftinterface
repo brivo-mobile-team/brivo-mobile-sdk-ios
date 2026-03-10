@@ -36,8 +36,8 @@ public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
   @objc override dynamic public init()
   public func getBLEState() -> CoreBluetooth.CBManagerState
   public func startCentralManager()
-  public func onBleChanged(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
-  public func removeCompletionFor(id: Foundation.UUID)
+  public func addBluetoothStateObserver(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
+  public func removeBluetoothStateObserver(id: Foundation.UUID)
   #if compiler(>=5.3) && $NonescapableTypes
   public func unlockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
   #endif
@@ -49,17 +49,6 @@ public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func lockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
-  #endif
-  @objc deinit
-}
-public typealias OnConfigureAccessPointSuccessType = () -> Swift.Void
-@objc @_inheritsConvenienceInitializers public class BrivoConfigurationBLEService : ObjectiveC.NSObject {
-  public var requestExternalCredentials: BrivoBLE.OnRequestExternalCredentials?
-  public var provideResponseForExternalCredentials: BrivoBLE.OnProvideResponseForExternalCredentials?
-  @objc override dynamic public init()
-  public func startCentralManager()
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func configureAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
   #endif
   @objc deinit
 }

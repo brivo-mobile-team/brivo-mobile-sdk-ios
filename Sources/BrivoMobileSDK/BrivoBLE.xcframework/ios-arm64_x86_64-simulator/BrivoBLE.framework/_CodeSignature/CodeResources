@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/BrivoBLE-Swift.h</key>
 		<data>
-		x+i81tq5YWwl0k5Brf5A/FoTkNs=
+		xlBLvto3Spet/olOhRsA/FKhNHw=
 		</data>
 		<key>Headers/BrivoBLE.h</key>
 		<data>
@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cdqCPoQOYcBtFHDfwvSuEyLFtMY=
+		GQyVgae5vfoVxRIwKMQrF8Ue3m8=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+Hhro8RhtDVO1PQQIOQB2Do54OQ=
+		S7UO4kRbFLJ/3tlKfgzx0V3ifDU=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		B+ZAR5TB3fwKIwhayyqP0qss5Is=
+		rxAxqM/WB5RoLOnQwk0g0OOcXGQ=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		B+ZAR5TB3fwKIwhayyqP0qss5Is=
+		rxAxqM/WB5RoLOnQwk0g0OOcXGQ=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xQrA7FJzMPzq374SqIZaFNgi8eE=
+		SBlSR19HztkSjvRW9iXyRWqxhnM=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+Hhro8RhtDVO1PQQIOQB2Do54OQ=
+		S7UO4kRbFLJ/3tlKfgzx0V3ifDU=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		roq40kltgzRAnD4m0GpiXvGBANI=
+		45rWAjrxmwPTvtLBq/8ilznEsUk=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		roq40kltgzRAnD4m0GpiXvGBANI=
+		45rWAjrxmwPTvtLBq/8ilznEsUk=
 		</data>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		t0wN0lnEngIuBGQwRlUfs1lH3Ig=
+		zZSy3+5DWp4TU6reAd4/AEWpnLA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,7 +71,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iZnZ/2r1oplgvLBmm2UmoUojr8oRJLfSyRHrgHDd16g=
+			iy0zyHADvue8O3K70ufJ9L3DCklaOD40DRjjUKSZ9b4=
 			</data>
 		</dict>
 		<key>Headers/BrivoBLE.h</key>
@@ -85,14 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lCXR1EFOdi1KebHEmh3yf9ywvZzwiabQ9wnSkK9ptGQ=
+			kKUuQ+VJZ6Dg7r2U9A0XuDvftJonFwYFWOf9K2hAhjs=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+B0Jc0f4DV+Cj3Q06tV2Oi1lAHZmuhF3fh2fiJYPdk=
+			mRGjo5hIugMfqN7YD1J5wFpNYyRwwiAtuEJdgHG6F9w=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -106,28 +106,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1+B0Jc0f4DV+Cj3Q06tV2Oi1lAHZmuhF3fh2fiJYPdk=
+			mRGjo5hIugMfqN7YD1J5wFpNYyRwwiAtuEJdgHG6F9w=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lS1ZcU0rRXV3ShN4t4zaFCcyUu9wJctQ0uMsRzMGVzI=
+			oKrJt0j1o8AVYl6zesd7m8DBWK9qi1ZgOPzwpdFmxa0=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lCXR1EFOdi1KebHEmh3yf9ywvZzwiabQ9wnSkK9ptGQ=
+			kKUuQ+VJZ6Dg7r2U9A0XuDvftJonFwYFWOf9K2hAhjs=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eGE83zuOo9AO1UQYZttEis73czsGZx7eeDDFhQxLqZ4=
+			UbYNULBgG+2Rn4a7X5YfPQQblDnRR1y3ExaNI4tNGSY=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -141,14 +141,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			eGE83zuOo9AO1UQYZttEis73czsGZx7eeDDFhQxLqZ4=
+			UbYNULBgG+2Rn4a7X5YfPQQblDnRR1y3ExaNI4tNGSY=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLE.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QEsnbMkC942Ercb1e4lfh9ljnRFK5PckA1yOjrG81TE=
+			MzKtk21h+rYAEphv6kSXObUsC0MI19x1JZwPF7W4rXw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

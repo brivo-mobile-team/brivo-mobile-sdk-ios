@@ -1080,140 +1080,140 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 347,
+      "offset": 519,
       "length": 5,
       "value": "-4000"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 380,
+      "offset": 547,
       "length": 23,
       "value": "\"Authentication failed\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 496,
+      "offset": 682,
       "length": 5,
       "value": "-4001"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 529,
+      "offset": 710,
       "length": 47,
       "value": "\"Hardware unavailable for local authentication\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 652,
+      "offset": 852,
       "length": 5,
       "value": "-4002"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 880,
       "length": 33,
       "value": "\"Local authentication timed out.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 810,
+      "offset": 1024,
       "length": 5,
       "value": "-4003"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 843,
+      "offset": 1052,
       "length": 49,
       "value": "\"Hardware doesn't exist for local authentication\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 975,
+      "offset": 1203,
       "length": 5,
       "value": "-4004"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1008,
+      "offset": 1231,
       "length": 39,
       "value": "\"A passcode isn’t set on the device.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1129,
+      "offset": 1371,
       "length": 5,
       "value": "-4005"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1162,
+      "offset": 1399,
       "length": 42,
       "value": "\"Context not set for local authentication\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1296,
+      "offset": 1552,
       "length": 5,
       "value": "-4006"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1329,
+      "offset": 1580,
       "length": 45,
       "value": "\"Authentication was cancelled by application\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1457,
+      "offset": 1727,
       "length": 5,
       "value": "-4007"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1490,
+      "offset": 1755,
       "length": 55,
       "value": "\"Authentication failed because interaction is disabled\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1629,
+      "offset": 1913,
       "length": 5,
       "value": "-4008"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1662,
+      "offset": 1941,
       "length": 101,
       "value": "\"Biometry is now locked because of too many failed attempts. Passcode is required to unlock biometry\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "IntegerLiteral",
-      "offset": 1851,
+      "offset": 2149,
       "length": 5,
       "value": "-4009"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoLocalAuthentication\/BrivoLocalAuthentication\/BrivoLocalAuthenticationErrors.swift",
       "kind": "StringLiteral",
-      "offset": 1884,
+      "offset": 2177,
       "length": 48,
       "value": "\"The user has no enrolled biometric identities.\""
     }

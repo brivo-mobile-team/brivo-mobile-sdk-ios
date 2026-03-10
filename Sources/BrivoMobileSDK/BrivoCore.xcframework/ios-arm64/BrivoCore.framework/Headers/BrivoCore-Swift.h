@@ -355,39 +355,6 @@ SWIFT_CLASS("_TtC9BrivoCore8BrivoSDK")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-/// Defines the configuration object needed by the BrivoSDK in order to function properly.
-/// \param clientId Brivo client id
-///
-/// \param clientSecret Brivo Client secret
-///
-/// \param useSDKStorage if the SDK should use internal stoage for the passes
-///
-/// \param region the region where the SDK base urls should point in the case apiUrl or authUrl are not provided.
-/// Defaults to Region.us
-///
-/// \param shouldPromptForContinuation if the SDK should promt for continuation
-///
-/// \param authUrl the Brivo authentication server base url
-///
-/// \param apiUrl the Brivo OnAir API base url
-///
-/// \param smartHomeUrl the Brivo Smart Home base url
-///
-/// \param smartHomeUrlV1 the Brivo Smart Home base url v1
-///
-/// \param smartHomeUrlV4 the Brivo Smart Home base url v4
-///
-/// \param refreshTokenDelegate a refresh token delegate that can handle token refresh in case of a
-/// HTTP 401 unauthorised
-///
-/// \param sessionRequestTimeout the HTTP session request timeout
-///
-SWIFT_CLASS("_TtC9BrivoCore21BrivoSDKConfiguration")
-@interface BrivoSDKConfiguration : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC9BrivoCore11BrivoTokens")
 @interface BrivoTokens : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

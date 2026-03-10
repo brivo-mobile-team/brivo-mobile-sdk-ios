@@ -5,87 +5,115 @@
 //  Created by Thomas Prezioso on 3/14/24.
 //
 
-import SwiftUI
 import BrivoAccess
 import BrivoCore
 import BrivoOnAir
+import SwiftUI
 
 struct AccessPointView: View {
-    var stateModel: AccessPointViewModel
+    @State var stateModel: AccessPointViewModel
 
     // swiftlint:disable line_length
     var body: some View {
         List {
-            if !stateModel.accessPoints.isEmpty {
+            if !stateModel.accessPointItems.isEmpty {
                 Section(header: Text("Brivo Access Points")) {
-                    ForEach(stateModel.accessPoints, id: \.id) { accessPoint in
-                        createNavigationLinkForAccessPoint(accessPoint)
+                    ForEach(stateModel.accessPointItems) { accessPoint in
+                        makeNavigationLink(for: accessPoint)
                     }
                 }
             }
-            if !stateModel.origoAccessPoints.isEmpty {
+            if !stateModel.origoAccessPointItems.isEmpty {
                 Section(header: Text("HID Origo Access Points")) {
-                    ForEach(stateModel.origoAccessPoints, id: \.id) { accessPoint in
-                        createNavigationLinkForAccessPoint(accessPoint)
+                    ForEach(stateModel.origoAccessPointItems, id: \.id) { accessPoint in
+                        makeNavigationLink(for: accessPoint)
+                    }
+                }
+            }
+            if !stateModel.thermostatItems.isEmpty {
+                Section(header: Text("Brivo Thermostats")) {
+                    ForEach(stateModel.thermostatItems, id: \.id) { thermostat in
+                        makeRowItem(for: thermostat)
                     }
                 }
             }
         }
+        .toolbar {
+            Button {
+                stateModel.shouldShowBottomSheet = true
+            } label: {
+                Image(systemName: "info.circle")
+            }
+            .accessibilityLabel("Site extended info button")
+        }
+        .sheet(isPresented: $stateModel.shouldShowBottomSheet) {
+            ExtendedInfoSheet(title: "Site Informations", items: stateModel.siteExtendedDetails)
+        }
     }
+
     // swiftlint:enable line_length
 
     // MARK: - Private
 
-    private func icon(_ accessPoint: BrivoAccessPoint) -> some View {
-        Group {
-            accessPoint.bluetoothReader != nil ? image("bluetooth") : image("wifi")
+    private func makeNavigationLink(for accessPointItem: AccessPointItem) -> some View {
+        NavigationLink {
+            if let selectedAccessPoint = stateModel.selectedAccessPoint(for: accessPointItem) {
+                let viewModel = AccessPointDetailsViewModel(selectedAccessPoint: selectedAccessPoint)
+                AccessPointDetailsView(stateModel: viewModel)
+            }
         }
+        label: {
+            HStack {
+                accessPointItem.icon
+                Text(accessPointItem.name)
+            }
+        }
+        .navigationTitle("Access Points for" + " " + (stateModel.siteName))
+        .navigationBarTitleDisplayMode(.inline)
     }
 
-    private func image(_ name: String) -> some View {
-        Image(name)
-            .resizable().frame(width: 32.0, height: 32.0)
+    private func makeRowItem(for thermostat: ThermostatItem) -> some View {
+        HStack {
+            HStack(alignment: .top, spacing: 0) {
+                thermostat.icon
+                thermostat.onlineView
+            }
+            Text(thermostat.name)
+            Spacer()
+            Text(thermostat.temperature)
+        }
+    }
+}
+
+extension ThermostatItem {
+    var icon: some View {
+        Image(systemName: "thermometer.medium")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 32.0, height: 32.0)
             .background(Color.white)
     }
 
-    private func createNavigationLinkForAccessPoint(_ accessPoint: BrivoAccessPoint) -> some View {
-        NavigationLink {
-            if let userId = stateModel.brivoOnAirPass.brivoOnairPassCredentials?.userId,
-               let passId = stateModel.brivoOnAirPass.passId
-            {
-                UnlockAccessPointView(
-                    stateModel: .init(
-                        selectedAccessPoint: .init(
-                            accessPointPath: .init(
-                                accessPointId: accessPoint.id,
-                                siteId: accessPoint.siteId,
-                                passId: passId
-                            ),
-                            doorType: accessPoint.doorType,
-                            passCredential: .init(
-                                userId: userId,
-                                tokens: stateModel.brivoOnAirPass.brivoOnairPassCredentials?.tokens
-                            ),
-                            isTwoFactorEnabled: accessPoint.twoFactorEnabled,
-                            readerUid: accessPoint.bluetoothReader?.readerUid ?? accessPoint.controlLockSerialNumber,
-                            bleCredentials: stateModel.brivoOnAirPass.bleCredential,
-                            timeframe: stateModel.brivoOnAirPass.bleAuthTimeFrame,
-                            deviceModelId: accessPoint.controlLockDeviceType
-                        )
-                    )
-                )
-            }
-        } label: {
-            HStack {
-                icon(accessPoint)
-                Text(accessPoint.name ?? "")
-            }
-        }
-        .navigationTitle("Access Points for" + " " + (stateModel.brivoSites.siteName ?? ""))
-        .navigationBarTitleDisplayMode(.inline)
+    var onlineView: some View {
+        Image(systemName: "inset.filled.circle")
+            .resizable()
+            .frame(width: 8.0, height: 8.0)
+            .foregroundStyle(isOnline ? Color.green : Color.red)
+    }
+}
+
+extension AccessPointItem {
+    var icon: some View {
+        Image(bleOpening ? .bluetooth : .wifi)
+            .resizable()
+            .frame(width: 32.0, height: 32.0)
+            .background(Color.white)
     }
 }
 
 #Preview {
-    AccessPointView(stateModel: .init(brivoOnAirPass: .init(), brivoSites: .init()))
+    NavigationStack {
+        AccessPointView(stateModel: .init(brivoOnAirPass: .init(), brivoSite: .init()))
+            .navigationTitle("Site example")
+    }
 }
