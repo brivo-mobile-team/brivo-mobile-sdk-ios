@@ -5,10 +5,9 @@
 import BrivoCore
 import BrivoNetworkCore
 @_exported import BrivoOnAir
-import SystemConfiguration.CaptiveNetwork
 import Foundation
+import NetworkExtension
 import Swift
-import SystemConfiguration
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims

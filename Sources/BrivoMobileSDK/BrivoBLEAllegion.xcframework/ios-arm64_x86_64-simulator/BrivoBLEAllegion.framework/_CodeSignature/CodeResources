@@ -75,7 +75,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Ckp/BRw9hZcZCgM3wkcszzz/ZK0=
+		dLANX20cKiD2AsZK5PA37zPWOdk=
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -95,7 +95,7 @@
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F1BxNIMxEmAaDGc6D4IWo9yrEb4=
+		WAWLA2v+bZ0P9aNzeXdJXqpcmxo=
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -115,7 +115,7 @@
 		</data>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		12v6hAhEuJcqHoRTun5G8toUCvg=
+		LaxV6c9rDuV/q0rNr7cvC6jZusk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -270,7 +270,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HUe2FawMFtXFZdbZWJ7dfX3KIHixQJeCoMm+x5Wxr9o=
+			Ie/pLCGtDTZHwM0SHFS+RB/1qeitbIqK6snXPs21pD8=
 			</data>
 		</dict>
 		<key>Modules/BrivoBLEAllegion.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -305,7 +305,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LjGNP/A2BCsZ/p/gnBXPtdpzQ0truXAjKZARvKZ+nwY=
+			fd/HezCWPJQWHu6MBSDQDDMfKaZrlAWbuXcCS+xQhbU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

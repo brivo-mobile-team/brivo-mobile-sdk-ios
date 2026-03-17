@@ -6,7 +6,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/brivo-mobile-team/brivo-mobile-sdk-ios.git",
       "state" : {
-        "revision" : "788a93629cc3d17ca155c2259fb3e6c28a868666",
+        "revision" : "a74eb9d877cc5f8b2d473791dc36f888bb3e9df4",
         "version" : "3.1.0"
       }
     }
