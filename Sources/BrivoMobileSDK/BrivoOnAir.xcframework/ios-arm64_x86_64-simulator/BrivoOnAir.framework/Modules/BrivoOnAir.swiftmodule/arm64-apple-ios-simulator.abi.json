@@ -5982,13 +5982,6 @@
         "moduleName": "BrivoOnAir"
       },
       {
-        "kind": "Import",
-        "name": "NetworkExtension",
-        "printedName": "NetworkExtension",
-        "declKind": "Import",
-        "moduleName": "BrivoOnAir"
-      },
-      {
         "kind": "TypeDecl",
         "name": "BrivoSDKOnAir",
         "printedName": "BrivoSDKOnAir",
@@ -19435,6 +19428,44 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "BrivoOnAir"
+      },
+      {
+        "kind": "Import",
+        "name": "NetworkExtension",
+        "printedName": "NetworkExtension",
+        "declKind": "Import",
+        "moduleName": "BrivoOnAir"
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoOnAir"
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoNetworkCore",
+        "printedName": "BrivoNetworkCore",
+        "declKind": "Import",
+        "moduleName": "BrivoOnAir"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoOnAir",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "BrivoSites",
         "printedName": "BrivoSites",
@@ -28739,343 +28770,343 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 585,
+      "offset": 561,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 622,
+      "offset": 598,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 661,
+      "offset": 637,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 9461,
+      "offset": 9498,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 13241,
+      "offset": 13278,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 13416,
+      "offset": 13453,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 13515,
+      "offset": 13552,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14052,
+      "offset": 14089,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14072,
+      "offset": 14109,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14419,
+      "offset": 14456,
       "length": 22,
       "value": "\"name__eq:\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14440,
+      "offset": 14477,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14521,
+      "offset": 14558,
       "length": 25,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 14545,
+      "offset": 14582,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 15538,
+      "offset": 15575,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 15740,
+      "offset": 15777,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 15785,
+      "offset": 15822,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 16380,
+      "offset": 16417,
       "length": 48,
       "value": "\"Fail to decode response data in retrieve sites\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 16515,
+      "offset": 16552,
       "length": 10,
       "value": "\"siteName\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 16576,
+      "offset": 16613,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 16922,
+      "offset": 16959,
       "length": 51,
       "value": "\"Fail to retrieve sites with missing response data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 17052,
+      "offset": 17089,
       "length": 10,
       "value": "\"siteName\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 17324,
+      "offset": 17361,
       "length": 24,
       "value": "\"Fail to retrieve sites\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 17419,
+      "offset": 17456,
       "length": 10,
       "value": "\"siteName\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 17472,
+      "offset": 17509,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 17839,
+      "offset": 17876,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 22544,
+      "offset": 22581,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 22740,
+      "offset": 22777,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "Array",
-      "offset": 22846,
+      "offset": 22883,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23306,
+      "offset": 23343,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23322,
+      "offset": 23359,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23777,
+      "offset": 23814,
       "length": 29,
       "value": "\"name__eq:\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23805,
+      "offset": 23842,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23886,
+      "offset": 23923,
       "length": 25,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 23910,
+      "offset": 23947,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 24155,
+      "offset": 24192,
       "length": 68,
       "value": "\"\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 24198,
+      "offset": 24235,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 24208,
+      "offset": 24245,
       "length": 1,
       "value": "\"\/access-points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 24950,
+      "offset": 24987,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 25154,
+      "offset": 25191,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "IntegerLiteral",
-      "offset": 25199,
+      "offset": 25236,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 25844,
+      "offset": 25881,
       "length": 58,
       "value": "\"Fail to decode response in retrieving site access points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 25989,
+      "offset": 26026,
       "length": 8,
       "value": "\"siteId\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 26046,
+      "offset": 26083,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 26399,
+      "offset": 26436,
       "length": 56,
       "value": "\"Missing data response in retrieving site access points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 26534,
+      "offset": 26571,
       "length": 8,
       "value": "\"siteId\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 26809,
+      "offset": 26846,
       "length": 40,
       "value": "\"Failure to retrieve site access points\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 26920,
+      "offset": 26957,
       "length": 8,
       "value": "\"siteId\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 26969,
+      "offset": 27006,
       "length": 7,
       "value": "\"error\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Services\/BrivoSDKOnAir.swift",
       "kind": "StringLiteral",
-      "offset": 27336,
+      "offset": 27373,
       "length": 2,
       "value": "\"\""
     },

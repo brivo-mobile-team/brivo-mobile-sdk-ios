@@ -3372,6 +3372,359 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "IneligibilityReason",
+        "printedName": "IneligibilityReason",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLEAllegion.IneligibilityReason.Type) -> BrivoBLEAllegion.IneligibilityReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IneligibilityReason",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                    "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IneligibilityReason",
+                        "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                        "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO4noneyA2CmF",
+            "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO4noneyA2CmF",
+            "moduleName": "BrivoBLEAllegion"
+          },
+          {
+            "kind": "Var",
+            "name": "noControlLockId",
+            "printedName": "noControlLockId",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLEAllegion.IneligibilityReason.Type) -> BrivoBLEAllegion.IneligibilityReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IneligibilityReason",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                    "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IneligibilityReason",
+                        "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                        "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO15noControlLockIdyA2CmF",
+            "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO15noControlLockIdyA2CmF",
+            "moduleName": "BrivoBLEAllegion"
+          },
+          {
+            "kind": "Var",
+            "name": "syncApiFailure",
+            "printedName": "syncApiFailure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLEAllegion.IneligibilityReason.Type) -> BrivoBLEAllegion.IneligibilityReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IneligibilityReason",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                    "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IneligibilityReason",
+                        "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                        "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO14syncApiFailureyA2CmF",
+            "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO14syncApiFailureyA2CmF",
+            "moduleName": "BrivoBLEAllegion"
+          },
+          {
+            "kind": "Var",
+            "name": "accessFailed",
+            "printedName": "accessFailed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLEAllegion.IneligibilityReason.Type) -> BrivoBLEAllegion.IneligibilityReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IneligibilityReason",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                    "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IneligibilityReason",
+                        "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                        "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO12accessFailedyA2CmF",
+            "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO12accessFailedyA2CmF",
+            "moduleName": "BrivoBLEAllegion"
+          },
+          {
+            "kind": "Var",
+            "name": "noAccessPayload",
+            "printedName": "noAccessPayload",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoBLEAllegion.IneligibilityReason.Type) -> BrivoBLEAllegion.IneligibilityReason",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IneligibilityReason",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                    "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "IneligibilityReason",
+                        "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                        "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO15noAccessPayloadyA2CmF",
+            "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO15noAccessPayloadyA2CmF",
+            "moduleName": "BrivoBLEAllegion"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoBLEAllegion.IneligibilityReason?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IneligibilityReason",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                    "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO8rawValueACSgSS_tcfc",
+            "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO8rawValueACSgSS_tcfc",
+            "moduleName": "BrivoBLEAllegion",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO8rawValueSSvp",
+            "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO8rawValueSSvp",
+            "moduleName": "BrivoBLEAllegion",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO8rawValueSSvg",
+                "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO8rawValueSSvg",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO",
+        "mangledName": "$s16BrivoBLEAllegion19IneligibilityReasonO",
+        "moduleName": "BrivoBLEAllegion",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "LockStatus",
         "printedName": "LockStatus",
         "children": [
@@ -3462,6 +3815,91 @@
           },
           {
             "kind": "Var",
+            "name": "ineligibilityReason",
+            "printedName": "ineligibilityReason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "IneligibilityReason",
+                "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV19ineligibilityReasonAA013IneligibilityF0Ovp",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV19ineligibilityReasonAA013IneligibilityF0Ovp",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IneligibilityReason",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                    "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV19ineligibilityReasonAA013IneligibilityF0Ovg",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV19ineligibilityReasonAA013IneligibilityF0Ovg",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "IneligibilityReason",
+                    "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                    "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV19ineligibilityReasonAA013IneligibilityF0Ovs",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV19ineligibilityReasonAA013IneligibilityF0Ovs",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV19ineligibilityReasonAA013IneligibilityF0OvM",
+                "mangledName": "$s16BrivoBLEAllegion10LockStatusV19ineligibilityReasonAA013IneligibilityF0OvM",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isEligible",
             "printedName": "isEligible",
             "children": [
@@ -3477,10 +3915,8 @@
             "mangledName": "$s16BrivoBLEAllegion10LockStatusV10isEligibleSbvp",
             "moduleName": "BrivoBLEAllegion",
             "declAttributes": [
-              "HasStorage",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -3498,57 +3934,14 @@
                 "usr": "s:16BrivoBLEAllegion10LockStatusV10isEligibleSbvg",
                 "mangledName": "$s16BrivoBLEAllegion10LockStatusV10isEligibleSbvg",
                 "moduleName": "BrivoBLEAllegion",
-                "implicit": true,
                 "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoBLEAllegion10LockStatusV10isEligibleSbvs",
-                "mangledName": "$s16BrivoBLEAllegion10LockStatusV10isEligibleSbvs",
-                "moduleName": "BrivoBLEAllegion",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoBLEAllegion10LockStatusV10isEligibleSbvM",
-                "mangledName": "$s16BrivoBLEAllegion10LockStatusV10isEligibleSbvM",
-                "moduleName": "BrivoBLEAllegion",
-                "implicit": true,
-                "accessorKind": "_modify"
               }
             ]
           },
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(lockId:isEligible:)",
+            "printedName": "init(lockId:ineligibilityReason:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3564,70 +3957,20 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
+                "name": "IneligibilityReason",
+                "printedName": "BrivoBLEAllegion.IneligibilityReason",
+                "hasDefaultArg": true,
+                "usr": "s:16BrivoBLEAllegion19IneligibilityReasonO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:16BrivoBLEAllegion10LockStatusV6lockId10isEligibleACSi_Sbtcfc",
-            "mangledName": "$s16BrivoBLEAllegion10LockStatusV6lockId10isEligibleACSi_Sbtcfc",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV6lockId19ineligibilityReasonACSi_AA013IneligibilityH0Otcfc",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV6lockId19ineligibilityReasonACSi_AA013IneligibilityH0Otcfc",
             "moduleName": "BrivoBLEAllegion",
             "declAttributes": [
               "AccessControl"
             ],
             "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "LockStatus",
-                "printedName": "BrivoBLEAllegion.LockStatus",
-                "usr": "s:16BrivoBLEAllegion10LockStatusV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16BrivoBLEAllegion10LockStatusV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s16BrivoBLEAllegion10LockStatusV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "BrivoBLEAllegion",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16BrivoBLEAllegion10LockStatusV6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s16BrivoBLEAllegion10LockStatusV6encode2toys7Encoder_p_tKF",
-            "moduleName": "BrivoBLEAllegion",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -3724,6 +4067,61 @@
             "moduleName": "BrivoBLEAllegion",
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LockStatus",
+                "printedName": "BrivoBLEAllegion.LockStatus",
+                "usr": "s:16BrivoBLEAllegion10LockStatusV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BrivoBLEAllegion",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoBLEAllegion10LockStatusV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16BrivoBLEAllegion10LockStatusV6encode2toys7Encoder_p_tKF",
+            "moduleName": "BrivoBLEAllegion",
+            "implicit": true,
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -3747,20 +4145,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
           },
           {
             "kind": "Conformance",
@@ -3789,6 +4173,20 @@
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },

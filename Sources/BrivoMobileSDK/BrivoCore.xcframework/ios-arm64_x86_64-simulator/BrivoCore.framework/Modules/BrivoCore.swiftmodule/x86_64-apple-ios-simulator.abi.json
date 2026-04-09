@@ -7946,6 +7946,264 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "AsyncCurrentValueSubject",
+        "printedName": "AsyncCurrentValueSubject",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC5valuexvp",
+            "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC5valuexvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC5valuexvg",
+                "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC5valuexvg",
+                "moduleName": "BrivoCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
+                "sugared_genericSig": "<Element where Element : Swift.Sendable>",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC5valuexvs",
+                "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC5valuexvs",
+                "moduleName": "BrivoCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
+                "sugared_genericSig": "<Element where Element : Swift.Sendable>",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC5valuexvM",
+                "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC5valuexvM",
+                "moduleName": "BrivoCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
+                "sugared_genericSig": "<Element where Element : Swift.Sendable>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "values",
+            "printedName": "values",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncStream",
+                "printedName": "_Concurrency.AsyncStream<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:ScS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC6valuesScSyxGvp",
+            "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC6valuesScSyxGvp",
+            "moduleName": "BrivoCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AsyncStream",
+                    "printedName": "_Concurrency.AsyncStream<τ_0_0>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ],
+                    "usr": "s:ScS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC6valuesScSyxGvg",
+                "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC6valuesScSyxGvg",
+                "moduleName": "BrivoCore",
+                "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
+                "sugared_genericSig": "<Element where Element : Swift.Sendable>",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(value:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AsyncCurrentValueSubject",
+                "printedName": "BrivoCore.AsyncCurrentValueSubject<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC5valueACyxGx_tcfc",
+            "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC5valueACyxGx_tcfc",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
+            "sugared_genericSig": "<Element where Element : Swift.Sendable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC4sendyyxF",
+            "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC4sendyyxF",
+            "moduleName": "BrivoCore",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
+            "sugared_genericSig": "<Element where Element : Swift.Sendable>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9BrivoCore24AsyncCurrentValueSubjectC",
+        "mangledName": "$s9BrivoCore24AsyncCurrentValueSubjectC",
+        "moduleName": "BrivoCore",
+        "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
+        "sugared_genericSig": "<Element where Element : Swift.Sendable>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "NFCUnlinkStatus",
         "printedName": "NFCUnlinkStatus",
         "children": [
@@ -16728,6 +16986,13 @@
       "offset": 415,
       "length": 1,
       "value": "9"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/AsyncCurrentValueSubject.swift",
+      "kind": "Dictionary",
+      "offset": 381,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/AccessPointCommunicationState.swift",

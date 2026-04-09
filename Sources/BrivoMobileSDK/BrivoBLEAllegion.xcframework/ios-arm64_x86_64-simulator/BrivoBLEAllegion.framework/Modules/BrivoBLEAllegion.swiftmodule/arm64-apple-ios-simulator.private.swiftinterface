@@ -149,17 +149,36 @@ extension BrivoBLEAllegion.Event : Swift.Sendable {
   #endif
   @objc deinit
 }
-public struct LockStatus : Swift.Codable, Swift.Equatable, Swift.Sendable, Swift.Hashable {
+public enum IneligibilityReason : Swift.String, Swift.Codable, Swift.Equatable, Swift.Sendable, Swift.Hashable {
+  case none
+  case noControlLockId
+  case syncApiFailure
+  case accessFailed
+  case noAccessPayload
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct LockStatus : Swift.Equatable, Swift.Sendable, Swift.Hashable {
   public var lockId: Swift.Int
-  public var isEligible: Swift.Bool
-  public init(lockId: Swift.Int, isEligible: Swift.Bool)
+  public var ineligibilityReason: BrivoBLEAllegion.IneligibilityReason
+  public var isEligible: Swift.Bool {
+    get
+  }
+  public init(lockId: Swift.Int, ineligibilityReason: BrivoBLEAllegion.IneligibilityReason = .none)
   public static func == (a: BrivoBLEAllegion.LockStatus, b: BrivoBLEAllegion.LockStatus) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+}
+extension BrivoBLEAllegion.LockStatus : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct AllegionSDKTokens : Swift.Codable {
   public var idToken: Swift.String
@@ -172,3 +191,4 @@ extension BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation : Swift.Equatable
 extension BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation : Swift.Hashable {}
 extension BrivoBLEAllegion.RefreshType : Swift.Equatable {}
 extension BrivoBLEAllegion.RefreshType : Swift.Hashable {}
+extension BrivoBLEAllegion.IneligibilityReason : Swift.RawRepresentable {}

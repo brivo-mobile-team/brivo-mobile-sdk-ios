@@ -287,6 +287,18 @@ final public class Atomic<Value> : Swift.Sendable where Value : Swift.Sendable {
   final public func modify<T>(_ block: @Sendable (inout Value) throws -> T) rethrows -> T where T : Swift.Sendable
   @objc deinit
 }
+public class AsyncCurrentValueSubject<Element> : @unchecked Swift.Sendable where Element : Swift.Sendable {
+  public var value: Element {
+    get
+    set
+  }
+  public var values: _Concurrency.AsyncStream<Element> {
+    get
+  }
+  public init(value: Element)
+  public func send(_ element: Element)
+  @objc deinit
+}
 public enum NFCUnlinkStatus : Swift.Equatable {
   case successfullyUnlinked
   case nothingToUnlink

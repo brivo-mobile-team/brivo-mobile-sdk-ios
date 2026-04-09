@@ -8167,6 +8167,53 @@
           },
           {
             "kind": "Var",
+            "name": "trustedNetworkLocationPermissionNotGranted",
+            "printedName": "trustedNetworkLocationPermissionNotGranted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO07trustedB28LocationPermissionNotGrantedSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO07trustedB28LocationPermissionNotGrantedSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO07trustedB28LocationPermissionNotGrantedSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO07trustedB28LocationPermissionNotGrantedSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "other",
             "printedName": "other",
             "children": [
@@ -9443,133 +9490,140 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
-      "offset": 4817,
+      "offset": 4854,
       "length": 5,
       "value": "-3010"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4890,
+      "length": 5,
+      "value": "-3011"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 4936,
+      "offset": 5009,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5029,
+      "offset": 5102,
       "length": 21,
       "value": "\"Server call failed.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5140,
+      "offset": 5213,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5242,
+      "offset": 5315,
       "length": 30,
       "value": "\"Authentication missing data.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5358,
+      "offset": 5431,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5456,
+      "offset": 5529,
       "length": 26,
       "value": "\"Redeem pass missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5574,
+      "offset": 5647,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5676,
+      "offset": 5749,
       "length": 35,
       "value": "\"SDK is set to not use SDK storage\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5795,
+      "offset": 5868,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5891,
+      "offset": 5964,
       "length": 24,
       "value": "\"Get sites missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6006,
+      "offset": 6079,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6109,
+      "offset": 6182,
       "length": 32,
       "value": "\"Get access points missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6234,
+      "offset": 6307,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6339,
+      "offset": 6412,
       "length": 34,
       "value": "\"Control Lock config missing data\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6450,
+      "offset": 6523,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6545,
+      "offset": 6618,
       "length": 23,
       "value": "\"Refresh token failed.\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6662,
+      "offset": 6735,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6768,
+      "offset": 6841,
       "length": 29,
       "value": "\"Refresh already in progress\""
     }

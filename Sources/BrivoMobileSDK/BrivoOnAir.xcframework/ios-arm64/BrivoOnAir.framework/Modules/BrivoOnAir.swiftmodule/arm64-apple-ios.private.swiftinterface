@@ -5,6 +5,7 @@
 import BrivoCore
 import BrivoNetworkCore
 @_exported import BrivoOnAir
+import CoreLocation
 import Foundation
 import NetworkExtension
 import Swift

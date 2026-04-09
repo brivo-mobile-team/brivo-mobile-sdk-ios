@@ -2272,7 +2272,8 @@
             "mangledName": "$s11BrivoAccess0A9SDKAccessC18refreshCredentials6passesAA07RefreshE6ResultVSay0A5OnAir0A9OnairPassCG_tYaF",
             "moduleName": "BrivoAccess",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
