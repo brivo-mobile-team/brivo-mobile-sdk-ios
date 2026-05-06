@@ -42,14 +42,19 @@ extension BrivoBLEAllegion.BrivoSDKBLEAllegion {
     case failure(BrivoCore.SyncErrorInfo)
     public static func == (a: BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus, b: BrivoBLEAllegion.BrivoSDKBLEAllegion.SynchroniseStatus) -> Swift.Bool
   }
-  public enum ActiveOperation : Swift.Sendable {
+  public enum ActiveOperation : Swift.String, Swift.Sendable, Swift.CustomStringConvertible {
     case none
     case initialising
     case refreshing
     case unlocking
-    public static func == (a: BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation, b: BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
+    public var description: Swift.String {
+      get
+    }
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init?(rawValue: Swift.String)
+    #endif
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
       get
     }
   }
@@ -189,6 +194,7 @@ public struct AllegionSDKTokens : Swift.Codable {
 extension BrivoBLEAllegion.BrivoSDKBLEAllegion.InitializationStatus : Swift.Hashable {}
 extension BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation : Swift.Equatable {}
 extension BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation : Swift.Hashable {}
+extension BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation : Swift.RawRepresentable {}
 extension BrivoBLEAllegion.RefreshType : Swift.Equatable {}
 extension BrivoBLEAllegion.RefreshType : Swift.Hashable {}
 extension BrivoBLEAllegion.IneligibilityReason : Swift.RawRepresentable {}

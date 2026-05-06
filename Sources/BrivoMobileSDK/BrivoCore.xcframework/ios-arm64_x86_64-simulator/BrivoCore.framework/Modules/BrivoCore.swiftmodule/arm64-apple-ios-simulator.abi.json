@@ -7079,6 +7079,43 @@
           },
           {
             "kind": "Var",
+            "name": "hidOrigoOmnikey",
+            "printedName": "hidOrigoOmnikey",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoCore.DoorType.Type) -> BrivoCore.DoorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DoorType",
+                    "printedName": "BrivoCore.DoorType",
+                    "usr": "s:9BrivoCore8DoorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoCore.DoorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DoorType",
+                        "printedName": "BrivoCore.DoorType",
+                        "usr": "s:9BrivoCore8DoorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:9BrivoCore8DoorTypeO15hidOrigoOmnikeyyA2CmF",
+            "mangledName": "$s9BrivoCore8DoorTypeO15hidOrigoOmnikeyyA2CmF",
+            "moduleName": "BrivoCore"
+          },
+          {
+            "kind": "Var",
             "name": "dormakaba",
             "printedName": "dormakaba",
             "children": [
@@ -16962,30 +16999,37 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 351,
+      "offset": 357,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 371,
+      "offset": 380,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 396,
+      "offset": 400,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
       "kind": "IntegerLiteral",
-      "offset": 415,
+      "offset": 425,
       "length": 1,
       "value": "9"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Enums\/DoorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 444,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/AsyncCurrentValueSubject.swift",

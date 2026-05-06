@@ -43,6 +43,10 @@ public struct BrivoOnAirResponse {
   public var data: Foundation.Data?
   public var dataDictionary: [Swift.String : Any]?
   public var status: BrivoNetworkCore.BrivoOnAirResponseStatus?
+  public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(data: Foundation.Data?, status: BrivoNetworkCore.BrivoOnAirResponseStatus = BrivoOnAirResponseStatus())
+  #endif
 }
 @objc open class BrivoHTTPSRequest : ObjectiveC.NSObject {
   public typealias CompletionType = (BrivoNetworkCore.BrivoOnAirResponse?, BrivoCore.BrivoTokens?) -> Swift.Void
@@ -52,7 +56,7 @@ public struct BrivoOnAirResponse {
   public init(authUrl: Swift.String? = nil, authValue: Swift.String? = nil, tokenRefresher: (any BrivoCore.TokenRefresher)? = nil, timeoutIntervalForRequest: Foundation.TimeInterval? = BrivoNetworkCoreConstants.sessionRequestTimeoutInterval)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func performRequest(requestInfo: BrivoNetworkCore.HTTPSRequestInfo, completion: BrivoNetworkCore.BrivoHTTPSRequest.CompletionType? = nil)
+  open func performRequest(requestInfo: BrivoNetworkCore.HTTPSRequestInfo, completion: BrivoNetworkCore.BrivoHTTPSRequest.CompletionType? = nil)
   #endif
   public func cancel()
   open func shouldTokenBeRefreshed(responseStatus: BrivoNetworkCore.BrivoOnAirResponseStatus, requestURL: Swift.String) -> Swift.Bool
@@ -138,6 +142,7 @@ public enum BrivoNetworkCoreEndPoint : Swift.String {
   case readerCommands
   case setLevel
   case engageAppToken
+  case resideoIntegration
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif

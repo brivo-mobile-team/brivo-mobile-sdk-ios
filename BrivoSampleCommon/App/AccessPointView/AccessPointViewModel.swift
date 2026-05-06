@@ -23,6 +23,7 @@ class AccessPointViewModel {
         formatter.unitStyle = .medium
         return formatter
     }()
+    private let hidOrigoTypes: [DoorType] = [.hidOrigo, .hidOrigoOmnikey]
 
     let siteName: String
     private(set) var accessPointItems: [AccessPointItem] = []
@@ -75,13 +76,13 @@ class AccessPointViewModel {
 
     func makeAccessPointItems(from brivoSite: BrivoSite) -> [AccessPointItem] {
         brivoSite.accessPoints?
-            .filter { $0.getDoorType(from: brivoOnAirPass) != .hidOrigo }
+            .filter { !hidOrigoTypes.contains($0.getDoorType(from: brivoOnAirPass)) }
             .map { AccessPointItem(id: $0.id, name: $0.name ?? "", bleOpening: $0.bluetoothReader != nil, backingData: $0) } ?? []
     }
 
     func makeOrigoAccessPointItems(from brivoSite: BrivoSite) -> [AccessPointItem] {
         brivoSite.accessPoints?
-            .filter { $0.getDoorType(from: brivoOnAirPass) == .hidOrigo }
+            .filter { hidOrigoTypes.contains($0.getDoorType(from: brivoOnAirPass)) }
             .map { AccessPointItem(id: $0.id, name: $0.name ?? "", bleOpening: $0.bluetoothReader != nil, backingData: $0) } ?? []
     }
 

@@ -71,7 +71,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		A6/tRVKcD8AkXCl0/dbfIqTr4AI=
+		sAKk/OCjM8NBEmsDaRi+c2z6pLM=
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -91,7 +91,7 @@
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KtQvvJqOzsBKL5J/NUAFpMuymuU=
+		TnQxK2vQs2lgU1GOMYQXBhaktzg=
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -111,7 +111,7 @@
 		</data>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		yfuOWzFDStrVu8XbJcWYRTJTBLs=
+		7Ntt/Kke/XAk2ds29wEGqbQfRPk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,7 +119,7 @@
 		</data>
 		<key>OrigoSDK-Release_Privacy.bundle/Info.plist</key>
 		<data>
-		vwKSJmC+Tp7a0/WKb58pbQF2UPg=
+		iOGh6FPU8vj1ig0X1C2isFvhCfg=
 		</data>
 		<key>PrivacyInfo.xcprivacy</key>
 		<data>
@@ -127,7 +127,7 @@
 		</data>
 		<key>SeosMobileKeysSDK-Release_Privacy.bundle/Info.plist</key>
 		<data>
-		0TpefIlBnueVkSJsB+ymGsUha5U=
+		M0m+7UtbjdQyIf+JRv5tLHNryHc=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -271,7 +271,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I40tmYV6iJQ/dzhPFVTFw75qeiDse5DzdULOiGQeWNI=
+			/yBpfhPYnKFZBzYm2y1A0P1bFTQDRIVB+5zJn2K14NQ=
 			</data>
 		</dict>
 		<key>Modules/BrivoAccess.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -306,7 +306,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M5bbQTqFYp3lglkf77O1W60oWeGB3+V2kGTm1ZwWSqA=
+			QscW+MqZp/4YBEjrFPDMu/rax5UF1h0GemaDFQAHXdA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -320,7 +320,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vQ4KK0gZMoVMUN0dpAiXZ5TH9vIbzcGv8ZjyDCIEymQ=
+			fkKMq+46w389jkbdWxu4rCrv4D5oQn1ZnugCv/ItWZU=
 			</data>
 		</dict>
 		<key>PrivacyInfo.xcprivacy</key>
@@ -334,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ofspxcQTirOmGtoRTOKeNGGRXwjWT4RjdN/y7haqMEk=
+			JaTpJhgTQEZjSuXzuYlS/v5Hgx8bWu5bucu1hnIvJvM=
 			</data>
 		</dict>
 	</dict>

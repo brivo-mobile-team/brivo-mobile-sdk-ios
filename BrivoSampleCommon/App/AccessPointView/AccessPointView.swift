@@ -60,6 +60,8 @@ struct AccessPointView: View {
             if let selectedAccessPoint = stateModel.selectedAccessPoint(for: accessPointItem) {
                 let viewModel = AccessPointDetailsViewModel(selectedAccessPoint: selectedAccessPoint)
                 AccessPointDetailsView(stateModel: viewModel)
+                    .navigationTitle(accessPointItem.name)
+                    .navigationBarTitleDisplayMode(.inline)
             }
         }
         label: {

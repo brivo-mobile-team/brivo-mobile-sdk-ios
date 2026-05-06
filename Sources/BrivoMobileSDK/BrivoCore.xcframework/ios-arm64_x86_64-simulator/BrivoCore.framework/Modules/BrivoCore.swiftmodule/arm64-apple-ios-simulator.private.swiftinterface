@@ -254,6 +254,7 @@ public enum DoorType : Swift.Int, Swift.Codable {
   case wirelessLock
   case allegionBle
   case hidOrigo
+  case hidOrigoOmnikey
   case dormakaba
   case yonomi
   case realSyncBle

@@ -6,13 +6,20 @@
     "children": [
       {
         "kind": "Import",
-        "name": "BrivoOnAir",
-        "printedName": "BrivoOnAir",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "BrivoBLEAllegion",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoOnAir",
+        "printedName": "BrivoOnAir",
+        "declKind": "Import",
+        "moduleName": "BrivoBLEAllegion"
       },
       {
         "kind": "Import",
@@ -3098,52 +3105,93 @@
                 ]
               },
               {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ActiveOperation",
-                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
-                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ActiveOperation",
-                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
-                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO2eeoiySbAE_AEtFZ",
-                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO2eeoiySbAE_AEtFZ",
-                "moduleName": "BrivoBLEAllegion",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
                 "kind": "Var",
-                "name": "hashValue",
-                "printedName": "hashValue",
+                "name": "description",
+                "printedName": "description",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Var",
-                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9hashValueSivp",
-                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9hashValueSivp",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO11descriptionSSvp",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO11descriptionSSvp",
+                "moduleName": "BrivoBLEAllegion",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO11descriptionSSvg",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO11descriptionSSvg",
+                    "moduleName": "BrivoBLEAllegion",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActiveOperation",
+                        "printedName": "BrivoBLEAllegion.BrivoSDKBLEAllegion.ActiveOperation",
+                        "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO8rawValueAESgSS_tcfc",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO8rawValueAESgSS_tcfc",
+                "moduleName": "BrivoBLEAllegion",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO8rawValueSSvp",
+                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO8rawValueSSvp",
                 "moduleName": "BrivoBLEAllegion",
                 "implicit": true,
                 "accessors": [
@@ -3154,44 +3202,19 @@
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
                       }
                     ],
                     "declKind": "Accessor",
-                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9hashValueSivg",
-                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO9hashValueSivg",
+                    "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO8rawValueSSvg",
+                    "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO8rawValueSSvg",
                     "moduleName": "BrivoBLEAllegion",
                     "implicit": true,
                     "accessorKind": "get"
                   }
                 ]
-              },
-              {
-                "kind": "Function",
-                "name": "hash",
-                "printedName": "hash(into:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Hasher",
-                    "printedName": "Swift.Hasher",
-                    "paramValueOwnership": "InOut",
-                    "usr": "s:s6HasherV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO4hash4intoys6HasherVz_tF",
-                "mangledName": "$s16BrivoBLEAllegion0A14SDKBLEAllegionC15ActiveOperationO4hash4intoys6HasherVz_tF",
-                "moduleName": "BrivoBLEAllegion",
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
               }
             ],
             "declKind": "Enum",
@@ -3203,6 +3226,7 @@
               "RawDocComment"
             ],
             "isFromExtension": true,
+            "enumRawTypeName": "String",
             "conformances": [
               {
                 "kind": "Conformance",
@@ -3234,10 +3258,39 @@
               },
               {
                 "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Sendable",
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
               },
               {
                 "kind": "Conformance",
@@ -4790,7 +4843,7 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoBLEAllegion\/BrivoBLEAllegion\/Models\/BrivoSDKBLEAllegion+State.swift",
       "kind": "Dictionary",
-      "offset": 1426,
+      "offset": 1327,
       "length": 3,
       "value": "[]"
     },

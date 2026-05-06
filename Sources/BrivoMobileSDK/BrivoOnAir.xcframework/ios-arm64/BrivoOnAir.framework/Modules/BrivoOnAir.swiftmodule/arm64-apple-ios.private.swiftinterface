@@ -133,43 +133,15 @@ extension BrivoOnAir.BrivoOnairPass {
     get
     set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public var brivoOnAirHTTPSRequest: BrivoNetworkCore.BrivoHTTPSRequest? {
     get
-    set
   }
-  #endif
   public static func instance() throws -> BrivoOnAir.BrivoSDKOnAir
   #if compiler(>=5.3) && $NonescapableTypes
-  public func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<(BrivoCore.BrivoTokens?, BrivoNetworkCore.BrivoOnAirResponseStatus?), BrivoCore.BrivoError>
+  public func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<BrivoCore.BrivoTokens?, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func redeemPass(passId: Swift.String, passCode: Swift.String) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func redeemPass(tokens: BrivoCore.BrivoTokens, onSuccess: BrivoOnAir.RedeemPassOnSuccessType?, onFailure: BrivoOnAir.OnFailureType?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func retrieveSites(tokens: BrivoCore.BrivoTokens, offset: Swift.Int = 0, siteName: Swift.String?) async -> Swift.Result<BrivoOnAir.BrivoSites, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(*, deprecated, message: "Use retrieveSites(tokens:siteName:offset:) instead")
-  public func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoAccessPoint, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String) async -> Swift.Result<BrivoCore.BrivoResult, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func unlockAccessPoint(tokens: BrivoCore.BrivoTokens?, passId: Swift.String, accessPointId: Swift.String, accessPointPath: BrivoCore.AccessPointPath?) -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func refreshPass(brivoTokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
@@ -178,37 +150,45 @@ extension BrivoOnAir.BrivoOnairPass {
   public func retrieveSDKLocallyStoredPasses() async -> Swift.Result<[BrivoOnAir.BrivoOnairPass], BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  public func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func retrieveSites(tokens: BrivoCore.BrivoTokens, offset: Swift.Int, siteName: Swift.String?) async -> Swift.Result<BrivoOnAir.BrivoSites, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use retrieveSites(tokens:offset:siteName:) instead")
+  public func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "This method may be removed in a future release.")
+  public func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoAccessPoint, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func unlockAccessPoint(tokens: BrivoCore.BrivoTokens?, passId: Swift.String, accessPointId: Swift.String, accessPointPath: BrivoCore.AccessPointPath?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String) async -> Swift.Result<BrivoCore.BrivoResult, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func controlLockUnlock(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  public func controlLockConfig(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoCore.BrivoControlLockConfigRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func controlLockConfigSave(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, controlLockConfigSaveResponse: BrivoOnAir.BrivoControlLockConfigSaveResponse) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
+  public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func getReaderCommands(tokens: BrivoCore.BrivoTokens, accessPointIds: [Swift.String]) async -> Swift.Result<[BrivoOnAir.BrivoReaderCommand], BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func engageReaderCommand(tokens: BrivoCore.BrivoTokens, readerId: Swift.String, passId: Swift.String, option: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func createAccessPoint(accessToken: Swift.String, siteId: Swift.Int, serialNumber: Swift.String, name: Swift.String, deviceType: Swift.String) async -> Swift.Result<Swift.Int, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func deleteAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func renameAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.Int, name: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public func setBrivoThermostatSettings(brivoTokens: BrivoCore.BrivoTokens, ilAccountIntegrationId: Swift.Int, deviceObjectId: Swift.Int, body: BrivoOnAir.BrivoThermostatUpdateSettingsBody) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
@@ -299,7 +279,10 @@ public struct BrivoThermostatSettings : Swift.Decodable, Swift.Equatable {
   final public let controlLockGroups: [BrivoOnAir.BrivoLockControlGroup]?
   public var isDoorStation: Swift.Bool
   public var schedules: [BrivoOnAir.BrivoSchedules]?
-  public var readerType: BrivoOnAir.BrivoReaderType
+  public var readerType: BrivoOnAir.BrivoReaderType {
+    get
+  }
+  public var readerTypeRaw: Swift.String?
   public var sendEvents: Swift.Bool
   public var yonomiLock: BrivoOnAir.BrivoYonomiLock?
   #if compiler(>=5.3) && $NonescapableTypes
@@ -318,6 +301,8 @@ extension BrivoOnAir.BrivoAccessPoint {
 public enum BrivoReaderType : Swift.String, Swift.Codable {
   case none
   case hidOrigo
+  case hidOrigoOmnikey
+  case unsupported
   #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
   #endif
@@ -506,26 +491,8 @@ public struct BrivoThermostat : Swift.Codable, Swift.Equatable {
   public func encode(to encoder: any Swift.Encoder) throws
   @objc deinit
 }
-public typealias RedeemPassOnSuccessType = (BrivoOnAir.BrivoOnairPass?) -> Swift.Void
-public typealias RetrieveSitesOnSuccessType = ([BrivoOnAir.BrivoSite]) -> Swift.Void
-public typealias RetrieveSitesPaginatedOnSuccessType = (BrivoOnAir.BrivoSites) -> Swift.Void
-public typealias RetrieveSiteDetailsOnSuccessType = (BrivoOnAir.BrivoSite) -> Swift.Void
-public typealias RetrieveSiteAccessPointsOnSuccessType = ([BrivoOnAir.BrivoAccessPoint]) -> Swift.Void
-public typealias RetrieveAccessPointDetailsOnSuccessType = (BrivoOnAir.BrivoAccessPoint) -> Swift.Void
-public typealias UnlockAccessPointOnSuccessType = () -> Swift.Void
-public typealias RefreshPassOnSuccessType = (BrivoOnAir.BrivoOnairPass?) -> Swift.Void
-public typealias RetrieveSDKLocallyStoredPassesOnSuccess = ([BrivoOnAir.BrivoOnairPass]) -> Swift.Void
-public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
-public typealias ControlLockUnlockOnSuccessType = (Swift.String?) -> Swift.Void
-public typealias ControlLockConfigOnSuccessType = (Swift.String?) -> Swift.Void
-public typealias ControlLockConfigSaveOnSuccessType = (Swift.String?) -> Swift.Void
-public typealias CurrentAdministratorOnSuccessType = (_ admin: BrivoOnAir.BrivoOnAirAdministrator?) -> Swift.Void
-public typealias AuthenticateCompletionType = (_ tokens: BrivoCore.BrivoTokens?, _ status: BrivoNetworkCore.BrivoOnAirResponseStatus?) -> Swift.Void
-public typealias OnAuthenticationFailureType = (BrivoNetworkCore.BrivoOnAirResponseStatus?) -> Swift.Void
 public typealias OnRefreshTokenFailureType = (BrivoCore.BrivoError?) -> Swift.Void
 public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
-public typealias OnGetReaderCommandCompletionType = ([BrivoOnAir.BrivoReaderCommand]) -> Swift.Void
-public typealias OnSuccessType = () -> Swift.Void
 public protocol IBrivoSDKOnAir {
   #if compiler(>=5.3) && $NonescapableTypes
   var brivoOnAirHTTPSRequest: BrivoNetworkCore.BrivoHTTPSRequest? { get }
@@ -534,7 +501,7 @@ public protocol IBrivoSDKOnAir {
   var onRefreshTokenFailed: BrivoOnAir.OnRefreshTokenFailureType? { get set }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<(BrivoCore.BrivoTokens?, BrivoNetworkCore.BrivoOnAirResponseStatus?), BrivoCore.BrivoError>
+  func authenticate(credential: BrivoOnAir.BrivoOnAirCredentials) async -> Swift.Result<BrivoCore.BrivoTokens?, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   func redeemPass(passId: Swift.String, passCode: Swift.String) async -> Swift.Result<BrivoOnAir.BrivoOnairPass?, BrivoCore.BrivoError>
@@ -558,26 +525,17 @@ public protocol IBrivoSDKOnAir {
   func controlLockUnlockStatus(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoOnAir.BrivoControlLockUnlockStatusRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
-  @available(*, deprecated, message: "Use retrieveSites(tokens:offset:siteName:) instead")
-  func retrieveSites(tokens: BrivoCore.BrivoTokens, siteName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoSite], BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func retrieveSites(tokens: BrivoCore.BrivoTokens, offset: Swift.Int, siteName: Swift.String?) async -> Swift.Result<BrivoOnAir.BrivoSites, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   func retrieveSiteDetails(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoSite, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use retrieveSites(tokens:offset:siteName:) instead")
   func retrieveSiteAccessPoints(tokens: BrivoCore.BrivoTokens, siteId: Swift.Int, accessPointName: Swift.String?) async -> Swift.Result<[BrivoOnAir.BrivoAccessPoint], BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   func retrieveAccessPointDetails(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.Int) async -> Swift.Result<BrivoOnAir.BrivoAccessPoint, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func controlLockConfig(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, body: BrivoCore.BrivoControlLockConfigRequestBody) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func controlLockConfigSave(tokens: BrivoCore.BrivoTokens, accessPointId: Swift.String, controlLockConfigSaveResponse: BrivoOnAir.BrivoControlLockConfigSaveResponse) async -> Swift.Result<Swift.String?, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   func getCurrentAdministrator(tokens: BrivoCore.BrivoTokens) async -> Swift.Result<BrivoOnAir.BrivoOnAirAdministrator?, BrivoCore.BrivoError>
@@ -590,15 +548,6 @@ public protocol IBrivoSDKOnAir {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   func getBLESecurityConfig(accessToken: Swift.String, deviceUUID: Swift.String, siteId: Swift.String) async -> Swift.Result<BrivoOnAir.BLESecurityConfigResponse, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func createAccessPoint(accessToken: Swift.String, siteId: Swift.Int, serialNumber: Swift.String, name: Swift.String, deviceType: Swift.String) async -> Swift.Result<Swift.Int, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func deleteAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  func renameAccessPoint(accessToken: Swift.String, siteId: Swift.Int, deviceId: Swift.Int, name: Swift.String) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   func setBrivoThermostatSettings(brivoTokens: BrivoCore.BrivoTokens, ilAccountIntegrationId: Swift.Int, deviceObjectId: Swift.Int, body: BrivoOnAir.BrivoThermostatUpdateSettingsBody) async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
