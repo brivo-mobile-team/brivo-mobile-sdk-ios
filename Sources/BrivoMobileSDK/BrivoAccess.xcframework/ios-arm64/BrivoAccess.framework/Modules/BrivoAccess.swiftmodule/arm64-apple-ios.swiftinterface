@@ -1,19 +1,21 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios17 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoAccess
+// swift-module-flags: -target arm64-apple-ios17.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoAccess
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import BrivoBLE
 import BrivoCore
 import BrivoLocalAuthentication
 import BrivoOnAir
 import CoreBluetooth.CBManager
+import Combine
 import CoreBluetooth
 import Foundation
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@objc @_inheritsConvenienceInitializers public class BrivoSDKAccessErrors : ObjectiveC.NSObject {
+public enum BrivoSDKAccessErrors {
   public static let unknownError: BrivoCore.BrivoError
   public static let notInitializedError: BrivoCore.BrivoError
   public static let notConfiguredForLocalStorageError: BrivoCore.BrivoError
@@ -25,16 +27,27 @@ import _SwiftConcurrencyShims
   public static let missingNetworkConnectionError: BrivoCore.BrivoError
   public static let missingReaderUUIDError: BrivoCore.BrivoError
   public static let accessPointUnsupportedDoorType: BrivoCore.BrivoError
-  public static let accessPointDoesNotSupportInternetUnlock: BrivoCore.BrivoError
   public static func brivoErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
-  @objc override dynamic public init()
-  @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func couldNotRetrieveBluetoothCredentialFromOnAir(_ reason: Swift.String?) -> BrivoCore.BrivoError
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func couldNotProvideBLETransactionResultToOnAir(_ reason: Swift.String?) -> BrivoCore.BrivoError
+  #endif
+  public static let missingPassCredential: BrivoCore.BrivoError
+  public static let accessPointNotAvailableInProximity: BrivoCore.BrivoError
 }
-public enum UnlockStrategy {
-  case forceInternetUnlockforBrivoDoors
-  public static func == (a: BrivoAccess.UnlockStrategy, b: BrivoAccess.UnlockStrategy) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+public enum SDKModule : Swift.String {
+  case brivo
+  case allegion
+  case hidOrigo
+  case dormakaba
+  case salto
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -55,8 +68,12 @@ public struct RefreshCredentialsResult {
   public init(result: [BrivoAccess.RefreshCredentialErrorType : [BrivoCore.BrivoError]])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoSDKAccess : ObjectiveC.NSObject, BrivoAccess.IBrivoSDKAccess {
-  public static func instance() -> BrivoAccess.BrivoSDKAccess
+  @_Concurrency.MainActor public static func instance() -> BrivoAccess.BrivoSDKAccess
   public var onBluetoothStateUpdated: ((CoreBluetooth.CBManagerState) -> Swift.Void)? {
+    get
+    set
+  }
+  @_Concurrency.MainActor public var continuousScannerService: BrivoAccess.ContinuousScannerService {
     get
     set
   }
@@ -86,13 +103,58 @@ public struct RefreshCredentialsResult {
   public func unlockNearestBLEAccessPoint(cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   #endif
   public func refreshCredentials(passes: [BrivoOnAir.BrivoOnairPass]) async -> BrivoAccess.RefreshCredentialsResult
+  @_Concurrency.MainActor public func startScanForNearbyDevices(passes: [BrivoOnAir.BrivoOnairPass]) throws -> _Concurrency.AsyncStream<BrivoAccess.ContinuousScannerEvent>
+  public func startScanForNearbyDevicesWithSDKStorage() async throws -> _Concurrency.AsyncStream<BrivoAccess.ContinuousScannerEvent>
+  @_Concurrency.MainActor public func stopScanForNearbyDevices()
+  public func unlockDiscoveredAccessPoint(device: BrivoCore.NearbyDevice) -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   @objc deinit
+}
+public enum ScannerError : Swift.Error, Swift.Equatable {
+  case scanAlreadyInProgress
+  case missingValidAccessPointsForContinuousScan
+  case providerFailed(provider: BrivoAccess.SDKModule, underlyingError: any Swift.Error)
+  public static func == (lhs: BrivoAccess.ScannerError, rhs: BrivoAccess.ScannerError) -> Swift.Bool
+}
+public enum ContinuousScannerEvent : Swift.Equatable {
+  case stateChanged(BrivoAccess.ScannerState)
+  case devicesUpdated([BrivoCore.NearbyDevice])
+  case error(BrivoAccess.ScannerError)
+  public static func == (a: BrivoAccess.ContinuousScannerEvent, b: BrivoAccess.ContinuousScannerEvent) -> Swift.Bool
+}
+public enum ScannerState : Swift.Equatable {
+  case idle
+  case scanning
+  case paused
+  case waitingForBluetooth(reason: Swift.String)
+  public static func == (a: BrivoAccess.ScannerState, b: BrivoAccess.ScannerState) -> Swift.Bool
+}
+@objc public class ContinuousScannerService : ObjectiveC.NSObject {
+  public var scannerState: BrivoAccess.ScannerState
+  public init(bleConnectionManager: BrivoBLE.BLEConnectionManagerV2)
+  public func stopScanning()
+  public func startScanning(credentials: [BrivoBLE.BrivoBLECredential]) -> _Concurrency.AsyncStream<BrivoAccess.ContinuousScannerEvent>
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getOriginalBrivoValidBLEDevice(for deviceId: Swift.Int) -> BrivoBLE.ValidBLEDevice?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getOriginalBrivoDevice(for deviceId: Swift.Int) -> BrivoCore.NearbyDevice?
+  #endif
+  @objc deinit
+}
+public struct GenericUmbrellaDevice : Swift.Identifiable {
+  public var id: Swift.Int {
+    get
+  }
+  public let genericDevice: BrivoCore.NearbyDevice
+  public let proprietaryDevice: BrivoAccess.ProprietaryDeviceType
+  public init(genericDevice: BrivoCore.NearbyDevice, proprietaryDevice: BrivoAccess.ProprietaryDeviceType)
+  public typealias ID = Swift.Int
 }
 public typealias ControlLockUnlockOnSuccessType = (Swift.String?) -> Swift.Void
 public typealias OnUnlockAccessPointSuccessType = () -> Swift.Void
 public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
 public protocol IBrivoSDKAccess {
-  static func instance() -> BrivoAccess.BrivoSDKAccess
+  @_Concurrency.MainActor static func instance() -> BrivoAccess.BrivoSDKAccess
   #if compiler(>=5.3) && $NonescapableTypes
   func unlockAccessPoint(selectedAccessPoint: BrivoOnAir.BrivoSelectedAccessPoint, unlockStrategy: BrivoAccess.UnlockStrategy?, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   #endif
@@ -114,6 +176,10 @@ public protocol IBrivoSDKAccess {
   #if compiler(>=5.3) && $NonescapableTypes
   func unlockNearestBLEAccessPoint(cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   #endif
+  @_Concurrency.MainActor func startScanForNearbyDevices(passes: [BrivoOnAir.BrivoOnairPass]) throws -> _Concurrency.AsyncStream<BrivoAccess.ContinuousScannerEvent>
+  func startScanForNearbyDevicesWithSDKStorage() async throws -> _Concurrency.AsyncStream<BrivoAccess.ContinuousScannerEvent>
+  @_Concurrency.MainActor func stopScanForNearbyDevices()
+  func unlockDiscoveredAccessPoint(device: BrivoCore.NearbyDevice) -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   func turnOnCentral()
   func getBLEState() -> CoreBluetooth.CBManagerState
   func addBluetoothStateObserver(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
@@ -129,7 +195,32 @@ extension BrivoAccess.IBrivoSDKAccess {
   public func unlockAccessPoint(passId: Swift.String, accessPointId: Swift.String, cancellationSignal: BrivoCore.CancellationSignal?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
   #endif
 }
-extension BrivoAccess.UnlockStrategy : Swift.Equatable {}
-extension BrivoAccess.UnlockStrategy : Swift.Hashable {}
+public enum UnlockStrategy {
+  case forceInternetUnlockforBrivoDoors
+  public static func == (a: BrivoAccess.UnlockStrategy, b: BrivoAccess.UnlockStrategy) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension BrivoBLE.ValidBLEDevice {
+  public var toGenericUmbrellaDevice: BrivoAccess.GenericUmbrellaDevice {
+    get
+  }
+}
+extension BrivoCore.NearbyDevice {
+  public var toGenericUmbrellaDevice: BrivoAccess.GenericUmbrellaDevice {
+    get
+  }
+}
+public enum ProprietaryDeviceType {
+  case brivo(BrivoCore.NearbyDevice)
+  case allegion(BrivoCore.NearbyDevice)
+}
+extension BrivoAccess.SDKModule : Swift.Equatable {}
+extension BrivoAccess.SDKModule : Swift.Hashable {}
+extension BrivoAccess.SDKModule : Swift.RawRepresentable {}
 extension BrivoAccess.RefreshCredentialErrorType : Swift.Equatable {}
 extension BrivoAccess.RefreshCredentialErrorType : Swift.Hashable {}
+extension BrivoAccess.UnlockStrategy : Swift.Equatable {}
+extension BrivoAccess.UnlockStrategy : Swift.Hashable {}

@@ -2359,2122 +2359,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "SmartHomeTokens",
-        "printedName": "SmartHomeTokens",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "token",
-            "printedName": "token",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvp",
-            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvg",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvs",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvs",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvM",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvM",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "refreshToken",
-            "printedName": "refreshToken",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvp",
-            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvg",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvs",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvs",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvM",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvM",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "firebaseToken",
-            "printedName": "firebaseToken",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvp",
-            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvg",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvs",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvs",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvM",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvM",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "expiresOn",
-            "printedName": "expiresOn",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvp",
-            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvg",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvs",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvs",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvM",
-                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvM",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(token:refreshToken:firebaseToken:expiresOn:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SmartHomeTokens",
-                "printedName": "BrivoNetworkCore.SmartHomeTokens",
-                "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5token12refreshToken08firebaseI09expiresOnACSSSg_A3Htcfc",
-            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5token12refreshToken08firebaseI09expiresOnACSSSg_A3Htcfc",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SmartHomeTokens",
-                "printedName": "BrivoNetworkCore.SmartHomeTokens",
-                "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens(im)init",
-            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensCACycfc",
-            "moduleName": "BrivoNetworkCore",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "SmartHomeTokens",
-                "printedName": "BrivoNetworkCore.SmartHomeTokens",
-                "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "any Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC4fromACs7Decoder_p_tKcfc",
-            "moduleName": "BrivoNetworkCore",
-            "implicit": true,
-            "declAttributes": [
-              "Required"
-            ],
-            "throwing": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "encode",
-            "printedName": "encode(to:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Encoder",
-                "printedName": "any Swift.Encoder",
-                "usr": "s:s7EncoderP"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC6encode2toys7Encoder_p_tKF",
-            "moduleName": "BrivoNetworkCore",
-            "implicit": true,
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens",
-        "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC",
-        "moduleName": "BrivoNetworkCore",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoNetworkCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "BrivoCore",
-        "printedName": "BrivoCore",
-        "declKind": "Import",
-        "moduleName": "BrivoNetworkCore"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "HTTPSRequestInfo",
-        "printedName": "HTTPSRequestInfo",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "baseURLString",
-            "printedName": "baseURLString",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13baseURLStringSSvp",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13baseURLStringSSvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13baseURLStringSSvg",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13baseURLStringSSvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "endPoint",
-            "printedName": "endPoint",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC8endPointSSSgvp",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC8endPointSSSgvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC8endPointSSSgvg",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC8endPointSSSgvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "method",
-            "printedName": "method",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HTTPSMethod",
-                "printedName": "BrivoNetworkCore.HTTPSMethod",
-                "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6methodAA11HTTPSMethodOvp",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6methodAA11HTTPSMethodOvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPSMethod",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod",
-                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6methodAA11HTTPSMethodOvg",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6methodAA11HTTPSMethodOvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC4body10Foundation4DataVSgvp",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC4body10Foundation4DataVSgvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Data?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC4body10Foundation4DataVSgvg",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC4body10Foundation4DataVSgvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "parameters",
-            "printedName": "parameters",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Swift.String?]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String?]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC10parametersSDyS2SSgGSgvp",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC10parametersSDyS2SSgGSgvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "[Swift.String : Swift.String?]?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Dictionary",
-                        "printedName": "[Swift.String : Swift.String?]",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.String?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ],
-                        "usr": "s:SD"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC10parametersSDyS2SSgGSgvg",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC10parametersSDyS2SSgGSgvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "headers",
-            "printedName": "headers",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvp",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvg",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvs",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvs",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvM",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvM",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tokens",
-            "printedName": "tokens",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoCore.BrivoTokens?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoTokens",
-                    "printedName": "BrivoCore.BrivoTokens",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvp",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BrivoCore.BrivoTokens?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoTokens",
-                        "printedName": "BrivoCore.BrivoTokens",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvg",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "BrivoCore.BrivoTokens?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "BrivoTokens",
-                        "printedName": "BrivoCore.BrivoTokens",
-                        "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvs",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvs",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvM",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvM",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "maxRetryCount",
-            "printedName": "maxRetryCount",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivp",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivp",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivg",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivs",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivs",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivM",
-                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivM",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(baseURLString:endPoint:method:body:parameters:headers:tokens:maxRetryCount:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HTTPSRequestInfo",
-                "printedName": "BrivoNetworkCore.HTTPSRequestInfo",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HTTPSMethod",
-                "printedName": "BrivoNetworkCore.HTTPSMethod",
-                "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Swift.String?]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String?]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "[Swift.String : Swift.String]?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Dictionary",
-                    "printedName": "[Swift.String : Swift.String]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:SD"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoCore.BrivoTokens?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoTokens",
-                    "printedName": "BrivoCore.BrivoTokens",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13baseURLString8endPoint6method4body10parameters7headers6tokens13maxRetryCountACSS_SSSgAA11HTTPSMethodO10Foundation4DataVSgSDySSALGSgSDyS2SGSg0aC00A6TokensCSgSitcfc",
-            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13baseURLString8endPoint6method4body10parameters7headers6tokens13maxRetryCountACSS_SSSgAA11HTTPSMethodO10Foundation4DataVSgSDySSALGSgSDyS2SGSg0aC00A6TokensCSgSitcfc",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC",
-        "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC",
-        "moduleName": "BrivoNetworkCore",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoNetworkCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "BrivoCore",
-        "printedName": "BrivoCore",
-        "declKind": "Import",
-        "moduleName": "BrivoNetworkCore"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "HTTPSMethod",
-        "printedName": "HTTPSMethod",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "POST",
-            "printedName": "POST",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPSMethod",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod",
-                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPSMethod",
-                        "printedName": "BrivoNetworkCore.HTTPSMethod",
-                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16BrivoNetworkCore11HTTPSMethodO4POSTyA2CmF",
-            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO4POSTyA2CmF",
-            "moduleName": "BrivoNetworkCore"
-          },
-          {
-            "kind": "Var",
-            "name": "GET",
-            "printedName": "GET",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPSMethod",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod",
-                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPSMethod",
-                        "printedName": "BrivoNetworkCore.HTTPSMethod",
-                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16BrivoNetworkCore11HTTPSMethodO3GETyA2CmF",
-            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO3GETyA2CmF",
-            "moduleName": "BrivoNetworkCore"
-          },
-          {
-            "kind": "Var",
-            "name": "PUT",
-            "printedName": "PUT",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPSMethod",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod",
-                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPSMethod",
-                        "printedName": "BrivoNetworkCore.HTTPSMethod",
-                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16BrivoNetworkCore11HTTPSMethodO3PUTyA2CmF",
-            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO3PUTyA2CmF",
-            "moduleName": "BrivoNetworkCore"
-          },
-          {
-            "kind": "Var",
-            "name": "PATCH",
-            "printedName": "PATCH",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPSMethod",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod",
-                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPSMethod",
-                        "printedName": "BrivoNetworkCore.HTTPSMethod",
-                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16BrivoNetworkCore11HTTPSMethodO5PATCHyA2CmF",
-            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO5PATCHyA2CmF",
-            "moduleName": "BrivoNetworkCore"
-          },
-          {
-            "kind": "Var",
-            "name": "DELETE",
-            "printedName": "DELETE",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPSMethod",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod",
-                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "HTTPSMethod",
-                        "printedName": "BrivoNetworkCore.HTTPSMethod",
-                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16BrivoNetworkCore11HTTPSMethodO6DELETEyA2CmF",
-            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO6DELETEyA2CmF",
-            "moduleName": "BrivoNetworkCore"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoNetworkCore.HTTPSMethod?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "HTTPSMethod",
-                    "printedName": "BrivoNetworkCore.HTTPSMethod",
-                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16BrivoNetworkCore11HTTPSMethodO8rawValueACSgSS_tcfc",
-            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO8rawValueACSgSS_tcfc",
-            "moduleName": "BrivoNetworkCore",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16BrivoNetworkCore11HTTPSMethodO8rawValueSSvp",
-            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO8rawValueSSvp",
-            "moduleName": "BrivoNetworkCore",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16BrivoNetworkCore11HTTPSMethodO8rawValueSSvg",
-                "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO8rawValueSSvg",
-                "moduleName": "BrivoNetworkCore",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:16BrivoNetworkCore11HTTPSMethodO",
-        "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO",
-        "moduleName": "BrivoNetworkCore",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "enumRawTypeName": "String",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "HTTPSRequest",
-        "printedName": "HTTPSRequest",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(timeoutIntervalForRequest:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "HTTPSRequest",
-                "printedName": "BrivoNetworkCore.HTTPSRequest",
-                "usr": "s:16BrivoNetworkCore12HTTPSRequestC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.Double?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16BrivoNetworkCore12HTTPSRequestC25timeoutIntervalForRequestACSdSg_tcfc",
-            "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC25timeoutIntervalForRequestACSdSg_tcfc",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "performRequest",
-            "printedName": "performRequest(requestInfo:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "HTTPSRequestInfo",
-                "printedName": "BrivoNetworkCore.HTTPSRequestInfo",
-                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.URLRequest?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "URLRequest",
-                                "printedName": "Foundation.URLRequest",
-                                "usr": "s:10Foundation10URLRequestV"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Foundation.Data?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Data",
-                                "printedName": "Foundation.Data",
-                                "usr": "s:10Foundation4DataV"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.Int?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Int",
-                                "printedName": "Swift.Int",
-                                "usr": "s:Si"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "(any Swift.Error)?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "Error",
-                                "printedName": "any Swift.Error",
-                                "usr": "s:s5ErrorP"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16BrivoNetworkCore12HTTPSRequestC14performRequest11requestInfo10completionyAA0dH0C_y10Foundation10URLRequestVSg_AI4DataVSgSiSgs5Error_pSgtcSgtF",
-            "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC14performRequest11requestInfo10completionyAA0dH0C_y10Foundation10URLRequestVSg_AI4DataVSgSiSgs5Error_pSgtcSgtF",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "cancel",
-            "printedName": "cancel()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16BrivoNetworkCore12HTTPSRequestC6cancelyyF",
-            "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC6cancelyyF",
-            "moduleName": "BrivoNetworkCore",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:16BrivoNetworkCore12HTTPSRequestC",
-        "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC",
-        "moduleName": "BrivoNetworkCore",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoNetworkCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "BrivoCore",
-        "printedName": "BrivoCore",
-        "declKind": "Import",
-        "moduleName": "BrivoNetworkCore"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "BrivoNetworkCore",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "BrivoCore",
         "printedName": "BrivoCore",
@@ -9033,6 +6917,2122 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoNetworkCore"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoNetworkCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPSMethod",
+        "printedName": "HTTPSMethod",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "POST",
+            "printedName": "POST",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPSMethod",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod",
+                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPSMethod",
+                        "printedName": "BrivoNetworkCore.HTTPSMethod",
+                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoNetworkCore11HTTPSMethodO4POSTyA2CmF",
+            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO4POSTyA2CmF",
+            "moduleName": "BrivoNetworkCore"
+          },
+          {
+            "kind": "Var",
+            "name": "GET",
+            "printedName": "GET",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPSMethod",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod",
+                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPSMethod",
+                        "printedName": "BrivoNetworkCore.HTTPSMethod",
+                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoNetworkCore11HTTPSMethodO3GETyA2CmF",
+            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO3GETyA2CmF",
+            "moduleName": "BrivoNetworkCore"
+          },
+          {
+            "kind": "Var",
+            "name": "PUT",
+            "printedName": "PUT",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPSMethod",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod",
+                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPSMethod",
+                        "printedName": "BrivoNetworkCore.HTTPSMethod",
+                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoNetworkCore11HTTPSMethodO3PUTyA2CmF",
+            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO3PUTyA2CmF",
+            "moduleName": "BrivoNetworkCore"
+          },
+          {
+            "kind": "Var",
+            "name": "PATCH",
+            "printedName": "PATCH",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPSMethod",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod",
+                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPSMethod",
+                        "printedName": "BrivoNetworkCore.HTTPSMethod",
+                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoNetworkCore11HTTPSMethodO5PATCHyA2CmF",
+            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO5PATCHyA2CmF",
+            "moduleName": "BrivoNetworkCore"
+          },
+          {
+            "kind": "Var",
+            "name": "DELETE",
+            "printedName": "DELETE",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoNetworkCore.HTTPSMethod.Type) -> BrivoNetworkCore.HTTPSMethod",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPSMethod",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod",
+                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "HTTPSMethod",
+                        "printedName": "BrivoNetworkCore.HTTPSMethod",
+                        "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:16BrivoNetworkCore11HTTPSMethodO6DELETEyA2CmF",
+            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO6DELETEyA2CmF",
+            "moduleName": "BrivoNetworkCore"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoNetworkCore.HTTPSMethod?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPSMethod",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod",
+                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoNetworkCore11HTTPSMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO8rawValueACSgSS_tcfc",
+            "moduleName": "BrivoNetworkCore",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore11HTTPSMethodO8rawValueSSvp",
+            "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO8rawValueSSvp",
+            "moduleName": "BrivoNetworkCore",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore11HTTPSMethodO8rawValueSSvg",
+                "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO8rawValueSSvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:16BrivoNetworkCore11HTTPSMethodO",
+        "mangledName": "$s16BrivoNetworkCore11HTTPSMethodO",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPSRequest",
+        "printedName": "HTTPSRequest",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(timeoutIntervalForRequest:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPSRequest",
+                "printedName": "BrivoNetworkCore.HTTPSRequest",
+                "usr": "s:16BrivoNetworkCore12HTTPSRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoNetworkCore12HTTPSRequestC25timeoutIntervalForRequestACSdSg_tcfc",
+            "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC25timeoutIntervalForRequestACSdSg_tcfc",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "performRequest",
+            "printedName": "performRequest(requestInfo:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPSRequestInfo",
+                "printedName": "BrivoNetworkCore.HTTPSRequestInfo",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Foundation.URLRequest?, Foundation.Data?, Swift.Int?, (any Swift.Error)?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.URLRequest?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "URLRequest",
+                                "printedName": "Foundation.URLRequest",
+                                "usr": "s:10Foundation10URLRequestV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.Data?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Data",
+                                "printedName": "Foundation.Data",
+                                "usr": "s:10Foundation4DataV"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Int?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "(any Swift.Error)?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Error",
+                                "printedName": "any Swift.Error",
+                                "usr": "s:s5ErrorP"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoNetworkCore12HTTPSRequestC14performRequest11requestInfo10completionyAA0dH0C_y10Foundation10URLRequestVSg_AI4DataVSgSiSgs5Error_pSgtcSgtF",
+            "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC14performRequest11requestInfo10completionyAA0dH0C_y10Foundation10URLRequestVSg_AI4DataVSgSiSgs5Error_pSgtcSgtF",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "cancel",
+            "printedName": "cancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoNetworkCore12HTTPSRequestC6cancelyyF",
+            "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC6cancelyyF",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16BrivoNetworkCore12HTTPSRequestC",
+        "mangledName": "$s16BrivoNetworkCore12HTTPSRequestC",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "BrivoCore",
+        "printedName": "BrivoCore",
+        "declKind": "Import",
+        "moduleName": "BrivoNetworkCore"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "HTTPSRequestInfo",
+        "printedName": "HTTPSRequestInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "baseURLString",
+            "printedName": "baseURLString",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13baseURLStringSSvp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13baseURLStringSSvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13baseURLStringSSvg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13baseURLStringSSvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "endPoint",
+            "printedName": "endPoint",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC8endPointSSSgvp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC8endPointSSSgvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC8endPointSSSgvg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC8endPointSSSgvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "method",
+            "printedName": "method",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPSMethod",
+                "printedName": "BrivoNetworkCore.HTTPSMethod",
+                "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6methodAA11HTTPSMethodOvp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6methodAA11HTTPSMethodOvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "HTTPSMethod",
+                    "printedName": "BrivoNetworkCore.HTTPSMethod",
+                    "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6methodAA11HTTPSMethodOvg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6methodAA11HTTPSMethodOvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC4body10Foundation4DataVSgvp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC4body10Foundation4DataVSgvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC4body10Foundation4DataVSgvg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC4body10Foundation4DataVSgvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "parameters",
+            "printedName": "parameters",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC10parametersSDyS2SSgGSgvp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC10parametersSDyS2SSgGSgvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : Swift.String?]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : Swift.String?]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC10parametersSDyS2SSgGSgvg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC10parametersSDyS2SSgGSgvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headers",
+            "printedName": "headers",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvs",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvs",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvM",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC7headersSDyS2SGvM",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tokens",
+            "printedName": "tokens",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.BrivoTokens?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoTokens",
+                    "printedName": "BrivoCore.BrivoTokens",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.BrivoTokens?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoTokens",
+                        "printedName": "BrivoCore.BrivoTokens",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "BrivoCore.BrivoTokens?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BrivoTokens",
+                        "printedName": "BrivoCore.BrivoTokens",
+                        "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvs",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvs",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvM",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC6tokens0aC00A6TokensCSgvM",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maxRetryCount",
+            "printedName": "maxRetryCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivp",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivg",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivs",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivs",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivM",
+                "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13maxRetryCountSivM",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(baseURLString:endPoint:method:body:parameters:headers:tokens:maxRetryCount:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPSRequestInfo",
+                "printedName": "BrivoNetworkCore.HTTPSRequestInfo",
+                "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "HTTPSMethod",
+                "printedName": "BrivoNetworkCore.HTTPSMethod",
+                "usr": "s:16BrivoNetworkCore11HTTPSMethodO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String?]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String?]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "BrivoCore.BrivoTokens?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoTokens",
+                    "printedName": "BrivoCore.BrivoTokens",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoTokens"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC13baseURLString8endPoint6method4body10parameters7headers6tokens13maxRetryCountACSS_SSSgAA11HTTPSMethodO10Foundation4DataVSgSDySSALGSgSDyS2SGSg0aC00A6TokensCSgSitcfc",
+            "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC13baseURLString8endPoint6method4body10parameters7headers6tokens13maxRetryCountACSS_SSSgAA11HTTPSMethodO10Foundation4DataVSgSDySSALGSgSDyS2SGSg0aC00A6TokensCSgSitcfc",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16BrivoNetworkCore16HTTPSRequestInfoC",
+        "mangledName": "$s16BrivoNetworkCore16HTTPSRequestInfoC",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SmartHomeTokens",
+        "printedName": "SmartHomeTokens",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "token",
+            "printedName": "token",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvp",
+            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvg",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvs",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvs",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvM",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5tokenSSSgvM",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "refreshToken",
+            "printedName": "refreshToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvp",
+            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvg",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvs",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvs",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvM",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC12refreshTokenSSSgvM",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "firebaseToken",
+            "printedName": "firebaseToken",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvp",
+            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvg",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvs",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvs",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvM",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC13firebaseTokenSSSgvM",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiresOn",
+            "printedName": "expiresOn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvp",
+            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvp",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvg",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvg",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvs",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvs",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvM",
+                "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC9expiresOnSSSgvM",
+                "moduleName": "BrivoNetworkCore",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(token:refreshToken:firebaseToken:expiresOn:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SmartHomeTokens",
+                "printedName": "BrivoNetworkCore.SmartHomeTokens",
+                "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC5token12refreshToken08firebaseI09expiresOnACSSSg_A3Htcfc",
+            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC5token12refreshToken08firebaseI09expiresOnACSSSg_A3Htcfc",
+            "moduleName": "BrivoNetworkCore",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SmartHomeTokens",
+                "printedName": "BrivoNetworkCore.SmartHomeTokens",
+                "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens(im)init",
+            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensCACycfc",
+            "moduleName": "BrivoNetworkCore",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SmartHomeTokens",
+                "printedName": "BrivoNetworkCore.SmartHomeTokens",
+                "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "BrivoNetworkCore",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16BrivoNetworkCore15SmartHomeTokensC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC6encode2toys7Encoder_p_tKF",
+            "moduleName": "BrivoNetworkCore",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@BrivoNetworkCore@objc(cs)SmartHomeTokens",
+        "mangledName": "$s16BrivoNetworkCore15SmartHomeTokensC",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "BrivoNetworkCore",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "BrivoError",
         "printedName": "BrivoError",
@@ -9252,48 +9252,6 @@
       "offset": 7463,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
-      "kind": "StringLiteral",
-      "offset": 374,
-      "length": 7,
-      "value": "\"token\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
-      "kind": "StringLiteral",
-      "offset": 410,
-      "length": 15,
-      "value": "\"refresh_token\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
-      "kind": "StringLiteral",
-      "offset": 455,
-      "length": 16,
-      "value": "\"firebase_token\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
-      "kind": "StringLiteral",
-      "offset": 497,
-      "length": 12,
-      "value": "\"expires_on\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/HTTPSRequestInfo.swift",
-      "kind": "IntegerLiteral",
-      "offset": 745,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/HTTPSRequest.swift",
-      "kind": "Array",
-      "offset": 1233,
-      "length": 2,
-      "value": "[]"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
@@ -9735,6 +9693,48 @@
       "offset": 6893,
       "length": 29,
       "value": "\"Refresh already in progress\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/HTTPSRequest.swift",
+      "kind": "Array",
+      "offset": 1233,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/HTTPSRequestInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 745,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 374,
+      "length": 7,
+      "value": "\"token\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 410,
+      "length": 15,
+      "value": "\"refresh_token\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 455,
+      "length": 16,
+      "value": "\"firebase_token\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
+      "kind": "StringLiteral",
+      "offset": 497,
+      "length": 12,
+      "value": "\"expires_on\""
     }
   ]
 }

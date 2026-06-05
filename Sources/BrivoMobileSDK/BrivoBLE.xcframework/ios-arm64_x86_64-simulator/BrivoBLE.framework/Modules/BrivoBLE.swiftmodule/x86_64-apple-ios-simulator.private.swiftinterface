@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoBLE
+// swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoBLE
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 @_exported import BrivoBLE
 import BrivoCore
@@ -11,59 +11,42 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public class BLEConnectionManagerV2 : ObjectiveC.NSObject, CoreBluetooth.CBCentralManagerDelegate {
+  public var centralManager: CoreBluetooth.CBCentralManager!
+  public var nearbyDevices: [BrivoBLE.ValidBLEDevice] {
+    get
+  }
+  public init(configuration: BrivoCore.BrivoBLEConfiguration = BrivoBLEConfiguration())
+  public func waitForBluetoothPoweredOn(timeout: Foundation.TimeInterval = BLEConstants.BLUETOOTH_POWERON_TIMEOUT) async throws
+  public func scanNearbyDevicesContinuously(credentials: [BrivoBLE.BrivoBLECredential]) -> _Concurrency.AsyncThrowingStream<[BrivoBLE.ValidBLEDevice], any Swift.Error>
+  @objc public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc deinit
+}
+public struct BLEPeripheral {
+  public var cbPeripheral: CoreBluetooth.CBPeripheral
+  public var advertisementData: [Swift.String : Any]
+  public var rssi: Swift.Int
+  public var serviceUuid: Swift.String
+  public var readerUid: Swift.String
+  public init(cbPeripheral: CoreBluetooth.CBPeripheral, serviceUUID: Swift.String, readerUID: Swift.String, advertisementData: [Swift.String : Any], rssi: Swift.Int)
+}
+extension BrivoBLE.BLEPeripheral : Swift.Identifiable {
+  public var id: Foundation.UUID {
+    get
+  }
+  public typealias ID = Foundation.UUID
+}
 @objc public class ReaderData : ObjectiveC.NSObject {
+  public var doorType: BrivoCore.DoorType
   #if compiler(>=5.3) && $NonescapableTypes
-  required public init(accessPointPath: BrivoCore.AccessPointPath, readerUid: Swift.String, doorType: BrivoCore.DoorType, deviceModelId: Swift.String?, minimumReaderRssi: Swift.Int = BLEConstants.EXPECTED_RSSI)
+  required public init(name: Swift.String, accessPointPath: BrivoCore.AccessPointPath, readerUid: Swift.String, doorType: BrivoCore.DoorType, deviceModelId: Swift.String?, minimumReaderRssi: Swift.Int = BLEConstants.EXPECTED_RSSI)
   #endif
   @objc deinit
 }
 @objc public class BrivoBLECredential : ObjectiveC.NSObject {
-  required public init(userId: Swift.String, bleCredential: Swift.String, accessPoints: Swift.Array<BrivoBLE.ReaderData>, timeFrame: Swift.Int32)
+  public var accessPoint: BrivoBLE.ReaderData
+  required public init(userId: Swift.String, bleCredential: Swift.String, accessPoint: BrivoBLE.ReaderData, timeFrame: Swift.Int32)
   @objc deinit
-}
-public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
-public typealias OnUnlockBluetoothDoorSuccessType = () -> Swift.Void
-public typealias OnRequestExternalCredentials = (_ accessPointId: Swift.String, _ dataJSONString: Swift.String, _ onSuccess: @escaping (Swift.String?) -> Swift.Void, _ onError: @escaping (BrivoCore.BrivoError?) -> Swift.Void) -> Swift.Void
-public typealias OnProvideResponseForExternalCredentials = (_ accessPointId: Swift.String, _ dataJSONString: Swift.String, _ onSuccess: @escaping (Swift.String?) -> Swift.Void, _ onError: @escaping (BrivoCore.BrivoError?) -> Swift.Void) -> Swift.Void
-public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
-@objc @_inheritsConvenienceInitializers public class BrivoBLEService : ObjectiveC.NSObject {
-  public var requestExternalCredentials: BrivoBLE.OnRequestExternalCredentials?
-  public var provideResponseForExternalCredentials: BrivoBLE.OnProvideResponseForExternalCredentials?
-  public var onBluetoothStateUpdated: ((CoreBluetooth.CBManagerState) -> Swift.Void)? {
-    get
-    set
-  }
-  @objc override dynamic public init()
-  public func getBLEState() -> CoreBluetooth.CBManagerState
-  public func startCentralManager()
-  public func addBluetoothStateObserver(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
-  public func removeBluetoothStateObserver(id: Foundation.UUID)
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func unlockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func scanForNearbyReadersAndNotifyWhenReaderFound(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func unlockAccessPointWithServices(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func lockAccessPoint(brivoBLECredentials: Swift.Array<BrivoBLE.BrivoBLECredential>, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
-  #endif
-  @objc deinit
-}
-public enum BLEConstants {
-  public static let MAXIMUM_DISTANCE: Swift.Double
-  public static let SCANNING_TIME: Swift.Double
-  public static let ALLEGION_RELOCK_DELAY: Swift.Int
-  public static let ALLEGION_UNLOCK_RESPONSE_TIMEOUT: Swift.Double
-  public static let EXPECTED_RSSI: Swift.Int
-  public static let DEFAULT_BLE_AUTH_TIME_FRAME: Swift.Int32
-  public static let OK_STATUS_RESPONSE: Swift.UInt8
-  public static let ALLOWED_READERS: [Swift.String]
-  public static let BLE_CREDENTIAL_SERVICE_UUID: [Swift.String]
-  public static let DATA_TRANSFER_CHRC_UUID: [Swift.String]
-  public static let MAXIMUM_TRANSFER_UNIT: Swift.Int
 }
 public enum BrivoBLEError : Swift.Error {
   public static var domain: Swift.String {
@@ -80,6 +63,19 @@ public enum BrivoBLEError : Swift.Error {
     public static let peripheralError: Swift.Int
     public static let confirmError: Swift.Int
     public static let brivoBleErrorWithDescription: Swift.Int
+    public static let scanTimeoutError: Swift.Int
+    public static let scannerBusy: Swift.Int
+    public static let connectionFailed: Swift.Int
+    public static let connectionTimeout: Swift.Int
+    public static let peripheralNotConnected: Swift.Int
+    public static let failedToPowerOn: Swift.Int
+    public static let missingSelf: Swift.Int
+    public static let missingBleTransactionDelegate: Swift.Int
+    public static let missingDataForTransactionResponse: Swift.Int
+    public static let missingDataForExternalCredentialRequest: Swift.Int
+    public static let unableToConvertExternalCredentialToData: Swift.Int
+    public static let cannotFindSelectedPeripheral: Swift.Int
+    public static let communicationTimeout: Swift.Int
   }
   case unknownError(reason: Swift.String)
   case poweredOffError(reason: Swift.String)
@@ -91,4 +87,88 @@ public enum BrivoBLEError : Swift.Error {
   case peripheralError(info: [Swift.String : Any])
   case confirmError(info: [Swift.String : Any])
   case brivoBleErrorWithDescription(reason: Swift.String, info: [Swift.String : Any])
+  case scanTimeoutError(reason: Swift.String)
+  case scannerBusy
+  case connectionFailed
+  case connectionTimeout
+  case communicationTimeout
+  case peripheralNotConnected
+  case failedToPowerOn
+  case missingSelf
+  case missingBleTransactionDelegate
+  case missingDataForTransactionResponse
+  case missingDataForExternalCredentialRequest
+  case unableToConvertExternalCredentialToData
+  case cannotFindSelectedPeripheral
+}
+extension BrivoBLE.BrivoBLEError : Swift.Equatable {
+  public static func == (lhs: BrivoBLE.BrivoBLEError, rhs: BrivoBLE.BrivoBLEError) -> Swift.Bool
+}
+public typealias OnFailureType = (BrivoCore.BrivoError) -> Swift.Void
+public typealias OnUnlockBluetoothDoorSuccessType = () -> Swift.Void
+public typealias OnResult = (BrivoCore.BrivoResult) -> Swift.Void
+public protocol BLETransactionDelegate {
+  func onCredentialRequired(accessPointId: Swift.String, requestData: Swift.String) async throws(BrivoCore.BrivoError) -> Swift.String
+  func onTransactionComplete(accessPointId: Swift.String, resultData: Swift.String) async throws(BrivoCore.BrivoError)
+}
+@objc public class BrivoBLEService : ObjectiveC.NSObject {
+  public var bleConnectionManagerV2: BrivoBLE.BLEConnectionManagerV2 {
+    get
+  }
+  public var onBluetoothStateUpdated: ((CoreBluetooth.CBManagerState) -> Swift.Void)? {
+    get
+    set
+  }
+  public init(configuration: BrivoCore.BrivoBLEConfiguration = BrivoBLEConfiguration())
+  public func getBLEState() -> CoreBluetooth.CBManagerState
+  public func startCentralManager()
+  public func addBluetoothStateObserver(completion: @escaping (CoreBluetooth.CBManagerState) -> Swift.Void) -> Foundation.UUID
+  public func removeBluetoothStateObserver(id: Foundation.UUID)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func unlockAccessPoint(brivoBLECredentials: [BrivoBLE.BrivoBLECredential], allegionTransactionDelegate: (any BrivoBLE.BLETransactionDelegate)? = nil, onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  #endif
+  public func scanForNearbyReadersAndNotifyWhenReaderFound(brivoBLECredentials: [BrivoBLE.BrivoBLECredential]) -> _Concurrency.AsyncStream<BrivoCore.BrivoResult>
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func unlockDiscoveredDevice(device: BrivoBLE.ValidBLEDevice, allegionTransactionDelegate: (any BrivoBLE.BLETransactionDelegate)?) async -> _Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func lockAccessPoint(brivoBLECredentials: [BrivoBLE.BrivoBLECredential], onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
+  #endif
+  @objc deinit
+}
+public enum BLEConstants {
+  public static let MAXIMUM_DISTANCE: Swift.Double
+  public static let SCANNING_TIME: Swift.Double
+  public static let ALLEGION_RELOCK_DELAY: Swift.Int
+  public static let ALLEGION_UNLOCK_RESPONSE_TIMEOUT: Swift.Double
+  public static let EXPECTED_RSSI: Swift.Int
+  public static let BLUETOOTH_POWERON_TIMEOUT: Swift.Double
+  public static let DEFAULT_BLE_AUTH_TIME_FRAME: Swift.Int32
+  public static let OK_STATUS_RESPONSE: Swift.UInt8
+  public static let ALLOWED_READERS: [Swift.String]
+  public static let BLE_CREDENTIAL_SERVICE_UUID: [Swift.String]
+  public static let DATA_TRANSFER_CHRC_UUID: [Swift.String]
+  public static let MAXIMUM_TRANSFER_UNIT: Swift.Int
+}
+public class ValidBLEDevice {
+  final public let name: Swift.String
+  final public let peripheral: BrivoBLE.BLEPeripheral
+  final public let jsonData: Swift.String?
+  final public let accessPointPath: BrivoCore.AccessPointPath
+  final public let doorType: BrivoCore.DoorType
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String, peripheral: BrivoBLE.BLEPeripheral, jsonData: Swift.String?, accessPointPath: BrivoCore.AccessPointPath, doorType: BrivoCore.DoorType)
+  #endif
+  @objc deinit
+}
+extension BrivoBLE.ValidBLEDevice : Swift.Identifiable {
+  public var id: Swift.Int {
+    get
+  }
+  public typealias ID = Swift.Int
+}
+extension BrivoBLE.ValidBLEDevice {
+  public var toNearbyDevice: BrivoCore.NearbyDevice {
+    get
+  }
 }

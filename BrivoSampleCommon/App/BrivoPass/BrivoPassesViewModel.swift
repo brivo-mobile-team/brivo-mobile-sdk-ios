@@ -13,7 +13,8 @@ import BrivoAccess
 class BrivoPassesViewModel: ObservableObject {
     // MARK: - Properties
 
-    private var brivoOnAirPasses: [BrivoOnairPass] = []
+    var brivoOnAirPasses: [BrivoOnairPass] = []
+    @MainActor
     private var brivoSDKAccess = BrivoSDKAccess.instance()
 
     @Published var brivoOnAirPassListItems: [BrivoOnAirPassListItem] = []
@@ -89,8 +90,9 @@ class BrivoPassesViewModel: ObservableObject {
 
     @MainActor
     func refreshPasses() async {
+        var storedPasses = [BrivoOnairPass]()
         do {
-            let storedPasses = try await BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses().get()
+            storedPasses = try await BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses().get()
             var newPasses = [BrivoOnairPass]()
             for brivoOnAirPass in storedPasses {
                 guard let tokens = brivoOnAirPass.brivoOnairPassCredentials?.tokens else { return }
@@ -101,10 +103,12 @@ class BrivoPassesViewModel: ObservableObject {
             }
             brivoOnAirPasses = newPasses.sorted(by: { $0.accountName ?? "N/A" < $1.accountName ?? "N/A" })
             _ = await brivoSDKAccess.refreshCredentials(passes: brivoOnAirPasses)
-            updateUI()
         } catch {
+            brivoOnAirPasses = storedPasses.sorted(by: { $0.accountName ?? "N/A" < $1.accountName ?? "N/A" })
             onError(error)
         }
+
+        updateUI()
     }
     
     func handleRegionChange(isEURegion: Bool) {
