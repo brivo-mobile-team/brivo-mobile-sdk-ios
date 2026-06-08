@@ -16981,15 +16981,15 @@
                     "kind": "TypeNominal",
                     "name": "AccessPointPath",
                     "printedName": "BrivoCore.AccessPointPath",
-                    "usr": "s:9BrivoCore15AccessPointPathV"
+                    "usr": "c:@M@BrivoCore@objc(cs)AccessPointPath"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10BrivoOnAir0a5SDKOnC0C17unlockAccessPoint6tokens6passId06accessgJ00kG4PathScsy0A4Core0A6ResultCs5Error_pGAI0A6TokensCSg_S2SAI0fgL0VSgtYaF",
-            "mangledName": "$s10BrivoOnAir0a5SDKOnC0C17unlockAccessPoint6tokens6passId06accessgJ00kG4PathScsy0A4Core0A6ResultCs5Error_pGAI0A6TokensCSg_S2SAI0fgL0VSgtYaF",
+            "usr": "s:10BrivoOnAir0a5SDKOnC0C17unlockAccessPoint6tokens6passId06accessgJ00kG4PathScsy0A4Core0A6ResultCs5Error_pGAI0A6TokensCSg_S2SAI0fgL0CSgtYaF",
+            "mangledName": "$s10BrivoOnAir0a5SDKOnC0C17unlockAccessPoint6tokens6passId06accessgJ00kG4PathScsy0A4Core0A6ResultCs5Error_pGAI0A6TokensCSg_S2SAI0fgL0CSgtYaF",
             "moduleName": "BrivoOnAir",
             "declAttributes": [
               "AccessControl"
@@ -18731,116 +18731,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10BrivoOnAir0A19SelectedAccessPointC4nameSSSgvp",
-            "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC4nameSSSgvp",
-            "moduleName": "BrivoOnAir",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC4nameSSSgvg",
-                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC4nameSSSgvg",
-                "moduleName": "BrivoOnAir",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC4nameSSSgvs",
-                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC4nameSSSgvs",
-                "moduleName": "BrivoOnAir",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC4nameSSSgvM",
-                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC4nameSSSgvM",
-                "moduleName": "BrivoOnAir",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "accessPointPath",
             "printedName": "accessPointPath",
             "children": [
@@ -18848,12 +18738,12 @@
                 "kind": "TypeNominal",
                 "name": "AccessPointPath",
                 "printedName": "BrivoCore.AccessPointPath",
-                "usr": "s:9BrivoCore15AccessPointPathV"
+                "usr": "c:@M@BrivoCore@objc(cs)AccessPointPath"
               }
             ],
             "declKind": "Var",
-            "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Vvp",
-            "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Vvp",
+            "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Cvp",
+            "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Cvp",
             "moduleName": "BrivoOnAir",
             "declAttributes": [
               "HasStorage",
@@ -18870,12 +18760,12 @@
                     "kind": "TypeNominal",
                     "name": "AccessPointPath",
                     "printedName": "BrivoCore.AccessPointPath",
-                    "usr": "s:9BrivoCore15AccessPointPathV"
+                    "usr": "c:@M@BrivoCore@objc(cs)AccessPointPath"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Vvg",
-                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Vvg",
+                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Cvg",
+                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Cvg",
                 "moduleName": "BrivoOnAir",
                 "implicit": true,
                 "accessorKind": "get"
@@ -18894,12 +18784,12 @@
                     "kind": "TypeNominal",
                     "name": "AccessPointPath",
                     "printedName": "BrivoCore.AccessPointPath",
-                    "usr": "s:9BrivoCore15AccessPointPathV"
+                    "usr": "c:@M@BrivoCore@objc(cs)AccessPointPath"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Vvs",
-                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Vvs",
+                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Cvs",
+                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0Cvs",
                 "moduleName": "BrivoOnAir",
                 "implicit": true,
                 "accessorKind": "set"
@@ -18916,8 +18806,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0VvM",
-                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0VvM",
+                "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0CvM",
+                "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path0A4Core0efH0CvM",
                 "moduleName": "BrivoOnAir",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -19879,7 +19769,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(name:accessPointPath:doorType:passCredential:isTwoFactorEnabled:readerUid:bleCredentials:timeframe:deviceModelId:controlLockId:sendEvents:)",
+            "printedName": "init(accessPointPath:doorType:passCredential:isTwoFactorEnabled:readerUid:bleCredentials:timeframe:deviceModelId:controlLockId:sendEvents:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -19889,15 +19779,9 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "AccessPointPath",
                 "printedName": "BrivoCore.AccessPointPath",
-                "usr": "s:9BrivoCore15AccessPointPathV"
+                "usr": "c:@M@BrivoCore@objc(cs)AccessPointPath"
               },
               {
                 "kind": "TypeNominal",
@@ -19993,8 +19877,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10BrivoOnAir0A19SelectedAccessPointC4name06accessF4Path8doorType14passCredential18isTwoFactorEnabled9readerUid14bleCredentials9timeframe13deviceModelId011controlLockY010sendEventsACSS_0A4Core0efI0VAO04DoorK0OAA0a9OnairPassU0CSbSSSgAVs5Int32VAVSiSgSbtcfc",
-            "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC4name06accessF4Path8doorType14passCredential18isTwoFactorEnabled9readerUid14bleCredentials9timeframe13deviceModelId011controlLockY010sendEventsACSS_0A4Core0efI0VAO04DoorK0OAA0a9OnairPassU0CSbSSSgAVs5Int32VAVSiSgSbtcfc",
+            "usr": "s:10BrivoOnAir0A19SelectedAccessPointC06accessF4Path8doorType14passCredential18isTwoFactorEnabled9readerUid14bleCredentials9timeframe13deviceModelId011controlLockX010sendEventsAC0A4Core0efH0C_AN04DoorJ0OAA0a9OnairPassT0CSbSSSgAUs5Int32VAUSiSgSbtcfc",
+            "mangledName": "$s10BrivoOnAir0A19SelectedAccessPointC06accessF4Path8doorType14passCredential18isTwoFactorEnabled9readerUid14bleCredentials9timeframe13deviceModelId011controlLockX010sendEventsAC0A4Core0efH0C_AN04DoorJ0OAA0a9OnairPassT0CSbSSSgAUs5Int32VAUSiSgSbtcfc",
             "moduleName": "BrivoOnAir",
             "declAttributes": [
               "Required",
@@ -26769,15 +26653,15 @@
                     "kind": "TypeNominal",
                     "name": "AccessPointPath",
                     "printedName": "BrivoCore.AccessPointPath",
-                    "usr": "s:9BrivoCore15AccessPointPathV"
+                    "usr": "c:@M@BrivoCore@objc(cs)AccessPointPath"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10BrivoOnAir011IBrivoSDKOnC0P17unlockAccessPoint6tokens6passId06accesshK00lH4PathScsy0A4Core0A6ResultCs5Error_pGAI0A6TokensCSg_S2SAI0ghM0VSgtYaF",
-            "mangledName": "$s10BrivoOnAir011IBrivoSDKOnC0P17unlockAccessPoint6tokens6passId06accesshK00lH4PathScsy0A4Core0A6ResultCs5Error_pGAI0A6TokensCSg_S2SAI0ghM0VSgtYaF",
+            "usr": "s:10BrivoOnAir011IBrivoSDKOnC0P17unlockAccessPoint6tokens6passId06accesshK00lH4PathScsy0A4Core0A6ResultCs5Error_pGAI0A6TokensCSg_S2SAI0ghM0CSgtYaF",
+            "mangledName": "$s10BrivoOnAir011IBrivoSDKOnC0P17unlockAccessPoint6tokens6passId06accesshK00lH4PathScsy0A4Core0A6ResultCs5Error_pGAI0A6TokensCSg_S2SAI0ghM0CSgtYaF",
             "moduleName": "BrivoOnAir",
             "genericSig": "<τ_0_0 where τ_0_0 : BrivoOnAir.IBrivoSDKOnAir>",
             "sugared_genericSig": "<Self where Self : BrivoOnAir.IBrivoSDKOnAir>",
@@ -28613,28 +28497,28 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 578,
+      "offset": 549,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "BooleanLiteral",
-      "offset": 941,
+      "offset": 890,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "IntegerLiteral",
-      "offset": 1048,
+      "offset": 997,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/BrivoOnAir\/BrivoOnAir\/Models\/BrivoSelectedAccessPoint.swift",
       "kind": "BooleanLiteral",
-      "offset": 1145,
+      "offset": 1094,
       "length": 4,
       "value": "true"
     },

@@ -26,13 +26,13 @@ public enum AccessPointCommunicationState : Swift.Int, Swift.Codable {
     get
   }
 }
-public struct AccessPointPath : Swift.Equatable {
+@objc public class AccessPointPath : ObjectiveC.NSObject {
   public var accessPointId: Swift.Int
   public var siteId: Swift.Int
   public var passId: Swift.String
   public var hasTrustedNetwork: Swift.Bool
-  public init(accessPointId: Swift.Int, siteId: Swift.Int, passId: Swift.String, hasTrustedNetwork: Swift.Bool = false)
-  public static func == (a: BrivoCore.AccessPointPath, b: BrivoCore.AccessPointPath) -> Swift.Bool
+  required public init(accessPointId: Swift.Int, siteId: Swift.Int, passId: Swift.String, hasTrustedNetwork: Swift.Bool = false)
+  @objc deinit
 }
 public class AsyncCurrentValueSubject<Element> : @unchecked Swift.Sendable where Element : Swift.Sendable {
   public var value: Element {
@@ -46,8 +46,6 @@ public class AsyncCurrentValueSubject<Element> : @unchecked Swift.Sendable where
   public func send(_ element: Element)
   @objc deinit
 }
-public func withStreamTimeout<T>(_ timeout: Swift.Duration, operation: @escaping @Sendable () -> _Concurrency.AsyncThrowingStream<T, any Swift.Error>) -> _Concurrency.AsyncThrowingStream<T, any Swift.Error>
-public func retryingStream<T>(maxAttempts: Swift.Int = 3, delay: Swift.Duration = .seconds(2), operation: @escaping @Sendable () -> _Concurrency.AsyncThrowingStream<T, any Swift.Error>) -> _Concurrency.AsyncThrowingStream<T, any Swift.Error>
 final public class Atomic<Value> : Swift.Sendable where Value : Swift.Sendable {
   public init(_ value: Value)
   final public var value: Value {
@@ -61,17 +59,8 @@ final public class Atomic<Value> : Swift.Sendable where Value : Swift.Sendable {
 public struct BrivoBLEAllegionConfiguration : Swift.Equatable {
   public let subscriptionKey: Swift.String
   public let integrationId: Swift.String
-  public let scanningTimeoutDuration: Swift.Duration
-  public let connectionTimeoutDuration: Swift.Duration
-  public init(subscriptionKey: Swift.String, integrationId: Swift.String, scanningTimeoutDuration: Swift.Duration = .seconds(10), connectionTimeoutDuration: Swift.Duration = .seconds(10))
+  public init(subscriptionKey: Swift.String, integrationId: Swift.String)
   public static func == (a: BrivoCore.BrivoBLEAllegionConfiguration, b: BrivoCore.BrivoBLEAllegionConfiguration) -> Swift.Bool
-}
-public struct BrivoBLEConfiguration : Swift.Equatable {
-  public let scanTimeout: Swift.Duration
-  public let connectionTimeout: Swift.Duration
-  public let communicationTimeout: Swift.Duration
-  public init(scanTimeout: Swift.Duration = .seconds(10), connectionTimeout: Swift.Duration = .seconds(3), communicationTimeout: Swift.Duration = .seconds(10))
-  public static func == (a: BrivoCore.BrivoBLEConfiguration, b: BrivoCore.BrivoBLEConfiguration) -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers public class BrivoControlLockAuthenticationResponse : ObjectiveC.NSObject, Swift.Codable {
   public var authenticationPayload: Swift.String?
@@ -125,9 +114,9 @@ public struct BrivoDormakabaConfiguration : Swift.Equatable {
   public let password: Swift.String
   public let serverURL: Swift.String
   public let evoloSmartProjectId: Swift.Int?
-  public let unlockTimeoutDuration: Swift.Duration
+  public let unlockTimeoutDuration: Foundation.TimeInterval
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(mobileAppID: Swift.Int, userName: Swift.String, password: Swift.String, serverURL: Swift.String, evoloSmartProjectId: Swift.Int?, unlockTimeoutDuration: Swift.Duration = .seconds(10))
+  public init(mobileAppID: Swift.Int, userName: Swift.String, password: Swift.String, serverURL: Swift.String, evoloSmartProjectId: Swift.Int?, unlockTimeoutDuration: Foundation.TimeInterval)
   #endif
   public static func == (a: BrivoCore.BrivoDormakabaConfiguration, b: BrivoCore.BrivoDormakabaConfiguration) -> Swift.Bool
 }
@@ -252,7 +241,6 @@ public enum Region : Swift.Int {
   weak public var tokenRefresher: (any BrivoCore.TokenRefresher)?
   final public let sessionRequestTimeout: BrivoCore.SessionRequestTimeout?
   final public let isConsoleLoggingEnabled: Swift.Bool
-  final public let brivoBLEConfiguration: BrivoCore.BrivoBLEConfiguration
   final public let allegionEnabled: Swift.Bool
   final public let brivoBLEAllegionConfiguration: BrivoCore.BrivoBLEAllegionConfiguration?
   final public let hidorigoEnabled: Swift.Bool
@@ -280,8 +268,6 @@ extension BrivoCore.BrivoSDKConfiguration {
     public func sessionRequestTimeout(_ timeout: BrivoCore.SessionRequestTimeout?) -> BrivoCore.BrivoSDKConfiguration.Builder
     #endif
     public func isConsoleLoggingEnabled(_ isEnabled: Swift.Bool) -> BrivoCore.BrivoSDKConfiguration.Builder
-    @discardableResult
-    public func brivoBLEConfiguration(_ config: BrivoCore.BrivoBLEConfiguration) -> BrivoCore.BrivoSDKConfiguration.Builder
     #if compiler(>=5.3) && $NonescapableTypes
     @discardableResult
     public func brivoBLEAllegionConfiguration(_ config: BrivoCore.BrivoBLEAllegionConfiguration? = nil) -> BrivoCore.BrivoSDKConfiguration.Builder
@@ -306,9 +292,7 @@ extension BrivoCore.BrivoSDKConfiguration : Swift.Equatable {
 public struct BrivoSDKHIDOrigoConfiguration : Swift.Equatable {
   public let applicationID: Swift.String
   public let applicationVersion: Swift.String
-  public let scanningTimeoutDuration: Swift.Duration
-  public let connectionTimeoutDuration: Swift.Duration
-  public init(applicationID: Swift.String, applicationVersion: Swift.String, scanningTimeoutDuration: Swift.Duration = .seconds(10), connectionTimeoutDuration: Swift.Duration = .seconds(10))
+  public init(applicationID: Swift.String, applicationVersion: Swift.String)
   public static func == (a: BrivoCore.BrivoSDKHIDOrigoConfiguration, b: BrivoCore.BrivoSDKHIDOrigoConfiguration) -> Swift.Bool
 }
 @objc public class BrivoTokens : ObjectiveC.NSObject, Swift.Codable {
@@ -339,7 +323,7 @@ public struct BrivoSDKHIDOrigoConfiguration : Swift.Equatable {
   public static func removeData(key: Swift.String)
   @objc deinit
 }
-public typealias CancellationClosure = @Sendable (Swift.Bool) -> Swift.Void
+public typealias CancellationClosure = (Swift.Bool) -> Swift.Void
 @objc @_inheritsConvenienceInitializers public class CancellationSignal : ObjectiveC.NSObject {
   public var isCancelled: Swift.Bool {
     get
@@ -373,26 +357,6 @@ extension Foundation.Data {
     get
   }
 }
-public class DeviceCache<T> : @unchecked Swift.Sendable where T : Swift.Identifiable, T : Swift.Sendable {
-  public var deviceStream: _Concurrency.AsyncStream<[T]> {
-    get
-  }
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init(eliminationTimeout: Foundation.TimeInterval?)
-  #endif
-  @objc deinit
-  public func save(_ device: T)
-  public func replaceAll(devices newDevices: [T])
-  public func replaceDevices(with newDevices: [T])
-  public func save(devices: [T])
-  public func removeDevice(withId id: T.ID)
-  public func clear()
-  public func allDevices() -> [T]
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func deviceWithId(id: T.ID) -> T?
-  #endif
-  public func syncManagedDevices(newDevices: [T], managedIds: [T.ID])
-}
 public enum DoorType : Swift.Int, Swift.Codable {
   case internet
   case wavelynx
@@ -413,11 +377,6 @@ public enum DoorType : Swift.Int, Swift.Codable {
   #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
-    get
-  }
-}
-extension BrivoCore.DoorType : Swift.CustomStringConvertible {
-  public var description: Swift.String {
     get
   }
 }
@@ -553,21 +512,6 @@ extension BrivoCore.NFCUnlinkStatus : Swift.CustomStringConvertible {
     get
   }
 }
-public struct NearbyDevice : Swift.Identifiable, Swift.CustomDebugStringConvertible, Swift.Equatable {
-  public let name: Swift.String
-  public let type: BrivoCore.DoorType
-  public let rssi: Swift.Int
-  public var debugDescription: Swift.String {
-    get
-  }
-  public let accessPointPath: BrivoCore.AccessPointPath
-  public var id: Swift.Int {
-    get
-  }
-  public init(name: Swift.String, type: BrivoCore.DoorType, rssi: Swift.Int, accessPointPath: BrivoCore.AccessPointPath)
-  public static func == (a: BrivoCore.NearbyDevice, b: BrivoCore.NearbyDevice) -> Swift.Bool
-  public typealias ID = Swift.Int
-}
 @objc @_inheritsConvenienceInitializers public class NetworkMonitor : ObjectiveC.NSObject, BrivoCore.INetworkMonitor {
   @objc override dynamic public init()
   #if compiler(>=5.3) && $NonescapableTypes
@@ -590,16 +534,6 @@ public enum SDKLogLevel : Swift.String, Swift.Sendable {
     get
   }
 }
-final public class SafeContinuation<Value, Failure> : @unchecked Swift.Sendable where Failure : Swift.Error {
-  public init()
-  final public func set(_ continuation: _Concurrency.CheckedContinuation<Value, Failure>)
-  #if compiler(>=5.3) && $NonescapableTypes
-  final public func resume(with result: Swift.Result<Value, Failure>)
-  #endif
-  final public func resumeSuccess(_ value: Value)
-  final public func resumeFailure(_ error: Failure)
-  @objc deinit
-}
 public struct SyncErrorInfo : Swift.Equatable, Swift.Sendable, Swift.Codable {
   public let domain: Swift.String
   public let code: Swift.Int
@@ -609,10 +543,6 @@ public struct SyncErrorInfo : Swift.Equatable, Swift.Sendable, Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public enum TimeoutError : Swift.Error {
-  case timedOut(timeoutDuration: Swift.Duration)
-}
-public func withTimeout<T>(after duration: Swift.Duration, operation: @escaping @Sendable () async throws -> T) async throws -> T where T : Swift.Sendable
 public typealias RefreshTokenOnSuccessType = (BrivoCore.BrivoTokens) -> Swift.Void
 public typealias OnRefreshTokenFailureType = (BrivoCore.BrivoError?) -> Swift.Void
 public protocol TokenRefresher : AnyObject {

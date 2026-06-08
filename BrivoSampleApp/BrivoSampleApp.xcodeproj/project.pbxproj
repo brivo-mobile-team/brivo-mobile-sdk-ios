@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AA0A1A0A0A0A0A0A0A0A002 /* MagicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0A1A0A0A0A0A0A0A0A001 /* MagicButtonView.swift */; };
-		0AA0A1A0A0A0A0A0A0A0A004 /* MagicButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA0A1A0A0A0A0A0A0A0A003 /* MagicButtonViewModel.swift */; };
 		0C803C2D2E72B6DA00351E47 /* BrivoPassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C2C2E72B6DA00351E47 /* BrivoPassesView.swift */; };
 		0C803C332E72B6EB00351E47 /* InfoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C312E72B6EB00351E47 /* InfoRow.swift */; };
 		0C803C342E72B6EB00351E47 /* ExtendedInfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C2F2E72B6EB00351E47 /* ExtendedInfoSheet.swift */; };
@@ -35,8 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0AA0A1A0A0A0A0A0A0A0A001 /* MagicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicButtonView.swift; sourceTree = "<group>"; };
-		0AA0A1A0A0A0A0A0A0A0A003 /* MagicButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicButtonViewModel.swift; sourceTree = "<group>"; };
 		0C803C2C2E72B6DA00351E47 /* BrivoPassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoPassesView.swift; sourceTree = "<group>"; };
 		0C803C2E2E72B6EB00351E47 /* ExtendedInfoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedInfoItem.swift; sourceTree = "<group>"; };
 		0C803C2F2E72B6EB00351E47 /* ExtendedInfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedInfoSheet.swift; sourceTree = "<group>"; };
@@ -142,18 +138,8 @@
 				5D9E0D2C2DE4A25F00A49DC4 /* UserDefaultsService */,
 				5D9E0D312DE4A25F00A49DC4 /* Utils */,
 				0C803C322E72B6EB00351E47 /* Common */,
-				0AA0A1A0A0A0A0A0A0A0A005 /* Magic button */,
 			);
 			path = App;
-			sourceTree = "<group>";
-		};
-		0AA0A1A0A0A0A0A0A0A0A005 /* Magic button */ = {
-			isa = PBXGroup;
-			children = (
-				0AA0A1A0A0A0A0A0A0A0A001 /* MagicButtonView.swift */,
-				0AA0A1A0A0A0A0A0A0A0A003 /* MagicButtonViewModel.swift */,
-			);
-			path = "Magic button";
 			sourceTree = "<group>";
 		};
 		C0C202EA2E61A4B1009B4993 /* AccessPointDetailsView */ = {
@@ -300,8 +286,6 @@
 				0C803C352E72B6EB00351E47 /* HeaderWithInfo.swift in Sources */,
 				0C803C362E72B6EB00351E47 /* ExtendedInfoItem.swift in Sources */,
 				5D9E0D402DE4A25F00A49DC4 /* AccessPointView.swift in Sources */,
-				0AA0A1A0A0A0A0A0A0A0A002 /* MagicButtonView.swift in Sources */,
-				0AA0A1A0A0A0A0A0A0A0A004 /* MagicButtonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +346,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 3.4.0;
+				MARKETING_VERSION = 3.3.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +404,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 3.4.0;
+				MARKETING_VERSION = 3.3.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

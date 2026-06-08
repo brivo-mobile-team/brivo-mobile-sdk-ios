@@ -305,6 +305,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
+SWIFT_CLASS("_TtC9BrivoCore15AccessPointPath")
+@interface AccessPointPath : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC9BrivoCore38BrivoControlLockAuthenticationResponse")
 @interface BrivoControlLockAuthenticationResponse : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -685,6 +691,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+
+SWIFT_CLASS("_TtC9BrivoCore15AccessPointPath")
+@interface AccessPointPath : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 SWIFT_CLASS("_TtC9BrivoCore38BrivoControlLockAuthenticationResponse")
 @interface BrivoControlLockAuthenticationResponse : NSObject
