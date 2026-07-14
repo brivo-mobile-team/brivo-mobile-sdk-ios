@@ -1,6 +1,6 @@
 ---
 triple:          'x86_64-apple-darwin'
-binary-path:     '/Volumes/workspace/repository/archive/derived/simulator/Build/Intermediates.noindex/ArchiveIntermediates/BrivoAccess-Distribution/InstallationBuildProductsLocation/Library/Frameworks/BrivoLocalAuthentication.framework/BrivoLocalAuthentication'
+binary-path:     '/Users/ionutmacovei/Developer/mobile-sdk-ios/archive/derived/simulator/Build/Intermediates.noindex/ArchiveIntermediates/BrivoAccess-Distribution/InstallationBuildProductsLocation/Library/Frameworks/BrivoLocalAuthentication.framework/BrivoLocalAuthentication'
 relocations:
   - { offset: 0x33A48, size: 0x8, addend: 0x0, symName: _BrivoLocalAuthenticationVersionString, symObjAddr: 0x0, symBinAddr: 0x5470, symSize: 0x0 }
   - { offset: 0x33A7F, size: 0x8, addend: 0x0, symName: _BrivoLocalAuthenticationVersionNumber, symObjAddr: 0x40, symBinAddr: 0x54B0, symSize: 0x0 }

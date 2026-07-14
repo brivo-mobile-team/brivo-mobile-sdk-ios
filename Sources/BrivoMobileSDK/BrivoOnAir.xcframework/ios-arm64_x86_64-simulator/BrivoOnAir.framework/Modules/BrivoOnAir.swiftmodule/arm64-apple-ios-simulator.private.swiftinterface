@@ -14,6 +14,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 extension Swift.Array where Element == BrivoOnAir.BrivoOnairPass {
   #if compiler(>=5.3) && $NonescapableTypes
+  @available(*, deprecated, message: "Use BrivoSelectedAccessPoint(pass:accessPointId:) — or BrivoSelectedAccessPoint(passes:accessPointId:) to search several passes — instead.")
   public func getBrivoSelectedAccessPoint(accessPointId: Swift.String, passId: Swift.String? = nil) -> BrivoOnAir.BrivoSelectedAccessPoint?
   #endif
 }
@@ -378,6 +379,7 @@ public struct BrivoReaderCommand : Swift.Codable {
   @objc deinit
 }
 @objc public class BrivoSelectedAccessPoint : ObjectiveC.NSObject {
+  public var name: Swift.String?
   public var accessPointPath: BrivoCore.AccessPointPath
   public var doorType: BrivoCore.DoorType
   public var passCredential: BrivoOnAir.BrivoOnairPassCredentials
@@ -390,9 +392,13 @@ public struct BrivoReaderCommand : Swift.Codable {
   public var sendEvents: Swift.Bool
   public var minimumPanelRssi: Swift.Int
   #if compiler(>=5.3) && $NonescapableTypes
-  required public init(accessPointPath: BrivoCore.AccessPointPath, doorType: BrivoCore.DoorType, passCredential: BrivoOnAir.BrivoOnairPassCredentials, isTwoFactorEnabled: Swift.Bool = false, readerUid: Swift.String? = nil, bleCredentials: Swift.String? = nil, timeframe: Swift.Int32 = 0, deviceModelId: Swift.String?, controlLockId: Swift.Int? = nil, sendEvents: Swift.Bool = true)
+  required public init(name: Swift.String, accessPointPath: BrivoCore.AccessPointPath, doorType: BrivoCore.DoorType, passCredential: BrivoOnAir.BrivoOnairPassCredentials, isTwoFactorEnabled: Swift.Bool = false, readerUid: Swift.String? = nil, bleCredentials: Swift.String? = nil, timeframe: Swift.Int32 = 0, deviceModelId: Swift.String?, controlLockId: Swift.Int? = nil, sendEvents: Swift.Bool = true)
   #endif
   @objc deinit
+}
+extension BrivoOnAir.BrivoSelectedAccessPoint {
+  convenience public init(pass: BrivoOnAir.BrivoOnairPass, accessPointId: Swift.String) throws(BrivoCore.BrivoError)
+  convenience public init(passes: [BrivoOnAir.BrivoOnairPass], accessPointId: Swift.String) throws(BrivoCore.BrivoError)
 }
 extension BrivoOnAir.BrivoSite {
   public func hasSaltoLocks(from pass: BrivoOnAir.BrivoOnairPass) -> Swift.Bool

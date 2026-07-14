@@ -22,9 +22,11 @@
 		5D9E0D3C2DE4A25F00A49DC4 /* BrivoPassesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D232DE4A25F00A49DC4 /* BrivoPassesViewModel.swift */; };
 		5D9E0D3D2DE4A25F00A49DC4 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D302DE4A25F00A49DC4 /* View+Extensions.swift */; };
 		5D9E0D402DE4A25F00A49DC4 /* AccessPointView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D202DE4A25F00A49DC4 /* AccessPointView.swift */; };
+		76586EF82FE2774D000D2B80 /* MagicButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76586EF52FE2774C000D2B80 /* MagicButtonView.swift */; };
+		76586EF92FE2774D000D2B80 /* MagicButtonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76586EF62FE2774C000D2B80 /* MagicButtonViewModel.swift */; };
+		C01AD58E2FE5377D0044F12A /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C01AD58D2FE5377D0044F12A /* BrivoMobileSDK */; };
 		C02B6A632D81CFC000E03B0F /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02B6A622D81CFC000E03B0F /* Configuration.swift */; };
 		C0717AAD2D81DF8900728779 /* BrivoSampleDevApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0717AAC2D81DF8900728779 /* BrivoSampleDevApp.swift */; };
-		C0ACA3D12FCEC0B300CD4814 /* BrivoMobileSDK in Frameworks */ = {isa = PBXBuildFile; productRef = C0ACA3D02FCEC0B300CD4814 /* BrivoMobileSDK */; };
 		C0C202EB2E61A4B1009B4993 /* AccessPointDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C202E92E61A4B1009B4993 /* AccessPointDetailsViewModel.swift */; };
 		C0C202EC2E61A4B1009B4993 /* AccessPointDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C202E82E61A4B1009B4993 /* AccessPointDetailsView.swift */; };
 		C0C203182E61A536009B4993 /* AccessPointExtrasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C203162E61A536009B4993 /* AccessPointExtrasView.swift */; };
@@ -47,6 +49,8 @@
 		5D9E0D2E2DE4A25F00A49DC4 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		5D9E0D2F2DE4A25F00A49DC4 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		5D9E0D302DE4A25F00A49DC4 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		76586EF52FE2774C000D2B80 /* MagicButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicButtonView.swift; sourceTree = "<group>"; };
+		76586EF62FE2774C000D2B80 /* MagicButtonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicButtonViewModel.swift; sourceTree = "<group>"; };
 		AF0332A92C4FD758003B28B6 /* BrivoSampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrivoSampleApp.entitlements; sourceTree = "<group>"; };
 		C02B6A622D81CFC000E03B0F /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		C0717AAC2D81DF8900728779 /* BrivoSampleDevApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoSampleDevApp.swift; sourceTree = "<group>"; };
@@ -64,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0ACA3D12FCEC0B300CD4814 /* BrivoMobileSDK in Frameworks */,
+				C01AD58E2FE5377D0044F12A /* BrivoMobileSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +136,7 @@
 		5D9E0D332DE4A25F00A49DC4 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				76586EF72FE2774C000D2B80 /* Magic button */,
 				5D9E0D222DE4A25F00A49DC4 /* AccessPointView */,
 				C0C202EA2E61A4B1009B4993 /* AccessPointDetailsView */,
 				5D9E0D252DE4A25F00A49DC4 /* BrivoPass */,
@@ -140,6 +145,15 @@
 				0C803C322E72B6EB00351E47 /* Common */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		76586EF72FE2774C000D2B80 /* Magic button */ = {
+			isa = PBXGroup;
+			children = (
+				76586EF52FE2774C000D2B80 /* MagicButtonView.swift */,
+				76586EF62FE2774C000D2B80 /* MagicButtonViewModel.swift */,
+			);
+			path = "Magic button";
 			sourceTree = "<group>";
 		};
 		C0C202EA2E61A4B1009B4993 /* AccessPointDetailsView */ = {
@@ -207,7 +221,7 @@
 			);
 			name = BrivoSampleApp;
 			packageProductDependencies = (
-				C0ACA3D02FCEC0B300CD4814 /* BrivoMobileSDK */,
+				C01AD58D2FE5377D0044F12A /* BrivoMobileSDK */,
 			);
 			productName = BrivoSampleApp;
 			productReference = E09E3DC62BA1F50000B2F901 /* BrivoSampleApp.app */;
@@ -238,7 +252,7 @@
 			);
 			mainGroup = E09E3DBD2BA1F50000B2F901;
 			packageReferences = (
-				C0ACA3CD2FCEC0B300CD4814 /* XCLocalSwiftPackageReference "../Distribution/Allegion" */,
+				C01AD58A2FE5377D0044F12A /* XCLocalSwiftPackageReference "../Distribution/Allegion" */,
 			);
 			productRefGroup = E09E3DC72BA1F50000B2F901 /* Products */;
 			projectDirPath = "";
@@ -285,6 +299,8 @@
 				0C803C342E72B6EB00351E47 /* ExtendedInfoSheet.swift in Sources */,
 				0C803C352E72B6EB00351E47 /* HeaderWithInfo.swift in Sources */,
 				0C803C362E72B6EB00351E47 /* ExtendedInfoItem.swift in Sources */,
+				76586EF82FE2774D000D2B80 /* MagicButtonView.swift in Sources */,
+				76586EF92FE2774D000D2B80 /* MagicButtonViewModel.swift in Sources */,
 				5D9E0D402DE4A25F00A49DC4 /* AccessPointView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,7 +362,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 3.3.1;
+				MARKETING_VERSION = 3.5.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -404,7 +420,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 3.3.1;
+				MARKETING_VERSION = 3.5.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -516,14 +532,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
-		C0ACA3CD2FCEC0B300CD4814 /* XCLocalSwiftPackageReference "../Distribution/Allegion" */ = {
+		C01AD58A2FE5377D0044F12A /* XCLocalSwiftPackageReference "../Distribution/Allegion" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ..;
 		};
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C0ACA3D02FCEC0B300CD4814 /* BrivoMobileSDK */ = {
+		C01AD58D2FE5377D0044F12A /* BrivoMobileSDK */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = BrivoMobileSDK;
 		};

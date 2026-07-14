@@ -6244,6 +6244,100 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessPointNotFound",
+            "printedName": "accessPointNotFound",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO19accessPointNotFoundSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO19accessPointNotFoundSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO19accessPointNotFoundSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO19accessPointNotFoundSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "passMissingCredentials",
+            "printedName": "passMissingCredentials",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO22passMissingCredentialsSivpZ",
+            "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO22passMissingCredentialsSivpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A20OnAirErrorStatusCodeO22passMissingCredentialsSivgZ",
+                "mangledName": "$s16BrivoNetworkCore0A20OnAirErrorStatusCodeO22passMissingCredentialsSivgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -6724,6 +6818,108 @@
                 "declKind": "Accessor",
                 "usr": "s:16BrivoNetworkCore0A11OnAirErrorsC34tokenRefreshAlreadyInProgressError0aC00aL0CvgZ",
                 "mangledName": "$s16BrivoNetworkCore0A11OnAirErrorsC34tokenRefreshAlreadyInProgressError0aC00aL0CvgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "accessPointNotFoundError",
+            "printedName": "accessPointNotFoundError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A11OnAirErrorsC24accessPointNotFoundError0aC00aK0CvpZ",
+            "mangledName": "$s16BrivoNetworkCore0A11OnAirErrorsC24accessPointNotFoundError0aC00aK0CvpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A11OnAirErrorsC24accessPointNotFoundError0aC00aK0CvgZ",
+                "mangledName": "$s16BrivoNetworkCore0A11OnAirErrorsC24accessPointNotFoundError0aC00aK0CvgZ",
+                "moduleName": "BrivoNetworkCore",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "passMissingCredentialsError",
+            "printedName": "passMissingCredentialsError",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BrivoError",
+                "printedName": "BrivoCore.BrivoError",
+                "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16BrivoNetworkCore0A11OnAirErrorsC27passMissingCredentialsError0aC00aJ0CvpZ",
+            "mangledName": "$s16BrivoNetworkCore0A11OnAirErrorsC27passMissingCredentialsError0aC00aJ0CvpZ",
+            "moduleName": "BrivoNetworkCore",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BrivoError",
+                    "printedName": "BrivoCore.BrivoError",
+                    "usr": "c:@M@BrivoCore@objc(cs)BrivoError"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16BrivoNetworkCore0A11OnAirErrorsC27passMissingCredentialsError0aC00aJ0CvgZ",
+                "mangledName": "$s16BrivoNetworkCore0A11OnAirErrorsC27passMissingCredentialsError0aC00aJ0CvgZ",
                 "moduleName": "BrivoNetworkCore",
                 "static": true,
                 "implicit": true,
@@ -9184,553 +9380,595 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 250,
       "length": 3,
       "value": "204"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
       "length": 3,
       "value": "401"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 329,
       "length": 3,
       "value": "403"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 368,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 405,
       "length": 3,
       "value": "404"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 453,
       "length": 3,
       "value": "500"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 502,
       "length": 5,
       "value": "-1009"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 559,
       "length": 5,
       "value": "-1020"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/BrivoHTTPSRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 7463,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 215,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 286,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 354,
       "length": 14,
       "value": "\"unauthorized\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 393,
       "length": 15,
       "value": "\"invalid_token\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 439,
       "length": 31,
       "value": "\"Brivo SDK storage is disabled\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 566,
       "length": 22,
       "value": "\"Invalid Bearer Token\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 623,
       "length": 31,
       "value": "\"Expired Bearer Token provided\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 732,
       "length": 15,
       "value": "\"Authorization\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 784,
       "length": 14,
       "value": "\"Content-type\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 831,
       "length": 20,
       "value": "\"X-Endpoint-Version\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 919,
       "length": 13,
       "value": "\"oauth\/token\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 949,
       "length": 6,
       "value": "\"pass\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 973,
       "length": 7,
       "value": "\"sites\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1010,
       "length": 27,
       "value": "\"users\/credentials\/digital\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1062,
       "length": 15,
       "value": "\"access-points\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1101,
       "length": 14,
       "value": "\"control-lock\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1143,
       "length": 23,
       "value": "\"administrators\/whoami\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1212,
       "length": 22,
       "value": "\"unaffiliated\/devices\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1251,
       "length": 10,
       "value": "\"users\/me\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1280,
       "length": 8,
       "value": "\"access\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1309,
       "length": 10,
       "value": "\"accesses\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1346,
       "length": 17,
       "value": "\"reader-commands\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1384,
       "length": 11,
       "value": "\"set_level\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1422,
       "length": 17,
       "value": "\"\/engageAppToken\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 1470,
       "length": 21,
       "value": "\"resideo-integration\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 2689,
       "length": 18,
       "value": "\"application\/json\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "Dictionary",
       "offset": 3229,
       "length": 36,
       "value": "[(\"Content-type\", \"application\/json\")]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3890,
       "length": 12,
       "value": "\"grant_type\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3925,
       "length": 13,
       "value": "\"access_code\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 3963,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 4000,
       "length": 12,
       "value": "\"serial_num\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 4037,
       "length": 15,
       "value": "\"serial_number\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 4080,
       "length": 18,
       "value": "\"firmware_version\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 4117,
       "length": 9,
       "value": "\"user_id\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4401,
       "length": 5,
       "value": "-3001"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4457,
       "length": 5,
       "value": "-3002"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4509,
       "length": 5,
       "value": "-3003"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4565,
       "length": 5,
       "value": "-3004"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4615,
       "length": 5,
       "value": "-3005"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4672,
       "length": 5,
       "value": "-3006"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4731,
       "length": 5,
       "value": "-3007"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4780,
       "length": 5,
       "value": "-3008"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4833,
       "length": 5,
       "value": "-3009"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4906,
       "length": 5,
       "value": "-3010"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "IntegerLiteral",
       "offset": 4942,
       "length": 5,
       "value": "-3011"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4992,
+      "length": 5,
+      "value": "-3012"
+    },
+    {
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5045,
+      "length": 5,
+      "value": "-3013"
+    },
+    {
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5061,
+      "offset": 5164,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5154,
+      "offset": 5257,
       "length": 21,
       "value": "\"Server call failed.\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5265,
+      "offset": 5368,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5367,
+      "offset": 5470,
       "length": 30,
       "value": "\"Authentication missing data.\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5483,
+      "offset": 5586,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5581,
+      "offset": 5684,
       "length": 26,
       "value": "\"Redeem pass missing data\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5699,
+      "offset": 5802,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5801,
+      "offset": 5904,
       "length": 35,
       "value": "\"SDK is set to not use SDK storage\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 5920,
+      "offset": 6023,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6016,
+      "offset": 6119,
       "length": 24,
       "value": "\"Get sites missing data\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6131,
+      "offset": 6234,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6234,
+      "offset": 6337,
       "length": 32,
       "value": "\"Get access points missing data\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6359,
+      "offset": 6462,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6464,
+      "offset": 6567,
       "length": 34,
       "value": "\"Control Lock config missing data\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6575,
+      "offset": 6678,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6670,
+      "offset": 6773,
       "length": 23,
       "value": "\"Refresh token failed.\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6787,
+      "offset": 6890,
       "length": 12,
       "value": "\"BrivoError\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 6893,
+      "offset": 6996,
       "length": 29,
       "value": "\"Refresh already in progress\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/HTTPSRequest.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7109,
+      "length": 12,
+      "value": "\"BrivoError\""
+    },
+    {
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7205,
+      "length": 48,
+      "value": "\"Access point not found in the provided passes.\""
+    },
+    {
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7340,
+      "length": 12,
+      "value": "\"BrivoError\""
+    },
+    {
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Utils\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 7439,
+      "length": 65,
+      "value": "\"The pass for this access point is missing required credentials.\""
+    },
+    {
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Services\/HTTPSRequest.swift",
       "kind": "Array",
       "offset": 1233,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/HTTPSRequestInfo.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/HTTPSRequestInfo.swift",
       "kind": "IntegerLiteral",
       "offset": 745,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
       "kind": "StringLiteral",
       "offset": 374,
       "length": 7,
       "value": "\"token\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
       "kind": "StringLiteral",
       "offset": 410,
       "length": 15,
       "value": "\"refresh_token\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
       "kind": "StringLiteral",
       "offset": 455,
       "length": 16,
       "value": "\"firebase_token\""
     },
     {
-      "filePath": "\/Volumes\/workspace\/repository\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
+      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoNetworkCore\/BrivoNetworkCore\/Models\/SmartHomeTokens.swift",
       "kind": "StringLiteral",
       "offset": 497,
       "length": 12,

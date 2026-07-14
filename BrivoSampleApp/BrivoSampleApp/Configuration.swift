@@ -22,5 +22,5 @@ struct Configuration {
     let dormakabaPassword: String = ""
     let dormakabaServerURL: String = ""
     let dormakabaEvoloSmartProjectID: Int? = nil
-    let dormakabaUnlockTimeoutDuration: TimeInterval = 30
+    let dormakabaUnlockTimeoutDuration: Duration = .seconds(30)
 }
