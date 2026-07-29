@@ -76,7 +76,6 @@ public enum BrivoBLEError : Swift.Error {
     public static let unableToConvertExternalCredentialToData: Swift.Int
     public static let cannotFindSelectedPeripheral: Swift.Int
     public static let communicationTimeout: Swift.Int
-    public static let communicationFailed: Swift.Int
   }
   case unknownError(reason: Swift.String)
   case poweredOffError(reason: Swift.String)
@@ -90,7 +89,7 @@ public enum BrivoBLEError : Swift.Error {
   case brivoBleErrorWithDescription(reason: Swift.String, info: [Swift.String : Any])
   case scanTimeoutError(reason: Swift.String)
   case scannerBusy
-  case connectionFailed(info: [Swift.String : Any])
+  case connectionFailed
   case connectionTimeout
   case communicationTimeout
   case peripheralNotConnected
@@ -101,7 +100,6 @@ public enum BrivoBLEError : Swift.Error {
   case missingDataForExternalCredentialRequest
   case unableToConvertExternalCredentialToData
   case cannotFindSelectedPeripheral
-  case communicationFailed(info: [Swift.String : Any])
 }
 extension BrivoBLE.BrivoBLEError : Swift.Equatable {
   public static func == (lhs: BrivoBLE.BrivoBLEError, rhs: BrivoBLE.BrivoBLEError) -> Swift.Bool
@@ -168,11 +166,6 @@ extension BrivoBLE.ValidBLEDevice : Swift.Identifiable {
     get
   }
   public typealias ID = Swift.Int
-}
-extension BrivoBLE.ValidBLEDevice : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
 }
 extension BrivoBLE.ValidBLEDevice {
   public var toNearbyDevice: BrivoCore.NearbyDevice {

@@ -125,11 +125,8 @@ public enum ScannerState : Swift.Equatable {
   case idle
   case scanning
   case paused
+  case waitingForBluetooth(reason: Swift.String)
   public static func == (a: BrivoAccess.ScannerState, b: BrivoAccess.ScannerState) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 @objc public class ContinuousScannerService : ObjectiveC.NSObject {
   public var scannerState: BrivoAccess.ScannerState
@@ -225,6 +222,5 @@ extension BrivoAccess.SDKModule : Swift.Hashable {}
 extension BrivoAccess.SDKModule : Swift.RawRepresentable {}
 extension BrivoAccess.RefreshCredentialErrorType : Swift.Equatable {}
 extension BrivoAccess.RefreshCredentialErrorType : Swift.Hashable {}
-extension BrivoAccess.ScannerState : Swift.Hashable {}
 extension BrivoAccess.UnlockStrategy : Swift.Equatable {}
 extension BrivoAccess.UnlockStrategy : Swift.Hashable {}

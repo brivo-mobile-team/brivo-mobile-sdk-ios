@@ -26,11 +26,6 @@ public enum AccessPointCommunicationState : Swift.Int, Swift.Codable {
     get
   }
 }
-extension BrivoCore.AccessPointCommunicationState : Swift.CustomStringConvertible {
-  public var description: Swift.String {
-    get
-  }
-}
 public struct AccessPointPath : Swift.Equatable {
   public var accessPointId: Swift.Int
   public var siteId: Swift.Int
@@ -75,7 +70,7 @@ public struct BrivoBLEConfiguration : Swift.Equatable {
   public let scanTimeout: Swift.Duration
   public let connectionTimeout: Swift.Duration
   public let communicationTimeout: Swift.Duration
-  public init(scanTimeout: Swift.Duration = .seconds(10), connectionTimeout: Swift.Duration = .seconds(5), communicationTimeout: Swift.Duration = .seconds(10))
+  public init(scanTimeout: Swift.Duration = .seconds(10), connectionTimeout: Swift.Duration = .seconds(3), communicationTimeout: Swift.Duration = .seconds(10))
   public static func == (a: BrivoCore.BrivoBLEConfiguration, b: BrivoCore.BrivoBLEConfiguration) -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers public class BrivoControlLockAuthenticationResponse : ObjectiveC.NSObject, Swift.Codable {
@@ -323,12 +318,12 @@ public struct BrivoSDKHIDOrigoConfiguration : Swift.Equatable {
   #if compiler(>=5.3) && $NonescapableTypes
   public init(accessToken: Swift.String, refreshToken: Swift.String?)
   #endif
+  required public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
   #if compiler(>=5.3) && $NonescapableTypes
   required public init?(dictionary: [Swift.String : Any]?)
   #endif
   @objc deinit
-  public func encode(to encoder: any Swift.Encoder) throws
-  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class BrivoUserDefaults {
   #if compiler(>=5.3) && $NonescapableTypes

@@ -1,6 +1,6 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/ionutmacovei/Developer/mobile-sdk-ios/archive/derived/simulator/Build/Intermediates.noindex/ArchiveIntermediates/BrivoAccess-Distribution/InstallationBuildProductsLocation/Library/Frameworks/BrivoLocalAuthentication.framework/BrivoLocalAuthentication'
+binary-path:     '/Users/catalindemian/Workspace/mobile-pass-plus-specs/mobile-pass-plus-ios/brivo-mobile-sdk/archive/derived/simulator/Build/Intermediates.noindex/ArchiveIntermediates/BrivoAccess-Distribution/InstallationBuildProductsLocation/Library/Frameworks/BrivoLocalAuthentication.framework/BrivoLocalAuthentication'
 relocations:
   - { offset: 0x32823, size: 0x8, addend: 0x0, symName: _BrivoLocalAuthenticationVersionString, symObjAddr: 0x0, symBinAddr: 0x5360, symSize: 0x0 }
   - { offset: 0x3285A, size: 0x8, addend: 0x0, symName: _BrivoLocalAuthenticationVersionNumber, symObjAddr: 0x40, symBinAddr: 0x53A0, symSize: 0x0 }
@@ -47,18 +47,18 @@ relocations:
   - { offset: 0x33A69, size: 0x8, addend: 0x0, symName: '_$sSh8_VariantV16_migrateToNative_8removingxs10__CocoaSetV_xtFSo9LAContextC_Tg5', symObjAddr: 0x20C0, symBinAddr: 0x3B74, symSize: 0x154 }
   - { offset: 0x33B25, size: 0x8, addend: 0x0, symName: '_$ss10_NativeSetV7_delete2atys10_HashTableV6BucketV_tFSo9LAContextC_Tg5', symObjAddr: 0x2214, symBinAddr: 0x3CC8, symSize: 0x18C }
   - { offset: 0x33C9B, size: 0x8, addend: 0x0, symName: '_$sSo7NSErrorC24BrivoLocalAuthenticationE02asbcD5Error33_2D466F9ECE8DB909280D5F0BD39D3D4ELL0B4Core0bF0CvgTf4n_g', symObjAddr: 0x24C0, symBinAddr: 0x3F74, symSize: 0x220 }
-  - { offset: 0x33D31, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0CMa', symObjAddr: 0x29BC, symBinAddr: 0x4470, symSize: 0x20 }
-  - { offset: 0x33D45, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x2B24, symBinAddr: 0x4588, symSize: 0x44 }
-  - { offset: 0x33D59, size: 0x8, addend: 0x0, symName: '_$sSo9LAContextCMa', symObjAddr: 0x2B68, symBinAddr: 0x45CC, symSize: 0x44 }
-  - { offset: 0x33D6D, size: 0x8, addend: 0x0, symName: '_$sSh8IteratorV8_VariantOySo9LAContextC__GWOe', symObjAddr: 0x2BAC, symBinAddr: 0x4610, symSize: 0x8 }
-  - { offset: 0x33D81, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0C05localC033_2D466F9ECE8DB909280D5F0BD39D3D4ELL4withs6ResultOyyt0A4Core0A5ErrorCGSo8LAPolicyV_tYaFSb8inserted_So9LAContextC17memberAfterInserttShyAQGzYbXEfU_TA', symObjAddr: 0x2BB4, symBinAddr: 0x4618, symSize: 0x50 }
-  - { offset: 0x33DCC, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0C05localC033_2D466F9ECE8DB909280D5F0BD39D3D4ELL4withs6ResultOyyt0A4Core0A5ErrorCGSo8LAPolicyV_tYaF6$deferL_yyFSo9LAContextCSgShyAQGzYbXEfU_TA', symObjAddr: 0x2C84, symBinAddr: 0x46E8, symSize: 0x40 }
-  - { offset: 0x33E1F, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x2CC4, symBinAddr: 0x4728, symSize: 0x10 }
-  - { offset: 0x33E33, size: 0x8, addend: 0x0, symName: '_$sypWOc', symObjAddr: 0x2CD4, symBinAddr: 0x4738, symSize: 0x3C }
-  - { offset: 0x33E47, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x2D10, symBinAddr: 0x4774, symSize: 0x8 }
-  - { offset: 0x33E5B, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x2D18, symBinAddr: 0x477C, symSize: 0x20 }
-  - { offset: 0x33E6F, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_0, symObjAddr: 0x2D38, symBinAddr: 0x479C, symSize: 0x24 }
-  - { offset: 0x33E83, size: 0x8, addend: 0x0, symName: '_$sSS_s23CustomStringConvertible_s8SendablepSgtWOc', symObjAddr: 0x2D5C, symBinAddr: 0x47C0, symSize: 0x50 }
+  - { offset: 0x33D31, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0CMa', symObjAddr: 0x29C0, symBinAddr: 0x4474, symSize: 0x20 }
+  - { offset: 0x33D45, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x2B28, symBinAddr: 0x458C, symSize: 0x44 }
+  - { offset: 0x33D59, size: 0x8, addend: 0x0, symName: '_$sSo9LAContextCMa', symObjAddr: 0x2B6C, symBinAddr: 0x45D0, symSize: 0x44 }
+  - { offset: 0x33D6D, size: 0x8, addend: 0x0, symName: '_$sSh8IteratorV8_VariantOySo9LAContextC__GWOe', symObjAddr: 0x2BB0, symBinAddr: 0x4614, symSize: 0x8 }
+  - { offset: 0x33D81, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0C05localC033_2D466F9ECE8DB909280D5F0BD39D3D4ELL4withs6ResultOyyt0A4Core0A5ErrorCGSo8LAPolicyV_tYaFSb8inserted_So9LAContextC17memberAfterInserttShyAQGzYbXEfU_TA', symObjAddr: 0x2BB8, symBinAddr: 0x461C, symSize: 0x50 }
+  - { offset: 0x33DCC, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0C05localC033_2D466F9ECE8DB909280D5F0BD39D3D4ELL4withs6ResultOyyt0A4Core0A5ErrorCGSo8LAPolicyV_tYaF6$deferL_yyFSo9LAContextCSgShyAQGzYbXEfU_TA', symObjAddr: 0x2C88, symBinAddr: 0x46EC, symSize: 0x40 }
+  - { offset: 0x33E1F, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x2CC8, symBinAddr: 0x472C, symSize: 0x10 }
+  - { offset: 0x33E33, size: 0x8, addend: 0x0, symName: '_$sypWOc', symObjAddr: 0x2CD8, symBinAddr: 0x473C, symSize: 0x3C }
+  - { offset: 0x33E47, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x2D14, symBinAddr: 0x4778, symSize: 0x8 }
+  - { offset: 0x33E5B, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_0, symObjAddr: 0x2D1C, symBinAddr: 0x4780, symSize: 0x20 }
+  - { offset: 0x33E6F, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_0, symObjAddr: 0x2D3C, symBinAddr: 0x47A0, symSize: 0x24 }
+  - { offset: 0x33E83, size: 0x8, addend: 0x0, symName: '_$sSS_s23CustomStringConvertible_s8SendablepSgtWOc', symObjAddr: 0x2D60, symBinAddr: 0x47C4, symSize: 0x50 }
   - { offset: 0x33ECC, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0C8instanceACvgZ', symObjAddr: 0x2C, symBinAddr: 0x1B28, symSize: 0x40 }
   - { offset: 0x34035, size: 0x8, addend: 0x0, symName: '_$sSD17dictionaryLiteralSDyxq_Gx_q_td_tcfCSS_s23CustomStringConvertible_s8SendablepSgTt0g5Tf4g_n', symObjAddr: 0x23A0, symBinAddr: 0x3E54, symSize: 0x120 }
   - { offset: 0x341CA, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0CACyc33_2D466F9ECE8DB909280D5F0BD39D3D4ELlfc', symObjAddr: 0x6C, symBinAddr: 0x1B68, symSize: 0x188 }
@@ -77,5 +77,5 @@ relocations:
   - { offset: 0x34C9B, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0CfD', symObjAddr: 0x1148, symBinAddr: 0x2C44, symSize: 0x30 }
   - { offset: 0x34CD2, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0CAA06IBrivodC0A2aDP06cancelC0yyFTW', symObjAddr: 0x11C8, symBinAddr: 0x2CC4, symSize: 0x64 }
   - { offset: 0x34D31, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0CAA06IBrivodC0A2aDP12authenticates6ResultOyyt0A4Core0A5ErrorCGyYaFTW', symObjAddr: 0x1274, symBinAddr: 0x2D28, symSize: 0x4C }
-  - { offset: 0x34D77, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0C07checkIfC11IsAvailable33_2D466F9ECE8DB909280D5F0BD39D3D4ELL3fors6ResultOyyt0A4Core0A5ErrorCGSo8LAPolicyV_tFTf4nd_n', symObjAddr: 0x26E0, symBinAddr: 0x4194, symSize: 0x2DC }
+  - { offset: 0x34D77, size: 0x8, addend: 0x0, symName: '_$s24BrivoLocalAuthentication0a8SDKLocalC0C07checkIfC11IsAvailable33_2D466F9ECE8DB909280D5F0BD39D3D4ELL3fors6ResultOyyt0A4Core0A5ErrorCGSo8LAPolicyV_tFTf4nd_n', symObjAddr: 0x26E0, symBinAddr: 0x4194, symSize: 0x2E0 }
 ...

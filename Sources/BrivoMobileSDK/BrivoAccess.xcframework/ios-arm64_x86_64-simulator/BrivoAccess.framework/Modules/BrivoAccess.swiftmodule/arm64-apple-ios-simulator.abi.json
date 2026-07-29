@@ -3410,67 +3410,60 @@
           },
           {
             "kind": "Var",
-            "name": "hashValue",
-            "printedName": "hashValue",
+            "name": "waitingForBluetooth",
+            "printedName": "waitingForBluetooth",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11BrivoAccess12ScannerStateO9hashValueSivp",
-            "mangledName": "$s11BrivoAccess12ScannerStateO9hashValueSivp",
-            "moduleName": "BrivoAccess",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(BrivoAccess.ScannerState.Type) -> (Swift.String) -> BrivoAccess.ScannerState",
                 "children": [
                   {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> BrivoAccess.ScannerState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScannerState",
+                        "printedName": "BrivoAccess.ScannerState",
+                        "usr": "s:11BrivoAccess12ScannerStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(reason: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Metatype",
+                    "printedName": "BrivoAccess.ScannerState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ScannerState",
+                        "printedName": "BrivoAccess.ScannerState",
+                        "usr": "s:11BrivoAccess12ScannerStateO"
+                      }
+                    ]
                   }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11BrivoAccess12ScannerStateO9hashValueSivg",
-                "mangledName": "$s11BrivoAccess12ScannerStateO9hashValueSivg",
-                "moduleName": "BrivoAccess",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "hash",
-            "printedName": "hash(into:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Hasher",
-                "printedName": "Swift.Hasher",
-                "paramValueOwnership": "InOut",
-                "usr": "s:s6HasherV"
+                ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:11BrivoAccess12ScannerStateO4hash4intoys6HasherVz_tF",
-            "mangledName": "$s11BrivoAccess12ScannerStateO4hash4intoys6HasherVz_tF",
-            "moduleName": "BrivoAccess",
-            "implicit": true,
-            "funcSelfKind": "NonMutating"
+            "declKind": "EnumElement",
+            "usr": "s:11BrivoAccess12ScannerStateO19waitingForBluetoothyACSS_tcACmF",
+            "mangledName": "$s11BrivoAccess12ScannerStateO19waitingForBluetoothyACSS_tcACmF",
+            "moduleName": "BrivoAccess"
           },
           {
             "kind": "Function",
@@ -3526,13 +3519,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -5574,13 +5560,6 @@
             ],
             "usr": "s:s12IdentifiableP",
             "mangledName": "$ss12IdentifiableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
           }
         ]
       },
@@ -5695,289 +5674,289 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 237,
       "length": 27,
       "value": "\"com.brivo.sdk.BrivoAccess\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 353,
       "length": 5,
       "value": "-1000"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 16,
       "value": "\"Unknown error.\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 499,
       "length": 5,
       "value": "-1001"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 527,
       "length": 42,
       "value": "\"BrivoSDK init failed. SDK not configured\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 685,
       "length": 5,
       "value": "-1002"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 713,
       "length": 41,
       "value": "\"SDK not configured to use local storage\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 5,
       "value": "-1003"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 897,
       "length": 38,
       "value": "\"There are no passes on local storage\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1056,
       "length": 5,
       "value": "-1004"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1084,
       "length": 40,
       "value": "\"Acess point not found in local storage\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1238,
       "length": 5,
       "value": "-1005"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1266,
       "length": 33,
       "value": "\"Pass not found in local storage\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1407,
       "length": 5,
       "value": "-1006"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1435,
       "length": 24,
       "value": "\"Missing ble credential\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1568,
       "length": 5,
       "value": "-1007"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1596,
       "length": 32,
       "value": "\"Access point invalid door type\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1740,
       "length": 5,
       "value": "-1008"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1768,
       "length": 29,
       "value": "\"Missing internet connection\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1902,
       "length": 5,
       "value": "-1009"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1930,
       "length": 21,
       "value": "\"Missing reader UUID\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 2063,
       "length": 5,
       "value": "-1010"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 2091,
       "length": 36,
       "value": "\"Access point unsupported door type\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 2906,
       "length": 5,
       "value": "-1014"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 2934,
       "length": 26,
       "value": "\"Missing pass credentials\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 3077,
       "length": 5,
       "value": "-1015"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 3105,
       "length": 46,
       "value": "\"Access point not found by continuous scanner\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 13,
       "value": "\"BrivoModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 483,
       "length": 24,
       "value": "\"BrivoBLEAllegionModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 528,
       "length": 21,
       "value": "\"BrivoHIDOrigoModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 571,
       "length": 22,
       "value": "\"BrivoDormakabaModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 18,
       "value": "\"BrivoSaltoModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "Array",
       "offset": 2250,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "Array",
       "offset": 2828,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 25,
       "value": "\"Missing pass credential\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 24,
       "value": "\"Missing bleCredentials\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 38,
       "value": "\"EE8732B3-2D52-409B-9084-70AD31F6C790\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
       "kind": "FloatLiteral",
       "offset": 374,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
       "kind": "Array",
-      "offset": 1525,
+      "offset": 1570,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1574,
+      "offset": 1619,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
+      "filePath": "\/Users\/catalindemian\/Workspace\/mobile-pass-plus-specs\/mobile-pass-plus-ios\/brivo-mobile-sdk\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
       "kind": "Array",
-      "offset": 1868,
+      "offset": 1913,
       "length": 2,
       "value": "[]"
     }

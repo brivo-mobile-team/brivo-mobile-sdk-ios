@@ -188,8 +188,6 @@ public enum BrivoOnAirErrorStatusCode {
   public static let refreshTokenFailed: Swift.Int
   public static let trustedNetworkLocationPermissionNotGranted: Swift.Int
   public static let other: Swift.Int
-  public static let accessPointNotFound: Swift.Int
-  public static let passMissingCredentials: Swift.Int
 }
 @objc @_inheritsConvenienceInitializers public class BrivoOnAirErrors : ObjectiveC.NSObject {
   public static let serverCallError: BrivoCore.BrivoError
@@ -201,8 +199,6 @@ public enum BrivoOnAirErrorStatusCode {
   public static let controlLockConfigMissingDataError: BrivoCore.BrivoError
   public static let refreshTokenError: BrivoCore.BrivoError
   public static let tokenRefreshAlreadyInProgressError: BrivoCore.BrivoError
-  public static let accessPointNotFoundError: BrivoCore.BrivoError
-  public static let passMissingCredentialsError: BrivoCore.BrivoError
   public static func brivoOnAirErrorWithDescription(_ description: Swift.String) -> BrivoCore.BrivoError
   #if compiler(>=5.3) && $NonescapableTypes
   public static func refreshTokenErrorWithDescription(_ description: Swift.String?) -> BrivoCore.BrivoError
