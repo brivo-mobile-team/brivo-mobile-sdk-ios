@@ -43,16 +43,16 @@ struct AccessPointDetailsView: View {
                     dismissButton: .default(Text("OK"))
                 )
             }
-
-            AccessPointExtrasView(
-                viewModel: .init(selectedAccessPoint: stateModel.selectedAccessPoint)
-            )
-
             if stateModel.shouldShowInternetUnlockToggle {
                 Toggle(isOn: $stateModel.shouldForceInternetUnlock) {
                     Text("Should force internet unlock")
                 }
                 .padding()
+            }
+            if let accessPoint = stateModel.selectedAccessPoint {
+                AccessPointExtrasView(
+                    viewModel: .init(selectedAccessPoint: accessPoint)
+                )
             }
         }
         .toast(
@@ -66,12 +66,14 @@ struct AccessPointDetailsView: View {
             duration: Toast.long
         )
         .toolbar {
-            Button {
-                stateModel.shouldShowBottomSheet = true
-            } label: {
-                Image(systemName: "info.circle")
+            if stateModel.selectedAccessPoint != nil {
+                Button {
+                    stateModel.shouldShowBottomSheet = true
+                } label: {
+                    Image(systemName: "info.circle")
+                }
+                .accessibilityLabel("Access Point Informations Button")
             }
-            .accessibilityLabel("Access Point Informations Button")
         }
         .sheet(isPresented: $stateModel.shouldShowBottomSheet) {
             ExtendedInfoSheet(title: "Access Point Informations", items: stateModel.doorExtendedDetails)
@@ -80,26 +82,5 @@ struct AccessPointDetailsView: View {
 }
 
 #Preview {
-    AccessPointDetailsView(
-        stateModel: .init(
-            selectedAccessPoint: BrivoSelectedAccessPoint(
-                name: "Testing reader",
-                accessPointPath: AccessPointPath(
-                    accessPointId: 1,
-                    siteId: 1,
-                    passId: "1",
-                    hasTrustedNetwork: false
-                ),
-                doorType: .internet,
-                passCredential: BrivoOnairPassCredentials(
-                    userId: "",
-                    tokens: BrivoTokens(
-                        accessToken: "",
-                        refreshToken: ""
-                    )
-                ),
-                deviceModelId: ""
-            )
-        )
-    )
+    AccessPointDetailsView(stateModel: .init())
 }

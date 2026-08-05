@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoLocalAuthentication
+// swift-module-flags: -target arm64-apple-ios17-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoLocalAuthentication
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import BrivoCore
 import Foundation
@@ -9,6 +9,17 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoSDKLocalAuthentication : ObjectiveC.NSObject, BrivoLocalAuthentication.IBrivoSDKLocalAuthentication {
+  public static let instance: BrivoLocalAuthentication.BrivoSDKLocalAuthentication
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func canAuthenticate() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func authenticate() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
+  #endif
+  public func cancelAuthentication()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class BrivoLocalAuthenticationErrors : ObjectiveC.NSObject {
   public static let authenticationFailureError: BrivoCore.BrivoError
   public static let localHardwareUnavailableError: BrivoCore.BrivoError
@@ -21,17 +32,6 @@ import _SwiftConcurrencyShims
   public static let biometryLockoutError: BrivoCore.BrivoError
   public static let biometryNotEnrolledError: BrivoCore.BrivoError
   @objc override dynamic public init()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class BrivoSDKLocalAuthentication : ObjectiveC.NSObject, BrivoLocalAuthentication.IBrivoSDKLocalAuthentication {
-  public static let instance: BrivoLocalAuthentication.BrivoSDKLocalAuthentication
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func canAuthenticate() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func authenticate() async -> Swift.Result<Swift.Void, BrivoCore.BrivoError>
-  #endif
-  public func cancelAuthentication()
   @objc deinit
 }
 public protocol IBrivoSDKLocalAuthentication {

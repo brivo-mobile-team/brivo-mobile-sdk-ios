@@ -15,7 +15,7 @@ class AccessPointDetailsViewModel: ObservableObject {
 
     // MARK: - Properties
 
-    let selectedAccessPoint: BrivoSelectedAccessPoint
+    let selectedAccessPoint: BrivoSelectedAccessPoint?
     @Published var isShowingAlert = false
     @Published var alertTitle = ""
     @Published var alertMessage = ""
@@ -25,14 +25,17 @@ class AccessPointDetailsViewModel: ObservableObject {
     @Published var isShowingDormakabaToast = false
     @Published var shouldShowCopyToast: Bool = false
     @Published var shouldShowBottomSheet: Bool = false
-
     @Published var shouldForceInternetUnlock: Bool = false
     
     var shouldShowInternetUnlockToggle: Bool {
-        selectedAccessPoint.doorType == .wavelynx
+        selectedAccessPoint?.doorType == .wavelynx
     }
+    
     private(set) lazy var doorExtendedDetails: [ExtendedInfoItem] = {
-
+        
+        guard let selectedAccessPoint = selectedAccessPoint else {
+            return []
+        }
         let id = String(selectedAccessPoint.accessPointPath.accessPointId)
         let doorType = selectedAccessPoint.doorType.stringValue
         let modelId = selectedAccessPoint.deviceModelId
@@ -56,7 +59,7 @@ class AccessPointDetailsViewModel: ObservableObject {
 
     // MARK: - init
 
-    init(selectedAccessPoint: BrivoSelectedAccessPoint,
+    init(selectedAccessPoint: BrivoSelectedAccessPoint? = nil,
          isShowingAlert: Bool = false,
          alertTitle: String = "",
          alertMessage: String = "",
@@ -67,10 +70,11 @@ class AccessPointDetailsViewModel: ObservableObject {
         self.alertMessage = alertMessage
         self.isLocked = isLocked
     }
-
+    
     //MARK: - Public
 
-    @MainActor
+    // swiftlint:disable line_length
+    // swiftlint:disable function_body_length
     func openAccessPoint() {
         isShowingLoading = true
         setUnlockedTimer()
@@ -82,35 +86,43 @@ class AccessPointDetailsViewModel: ObservableObject {
             timer.invalidate()
         }
 
-        let passId = selectedAccessPoint.accessPointPath.passId
-        let accessPointIdString = "\(selectedAccessPoint.accessPointPath.accessPointId)"
-        if selectedAccessPoint.doorType == .dormakaba {
-            isShowingDormakabaToast = true
+        let brivoSDKAccess = BrivoSDKAccess.instance()
+        brivoSDKAccess.turnOnCentral()
+
+        if let selectedAccessPoint = selectedAccessPoint {
+            let passId = selectedAccessPoint.accessPointPath.passId
+            let accessPointIdString = "\(selectedAccessPoint.accessPointPath.accessPointId)"
+            if selectedAccessPoint.doorType == .dormakaba {
+                isShowingDormakabaToast = true
+            }
+            unlockSelectedAccessPoint(passId: passId,
+                                      accessPointIdString: accessPointIdString,
+                                      brivoSDKAccess: brivoSDKAccess,
+                                      cancellationSignal: cancellationSignal,
+                                      timer: timer)
+        } else {
+            unlockNearestAccessPoint(brivoSDKAccess: brivoSDKAccess,
+                                     cancellationSignal: cancellationSignal,
+                                     timer: timer)
         }
-        unlockSelectedAccessPoint(passId: passId,
-                                  accessPointIdString: accessPointIdString,
-                                  cancellationSignal: cancellationSignal,
-                                  timer: timer)
         RunLoop.current.add(timer, forMode: .common)
     }
-    
+    // swiftlint:enable line_length
+    // swiftlint:enable function_body_length
+
     // MARK: - Private
 
-    @MainActor
-    private func unlockSelectedAccessPoint(
-        passId: String,
-        accessPointIdString: String,
-        cancellationSignal: CancellationSignal,
-        timer: Timer
-    ) {
+    private func unlockSelectedAccessPoint(passId: String,
+                                           accessPointIdString: String,
+                                           brivoSDKAccess: BrivoSDKAccess,
+                                           cancellationSignal: CancellationSignal,
+                                           timer: Timer) {
+        
         Task {
-            let brivoSDKAccess = BrivoSDKAccess.instance()
-            for try await result in await brivoSDKAccess.unlockAccessPoint(
-                passId: passId,
-                accessPointId: accessPointIdString,
-                unlockStrategy: shouldForceInternetUnlock ? .forceInternetUnlockforBrivoDoors : nil,
-                cancellationSignal: cancellationSignal
-            ) {
+            for try await result in await brivoSDKAccess.unlockAccessPoint(passId: passId,
+                                                                           accessPointId: accessPointIdString,
+                                                                           unlockStrategy: shouldForceInternetUnlock ? .forceInternetUnlockforBrivoDoors : nil,
+                                                                           cancellationSignal: cancellationSignal) {
                 await MainActor.run {
                     if result.accessPointCommunicationState == .success {
                         timer.invalidate()
@@ -133,6 +145,32 @@ class AccessPointDetailsViewModel: ObservableObject {
         }
     }
 
+
+    private func unlockNearestAccessPoint(brivoSDKAccess: BrivoSDKAccess,
+                                          cancellationSignal: CancellationSignal,
+                                          timer: Timer) {
+        Task {
+            for try await result in await brivoSDKAccess.unlockNearestBLEAccessPoint(cancellationSignal: cancellationSignal) {
+                await MainActor.run {
+                    switch result.accessPointCommunicationState {
+                    case .success:
+                        timer.invalidate()
+                        self.setLocked(isLocked: false)
+                        isShowingLoading = false
+                    case .failed:
+                        timer.invalidate()
+                        self.resetToInitialState()
+                        self.displayErrorMessage(
+                            message: (result.error?.localizedDescription ?? "") + " " + "Status Code: \(result.error?.code ?? 0)"
+                        )
+                    default:
+                        break
+                    }
+                }
+            }
+        }
+    }
+
     private func resetToInitialState() {
         setLocked(isLocked: true)
         isShowingLoading = false
@@ -142,7 +180,7 @@ class AccessPointDetailsViewModel: ObservableObject {
     private func setLocked(isLocked: Bool) {
         self.isLocked = isLocked
     }
-    
+
     private func setUnlockedTimer() {
         let timer = Timer(timeInterval: 30.0, repeats: false) {[weak self] (timer) in
             self?.setLocked(isLocked: true)

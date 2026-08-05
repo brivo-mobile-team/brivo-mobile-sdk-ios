@@ -281,7 +281,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreBluetooth;
 @import ObjectiveC;
 #endif
 
@@ -305,14 +304,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class CBCentralManager;
-SWIFT_CLASS("_TtC8BrivoBLE22BLEConnectionManagerV2")
-@interface BLEConnectionManagerV2 : NSObject <CBCentralManagerDelegate>
-- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC8BrivoBLE18BrivoBLECredential")
 @interface BrivoBLECredential : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -321,8 +312,7 @@ SWIFT_CLASS("_TtC8BrivoBLE18BrivoBLECredential")
 
 SWIFT_CLASS("_TtC8BrivoBLE15BrivoBLEService")
 @interface BrivoBLEService : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC8BrivoBLE10ReaderData")
@@ -622,7 +612,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreBluetooth;
 @import ObjectiveC;
 #endif
 
@@ -646,14 +635,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #if defined(__OBJC__)
 
-@class CBCentralManager;
-SWIFT_CLASS("_TtC8BrivoBLE22BLEConnectionManagerV2")
-@interface BLEConnectionManagerV2 : NSObject <CBCentralManagerDelegate>
-- (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)central;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC8BrivoBLE18BrivoBLECredential")
 @interface BrivoBLECredential : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -662,8 +643,7 @@ SWIFT_CLASS("_TtC8BrivoBLE18BrivoBLECredential")
 
 SWIFT_CLASS("_TtC8BrivoBLE15BrivoBLEService")
 @interface BrivoBLEService : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC8BrivoBLE10ReaderData")

@@ -310,10 +310,9 @@ SWIFT_CLASS("_TtC11BrivoAccess14BrivoSDKAccess")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC11BrivoAccess24ContinuousScannerService")
-@interface ContinuousScannerService : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC11BrivoAccess20BrivoSDKAccessErrors")
+@interface BrivoSDKAccessErrors : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif
@@ -636,10 +635,9 @@ SWIFT_CLASS("_TtC11BrivoAccess14BrivoSDKAccess")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC11BrivoAccess24ContinuousScannerService")
-@interface ContinuousScannerService : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC11BrivoAccess20BrivoSDKAccessErrors")
+@interface BrivoSDKAccessErrors : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

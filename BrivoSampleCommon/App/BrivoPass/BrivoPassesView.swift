@@ -114,7 +114,7 @@ struct BrivoPassesView: View {
         }
         ToolbarItem(placement: .topBarLeading) {
             NavigationLink {
-                MagicButtonView(viewModel: .init(brivoOnAirPasses: viewModel.brivoOnAirPasses))
+                AccessPointDetailsView(stateModel: .init())
             } label: {
                 Text("Magic Button")
             }

@@ -53,7 +53,6 @@ class AccessPointViewModel {
             return nil
         }
         return BrivoSelectedAccessPoint(
-            name: accessPoint.name ?? "Unknown Access Point",
             accessPointPath: AccessPointPath(
                 accessPointId: accessPoint.id,
                 siteId: accessPoint.siteId,

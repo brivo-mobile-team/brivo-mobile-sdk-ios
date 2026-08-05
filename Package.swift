@@ -1,16 +1,12 @@
 // swift-tools-version: 5.9
-//
-// BrivoMobileSDK — Standard distribution.
-//
-// 6 SDK modules. No BLEAllegion, no Allegion-stack third-party deps.
-// Consumers who don't need Allegion lock integration ship the smallest
-// possible binary by integrating this package.
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "BrivoMobileSDK",
     products: [
+        // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "BrivoMobileSDK",
             targets: [
@@ -21,14 +17,51 @@ let package = Package(
                 "BrivoLocalAuthentication",
                 "BrivoOnAir"
             ]
+        ),
+        .library(
+            name: "BrivoBLEAllegion",
+            targets: [
+                "BrivoBLEAllegion"
+            ]
         )
     ],
     targets: [
-        .binaryTarget(name: "BrivoAccess",              path: "./Sources/BrivoMobileSDK/BrivoAccess.xcframework"),
-        .binaryTarget(name: "BrivoBLE",                 path: "./Sources/BrivoMobileSDK/BrivoBLE.xcframework"),
-        .binaryTarget(name: "BrivoCore",                path: "./Sources/BrivoMobileSDK/BrivoCore.xcframework"),
-        .binaryTarget(name: "BrivoLocalAuthentication", path: "./Sources/BrivoMobileSDK/BrivoLocalAuthentication.xcframework"),
-        .binaryTarget(name: "BrivoOnAir",               path: "./Sources/BrivoMobileSDK/BrivoOnAir.xcframework"),
-        .binaryTarget(name: "BrivoNetworkCore",         path: "./Sources/BrivoMobileSDK/BrivoNetworkCore.xcframework")
+
+            .binaryTarget(
+                name: "BrivoAccess",
+                path: "./Sources/BrivoMobileSDK/BrivoAccess.xcframework"
+            ),
+
+            .binaryTarget(
+                name: "BrivoBLE",
+                path: "./Sources/BrivoMobileSDK/BrivoBLE.xcframework"
+            ),
+
+            .binaryTarget(
+                name: "BrivoCore",
+                path: "./Sources/BrivoMobileSDK/BrivoCore.xcframework"
+            ),
+
+            .binaryTarget(
+                name: "BrivoLocalAuthentication",
+                path: "./Sources/BrivoMobileSDK/BrivoLocalAuthentication.xcframework"
+            ),
+
+            .binaryTarget(
+                name: "BrivoOnAir",
+                path: "./Sources/BrivoMobileSDK/BrivoOnAir.xcframework"
+            ),
+
+            .binaryTarget(
+                name: "BrivoNetworkCore",
+                path: "./Sources/BrivoMobileSDK/BrivoNetworkCore.xcframework"
+            ),
+
+            // BrivoAllegion targets
+
+            .binaryTarget(
+                name: "BrivoBLEAllegion",
+                path: "./Sources/BrivoMobileSDK/BrivoBLEAllegion.xcframework"
+            )
     ]
 )
