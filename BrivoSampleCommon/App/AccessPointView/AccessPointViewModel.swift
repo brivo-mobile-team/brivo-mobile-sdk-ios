@@ -5,24 +5,19 @@
 //  Created by Paul Marc on 13.05.2025.
 //
 
+import Foundation
 import BrivoAccess
 import BrivoCore
 import BrivoOnAir
-import SwiftUI
+import Observation
 
+@MainActor
 @Observable
-class AccessPointViewModel {
+final class AccessPointViewModel {
     // MARK: - Properties
 
     private let brivoOnAirPass: BrivoOnairPass
     private let brivoSite: BrivoSite
-    private let formatter: MeasurementFormatter = {
-        let formatter = MeasurementFormatter()
-        formatter.numberFormatter.numberStyle = .decimal
-        formatter.numberFormatter.maximumFractionDigits = 1
-        formatter.unitStyle = .medium
-        return formatter
-    }()
     private let hidOrigoTypes: [DoorType] = [.hidOrigo, .hidOrigoOmnikey]
 
     let siteName: String
@@ -32,6 +27,12 @@ class AccessPointViewModel {
     private(set) var siteExtendedDetails: [ExtendedInfoItem] = []
     var shouldShowCopyToast: Bool = false
     var shouldShowBottomSheet: Bool = false
+
+    private var isRefreshingThermostats = false
+    private var lastRefreshDate: Date = .distantPast
+    private var recentConfirmedUpdates: [Int: RecentThermostatUpdate] = [:]
+    private let refreshProtectionInterval: TimeInterval = 45
+    private let refreshThrottleInterval: TimeInterval = 15
 
     // MARK: - init
 
@@ -73,6 +74,55 @@ class AccessPointViewModel {
         )
     }
 
+    func makeThermostatControlViewModel(for thermostatItem: ThermostatItem) -> ThermostatControlViewModel {
+        ThermostatControlViewModel(
+            brivoOnAirPass: brivoOnAirPass,
+            thermostat: thermostatItem.backingData,
+            thermostatData: thermostatItem.controlData
+        ) { [weak self] thermostatData, source in
+            self?.updateThermostatItem(
+                with: thermostatData,
+                protectFromStaleRefresh: source == .localCommand
+            )
+        }
+    }
+
+    func refreshThermostatItems() async {
+        let now = Date()
+        guard !isRefreshingThermostats,
+              !thermostatItems.isEmpty,
+              now.timeIntervalSince(lastRefreshDate) > refreshThrottleInterval else { return }
+
+        lastRefreshDate = now
+        isRefreshingThermostats = true
+        defer { isRefreshingThermostats = false }
+
+        let tokens = brivoOnAirPass.brivoOnairPassCredentials?.tokens
+        let snapshot = thermostatItems
+
+        await withTaskGroup(of: ThermostatControlData?.self) { group in
+            for item in snapshot {
+                let syncHandler = DefaultThermostatSyncHandler(
+                    brivoTokens: tokens,
+                    ilAccountIntegrationId: item.backingData.ilAccountIntegrationId,
+                    deviceObjectId: item.id
+                )
+                let backingData = item.backingData
+                group.addTask {
+                    if case let .success(response) = await syncHandler.getSettings() {
+                        return ThermostatControlData(response: response, fallback: backingData)
+                    }
+                    return nil
+                }
+            }
+            for await responseData in group {
+                if let responseData {
+                    updateThermostatItem(with: responseData)
+                }
+            }
+        }
+    }
+
     // MARK: - Private
 
     func makeAccessPointItems(from brivoSite: BrivoSite) -> [AccessPointItem] {
@@ -96,26 +146,64 @@ class AccessPointViewModel {
             ExtendedInfoItem(name: "Site ID", value: siteId),
             ExtendedInfoItem(name: "Trusted Network", value: trustedNetwork),
             ExtendedInfoItem(name: "PreScreening", value: preScreening),
-            ExtendedInfoItem(name: "Time Zone", value: timezone),
+            ExtendedInfoItem(name: "Time Zone", value: timezone)
         ]
     }
 
     func makeThermostatItems(from brivoSite: BrivoSite) -> [ThermostatItem] {
         brivoSite.thermostats?
             .map {
-                let unit = if $0.unitsValue == "CELSIUS" {
-                    Measurement(value: $0.temperature, unit: UnitTemperature.celsius)
-                } else {
-                    Measurement(value: $0.temperature, unit: UnitTemperature.fahrenheit)
-                }
-                formatter.unitOptions = $0.unitsValue != nil ? .providedUnit : []
-                return ThermostatItem(id: $0.id,
-                                      name: $0.name,
-                                      isOnline: $0.isAlive,
-                                      temperature: formatter.string(from: unit),
-                                      backingData: $0)
+                ThermostatItem(
+                    controlData: ThermostatControlData(thermostat: $0),
+                    backingData: $0
+                )
             } ?? []
     }
+
+    private func updateThermostatItem(
+        with thermostatData: ThermostatControlData,
+        protectFromStaleRefresh: Bool = false
+    ) {
+        guard let index = thermostatItems.firstIndex(where: { $0.id == thermostatData.id }) else { return }
+        if protectFromStaleRefresh {
+            recentConfirmedUpdates[thermostatData.id] = RecentThermostatUpdate(
+                data: thermostatData,
+                expiresAt: Date().addingTimeInterval(refreshProtectionInterval)
+            )
+        }
+        // Remote refreshes must pass through the protection window so a confirmed local
+        // command (e.g. mode change) isn't overwritten by a lagging server response.
+        let visibleData = protectFromStaleRefresh ? thermostatData : visibleThermostatData(from: thermostatData)
+        // In-place rather than copy-mutate-reassign: the refresh loop calls this once per
+        // thermostat, and the temporary second reference forced a full array copy every time.
+        thermostatItems[index] = ThermostatItem(
+            controlData: visibleData,
+            backingData: thermostatItems[index].backingData
+        )
+    }
+
+    private func visibleThermostatData(from responseData: ThermostatControlData) -> ThermostatControlData {
+        guard let recentUpdate = recentConfirmedUpdates[responseData.id] else { return responseData }
+        guard recentUpdate.expiresAt > Date() else {
+            recentConfirmedUpdates[responseData.id] = nil
+            return responseData
+        }
+        guard !responseData.hasSameSettings(as: recentUpdate.data) else {
+            recentConfirmedUpdates[responseData.id] = nil
+            return responseData
+        }
+        // Server hasn't replicated the local command yet — show the locally-confirmed settings,
+        // but always propagate live read-only fields so device status changes are not hidden.
+        var protected = recentUpdate.data
+        protected.isAlive = responseData.isAlive
+        protected.temperature = responseData.temperature
+        return protected
+    }
+}
+
+private struct RecentThermostatUpdate {
+    let data: ThermostatControlData
+    let expiresAt: Date
 }
 
 struct AccessPointItem: Identifiable, Equatable {
@@ -126,9 +214,39 @@ struct AccessPointItem: Identifiable, Equatable {
 }
 
 struct ThermostatItem: Identifiable, Equatable {
-    let id: Int
-    let name: String
-    let isOnline: Bool
-    let temperature: String
+    let controlData: ThermostatControlData
     let backingData: BrivoThermostat
+
+    var id: Int {
+        controlData.id
+    }
+
+    var name: String {
+        controlData.name
+    }
+
+    var isOnline: Bool {
+        controlData.isAlive
+    }
+
+    var temperature: String {
+        controlData.configuration.displayValue(controlData.temperature)
+    }
+
+    var modeTitle: String {
+        controlData.mode.title
+    }
+}
+
+private extension ThermostatControlData {
+    func hasSameSettings(as other: ThermostatControlData) -> Bool {
+        normalized(modeValue) == normalized(other.modeValue)
+            && normalized(fanValue) == normalized(other.fanValue)
+            && abs(heat.value - other.heat.value) < 0.001
+            && abs(cool.value - other.cool.value) < 0.001
+    }
+
+    private func normalized(_ value: String?) -> String? {
+        value?.uppercased()
+    }
 }

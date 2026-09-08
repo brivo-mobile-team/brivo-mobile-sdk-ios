@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-compiler-version: Apple Swift version 6.2.4 effective-5.10 (swiftlang-6.2.4.1.4 clang-1700.6.4.2)
 // swift-module-flags: -target x86_64-apple-ios17.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name BrivoBLE
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.4
 @_exported import BrivoBLE
 import BrivoCore
 import CoreBluetooth.CBManager
@@ -48,7 +48,7 @@ extension BrivoBLE.BLEPeripheral : Swift.Identifiable {
   required public init(userId: Swift.String, bleCredential: Swift.String, accessPoint: BrivoBLE.ReaderData, timeFrame: Swift.Int32)
   @objc deinit
 }
-public enum BrivoBLEError : Swift.Error {
+public enum BrivoBLEError : Foundation.LocalizedError {
   public static var domain: Swift.String {
     get
   }
@@ -102,6 +102,14 @@ public enum BrivoBLEError : Swift.Error {
   case unableToConvertExternalCredentialToData
   case cannotFindSelectedPeripheral
   case communicationFailed(info: [Swift.String : Any])
+  public var message: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
 }
 extension BrivoBLE.BrivoBLEError : Swift.Equatable {
   public static func == (lhs: BrivoBLE.BrivoBLEError, rhs: BrivoBLE.BrivoBLEError) -> Swift.Bool
@@ -137,6 +145,11 @@ public protocol BLETransactionDelegate {
   public func lockAccessPoint(brivoBLECredentials: [BrivoBLE.BrivoBLECredential], onResult: BrivoBLE.OnResult?, cancellationSignal: BrivoCore.CancellationSignal?)
   #endif
   @objc deinit
+}
+extension CoreBluetooth.CBManagerState : @retroactive Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
 }
 public enum BLEConstants {
   public static let MAXIMUM_DISTANCE: Swift.Double

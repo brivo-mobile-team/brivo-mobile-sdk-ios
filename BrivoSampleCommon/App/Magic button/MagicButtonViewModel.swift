@@ -48,7 +48,7 @@ class MagicButtonViewModel: ObservableObject {
             Image(.allegionIcon)
         case .hidOrigo:
             Image(.hidIcon)
-        case .dormakaba, .wirelessLock, .yonomi, .realSyncBle, .salto, nil, .internet:
+        case .dormakaba, .yonomi, .realSyncBle, .salto, nil, .internet:
             Image("")
         default:
             Image("")

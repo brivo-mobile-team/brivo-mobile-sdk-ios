@@ -21,6 +21,10 @@ struct AccessPointDetailsView: View {
 
     var body: some View {
         VStack(spacing: 20) {
+            Text("State: \(stateModel.unlockState.description)")
+                .font(.headline)
+                .accessibilityIdentifier(AccessibilityIds.unlockStateLabel)
+
             Button {
                 stateModel.openAccessPoint()
             } label: {
@@ -42,6 +46,16 @@ struct AccessPointDetailsView: View {
                     message: Text(stateModel.alertMessage),
                     dismissButton: .default(Text("OK"))
                 )
+            }
+
+            if stateModel.canCancelUnlock {
+                Button(role: .destructive) {
+                    stateModel.cancelUnlock()
+                } label: {
+                    Text("Cancel unlock")
+                        .padding()
+                }
+                .accessibilityIdentifier(AccessibilityIds.cancelUnlockButton)
             }
 
             AccessPointExtrasView(

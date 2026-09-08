@@ -2112,8 +2112,7 @@
             "mangledName": "$s11BrivoAccess0A9SDKAccessC06unlockB5Point08selectedbE00D8Strategy18cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbE0C_AA06UnlockG0OSgAH012CancellationI0CSgtYaF",
             "moduleName": "BrivoAccess",
             "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -2186,123 +2185,6 @@
             "declKind": "Func",
             "usr": "s:11BrivoAccess0A9SDKAccessC06unlockB5Point6passId06accesseG00D8Strategy18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAA06UnlockI0OSgAI012CancellationK0CSgtYaF",
             "mangledName": "$s11BrivoAccess0A9SDKAccessC06unlockB5Point6passId06accesseG00D8Strategy18cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAA06UnlockI0OSgAI012CancellationK0CSgtYaF",
-            "moduleName": "BrivoAccess",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "lockAccessPoint",
-            "printedName": "lockAccessPoint(selectedAccessPoint:cancellationSignal:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncThrowingStream",
-                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoResult",
-                    "printedName": "BrivoCore.BrivoResult",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Scs"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoSelectedAccessPoint",
-                "printedName": "BrivoOnAir.BrivoSelectedAccessPoint",
-                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSelectedAccessPoint"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoCore.CancellationSignal?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CancellationSignal",
-                    "printedName": "BrivoCore.CancellationSignal",
-                    "usr": "c:@M@BrivoCore@objc(cs)CancellationSignal"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11BrivoAccess0A9SDKAccessC04lockB5Point08selectedbE018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbE0C_AG012CancellationH0CSgtYaF",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC04lockB5Point08selectedbE018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbE0C_AG012CancellationH0CSgtYaF",
-            "moduleName": "BrivoAccess",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "lockAccessPoint",
-            "printedName": "lockAccessPoint(passId:accessPointId:cancellationSignal:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncThrowingStream",
-                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoResult",
-                    "printedName": "BrivoCore.BrivoResult",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Scs"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoCore.CancellationSignal?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CancellationSignal",
-                    "printedName": "BrivoCore.CancellationSignal",
-                    "usr": "c:@M@BrivoCore@objc(cs)CancellationSignal"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11BrivoAccess0A9SDKAccessC04lockB5Point6passId06accesseG018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationJ0CSgtYaF",
-            "mangledName": "$s11BrivoAccess0A9SDKAccessC04lockB5Point6passId06accesseG018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationJ0CSgtYaF",
             "moduleName": "BrivoAccess",
             "declAttributes": [
               "AccessControl"
@@ -4347,130 +4229,6 @@
           },
           {
             "kind": "Function",
-            "name": "lockAccessPoint",
-            "printedName": "lockAccessPoint(selectedAccessPoint:cancellationSignal:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncThrowingStream",
-                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoResult",
-                    "printedName": "BrivoCore.BrivoResult",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Scs"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "BrivoSelectedAccessPoint",
-                "printedName": "BrivoOnAir.BrivoSelectedAccessPoint",
-                "usr": "c:@M@BrivoOnAir@objc(cs)BrivoSelectedAccessPoint"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoCore.CancellationSignal?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CancellationSignal",
-                    "printedName": "BrivoCore.CancellationSignal",
-                    "usr": "c:@M@BrivoCore@objc(cs)CancellationSignal"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11BrivoAccess15IBrivoSDKAccessP04lockB5Point08selectedbF018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbF0C_AG012CancellationI0CSgtYaF",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP04lockB5Point08selectedbF018cancellationSignalScsy0A4Core0A6ResultCs5Error_pG0A5OnAir0a8SelectedbF0C_AG012CancellationI0CSgtYaF",
-            "moduleName": "BrivoAccess",
-            "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
-            "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "lockAccessPoint",
-            "printedName": "lockAccessPoint(passId:accessPointId:cancellationSignal:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "AsyncThrowingStream",
-                "printedName": "_Concurrency.AsyncThrowingStream<BrivoCore.BrivoResult, any Swift.Error>",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BrivoResult",
-                    "printedName": "BrivoCore.BrivoResult",
-                    "usr": "c:@M@BrivoCore@objc(cs)BrivoResult"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Error",
-                    "printedName": "any Swift.Error",
-                    "usr": "s:s5ErrorP"
-                  }
-                ],
-                "usr": "s:Scs"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "BrivoCore.CancellationSignal?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CancellationSignal",
-                    "printedName": "BrivoCore.CancellationSignal",
-                    "usr": "c:@M@BrivoCore@objc(cs)CancellationSignal"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:11BrivoAccess15IBrivoSDKAccessP04lockB5Point6passId06accessfH018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationK0CSgtYaF",
-            "mangledName": "$s11BrivoAccess15IBrivoSDKAccessP04lockB5Point6passId06accessfH018cancellationSignalScsy0A4Core0A6ResultCs5Error_pGSS_SSAH012CancellationK0CSgtYaF",
-            "moduleName": "BrivoAccess",
-            "genericSig": "<τ_0_0 where τ_0_0 : BrivoAccess.IBrivoSDKAccess>",
-            "sugared_genericSig": "<Self where Self : BrivoAccess.IBrivoSDKAccess>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "unlockNearestBLEAccessPoint",
             "printedName": "unlockNearestBLEAccessPoint(passes:cancellationSignal:)",
             "children": [
@@ -5695,287 +5453,308 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/AllegionBleTransactionDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 803,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/AllegionBleTransactionDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 822,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/AllegionBleTransactionDelegate.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1098,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 237,
       "length": 27,
       "value": "\"com.brivo.sdk.BrivoAccess\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 353,
       "length": 5,
       "value": "-1000"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 381,
       "length": 16,
       "value": "\"Unknown error.\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 499,
       "length": 5,
       "value": "-1001"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 527,
       "length": 42,
       "value": "\"BrivoSDK init failed. SDK not configured\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 685,
       "length": 5,
       "value": "-1002"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 713,
       "length": 41,
       "value": "\"SDK not configured to use local storage\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 869,
       "length": 5,
       "value": "-1003"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 897,
       "length": 38,
       "value": "\"There are no passes on local storage\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1056,
       "length": 5,
       "value": "-1004"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1084,
       "length": 40,
       "value": "\"Acess point not found in local storage\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1238,
       "length": 5,
       "value": "-1005"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1266,
       "length": 33,
       "value": "\"Pass not found in local storage\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1407,
       "length": 5,
       "value": "-1006"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1435,
       "length": 24,
       "value": "\"Missing ble credential\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1568,
       "length": 5,
       "value": "-1007"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1596,
       "length": 32,
       "value": "\"Access point invalid door type\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1740,
       "length": 5,
       "value": "-1008"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1768,
       "length": 29,
       "value": "\"Missing internet connection\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 1902,
       "length": 5,
       "value": "-1009"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 1930,
       "length": 21,
       "value": "\"Missing reader UUID\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 2063,
       "length": 5,
       "value": "-1010"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 2091,
       "length": 36,
       "value": "\"Access point unsupported door type\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 2906,
       "length": 5,
       "value": "-1014"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 2934,
       "length": 26,
       "value": "\"Missing pass credentials\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "IntegerLiteral",
       "offset": 3077,
       "length": 5,
       "value": "-1015"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Extensions\/BrivoError+Access.swift",
       "kind": "StringLiteral",
       "offset": 3105,
       "length": 46,
       "value": "\"Access point not found by continuous scanner\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 449,
       "length": 13,
       "value": "\"BrivoModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 483,
       "length": 24,
       "value": "\"BrivoBLEAllegionModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 528,
       "length": 21,
       "value": "\"BrivoHIDOrigoModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 571,
       "length": 22,
       "value": "\"BrivoDormakabaModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "StringLiteral",
       "offset": 611,
       "length": 18,
       "value": "\"BrivoSaltoModule\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "Array",
       "offset": 2250,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/BrivoSDKAccess.swift",
       "kind": "Array",
       "offset": 2828,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 226,
       "length": 25,
       "value": "\"Missing pass credential\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 285,
       "length": 24,
       "value": "\"Missing bleCredentials\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/Constants.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 383,
       "length": 38,
       "value": "\"EE8732B3-2D52-409B-9084-70AD31F6C790\""
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
       "kind": "FloatLiteral",
       "offset": 374,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
       "kind": "Array",
       "offset": 1525,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
       "kind": "BooleanLiteral",
       "offset": 1574,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/ionutmacovei\/Developer\/mobile-sdk-ios\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoAccess\/BrivoAccess\/ContinuousScannerService.swift",
       "kind": "Array",
       "offset": 1868,
       "length": 2,

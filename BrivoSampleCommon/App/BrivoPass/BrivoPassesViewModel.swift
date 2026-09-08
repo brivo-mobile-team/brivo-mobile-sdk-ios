@@ -95,14 +95,24 @@ class BrivoPassesViewModel: ObservableObject {
             storedPasses = try await BrivoSDKOnAir.instance().retrieveSDKLocallyStoredPasses().get()
             var newPasses = [BrivoOnairPass]()
             for brivoOnAirPass in storedPasses {
-                guard let tokens = brivoOnAirPass.brivoOnairPassCredentials?.tokens else { return }
-                let refreshedPass = try await BrivoSDKOnAir.instance().refreshPass(brivoTokens: tokens).get()
-                if let refreshedPass = refreshedPass {
-                    newPasses.append(refreshedPass)
+                guard let tokens = brivoOnAirPass.brivoOnairPassCredentials?.tokens,
+                      let refreshedPass = try await BrivoSDKOnAir.instance()
+                        .refreshPass(brivoTokens: tokens)
+                        .get()
+                else {
+                    throw BrivoPassesError.passListIncomplete
                 }
+                newPasses.append(refreshedPass)
             }
             brivoOnAirPasses = newPasses.sorted(by: { $0.accountName ?? "N/A" < $1.accountName ?? "N/A" })
-            _ = await brivoSDKAccess.refreshCredentials(passes: brivoOnAirPasses)
+            let refreshErrors = await brivoSDKAccess
+                .refreshCredentials(passes: brivoOnAirPasses)
+                .result
+                .values
+                .flatMap { $0 }
+            if let refreshError = refreshErrors.first {
+                onError(refreshError)
+            }
         } catch {
             brivoOnAirPasses = storedPasses.sorted(by: { $0.accountName ?? "N/A" < $1.accountName ?? "N/A" })
             onError(error)
@@ -188,6 +198,20 @@ class BrivoPassesViewModel: ObservableObject {
             title: "Error",
             message: brivoError.localizedDescription + " " + "Status Code: \(brivoError.code)"
         )
+    }
+}
+
+// MARK: - BrivoPassesError
+
+enum BrivoPassesError: LocalizedError {
+    case passListIncomplete
+
+    var errorDescription: String? {
+        """
+        A pass could not be refreshed, so the pass list is incomplete. \
+        Credentials were not refreshed: the SDK reads the list as authoritative, \
+        and a missing pass unregisters that vendor's credential.
+        """
     }
 }
 

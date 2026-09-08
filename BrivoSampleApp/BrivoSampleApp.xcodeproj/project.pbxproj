@@ -12,6 +12,21 @@
 		0C803C342E72B6EB00351E47 /* ExtendedInfoSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C2F2E72B6EB00351E47 /* ExtendedInfoSheet.swift */; };
 		0C803C352E72B6EB00351E47 /* HeaderWithInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C302E72B6EB00351E47 /* HeaderWithInfo.swift */; };
 		0C803C362E72B6EB00351E47 /* ExtendedInfoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C803C2E2E72B6EB00351E47 /* ExtendedInfoItem.swift */; };
+		A1B000000000000000000002 /* ThermostatControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000002 /* ThermostatControlView.swift */; };
+		A1B000000000000000000003 /* ThermostatControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000003 /* ThermostatControlViewModel.swift */; };
+		A1B000000000000000000004 /* ThermostatSettingsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000004 /* ThermostatSettingsState.swift */; };
+		A1B000000000000000000005 /* ThermostatConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000005 /* ThermostatConfiguration.swift */; };
+		A1B000000000000000000006 /* ThermostatSyncHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000006 /* ThermostatSyncHandler.swift */; };
+		A1B000000000000000000007 /* AccessibilityIds+Thermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000007 /* AccessibilityIds+Thermostat.swift */; };
+		A1B000000000000000000008 /* ThermostatGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000008 /* ThermostatGauge.swift */; };
+		A1B000000000000000000009 /* SingleStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000009 /* SingleStepperView.swift */; };
+		A1B00000000000000000000A /* DoubleStepperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F00000000000000000000A /* DoubleStepperView.swift */; };
+		A1B00000000000000000000B /* StepperData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F00000000000000000000B /* StepperData.swift */; };
+		A1B00000000000000000000C /* StepperButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F00000000000000000000C /* StepperButtonStyle.swift */; };
+		A1B00000000000000000000D /* ThermostatAlertBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F00000000000000000000D /* ThermostatAlertBanner.swift */; };
+		A1B00000000000000000000E /* ThermostatModePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F00000000000000000000E /* ThermostatModePickerView.swift */; };
+		A1B00000000000000000000F /* ThermostatModePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F00000000000000000000F /* ThermostatModePickerViewModel.swift */; };
+		A1B000000000000000000010 /* ThermostatFanModePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F000000000000000000010 /* ThermostatFanModePickerViewModel.swift */; };
 		5D9E0D342DE4A25F00A49DC4 /* UserDefaultsAccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D2B2DE4A25F00A49DC4 /* UserDefaultsAccessService.swift */; };
 		5D9E0D352DE4A25F00A49DC4 /* AccessPointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D212DE4A25F00A49DC4 /* AccessPointViewModel.swift */; };
 		5D9E0D362DE4A25F00A49DC4 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9E0D2F2DE4A25F00A49DC4 /* Toast.swift */; };
@@ -40,6 +55,23 @@
 		0C803C2F2E72B6EB00351E47 /* ExtendedInfoSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedInfoSheet.swift; sourceTree = "<group>"; };
 		0C803C302E72B6EB00351E47 /* HeaderWithInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderWithInfo.swift; sourceTree = "<group>"; };
 		0C803C312E72B6EB00351E47 /* InfoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoRow.swift; sourceTree = "<group>"; };
+		A1F000000000000000000002 /* ThermostatControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatControlView.swift; sourceTree = "<group>"; };
+		A1F000000000000000000003 /* ThermostatControlViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatControlViewModel.swift; sourceTree = "<group>"; };
+		A1F000000000000000000004 /* ThermostatSettingsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatSettingsState.swift; sourceTree = "<group>"; };
+		A1F000000000000000000005 /* ThermostatConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatConfiguration.swift; sourceTree = "<group>"; };
+		A1F000000000000000000006 /* ThermostatSyncHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatSyncHandler.swift; sourceTree = "<group>"; };
+		A1F000000000000000000007 /* AccessibilityIds+Thermostat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccessibilityIds+Thermostat.swift"; sourceTree = "<group>"; };
+		A1F000000000000000000008 /* ThermostatGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatGauge.swift; sourceTree = "<group>"; };
+		A1F000000000000000000009 /* SingleStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleStepperView.swift; sourceTree = "<group>"; };
+		A1F00000000000000000000A /* DoubleStepperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleStepperView.swift; sourceTree = "<group>"; };
+		A1F00000000000000000000B /* StepperData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperData.swift; sourceTree = "<group>"; };
+		A1F00000000000000000000C /* StepperButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperButtonStyle.swift; sourceTree = "<group>"; };
+		A1F00000000000000000000D /* ThermostatAlertBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatAlertBanner.swift; sourceTree = "<group>"; };
+		A1F00000000000000000000E /* ThermostatModePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatModePickerView.swift; sourceTree = "<group>"; };
+		A1F00000000000000000000F /* ThermostatModePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatModePickerViewModel.swift; sourceTree = "<group>"; };
+		A1F000000000000000000010 /* ThermostatFanModePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThermostatFanModePickerViewModel.swift; sourceTree = "<group>"; };
+		4D9D8FACD8E68CA86099B4A3 /* Pods-BrivoSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrivoSampleApp.release.xcconfig"; path = "../BrivoSampleApp/Pods/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		4E34BCB8FB1FCBFE0FE2D9D3 /* Pods-BrivoSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BrivoSampleApp.debug.xcconfig"; path = "../BrivoSampleApp/Pods/Target Support Files/Pods-BrivoSampleApp/Pods-BrivoSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5D9E0D202DE4A25F00A49DC4 /* AccessPointView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointView.swift; sourceTree = "<group>"; };
 		5D9E0D212DE4A25F00A49DC4 /* AccessPointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPointViewModel.swift; sourceTree = "<group>"; };
 		5D9E0D232DE4A25F00A49DC4 /* BrivoPassesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrivoPassesViewModel.swift; sourceTree = "<group>"; };
@@ -84,6 +116,52 @@
 				0C803C312E72B6EB00351E47 /* InfoRow.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		A1C000000000000000000001 /* ThermostatControlView */ = {
+			isa = PBXGroup;
+			children = (
+				A1F000000000000000000002 /* ThermostatControlView.swift */,
+				A1F000000000000000000003 /* ThermostatControlViewModel.swift */,
+				A1F000000000000000000004 /* ThermostatSettingsState.swift */,
+				A1F000000000000000000005 /* ThermostatConfiguration.swift */,
+				A1F000000000000000000006 /* ThermostatSyncHandler.swift */,
+				A1F000000000000000000007 /* AccessibilityIds+Thermostat.swift */,
+				A1C000000000000000000002 /* Components */,
+				A1C000000000000000000003 /* Pickers */,
+			);
+			path = ThermostatControlView;
+			sourceTree = "<group>";
+		};
+		A1C000000000000000000002 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A1F000000000000000000008 /* ThermostatGauge.swift */,
+				A1F000000000000000000009 /* SingleStepperView.swift */,
+				A1F00000000000000000000A /* DoubleStepperView.swift */,
+				A1F00000000000000000000B /* StepperData.swift */,
+				A1F00000000000000000000C /* StepperButtonStyle.swift */,
+				A1F00000000000000000000D /* ThermostatAlertBanner.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A1C000000000000000000003 /* Pickers */ = {
+			isa = PBXGroup;
+			children = (
+				A1F00000000000000000000E /* ThermostatModePickerView.swift */,
+				A1F00000000000000000000F /* ThermostatModePickerViewModel.swift */,
+				A1F000000000000000000010 /* ThermostatFanModePickerViewModel.swift */,
+			);
+			path = Pickers;
+			sourceTree = "<group>";
+		};
+		1F9792D36CBB7D89020F6F68 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0464C66C1BAC28488006F68 /* Pods_BrivoSampleApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		2FE790762C8F33E30016ED45 /* BrivoSampleCommon */ = {
@@ -140,6 +218,7 @@
 				5D9E0D222DE4A25F00A49DC4 /* AccessPointView */,
 				C0C202EA2E61A4B1009B4993 /* AccessPointDetailsView */,
 				5D9E0D252DE4A25F00A49DC4 /* BrivoPass */,
+				A1C000000000000000000001 /* ThermostatControlView */,
 				5D9E0D2C2DE4A25F00A49DC4 /* UserDefaultsService */,
 				5D9E0D312DE4A25F00A49DC4 /* Utils */,
 				0C803C322E72B6EB00351E47 /* Common */,
@@ -284,6 +363,21 @@
 				C0C202EB2E61A4B1009B4993 /* AccessPointDetailsViewModel.swift in Sources */,
 				C0C202EC2E61A4B1009B4993 /* AccessPointDetailsView.swift in Sources */,
 				0C803C2D2E72B6DA00351E47 /* BrivoPassesView.swift in Sources */,
+				A1B000000000000000000002 /* ThermostatControlView.swift in Sources */,
+				A1B000000000000000000003 /* ThermostatControlViewModel.swift in Sources */,
+				A1B000000000000000000004 /* ThermostatSettingsState.swift in Sources */,
+				A1B000000000000000000005 /* ThermostatConfiguration.swift in Sources */,
+				A1B000000000000000000006 /* ThermostatSyncHandler.swift in Sources */,
+				A1B000000000000000000007 /* AccessibilityIds+Thermostat.swift in Sources */,
+				A1B000000000000000000008 /* ThermostatGauge.swift in Sources */,
+				A1B000000000000000000009 /* SingleStepperView.swift in Sources */,
+				A1B00000000000000000000A /* DoubleStepperView.swift in Sources */,
+				A1B00000000000000000000B /* StepperData.swift in Sources */,
+				A1B00000000000000000000C /* StepperButtonStyle.swift in Sources */,
+				A1B00000000000000000000D /* ThermostatAlertBanner.swift in Sources */,
+				A1B00000000000000000000E /* ThermostatModePickerView.swift in Sources */,
+				A1B00000000000000000000F /* ThermostatModePickerViewModel.swift in Sources */,
+				A1B000000000000000000010 /* ThermostatFanModePickerViewModel.swift in Sources */,
 				5D9E0D342DE4A25F00A49DC4 /* UserDefaultsAccessService.swift in Sources */,
 				5D9E0D352DE4A25F00A49DC4 /* AccessPointViewModel.swift in Sources */,
 				5D9E0D362DE4A25F00A49DC4 /* Toast.swift in Sources */,
@@ -362,7 +456,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 3.5.1;
+				MARKETING_VERSION = 3.6.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -420,7 +514,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 3.5.1;
+				MARKETING_VERSION = 3.6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

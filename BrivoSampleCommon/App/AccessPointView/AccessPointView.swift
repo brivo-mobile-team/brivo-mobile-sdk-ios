@@ -11,9 +11,12 @@ import BrivoOnAir
 import SwiftUI
 
 struct AccessPointView: View {
-    @State var stateModel: AccessPointViewModel
+    @State private var stateModel: AccessPointViewModel
 
-    // swiftlint:disable line_length
+    init(stateModel: AccessPointViewModel) {
+        _stateModel = State(initialValue: stateModel)
+    }
+
     var body: some View {
         List {
             if !stateModel.accessPointItems.isEmpty {
@@ -33,10 +36,13 @@ struct AccessPointView: View {
             if !stateModel.thermostatItems.isEmpty {
                 Section(header: Text("Brivo Thermostats")) {
                     ForEach(stateModel.thermostatItems, id: \.id) { thermostat in
-                        makeRowItem(for: thermostat)
+                        makeThermostatNavigationLink(for: thermostat)
                     }
                 }
             }
+        }
+        .task {
+            await stateModel.refreshThermostatItems()
         }
         .toolbar {
             Button {
@@ -50,8 +56,6 @@ struct AccessPointView: View {
             ExtendedInfoSheet(title: "Site Informations", items: stateModel.siteExtendedDetails)
         }
     }
-
-    // swiftlint:enable line_length
 
     // MARK: - Private
 
@@ -74,20 +78,43 @@ struct AccessPointView: View {
         .navigationBarTitleDisplayMode(.inline)
     }
 
+    private func makeThermostatNavigationLink(for thermostat: ThermostatItem) -> some View {
+        NavigationLink {
+            ThermostatControlView(viewModel: stateModel.makeThermostatControlViewModel(for: thermostat))
+                .navigationTitle(thermostat.name)
+                .navigationBarTitleDisplayMode(.inline)
+        } label: {
+            makeRowItem(for: thermostat)
+        }
+    }
+
     private func makeRowItem(for thermostat: ThermostatItem) -> some View {
         HStack {
             HStack(alignment: .top, spacing: 0) {
                 thermostat.icon
                 thermostat.onlineView
             }
-            Text(thermostat.name)
+            VStack(alignment: .leading, spacing: 4.0) {
+                Text(thermostat.name)
+                Text(thermostat.statusText)
+                    .font(.subheadline)
+                    .foregroundStyle(thermostat.statusColor)
+            }
             Spacer()
-            Text(thermostat.temperature)
         }
     }
 }
 
 extension ThermostatItem {
+    var statusText: String {
+        guard isOnline else { return "Offline" }
+        return "\(temperature) · \(modeTitle)"
+    }
+
+    var statusColor: Color {
+        isOnline ? .secondary : .red
+    }
+
     var icon: some View {
         Image(systemName: "thermometer.medium")
             .resizable()

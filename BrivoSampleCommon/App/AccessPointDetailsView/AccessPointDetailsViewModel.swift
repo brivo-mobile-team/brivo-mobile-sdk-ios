@@ -11,6 +11,31 @@ import BrivoBLE
 import BrivoOnAir
 import BrivoAccess
 
+enum UnlockProgress {
+    case idle
+    case requested
+    case sdk(AccessPointCommunicationState)
+    case cancelled(from: AccessPointCommunicationState?)
+    case streamFailed(Error)
+
+    var communicationState: AccessPointCommunicationState? {
+        if case .sdk(let state) = self { return state }
+        return nil
+    }
+}
+
+extension UnlockProgress: CustomStringConvertible {
+    var description: String {
+        switch self {
+        case .idle: "Idle"
+        case .requested: "Unlock requested"
+        case .sdk(let state): state.description
+        case .cancelled(let state): state.map { "Cancelled from \($0)" } ?? "Cancelled"
+        case .streamFailed(let error): "Stream threw: \(error.localizedDescription)"
+        }
+    }
+}
+
 class AccessPointDetailsViewModel: ObservableObject {
 
     // MARK: - Properties
@@ -25,12 +50,18 @@ class AccessPointDetailsViewModel: ObservableObject {
     @Published var isShowingDormakabaToast = false
     @Published var shouldShowCopyToast: Bool = false
     @Published var shouldShowBottomSheet: Bool = false
-
     @Published var shouldForceInternetUnlock: Bool = false
-    
+    @Published private(set) var unlockState: UnlockProgress = .idle
+    @Published private(set) var canCancelUnlock: Bool = false
+
+    private var activeCancellationSignal: CancellationSignal?
+    private var activeUnlockTask: Task<Void, Never>?
+    private var activeUnlockTimer: Timer?
+
     var shouldShowInternetUnlockToggle: Bool {
         selectedAccessPoint.doorType == .wavelynx
     }
+
     private(set) lazy var doorExtendedDetails: [ExtendedInfoItem] = {
 
         let id = String(selectedAccessPoint.accessPointPath.accessPointId)
@@ -72,15 +103,25 @@ class AccessPointDetailsViewModel: ObservableObject {
 
     @MainActor
     func openAccessPoint() {
+        guard activeCancellationSignal == nil else { return }
+
         isShowingLoading = true
         setUnlockedTimer()
 
+        unlockState = .requested
+
         let cancellationSignal = CancellationSignal()
-        let timer = Timer(timeInterval: 10.0, repeats: false) {[weak self] (timer) in
+        let timer = Timer(timeInterval: 30.0, repeats: false) {[weak self] (timer) in
             cancellationSignal.isCancelled = true
+            self?.unlockState = .cancelled(from: self?.unlockState.communicationState)
             self?.resetToInitialState()
             timer.invalidate()
+            self?.clearActiveUnlock()
         }
+
+        activeCancellationSignal = cancellationSignal
+        canCancelUnlock = true
+        activeUnlockTimer = timer
 
         let passId = selectedAccessPoint.accessPointPath.passId
         let accessPointIdString = "\(selectedAccessPoint.accessPointPath.accessPointId)"
@@ -93,7 +134,16 @@ class AccessPointDetailsViewModel: ObservableObject {
                                   timer: timer)
         RunLoop.current.add(timer, forMode: .common)
     }
-    
+
+    @MainActor
+    func cancelUnlock() {
+        activeCancellationSignal?.isCancelled = true
+        activeUnlockTask?.cancel()
+        unlockState = .cancelled(from: unlockState.communicationState)
+        resetToInitialState()
+        clearActiveUnlock()
+    }
+
     // MARK: - Private
 
     @MainActor
@@ -103,34 +153,57 @@ class AccessPointDetailsViewModel: ObservableObject {
         cancellationSignal: CancellationSignal,
         timer: Timer
     ) {
-        Task {
+        activeUnlockTask = Task {
             let brivoSDKAccess = BrivoSDKAccess.instance()
-            for try await result in await brivoSDKAccess.unlockAccessPoint(
-                passId: passId,
-                accessPointId: accessPointIdString,
-                unlockStrategy: shouldForceInternetUnlock ? .forceInternetUnlockforBrivoDoors : nil,
-                cancellationSignal: cancellationSignal
-            ) {
-                await MainActor.run {
-                    if result.accessPointCommunicationState == .success {
-                        timer.invalidate()
-                        self.setLocked(isLocked: false)
-                        self.isShowingDormakabaToast = false
-                        isShowingLoading = false
-                        self.isShowingToast = true
-                    } else if result.accessPointCommunicationState == .failed {
-                        timer.invalidate()
-                        self.resetToInitialState()
+            do {
+                for try await result in await brivoSDKAccess.unlockAccessPoint(
+                    passId: passId,
+                    accessPointId: accessPointIdString,
+                    unlockStrategy: shouldForceInternetUnlock ? .forceInternetUnlockforBrivoDoors : nil,
+                    cancellationSignal: cancellationSignal
+                ) {
+                    await MainActor.run {
+                        self.unlockState = .sdk(result.accessPointCommunicationState)
 
-                        if let error = result.error {
-                            self.displayErrorMessage(
-                                message: (error.localizedDescription) + " " + "Status Code: \(error.code)"
-                            )
+                        if result.accessPointCommunicationState == .success {
+                            timer.invalidate()
+                            self.clearActiveUnlock()
+                            self.setLocked(isLocked: false)
+                            self.isShowingDormakabaToast = false
+                            self.isShowingLoading = false
+                            self.isShowingToast = true
+                        } else if result.accessPointCommunicationState == .failed {
+                            timer.invalidate()
+                            self.clearActiveUnlock()
+                            self.resetToInitialState()
+
+                            if let error = result.error {
+                                self.displayErrorMessage(
+                                    message: (error.localizedDescription) + " " + "Status Code: \(error.code)"
+                                )
+                            }
                         }
                     }
                 }
+            } catch is CancellationError {
+                // cancelUnlock() already set .cancelled and reset the UI; don't overwrite it.
+            } catch {
+                await MainActor.run {
+                    self.unlockState = .streamFailed(error)
+                    timer.invalidate()
+                    self.clearActiveUnlock()
+                    self.resetToInitialState()
+                }
             }
         }
+    }
+
+    private func clearActiveUnlock() {
+        canCancelUnlock = false
+        activeUnlockTask = nil
+        activeUnlockTimer?.invalidate()
+        activeUnlockTimer = nil
+        activeCancellationSignal = nil
     }
 
     private func resetToInitialState() {

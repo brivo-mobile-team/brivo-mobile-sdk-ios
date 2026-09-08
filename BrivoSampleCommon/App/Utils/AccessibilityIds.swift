@@ -16,4 +16,6 @@ enum AccessibilityIds {
     static let noPassesTextView = "noPassesId"
     static let navigationSwitchEnvButton = "navigationSwitchEnvButtonId"
     static let okButton = "OK"
+    static let unlockStateLabel = "unlockStateLabelId"
+    static let cancelUnlockButton = "cancelUnlockButtonId"
 }
