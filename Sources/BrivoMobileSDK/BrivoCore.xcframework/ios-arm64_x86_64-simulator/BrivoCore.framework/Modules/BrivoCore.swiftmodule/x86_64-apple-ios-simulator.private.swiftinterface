@@ -627,7 +627,7 @@ public enum RetryStrategy : Swift.Sendable {
   case linear(attempts: Swift.Int, delay: Swift.Duration)
   case exponential(attempts: Swift.Int, initialDelay: Swift.Duration, multiplier: Swift.Double)
 }
-public func withRetry<T>(strategy: BrivoCore.RetryStrategy, operation: @Sendable () async throws -> T) async throws -> T where T : Swift.Sendable
+public func withRetry<T>(strategy: BrivoCore.RetryStrategy, isRetryable: @Sendable (any Swift.Error) -> Swift.Bool = { _ in true }, operation: @Sendable () async throws -> T) async throws -> T where T : Swift.Sendable
 public typealias RefreshTokenOnSuccessType = (BrivoCore.BrivoTokens) -> Swift.Void
 public typealias OnRefreshTokenFailureType = (BrivoCore.BrivoError?) -> Swift.Void
 public protocol TokenRefresher : AnyObject {

@@ -18135,7 +18135,7 @@
       {
         "kind": "Function",
         "name": "withRetry",
-        "printedName": "withRetry(strategy:operation:)",
+        "printedName": "withRetry(strategy:isRetryable:operation:)",
         "children": [
           {
             "kind": "TypeNominal",
@@ -18147,6 +18147,29 @@
             "name": "RetryStrategy",
             "printedName": "BrivoCore.RetryStrategy",
             "usr": "s:9BrivoCore13RetryStrategyO"
+          },
+          {
+            "kind": "TypeFunc",
+            "name": "Function",
+            "printedName": "(any Swift.Error) -> Swift.Bool",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Error",
+                "printedName": "any Swift.Error",
+                "usr": "s:s5ErrorP"
+              }
+            ],
+            "typeAttributes": [
+              "noescape"
+            ],
+            "hasDefaultArg": true
           },
           {
             "kind": "TypeFunc",
@@ -18170,8 +18193,8 @@
           }
         ],
         "declKind": "Func",
-        "usr": "s:9BrivoCore9withRetry8strategy9operationxAA0D8StrategyO_xyYaYbKXEtYaKs8SendableRzlF",
-        "mangledName": "$s9BrivoCore9withRetry8strategy9operationxAA0D8StrategyO_xyYaYbKXEtYaKs8SendableRzlF",
+        "usr": "s:9BrivoCore9withRetry8strategy11isRetryable9operationxAA0D8StrategyO_Sbs5Error_pYbXExyYaYbKXEtYaKs8SendableRzlF",
+        "mangledName": "$s9BrivoCore9withRetry8strategy11isRetryable9operationxAA0D8StrategyO_Sbs5Error_pYbXExyYaYbKXEtYaKs8SendableRzlF",
         "moduleName": "BrivoCore",
         "genericSig": "<τ_0_0 where τ_0_0 : Swift.Sendable>",
         "sugared_genericSig": "<T where T : Swift.Sendable>",
@@ -19629,6 +19652,13 @@
       "offset": 323,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/BrivoCore\/BrivoCore\/Utils\/Task+Timeout.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3648,
+      "length": 4,
+      "value": "true"
     }
   ]
 }
